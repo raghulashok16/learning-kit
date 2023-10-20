@@ -1,4 +1,5 @@
 jQuery --> it is a cross-platform javascript library, light-weight
+jQuery CDN is required to use jQuery in our webpage.........
 jQuery CDN v3.7.1 --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <------------------------------->
 Note: Always use jQuery CDN at the begining beacause jQuery is required to be loaded before our js code
@@ -20,5 +21,18 @@ $(document).ready(function(){
 
 $(function(){
     $('p').html('HELLO WORLD');
+    $('h1').text('i like jquery');
 })
+// html() and text() is used to update the text contents of our webpage using selectors
+<------------------------------->
+
+$(function(){
+    $('p').html('HELLO <br> WORLD');
+    $('h1').text('i like <br> jquery');
+})
+// html() adds <br> to the dom as element
+// text() adds <br> to the dom as text content
+<------------------------------->
+
+
 
