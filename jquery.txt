@@ -1,0 +1,24 @@
+jQuery --> it is a cross-platform javascript library, light-weight
+jQuery CDN v3.7.1 --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<------------------------------->
+Note: Always use jQuery CDN at the begining beacause jQuery is required to be loaded before our js code
+<------------------------------->
+
+$(document).ready(function(){
+    console.log("jquery loaded");
+})
+// Always use .ready() to start a jquery beacause we need to wait until the dom is ready
+<------------------------------->
+
+$(document).ready(function(){
+    $(function(){
+    console.log("function 1");
+    })
+})
+// function inside the ready() will be called automatically when the dom is loaded
+<------------------------------->
+
+$(function(){
+    $('p').html('HELLO WORLD');
+})
+
