@@ -64,7 +64,7 @@ $('img').attr('src','https://placehold.co/600x400')
 // sets the src attribute of the image
 <------------------------------->
 
-$('img').attr({src:'https://placehold.co/600x400, alt:'new image', height:'200px', width:'500px'})
+$('img').attr({src:'https://placehold.co/600x400', alt:'new image', height:'200px', width:'500px'})
 // sets the attributes of the image with the help of JSON object
 // all values will be updated in a single line using key value pair
 <------------------------------->
