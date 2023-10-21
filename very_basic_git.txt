@@ -1,8 +1,0 @@
-git --version --> displays the git version installed in our machine
-git config --global user.name "Raghul Ashok" --> to set user name of git in our machine
-git config --global user.email raghulashok16@gmail.com --> to set user email of git in our machine
-git config user.name --> to check the user name in our git
-git config user.email --> to check the user email in our git
-
-REPOSITORY = a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
-

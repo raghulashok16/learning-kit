@@ -69,3 +69,76 @@ $('img').attr({src:'https://placehold.co/600x400, alt:'new image', height:'200px
 // all values will be updated in a single line using key value pair
 <------------------------------->
 
+$('img').attr({src: function(e){
+    console.log(e);
+}})
+// this will log the index of the image in our current page
+<------------------------------->
+
+$('#img1').attr('title','company logo')
+// selecting and manipulating image using id selector
+<------------------------------->
+
+$('.one').html('Updated text')
+// selecting and manipulating element using class selector
+<------------------------------->
+
+$('input[type=checkbox]')
+// selecting checkbox using type selector
+<------------------------------->
+
+$('.highlight').css('color','red')
+// selecting and manipulating css styles using class selector
+<------------------------------->
+
+$('.highlight:first').html('FIRST')
+// .class_name:first will select and manipulate the first occurunce found in the dom with the matched class_name
+<------------------------------->
+
+$('.highlight:last').html('LAST')
+// .class_name:last will select and manipulate the last occurunce found in the dom with the matched class_name
+$('p:last').html('LAST')
+<------------------------------->
+
+$('.highlight:even').html('EVEN)
+// .class_name:even will select and manipulate all the even occurunce found in the dom with the matched class_name
+<------------------------------->
+
+$('.highlight:odd').html('ODD')
+// .class_name:odd will select and manipulate all the odd occurunce found in the dom with the matched class_name
+<------------------------------->
+
+ $('li:first-child').html('first list item')
+// li:first-child will select and manipulate the first list item found in the dom
+<------------------------------->
+
+$('.highlight:eq(2)').css('color','red')
+// changes the color of the 2nd element with the class_name highlight
+<------------------------------->
+
+$('.highlight:nth-child(2)').css('color','blue')
+// changes the color of the 2nd element with the class_name highlight
+<------------------------------->
+
+$('li:eq(0)').html('first list content')
+// manipulate the text content of the 1st list element
+<------------------------------->
+
+$('li').length
+// returns the lenght of the list
+<------------------------------->
+
+for(x=0; x<$('li').length; x++){
+    $('li:eq('+x+')').html(x+1)
+}
+// simple example that we can use for loop with jquery
+<------------------------------->
+
+$('li:gt(2)').html('larger')
+// manipulate all the list text content greater than index 2
+<------------------------------->
+
+$('li:lt(2)').html('larger')
+// manipulate all the list text content less than index 2
+<------------------------------->
+
