@@ -25,6 +25,18 @@ git config user.email --> to check the user email in our git
 <------------------------------->
 
 REPOSITORY = a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
+<------------------------------->
 
+git status --> gives information on the current status of a git repository and its contents
+git init --> to create a empty git repository
+<------------------------------->
+
+Note: before we can do anything git-related, we must initialize a repo first!, this is something you do once per project. initialize the repo in the top-level folder containing your project
+
+git status will be available only after git init was initialized............
+ls -a -->
+<------------------------------->
+
+Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized
 
 
