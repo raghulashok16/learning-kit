@@ -1,0 +1,6 @@
+1. what is an iframe and how it works -->
+
+An inline frame is used to embed another document within the current HTML
+document. It takes the code from the referenced src or srcdoc and renders it as its own website that is then put entirely within the parent browsing page. It is called an inline frame because to the user it is all one web page.
+<------------------------------->
+
