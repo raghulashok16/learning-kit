@@ -71,13 +71,17 @@ In CSS inheritance, the child element will naturally inherit properties from its
 
 COMBINATORS:
 
---> Adjacent Sibling [ h2 + p { color : red; } ]
+--> Adjacent Sibling  
+    h2 + p { color : red; } 
     [ Element share the same  parent, Second  element comes immediately after first element ]
---> General Sibling [ h2 ~ p { color : red; } ]
+--> General Sibling
+    h2 ~ p { color : red; }
     [ Element share the same parent, Second  element comes after first element ]
---> Child [ div > p { color : red; } ]
+--> Child
+    div > p { color : red; }
     [ Second element is a direct child of first element ]
---> Desendant [ div p { color : red; } ]
+--> Desendant
+    div p { color : red; }
     [ Second element is a desendant of first element ]
 <------------------------------->
 
@@ -99,3 +103,62 @@ VALUE TYPES:
     ~> transformat : scale(...);
 <------------------------------->
 
+BOX MODEL:
+
+In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.The box model allows us to add a border around elements, and to define space between elements. 
+
+--> Content - The content of the box, where text and images appear
+--> Padding - Clears an area around the content. The padding is transparent
+--> Border - A border that goes around the padding and content
+--> Margin - Clears an area outside the border. The margin is transparent
+
+
+NOTE: Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+<------------------------------->
+
+BORDER: 
+
+The CSS border properties allow you to specify the style, width, and color of an element's border. 
+
+Border Style:
+
+~> The border-style property specifies what kind of border to display.
+~> The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+
+The following values are allowed in border-style property:
+
+--> dotted - Defines a dotted border
+    border-style: dotted;
+--> dashed - Defines a dashed border
+    border-style: dashed;
+--> solid - Defines a solid border
+    border-style: solid;
+--> double - Defines a double border
+    border-style: double;
+--> groove - Defines a 3D grooved border. The effect depends on the border-color value
+    border-style: groove;
+--> ridge - Defines a 3D ridged border. The effect depends on the border-color value
+    border-style: ridge;
+--> inset - Defines a 3D inset border. The effect depends on the border-color value
+    border-style: inset;
+--> outset - Defines a 3D outset border. The effect depends on the border-color value
+    border-style: outset;
+--> none - Defines no border
+    border-style: none;
+--> hidden - Defines a hidden border
+    border-style: hidden;
+--> 4 sides
+    border-style: dotted dashed solid double;
+
+Border Width:
+
+~> The border-width property specifies the width of the four borders.
+~> The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+
+ border-width: 5px;
