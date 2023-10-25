@@ -1,0 +1,101 @@
+CSS --> Cascading Style Sheet
+
+HTML is responsible for the structure of the page
+CSS is responsible for the styling of the page
+<------------------------------->
+
+CSS1 --> releasd in 1996
+CSS2 --> releasd in 1998
+CSS3 --> in development (Split up into different modules versions -color modules, text modules, image module, etc) no additional versions in CSS
+<------------------------------->
+
+MUST LEARN IN CSS:
+
+BASIC --> css introduction, selectors, css features, combinators, positionaing
+ADVANCED --> background & images, dimensions, units, sizes, javascript & css, responsiveness, styling forms, working with text & fonts
+EXPERT --> flexbox, CSS grid, transformations, transitions & animations, writing future-proof CSS
+<------------------------------->
+
+3 WAYS TO ADD CSS TO HTML:
+
+--> Inline CSS ( adding style attribute to any tag in html file )
+--> Internal CSS ( adding style tag in the head tag and adding styles inside it )
+--> External CSS ( using ext css file we link using link tag inside head tag )
+<------------------------------->
+
+FONTS:
+
+font-family: "Times New Roman", Times, serif;
+font-family: Arial, Helvetica, sans-serif;
+font-family: "Lucida Console", "Courier New", monospace;
+NOTE: we can add multiple fonts
+<------------------------------->
+
+GOOGLE FONTS:
+
+step 1: https://fonts.google.com/
+step 2: Select any font and copy its link tag and past it in our head tag
+step 3: copy its font family and paste it in our css file
+<------------------------------->
+
+FONT COLOR:
+
+color: blue;
+color: green;
+<------------------------------->
+
+SELECTORS:
+
+--> Element Selectors [ h1{} ]
+--> Class Selector [ .class_name {} ]
+--> Universal Selectors [ *{} ]
+--> ID Selectors [ #id_name {} ]
+--> Attribute Selectors [ [disabled] {} ]
+<------------------------------->
+
+CASCADING AND SPECIFICITY:
+
+Cascading --> multiple rules can be applied to the same element
+Specificity --> used to resolve conflicts araising from multiple rules
+Order of Specificity -->
+    --> Inline
+    --> #ID
+    --> .class, :pseudo, [attribute]
+    --> <Tag> , ::pseudo-element
+<------------------------------->
+
+INHERITANCE:
+
+In CSS inheritance, the child element will naturally inherit properties from its parent element.
+<------------------------------->
+
+COMBINATORS:
+
+--> Adjacent Sibling [ h2 + p { color : red; } ]
+    [ Element share the same  parent, Second  element comes immediately after first element ]
+--> General Sibling [ h2 ~ p { color : red; } ]
+    [ Element share the same parent, Second  element comes after first element ]
+--> Child [ div > p { color : red; } ]
+    [ Second element is a direct child of first element ]
+--> Desendant [ div p { color : red; } ]
+    [ Second element is a desendant of first element ]
+<------------------------------->
+
+VALUE TYPES:
+
+--> pre-defined options
+    ~> display : block;
+    ~> overflow : auto;
+--> colors
+    ~> background : red;
+    ~> color : #Fa923f;
+    ~> color : #ccc;
+--> Length, Sizes and Numbers
+    ~> height : 100px;
+    ~> width : 100%;
+    ~> order : 1;
+--> functions
+    ~> background : url(...);
+    ~> transformat : scale(...);
+<------------------------------->
+
