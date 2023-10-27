@@ -1,7 +1,7 @@
 CSS --> Cascading Style Sheet
 
-HTML is responsible for the structure of the page
-CSS is responsible for the styling of the page
+HTML is responsible for the structure/content of the page
+CSS is responsible for the styling/presentation of the page
 <------------------------------->
 
 CSS1 --> releasd in 1996
