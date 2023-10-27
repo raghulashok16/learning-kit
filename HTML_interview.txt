@@ -1,54 +1,19 @@
 1. what is an iframe and how it works -->
-
-An inline frame is used to embed another document within the current HTML
-document. It takes the code from the referenced src or srcdoc and renders it as its own website that is then put entirely within the parent browsing page. It is called an inline frame because to the user it is all one web page.
-<------------------------------->
-
 2. explain meta tags in HTML
-<------------------------------->
-
 3. what is the purpose of alt attribute on images
-<------------------------------->
-
 4. what is the difference between span and div
-<------------------------------->
-
 5. how can you highlight text in HTML
-<------------------------------->
-
 6. what are some of the key goals and motivations of the HTML5 specification
-<------------------------------->
-
 7. what is character encoding
-<------------------------------->
-
 8. what is self closing tags
-<------------------------------->
-
 9. how can i get indexed better by search engines
-<------------------------------->
-
 10. what is the difference between attribute and property in HTML
-<------------------------------->
-
 11. describe the correct usage of the following HTML5 semantic elements, <header>, <article>, <section>, <footer>
-<------------------------------->
-
 12. explain alomost standard, full standard and quirks mode
-<------------------------------->
-
 13. explain the difference between block elements and inline elements
-<------------------------------->
-
 14. how do you set IE compatibility mode
-<------------------------------->
-
 15. what is an optional tag
-<------------------------------->
-
 16. have you used different HTML templating languages before
-<------------------------------->
-
 17. how do you change the direction of the HTML text
-<------------------------------->
+
 

@@ -1,0 +1,86 @@
+DATABASE:
+
+~> it's a collection of data, a method for accessing and manipulating that data.
+~> data is everywhere and it is the most valuable commodity in the world.
+~> everyday we deal with tons of data like drone footages, camera photos, location data and many more.
+~> databases aren't anything special, they're just hardware and software, there's just computers.
+~> hardware is the mechanical part and the software is the actual code on top that allows usto collect and use the data really useful.
+~> without data no websites can work
+~> drum memory was used initially to store data before disk drive was introduced.
+~> drum memory is a cylindrical shaped and thats why databases have cylindrical icons.
+<------------------------------->
+
+DATABASE BRANDS:
+
+~> maria db, microsoft sql server, cassandra, mongo db, my sql, oracle database, redis, sql lite, postgres sql, ibm db2 and many more
+<------------------------------->
+
+THINGS TO KNOW IN DATABASE:
+
+1. how to put data in db
+2. how to use/update/learn from data
+3. how to remove data
+<------------------------------->
+
+CONFUSING ACRONYMS:
+
+DBMS - DataBase Management System
+RDBMS - Relational DataBase Management System
+SQL - Structured Query Language
+<------------------------------->
+
+5 DATA MODELS:
+
+--> relational model [ mysql, postgres ] [ most popular, e-comerce ]
+--> document model [ mongo db, firebase ] [ data in document ]
+--> key value model [ dinamo db ] [ simplest way to access data ]
+--> graph model [ more complex, data connected in differentways, social media uses these model ]
+--> wide columnar model [ newly introduced ] [ cassandra, google big table ]
+<------------------------------->
+
+WHAT IS A DATABASE ?
+
+~> a database is a system, hardware and software that allows a user to store, organize and use data.
+<------------------------------->
+
+WHAT IS SQL ?
+
+~> SQL is a language that is used to talk to a databases.
+~> SQL statement is nothing but a Query
+~> SELECT * FROM USERS
+~> the above is the Query or SQL Statement
+<------------------------------->
+
+QUERY BREAKDOWN:
+
+SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
+
+NAME --> identifier
+WHERE --> keyword
+ROLE = 'MANAGER' --> condition
+'MANAGER' --> expression
+<------------------------------->
+
+DECLARATIVE VS IMPERATIVE
+
+<------------------------------->
+
+DATABAS MODEL:
+
+~> HIERARCHICAL [ TREE LIKE FLOW CHART DESIGN ]
+~> NETWORKING 
+~> ENTITY-RELATIONSHIP
+~> RELATIONAL
+~> OBJECT ORIENTED
+~> FLAT
+~> SEMI-STRUCTURED
+<------------------------------->
+
+CRUD:
+c --> create
+r --> read
+u --> update
+d --> delete
+<------------------------------->
+
+
