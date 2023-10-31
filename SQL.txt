@@ -10,6 +10,11 @@ DATABASE:
 ~> drum memory is a cylindrical shaped and thats why databases have cylindrical icons.
 <------------------------------->
 
+WHAT IS A DATABASE ?
+
+~> database is a system, hardware and software that allows a user to store, organize and use data.
+<------------------------------->
+
 DATABASE BRANDS:
 
 ~> maria db, microsoft sql server, cassandra, mongo db, my sql, oracle database, redis, sql lite, postgres sql, ibm db2 and many more
@@ -36,11 +41,6 @@ SQL - Structured Query Language
 --> key value model [ dinamo db ] [ simplest way to access data ]
 --> graph model [ more complex, data connected in differentways, social media uses these model ]
 --> wide columnar model [ newly introduced ] [ cassandra, google big table ]
-<------------------------------->
-
-WHAT IS A DATABASE ?
-
-~> a database is a system, hardware and software that allows a user to store, organize and use data.
 <------------------------------->
 
 WHAT IS SQL ?
@@ -83,4 +83,66 @@ u --> update
 d --> delete
 <------------------------------->
 
+TABLE:
 
+~> table is the representation of object
+~> each table has its name
+~> each column represent specific types of data
+~> each row represent singular piece of data
+<------------------------------->
+
+COLUMN:
+
+~> each column has its own name
+~> collection of columns is called degree
+~> we can specify what data should be put in that column and that concept is called domain/constraint
+~> column is also called as attributes
+<------------------------------->
+
+ROWS:
+
+~> rows are also called as tuples
+~> tuple is nothing but single record of data
+~> tuples is nothing but multiple record of data
+~> each tuples must follow the column constraint
+~> collection of rows/tuples is called cardinallity
+<------------------------------->
+
+PRIMARY KEY AND FOREIGN KEY:
+
+~> primary key uniquely identify data in the table
+~> foreign key is used to add data to the main table but it is a primary key in the secondary table
+~> foreign key is used to make a relationship between two or more tables
+<------------------------------->
+
+OLTP vs OLAP:
+
+~> realtional databases support day to day office work and support in analysis
+~> OLTP --> ONLINE TRANSACTION PROCESSING
+~> OLAP --> ONLINE ANALYTICAL PROCESSING
+
+exercise: [ OLTP and OLAP ]
+1. a database is being used to log orders and customers --> OLTP 
+2. a database is being used to figure out what new products we should offer --> OLAP
+3. a database is being used to derive statistics for reporting to the executives --> OLAP
+4. a database is being used to keep track of logged in users --> OLTP
+<------------------------------->
+
+POSTGRESS DEFAULTS:
+
+~> url - localhost
+~> port - 5432
+~> username - postgres
+~> password - root
+~> connection url - local host
+<------------------------------->
+
+SQL COMMANDS:
+
+~> DDL --> [ CREATE, ALTER, DROP, RENAME, TRUNCATE, COMMENT ] [ DATA DEFINITION LANGUAGE ]
+~> DQL --> [ SELECT ] [ DATA QUERY LANGUAGE ]
+~> DML --> [ INSERT, UPDATE, DELETE, MERGE, CALL, EXPLAIN PLAN, LOCK TABLE ] [ DATA MODIFICATION LANGUAGE ]
+~> DCL --> [ GRANT, REVOKE ] [ DATA CONTROL LANGUAGE ]
+<------------------------------->
+ 
+ 
