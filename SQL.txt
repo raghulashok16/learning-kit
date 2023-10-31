@@ -144,5 +144,75 @@ SQL COMMANDS:
 ~> DML --> [ INSERT, UPDATE, DELETE, MERGE, CALL, EXPLAIN PLAN, LOCK TABLE ] [ DATA MODIFICATION LANGUAGE ]
 ~> DCL --> [ GRANT, REVOKE ] [ DATA CONTROL LANGUAGE ]
 <------------------------------->
+
+NOTE: "" --> double quotes [ COLUMN ], '' --> single quotes [ text/string ]
  
- 
+EXERCISE:
+
+~> give me a list of all employees in the company [ SELECT * FROM "employees" ]
+~> how many departments are the in the company? [ SELECT * FROM "departments" ]
+~> how many times has employee 10001 had a rise? [  ]
+~> what title does 10006 have? [  ]
+<------------------------------->
+
+RENAMING COLUMS: [ SELECT colum as '<new_name>' ]
+
+~> [ SELECT emp_no AS "employee id" FROM "employees" ]
+~> [ SELECT dob AS "birthday" FROM "employees" ]
+<------------------------------->
+
+COLUMN CONCATTENATION:
+
+~> [ SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles ] [ 10001 is a senior engineer ]
+~> [ CONCAT(TEXT,TEXT) ]
+~> [ CONACT(COLUMN1,COLUMN2) ]
+~> [ SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; ]
+<------------------------------->
+
+FUNCTIONS IN SQL:
+
+~> a function is a set of steps that creates a single value
+~> 2 types of functions in SQL are aggregate and scalar function
+~> AGGREGATE --> it works on all given data and gives a single data output, operate on many records to produce 1 value
+~> SCALAR --> it works on individual row and gives individual result for each row, operate on each record independently
+<------------------------------->
+
+AGGREGATE FUNCTIONS:
+
+~> AVG()
+~> COUNT() [ SELECT count(emp_no) FROM employees; ]
+~> MIN() 
+~> MAX() [ SELECT max(salary) FROM salaries; ]
+~> SUM() [ SELECT sum(salary) FROM slaries; ]
+<------------------------------->
+
+ADDING COMMENTS:
+
+-- SINGLE LINE COMMENTS
+
+/*
+*MULTI LINE
+*COMMENTS
+*/
+<------------------------------->
+
+COMMON SELECT MISTAKES:
+
+1. misspelling commands
+2. using ; instad of , or vice versa
+3. using " instad of '
+4. " is for tables
+5. ' is for text/string
+6. invalid column name
+<------------------------------->
+
+HOW TO FILTER DATA: [ WHERE keyword ]
+
+~> get a list of all female employees [ SELECT first_name FROM employees WHERE gender = 'F'; ]
+<------------------------------->
+
+AND KEYWORD:
+
+~> [ SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; ]
+~> 
+~> 
