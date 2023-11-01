@@ -220,7 +220,54 @@ AND KEYWORD: [ used to filter data based on two or more condition ] [ chainning 
 
 OR KEYWORD: 
 
-~>  [ SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Kumar'; ]  
-~>  [ SELECT firstname FROM users WHERE salary = '2000' OR firstname = 'Kumar'; ]
-~>  [ SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = '15900'; ]  
+~>  [ SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; ]  
+~>  [ SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; ]
+~>  [ SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; ]  
+~>  [ SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram'; ]  
+<------------------------------->
+
+FILTER WITH AND/OR: [ LOGICAL OPERATORS ]
+
+~>  how many female customers do we have from the state of kerala or tamilnadu
+    [ SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; ]
+<------------------------------->    
+
+NOT KEYWORD: [ filter everthing except some data ]
+
+~>  [ SELECT firstName, gender FROM users WHERE NOT gender = 'M'; ]
+~>  how many customers are not 55 years age?
+    [ SELECT COUNT(age) FROM customers NOT age = 55; ]
+~>  how many customers are not 55 and 76 years age?
+    [ SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76; ]
+<------------------------------->
+
+COMPARISION OPERATORS:
+
+--> 10 > 20 -- false
+--> 10 < 20 -- true
+--> 10 <= 20 -- true
+--> 10 >= 20 -- false
+--> 0 = 0 -- true
+--> 1 != 0 -- true
+--> 1 <> 0 -- true
+--> 'Mo' = 'mo' -- false
+
+~>  who over the age of 44 has an income of 100000?
+    [ SELECT name from employees WHERE age >44 AND income = 100000; ]
+<------------------------------->
+
+ORDER OF OPERATION:
+
+1. FROM [ which table ]
+2. WHERE [ what to filter the data ]
+3. SELECT [ display the selected / sorted data ]
+<------------------------------->
+
+OPERATOR PRECEDENCE:
+
+~>  a statement having multiple operators is evaluated based on the priority of operators
+    [ parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or ]
+~>  if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left
+~>  use parenthesis while using operators to avoid clash between operators
+<------------------------------->
 
