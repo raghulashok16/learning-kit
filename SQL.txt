@@ -211,8 +211,16 @@ HOW TO FILTER DATA: [ WHERE keyword ]
 ~> get a list of all female employees [ SELECT first_name FROM employees WHERE gender = 'F'; ]
 <------------------------------->
 
-AND KEYWORD:
+AND KEYWORD: [ used to filter data based on two or more condition ] [ chainning ]
 
-~> [ SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; ]
-~> 
-~> 
+~>  [ SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; ]  
+~>  [ SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023'; ]
+    [ filtering based on 3 conditions ]
+<------------------------------->
+
+OR KEYWORD: 
+
+~>  [ SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Kumar'; ]  
+~>  [ SELECT firstname FROM users WHERE salary = '2000' OR firstname = 'Kumar'; ]
+~>  [ SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = '15900'; ]  
+
