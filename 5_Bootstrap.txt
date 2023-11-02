@@ -33,14 +33,68 @@ BREAKPOINTS:
 
 //  they are the media quries that bootstrap using for its responsive design
 
-0 to 575.98px - Xsmall devices
-576px to 767.98px - Small devices
-768px to 991.98px - Medium devices
-992px to 1199.98px - Lrge devices
-1200 to 1399.98px - Xlarge devices
+~>  0 to 575.98px - Xsmall devices
+~>  576px to 767.98px - Small devices
+~>  768px to 991.98px - Medium devices
+~>  992px to 1199.98px - Lrge devices
+~>  1200 to 1399.98px - Xlarge devices
 <------------------------------->
 
 CONTAINERS:
 
+//  we have containers like - sm, md, lg, xl, xxl, fluid
 
+~>  sm - occupies 100% of the screen when width of the screen is smaller than 567px
+~>  md - occupies 100% of the screen when width of the screen is smaller than 768px
+~>  lg - occupies 100% of the screen when width of the screen is smaller than 992px
+~>  xl - occupies 100% of the screen when width of the screen is smaller than 1200px
+~>  xxl - occupies 100% of the screen when width of the screen is smaller than 1400px
+<------------------------------->
 
+GRID:
+
+// Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content
+// It’s built with flexbox and is fully responsive
+// every col must be wrapped inside the row class
+    <div class="row">
+        <div class="col"></div>
+    </div>
+// maximum number of columns for numbers inside the screen is 12
+// if we go on and add 13 columns then the layout will be broken
+// we can use col-1 to col-12, but we should not go beyond 12
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"></div>
+    </div>
+// example col-6 and col-6 is correct but col-8 and col-8 is not correct and it will break the layout
+// we can use a column responsive using the containers
+    <div class="row">
+        <div class="col-md"></div>
+        <div class="col-xxl"></div>
+    </div>
+// we can add different width according to the screen, same column behaves differently
+    <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-4 col-sm-8 col-5"></div>
+    </div>
+// to make a column that has variable width according to the content, use col-auto
+    <div class="row">
+        <div class="col-xxl-auto col-xl-6"></div>
+    </div>
+// to stack to horizontal, use col-breakpoint
+    <div class="row">
+        <div class="col-xxl"></div>
+        <div class="col-xxl"></div>
+    </div>
+// to specify how many columns inside the row, if we add beyond the value the the layout will be broken
+    <div class="row row-cols-2">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+// row and columns based on the width of the content
+    <div class="row row-cols-auto">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+// nesting row inside column is posible
