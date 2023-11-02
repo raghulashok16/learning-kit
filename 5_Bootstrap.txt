@@ -98,3 +98,32 @@ GRID:
         <div class="col"></div>
     </div>
 // nesting row inside column is posible
+<------------------------------->
+
+COLUMNS:
+
+// vertical alignment - make sure height and color property is set to the div so that we can see visible changes
+
+// align-items class should be added to the row div
+
+align-items-center // center all the col in vertical direction in the row
+align-items-start // align all the col to the top of the row
+align-items-end // align all the col to the bottom of the row
+
+// align-self class should be added to the column div
+
+align-self-center // only align the col to the center of the row in vertical direction
+align-self-start // only align the col to the top of the row in vertical direction
+align-self-end // only align the col to the bottom of the row in vertical direction
+
+// horizontal alignment
+
+// justify-content class should be added to the row div
+
+justify-content-start // align all col to the start of the row in horizontal direction
+justify-content-center // align all col to the middle/center of the row div in horizontal direction
+justify-content-end // align all col to the end of the row in horizontal direction
+justify-content-around // align all col with some space to the left and right of the row in horizontal direction
+justify-content-between // try it
+justify-content-evenly // try it
+
