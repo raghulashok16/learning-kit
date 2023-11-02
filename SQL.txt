@@ -251,7 +251,7 @@ COMPARISION OPERATORS:
 --> 1 != 0 -- true
 --> 1 <> 0 -- true
 --> 'Mo' = 'mo' -- false
-
+ 
 ~>  who over the age of 44 has an income of 100000?
     [ SELECT name from employees WHERE age >44 AND income = 100000; ]
 <------------------------------->

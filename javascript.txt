@@ -5,7 +5,7 @@ CSS        --> The Styles Layer.
 JavaScript --> The Behavior Layer.
 <------------------------------->
 
-LINKING JAVASCRIPT WITH HTML:
+LINKING JAVASCRIPT WITH HTML: 
 
 --> Embedding the javascript code inside the Html document, which is called inline javascript.
     <script>

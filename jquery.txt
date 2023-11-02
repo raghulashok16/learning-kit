@@ -4,7 +4,7 @@ jQuery CDN v3.7.1 --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/
 <------------------------------->
 Note: Always use jQuery CDN at the begining beacause jQuery is required to be loaded before our js code
 <------------------------------->
-
+ 
 $(document).ready(function(){
     console.log("jquery loaded");
 })

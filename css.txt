@@ -7,7 +7,7 @@ CSS is responsible for the styling/presentation of the page
 CSS1 --> releasd in 1996
 CSS2 --> releasd in 1998
 CSS3 --> in development (Split up into different modules versions -color modules, text modules, image module, etc) no additional versions in CSS
-<------------------------------->
+<-------------------------------> 
 
 MUST LEARN IN CSS:
 
