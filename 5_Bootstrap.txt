@@ -127,3 +127,22 @@ justify-content-around // align all col with some space to the left and right of
 justify-content-between // try it
 justify-content-evenly // try it
 
+// full width class is used to break a line instead of using br tag
+
+w-100 // used to take the full width
+
+// order class is used to reorder a column in our desired oreder from 1 to 5
+
+order-1 // used to rearrange the order of the column
+order-2
+order-3
+order-4
+order-5
+order-last
+
+// offset class is used to move colum range from 0 to 4
+
+offset-md-4
+
+
+
