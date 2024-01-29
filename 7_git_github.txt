@@ -34,8 +34,9 @@ Note: git status command will display the status of the git only after git init 
 Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized
 <------------------------------->
 
-git status --> gives information on the current status of a git repository and its contents
-git init --> to create a empty git repository
+THINGS TO DO BEFORE COMMITING
+# git status [gives information on the current status of a git repository and its contents]
+# git init [to create a empty git repository]
 <------------------------------->
 
 BASIC GIT WORKFLOW
@@ -44,7 +45,35 @@ BASIC GIT WORKFLOW
 3. commit --> commit everything that was added
 <------------------------------->
 
-git add --> 
+ADDING
+updates particular/all files from working area to staging area
+# git add file1 file2 [file1 and file2 will be staged]
+# git add . [stage all files from working area]
+<------------------------------->
+
+COMMITING
+updates particular/all files from staging area to repository
+# git commit
+# git commit -m "message for that commit"
+<------------------------------->
+
+LOGGING
+# git log [logs all the commits with their messages]
+<------------------------------->
+
+ATOMIC COMMITS
+1. commit a single change,features or single fix with a meaningfull message.
+2. this helps easier to rollback changes later on.
+3. it also helps review or project/code easier.
+4. finally commit singe thing commit/single file commit as possible.
+<------------------------------->
+
+MESSAGES
+always use present tense for the commit messages
+<------------------------------->
+
+
+
 
 
 
