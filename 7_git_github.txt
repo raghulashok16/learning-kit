@@ -35,8 +35,10 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 <------------------------------->
 
 THINGS TO DO BEFORE COMMITING
-# git status [gives information on the current status of a git repository and its contents]
-# git init [to create a empty git repository]
+# git status 
+[gives information on the current status of a git repository and its contents]
+# git init 
+[to create a empty git repository]
 <------------------------------->
 
 BASIC GIT WORKFLOW
@@ -47,8 +49,10 @@ BASIC GIT WORKFLOW
 
 ADDING
 updates particular/all files from working area to staging area
-# git add file1 file2 [file1 and file2 will be staged]
-# git add . [stage all files from working area]
+# git add file1 file2 
+[file1 and file2 will be staged]
+# git add . 
+[stage all files from working area]
 <------------------------------->
 
 COMMITING
@@ -58,7 +62,8 @@ updates particular/all files from staging area to repository
 <------------------------------->
 
 LOGGING
-# git log [logs all the commits with their messages]
+# git log 
+[logs all the commits with their messages]
 <------------------------------->
 
 ATOMIC COMMITS
@@ -72,6 +77,17 @@ MESSAGES
 always use present tense for the commit messages
 <------------------------------->
 
+CONFIG SETTINGS
+VS Code config must be set before using git commit because it will need a external editor to write some large messages. so search config from internet and run git config command for vs code. also install code in vs code from cntrl+shift+p command.
+<------------------------------->
+
+ ONELINE LOGGING
+ # git log --oneline
+ [this will log the first line of the commit messages form all the commits]
+<------------------------------->
+
+AMMENDING COMMITS
+you can redo the preious commit using he --amend option
 
 
 
