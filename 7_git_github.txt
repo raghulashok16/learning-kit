@@ -1,7 +1,10 @@
 cmd wont work, use git bash
 
-ls --> used to 'list' contents of the current working directory
-ls -a --> used to 'list all contents including hidden files and folder' of the current working directory
+TERMINAL COMMANDS FOR FILE MANIPULATION
+# ls
+[used to 'list' contents of the current working directory]
+# ls -a
+[used to 'list all contents including hidden files and folder' of the current working directory]
 start . --> to open the current working directory in file explorer
 ls folder_name -->  used to 'list' contents of that folder
 ls folder_name/folder_name -->  used to 'list' contents of that folder inside folder
@@ -18,9 +21,13 @@ rm purple.js red.js --> to delete multiple files from current directory permanan
 rm -rf Raghul --> to delete the folder from the current working directory [r-recusive,f-force]
 <------------------------------->
 
-git --version --> displays the git version installed in our machine
-git config --global user.name "Raghul Ashok" --> to set user name of git in our machine
-git config --global user.email raghulashok16@gmail.com --> to set user email of git in our machine
+BASIC SETTINGS USING GIT COMMAND
+# git --version 
+[displays the git version installed in our machine]
+# git config --global user.name "Raghul Ashok"
+[to set user name of git in our machine]
+# git config --global user.email raghulashok16@gmail.com
+[to set user email of git in our machine]
 git config user.name --> to check the user name in our git
 git config user.email --> to check the user email in our git
 <------------------------------->
@@ -48,7 +55,7 @@ BASIC GIT WORKFLOW
 <------------------------------->
 
 ADDING
-updates particular/all files from working area to staging area
+1. updates particular/all files from working area to staging area.
 # git add file1 file2 
 [file1 and file2 will be staged]
 # git add . 
@@ -56,7 +63,7 @@ updates particular/all files from working area to staging area
 <------------------------------->
 
 COMMITING
-updates particular/all files from staging area to repository
+1. updates particular/all files from staging area to repository.
 # git commit
 # git commit -m "message for that commit"
 <------------------------------->
@@ -74,11 +81,13 @@ ATOMIC COMMITS
 <------------------------------->
 
 MESSAGES
-always use present tense for the commit messages
+1. always use present tense for the commit messages.
 <------------------------------->
 
-CONFIG SETTINGS
-VS Code config must be set before using git commit because it will need a external editor to write some large messages. so search config from internet and run git config command for vs code. also install code in vs code from cntrl+shift+p command.
+CONFIG SETTINGS FOR VS CODE
+1. VS Code config must be set before using git commit because it will need a external editor to write some large messages.
+2. So search config from internet and run git config command for vs code.
+3. Also install code in vs code from cntrl+shift+p command.
 <------------------------------->
 
  ONELINE LOGGING
@@ -87,8 +96,53 @@ VS Code config must be set before using git commit because it will need a extern
 <------------------------------->
 
 AMMENDING COMMITS
-you can redo the preious commit using he --amend option
+1. You can redo the preious commit using he --amend option.
+2. This will add some additional files to the previous commit.
+# git commit -m "some message"
+# git add forgotten_file
+# git commit --amend
+<------------------------------->
 
+IGNORING FILES
+1. We can tell git which files and directories to ignore in a given repository using a .gitignore file.
+2. This is important while we use important credentials and some api keys that others dont want to see that.
+<------------------------------->
+
+BRANCHES
+1. think of branches as alternative timeline for a project.
+2. they enable us to create separate contexts where we can try new things, or even work on multiple ideas in parallel.
+3. if we make changes on one branch, they do not impact the other branches(unless we merge the changes).
+<------------------------------->
+
+MASTER BRANCH
+1. default branch name is master.
+2. it does not do anything special or have fancy powers.
+3. it is just like other branches.
+<------------------------------->
+
+HEAD
+1. simply a pointer that refers to the cuurent loaction in your repository.
+2. it points to a particular branch reference.
+<------------------------------->
+
+VIEWING BRANCHES
+1. git branch command is used to view your existing branches.
+2. default branch in every git repo is master, though you can configure this.
+# git branch
+[ it will show all branch in that repo ]
+[ * represent the active branch we are on ]
+<------------------------------->
+
+CREATING BRANCHES
+1. git branch branch_name command is used to create new branch upon the current head.
+2. this will just create the branch and it will not switch to that branch(head stays the same).
+# git branch branch_name
+<------------------------------->
+
+SWITCHING BRANCHES
+# git switch branch_name
+1. after creating the branch we can switch between branches using these commands.
+<------------------------------->
 
 
 
