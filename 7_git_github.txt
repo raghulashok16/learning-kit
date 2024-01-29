@@ -160,9 +160,24 @@ CREATING BRANCHES
 <------------------------------->
 
 SWITCHING BRANCHES
-# git switch branch_name
 1. after creating the branch we can switch between branches using these commands.
+# git switch branch_name
 <------------------------------->
+
+ANOTHER WAY OF SWITCHING BRANCHES
+1. checkout command was made to add a standalone switch command which is much simpler.
+2. swich was the new way and checkout was the old school.
+# git checkout branch_name
+<------------------------------->
+
+CREATING AND SWITCHING BRANCHES
+1. -c flag is used to create a new branch.
+2. swich command is used to move to that branch.
+3. this combination will do in a single line.
+# git switch -c branch_name
+<------------------------------->
+
+
 
 
 
