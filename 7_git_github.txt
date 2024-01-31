@@ -181,6 +181,8 @@ CREATING AND SWITCHING BRANCHES
 2. swich command is used to move to that branch.
 3. this combination will do in a single line.
 # git switch -c branch_name
+# git checkout -b branch_name
+    [-c and -b both will create a new branch]
 <------------------------------->
 
 SWITCHING BRANCHES WITH UNSTAGED FILES
@@ -192,8 +194,9 @@ SWITCHING BRANCHES WITH UNSTAGED FILES
 DELETING BRANCHES
 # git branch -D branch_name
 # git branch -d branch_name
-1. D is shortcut for force delete and d is normal delete.
-2. this should be done when necessary.
+1. -D is shortcut for force delete.
+2. -d is normal delete.
+3. this should be done when necessary.
 <------------------------------->
 
 RENAMING BRANCHES
@@ -213,6 +216,21 @@ MERGING BRANCHES
 5. this method is called a fast-forward merge.
 <------------------------------->
 
+MERGE CONFLICTS
+1. when merging 2 branches merge conflicts occurs.
+2. git will tell us if there is an conflict and we have to open that file and resolve the conflicts.
+3. git will decorate the code where the conflict occurs with their branch name.
+4. these symbols are called conflict markers.
+5. <<<<<<<<<HEAD [ actual code ] ======== 
+6. ========= [ code we try to merge ] >>>>>>>>>
+<------------------------------->
+
+RESOLVING MERGE CONFLICT
+1. vs code will open both merge files.
+2. edit the required line of code.
+3. remove the conflict markers in that document.
+4. add your changes and then make a commit.
+<------------------------------->
 
 
 
