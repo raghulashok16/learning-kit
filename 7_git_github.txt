@@ -143,6 +143,7 @@ MASTER BRANCH
 HEAD
 1. simply a pointer that refers to the cuurent loaction in your repository.
 2. it points to a particular branch reference.
+3. it always points to the latest commit you made.
 <------------------------------->
 
 VIEWING BRANCHES
@@ -175,6 +176,36 @@ CREATING AND SWITCHING BRANCHES
 2. swich command is used to move to that branch.
 3. this combination will do in a single line.
 # git switch -c branch_name
+<------------------------------->
+
+SWITCHING BRANCHES WITH UNSTAGED FILES
+1. data will be lost without commiting and switching branches.
+2. always commit before switching branches.
+3. data will be overwritten if we dont commit them.
+<------------------------------->
+
+DELETING BRANCHES
+# git branch -D branch_name
+# git branch -d branch_name
+1. D is shortcut for force delete and d is normal delete.
+2. this should be done when necessary.
+<------------------------------->
+
+RENAMING BRANCHES
+1. move to that branch.
+2. use m flag to rename the branch.
+# git switch branch_name
+# git branch -m new_branch_name
+<------------------------------->
+
+MERGING BRANCHES
+1. branching makes it super easy to work within self-contained context, but often we want to incorporate changes from one branch into another.
+2. we can do this using git merge command.
+3. we merge branches, not specific commits.
+4. we always merge to the current HEAD branch.
+# git switch master
+# git merge sub_branch
+5. this method is called a fast-forward merge.
 <------------------------------->
 
 
