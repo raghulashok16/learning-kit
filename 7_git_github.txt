@@ -86,6 +86,9 @@ COMMITING
 1. updates particular/all files from staging area to repository.
 # git commit
 # git commit -m "message for that commit"
+    [ -m flag represents message ]
+# git commit -a -m "message for that commit"
+    [-a flag represents all files]
 <------------------------------->
 
 LOGGING
@@ -152,6 +155,8 @@ VIEWING BRANCHES
 # git branch
     [ it will show all branch in that repo ]
     [ * represent the active branch we are on ]
+# git branch -v
+    [ -v flag gives commit message along with the branch name ]
 <------------------------------->
 
 CREATING BRANCHES
