@@ -7,41 +7,38 @@ COLORS:
 6. text-info [sky blue text]
 7. text-light [light grey text or half white ]
 8. text-dark [black text]
+<------------------------------->
 
-
-bg-primary // blue text
-bg-danger  // red text
-bg-success // green background
-bg-secondary // grey background
-bg-waning // yellow background
-bg-info // sky blue background
-bg-light // light grey background [ half white ]
-bg-dark // black background
+BACKGROUND:
+1. bg-primary [blue text]
+2. bg-danger  [red text]
+3. bg-success [green background]
+4. bg-secondary [grey background]
+5. bg-waning [yellow background]
+6. bg-info [sky blue background]
+7. bg-light [light grey background or half white ]
+8. bg-dark [black background]
 <------------------------------->
 
 CSS VARIABLES:
-
-//  in which place we can use our css variables
-    <h1 style ="color:var(--bs-blue)">CSS VARIABLES</h1>
-
---bs-blue
---bs-primary
+1. css variables can be used in this way by add it in the css styles.
+    <h1 style ="color:var(--bs-blue)"> </h1>
+# --bs-blue
+# --bs-primary
 <------------------------------->
 
 BREAKPOINTS:
+1. they are the media quries that bootstrap using for its responsive design.
 
-//  they are the media quries that bootstrap using for its responsive design
-
-~>  0 to 575.98px - Xsmall devices
-~>  576px to 767.98px - Small devices
-~>  768px to 991.98px - Medium devices
-~>  992px to 1199.98px - Lrge devices
-~>  1200 to 1399.98px - Xlarge devices
+0 to 575.98px [Xsmall devices]
+576px to 767.98px [Small devices]
+768px to 991.98px [Medium devices]
+992px to 1199.98px [Large devices]
+1200 to 1399.98px [Xlarge devices]
 <------------------------------->
 
 CONTAINERS:
-
-//  we have containers like - sm, md, lg, xl, xxl, fluid
+1. bootstrap have containers like - sm, md, lg, xl, xxl, fluid.
 
 ~>  sm - occupies 100% of the screen when width of the screen is smaller than 567px
 ~>  md - occupies 100% of the screen when width of the screen is smaller than 768px
