@@ -1,18 +1,9 @@
-3 LAYERS OF WEB DESIGNS:
-
-HTML       --> The Structure Layer.
-CSS        --> The Styles Layer.
-JavaScript --> The Behavior Layer.
-<------------------------------->
-
-LINKING JAVASCRIPT WITH HTML: 
-
---> Embedding the javascript code inside the Html document, which is called inline javascript.
+LINKING JAVASCRIPT WITH HTML
+1. Embedding the javascript code inside the Html document, which is called inline javascript.
     <script>
     //Script logic
     </script>
-
---> Linking external javascript files using src attribute of the <script> tag, this way of linking javascript is called external javascript.
+2. Linking external javascript files using src attribute of the <script> tag, this way of linking javascript is called external javascript.
     <script src="myscripts.js"></script>
 <------------------------------->
 
