@@ -1,13 +1,12 @@
 COLORS:
-
-text-primary // blue text
-text-danger // red text
-text-success // green text
-text-secondary // grey text
-text-waning // yellow text
-text-info // sky blue text
-text-light // light grey text [ half white ]
-text-dark // black text 
+1. text-primary [blue text]
+2. text-danger [red text]
+3. text-success [green text]
+4. text-secondary [grey text]
+5. text-waning [yellow text]
+6. text-info [sky blue text]
+7. text-light [light grey text or half white ]
+8. text-dark [black text]
 
 
 bg-primary // blue text
@@ -141,8 +140,8 @@ order-5
 order-last
 
 // offset class is used to move colum range from 0 to 4
-
 offset-md-4
+
 
 
 
