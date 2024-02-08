@@ -236,13 +236,35 @@ GIT DIFF
 1. used to view changes between commits, branches, files, our working directory and more.
 2. we can use it often to find the changes overtime.
 # git diff
-3. it compares staging area and our working directory.
+3. compares staging area and our working directory.
 4. git declares one file as 'a' and other file as 'b'.
 5. chunks shows the line to be removed and added[@@ -3,4 +3,5 @@]
 <------------------------------->
 
 VIEWING UNSTAGED CHANGES
-1. 
+# git diff
+    [compares staging area and our working directory]
+<------------------------------->
+
+VIEWING WORKING DIRECTORY CHANGES
+# git diff HEAD
+    [compares staged and unstaged with our last commit]
+<------------------------------->
+
+VIEWING STAGED CHANGES
+# git diff --staged
+# git diff --cached
+    [compares staging area with our last commit]
+<------------------------------->
+
+DIFFING SPECIFIC FILES
+# git diff HEAD file_name
+# git diff HEAD file_name1 file_name2
+# git diff --staged file_name
+    [viewing changes within a specific file]
+<------------------------------->
+
+COMPARING CHANGES
 
 
 
