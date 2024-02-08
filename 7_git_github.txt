@@ -265,7 +265,20 @@ DIFFING SPECIFIC FILES
 <------------------------------->
 
 COMPARING CHANGES
+# git diff branch1..branch2
+# git diff branch2..branch1
+    [compares changes in the 2 branches]
+    [order we specify is important]
+<------------------------------->
 
+COMPARING CHANGES ABOUT COMMIT
+# git log --online
+    [it returs oneline commit message with commit_hash]
+# git diff commit_hash1..commit_hash2
+# git diff commit_hash2..commit_hash1
+    [compares changes between 2 commits using commit hashes]
+    [order matters]
+<------------------------------->
 
 
 
