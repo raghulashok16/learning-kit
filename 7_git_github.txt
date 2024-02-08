@@ -232,6 +232,17 @@ RESOLVING MERGE CONFLICT
 4. add your changes and then make a commit.
 <------------------------------->
 
+GIT DIFF
+1. used to view changes between commits, branches, files, our working directory and more.
+2. we can use it often to find the changes overtime.
+# git diff
+3. it compares staging area and our working directory.
+4. git declares one file as 'a' and other file as 'b'.
+5. chunks shows the line to be removed and added[@@ -3,4 +3,5 @@]
+<------------------------------->
+
+VIEWING UNSTAGED CHANGES
+1. 
 
 
 
