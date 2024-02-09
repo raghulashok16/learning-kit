@@ -297,6 +297,14 @@ STASHING
 6. use pop keyword to remove stashed changes in your stash and re-apply them to your working copy.
 <------------------------------->
 
+GIT STASH APPLY
+1. use it to apply whatever is stashed away, without removing it from the stash.
+2. this can be useful if you apply stashed changes to multiple branches.
+# git stash apply
+<------------------------------->
+
+
+
 
 
 
