@@ -303,6 +303,11 @@ GIT STASH APPLY
 # git stash apply
 <------------------------------->
 
+WORKING WITH MULTIPLE STASHES
+1. you can add multiple stashes on to the stack of stashes.
+2. they will all be stashed in the order you added them.
+<------------------------------->
+
 
 
 
