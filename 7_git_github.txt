@@ -280,5 +280,24 @@ COMPARING CHANGES ABOUT COMMIT
     [order matters]
 <------------------------------->
 
+WHY WE NEED GIT STASH
+1. changes come to the destination branch.
+2. git won't let me switch if it detects potential conflicts.
+<------------------------------->
+
+STASHING
+1. git provides an easy way of stashing these uncommited changes.
+2. so that we can return to them later, without having to make unnecessary commits.
+# git stash
+# git stash save
+3. it helps you to save changes that you are not yet ready to commit.
+4. we can stash canges and then come back to them later.
+5. running git stash will take all uncommited changes(staged and unstaged) and stash them, reverting the changes in your working copy.
+# git stash pop
+6. use pop keyword to remove stashed changes in your stash and re-apply them to your working copy.
+<------------------------------->
+
+
+
 
 
