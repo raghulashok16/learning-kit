@@ -6,7 +6,7 @@ WHAT IS REACT
 <------------------------------->
 
 WHY REACT IS SO POPULAR
-1. brfore react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
+1. before react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
 2. this tree structure is called document object model[DOM].
 3. by using this dom in javascript, we can add various functionality for our application like hiding side bar on button click, click handling form inputs, etc.
 4. with our vanilla javascript we need to type large number of lines to manage big applications.
