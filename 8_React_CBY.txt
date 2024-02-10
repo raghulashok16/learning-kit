@@ -5,3 +5,14 @@ WHAT IS REACT
 4. currently it is the most popoular and most used javascript  frontend library.
 <------------------------------->
 
+WHY REACT IS SO POPULAR
+1. brfore react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
+2. this tree structure is called document object model[DOM].
+3. by using this dom in javascript, we can add various functionality for our application like hiding bar on button click, click handling form inputs, etc.
+4. with our vanilla javascript we need to type large number of lines to manage big applications.
+5. with this approach it is hard to manage and very messy while solving bugs.
+6. so in react we dont need to worry about the vanilla javascript code.
+7. beacuse in react we divide our application into small piece of code called components.
+8. and react will take care of creating and updating dom.
+9. components is used to reusable and better organized code.
+10. 
