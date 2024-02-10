@@ -1,5 +1,5 @@
 WHAT IS REACT
-1. it is an open source javascript library used to building frontend applications.
+1. it is an open source javascript library used for building frontend applications.
 2. with react we can create fast and better frontend application.
 3. react was created by facebook in 2011.
 4. currently it is the most popoular and most used javascript  frontend library.
@@ -8,15 +8,18 @@ WHAT IS REACT
 WHY REACT IS SO POPULAR
 1. brfore react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
 2. this tree structure is called document object model[DOM].
-3. by using this dom in javascript, we can add various functionality for our application like hiding bar on button click, click handling form inputs, etc.
+3. by using this dom in javascript, we can add various functionality for our application like hiding side bar on button click, click handling form inputs, etc.
 4. with our vanilla javascript we need to type large number of lines to manage big applications.
 5. with this approach it is hard to manage and very messy while solving bugs.
 6. so in react we dont need to worry about the vanilla javascript code.
 7. beacuse in react we divide our application into small piece of code called components.
 8. and react will take care of creating and updating dom.
-9. components is used to reusable and better organized code.
+9. components is used to write reusable and better organized code.
 10. we buid all components individually and then combine them to build our page.
 11. so by creating small components we can easily manage our code and our application also works fast.
 12. with react we can create single page application which means our application loads only one time.
 13. and all pages comes without reloading the entire page.
 14. this will make our application almost 50% faster than normal applications.
+<------------------------------->
+
+
