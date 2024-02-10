@@ -1,0 +1,7 @@
+WHAT IS REACT
+1. it is an open source javascript library used to building frontend applications.
+2. with react we can create fast and better frontend application.
+3. react was created by facebook in 2011.
+4. currently it is the most popoular and most used javascript  frontend library.
+<------------------------------->
+
