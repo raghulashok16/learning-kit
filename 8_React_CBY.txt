@@ -15,4 +15,8 @@ WHY REACT IS SO POPULAR
 7. beacuse in react we divide our application into small piece of code called components.
 8. and react will take care of creating and updating dom.
 9. components is used to reusable and better organized code.
-10. 
+10. we buid all components individually and then combine them to build our page.
+11. so by creating small components we can easily manage our code and our application also works fast.
+12. with react we can create single page application which means our application loads only one time.
+13. and all pages comes without reloading the entire page.
+14. this will make our application almost 50% faster than normal applications.
