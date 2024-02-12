@@ -22,4 +22,17 @@ WHY REACT IS SO POPULAR
 14. this will make our application almost 50% faster than normal applications.
 <------------------------------->
 
+VIRTUAL DOM
+1. react is so fast because of the virtual dom feature.
+2. when we create a web page with react it will maintain a virtual representation of your webpage.
+3. so this virtual representaion is called vitual dom.
+4. whenever we want to update our webpage, we describe the changes to the virtual dom.
+5. actualy we dont directly modify the real dom, reacts virtual dom efficienty compares the new virtual dom.
+6. by this way react will know which compoents should be removed and which components should be added based on the virtual dom comparison.
+7. in this approach, we will update only necessary things and we dont need to load the whole page.
+8. Virtual dom makes updating the real dom smoother and more efficient, and it ehances the performance and increaces the user experiences.
+<------------------------------->
+
+
+
 
