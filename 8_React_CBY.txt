@@ -33,6 +33,33 @@ VIRTUAL DOM
 8. Virtual dom makes updating the real dom smoother and more efficient, and it ehances the performance and increaces the user experiences.
 <------------------------------->
 
+SOFTWARES REQUIRED
+1. node js[node pakacge manager is used to install react and some aditional features]
+2. code editor[visual studio code]
+3. es7/react snippets in vs code.
+3. browser[chrome recommended]
+<------------------------------->
+
+CREATING REACT APP
+1. create react app [method 1]
+2. vite [method 2]
+3. creact react app is old way and it take much time compare to vite.
+<------------------------------->
+
+CREATING REACT APP WITH VITE
+1. go to our project folder and run vite command in the terminal.
+# npm create vite@latest
+2. tpye your project_name and hit enter.
+3. select the framework[react] and hit enter.
+4. select javascript[recomended for basic projects] or typescript[recomended for typecscript projects] base and hit enter.
+5. now we need to change directory
+# cd project_name
+6. we need to install some pakages like webpack, babel, etc.
+# npm install
+7. open the project in vs code and open the terminal and launch with the below command.
+# npm run dev
+8. it will show the link of our application[localhost link]
+<------------------------------->
 
 
 
