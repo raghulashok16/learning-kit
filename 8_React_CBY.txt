@@ -66,13 +66,19 @@ INSIDE VITE REACT TEMPLATE
 2. without node modules we cant run our application and that is why we use # npm install command.
 3. finally we dont touch this foler.
 4. in src folder we spend all the time writing our code.
-5. in assers folder we put all our images, icons, fonts, etc.
+5. in asserts folder we put all our images, icons, fonts, etc.
 6. app.jsx is the root component of our application.
 7. app.jsx is the starting pont of the component chain and it is called root component.
 8. .jsx is the extension the react component but it is similar to the js file.
 9. unlike normal html code we use jsx[javascript XML].
 10. with jsx we can write HTML and javascript code together and this is the heart of the react application.
 11. we need to export default component so that we can use that in the other component.
-12.  
+12. app.css file is used to style our react application.
+13. we import that css file at top of the each components.
+14. main.jsx is the most important file of the react. 
+15. this main file connect our components to the index.html file.
+16. index.html is the main html file running in our react application.
+17. every component inside our react applicaton is rendered inside the root id of the html file.
+18. 
 
 
