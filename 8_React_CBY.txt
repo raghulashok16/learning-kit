@@ -80,5 +80,3 @@ INSIDE VITE REACT TEMPLATE
 16. index.html is the main html file running in our react application.
 17. every component inside our react applicaton is rendered inside the root id of the html file.
 18. 
-
-
