@@ -313,6 +313,10 @@ WORKING WITH MULTIPLE STASHES
 <------------------------------->
 
 DROPING OR CLEARING THE STASHES
+1. removing particular stash based on its stack number.
+# git stash drop stash@{0}
+2. removing all stashes from stack.
+# git stash clear
 
 
 
