@@ -306,7 +306,13 @@ GIT STASH APPLY
 WORKING WITH MULTIPLE STASHES
 1. you can add multiple stashes on to the stack of stashes.
 2. they will all be stashed in the order you added them.
+# git stash list
+    [it will list all the stash stack queue we have]
+# git stach apply stash@{stash_queue_number}
+    [it will get the changes we stash in that stack queue]
 <------------------------------->
+
+DROPING OR CLEARING THE STASHES
 
 
 
