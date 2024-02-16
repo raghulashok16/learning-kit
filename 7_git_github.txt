@@ -317,6 +317,8 @@ DROPING OR CLEARING THE STASHES
 # git stash drop stash@{0}
 2. removing all stashes from stack.
 # git stash clear
+<------------------------------->
+
 
 
 
