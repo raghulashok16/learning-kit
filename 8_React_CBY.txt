@@ -79,4 +79,13 @@ INSIDE VITE REACT TEMPLATE
 15. this main file connect our components to the index.html file.
 16. index.html is the main html file running in our react application.
 17. every component inside our react applicaton is rendered inside the root id of the html file.
-18. 
+18. in .gitignore file we can define what files should not be uploaded in git.
+19. this is because some important api keys will be there when we work on large projects.
+20. in pakage.json file all the information will be available including which version we use in our project.
+21. finally we have shorts for the commands we will be using for the terminals.
+<------------------------------->
+
+MAIN THINGS IN THE INDEX.JS
+# ReactDOM.createRoot(document.getElementById('root')).render();
+<------------------------------->
+
