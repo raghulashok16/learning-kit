@@ -158,6 +158,52 @@ MAP METHOD
 #   const products = ["product1", "product2", "product3"];
     const displayItems = products.map((product) => `<li>${product}</li>`);
     console.log(displayUtems);
+<------------------------------->
 
+FILTER METHOD
+1. filter method is used to filter array.
+2. filter is used to remove items from existing array.
+3. it will always return a new array.
+4. filter method with return.
+#   const ages = [5, 23, 14, 30, 21];
+    console.log(ages);
+    const adults = ages.filter((age) => {
+        return age > 18;
+    });
+    console.log(adults);
+5. filter method without return.
+#   const ages = [5, 23, 14, 30, 21];
+    console.log(ages);
+    const adults = ages.filter((age) => age > 18);
+    console.log(adults);
+6. filtering ages array that dont contain age 30.
+#   const ages = [5, 23, 14, 30, 21];
+    console.log(ages);
+    const adults = ages.filter((age) => age !== 30);
+    console.log(adults);
+<------------------------------->
 
+SPREAD OPERATOR
+1. combining two or more array with the old way using concat method.
+#   const arr1 = [1, 2, 3];
+    const arr2 = [4, 5, 6];
+    const arr3 = [7, 8, 9];
+    const numbers = arr1.concat(arr3, arr2);
+    console.log(numbers);
+2. combining two or more array with modern javascript using spread operator.
+#   const arr1 = [1, 2, 3];
+    const arr2 = [4, 5, 6];
+    const arr3 = [7, 8, 9];
+    const numbers = [0, ...arr1, ...arr2, 8, 99, ...arr3];
+    console.log(numbers);
+3. we can also use spread operator in objects.
+#   const obj1 = {
+        name : "raghul",
+    };
+    const obj2 = {
+        hobby : ["reading", "cricket"],
+    }
+    const user = {...obj1, ...obj2, nickName : "snipcot"};
+    console.log(user);
+<------------------------------->
 
