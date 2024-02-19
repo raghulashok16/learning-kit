@@ -275,3 +275,10 @@ BUILDING OWN COMPONENT
 7. there are 2 types of components functional and class components.
 8. class components are old because it requires advanced concept of javascript.
 9. so class components are little complex compared with functional components.
+10. install vs code extension - es7/react snippet.
+11. "rafce" shortcut keyword for component boiler plate and press tab button.
+12. every component must return a single element / nested single element.
+<------------------------------->
+
+JSX AND BABEL
+1. 
