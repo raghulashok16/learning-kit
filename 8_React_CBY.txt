@@ -279,6 +279,7 @@ BUILDING OWN COMPONENT
 11. "rafce" shortcut keyword for component boiler plate and press tab button.
 12. every component must return a single element / nested single element.
 13. otherwise it will show error "jsx expression must have one parent".
+14. always use parenthesis for the return statement in components.
 <------------------------------->
 
 JSX AND BABEL
@@ -299,3 +300,16 @@ ADDING ELEMENTS IN COMPONENT
     </>
 <------------------------------->
 
+JAVASCRIPT EXPRESSION IN JSX
+1. use curybrases and write javascript code.
+2. in this below example task value is declared inside the component function and just abouve the return statement.
+#   const Todo = () => {
+        const tasks = 12;
+        return (
+            <>
+            <h1>Tasks : {task}</h1>
+            </>
+        );
+    };
+    export default Todo;
+3. example 
