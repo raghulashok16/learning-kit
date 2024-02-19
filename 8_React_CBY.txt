@@ -242,7 +242,7 @@ MODULES / COMPONENTS IN JAVASCRIPT
 EXPORT AS DEFAULT
 1. there is some difference between export vs export default.
 #   export default function boo(){...}
-2. in importing the  export default functions there is no need of curlybraces.
+2. in importing the  export default functions there is no need of curlybraces {}.
 #   import boo from "./location";
 3. if we have one default export and some export function in a component.
 #   import boo,{func1, func2} from "./location";
@@ -264,3 +264,14 @@ BASICS OF REACT
 10. mapping lists.
 <------------------------------->
 
+BUILDING OWN COMPONENT
+1. component is reusable piece of code that used to define certain part of user interface.
+2. always create a folder inside src folder named "components".
+3. inside that component folder create our own component named "Card.jsx".
+4. always use ".jsx" extension while creating components.
+5. file name of components should start in uppercase like "Card.jsx", "Cart.jsx" otherwise it will not work in browser.
+6. always import react in every component we create. [1st line]
+#   import React from "react";
+7. there are 2 types of components functional and class components.
+8. class components are old because it requires advanced concept of javascript.
+9. so class components are little complex compared with functional components.
