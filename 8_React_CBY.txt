@@ -89,6 +89,18 @@ MAIN THINGS IN THE INDEX.JS
 # ReactDOM.createRoot(document.getElementById('root')).render();
 <------------------------------->
 
+JAVASCRIPT FUNDAMENTALS
+1. var, let & const.
+2. arrow function.
+3. accessing object.
+4. destructing.
+5. array methods. [map & filter]
+6. spread operator.
+7. ternary operator.
+8. modules.
+9. export and import in components.
+<------------------------------->
+
 VAR LET CONST
 1. these 3 keywords are used to define variables in javascript.
 2. let and const are new features in modern javascript ES6.
@@ -216,7 +228,39 @@ TERNARY / CONDITIONAL OPERATOR
     console.log(result);
 <------------------------------->
 
-MODULES IN JAVASCRIPT
+MODULES / COMPONENTS IN JAVASCRIPT
 1. module is a file that contains code to perform specific task.
 2. it can contain variables, objects, functions, etc.
-3. 
+3. dividing our code into multiple parts is called modules.
+4. export keyword is used to make a module public so that other modules can use that.
+#   export function boo(){...}
+5. developers call modules as components.
+6. import keyword is used to link a module into our current module.
+#   import {boo} from "./location";
+<------------------------------->
+
+EXPORT AS DEFAULT
+1. there is some difference between export vs export default.
+#   export default function boo(){...}
+2. in importing the  export default functions there is no need of curlybraces.
+#   import boo from "./location";
+3. if we have one default export and some export function in a component.
+#   import boo,{func1, func2} from "./location";
+4. it is a good practise to have export declaration at the end of every component code.
+#   export default boo;
+    export {function_name}
+<------------------------------->
+
+BASICS OF REACT
+1. building components.
+2. jsx & babel.
+3. adding elememts.
+4. adding js expression.
+5. attributes.
+6. events.
+7. state.
+8. useState hook.
+9. handling inputs.
+10. mapping lists.
+<------------------------------->
+
