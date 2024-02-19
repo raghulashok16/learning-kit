@@ -278,7 +278,24 @@ BUILDING OWN COMPONENT
 10. install vs code extension - es7/react snippet.
 11. "rafce" shortcut keyword for component boiler plate and press tab button.
 12. every component must return a single element / nested single element.
+13. otherwise it will show error "jsx expression must have one parent".
 <------------------------------->
 
 JSX AND BABEL
-1. 
+1. jsx code which is modern code for writing html and javascript together.
+2. our browser dont understand jsx, it understand just vanilla javascript / plain javascript.
+3. so a compiler comes into action, it will convert jsx into javascript.
+4. babel will do this work.
+<------------------------------->
+
+ADDING ELEMENTS IN COMPONENT
+1. always use fragment as parent element when adding elements in components.
+#   <React.Fragment>
+    ...
+    </React.Fragment>
+2. simple way fo react fragment
+#   <>
+    ...
+    </>
+<------------------------------->
+
