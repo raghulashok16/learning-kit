@@ -207,3 +207,16 @@ SPREAD OPERATOR
     console.log(user);
 <------------------------------->
 
+TERNARY / CONDITIONAL OPERATOR
+1. it is used for adding conditions.
+2. ternary operators are the shortcut way to write if-else condition.
+#   codition ? trueExpression : falseExpression
+#   const marks = 50;
+    const result = marks > 35 ? "pass" : "fail";
+    console.log(result);
+<------------------------------->
+
+MODULES IN JAVASCRIPT
+1. module is a file that contains code to perform specific task.
+2. it can contain variables, objects, functions, etc.
+3. 
