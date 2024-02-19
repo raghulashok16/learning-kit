@@ -141,5 +141,23 @@ OBJECT DESTRUCTION
 # const {name: userName, email: userEmail} = user;
 <------------------------------->
 
+MAP METHOD
+1. this is one of the most used array method in react appliction.
+2. it is mostly used to displaying the list of data.
+3. map with normal function.
+#   const products = ["product1", "product2", "product3"];
+    const displayItems = products.map(function(product){
+        return "<li>" + product + "</li>";
+    });
+    console.log(displayUtems);
+4. map with arrow function.
+#   const products = ["product1", "product2", "product3"];
+    const displayItems = products.map((product) => "<li>" + product + "</li>");
+    console.log(displayUtems);
+5. map using template literals.
+#   const products = ["product1", "product2", "product3"];
+    const displayItems = products.map((product) => `<li>${product}</li>`);
+    console.log(displayUtems);
+
 
 
