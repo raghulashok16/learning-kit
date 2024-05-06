@@ -732,5 +732,1318 @@ Overall explanation
 The correct syntax is object.property. This accesses a property of an object with the dot notation. The dot notation is a way to access or set the value of an object's property. The object is the name of the object. The property is the name of the property. The value of the property is returned. The dot notation can also be used to access the value of a property of an object that is stored in a variable.
 
 <------------------------------->
+What is the correct way to create a new MySQL connection in Node.js?
+Correct answer
+var connection = mysql.createConnection("host", "user", "password", "database")
 
+Overall explanation
+The correct syntax is var connection = mysql.createConnection("host", "user", "password", "database"). This creates a new MySQL connection using the createConnection() method of the mysql module. The connection parameters are passed as arguments.
+
+<------------------------------->
+
+What is the correct way to sort an array in descending order in JavaScript?
+Correct answer
+array.sort((a, b) => b - a)
+
+Overall explanation
+Sorts an array in descending order in JavaScript by using the sort method and passing in a comparison function that compares the values a and b and returns the difference between them in reverse order.
+
+<------------------------------->
+What is the result of the following JavaScript expression? !"Hello"
+Correct answer
+FALSE
+
+Overall explanation
+The result of the JavaScript expression !"Hello" is false. The ! operator is a logical NOT operator, which negates the value of the operand. In this case, the operand is a string, which is considered a truthy value. Negating a truthy value with the ! operator results in a falsy value, which is false.
+
+<------------------------------->
+What is the correct way to create an array constant in JavaScript?
+Correct answer
+const array = [1, 2, 3];
+
+Overall explanation
+Creates an array constant in JavaScript by using the const keyword.
+
+<------------------------------->
+What is the correct way to get the absolute value of a number in JavaScript?
+Correct answer
+Math.abs(number)
+
+Overall explanation
+Gets the absolute value of a number with the abs method of the Math object.
+
+<------------------------------->
+What is the correct way to get a random integer between two numbers in JavaScript?
+Correct answer
+Math.floor(Math.random() * (max - min + 1)) + min
+
+Overall explanation
+Gets a random integer between two numbers in JavaScript by using the Math.floor method and the Math.random method to generate a random number within the desired range.
+
+<------------------------------->
+What is the correct way to get the rounded up value of a number in JavaScript?
+Correct answer
+Math.ceil(number)
+
+Overall explanation
+Gets the rounded up value of a number with the ceil method of the Math object.
+
+<------------------------------->
+What is the correct way to define an object literal in JavaScript?
+Correct answer
+{ key: value }
+
+Overall explanation
+Defines an object literal by using curly braces with keys followed by a colon and values.
+
+<------------------------------->
+What is the correct way to check if an element is not in an array in JavaScript?
+Correct answer
+!array.includes(element)
+
+Overall explanation
+Checks if an element is not in an array with the includes method and the ! operator.
+
+<------------------------------->
+What is the correct way to define an anonymous function in JavaScript?
+Correct answer
+function() {}
+
+Overall explanation
+Defines an anonymous function with the function keyword and no function name.
+
+<------------------------------->
+What is the correct way to stop an event from propagating in JavaScript?
+Correct answer
+event.stopPropagation()
+
+Overall explanation
+The correct syntax is event.stopPropagation(). This prevents the event from bubbling up the DOM tree and triggering any parent elements. To prevent the default action of the event (such as a form submission), use event.preventDefault().
+
+<------------------------------->
+What is the correct way to parse a string to a number in JavaScript?
+Correct answer
+Number.parseInt(string)
+
+Overall explanation
+Parses a string to a number in JavaScript by using the Number.parseInt method and passing in the string.
+
+<------------------------------->
+What is the correct way to define an arrow function in JavaScript?
+Correct answer
+let functionName = (parameters) => {};
+
+Overall explanation
+The correct syntax is let functionName = (parameters) => {};. This defines an arrow function with the => operator. An arrow function is a concise way to define a function. The arrow function does not have its own this, arguments, and super bindings. It uses the this, arguments, and super bindings of the surrounding lexical context. The functionName is the name of the variable. The functionName is optional. If the arrow function has a name, it can be called by its name. If the arrow function does not have a name, it is called an anonymous arrow function. The parentheses () after the => operator enclose the arrow function's parameters. The curly braces {} enclose the arrow function's body. The arrow function's body is a block of statements that defines the arrow function's behavior. The let keyword is used to declare a block-scoped variable.
+
+<------------------------------->
+What is the correct way to set the value of a property of an object in JavaScript?
+Correct answer
+object.property = value
+
+Overall explanation
+Sets the value of a property of an object in JavaScript by using the object name followed by a dot and the property name, an equals sign, and the value, or by using square brackets with the property name and an equals sign followed by the value.
+
+<------------------------------->
+What is the correct way to loop through all elements in an array in JavaScript?
+Correct answer
+for (let element of array) { }
+
+Overall explanation
+Loops through all elements in an array with the for...of loop.
+
+<------------------------------->
+What is the correct way to check if an element is in an array in JavaScript?
+Correct answer
+array.includes(element)
+
+Overall explanation
+Checks if an element is in an array with the includes method.
+
+<------------------------------->
+What is the correct way to get the arc sine of a number in JavaScript?
+Correct answer
+Math.asin(number)
+
+Overall explanation
+Gets the arc sine of a number with the asin method of the Math object.
+
+<------------------------------->
+What is the correct way to create a new element in HTML using JavaScript?
+Correct answer
+var element = document.createElement("elementName")
+
+Overall explanation
+The correct syntax is var element = document.createElement("elementName"). This creates a new element with the specified name. The element can be added to the DOM using the appendChild() method.
+
+<------------------------------->
+What is the correct way to get the rounded down value of a number in JavaScript?
+Correct answer
+Math.floor(number)
+
+Overall explanation
+Gets the rounded down value of a number with the floor method of the Math object.
+
+<------------------------------->
+What is the correct way to get the current target of an event in JavaScript?
+Correct answer
+event.currentTarget
+
+Overall explanation
+Gets the current target of an event by accessing the currentTarget property of the event.
+
+<------------------------------->
+What is the correct way to create a new object using an object literal in JavaScript?
+Correct answer
+{ key: value }
+
+Overall explanation
+Creates a new object using an object literal in JavaScript by using curly braces with a list of key-value pairs separated by colons.
+
+<------------------------------->
+What is the result of the following JavaScript expression? true && false
+Correct answer
+FALSE
+
+Overall explanation
+The result of the JavaScript expression true && false is false. The && operator is a logical AND operator, which returns true only if both operands are true. In this case, only one of the operands is true, so the result is false.
+
+<------------------------------->
+What is the correct way to get the current minutes in JavaScript?
+Correct answer
+new Date().getMinutes()
+
+Overall explanation
+Gets the current minutes with the getMinutes method of a new Date object.
+
+<------------------------------->
+What is the correct way to call the super class's constructor in JavaScript?
+Correct answer
+super()
+
+Overall explanation
+The correct syntax is super(). This calls the super class's constructor with the super keyword. The super keyword is used to access the super class's constructor from the sub class's constructor. The super keyword can only be used inside the sub class's constructor. The super keyword must be called before the this keyword is used. The super keyword must be called before any other statement is executed. The super keyword is used to pass arguments to the super class's constructor. The parentheses () after the super keyword enclose the arguments. The super keyword was introduced in ECMAScript 6 (ES6).
+
+<------------------------------->
+What is the correct way to get a random number in JavaScript?
+Correct answer
+Math.random()
+
+Overall explanation
+Gets a random number with the random method of the Math object.
+
+<------------------------------->
+What is the correct way to concatenate two arrays in JavaScript?
+Correct answer
+array1.concat(array2)
+
+Overall explanation
+Concatenates two arrays with the concat method.
+
+<------------------------------->
+Which of the following is NOT a valid way to define a constant with the const keyword in JavaScript?
+Correct answer
+const x: int = 10
+
+Overall explanation
+const x: int = 10 is not a valid way to define a constant with the const keyword in JavaScript. In JavaScript, there is no int data type. Instead, use the number data type to define a numeric constant.
+
+<------------------------------->
+What is the correct way to remove an element from the end of an array in JavaScript?
+Correct answer
+array.pop()
+
+Overall explanation
+Removes an element from the end of an array with the pop method.
+
+<------------------------------->
+What is the correct way to check if a value is a finite number in JavaScript?
+Correct answer
+Number.isFinite(value)
+
+Overall explanation
+Checks if a value is a finite number in JavaScript by using the Number.isFinite method and passing in the value.
+
+<------------------------------->
+What is the correct way to define a getter method of an object in JavaScript?
+Correct answer
+get methodName() {}
+
+Overall explanation
+The correct syntax is get methodName() {}. This defines a getter method of an object with the get keyword. A getter method is a method that gets the value of an object's property. The methodName is the name of the getter method. The methodName is optional. If the getter method has a name, it can be accessed by its name. If the getter method does not have a name, it is called an anonymous getter method. The parentheses () after the methodName are optional. The curly braces {} enclose the getter method's body. The getter method's body is a block of statements that defines the getter method's behavior. The get keyword was introduced in ECMAScript 5 (ES5).
+
+<------------------------------->
+What is the correct way to convert a string to a BigInt in JavaScript?
+Correct answer
+BigInt(string)
+
+Overall explanation
+Converts a string to a BigInt in JavaScript by using the BigInt function and passing in the string.
+
+<------------------------------->
+What is the correct way to create a new Date object with a specific date in JavaScript?
+Correct answer
+new Date(year, month, day)
+
+Overall explanation
+Creates a new Date object with a specific date with the Date constructor and the year, month, and day arguments.
+
+<------------------------------->
+What is the correct way to loop through all elements in an array?
+Correct answer
+for (var i = 0; i < array.length; i++)
+
+Overall explanation
+The correct syntax is for (var i = 0; i < array.length; i++). This uses a traditional for loop to iterate through all elements in the array. The loop counter i is initialized to 0 and is incremented on each iteration. The loop continues as long as i is less than the length of the array.
+
+<------------------------------->
+What is the correct way to access the index of an element while iterating over an array in JavaScript?
+Correct answer
+for (let [index, element] of array.entries())
+
+Overall explanation
+Accesses the index of an element while iterating over an array in JavaScript by using the entries method and destructuring the loop variables.
+
+<------------------------------->
+What is the correct way to get a substring from a string in JavaScript?
+Correct answer
+string.substring(start, end)
+
+Overall explanation
+Gets a substring from a string in JavaScript by using the substring method on the string and passing in the start and end indices.
+
+<------------------------------->
+What is the correct way to get the current phase of an event in JavaScript?
+Correct answer
+event.eventPhase
+
+Overall explanation
+Gets the current phase of an event by accessing the eventPhase property of the event.
+
+<------------------------------->
+What is the correct way to include an expression in a template literal in JavaScript?
+Correct answer
+template literal with ${expression} included
+
+Overall explanation
+Includes an expression in a template literal in JavaScript by using the ${} syntax.
+
+<------------------------------->
+What is the result of the following JavaScript expression? 10 * 5
+Correct answer
+50
+
+Overall explanation
+The result of the JavaScript expression 10 * 5 is 50. The * operator is used to multiply two numbers.
+
+<------------------------------->
+What is the result of the following JavaScript expression? typeof 10
+Correct answer
+"number"
+
+Overall explanation
+The result of the JavaScript expression typeof 10 is "number". The typeof operator is used to determine the data type of a value. In this case, the value is a number, so the result is "number".
+
+<------------------------------->
+What is the correct way to define an iterator in JavaScript?
+Correct answer
+iterator = { next: function() {} }
+
+Overall explanation
+The correct syntax is iterator = { next: function() {} }. This defines an iterator with an object literal. An iterator is an object that can be iterated (looped) upon. The iterator object has a next() method that returns the next value in the iteration. The iterator is the name of the variable. The iterator is optional. If the iterator has a name, it can be accessed by its name. If the iterator does not have a name, it is called an anonymous iterator. The object literal notation {} encloses the iterator's properties. The next property is a function that returns the next value in the iteration. The next function has a value and a done property. The value property is the value of the next element. The done property is a boolean that specifies whether the iterator is finished. The next function is called with the next() method. The next() method was introduced in ECMAScript 6 (ES6).
+
+<------------------------------->
+What is the correct way to define a static method in JavaScript?
+Correct answer
+static method() {}
+
+Overall explanation
+Defines a static method with the static keyword and a method name.
+
+<------------------------------->
+What is the correct way to assign a value to a constant variable in JavaScript?
+Correct answer
+const variableName = value;
+
+Overall explanation
+The correct syntax is const variableName = value;. This assigns a value to a constant variable. The variableName is the name of the constant variable. The value is the value to be assigned to the constant variable. The value can be a literal value, an expression, or a reference to another variable. The const keyword must be used in conjunction with the assignment operator =.
+
+<------------------------------->
+What is the correct syntax for using a for loop in JavaScript?
+Correct answer
+for (i = 1; i <= 10; i++)
+
+Overall explanation
+The correct syntax for using a for loop in JavaScript is for (i = 1; i <= 10; i++). This will execute the loop body for the values of i from 1 to 10, inclusive.
+
+<------------------------------->
+What is the correct way to define a string in JavaScript?
+Correct selection
+'Hello World'
+Correct selection
+"Hello World"
+
+Overall explanation
+The correct way to define a string in JavaScript is either "Hello World" or 'Hello World', using either double or single quotes.
+
+<------------------------------->
+What is the correct way to cancel an event in JavaScript?
+Correct answer
+event.preventDefault()
+
+Overall explanation
+Cancels an event by using the preventDefault method on the event.
+
+<------------------------------->
+What is the correct way to get the square root of a number in JavaScript?
+Correct answer
+Math.sqrt(number)
+
+Overall explanation
+Gets the square root of a number with the sqrt method of the Math object.
+
+<------------------------------->
+What is the correct way to define a computed method name in an object literal in JavaScript?
+Correct answer
+{ [expression]: function() { code } }
+
+Overall explanation
+Defines a computed method name in an object literal by using square brackets around the expression followed by the function definition.
+
+<------------------------------->
+What is the correct way to define a property descriptor in an object in JavaScript?
+Correct answer
+Object.defineProperty(object, property, descriptor)
+
+Overall explanation
+Defines a property descriptor in an object by using the Object.defineProperty method followed by the object, property, and descriptor.
+
+<------------------------------->
+What is the correct way to create a template literal in JavaScript?
+Correct answer
+`template literal`
+
+Overall explanation
+Creates a template literal in JavaScript by using backticks (`).
+
+<------------------------------->
+What is the correct way to split a string into an array in JavaScript?
+Correct answer
+string.split(separator)
+
+Overall explanation
+Splits a string into an array in JavaScript by using the split method on the string and passing in the separator.
+
+<------------------------------->
+What is the correct way to define a method of an object in JavaScript?
+Correct answer
+object.method = function() { code }
+
+Overall explanation
+Defines a method of an object in JavaScript by using the object name followed by a dot, the name of the method, and an anonymous function.
+
+<------------------------------->
+What is the correct way to get the minimum value that a number can have in JavaScript?
+Correct answer
+Number.MIN_VALUE
+
+Overall explanation
+Gets the minimum value that a number can have in JavaScript by accessing the Number.MIN_VALUE property.
+
+<------------------------------->
+What is the correct way to get the current date in JavaScript?
+Correct answer
+new Date().getDate()
+
+Overall explanation
+Gets the current date with the getDate method of a new Date object.
+
+<------------------------------->
+What is the correct way to define a computed method name in an object literal in JavaScript?
+Correct answer
+{ [expression]: function() { code } }
+
+Overall explanation
+Defines a computed method name in an object literal by using square brackets around the expression followed by the function definition.
+
+<------------------------------->
+What is the correct way to include a variable in a string in JavaScript?
+Correct answer
+"string with " + variable + " included"
+
+Overall explanation
+Includes a variable in a string in JavaScript by using the + operator to concatenate the variable with the string.
+
+<------------------------------->
+What is the correct way to format a time in JavaScript?
+Correct answer
+new Date().toLocaleTimeString()
+
+Overall explanation
+Formats a time with the toLocaleTimeString method of a new Date object.
+
+<------------------------------->
+What is the correct way to bind a function to an object in JavaScript?
+Correct answer
+function.bind(object)
+
+Overall explanation
+Binds a function to an object in JavaScript by using the bind method on the function and passing in the object.
+
+<------------------------------->
+What is the correct way to convert a number to a BigInt in JavaScript?
+Correct answer
+BigInt(number)
+
+Overall explanation
+Converts a number to a BigInt in JavaScript by using the BigInt function and passing in the number.
+
+<------------------------------->
+What is the correct way to get the base 2 logarithm of a number in JavaScript?
+Correct answer
+Math.log2(number)
+
+Overall explanation
+Gets the base 2 logarithm of a number with the log2 method of the Math object.
+
+<------------------------------->
+What is the correct way to get the current state of a mouse button in an event in JavaScript?
+Correct answer
+event.button
+
+Overall explanation
+Gets the current state of a mouse button in an event by accessing the button property of the event.
+
+<------------------------------->
+What is the correct way to define a function in JavaScript?
+Correct answer
+function functionName() {}
+
+Overall explanation
+The correct syntax is function functionName() {}. This defines a function with the function keyword. The functionName is the name of the function. The functionName is optional. If the function has a name, it can be called by its name. If the function does not have a name, it is called an anonymous function. The anonymous function can be assigned to a variable or passed as an argument to another function. The parentheses () after the function name enclose the function's parameters. The curly braces {} enclose the function's body. The function's body is a block of statements that defines the function's behavior.
+
+<------------------------------->
+What is the correct way to define an undefined in JavaScript?
+Correct answer
+undefined;
+
+Overall explanation
+Defines an undefined with a literal value.
+
+<------------------------------->
+What is the correct way to access the first element in an array in JavaScript?
+Correct answer
+array[0]
+
+Overall explanation
+Accesses the first element in an array in JavaScript by using the array access operator [] and passing in the index of the element.
+
+<------------------------------->
+What is the correct way to access an element in an array in JavaScript?
+Correct answer
+array[index]
+
+Overall explanation
+Accesses an element in an array with an index in square brackets [].
+
+<------------------------------->
+What is the correct way to check if a value is NaN in JavaScript?
+Correct answer
+Number.isNaN(value)
+
+Overall explanation
+Checks if a value is NaN in JavaScript by using the Number.isNaN method and passing in the value.
+
+<------------------------------->
+What is the correct way to round a number down to the nearest integer in JavaScript?
+Correct answer
+Math.floor(number)
+
+Overall explanation
+Rounds a number down to the nearest integer in JavaScript by using the Math.floor method and passing in the number.
+
+<------------------------------->
+What is the correct way to get the index of the last occurrence of a substring in a string in JavaScript?
+Correct answer
+string.lastIndexOf(substring)
+
+Overall explanation
+Gets the index of the last occurrence of a substring in a string in JavaScript by using the lastIndexOf method on the string and passing in the substring.
+
+<------------------------------->
+What is the correct way to execute a MySQL query in Node.js?
+Correct answer
+connection.query(sql, function (error, results) {})
+
+Overall explanation
+The correct syntax is connection.query(sql, function (error, results) {}). This executes the specified SQL query using the query() method of the connection object. The callback function is passed an error object and the query results.
+
+<------------------------------->
+What is the correct way to sort the elements in an array in ascending order in JavaScript?
+Correct answer
+array.sort()
+
+Overall explanation
+Sorts the elements in an array in ascending order with the sort method.
+
+<------------------------------->
+What is the correct way to get the current state of a modifier key in an event in JavaScript?
+Correct answer
+event.modifierState(key)
+
+Overall explanation
+Gets the current state of a modifier key in an event by using the modifierState method on the event and passing in the key.
+
+<------------------------------->
+What is the correct way to remove an element from an array in JavaScript?
+Correct answer
+array.splice(index, 1)
+
+Overall explanation
+Removes an element from an array in JavaScript by using the splice method and passing in the index of the element and the number of elements to remove.
+
+<------------------------------->
+What is the correct way to create a new object in JavaScript?
+Correct answer
+new Object()
+
+Overall explanation
+Creates a new object in JavaScript by using the new Object constructor.
+
+<------------------------------->
+What is the correct way to get the maximum safe integer in JavaScript?
+Correct answer
+Number.MAX_SAFE_INTEGER
+
+Overall explanation
+Gets the maximum safe integer in JavaScript by accessing the Number.MAX_SAFE_INTEGER property.
+
+<------------------------------->
+Which of the following is NOT a primitive data type in JavaScript?
+Correct answer
+array
+
+Overall explanation
+array is not a primitive data type in JavaScript. Primitive data types in JavaScript include string, number, and boolean.
+
+<------------------------------->
+What is the correct way to delete a property of an object in JavaScript?
+Correct answer
+delete obj.property
+
+Overall explanation
+The correct syntax is delete obj.property. This removes the specified property from the object.
+
+<------------------------------->
+What is the correct way to sort an array of objects by a specific property in ascending order in JavaScript?
+Correct answer
+array.sort((a, b) => a.property - b.property)
+
+Overall explanation
+Sorts an array of objects by a specific property in ascending order in JavaScript by using the sort method and passing in a comparison function that compares the values of the property 'property' of objects a and b and returns the difference between them.
+
+<------------------------------->
+What is the correct way to get the current day of the week in JavaScript?
+Correct answer
+new Date().getDay()
+
+Overall explanation
+Gets the current day of the week with the getDay method of a new Date object.
+
+<------------------------------->
+What is the correct way to add an element to the end of an array in JavaScript?
+Correct answer
+array.push(element)
+
+Overall explanation
+Adds an element to the end of an array in JavaScript by using the push method and passing in the element.
+
+<------------------------------->
+What is the correct way to get the type of an event in JavaScript?
+Correct answer
+event.type
+
+Overall explanation
+Gets the type of an event by accessing the type property of the event.
+
+<------------------------------->
+What is the correct way to access a property of an object in JavaScript?
+Correct selection
+obj[property]
+Correct selection
+obj.property
+
+Overall explanation
+There are two ways to access a property of an object in JavaScript. The first is using the dot notation: obj.property. The second is using the square bracket notation: obj[property]. Both of these are correct.
+
+<------------------------------->
+What is the correct way to get the lowest value of two numbers in JavaScript?
+Correct answer
+Math.min(number1, number2)
+
+Overall explanation
+Gets the lowest value of two numbers with the min method of the Math object.
+
+<------------------------------->
+What is the correct way to define a destructured parameter in a function in JavaScript?
+Correct answer
+function name({ parameter }) { code }
+
+Overall explanation
+Defines a destructured parameter by using curly braces followed by the parameter name in the function definition.
+
+<------------------------------->
+What is the correct way to loop through all elements in an array in reverse order in JavaScript?
+Correct answer
+for (let element of array.reverse()) { }
+
+Overall explanation
+Loops through all elements in an array in reverse order with the for...of loop and the reverse method.
+
+<------------------------------->
+What is the correct way to get the rounded value of a number in JavaScript?
+Correct answer
+Math.round(number)
+
+Overall explanation
+Gets the rounded value of a number with the round method of the Math object.
+
+<------------------------------->
+What is the correct way to concatenate two strings in JavaScript?
+Correct answer
+string1 + string2
+
+Overall explanation
+Concatenates two strings in JavaScript by using the + operator between the strings.
+
+<------------------------------->
+What is the correct way to define a rest parameter in a function in JavaScript?
+Correct answer
+function name(...parameter) { code }
+
+Overall explanation
+Defines a rest parameter by using the ... operator followed by the parameter name in the function definition.
+
+<------------------------------->
+What is the correct way to define a computed property in an object literal in JavaScript?
+Correct answer
+{ [expression]: value }
+
+Overall explanation
+Defines a computed property in an object literal by using square brackets around the expression followed by a colon and the value.
+
+<------------------------------->
+What is the correct way to assign a value to a variable in JavaScript?
+Correct answer
+variableName = value;
+
+Overall explanation
+The correct syntax is variableName = value;. This assigns a value to a variable. The variableName is the name of the variable. The value is the value to be assigned to the variable. The value can be a literal value, an expression, or a reference to another variable. The = operator is the assignment operator.
+
+<------------------------------->
+What is the correct way to define a string in JavaScript?
+Correct answer
+'string value';
+
+Overall explanation
+Defines a string with single quotes ' or double quotes ".
+
+<------------------------------->
+What is the purpose of the let keyword in JavaScript?
+Correct answer
+To define a variable
+
+Overall explanation
+The let keyword is used to define a variable in JavaScript. It is similar to the var keyword, but variables defined with let have a block scope, whereas variables defined with var have a function scope.
+
+<------------------------------->
+What is the correct way to get the current state of a modifier key in an event in JavaScript?
+Correct answer
+event.getModifierState(key)
+
+Overall explanation
+Gets the current state of a modifier key in an event by using the getModifierState method on the event and passing in the key.
+
+<------------------------------->
+What is the correct way to include a JavaScript file in a Node.js application?
+Correct answer
+require("filename.js")
+
+Overall explanation
+The correct syntax is require("filename.js"). This includes the specified JavaScript file in the Node.js application. The require() function returns the exports of the module, which can be stored in a variable or used directly.
+
+<------------------------------->
+What is the correct way to define a property of an object in JavaScript?
+Correct answer
+object.property = value;
+
+Overall explanation
+The correct syntax is object.property = value;. This defines a property of an object with the dot notation. The dot notation is a way to access or set the value of an object's property. The object is the name of the object. The property is the name of the property. The value is the value of the property. The value can be a literal value, an expression, or a reference to another variable. The = operator is the assignment operator.
+
+<------------------------------->
+What is the correct way to get the maximum value that a number can have in JavaScript?
+Correct answer
+Number.MAX_VALUE
+
+Overall explanation
+Gets the maximum value that a number can have in JavaScript by accessing the Number.MAX_VALUE property.
+
+<------------------------------->
+What is the correct way to stop an event from propagating in JavaScript?
+Correct answer
+event.stopPropagation()
+
+Overall explanation
+Stops an event from propagating by using the stopPropagation method on the event.
+
+<------------------------------->
+What is the correct way to check if a string starts with a specific substring in JavaScript?
+Correct answer
+string.startsWith(substring)
+
+Overall explanation
+Checks if a string starts with a specific substring in JavaScript by using the startsWith method on the string and passing in the substring.
+
+<------------------------------->
+What is the correct way to remove the last element from an array in JavaScript?
+Correct answer
+array.pop()
+
+Overall explanation
+Removes the last element from an array in JavaScript by using the pop method.
+
+<------------------------------->
+What is the correct way to add an element to the end of an array in JavaScript?
+Correct answer
+array.push(element)
+
+Overall explanation
+Adds an element to the end of an array with the push method.
+
+<------------------------------->
+What is the correct way to define a number in JavaScript?
+Correct answer
+1;
+
+Overall explanation
+Defines a number with a literal value.
+
+<------------------------------->
+What is the correct way to access a property of an object in JavaScript?
+Correct answer
+object.property
+
+Overall explanation
+Accesses a property of an object in JavaScript by using the object name followed by a dot and the property name, or by using square brackets with the property name.
+
+<------------------------------->
+What is the correct way to install a Node.js module using npm?
+Correct answer
+npm install module-name
+
+Overall explanation
+The correct syntax is npm install module-name. This installs the specified module and any dependencies. The module is added to the dependencies section of the package.json file.
+
+<------------------------------->
+What is the correct way to sort an array of objects by a specific property in descending order in JavaScript?
+Correct answer
+array.sort((a, b) => b.property - a.property)
+
+Overall explanation
+Sorts an array of objects by a specific property in descending order in JavaScript by using the sort method and passing in a comparison function that compares the values of the property 'property' of objects a and b and returns the difference between them in reverse order.
+
+<------------------------------->
+What is the correct way to create an array in JavaScript?
+Correct answer
+[element1, element2, element3]
+
+Overall explanation
+Creates an array in JavaScript by using square brackets with a list of elements separated by commas.
+
+<------------------------------->
+What is the correct way to remove an element from the beginning of an array in JavaScript?
+Correct answer
+array.shift()
+
+Overall explanation
+Removes an element from the beginning of an array with the shift method.
+
+<------------------------------->
+What is the correct way to define a boolean in JavaScript?
+Correct answer
+true;
+
+Overall explanation
+Defines a boolean with a literal value.
+
+<------------------------------->
+What is the correct way to get the base 10 logarithm of a number in JavaScript?
+Correct answer
+Math.log10(number)
+
+Overall explanation
+Gets the base 10 logarithm of a number with the log10 method of the Math object.
+
+<------------------------------->
+What is the correct way to assign a value to a variable in JavaScript?
+Correct answer
+x = 10
+
+Overall explanation
+The correct way to assign a value to a variable in JavaScript is x = 10. The = operator is used to assign a value to a variable.
+
+<------------------------------->
+What is the correct syntax for using a while loop in JavaScript?
+Correct answer
+while (i <= 10)
+
+Overall explanation
+The correct syntax for using a while loop in JavaScript is while (i <= 10). This will execute the loop body as long as the condition i <= 10 is true.
+
+<------------------------------->
+What is the correct way to define a subclass in JavaScript?
+Correct answer
+class subclass extends superclass { constructor() { super(); } }
+
+Overall explanation
+Defines a subclass with the class keyword, a subclass name, the extends keyword, and a superclass name.
+
+<------------------------------->
+What is the correct way to get the natural logarithm of a number in JavaScript?
+Correct answer
+Math.log(number)
+Overall explanation
+Gets the natural logarithm of a number with the log method of the Math object.
+Domain
+Math
+Question 215
+Skipped
+What is the correct way to round a number to the nearest integer in JavaScript?
+number.round()
+round(number)
+roundNumber(number)
+Correct answer
+Math.round(number)
+Overall explanation
+Rounds a number to the nearest integer in JavaScript by using the Math.round method and passing in the number.
+Domain
+Numbers
+Question 216
+Skipped
+What is the result of the following JavaScript expression? x -= 10
+Correct answer
+-10
+TypeError
+SyntaxError
+10
+Overall explanation
+The result of the JavaScript expression x -= 10 is -10. The -= operator is used to subtract a value from a variable and assign the result to the variable. In this case, 10 is subtracted from the value of x and the result is assigned to x.
+Domain
+JavaScript Operators
+Question 217
+Skipped
+What is the correct way to get the length of a string in JavaScript?
+size(string)
+string.size
+length(string)
+Correct answer
+string.length
+Overall explanation
+Gets the length of a string in JavaScript by accessing the length property of the string.
+Domain
+Strings
+Question 218
+Skipped
+What is the result of the following JavaScript expression? typeof undefined
+"boolean"
+Correct answer
+"undefined"
+"string"
+"object"
+Overall explanation
+The result of the JavaScript expression typeof undefined is "undefined". The typeof operator is used to determine the data type of a value. In this case, the value is undefined, so the result is "undefined".
+Domain
+JavaScript Data Types
+Question 219
+Skipped
+What is the correct way to remove an event listener from an element in JavaScript?
+removeEventListener(event, listener)
+off(event, listener)
+Correct answer
+element.removeEventListener(event, listener)
+element.off(event, listener)
+Overall explanation
+Removes an event listener from an element by using the removeEventListener method followed by the event and listener.
+Domain
+Events
+Question 220
+Skipped
+What is the correct way to write to a file in Node.js?
+fs.write("filename.txt", data, function (error) {})
+fs.put("filename.txt", data, function (error) {})
+fs.save("filename.txt", data, function (error) {})
+Correct answer
+fs.writeFile("filename.txt", data, function (error) {})
+Overall explanation
+The correct syntax is fs.writeFile("filename.txt", data, function (error) {}). This writes the specified data to the specified file using the writeFile() method of the fs module. The callback function is passed an error object if an error occurs.
+Domain
+File I/O
+Question 221
+Skipped
+Which of the following is not a method of the Array object in JavaScript?
+pop()
+push()
+slice()
+Correct answer
+sort()
+Overall explanation
+sort() is not a method of the Array object in JavaScript. It is a method of the String object. The Array object has methods such as push(), pop(), and slice().
+Domain
+JavaScript Arrays
+Question 222
+Skipped
+What is the correct way to apply a function to an object in JavaScript?
+apply(function, object, arguments)
+object.apply(function, arguments)
+apply(object, function, arguments)
+Correct answer
+function.apply(object, arguments)
+Overall explanation
+Applies a function to an object in JavaScript by using the apply method on the function and passing in the object and arguments.
+Domain
+Functions
+Question 223
+Skipped
+What is the correct way to define a template literal in JavaScript?
+template = "template text";
+template: template text;
+template: "template text";
+Correct answer
+template = template text;
+Overall explanation
+The correct syntax is template = template text;. This defines a template literal with the backtick character. A template literal is a special kind of string that can contain placeholders. The placeholders are expressions that are evaluated and replaced with their values. The template literal is defined with the backtick character. The backtick character must be used to define a template literal. Thetemplateis the name of the variable. Thetemplateis optional. If the template has a name, it can be accessed by its name. If the template does not have a name, it is called an anonymous template. Thetemplate textis the string value of the template literal. Thetemplate textcan contain placeholders. The placeholders are enclosed in${}`. The template literal was introduced in ECMAScript 6 (ES6).
+Domain
+Strings
+Question 224
+Skipped
+What is the correct way to declare a variable in JavaScript?
+Correct answer
+var x
+const x = 10
+x = 10
+int x = 10
+Overall explanation
+The correct way to declare a variable in JavaScript is var x. The var keyword is used to declare a variable.
+Domain
+JavaScript Variables
+Question 225
+Skipped
+What is the correct way to find the index of an element in an array in JavaScript?
+getIndex(array, element)
+findIndex(array, element)
+array.findIndex(element)
+Correct answer
+array.indexOf(element)
+Overall explanation
+Finds the index of an element in an array in JavaScript by using the indexOf method and passing in the element.
+Domain
+Array Methods
+Question 226
+Skipped
+What is the result of the following JavaScript expression? 10 / 5
+TypeError
+"10/5"
+Correct answer
+0.5
+2
+Overall explanation
+The result of the JavaScript expression 10 / 5 is 2. The / operator is used to divide one number by another.
+Domain
+JavaScript Operators
+Question 227
+Skipped
+What is the correct way to define a default parameter in JavaScript?
+function functionName(parameter: value) {}
+function functionName(parameter) { parameter = value; }
+Correct answer
+function functionName(parameter = value) {}
+function functionName(parameter == value) {}
+Overall explanation
+The correct syntax is function functionName(parameter = value) {}. This defines a default parameter with the = operator. A default parameter is a parameter that has a default value. The default value is used if the parameter is not provided when the function is called. The default parameter is defined in the function's parameter list. The functionName is the name of the function. The parameter is the name of the parameter. The parameter is optional. If the parameter has a name, it can be accessed by its name. If the parameter does not have a name, it is called an anonymous parameter. The = operator is the assignment operator. The value is the default value of the parameter. The value can be a literal value, an expression, or a reference to another variable. The default parameter was introduced in ECMAScript 6 (ES6).
+Domain
+Functions
+Question 228
+Skipped
+What is the correct way to define a setter in an object literal in JavaScript?
+{ set: function property(value) { code } }
+{ set: property(value) { code } }
+Correct answer
+{ set property(value) { code } }
+{ set property { code } }
+Overall explanation
+Defines a setter in an object literal by using the set keyword followed by the property name and the function definition.
+Domain
+Objects
+Question 229
+Skipped
+What is the result of the following JavaScript expression? typeof "Hello"
+"number"
+"object"
+Correct answer
+"string"
+"boolean"
+Overall explanation
+The result of the JavaScript expression typeof "Hello" is "string". The typeof operator is used to determine the data type of a value. In this case, the value is a string, so the result is "string".
+Domain
+JavaScript Data Types
+Question 230
+Skipped
+What is the correct way to define a spread operator in JavaScript?
+[iterable...]
+[...iterable,]
+Correct answer
+[...iterable]
+[iterable,...]
+Overall explanation
+The correct syntax is [...iterable]. This defines a spread operator with the ... syntax. The spread operator is used to expand an iterable object into a list of elements. The spread operator can be used in an array literal, an object literal, or a function call. The ... syntax is a combination of the ... symbol and the iterable's name. The iterable is the name of the iterable object. The iterable can be an array, a string, a set, a map, or any other object that is iterable. The square brackets [] enclose the spread operator. The spread operator was introduced in ECMAScript 6 (ES6).
+Domain
+Operators
+Question 231
+Skipped
+What is the correct way to access an element in an array in JavaScript?
+index(array)
+Correct answer
+array[index]
+get(array, index)
+array.index
+Overall explanation
+Accesses an element in an array in JavaScript by using the array name followed by square brackets and the index of the element.
+Domain
+Arrays
+Question 232
+Skipped
+What is the correct way to get the minimum safe integer in JavaScript?
+Correct answer
+Number.MIN_SAFE_INTEGER
+Math.minSafeInteger()
+MIN_SAFE_INTEGER
+getMinSafeInteger()
+Overall explanation
+Gets the minimum safe integer in JavaScript by accessing the Number.MIN_SAFE_INTEGER property.
+Domain
+Number Properties
+Question 233
+Skipped
+What is the correct way to subtract two BigInts in JavaScript?
+BigInt.subtract(bigInt1, bigInt2)
+subtract(bigInt1, bigInt2)
+Correct answer
+bigInt1 - bigInt2
+bigInt1.subtract(bigInt2)
+Overall explanation
+Subtracts two BigInts in JavaScript by using the - operator.
+Domain
+BigInt
+Question 234
+Skipped
+What is the correct way to define a setter method in JavaScript?
+Method(value) {}
+set: method(value) {}
+method(value) {}
+Correct answer
+set method(value) {}
+Overall explanation
+Defines a setter method with the set keyword, a method name, and a parameter.
+Domain
+Classes
+Question 235
+Skipped
+What is the result of the following JavaScript expression? x += 10
+10
+Correct answer
+20
+SyntaxError
+TypeError
+Overall explanation
+The result of the JavaScript expression x += 10 is 20. The += operator is used to add a value to a variable and assign the result to the variable. In this case, the value of x is added to 10 and the result is assigned to x.
+Domain
+JavaScript Operators
+Question 236
+Skipped
+What is the correct way to sort an array in ascending order in JavaScript?
+sortAscending(array)
+array.sort(ascending)
+Correct answer
+array.sort((a, b) => a - b)
+array.sortAscending()
+Overall explanation
+Sorts an array in ascending order in JavaScript by using the sort method and passing in a comparison function that compares the values a and b and returns the difference between them.
+Domain
+Sorting Arrays
+Question 237
+Skipped
+What is the correct way to get the power of a number in JavaScript?
+Correct answer
+Math.pow(number, power)
+Math.getPow(number, power)
+Math.getExponent(number, power)
+Math.exponent(number, power)
+Overall explanation
+Gets the power of a number with the pow method of the Math object.
+Domain
+Math
+Question 238
+Skipped
+What is the correct way to create a new Date object with a specific time in JavaScript?
+new Date(minute, hour, second)
+new Date(hour, second, minute)
+new Date(second, minute, hour)
+Correct answer
+new Date(hour, minute, second)
+Overall explanation
+Creates a new Date object with a specific time with the Date constructor and the hour, minute, and second arguments.
+Domain
+Date
+Question 239
+Skipped
+What is the correct way to define a method in an object literal in JavaScript?
+Correct answer
+{ method() { code } }
+{ method: function() { code } }
+{ function() { code } }
+{ func() { code } }
+Overall explanation
+Defines a method in an object literal by using the method name followed by the function definition.
+Domain
+Objects
+Question 240
+Skipped
+What is the correct way to define a getter method in JavaScript?
+method() {}
+Correct answer
+get method() {}
+get: method() {}
+Method() {}
+Overall explanation
+Defines a getter method with the get keyword and a method name.
+Domain
+Classes
+Question 241
+Skipped
+What is the correct way to define an async function in JavaScript?
+Async Function() {}
+async function: async function() {}
+async function = async function() {}
+Correct answer
+async function() {}
+Overall explanation
+Defines an async function with the async function keyword and a function name.
+Domain
+Functions
+Question 242
+Skipped
+What is the correct way to create a BigInt in JavaScript?
+Correct answer
+1234567898765432123456789876543212345678987654321234567898765432123n
+1.23457E+66
+new BigInt(1234567898765432123456789876543212345678987654321234567898765432123)
+1234567898765432123456789876543212345678987654321234567898765432123L
+Overall explanation
+Creates a BigInt in JavaScript by adding an n to the end of the number.
+Domain
+BigInt
+Question 243
+Skipped
+What is the correct way to search for a specific value in an array in JavaScript, using a custom comparison function?
+find(array, function(element) { return element === value })
+Correct answer
+array.find(function(element) { return element === value })
+array.search(function(element) { return element === value })
+search(array, function(element) { return element === value })
+Overall explanation
+Searches for a specific value in an array in JavaScript, using a custom comparison function, by using the find method on the array and passing in a function that compares the element to the value.
+Domain
+Arrays
+Question 244
+Skipped
+What is the correct way to get the current timestamp in JavaScript?
+new Date().getTimestamp()
+Correct answer
+new Date().getTime()
+new Date().getCurrentTime()
+new Date().getNow()
+Overall explanation
+Gets the current timestamp with the getTime method of a new Date object.
+Domain
+Date
+Question 245
+Skipped
+What is the correct way to create a new HTTP server in Node.js?
+http.newServer(function (request, response) {})
+var server = http.create(function (request, response) {})
+Correct answer
+http.createServer(function (request, response) {})
+var server = new http.Server(function (request, response) {})
+Overall explanation
+The correct syntax is http.createServer(function (request, response) {}). This creates a new HTTP server using the createServer() method of the http module. The callback function is executed for each incoming request and is passed a request object and a response object.
+Domain
+HTTP servers
+Question 246
+Skipped
+What is the correct way to get the prototype of an object in JavaScript?
+Correct answer
+Object.getPrototypeOf(object)
+prototype.object
+getPrototypeOf(object)
+object.prototype
+Overall explanation
+Gets the prototype of an object by using the Object.getPrototypeOf method followed by the object.
+Domain
+Objects
+Question 247
+Skipped
+What is the correct way to define a spread operator in an array literal in JavaScript?
+spread[iterable]
+Correct answer
+[...iterable]
+[iterable.spread]
+[iterable...]
+Overall explanation
+Defines a spread operator in an array literal by using the ... operator followed by the iterable.
+Domain
+Functions
+Question 248
+Skipped
+What is the correct way to define a generator arrow function in JavaScript?
+def name(parameters) { code }
+Correct answer
+const name = (parameters) =>* { code }
+function* name(parameters) { code }
+const(name, parameters) { code }
+Overall explanation
+Defines a generator arrow function by using the const keyword followed by the function name, an equals sign, parameters in parentheses preceded by an arrow and the * symbol, and code in curly braces.
+Domain
+Functions
+Question 249
+Skipped
+What is the correct way to get the current seconds in JavaScript?
+new Date().getNowSeconds()
+new Date().getCurrentSeconds()
+Correct answer
+new Date().getSeconds()
+new Date().getThisSeconds()
+Overall explanation
+Gets the current seconds with the getSeconds method of a new Date object.
+Domain
+Date
+Question 250
+Skipped
+What is the correct way to get the current coordinates of the mouse in an event in JavaScript?
+clientX(event) and clientY(event)
+mouseX(event) and mouseY(event)
+Correct answer
+event.clientX and event.clientY
+event.mouseX and event.mouseY
+Overall explanation
+Gets the current coordinates of the mouse in an event by accessing the clientX and clientY properties of the event.
 
