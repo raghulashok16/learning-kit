@@ -9,3 +9,290 @@ const targetSubstring = "sample";
 const index = originalString.indexOf(targetSubstring); 
 
 console.log("Index of the first occurrence:", index); 
+
+Overall explanation
+Gets the index of the first occurrence of a substring in a string in JavaScript by using the indexOf method on the string and passing in the substring.
+
+<------------------------------->
+What is the result of the following JavaScript expression? 10 ** 5
+100000
+
+Overall explanation
+The result of the JavaScript expression 10 ** 5 is 100000. The ** operator is used to raise a number to a power. In this case, the number 10 is raised to the power of 5, resulting in 100000.
+
+<------------------------------->
+What is the result of the following JavaScript expression? 10 - 5
+5
+
+Overall explanation
+The result of the JavaScript expression 10 - 5 is 5. The - operator is used to subtract one number from another.
+
+<------------------------------->
+What is the result of the following JavaScript expression? "Hello" + " World"
+HelloWorld
+
+Overall explanation
+The result of the JavaScript expression "Hello" + " World" is "Hello World". The + operator is used to concatenate two strings together.
+
+<------------------------------->
+What is the correct syntax for creating a function in JavaScript?
+function myfunction(){
+    ....
+}
+
+Overall explanation
+The correct syntax for creating a function in JavaScript is function myFunction(). This defines a function with the name "myFunction".
+
+<------------------------------->
+What is the correct way to search for a specific value in an array in JavaScript, starting from the end of the array?
+array.lastIndexOf(value)
+
+Overall explanation
+Searches for a specific value in an array in JavaScript, starting from the end of the array, by using the lastIndexOf method on the array and passing in the value.
+
+<------------------------------->
+Which of the following is not a valid JavaScript data type?
+Object
+
+Overall explanation
+In JavaScript, the data types are Number, String, Boolean, and Null. "Object" is not a data type, but it is a type of value that can be stored in a variable.
+
+<------------------------------->
+What is the correct way to reverse the order of the elements in an array in JavaScript?
+array.reverse()
+
+Overall explanation
+Reverses the order of the elements in an array with the reverse method.
+
+<------------------------------->
+What is the correct way to define a self-invoking function in JavaScript?
+(function() { code })();
+
+Overall explanation
+Defines a self-invoking function by wrapping the function definition in parentheses, followed by another set of parentheses with no arguments to immediately invoke the function.
+
+<------------------------------->
+What is the correct way to define a WeakMap in JavaScript?
+weakMap = new WeakMap();
+
+Overall explanation
+The correct syntax is weakMap = new WeakMap();. This defines a WeakMap with the WeakMap() constructor. A WeakMap is a collection of key/value pairs in which the keys are objects and the values are arbitrary values. The WeakMap is weak because the keys are held weakly. The keys are held weakly because the keys are objects, not primitives. The values are held strongly. The WeakMap is not enumerable. The WeakMap is not iterable. The weakMap is the name of the variable. The new keyword creates an instance of the WeakMap constructor. The WeakMap() constructor is a global function that can be used without importing any module. The WeakMap() constructor can be called with an optional iterable argument. The iterable argument is an array or other iterable object whose elements are key/value pairs. The WeakMap() constructor was introduced in ECMAScript 6 (ES6).
+
+<------------------------------->
+What is the correct way to add an event listener to an element in JavaScript?
+element.addEventListener("event", function)
+
+Overall explanation
+The correct syntax is element.addEventListener("event", function). This adds an event listener to the element that listens for the specified event and calls the specified function when the event occurs.
+
+<------------------------------->
+What is the correct way to define an anonymous function in JavaScript?
+function(parameters) { code }
+
+Overall explanation
+Defines an anonymous function in JavaScript by using the function keyword followed by the parameters of the function and a code block, without a name.
+
+<------------------------------->
+What is the correct way to create an object in JavaScript?
+var obj = {property1: value1, property2: value2}
+
+Overall explanation
+The correct syntax is var obj = {property1: value1, property2: value2}. This creates a new object with two properties, property1 and property2.
+
+<------------------------------->
+What is the correct way to get the cosine of a number in JavaScript?
+Math.cos(number)
+
+Overall explanation
+Gets the cosine of a number with the cos method of the Math object.
+
+<------------------------------->
+What is the correct way to get the current month in JavaScript?
+new Date().getMonth()
+
+Overall explanation
+Gets the current month with the getMonth method of a new Date object.
+
+<------------------------------->
+What is the correct way to format a date and time in JavaScript?
+new Date().toLocaleString()
+
+Overall explanation
+Formats a date and time with the toLocaleString method of a new Date object.
+
+<------------------------------->
+What is the correct way to delete a property of an object in JavaScript?
+delete object.property
+
+Overall explanation
+Deletes a property of an object in JavaScript by using the delete operator followed by the object name and the property name.
+
+<------------------------------->
+What is the correct way to define a method of a class in JavaScript?
+method() {}
+
+Overall explanation
+The correct syntax is method() {}. This defines a method of a class. A method is a function that is associated with an instance of a class. The method can be called by the instance. The method is the name of the method. The parentheses () after the method name enclose the method's parameters. The curly braces {} enclose the method's body. The method's body is a block of statements that defines the method's behavior.
+
+<------------------------------->
+What is the correct way to iterate over the elements in an array in JavaScript?
+for (let element of array)
+
+Overall explanation
+Iterates over the elements in an array in JavaScript by using the for...of loop.
+
+<------------------------------->
+What is the correct way to get the tangent of a number in JavaScript?
+Math.tan(number)
+
+Overall explanation
+Gets the tangent of a number with the tan method of the Math object.
+
+<------------------------------->
+What is the correct way to get the current state of a key in an event in JavaScript?
+event.key
+
+Overall explanation
+Gets the current state of a key in an event by accessing the key property of the event.
+
+<------------------------------->
+What is the correct way to get the current hours in JavaScript?
+new Date().getHours()
+
+Overall explanation
+Gets the current hours with the getHours method of a new Date object.
+
+<------------------------------->
+What is the correct way to call a function in JavaScript?
+name(arguments)
+
+Overall explanation
+Calls a function in JavaScript by using the name of the function followed by the arguments in parentheses.
+
+<------------------------------->
+What is the correct way to skip an iteration in a loop while iterating over an array in JavaScript?
+continue
+
+Overall explanation
+Skips an iteration in a loop while iterating over an array in JavaScript by using the continue statement.
+
+<------------------------------->
+What is the correct way to add a new element to the end of an array?
+array.push(newElement)
+
+Overall explanation
+The correct syntax is array.push(newElement). The push() method adds a new element to the end of an array and returns the new length of the array.
+
+<------------------------------->
+What is the correct way to include a variable in a template literal in JavaScript?
+template literal with ${variable} included
+
+Overall explanation
+Includes a variable in a template literal in JavaScript by using the ${} syntax.
+
+<------------------------------->
+What is the correct way to delete a property of an object in JavaScript?
+delete object.property
+
+Overall explanation
+Deletes a property of an object by using the delete keyword followed by the object name, a period, and the property name.
+
+<------------------------------->
+What is the correct way to define a spread operator in a function call in JavaScript?
+name(...iterable)
+
+Overall explanation
+Defines a spread operator in a function call by using the ... operator followed by the iterable.
+
+<------------------------------->
+What is the correct way to check if a value is an integer in JavaScript?
+Number.isInteger(value)
+
+Overall explanation
+Checks if a value is an integer in JavaScript by using the Number.isInteger method and passing in the value.
+
+<------------------------------->
+What is the correct way to define a class in JavaScript?
+class ClassName {}
+
+Overall explanation
+The correct syntax is class ClassName {}. This defines a class with the class keyword. A class is a blueprint for creating objects. The ClassName is the name of the class. The ClassName is optional. If the class has a name, it can be accessed by its name. If the class does not have a name, it is called an anonymous class. The curly braces {} enclose the class's body. The class's body is a block of statements that defines the class's properties and methods. The class keyword was introduced in ECMAScript 6 (ES6).
+
+<------------------------------->
+What is the correct way to sort an array of strings in ascending order in JavaScript?
+array.sort()
+
+Overall explanation
+Sorts an array of strings in ascending order in JavaScript by using the sort method without a comparison function.
+
+<------------------------------->
+What is the correct way to check if a string ends with a specific substring in JavaScript?
+string.endsWith(substring)
+
+Overall explanation
+Checks if a string ends with a specific substring in JavaScript by using the endsWith method on the string and passing in the substring.
+
+<------------------------------->
+What is the correct way to define a named function expression in JavaScript?
+const name = function funcName(parameters) { code }
+
+Overall explanation
+Defines a named function expression by using the const keyword followed by the function name, an equals sign, the function keyword, the function's desired name, parameters in parentheses, and code in curly braces.
+
+<------------------------------->
+Which of the following is NOT a valid JavaScript variable name?
+1stVariable
+
+Overall explanation
+1stVariable is not a valid JavaScript variable name because it begins with a number. In JavaScript, a variable name must start with a letter, underscore (_), or dollar sign ($).
+
+<------------------------------->
+What is the correct way to create a string in JavaScript?
+"string" or 'string'
+
+Overall explanation
+Creates a string in JavaScript by using double or single quotes followed by the value of the string.
+
+<------------------------------->
+What is the correct way to define a generator function expression in JavaScript?
+const name = function*(parameters) { code }
+
+Overall explanation
+Defines a generator function expression by using the const keyword followed by the function name, an equals sign, the function* keyword, parameters in parentheses, and code in curly braces.
+
+<------------------------------->
+What is the correct way to get the target of an event in JavaScript?
+event.target
+
+Overall explanation
+Gets the target of an event by accessing the target property of the event.
+
+<------------------------------->
+What is the purpose of the const keyword in JavaScript?
+To define a constant
+
+Overall explanation
+The const keyword is used to define a constant in JavaScript. A constant is a variable whose value cannot be reassigned.
+
+<------------------------------->
+What is the correct syntax for a for loop in JavaScript?
+for (i = 0; i < 10; i++)
+
+Overall explanation
+The correct syntax is for (initialization; condition; iteration). The i variable is typically used as the loop counter and is usually initialized to 0. The loop continues as long as the condition is true. The i variable is incremented (or decremented) on each iteration.
+
+<------------------------------->
+What is the correct way to define a static property of a class in JavaScript?
+static property = value;
+
+Overall explanation
+The correct syntax is static property = value;. This defines a static property of a class with the static keyword. A static property is a property that is associated with the class itself, not with its instances. The static property can be accessed by the class or its instances. The property is the name of the static property. The value is the value of the static property. The value can be a literal value, an expression, or a reference to another variable. The = operator is the assignment operator. The static keyword was introduced in ECMAScript 6 (ES6).
+
+<------------------------------->
+What is the correct way to add an element to the beginning of an array in JavaScript?
+array.unshift(element)
+
+Overall explanation
+Adds an element to the beginning of an array with the unshift method.
+
+<------------------------------->
