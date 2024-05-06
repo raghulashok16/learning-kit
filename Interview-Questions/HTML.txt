@@ -1,19 +1,3 @@
-what is an iframe and how it works ?
-explain meta tags in HTML
-what is the purpose of alt attribute on images
-what is the difference between span and div
-how can you highlight text in HTML
-what are some of the key goals and motivations of the HTML5 specification
-what is character encoding
-what is self closing tags
-how can i get indexed better by search engines
-what is the difference between attribute and property in HTML
-describe the correct usage of the following HTML5 semantic elements, <header>, <article>, <section>, <footer>
-explain alomost standard, full standard and quirks mode
-explain the difference between block elements and inline elements
-how do you set IE compatibility mode
-what is an optional tag
-have you used different HTML templating languages before
-how do you change the direction of the HTML text
+
 
 

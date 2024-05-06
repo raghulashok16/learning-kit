@@ -1,0 +1,11 @@
+What is the correct way to get the index of the first occurrence of a substring in a string in JavaScript?
+// Example string 
+const originalString = "This is a sample string"; 
+
+// Target substring 
+const targetSubstring = "sample"; 
+
+// Finding the index of the first occurrence of the target substring 
+const index = originalString.indexOf(targetSubstring); 
+
+console.log("Index of the first occurrence:", index); 
