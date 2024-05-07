@@ -42,21 +42,21 @@ https://placehold.co/
 <------------------------------->
 READING ATTRIBUTES
 1. gets the information of src attribute
-    $('img').attr('src')
-    $('img').attr('alt')
-    $('img').attr('height')
-    $('img').attr('title')
-    $('p').attr('title')
+    $('img').attr('src');
+    $('img').attr('alt');
+    $('img').attr('height');
+    $('img').attr('title');
+    $('p').attr('title');
 
 <------------------------------->
-SETTING ATTRIBUTES
+SETTING ATTRIBUTES FOR IMAGES AND ELEMENTS
 1. sets the information of the title attribute
-    $('img').attr('title','company logo')
-    $('p').attr('title','today headline')
-    $('img').attr('src','https://placehold.co/600x400')
+    $('img').attr('title','company logo');
+    $('p').attr('title','today headline');
+    $('img').attr('src','https://placehold.co/600x400');
 2. sets the attributes of the image with the help of JSON object
 3. all values will be updated in a single line using key value pair
-    $('img').attr({src:'https://placehold.co/600x400', alt:'new image', height:'200px', width:'500px'})
+    $('img').attr({src:'https://placehold.co/600x400', alt:'new image', height:'200px', width:'500px'});
 
 <------------------------------->
 LOGGING USING CONSOLE
@@ -68,38 +68,38 @@ LOGGING USING CONSOLE
 <------------------------------->
 DIFFERT WAYS TO USE SELECTORS
 1. id selector
-    $('#img1').attr('title','company logo')
+    $('#img1').attr('title','company logo');
 2. class selector
-    $('.one').html('Updated text')
-    $('.highlight').css('color','red')
+    $('.one').html('Updated text');
+    $('.highlight').css('color','red');
 3. type selector
-    $('input[type=checkbox]')
-4. class_name:first will select and manipulate the first occurunce found in the dom with the matched class_name
-    $('.highlight:first').html('FIRST')
-5. class_name:last will select and manipulate the last occurunce found in the dom with the matched class_name
-    $('.highlight:last').html('LAST')
-    $('p:last').html('LAST')
-6. class_name:even will select and manipulate all the even occurunce found in the dom with the matched class_name
-    $('.highlight:even').html('EVEN)
-7. class_name:odd will select and manipulate all the odd occurunce found in the dom with the matched class_name
-    $('.highlight:odd').html('ODD')
+    $('input[type=checkbox]');
+4. :first will select and manipulate the first occurunce found in the dom with the matched class_name
+    $('.highlight:first').html('FIRST');
+5. :last will select and manipulate the last occurunce found in the dom with the matched class_name
+    $('.highlight:last').html('LAST');
+    $('p:last').html('LAST');
+6. :even will select and manipulate all the even occurunce found in the dom with the matched class_name
+    $('.highlight:even').html('EVEN);
+7. :odd will select and manipulate all the odd occurunce found in the dom with the matched class_name
+    $('.highlight:odd').html('ODD');
 8. li:first-child will select and manipulate the first list item found in the dom
-    $('li:first-child').html('first list item')
+    $('li:first-child').html('first list item');
 9. changes the color of the 2nd element with the class_name highlight
-    $('.highlight:eq(2)').css('color','red')
+    $('.highlight:eq(2)').css('color','red');
 10. changes the color of the 2nd element with the class_name highlight
-    $('.highlight:nth-child(2)').css('color','blue')
+    $('.highlight:nth-child(2)').css('color','blue');
 11. manipulate the text content of the 1st list element
-    $('li:eq(0)').html('first list content')
+    $('li:eq(0)').html('first list content');
 12. returns the length of the list
     $('li').length
 13. simple example that we can use for loop with jquery
     for(x=0; x<$('li').length; x++){
         $('li:eq('+x+')').html(x+1)
-    }
+    };
 14. manipulate all the list text content greater than index 2
-    $('li:gt(2)').html('larger')
+    $('li:gt(2)').html('larger');
 15. manipulate all the list text content less than index 2
-    $('li:lt(2)').html('larger')
+    $('li:lt(2)').html('larger');
 
 <------------------------------->
