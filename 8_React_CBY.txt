@@ -1,11 +1,10 @@
-WHAT IS REACT
+# ------------------------------- WHAT IS REACT ------------------------------ #
 1. it is an open source javascript library used for building frontend applications.
 2. with react we can create fast and better frontend application.
 3. react was created by facebook in 2011.
 4. currently it is the most popoular and most used javascript  frontend library.
-<------------------------------->
 
-WHY REACT IS SO POPULAR
+# -------------------------- WHY REACT IS SO POPULAR ------------------------- #
 1. before react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
 2. this tree structure is called document object model[DOM].
 3. by using this dom in javascript, we can add various functionality for our application like hiding side bar on button click, handling form inputs, etc.
@@ -20,9 +19,8 @@ WHY REACT IS SO POPULAR
 12. with react we can create single page application which means our application loads only one time.
 13. and all pages comes without reloading the entire page.
 14. this will make our application almost 50% faster than normal applications.
-<------------------------------->
 
-VIRTUAL DOM
+# -------------------------------- VIRTUAL DOM ------------------------------- #
 1. react is so fast because of the virtual dom feature.
 2. when we create a web page with react it will maintain a virtual representation of your webpage.
 3. so this virtual representaion is called vitual dom.
@@ -31,22 +29,19 @@ VIRTUAL DOM
 6. by this way react will know which compoents should be removed and which components should be added based on the virtual dom comparison.
 7. in this approach, we will update only necessary things and we dont need to load the whole page.
 8. Virtual dom makes updating the real dom smoother and more efficient, and it ehances the performance and increaces the user experiences.
-<------------------------------->
 
-SOFTWARES REQUIRED
+# ---------------------------- SOFTWARES REQUIRED ---------------------------- #
 1. node js[node pakacge manager is used to install react and some aditional features]
 2. code editor[visual studio code]
 3. es7/react snippets in vs code.
 3. browser[chrome recommended]
-<------------------------------->
 
-CREATING REACT APP
+# ---------------------------- CREATING REACT APP ---------------------------- #
 1. create react app [method 1]
 2. vite [method 2]
 3. creact react app is old way and it take much time compare to vite.
-<------------------------------->
 
-CREATING REACT APP WITH VITE
+# ----------------------- CREATING REACT APP WITH VITE ----------------------- #
 1. go to our project folder and run vite command in the terminal.
 # npm create vite@latest
 2. tpye your project_name and hit enter.
@@ -59,9 +54,8 @@ CREATING REACT APP WITH VITE
 7. open the project in vs code and open the terminal and launch with the below command.
 # npm run dev
 8. it will show the link of our application[localhost link]
-<------------------------------->
 
-INSIDE VITE REACT TEMPLATE
+# ------------------------ INSIDE VITE REACT TEMPLATE ------------------------ #
 1. we have node folder where we have all the required pakages and libraries for our application.
 2. without node modules we cant run our application and that is why we use # npm install command.
 3. finally we dont touch this foler.
@@ -83,13 +77,11 @@ INSIDE VITE REACT TEMPLATE
 19. this is because some important api keys will be there when we work on large projects.
 20. in pakage.json file all the information will be available including which version we use in our project.
 21. finally we have shorts for the commands we will be using for the terminals.
-<------------------------------->
 
-MAIN THINGS IN THE INDEX.JS
+# ------------------------ MAIN THINGS IN THE INDEX.JS ----------------------- #
 # ReactDOM.createRoot(document.getElementById('root')).render();
-<------------------------------->
 
-JAVASCRIPT FUNDAMENTALS
+# -------------------------- JAVASCRIPT FUNDAMENTALS ------------------------- #
 1. var, let & const.
 2. arrow function.
 3. accessing object.
@@ -99,9 +91,8 @@ JAVASCRIPT FUNDAMENTALS
 7. ternary operator.
 8. modules.
 9. export and import in components.
-<------------------------------->
 
-VAR LET CONST
+# ------------------------------- VAR LET CONST ------------------------------ #
 1. these 3 keywords are used to define variables in javascript.
 2. let and const are new features in modern javascript ES6.
 3. most of the developers use let and const instead of using var.
@@ -110,9 +101,8 @@ VAR LET CONST
 6. const values can not be reassigned.
 7. let values can be reassigned at any time.
 8. finally prefer to use const keyword before let.
-<------------------------------->
 
-ARROW FUNCTION
+# ------------------------------ ARROW FUNCTION ------------------------------ #
 1. arrow function is another way to define javascript functions.
 2. it is the simple and easy way.
 3. it is very usefull when working on advanced topics.
@@ -121,9 +111,8 @@ ARROW FUNCTION
 #    const sayhello = () => {
         console.log("this is a arrow function");
     }
-<------------------------------->
 
-ACCESING OBJECTS
+# ----------------------------- ACCESING OBJECTS ----------------------------- #
 1. object is a collection of key/value pair.
 2. we need the exact key to acces that particular value.
 3. square operator is used rarely.
@@ -134,9 +123,8 @@ ACCESING OBJECTS
 
     console.log(user.name);
     console.log(user["name"]);
-<------------------------------->
 
-OBJECT DESTRUCTION
+# ---------------------------- OBJECT DESTRUCTION ---------------------------- #
 1. this method is tedious because when number of key/value increases it results in large number of line codes.
 #    const user = {
         name: "raghul",
@@ -151,9 +139,8 @@ OBJECT DESTRUCTION
 # const {name, email} = user;
 4. we can destruct an obeject and also rename that using collen.
 # const {name: userName, email: userEmail} = user;
-<------------------------------->
 
-MAP METHOD
+# -------------------------------- MAP METHOD -------------------------------- #
 1. this is one of the most used array method in react appliction.
 2. it is mostly used to displaying the list of data.
 3. map with normal function.
@@ -170,9 +157,8 @@ MAP METHOD
 #   const products = ["product1", "product2", "product3"];
     const displayItems = products.map((product) => `<li>${product}</li>`);
     console.log(displayUtems);
-<------------------------------->
 
-FILTER METHOD
+# ------------------------------- FILTER METHOD ------------------------------ #
 1. filter method is used to filter array.
 2. filter is used to remove items from existing array.
 3. it will always return a new array.
@@ -193,9 +179,8 @@ FILTER METHOD
     console.log(ages);
     const adults = ages.filter((age) => age !== 30);
     console.log(adults);
-<------------------------------->
 
-SPREAD OPERATOR
+# ------------------------------ SPREAD OPERATOR ----------------------------- #
 1. combining two or more array with the old way using concat method.
 #   const arr1 = [1, 2, 3];
     const arr2 = [4, 5, 6];
@@ -217,18 +202,16 @@ SPREAD OPERATOR
     }
     const user = {...obj1, ...obj2, nickName : "snipcot"};
     console.log(user);
-<------------------------------->
 
-TERNARY / CONDITIONAL OPERATOR
+# ---------------------- TERNARY / CONDITIONAL OPERATOR ---------------------- #
 1. it is used for adding conditions.
 2. ternary operators are the shortcut way to write if-else condition.
 #   codition ? trueExpression : falseExpression
 #   const marks = 50;
     const result = marks > 35 ? "pass" : "fail";
     console.log(result);
-<------------------------------->
 
-MODULES / COMPONENTS IN JAVASCRIPT
+# -------------------- MODULES / COMPONENTS IN JAVASCRIPT -------------------- #
 1. module is a file that contains code to perform specific task.
 2. it can contain variables, objects, functions, etc.
 3. dividing our code into multiple parts is called modules.
@@ -237,9 +220,8 @@ MODULES / COMPONENTS IN JAVASCRIPT
 5. developers call modules as components.
 6. import keyword is used to link a module into our current module.
 #   import {boo} from "./location";
-<------------------------------->
 
-EXPORT AS DEFAULT
+# ----------------------------- EXPORT AS DEFAULT ---------------------------- #
 1. there is some difference between export vs export default.
 #   export default function boo(){...}
 2. in importing the  export default functions there is no need of curlybraces {}.
@@ -249,9 +231,8 @@ EXPORT AS DEFAULT
 4. it is a good practise to have export declaration at the end of every component code.
 #   export default boo;
     export {function_name}
-<------------------------------->
 
-BASICS OF REACT
+# ------------------------------ BASICS OF REACT ----------------------------- #
 1. building components.
 2. jsx & babel.
 3. adding elememts.
@@ -262,9 +243,8 @@ BASICS OF REACT
 8. useState hook.
 9. handling inputs.
 10. mapping lists.
-<------------------------------->
 
-BUILDING OWN COMPONENT
+# -------------------------- BUILDING OWN COMPONENT -------------------------- #
 1. component is reusable piece of code that used to define certain part of user interface.
 2. always create a folder inside src folder named "components".
 3. inside that component folder create our own component named "Card.jsx".
@@ -280,16 +260,14 @@ BUILDING OWN COMPONENT
 12. every component must return a single element / nested single element.
 13. otherwise it will show error "jsx expression must have one parent".
 14. always use parenthesis for the return statement in components.
-<------------------------------->
 
-JSX AND BABEL
+# ------------------------------- JSX AND BABEL ------------------------------ #
 1. jsx code which is modern code for writing html and javascript together.
 2. our browser dont understand jsx, it understand just vanilla javascript / plain javascript.
 3. so a compiler comes into action, it will convert jsx into javascript.
 4. babel will do this work.
-<------------------------------->
 
-ADDING ELEMENTS IN COMPONENT
+# ----------------------- ADDING ELEMENTS IN COMPONENT ----------------------- #
 1. always use fragment as parent element when adding elements in components.
 #   <React.Fragment>
     ...
@@ -298,9 +276,8 @@ ADDING ELEMENTS IN COMPONENT
 #   <>
     ...
     </>
-<------------------------------->
 
-JAVASCRIPT EXPRESSION IN JSX
+# ----------------------- JAVASCRIPT EXPRESSION IN JSX ----------------------- #
 1. use curybrases and write javascript code.
 2. in this below example task value is declared inside the component function and just abouve the return statement.
 #   const Todo = () => {

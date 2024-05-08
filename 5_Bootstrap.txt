@@ -1,4 +1,4 @@
-COLORS:
+# ---------------------------------- COLORS ---------------------------------- #
 1. text-primary [blue text]
 2. text-danger [red text]
 3. text-success [green text]
@@ -7,9 +7,8 @@ COLORS:
 6. text-info [sky blue text]
 7. text-light [light grey text or half white ]
 8. text-dark [black text]
-<------------------------------->
 
-BACKGROUND:
+# -------------------------------- BACKGROUND -------------------------------- #
 1. bg-primary [blue text]
 2. bg-danger  [red text]
 3. bg-success [green background]
@@ -18,16 +17,14 @@ BACKGROUND:
 6. bg-info [sky blue background]
 7. bg-light [light grey background or half white ]
 8. bg-dark [black background]
-<------------------------------->
 
-CSS VARIABLES:
+# ------------------------------- CSS VARIABLES ------------------------------ #
 1. css variables can be used in this way by add it in the css styles.
     <h1 style ="color:var(--bs-blue)"> </h1>
 # --bs-blue
 # --bs-primary
-<------------------------------->
 
-BREAKPOINTS:
+# -------------------------------- BREAKPOINTS ------------------------------- #
 1. they are the media quries that bootstrap using for its responsive design.
 
 0 to 575.98px [Xsmall devices]
@@ -35,18 +32,16 @@ BREAKPOINTS:
 768px to 991.98px [Medium devices]
 992px to 1199.98px [Large devices]
 1200 to 1399.98px [Xlarge devices]
-<------------------------------->
 
-CONTAINERS:
+# -------------------------------- CONTAINERS -------------------------------- #
 1. bootstrap have containers like - sm, md, lg, xl, xxl, fluid.
 2. sm [occupies 100% of the screen when width of the screen is smaller than 567px]
 3. md [occupies 100% of the screen when width of the screen is smaller than 768px]
 4. lg [occupies 100% of the screen when width of the screen is smaller than 992px]
 5. xl [occupies 100% of the screen when width of the screen is smaller than 1200px]
 6. xxl [occupies 100% of the screen when width of the screen is smaller than 1400px]
-<------------------------------->
 
-GRID:
+# ----------------------------------- GRID ----------------------------------- #
 1. Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content.
 2. It’s built with flexbox and is fully responsive.
 3. every col must be wrapped inside the row class.
@@ -92,9 +87,8 @@ GRID:
         <div class="col"></div>
     </div>
 14. nesting row inside column is posible
-<------------------------------->
 
-COLUMNS:
+# ---------------------------------- COLUMNS --------------------------------- #
 1. For vertical alignment make sure height and color property is set to the div so that we can see visible changes.
 
 2. align-items class should be added to the row div.
@@ -128,7 +122,6 @@ COLUMNS:
 
 7. offset class is used to move colum range from 0 to 4
 # offset-md-4
-
 
 
 

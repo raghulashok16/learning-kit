@@ -1,6 +1,6 @@
 cmd wont work, use git bash
 
-TERMINAL COMMANDS FOR FILE MANIPULATION
+# ------------------ TERMINAL COMMANDS FOR FILE MANIPULATION ----------------- #
 # ls
     [used to 'list' contents of the current working directory]
 # ls -a
@@ -37,9 +37,8 @@ TERMINAL COMMANDS FOR FILE MANIPULATION
 # rm -rf Raghul
     [to delete the folder from the current working directory]
     [r-recusive,f-force]
-<------------------------------->
 
-BASIC SETTINGS USING GIT COMMAND
+# --------------------- BASIC SETTINGS USING GIT COMMAND --------------------- #
 # git --version 
     [displays the git version installed in our machine]
 # git config --global user.name "Raghul Ashok"
@@ -50,106 +49,91 @@ BASIC SETTINGS USING GIT COMMAND
     [to check the user name in our git]
 # git config user.email
     [to check the user email in our git]
-<------------------------------->
 
-REPOSITORY = a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
+# -------------------------------- REPOSITORY -------------------------------- #
+1. a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
 <------------------------------->
 Note: before we can do anything git-related, we must initialize a repo first!, this is something you do once per project. initialize the repo in the top-level folder containing your project
 
 Note: git status command will display the status of the git only after git init command was used............
 
 Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized
-<------------------------------->
 
-THINGS TO DO BEFORE COMMITING
+# ----------------------- THINGS TO DO BEFORE COMMITING ---------------------- #
 # git status 
     [gives information on the current status of a git repository and its contents]
 # git init 
     [to create a empty git repository]
-<------------------------------->
 
-BASIC GIT WORKFLOW
+# ---------------------------- BASIC GIT WORKFLOW ---------------------------- #
 1. work on stuff --> make new files, edit files, delete files,etc
 2. add changes --> group specific changes together, in preparation of committing
 3. commit --> commit everything that was added
-<------------------------------->
 
-ADDING
+# ---------------------------------- ADDING ---------------------------------- #
 1. updates particular/all files from working area to staging area.
 # git add file1 file2 
     [file1 and file2 will be staged]
 # git add . 
     [stage all files from working area]
-<------------------------------->
 
-COMMITING
+# --------------------------------- COMMITING -------------------------------- #
 1. updates particular/all files from staging area to repository.
 # git commit
 # git commit -m "message for that commit"
     [ -m flag represents message ]
 # git commit -a -m "message for that commit"
     [-a flag represents all files]
-<------------------------------->
 
-LOGGING
+# ---------------------------------- LOGGING --------------------------------- #
 # git log 
     [logs all the commits with their messages]
-<------------------------------->
 
-ATOMIC COMMITS
+# ------------------------------ ATOMIC COMMITS ------------------------------ #
 1. commit a single change,features or single fix with a meaningfull message.
 2. this helps easier to rollback changes later on.
 3. it also helps review or project/code easier.
 4. finally commit singe thing commit/single file commit as possible.
-<------------------------------->
 
-MESSAGES
+# --------------------------------- MESSAGES --------------------------------- #
 1. always use present tense for the commit messages.
-<------------------------------->
 
-CONFIG SETTINGS FOR VS CODE
+# ------------------------ CONFIG SETTINGS FOR VS CODE ----------------------- #
 1. VS Code config must be set before using git commit because it will need a external editor to write some large messages.
 2. So search config from internet and run git config command for vs code.
 3. Also install code in vs code from cntrl+shift+p command.
-<------------------------------->
 
- ONELINE LOGGING
+ # ------------------------------ ONELINE LOGGING ----------------------------- #
  # git log --oneline
     [this will log the first line of the commit messages form all the commits]
-<------------------------------->
 
-AMMENDING COMMITS
+# ----------------------------- AMMENDING COMMITS ---------------------------- #
 1. You can redo the preious commit using he --amend option.
 2. This will add some additional files to the previous commit.
 # git commit -m "some message"
 # git add forgotten_file
 # git commit --amend
-<------------------------------->
 
-IGNORING FILES
+# ------------------------------ IGNORING FILES ------------------------------ #
 1. We can tell git which files and directories to ignore in a given repository using a .gitignore file.
 2. This is important while we use important credentials and some api keys that others dont want to see that.
-<------------------------------->
 
-BRANCHES
+# --------------------------------- BRANCHES --------------------------------- #
 1. think of branches as alternative timeline for a project.
 2. they enable us to create separate contexts where we can try new things, or even work on multiple ideas in parallel.
 3. if we make changes on one branch, they do not impact the other branches(unless we merge the changes).
-<------------------------------->
 
-MASTER BRANCH
+# ------------------------------- MASTER BRANCH ------------------------------ #
 1. default branch name is master.
 2. it does not do anything special or have fancy powers.
 3. it is just like other branches.
-<------------------------------->
 
-HEAD
+# ----------------------------------- HEAD ----------------------------------- #
 1. simply a pointer that refers to the cuurent loaction in your repository.
 2. it points to a particular branch reference.
 3. it always points to the latest commit you made.
-<------------------------------->
 
-VIEWING BRANCHES
+# ----------------------------- VIEWING BRANCHES ----------------------------- #
 1. git branch command is used to view your existing branches.
 2. default branch in every git repo is master, though you can configure this.
 # git branch
@@ -157,56 +141,48 @@ VIEWING BRANCHES
     [ * represent the active branch we are on ]
 # git branch -v
     [ -v flag gives commit message along with the branch name ]
-<------------------------------->
 
-CREATING BRANCHES
+# ----------------------------- CREATING BRANCHES ---------------------------- #
 1. git branch branch_name command is used to create new branch upon the current head.
 2. this will just create the branch and it will not switch to that branch(head stays the same).
 # git branch branch_name
-<------------------------------->
 
-SWITCHING BRANCHES
+# ---------------------------- SWITCHING BRANCHES ---------------------------- #
 1. after creating the branch we can switch between branches using these commands.
 # git switch branch_name
-<------------------------------->
 
-ANOTHER WAY OF SWITCHING BRANCHES
+# --------------------- ANOTHER WAY OF SWITCHING BRANCHES -------------------- #
 1. checkout command was made to add a standalone switch command which is much simpler.
 2. swich was the new way and checkout was the old school.
 # git checkout branch_name
-<------------------------------->
 
-CREATING AND SWITCHING BRANCHES
+# ---------------------- CREATING AND SWITCHING BRANCHES --------------------- #
 1. -c flag is used to create a new branch.
 2. swich command is used to move to that branch.
 3. this combination will do in a single line.
 # git switch -c branch_name
 # git checkout -b branch_name
     [-c and -b both will create a new branch]
-<------------------------------->
 
-SWITCHING BRANCHES WITH UNSTAGED FILES
+# ------------------ SWITCHING BRANCHES WITH UNSTAGED FILES ------------------ #
 1. data will be lost without commiting and switching branches.
 2. always commit before switching branches.
 3. data will be overwritten if we dont commit them.
-<------------------------------->
 
-DELETING BRANCHES
+# ----------------------------- DELETING BRANCHES ---------------------------- #
 # git branch -D branch_name
 # git branch -d branch_name
 1. -D is shortcut for force delete.
 2. -d is normal delete.
 3. this should be done when necessary.
-<------------------------------->
 
-RENAMING BRANCHES
+# ----------------------------- RENAMING BRANCHES ---------------------------- #
 1. move to that branch.
 2. use m flag to rename the branch.
 # git switch branch_name
 # git branch -m new_branch_name
-<------------------------------->
 
-MERGING BRANCHES
+# ----------------------------- MERGING BRANCHES ----------------------------- #
 1. branching makes it super easy to work within self-contained context, but often we want to incorporate changes from one branch into another.
 2. we can do this using git merge command.
 3. we merge branches, not specific commits.
@@ -214,7 +190,6 @@ MERGING BRANCHES
 # git switch master
 # git merge sub_branch
 5. this method is called a fast-forward merge.
-<------------------------------->
 
 MERGE CONFLICTS
 1. when merging 2 branches merge conflicts occurs.
@@ -223,69 +198,59 @@ MERGE CONFLICTS
 4. these symbols are called conflict markers.
 5. <<<<<<<<<HEAD [ actual code ] ======== 
 6. ========= [ code we try to merge ] >>>>>>>>>
-<------------------------------->
 
-RESOLVING MERGE CONFLICT
+# ------------------------- RESOLVING MERGE CONFLICT ------------------------- #
 1. vs code will open both merge files.
 2. edit the required line of code.
 3. remove the conflict markers in that document.
 4. add your changes and then make a commit.
-<------------------------------->
 
-GIT DIFF
+# --------------------------------- GIT DIFF --------------------------------- #
 1. used to view changes between commits, branches, files, our working directory and more.
 2. we can use it often to find the changes overtime.
 # git diff
 3. compares staging area and our working directory.
 4. git declares one file as 'a' and other file as 'b'.
 5. chunks shows the line to be removed and added[@@ -3,4 +3,5 @@]
-<------------------------------->
 
-VIEWING UNSTAGED CHANGES
+# ------------------------- VIEWING UNSTAGED CHANGES ------------------------- #
 # git diff
     [compares staging area and our working directory]
-<------------------------------->
 
-VIEWING WORKING DIRECTORY CHANGES
+# --------------------- VIEWING WORKING DIRECTORY CHANGES -------------------- #
 # git diff HEAD
     [compares staged and unstaged with our last commit]
-<------------------------------->
 
-VIEWING STAGED CHANGES
+# -------------------------- VIEWING STAGED CHANGES -------------------------- #
 # git diff --staged
 # git diff --cached
     [compares staging area with our last commit]
-<------------------------------->
 
-DIFFING SPECIFIC FILES
+# -------------------------- DIFFING SPECIFIC FILES -------------------------- #
 # git diff HEAD file_name
 # git diff HEAD file_name1 file_name2
 # git diff --staged file_name
     [viewing changes within a specific file]
-<------------------------------->
 
-COMPARING CHANGES
+# ----------------------------- COMPARING CHANGES ---------------------------- #
 # git diff branch1..branch2
 # git diff branch2..branch1
     [compares changes in the 2 branches]
     [order we specify is important]
-<------------------------------->
 
-COMPARING CHANGES ABOUT COMMIT
+# ---------------------- COMPARING CHANGES ABOUT COMMIT ---------------------- #
 # git log --online
     [it returs oneline commit message with commit_hash]
 # git diff commit_hash1..commit_hash2
 # git diff commit_hash2..commit_hash1
     [compares changes between 2 commits using commit hashes]
     [order matters]
-<------------------------------->
 
-WHY WE NEED GIT STASH
+# --------------------------- WHY WE NEED GIT STASH -------------------------- #
 1. changes come to the destination branch.
 2. git won't let me switch if it detects potential conflicts.
-<------------------------------->
 
-STASHING
+# --------------------------------- STASHING --------------------------------- #
 1. git provides an easy way of stashing these uncommited changes.
 2. so that we can return to them later, without having to make unnecessary commits.
 # git stash
@@ -295,29 +260,25 @@ STASHING
 5. running git stash will take all uncommited changes(staged and unstaged) and stash them, reverting the changes in your working copy.
 # git stash pop
 6. use pop keyword to remove stashed changes in your stash and re-apply them to your working copy.
-<------------------------------->
 
-GIT STASH APPLY
+# ------------------------------ GIT STASH APPLY ----------------------------- #
 1. use it to apply whatever is stashed away, without removing it from the stash.
 2. this can be useful if you apply stashed changes to multiple branches.
 # git stash apply
-<------------------------------->
 
-WORKING WITH MULTIPLE STASHES
+# ----------------------- WORKING WITH MULTIPLE STASHES ---------------------- #
 1. you can add multiple stashes on to the stack of stashes.
 2. they will all be stashed in the order you added them.
 # git stash list
     [it will list all the stash stack queue we have]
 # git stach apply stash@{stash_queue_number}
     [it will get the changes we stash in that stack queue]
-<------------------------------->
 
-DROPING OR CLEARING THE STASHES
+# ---------------------- DROPING OR CLEARING THE STASHES --------------------- #
 1. removing particular stash based on its stack number.
 # git stash drop stash@{0}
 2. removing all stashes from stack.
 # git stash clear
-<------------------------------->
 
 
 

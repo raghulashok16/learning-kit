@@ -1,4 +1,4 @@
-DATABASE
+# --------------------------------- DATABASE --------------------------------- #
 1. it's a collection of data, a method for accessing and manipulating that data.
 2. data is everywhere and it is the most valuable commodity in the world.
 3. everyday we deal with tons of data like drone footages, camera photos, location data and many more.
@@ -7,56 +7,47 @@ DATABASE
 6. without data no websites can work
 7. drum memory was used initially to store data before disk drive was introduced.
 8. drum memory is a cylindrical shaped and thats why databases have cylindrical icons.
-<------------------------------->
 
-WHAT IS A DATABASE ?
+# --------------------------- WHAT IS A DATABASE ? --------------------------- #
 1. database is a system, hardware and software that allows a user to store, organize and use data.
-<------------------------------->
 
-DATABASE BRANDS
+# ------------------------------ DATABASE BRANDS ----------------------------- #
 1. maria db, microsoft sql server, cassandra, mongo db, my sql, oracle database, redis, sql lite, postgres sql, ibm db2 and many more
-<------------------------------->
 
-THINGS TO KNOW IN DATABASE
+# ------------------------ THINGS TO KNOW IN DATABASE ------------------------ #
 1. how to put data in db
 2. how to use/update/learn from data
 3. how to remove data
-<------------------------------->
 
-CONFUSING ACRONYMS
+# ---------------------------- CONFUSING ACRONYMS ---------------------------- #
 1. DBMS - DataBase Management System
 2. RDBMS - Relational DataBase Management System
 3. SQL - Structured Query Language
-<------------------------------->
 
-FIVE DATA MODELS
+# ----------------------------- FIVE DATA MODELS ----------------------------- #
 1. relational model [mysql, postgres] [most popular, e-comerce]
 2. document model [mongo db, firebase] [data in document]
 3. key value model [dinamo db ] [simplest way to access data]
 4. graph model [more complex, data connected in differentways, social media uses these model]
 5. wide columnar model [newly introduced] [cassandra, google big table]
-<------------------------------->
 
-WHAT IS SQL ?
+# ------------------------------- WHAT IS SQL ? ------------------------------ #
 1. SQL is a language that is used to talk to a databases.
 2. SQL statement is nothing but a Query
 3. SELECT * FROM USERS
 4. the above is the Query or SQL Statement
-<------------------------------->
 
-QUERY BREAKDOWN
+# ------------------------------ QUERY BREAKDOWN ----------------------------- #
 # SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
 1. NAME --> identifier
 2. WHERE --> keyword
 3. ROLE = 'MANAGER' --> condition
 4. 'MANAGER' --> expression
-<------------------------------->
 
-DECLARATIVE VS IMPERATIVE
+# ------------------------- DECLARATIVE VS IMPERATIVE ------------------------ #
 
-<------------------------------->
 
-DATABAS MODEL
+# ------------------------------- DATABAS MODEL ------------------------------ #
 1. HIERARCHICAL [TREE LIKE FLOW CHART DESIGN]
 2. NETWORKING 
 3. ENTITY-RELATIONSHIP
@@ -64,154 +55,135 @@ DATABAS MODEL
 5. OBJECT ORIENTED
 6. FLAT
 7. SEMI-STRUCTURED
-<------------------------------->
 
-CRUD
+# ----------------------------------- CRUD ----------------------------------- #
 c --> create
 r --> read
 u --> update
 d --> delete
-<------------------------------->
 
-TABLE
+# ----------------------------------- TABLE ---------------------------------- #
 1. table is the representation of object
 2. each table has its name
 3. each column represent specific types of data
 4. each row represent singular piece of data
-<------------------------------->
 
-COLUMN
+# ---------------------------------- COLUMN ---------------------------------- #
 1. each column has its own name
 2. collection of columns is called degree
 3. we can specify what data should be put in that column and that concept is called domain/constraint
 4. column is also called as attributes
-<------------------------------->
 
-ROWS
+# ----------------------------------- ROWS ----------------------------------- #
 1. rows are also called as tuples
 2. tuple is nothing but single record of data
 3. tuples is nothing but multiple record of data
 4. each tuples must follow the column constraint
 5. collection of rows/tuples is called cardinallity
-<------------------------------->
 
-PRIMARY KEY AND FOREIGN KEY
+# ------------------------ PRIMARY KEY AND FOREIGN KEY ----------------------- #
 1. primary key uniquely identify data in the table
 2. foreign key is used to add data to the main table but it is a primary key in the secondary table
 3. foreign key is used to make a relationship between two or more tables
-<------------------------------->
 
-OLTP vs OLAP
+# ------------------------------- OLTP vs OLAP ------------------------------- #
 1. realtional databases support day to day office work and support in analysis
 2. OLTP --> ONLINE TRANSACTION PROCESSING
 3. OLAP --> ONLINE ANALYTICAL PROCESSING
 
-exercise [OLTP and OLAP]
+# ------------------------- exercise [OLTP and OLAP] ------------------------- #
 1. a database is being used to log orders and customers --> OLTP 
 2. a database is being used to figure out what new products we should offer --> OLAP
 3. a database is being used to derive statistics for reporting to the executives --> OLAP
 4. a database is being used to keep track of logged in users --> OLTP
-<------------------------------->
 
-POSTGRESS DEFAULTS
+# ---------------------------- POSTGRESS DEFAULTS ---------------------------- #
 # url - localhost
 # port - 5432
 # username - postgres
 # password - root
 # connection url - local host
-<------------------------------->
 
-SQL COMMANDS
+# ------------------------------- SQL COMMANDS ------------------------------- #
 1. DDL --> [ CREATE, ALTER, DROP, RENAME, TRUNCATE, COMMENT ] [ DATA DEFINITION LANGUAGE ]
 2. DQL --> [ SELECT ] [ DATA QUERY LANGUAGE ]
 3. DML --> [ INSERT, UPDATE, DELETE, MERGE, CALL, EXPLAIN PLAN, LOCK TABLE ] [ DATA MODIFICATION LANGUAGE ]
 4. DCL --> [ GRANT, REVOKE ] [ DATA CONTROL LANGUAGE ]
-<------------------------------->
 
 NOTE: "" --> double quotes [ COLUMN ], '' --> single quotes [ text/string ]
  
-EXERCISE
+# --------------------------------- EXERCISE --------------------------------- #
 1. give me a list of all employees in the company [ SELECT * FROM "employees" ]
 2. how many departments are the in the company? [ SELECT * FROM "departments" ]
 3. how many times has employee 10001 had a rise? [  ]
 4. what title does 10006 have? [  ]
-<------------------------------->
 
-RENAMING COLUMS [ SELECT colum as '<new_name>' ]
+# ------------- RENAMING COLUMS [ SELECT colum as '<new_name>' ] ------------- #
 1. SELECT emp_no AS "employee id" FROM "employees" 
 2. SELECT dob AS "birthday" FROM "employees" 
-<------------------------------->
 
-COLUMN CONCATTENATION
+# --------------------------- COLUMN CONCATTENATION -------------------------- #
 1. SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles [ 10001 is a senior engineer ]
 2. CONCAT(TEXT,TEXT)
 3. CONACT(COLUMN1,COLUMN2) 
 4. SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
-<------------------------------->
 
-FUNCTIONS IN SQL
+# ----------------------------- FUNCTIONS IN SQL ----------------------------- #
 1. function is a set of steps that creates a single value
 2. Two types of functions in SQL are aggregate and scalar function
 3. AGGREGATE --> it works on all given data and gives a single data output, operate on many records to produce 1 value
 4. SCALAR --> it works on individual row and gives individual result for each row, operate on each record independently
-<------------------------------->
 
-AGGREGATE FUNCTIONS
+# ---------------------------- AGGREGATE FUNCTIONS --------------------------- #
 # AVG()
 # COUNT() [ SELECT count(emp_no) FROM employees; ]
 # MIN() 
 # MAX() [ SELECT max(salary) FROM salaries; ]
 # SUM() [ SELECT sum(salary) FROM slaries; ]
-<------------------------------->
 
-ADDING COMMENTS
+# ------------------------------ ADDING COMMENTS ----------------------------- #
 -- SINGLE LINE COMMENT
 
 /*
 *MULTI LINE
 *COMMENTS
 */
-<------------------------------->
 
-COMMON SELECT MISTAKES
+# -------------------------- COMMON SELECT MISTAKES -------------------------- #
 1. misspelling commands
 2. using ; instad of , or vice versa
 3. using " instad of '
 4. " is for tables
 5. ' is for text/string
 6. invalid column name
-<------------------------------->
 
-HOW TO FILTER DATA [ WHERE keyword ]
+# ------------------- HOW TO FILTER DATA [ WHERE keyword ] ------------------- #
 1. get a list of all female employees [ SELECT first_name FROM employees WHERE gender = 'F'; ]
-<------------------------------->
 
-AND KEYWORD [ used to filter data based on two or more condition ] [ chainning ]
+# -------------------------------- AND KEYWORD ------------------------------- #
+# ---------- [ used to filter data based on two or more condition ] ---------- #
+# ------------------------------- [ chainning ] ------------------------------ #
 1. SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
 2. SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023'; [ filtering based on 3 conditions ]
-<------------------------------->
 
-OR KEYWORD
+# -------------------------------- OR KEYWORD -------------------------------- #
 1. SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
 2. SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
 3. SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
 4. SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
-<------------------------------->
 
-FILTER WITH AND/OR [ LOGICAL OPERATORS ]
+# ----------------- FILTER WITH AND/OR [ LOGICAL OPERATORS ] ----------------- #
 1. how many female customers do we have from the state of kerala or tamilnadu.
 # SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
-<------------------------------->    
 
-NOT KEYWORD [ filter everthing except some data ]
+# ------------- NOT KEYWORD [ filter everthing except some data ] ------------ #
 # SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
 1. how many customers are not 55 years age ?
 # SELECT COUNT(age) FROM customers NOT age = 55; 
 2. how many customers are not 55 and 76 years age ?
 # SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
-<------------------------------->
 
-COMPARISION OPERATORS
+# --------------------------- COMPARISION OPERATORS -------------------------- #
 1. who over the age of 44 has an income of 100000?
 # SELECT name from employees WHERE age >44 AND income = 100000;
 
@@ -224,18 +196,14 @@ COMPARISION OPERATORS
 # 1 <> 0 [true]
 # 'Mo' = 'mo' [false]
 
-<------------------------------->
-
-ORDER OF OPERATION
+# ---------------------------- ORDER OF OPERATION ---------------------------- #
 1. FROM [ which table ]
 2. WHERE [ what to filter the data ]
 3. SELECT [ display the selected / sorted data ]
-<------------------------------->
 
-OPERATOR PRECEDENCE
+# ---------------------------- OPERATOR PRECEDENCE --------------------------- #
 1. A statement having multiple operators is evaluated based on the priority of operators.
     [parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or]
 2. if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left.
 3. use parenthesis while using operators to avoid clash between operators.
-<------------------------------->
 

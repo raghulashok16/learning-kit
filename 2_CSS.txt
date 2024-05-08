@@ -1,53 +1,45 @@
-CSS
+# ------------------------------------ CSS ----------------------------------- #
 1. Cascading Style Sheet
 2. CSS is responsible for the styling/presentation of the page
-<------------------------------->
 
-RELEASE HISTORY
+# ------------------------------ RELEASE HISTORY ----------------------------- #
 1. CSS1 [releasd in 1996]
 2. CSS2 [releasd in 1998]
 3. CSS3 [Split up into different modules versions -color modules, text modules, image module, etc. no additional versions in CSS]
-<-------------------------------> 
 
-MUST LEARN IN CSS
+# ----------------------------- MUST LEARN IN CSS ---------------------------- #
 1. BASIC [css introduction, selectors, css features, combinators, positionaing]
 2. ADVANCED [background & images, dimensions, units, sizes, javascript & css, responsiveness, styling forms, working with text & fonts]
 3. EXPERT [flexbox, CSS grid, transformations, transitions & animations, writing future-proof CSS]
-<------------------------------->
 
-WAYS TO ADD CSS TO HTML
+# -------------------------- WAYS TO ADD CSS TO HTML ------------------------- #
 1. Inline CSS [adding style attribute to any tag in html file]
 2. Internal CSS [adding style tag in the head tag and adding styles inside it]
 3. External CSS [using ext css file we link using link tag inside head tag]
-<------------------------------->
 
-FONTS
+# ----------------------------------- FONTS ---------------------------------- #
 1. we can add multiple fonts
 # font-family: "Times New Roman", Times, serif;
 # font-family: Arial, Helvetica, sans-serif;
 # font-family: "Lucida Console", "Courier New", monospace;
-<------------------------------->
 
-GOOGLE FONTS
+# ------------------------------- GOOGLE FONTS ------------------------------- #
 step 1: https://fonts.google.com/
 step 2: Select any font and copy its link tag and paste it in our head tag
 step 3: copy its font family and paste it in our css file
-<------------------------------->
 
-FONT COLOR
+# -------------------------------- FONT COLOR -------------------------------- #
 # color: blue;
 # color: green;
-<------------------------------->
 
-SELECTORS
+# --------------------------------- SELECTORS -------------------------------- #
 1. Element Selectors [ h1{} ]
 2. Class Selector [ .class_name {} ]
 3. Universal Selectors [ *{} ]
 4. ID Selectors [ #id_name {} ]
 5. Attribute Selectors [ [disabled] {} ]
-<------------------------------->
 
-CASCADING AND SPECIFICITY
+# ------------------------- CASCADING AND SPECIFICITY ------------------------ #
 1. Cascading means multiple rules can be applied to the same element
 2. Specificity is used to resolve conflicts araising from multiple rules
 3. Order of Specificity
@@ -55,13 +47,11 @@ CASCADING AND SPECIFICITY
     b. #ID
     c. .class, :pseudo, [attribute]
     e. <Tag> , ::pseudo-element
-<------------------------------->
 
-INHERITANCE
+# -------------------------------- INHERITANCE ------------------------------- #
 1. In CSS inheritance, the child element will naturally inherit properties from its parent element.
-<------------------------------->
 
-COMBINATORS
+# -------------------------------- COMBINATORS ------------------------------- #
 1. Adjacent Sibling  
     # h2 + p { color : red; } 
     [Element share the same  parent, Second  element comes immediately after first element]
@@ -74,9 +64,8 @@ COMBINATORS
 4. Desendant
     # div p { color : red; }
     [Second element is a desendant of first element]
-<------------------------------->
 
-VALUE TYPES
+# -------------------------------- VALUE TYPES ------------------------------- #
 1. pre-defined options
     # display : block;
     # overflow : auto;
@@ -91,9 +80,8 @@ VALUE TYPES
 4. functions
     # background : url(...);
     # transformat : scale(...);
-<------------------------------->
 
-BOX MODEL
+# --------------------------------- BOX MODEL -------------------------------- #
 1. In CSS, the term "box model" is used when talking about design and layout.
 2. The CSS box model is essentially a box that wraps around every HTML element.
 3. It consists of: margins, borders, padding, and the actual content.
@@ -110,12 +98,11 @@ NOTE: Important: When you set the width and height properties of an element with
 + 10px (left + right border)
 + 0px (left + right margin)
 = 350px
-<------------------------------->
 
-BORDER
+# ---------------------------------- BORDER ---------------------------------- #
 1. The CSS border properties allow you to specify the style, width, and color of an element's border. 
 
-BORDER STYLE
+# ------------------------------- BORDER STYLE ------------------------------- #
 1. The border-style property specifies what kind of border to display.
 2. The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
 
@@ -143,7 +130,7 @@ The following values are allowed in border-style property:
 11. 4 sides
     # border-style: dotted dashed solid double;
 
-BORDER WIDTH
+# ------------------------------- BORDER WIDTH ------------------------------- #
 1. The border-width property specifies the width of the four borders.
 2. The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
 # border-width: 5px;
@@ -153,5 +140,5 @@ BORDER WIDTH
 # border-width: 20px 5px; [20px top and bottom, 5px on the sides]
 # border-width: 25px 10px 4px 35px; [25px top, 10px right, 4px bottom and 35px left]
 
-BORDER COLOR
+# ------------------------------- BORDER COLOR ------------------------------- #
 1. The border-color property is used to set the color of the four borders.

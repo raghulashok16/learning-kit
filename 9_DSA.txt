@@ -1,14 +1,12 @@
-BIG O NOTATION
+# ------------------------------ BIG O NOTATION ------------------------------ #
 1. we can have different solutions when solving chalenges.
 2. but there will be only one solution which is the best among every solution.
 3. this best is determined by the big o notation.
 4. so performance and memory plays the key role for finding the best code.
-<------------------------------->
 
-WHAT DOES BETTER MEAN ?
+# -------------------------- WHAT DOES BETTER MEAN ? ------------------------- #
 1. faster. [find which method is best to increase speed of our code]
 2. less memory-intensive.
 3. more readable.
-<------------------------------->
 
 
