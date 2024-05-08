@@ -23,5 +23,4 @@ function datatypes() {
     console.log(typeof (value_2));
     console.log(typeof (null));
     // [typeof null is object and it is not correct for leagacy reasons]
-}
-
+};
