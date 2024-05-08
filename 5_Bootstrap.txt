@@ -127,6 +127,8 @@
 11. d-{breakpoint}-{value}
 
 # ----------------------------------- FLEX ----------------------------------- #
+
+[ enable flex behaviour ]
 1. d-flex
 2. d-inline-flex
 3. d-sm-flex
@@ -139,27 +141,140 @@
 10. d-xl-inline-flex
 11. d-xxl-flex
 12. d-xxl-inline-flex
-13. flex-row
-14. flex-row-reverse
-15. flex-column
-16. flex-column-reverse
-17. flex-sm-row
-18. flex-sm-row-reverse
-19. flex-sm-column
-20. flex-sm-column-reverse
-21. flex-md-row
-22. flex-md-row-reverse
-23. flex-md-column
-24. flex-md-column-reverse
-25. flex-lg-row
-26. flex-lg-row-reverse
-27. flex-lg-column
-28. flex-lg-column-reverse
-29. flex-xl-row
-30. flex-xl-row-reverse
-31. flex-xl-column
-32. flex-xl-column-reverse
-33. flex-xxl-row
-34. flex-xxl-row-reverse
-35. flex-xxl-column
-36. flex-xxl-column-reverse
+
+[ direction ]
+1. flex-row
+2. flex-row-reverse
+3. flex-column
+4. flex-column-reverse
+5. flex-sm-row
+6. flex-sm-row-reverse
+7. flex-sm-column
+8. flex-sm-column-reverse
+9. flex-md-row
+10. flex-md-row-reverse
+11. flex-md-column
+12. flex-md-column-reverse
+13. flex-lg-row
+14. flex-lg-row-reverse
+15. flex-lg-column
+16. flex-lg-column-reverse
+17. flex-xl-row
+18. flex-xl-row-reverse
+19. flex-xl-column
+20. flex-xl-column-reverse
+21. flex-xxl-row
+22. flex-xxl-row-reverse
+23. flex-xxl-column
+24. flex-xxl-column-reverse
+
+[ justify content ]
+1. justify-content-start
+2. justify-content-end
+3. justify-content-center
+4. justify-content-between
+5. justify-content-around
+6. justify-content-evenly
+7. justify-content-sm-start
+8. justify-content-sm-end
+9. justify-content-sm-center
+10. justify-content-sm-between
+11. justify-content-sm-around
+12. justify-content-sm-evenly
+13. justify-content-md-start
+14. justify-content-md-end
+15. justify-content-md-center
+16. justify-content-md-between
+16. justify-content-md-around
+17. justify-content-md-evenly
+18. justify-content-lg-start
+19. justify-content-lg-end
+20. justify-content-lg-center
+21. justify-content-lg-between
+22. justify-content-lg-around
+23. justify-content-lg-evenly
+24. justify-content-xl-start
+25. justify-content-xl-end
+26. justify-content-xl-center
+27. justify-content-xl-between
+28. justify-content-xl-around
+29. justify-content-xl-evenly
+30. justify-content-xxl-start
+31. justify-content-xxl-end
+32. justify-content-xxl-center
+33. justify-content-xxl-between
+34. justify-content-xxl-around
+35. justify-content-xxl-evenly
+
+[ Align items ]
+1. align-items-start
+2. align-items-end
+3. align-items-center
+4. align-items-baseline
+5. align-items-stretch
+6. align-items-sm-start
+7. align-items-sm-end
+8. align-items-sm-center
+9. align-items-sm-baseline
+10. align-items-sm-stretch
+11. align-items-md-start
+12. align-items-md-end
+13. align-items-md-center
+14. align-items-md-baseline
+15. align-items-md-stretch
+16. align-items-lg-start
+17. align-items-lg-end
+18. align-items-lg-center
+19. align-items-lg-baseline
+20. align-items-lg-stretch
+21. align-items-xl-start
+22. align-items-xl-end
+23. align-items-xl-center
+24. align-items-xl-baseline
+25. align-items-xl-stretch
+26. align-items-xxl-start
+27. align-items-xxl-end
+28. align-items-xxl-center
+29. align-items-xxl-baseline
+30. align-items-xxl-stretch
+
+[ Align self ]
+1. align-self-start
+2. align-self-end
+3. align-self-center
+4. align-self-baseline
+5. align-self-stretch
+6. align-self-sm-start
+7. align-self-sm-end
+8. align-self-sm-center
+9. align-self-sm-baseline
+10. align-self-sm-stretch
+11. align-self-md-start
+12. align-self-md-end
+13. align-self-md-center
+14. align-self-md-baseline
+15. align-self-md-stretch
+16. align-self-lg-start
+17. align-self-lg-end
+18. align-self-lg-center
+19. align-self-lg-baseline
+20. align-self-lg-stretch
+21. align-self-xl-start
+22. align-self-xl-end
+23. align-self-xl-center
+24. align-self-xl-baseline
+25. align-self-xl-stretch
+26. align-self-xxl-start
+27. align-self-xxl-end
+28. align-self-xxl-center
+29. align-self-xxl-baseline
+30. align-self-xxl-stretch
+
+[ Fill ]
+1. flex-fill
+2. flex-sm-fill
+3. flex-md-fill
+4. flex-lg-fill
+5. flex-xl-fill
+6. flex-xxl-fill
+
