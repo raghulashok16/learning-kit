@@ -1,127 +1,165 @@
-# ---------------------------------- COLORS ---------------------------------- #
-1. text-primary [blue text]
-2. text-danger [red text]
-3. text-success [green text]
-4. text-secondary [grey text]
-5. text-waning [yellow text]
-6. text-info [sky blue text]
-7. text-light [light grey text or half white ]
-8. text-dark [black text]
-
-# -------------------------------- BACKGROUND -------------------------------- #
-1. bg-primary [blue text]
-2. bg-danger  [red text]
-3. bg-success [green background]
-4. bg-secondary [grey background]
-5. bg-waning [yellow background]
-6. bg-info [sky blue background]
-7. bg-light [light grey background or half white ]
-8. bg-dark [black background]
-
-# ------------------------------- CSS VARIABLES ------------------------------ #
-1. css variables can be used in this way by add it in the css styles.
-    <h1 style ="color:var(--bs-blue)"> </h1>
-# --bs-blue
-# --bs-primary
+# -------------------- BASIC UTILITY CLASSES IN BOOTRAP 5 -------------------- #
 
 # -------------------------------- BREAKPOINTS ------------------------------- #
-1. they are the media quries that bootstrap using for its responsive design.
+[they are the media quries that bootstrap using for its responsive design]
 
-0 to 575.98px [Xsmall devices]
-576px to 767.98px [Small devices]
-768px to 991.98px [Medium devices]
-992px to 1199.98px [Large devices]
-1200 to 1399.98px [Xlarge devices]
+0 to 575.98px [ Xsmall devices ]
+576px to 767.98px [ Small devices ]
+768px to 991.98px [ Medium devices ]
+992px to 1199.98px [ Large devices ]
+1200 to 1399.98px [ Xlarge devices ]
 
 # -------------------------------- CONTAINERS -------------------------------- #
 1. bootstrap have containers like - sm, md, lg, xl, xxl, fluid.
-2. sm [occupies 100% of the screen when width of the screen is smaller than 567px]
-3. md [occupies 100% of the screen when width of the screen is smaller than 768px]
-4. lg [occupies 100% of the screen when width of the screen is smaller than 992px]
-5. xl [occupies 100% of the screen when width of the screen is smaller than 1200px]
-6. xxl [occupies 100% of the screen when width of the screen is smaller than 1400px]
+2. sm [ occupies 100% of the screen when width of the screen is smaller than 567px ]
+3. md [ occupies 100% of the screen when width of the screen is smaller than 768px ]
+4. lg [ occupies 100% of the screen when width of the screen is smaller than 992px ]
+5. xl [ occupies 100% of the screen when width of the screen is smaller than 1200px ]
+6. xxl [ occupies 100% of the screen when width of the screen is smaller than 1400px ]
+7. fluid [ takes full width ]
 
 # ----------------------------------- GRID ----------------------------------- #
-1. Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content.
-2. It’s built with flexbox and is fully responsive.
-3. every col must be wrapped inside the row class.
-    <div class="row">
-        <div class="col"></div>
-    </div>
-4. maximum number of columns for numbers inside the screen is 12.
-5. if we go on and add 13 columns then the layout will be broken.
-6. we can use col-1 to col-12, but we should not go beyond twelve.
-    <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6"></div>
-    </div>
-7. example col-6 and col-6 is correct but col-8 and col-8 is not correct and it will break the layout
-8. we can use a column responsive using the containers
-    <div class="row">
-        <div class="col-md"></div>
-        <div class="col-xxl"></div>
-    </div>
-9. we can add different width according to the screen, same column behaves differently
-    <div class="row">
-        <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-4 col-sm-8 col-5"></div>
-    </div>
-10. to make a column that has variable width according to the content, use col-auto
-    <div class="row">
-        <div class="col-xxl-auto col-xl-6"></div>
-    </div>
-11. to stack to horizontal, use col-breakpoint
-    <div class="row">
-        <div class="col-xxl"></div>
-        <div class="col-xxl"></div>
-    </div>
-12. to specify how many columns inside the row, if we add beyond the value the the layout will be broken
-    <div class="row row-cols-2">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
-13. row and columns based on the width of the content
-    <div class="row row-cols-auto">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
-14. nesting row inside column is posible
+1. container []
+2. row [ used to create a row inside container ]
+3. col [ used to create a col inside row ] [ max 12 col ]
+4. col-2, col-12 [ we can specify the col sizes ]
+5. col-md-6, col-lg-4 [ custom col sizes for custom device size ]
+6. col-sm-8, col-sm-6 [ this col will be stacked horizontally at sm ]
+7. row-cols-2 [ this will create 2 cols and remaining cols will be stacked ]
 
-# ---------------------------------- COLUMNS --------------------------------- #
-1. For vertical alignment make sure height and color property is set to the div so that we can see visible changes.
+# ---------------------------------- ALIGNMENT --------------------------------- #
+[For vertical alignment make sure height and color property is set to the div so that we can see visible changes]
 
-2. align-items class should be added to the row div.
-# align-items-center [center all the col in vertical direction in the row]
-# align-items-start [align all the col to the top of the row]
-# align-items-end [align all the col to the bottom of the row]
+[align-items class should be added to the row div]
 
-3. align-self class should be added to the column div.
-# align-self-center [only align the col to the center of the row in vertical direction]
-# align-self-start [only align the col to the top of the row in vertical direction]
-# align-self-end [only align the col to the bottom of the row in vertical direction]
+1. align-items-center [center all the col in vertical direction in the row]
+2. align-items-start [align all the col to the top of the row]
+3. 2align-items-end [align all the col to the bottom of the row]
 
-4. For horizontal alignment, justify-content class should be added to the row div.
-# justify-content-start [align all col to the start of the row in horizontal direction]
-# justify-content-center /[lign all col to the middle/center of the row div in horizontal direction]
-# justify-content-end [align all col to the end of the row in horizontal direction]
-# justify-content-around [align all col with some space to the left and right of the row in horizontal direction]
-# justify-content-between [try it]
-# justify-content-evenly [try it]
+[align-self class should be added to the column div]
 
-5. full width class is used to break a line instead of using br tag.
-# w-100 [used to take the full width]
+1. align-self-center [only align the col to the center of the row in vertical direction]
+2. align-self-start [only align the col to the top of the row in vertical direction]
+3. align-self-end [only align the col to the bottom of the row in vertical direction]
 
-6. order class is used to reorder a column in our desired oreder from 1 to 5.
-# order-1 [used to rearrange the order of the column]
-# order-2
-# order-3
-# order-4
-# order-5
-# order-last
+[For horizontal alignment, justify-content class should be added to the row div]
 
-7. offset class is used to move colum range from 0 to 4
-# offset-md-4
+1. justify-content-start [align all col to the start of the row in horizontal direction]
+2. justify-content-center /[lign all col to the middle/center of the row div in horizontal direction]
+3. justify-content-end [align all col to the end of the row in horizontal direction]
+4. justify-content-around [align all col with some space to the left and right of the row in horizontal direction]
+5. justify-content-between [try it]
+6. justify-content-evenly [try it]
 
+[full width class is used to break a line instead of using br tag]
 
+1. w-100 [used to take the full width]
 
+# ---------------------------------- COLORS ---------------------------------- #
+1. text-primary [ blue text ]
+2. text-danger [ red text ]
+3. text-success [ green text ]
+4. text-secondary [ grey text ]
+5. text-waning [ yellow text ]
+6. text-info [ sky blue text ]
+7. text-light [ light grey text or half white ]
+8. text-dark [ black text ]
+ 
+# -------------------------------- BACKGROUND -------------------------------- #
+1. bg-primary [ blue background ]
+2. bg-danger  [ red background ]
+3. bg-success [ green background ]
+4. bg-secondary [ grey background ]
+5. bg-waning [ yellow background ]
+6. bg-info [ sky blue background ]
+7. bg-light [ half white background ]
+8. bg-dark [ black background ]
+9. bg-primary bg-gradient [ create primary gradient color ]
+
+# ---------------------------------- BORDERS --------------------------------- #
+1. border 
+2. border-top
+3. border-end
+4. border-bottom
+5. border-start
+6. border-0
+7. border-top-0
+8. border-end-0
+9. border-bottom-0
+10. border-start-0
+11. border border-primary
+12. border border-secondary
+13. border border-success
+14. border border-danger
+15. border border-warning
+16. border border-info
+17. border border-light
+18. border border-dark
+19. border border-white
+20. border border-1
+21. border border-2
+22. border border-3
+23. border border-4
+24. border border-5
+25. rounded
+26. rounded-top
+27. rounded-end
+28. rounded-bottom
+29. rounded-start
+30. rounded-circle
+31. rounded-pill
+32. rounded-0
+33. rounded-1
+34. rounded-2
+35. rounded-3
+
+# ----------------------------- DISPLAY PROPERTY ----------------------------- #
+1. d-none
+2. d-inline
+3. d-inline-block
+4. d-block
+5. d-grid
+6. d-table
+7. d-table-cell
+8. d-table-row
+9. d-flex
+10. d-inline-flex
+11. d-{breakpoint}-{value}
+
+# ----------------------------------- FLEX ----------------------------------- #
+1. d-flex
+2. d-inline-flex
+3. d-sm-flex
+4. d-sm-inline-flex
+5. d-md-flex
+6. d-md-inline-flex
+7. d-lg-flex
+8. d-lg-inline-flex
+9. d-xl-flex
+10. d-xl-inline-flex
+11. d-xxl-flex
+12. d-xxl-inline-flex
+13. flex-row
+14. flex-row-reverse
+15. flex-column
+16. flex-column-reverse
+17. flex-sm-row
+18. flex-sm-row-reverse
+19. flex-sm-column
+20. flex-sm-column-reverse
+21. flex-md-row
+22. flex-md-row-reverse
+23. flex-md-column
+24. flex-md-column-reverse
+25. flex-lg-row
+26. flex-lg-row-reverse
+27. flex-lg-column
+28. flex-lg-column-reverse
+29. flex-xl-row
+30. flex-xl-row-reverse
+31. flex-xl-column
+32. flex-xl-column-reverse
+33. flex-xxl-row
+34. flex-xxl-row-reverse
+35. flex-xxl-column
+36. flex-xxl-column-reverse
