@@ -8,6 +8,7 @@
 // [Symbol (ES2015) - values that is unique and cannot be changed - not usefull for now]
 // [BigInt (ES2020) - larger integers than Number type can hold]
 // [javascript has dynamic typing - we do not have to manually define the data type of the value stored in a variable, instead datatypes are defined automatically]
+
 // datatypes();
 function datatypes() {
     console.log(typeof ('javascript'));
@@ -28,6 +29,7 @@ function datatypes() {
 
 /* ------------------------------ LET-CONST-VAR ----------------------------- */
 // [The let keyword creates block-scoped variables, which means they are only accessible within a particular block of code]
+
 // let_declarations();
 function let_declarations() {
     {
@@ -40,7 +42,9 @@ function let_declarations() {
     // can't be accessed here
     console.log(name);
 };
+
 // [The const keyword creates constant variables that cannot be changed after declaration]
+
 // const_declarations();
 function const_declarations() {
     // declare variable with const
@@ -59,6 +63,7 @@ function const_declarations() {
 
 // [The variable declared inside a function with var can be used anywhere within a function]
 // [In the above program, the variable a is declared with var. The variable a can be used anywhere inside the function greet]
+
 // var_keyword(); // hello
 // variable a cannot be used here
 function var_keyword() {
@@ -70,6 +75,7 @@ function var_keyword() {
 
 
 // [The variable declared with let can only be accessed inside a block of code]
+
 // let_keyword();
 // variable a cannot be used here
 function let_keyword() {
@@ -88,8 +94,9 @@ function let_keyword() {
 /* ----------------------------- VARIABLE SCOPE ----------------------------- */
 // [the scope of a variable determines where it can be accessed within the code]
 // [Global Scope, Local (Function) Scope, Block-Level Scope]
-
+// [Here, the message variable is local to the greet() function. So, it can only be accessed within that function. That's why we get an error when we try to access it outside the greet() function. To fix this issue, we can make the message variable global]
 // [When variables are declared inside a function, they have a local scope and are accessible only within that function]
+
 // local_scope();
 function local_scope() {
     // local variable
@@ -98,4 +105,16 @@ function local_scope() {
 }
 // try to access message variable
 // outside the greet() function
+// console.log(`Global: ${message}`);
+
+// [a variable declared outside any function or in the global scope is known as a global variable]
+// [A global variable can be accessed both inside and outside of functions]
+// [Here, we can access the message variable from outside of the greet() function. This is possible because we have created the message variable in the global scope (outside the function). Thus, message will be accessible from any scope (region) of the program]
+
+// global_scope();
+// declare global variable
+var message = "Hello";
+function global_scope() {
+    console.log(`Local: ${message}`);
+}
 // console.log(`Global: ${message}`);
