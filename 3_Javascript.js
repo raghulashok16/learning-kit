@@ -1,5 +1,4 @@
 /* ------------------------------- DATA TYPES ------------------------------- */
-datatypes();
 // [7 different data types in javascript]
 // [Number - floating point numbers - used for decimals and integers]
 // [String - sequence of character - used for text]
@@ -9,6 +8,7 @@ datatypes();
 // [Symbol (ES2015) - values that is unique and cannot be changed - not usefull for now]
 // [BigInt (ES2020) - larger integers than Number type can hold]
 // [javascript has dynamic typing - we do not have to manually define the data type of the value stored in a variable, instead datatypes are defined automatically]
+// datatypes();
 function datatypes() {
     console.log(typeof ('javascript'));
     console.log(typeof ('A'));
@@ -26,22 +26,49 @@ function datatypes() {
     // [typeof null is object and it is not corrected for leagacy reasons]
 };
 
-/* ------------------------------ CONST-LET-VAR ----------------------------- */
-scope();
-// [var - functional or global scope. It can be updated and re-declared in the same scope. It can be declared without initialization. It can be accessed without initialization as its default value is “undefined”. These variables are hoisted.]
-// [let - block scope. It can be updated but cannot be re-declared in the same scope. It can be declared without initialization. It cannot be accessed without initialization otherwise it will give ‘referenceError’. These variables are hoisted but stay in the temporal dead zone untill the initialization.]
-// [const - block scope. It can neither be updated or re-declared in any scope.It cannot be declared without initialization. It cannot be accessed without initialization, as it cannot be declared without initialization. These variables are hoisted but stays in the temporal dead zone until the initialization.]
-function scope() {
-    let value_1 = 12;
-    value_1 = 13;
-    console.log(value_1);
-    value_1 = 'google';
-    console.log(value_1);
-    value_1 = 14;
-    console.log(value_1);
-    const value_2 = 12;
-    // value_2=13; [Assignment to constant variable: error name]
-    var value_3 = 12;
-    value_3 = 13;
-    console.log(value_3);
+/* ------------------------------ LET-CONST-VAR ----------------------------- */
+// [The let keyword creates block-scoped variables, which means they are only accessible within a particular block of code.]
+// let_declarations();
+function let_declarations() {
+    {
+        // block of code
+
+        // declare variable with let
+        let name = "Peter";
+
+        // can be accessed here
+        console.log(name); // Peter
+    }
+
+    // can't be accessed here
+    console.log(name);
+};
+// [The const keyword creates constant variables that cannot be changed after declaration.]
+// const_declarations();
+function const_declarations() {
+    // declare variable with const
+    const fruit = "Apple";
+
+    console.log(fruit);
+
+    // reassign fruit
+    // this code causes an error
+    fruit = "Banana";
+
+    console.log(fruit);
 }
+
+// [The let keyword was introduced in the later version of JavaScript known as ES6(ES2015). And it's the preferred way to declare variables.]
+// [let - let is block-scoped. let does not allow to redeclare variables. Hoisting does not occur in let.]
+// [var - var is function scoped. var allows to redeclare variables. Hoisting occurs in var.]
+
+
+// [The variable declared inside a function with var can be used anywhere within a function.]
+// greet(); // hello
+// console.log(a) // error: a is not defined
+function greet() {
+    // variable a can be used here
+    var a = 'hello';
+    console.log(a);
+}
+// console.log(a) // error: a is not defined
