@@ -27,48 +27,75 @@ function datatypes() {
 };
 
 /* ------------------------------ LET-CONST-VAR ----------------------------- */
-// [The let keyword creates block-scoped variables, which means they are only accessible within a particular block of code.]
+// [The let keyword creates block-scoped variables, which means they are only accessible within a particular block of code]
 // let_declarations();
 function let_declarations() {
     {
         // block of code
-
         // declare variable with let
         let name = "Peter";
-
         // can be accessed here
         console.log(name); // Peter
     }
-
     // can't be accessed here
     console.log(name);
 };
-// [The const keyword creates constant variables that cannot be changed after declaration.]
+// [The const keyword creates constant variables that cannot be changed after declaration]
 // const_declarations();
 function const_declarations() {
     // declare variable with const
     const fruit = "Apple";
-
     console.log(fruit);
-
     // reassign fruit
     // this code causes an error
     fruit = "Banana";
-
     console.log(fruit);
 }
 
-// [The let keyword was introduced in the later version of JavaScript known as ES6(ES2015). And it's the preferred way to declare variables.]
-// [let - let is block-scoped. let does not allow to redeclare variables. Hoisting does not occur in let.]
-// [var - var is function scoped. var allows to redeclare variables. Hoisting occurs in var.]
+// [The let and const keyword was introduced in the later version of JavaScript known as ES6(ES2015). And it's the preferred way to declare variables]
+// [let - block-scoped. let does not allow to redeclare variables. Hoisting does not occur in let]
+// [var - function scoped. var allows to redeclare variables. Hoisting occurs in var]
 
 
-// [The variable declared inside a function with var can be used anywhere within a function.]
-// greet(); // hello
-// console.log(a) // error: a is not defined
-function greet() {
+// [The variable declared inside a function with var can be used anywhere within a function]
+// [In the above program, the variable a is declared with var. The variable a can be used anywhere inside the function greet]
+// var_keyword(); // hello
+// variable a cannot be used here
+function var_keyword() {
     // variable a can be used here
     var a = 'hello';
     console.log(a);
 }
-// console.log(a) // error: a is not defined
+// variable a cannot be used here
+
+
+// [The variable declared with let can only be accessed inside a block of code]
+// let_keyword();
+// variable a cannot be used here
+function let_keyword() {
+    let a = 'hello';
+    // variable b cannot be used here
+    if (a == 'hello') {
+        // variable b can be used here
+        let b = 'world';
+        console.log(a + ' ' + b);
+    }
+    // variable b cannot be used here
+    console.log(a + ' ' + b); // error
+};
+// variable a cannot be used here
+
+/* ----------------------------- VARIABLE SCOPE ----------------------------- */
+// [the scope of a variable determines where it can be accessed within the code]
+// [Global Scope, Local (Function) Scope, Block-Level Scope]
+
+// [When variables are declared inside a function, they have a local scope and are accessible only within that function]
+// local_scope();
+function local_scope() {
+    // local variable
+    var message = "Hello";
+    console.log(`Local: ${message}`);
+}
+// try to access message variable
+// outside the greet() function
+// console.log(`Global: ${message}`);
