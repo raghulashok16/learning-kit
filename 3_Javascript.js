@@ -94,8 +94,9 @@ function let_keyword() {
 /* ----------------------------- VARIABLE SCOPE ----------------------------- */
 // [the scope of a variable determines where it can be accessed within the code]
 // [Global Scope, Local (Function) Scope, Block-Level Scope]
-// [Here, the message variable is local to the greet() function. So, it can only be accessed within that function. That's why we get an error when we try to access it outside the greet() function. To fix this issue, we can make the message variable global]
+
 // [When variables are declared inside a function, they have a local scope and are accessible only within that function]
+// [Here, the message variable is local to the greet() function. So, it can only be accessed within that function. That's why we get an error when we try to access it outside the greet() function. To fix this issue, we can make the message variable global]
 
 // local_scope();
 function local_scope() {
@@ -105,7 +106,7 @@ function local_scope() {
 }
 // try to access message variable
 // outside the greet() function
-// console.log(`Global: ${message}`);
+console.log(`Global: ${message}`);
 
 // [a variable declared outside any function or in the global scope is known as a global variable]
 // [A global variable can be accessed both inside and outside of functions]
@@ -118,3 +119,4 @@ function global_scope() {
     console.log(`Local: ${message}`);
 }
 // console.log(`Global: ${message}`);
+
