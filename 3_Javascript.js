@@ -374,7 +374,7 @@ function string_example() {
 // string_example();
 
 /* -------------------------------------------------------------------------- */
-// [Template literals were introduced in ECMAScript 6 (ES6). They are enclosed in backticks (``)]
+// [Template literals/ String literals were introduced in ECMAScript 6 (ES6). They are enclosed in backticks (``)]
 // [Template literals support string interpolation, allowing you to embed expressions or variables directly within the string using ${} syntax]
 // [They support multi-line strings without the need for escape characters like \n]
 // [NOTES: Template literals offer a more concise and readable way to create strings with variable interpolation and multiline support, making them often preferred over traditional string concatenation, especially in modern JavaScript code. However, for compatibility with older browsers or environments, traditional strings may still be used.]
