@@ -1,54 +1,73 @@
 cmd wont work, use git bash
 
 # ------------------ TERMINAL COMMANDS FOR FILE MANIPULATION ----------------- #
-# ls
-    [used to 'list' contents of the current working directory]
-# ls -a
-    [used to 'list all contents including hidden files and folder' of the current working directory]
-# start .
-    [to open the current working directory in file explorer]
-# ls folder_name
-    [used to 'list' contents of that folder]
-# ls folder_name/folder_name
-    [used to 'list' contents of that folder inside folder]
-# pwd
-    [used to print the 'present working directory']
-    [/c/Users/Administrator]
-# cd folder_name/
-    [cd is an acronym for 'Change Directory']
-#cd ..
-    [move back from current working directory one level]
-# touch purple.js
-    [creates 'purple.js' file in the current Directory]
-    [creating single file]
-# touch purple.js red.css
-    [creates 'purple.js and red.css' file in the current Directory]
-    [creating multiple files]
-# touch Pets/Horses/rocky.png
-    [creates 'rocky.png' file in the given path directory]
-# mkdir Raghul
-    [creates a 'Raghul' folder in the current working directory]
-# mkdir Raghul Raju
-    [creates a 'Raghul and Raju' folders in the current working directory]
-# rm purple.js
-    [to delete the file from the current directory permanantly]
-# rm purple.js red.js
-    [to delete multiple files from current directory permanantly]
-# rm -rf Raghul
-    [to delete the folder from the current working directory]
-    [r-recusive,f-force]
+-- ls
+[used to 'list' contents of the current working directory]
+
+-- ls -a
+[used to 'list all contents including hidden files and folder' of the current working directory]
+
+-- start .
+[to open the current working directory in file explorer]
+
+-- ls folder_name
+[used to 'list' contents of that folder]
+
+-- ls folder_name/folder_name
+[used to 'list' contents of that folder inside folder]
+
+-- pwd
+[used to print the 'present working directory']
+[/c/Users/Administrator]
+
+-- cd folder_name/
+[cd is an acronym for 'Change Directory']
+
+--cd ..
+[move back from current working directory one level]
+
+-- touch purple.js
+[creates 'purple.js' file in the current Directory]
+[creating single file]
+
+-- touch purple.js red.css
+[creates 'purple.js and red.css' file in the current Directory]
+[creating multiple files]
+
+-- touch Pets/Horses/rocky.png
+[creates 'rocky.png' file in the given path directory]
+
+-- mkdir Raghul
+[creates a 'Raghul' folder in the current working directory]
+
+-- mkdir Raghul Raju
+[creates a 'Raghul and Raju' folders in the current working directory]
+
+-- rm purple.js
+[to delete the file from the current directory permanantly]
+
+-- rm purple.js red.--s
+[to delete multiple files from current directory permanantly]
+
+-- rm -rf Raghul
+[to delete the folder from the current working directory]
+[r-recusive,f-force]
 
 # --------------------- BASIC SETTINGS USING GIT COMMAND --------------------- #
-# git --version 
-    [displays the git version installed in our machine]
-# git config --global user.name "Raghul Ashok"
-    [to set user name of git in our machine]
-# git config --global user.email raghulashok16@gmail.com
-    [to set user email of git in our machine]
-# git config user.name
-    [to check the user name in our git]
-# git config user.email
-    [to check the user email in our git]
+-- git --version 
+[displays the git version installed in our machine]
+
+-- git config --global user.name "Raghul Ashok"
+[to set user name of git in our machine]
+
+-- git config --global user.email raghulashok16@gmail.com
+[to set user email of git in our machine]
+
+-- git config user.name
+[to check the user name in our git]
+
+-- git config user.email
+[to check the user email in our git]
 
 # -------------------------------- REPOSITORY -------------------------------- #
 1. a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
@@ -60,10 +79,11 @@ Note: git status command will display the status of the git only after git init 
 Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized
 
 # ----------------------- THINGS TO DO BEFORE COMMITING ---------------------- #
-# git status 
-    [gives information on the current status of a git repository and its contents]
-# git init 
-    [to create a empty git repository]
+-- git status 
+[gives information on the current status of a git repository and its contents]
+
+-- git init 
+[to create a empty git repository]
 
 # ---------------------------- BASIC GIT WORKFLOW ---------------------------- #
 1. work on stuff --> make new files, edit files, delete files,etc
@@ -72,22 +92,21 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 
 # ---------------------------------- ADDING ---------------------------------- #
 1. updates particular/all files from working area to staging area.
-# git add file1 file2 
-    [file1 and file2 will be staged]
-# git add . 
-    [stage all files from working area]
+-- git add file1 file2 
+[file1 and file2 will be staged]
+-- git add . 
+[stage all files from working area]
 
 # --------------------------------- COMMITING -------------------------------- #
 1. updates particular/all files from staging area to repository.
-# git commit
-# git commit -m "message for that commit"
-    [ -m flag represents message ]
-# git commit -a -m "message for that commit"
-    [-a flag represents all files]
+-- git commit
+-- git commit -m "message for that commit"    [ -m flag represents message ]
+-- git commit -a -m "message for that commit"
+[-a flag represents all files]
 
 # ---------------------------------- LOGGING --------------------------------- #
-# git log 
-    [logs all the commits with their messages]
+-- git log 
+[logs all the commits with their messages]
 
 # ------------------------------ ATOMIC COMMITS ------------------------------ #
 1. commit a single change,features or single fix with a meaningfull message.
@@ -104,15 +123,15 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 3. Also install code in vs code from cntrl+shift+p command.
 
  # ------------------------------ ONELINE LOGGING ----------------------------- #
- # git log --oneline
-    [this will log the first line of the commit messages form all the commits]
+-- git log --oneline
+[this will log the first line of the commit messages form all the commits]
 
 # ----------------------------- AMMENDING COMMITS ---------------------------- #
 1. You can redo the preious commit using he --amend option.
 2. This will add some additional files to the previous commit.
-# git commit -m "some message"
-# git add forgotten_file
-# git commit --amend
+-- git commit -m "some message"
+-- git add forgotten_file
+-- git commit --amend
 
 # ------------------------------ IGNORING FILES ------------------------------ #
 1. We can tell git which files and directories to ignore in a given repository using a .gitignore file.
@@ -136,33 +155,33 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 # ----------------------------- VIEWING BRANCHES ----------------------------- #
 1. git branch command is used to view your existing branches.
 2. default branch in every git repo is master, though you can configure this.
-# git branch
-    [ it will show all branch in that repo ]
-    [ * represent the active branch we are on ]
-# git branch -v
-    [ -v flag gives commit message along with the branch name ]
+-- git branch
+[ it will show all branch in that repo ]
+[ * represent the active branch we are on ]
+-- git branch -v
+[ -v flag gives commit message along with the branch name ]
 
 # ----------------------------- CREATING BRANCHES ---------------------------- #
 1. git branch branch_name command is used to create new branch upon the current head.
 2. this will just create the branch and it will not switch to that branch(head stays the same).
-# git branch branch_name
+-- git branch branch_name
 
 # ---------------------------- SWITCHING BRANCHES ---------------------------- #
 1. after creating the branch we can switch between branches using these commands.
-# git switch branch_name
+-- git switch branch_name
 
 # --------------------- ANOTHER WAY OF SWITCHING BRANCHES -------------------- #
 1. checkout command was made to add a standalone switch command which is much simpler.
 2. swich was the new way and checkout was the old school.
-# git checkout branch_name
+-- git checkout branch_name
 
 # ---------------------- CREATING AND SWITCHING BRANCHES --------------------- #
 1. -c flag is used to create a new branch.
 2. swich command is used to move to that branch.
 3. this combination will do in a single line.
-# git switch -c branch_name
-# git checkout -b branch_name
-    [-c and -b both will create a new branch]
+-- git switch -c branch_name
+-- git checkout -b branch_name
+[-c and -b both will create a new branch]
 
 # ------------------ SWITCHING BRANCHES WITH UNSTAGED FILES ------------------ #
 1. data will be lost without commiting and switching branches.
@@ -170,8 +189,8 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 3. data will be overwritten if we dont commit them.
 
 # ----------------------------- DELETING BRANCHES ---------------------------- #
-# git branch -D branch_name
-# git branch -d branch_name
+-- git branch -D branch_name
+-- git branch -d branch_name
 1. -D is shortcut for force delete.
 2. -d is normal delete.
 3. this should be done when necessary.
@@ -179,16 +198,16 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 # ----------------------------- RENAMING BRANCHES ---------------------------- #
 1. move to that branch.
 2. use m flag to rename the branch.
-# git switch branch_name
-# git branch -m new_branch_name
+-- git switch branch_name
+-- git branch -m new_branch_name
 
 # ----------------------------- MERGING BRANCHES ----------------------------- #
 1. branching makes it super easy to work within self-contained context, but often we want to incorporate changes from one branch into another.
 2. we can do this using git merge command.
 3. we merge branches, not specific commits.
 4. we always merge to the current HEAD branch.
-# git switch master
-# git merge sub_branch
+-- git switch master
+-- git merge sub_branch
 5. this method is called a fast-forward merge.
 
 MERGE CONFLICTS
@@ -208,43 +227,43 @@ MERGE CONFLICTS
 # --------------------------------- GIT DIFF --------------------------------- #
 1. used to view changes between commits, branches, files, our working directory and more.
 2. we can use it often to find the changes overtime.
-# git diff
+-- git diff
 3. compares staging area and our working directory.
 4. git declares one file as 'a' and other file as 'b'.
 5. chunks shows the line to be removed and added[@@ -3,4 +3,5 @@]
 
 # ------------------------- VIEWING UNSTAGED CHANGES ------------------------- #
-# git diff
-    [compares staging area and our working directory]
+-- git diff
+[compares staging area and our working directory]
 
 # --------------------- VIEWING WORKING DIRECTORY CHANGES -------------------- #
-# git diff HEAD
-    [compares staged and unstaged with our last commit]
+-- git diff HEAD
+[compares staged and unstaged with our last commit]
 
 # -------------------------- VIEWING STAGED CHANGES -------------------------- #
-# git diff --staged
-# git diff --cached
-    [compares staging area with our last commit]
+-- git diff --staged
+-- git diff --cached
+[compares staging area with our last commit]
 
 # -------------------------- DIFFING SPECIFIC FILES -------------------------- #
-# git diff HEAD file_name
-# git diff HEAD file_name1 file_name2
-# git diff --staged file_name
-    [viewing changes within a specific file]
+-- git diff HEAD file_name
+-- git diff HEAD file_name1 file_name2
+-- git diff --staged file_name
+[viewing changes within a specific file]
 
 # ----------------------------- COMPARING CHANGES ---------------------------- #
-# git diff branch1..branch2
-# git diff branch2..branch1
-    [compares changes in the 2 branches]
-    [order we specify is important]
+-- git diff branch1..branch2
+-- git diff branch2..branch1
+[compares changes in the 2 branches]
+[order we specify is important]
 
 # ---------------------- COMPARING CHANGES ABOUT COMMIT ---------------------- #
-# git log --online
-    [it returs oneline commit message with commit_hash]
-# git diff commit_hash1..commit_hash2
-# git diff commit_hash2..commit_hash1
-    [compares changes between 2 commits using commit hashes]
-    [order matters]
+-- git log --online
+[it returs oneline commit message with commit_hash]
+-- git diff commit_hash1..commit_hash2
+-- git diff commit_hash2..commit_hash1
+[compares changes between 2 commits using commit hashes]
+[order matters]
 
 # --------------------------- WHY WE NEED GIT STASH -------------------------- #
 1. changes come to the destination branch.
@@ -253,32 +272,32 @@ MERGE CONFLICTS
 # --------------------------------- STASHING --------------------------------- #
 1. git provides an easy way of stashing these uncommited changes.
 2. so that we can return to them later, without having to make unnecessary commits.
-# git stash
-# git stash save
+-- git stash
+-- git stash save
 3. it helps you to save changes that you are not yet ready to commit.
 4. we can stash canges and then come back to them later.
 5. running git stash will take all uncommited changes(staged and unstaged) and stash them, reverting the changes in your working copy.
-# git stash pop
+-- git stash pop
 6. use pop keyword to remove stashed changes in your stash and re-apply them to your working copy.
 
 # ------------------------------ GIT STASH APPLY ----------------------------- #
 1. use it to apply whatever is stashed away, without removing it from the stash.
 2. this can be useful if you apply stashed changes to multiple branches.
-# git stash apply
+-- git stash apply
 
 # ----------------------- WORKING WITH MULTIPLE STASHES ---------------------- #
 1. you can add multiple stashes on to the stack of stashes.
 2. they will all be stashed in the order you added them.
-# git stash list
-    [it will list all the stash stack queue we have]
-# git stach apply stash@{stash_queue_number}
-    [it will get the changes we stash in that stack queue]
+-- git stash list
+[it will list all the stash stack queue we have]
+-- git stach apply stash@{stash_queue_number}
+[it will get the changes we stash in that stack queue]
 
 # ---------------------- DROPING OR CLEARING THE STASHES --------------------- #
 1. removing particular stash based on its stack number.
-# git stash drop stash@{0}
+-- git stash drop stash@{0}
 2. removing all stashes from stack.
-# git stash clear
+-- git stash clear
 
 
 

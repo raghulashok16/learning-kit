@@ -110,25 +110,26 @@ DQL --> [ SELECT ] [ DATA QUERY LANGUAGE ]
 DML --> [ INSERT, UPDATE, DELETE, MERGE, CALL, EXPLAIN PLAN, LOCK TABLE ] [ DATA MODIFICATION LANGUAGE ]
 DCL --> [ GRANT, REVOKE ] [ DATA CONTROL LANGUAGE ]
 
-NOTE: "" --> double quotes [ COLUMN ], '' --> single quotes [ text/string ]
+NOTE: "" --> double quotes [ COLUMN ]
+      '' --> single quotes [ text/string ]
  
 # --------------------------------- EXERCISE --------------------------------- #
 [give me a list of all employees in the company]
--- SELECT * FROM "employees"
+    -- SELECT * FROM "employees"
 [how many departments are the in the company?]
--- SELECT * FROM "departments"
+    -- SELECT * FROM "departments"
 [how many times has employee 10001 had a rise?]
 [what title does 10006 have?]
 
 # ------------- RENAMING COLUMS [ SELECT colum as '<new_name>' ] ------------- #
--- SELECT emp_no AS "employee id" FROM "employees" 
--- SELECT dob AS "birthday" FROM "employees" 
+    -- SELECT emp_no AS "employee id" FROM "employees" 
+    -- SELECT dob AS "birthday" FROM "employees" 
 
 # --------------------------- COLUMN CONCATTENATION -------------------------- #
--- SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles
+    -- SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles
 [CONCAT(TEXT,TEXT)]
 [CONACT(COLUMN1,COLUMN2)]
--- SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
+    -- SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
 
 # ----------------------------- FUNCTIONS IN SQL ----------------------------- #
 1. function is a set of steps that creates a single value
@@ -142,9 +143,9 @@ COUNT()
 MIN() 
 MAX()
 SUM()
--- SELECT max(salary) FROM salaries;
--- SELECT sum(salary) FROM slaries;
--- SELECT count(emp_no) FROM employees; 
+    -- SELECT max(salary) FROM salaries;
+    -- SELECT sum(salary) FROM slaries;
+    -- SELECT count(emp_no) FROM employees; 
 
 # ------------------------------ ADDING COMMENTS ----------------------------- #
 -- SINGLE LINE COMMENT
@@ -164,35 +165,35 @@ SUM()
 
 # ------------------- HOW TO FILTER DATA [ WHERE keyword ] ------------------- #
 [get a list of all female employees]
--- SELECT first_name FROM employees WHERE gender = 'F';
+    -- SELECT first_name FROM employees WHERE gender = 'F';
 
 # -------------------------------- AND KEYWORD ------------------------------- #
 # ---------- [ used to filter data based on two or more condition ] ---------- #
 # ------------------------------- [ chainning ] ------------------------------ #
--- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
--- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
+    -- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
+    -- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
 [ filtering based on 2 & 3 conditions ]
 
 # -------------------------------- OR KEYWORD -------------------------------- #
--- SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
--- SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
--- SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
--- SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
+    -- SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
+    -- SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
+    -- SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
+    -- SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
 
 # ----------------- FILTER WITH AND/OR [ LOGICAL OPERATORS ] ----------------- #
 [how many female customers do we have from the state of kerala or tamilnadu]
--- SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
+    -- SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
 
 # ------------- NOT KEYWORD [ filter everthing except some data ] ------------ #
--- SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
+    -- SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
 [how many customers are not 55 years age ?]
--- SELECT COUNT(age) FROM customers NOT age = 55; 
+    -- SELECT COUNT(age) FROM customers NOT age = 55; 
 [how many customers are not 55 and 76 years age ?]
--- SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
+    -- SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
 
 # --------------------------- COMPARISION OPERATORS -------------------------- #
 [who over the age of 44 has an income of 100000?]
--- SELECT name from employees WHERE age >44 AND income = 100000;
+    -- SELECT name from employees WHERE age >44 AND income = 100000;
 
 [10 > 20     - false]
 [10 < 20     - true]

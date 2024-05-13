@@ -483,5 +483,5 @@ function type_coercion() {
     let y = x + 5; // JavaScript coerces 5 into a string and performs string concatenation
     console.log(y); // Output: "105"
 }
-type_coercion();
+// type_coercion();
 
