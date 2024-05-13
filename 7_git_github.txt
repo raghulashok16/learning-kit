@@ -353,7 +353,19 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 2. checkout command has various functionality, so restore was introduced to specific function.
 -- git restore index.js
 [this method cannot be undone, so think before you use]
+-- git restore --source HEAD~2 index.js
+[this will restore the index.js file from 2 commit we preious commited]
 
+# ----------------------- UNSTAGING FILES WITH RESTORE ----------------------- #
+1. if you accidentally added a file to the staging area and dont want it to be commited.
+[if we added a file that contains important api and credit card details]
+2. it is easy to remove that using restore.
+-- git restore --staged api.js
+3. this will remove the file from the staging area and the file is not delted.
+4. but removed from the staging area.3
+
+# --------------------------------- GIT RESET -------------------------------- #
+1. 
 
 
 
