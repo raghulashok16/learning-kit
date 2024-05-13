@@ -299,6 +299,61 @@ MERGE CONFLICTS
 2. removing all stashes from stack.
 -- git stash clear
 
+# ------------------------ CHECKING OUT OLDER COMMITS ------------------------ #
+1. moving head position to a previous commits.
+-- git log --oneline
+-- git checkout commit_hash
+2. at this time you will recevie a message saying "you are in detached head state".
+3. here head points to the particular commit_hash
+
+# ---------------------------------------------------------------------------- #
+Note: head is a pointer to the current branch reference.
+Note: branch reference is a pointer to the last commit made on a particular commit.
+
+# ----------------------------- RE-ATTACHING HEAD ---------------------------- #
+1. for viewing/observing purpose dont edit and code when we are in detached head.
+2. at this time we can switch to the master easily.
+-- git log --oneline
+-- git checkout commit_hash
+-- git switch master
+-- git status
+
+# ------------------- CREATING BRANCHES FROM DETACHED HEAD ------------------- #
+1. for creating a new version from a particular commit, go for detached head at that point and make a new branch at that commit_hash.
+-- git log --oneline
+-- git checkout commit_hash
+-- git switch -c branch_name
+-- git status
+[update new changes at that branch like create new files/edit files, etc]
+-- git add.
+-- git commit -m "commit_message"
+-- git status
+
+# ------------------- CHECKING OUT OLDER COMMAND WITH TILDE ------------------ #
+1. HEAD~1 - refers to the commit before HEAD.
+2. HEAD~2 - refers to 2 commit before HEAD.
+-- git checkout HEAD~1
+
+# ------------------------ FORGET PREVIOUS BRANCH NAME ----------------------- #
+1. if you are in detached head and if we want to go back to our previous forgotten branch.
+-- git switch -
+
+# ------------- DISCARDING/REVERTING CHANGES ON OUR WORKING AREA ------------- #
+1. if we done some mistakes in our code and we want to delete that.
+2. deleting line by line is very hard and tedious process.
+3. git helps us to revert changes in our working area with the previous commit we made.
+-- git checkout HEAD index.js
+[this line of code will revert the change we made]
+-- git checkout -- index.js test.js
+[this is the shorthand]
+[we can also revert multiple file by specifying multiple file names]
+
+# ----------------------- UN-MODIFYING WITH GIT RESTORE ---------------------- #
+1. git introduced new command for undoing operations.
+2. checkout command has various functionality, so restore was introduced to specific function.
+-- git restore index.js
+[this method cannot be undone, so think before you use]
+
 
 
 
