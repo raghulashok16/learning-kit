@@ -38,16 +38,16 @@
 4. the above is the Query or SQL Statement
 
 # ------------------------------ QUERY BREAKDOWN ----------------------------- #
-# SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
-1. NAME --> identifier
-2. WHERE --> keyword
-3. ROLE = 'MANAGER' --> condition
-4. 'MANAGER' --> expression
+-- SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
+[NAME --> identifier]
+[WHERE --> keyword]
+[ROLE = 'MANAGER' --> condition]
+['MANAGER' --> expression]
 
 # ------------------------- DECLARATIVE VS IMPERATIVE ------------------------ #
 
 
-# ------------------------------- DATABAS MODEL ------------------------------ #
+# ------------------------------- DATABASE MODEL ------------------------------ #
 1. HIERARCHICAL [TREE LIKE FLOW CHART DESIGN]
 2. NETWORKING 
 3. ENTITY-RELATIONSHIP
@@ -63,33 +63,33 @@ u --> update
 d --> delete
 
 # ----------------------------------- TABLE ---------------------------------- #
-1. table is the representation of object
-2. each table has its name
-3. each column represent specific types of data
-4. each row represent singular piece of data
+[table is the representation of object]
+[each table has its name]
+[each column represent specific types of data]
+[each row represent singular piece of data]
 
 # ---------------------------------- COLUMN ---------------------------------- #
-1. each column has its own name
-2. collection of columns is called degree
-3. we can specify what data should be put in that column and that concept is called domain/constraint
-4. column is also called as attributes
+[each column has its own name]
+[collection of columns is called degree]
+[we can specify what data should be put in that column and that concept is called domain/constraint]
+[column is also called as attributes]
 
 # ----------------------------------- ROWS ----------------------------------- #
-1. rows are also called as tuples
-2. tuple is nothing but single record of data
-3. tuples is nothing but multiple record of data
-4. each tuples must follow the column constraint
-5. collection of rows/tuples is called cardinallity
+[rows are also called as tuples]
+[tuple is nothing but single record of data]
+[tuples is nothing but multiple record of data]
+[each tuples must follow the column constraint]
+[collection of rows/tuples is called cardinallity]
 
 # ------------------------ PRIMARY KEY AND FOREIGN KEY ----------------------- #
-1. primary key uniquely identify data in the table
-2. foreign key is used to add data to the main table but it is a primary key in the secondary table
-3. foreign key is used to make a relationship between two or more tables
+[primary key uniquely identify data in the table]
+[foreign key is used to add data to the main table but it is a primary key in the secondary table]
+[foreign key is used to make a relationship between two or more tables]
 
 # ------------------------------- OLTP vs OLAP ------------------------------- #
-1. realtional databases support day to day office work and support in analysis
-2. OLTP --> ONLINE TRANSACTION PROCESSING
-3. OLAP --> ONLINE ANALYTICAL PROCESSING
+[realtional databases support day to day office work and support in analysis]
+OLTP --> ONLINE TRANSACTION PROCESSING
+OLAP --> ONLINE ANALYTICAL PROCESSING
 
 # ------------------------- exercise [OLTP and OLAP] ------------------------- #
 1. a database is being used to log orders and customers --> OLTP 
@@ -98,11 +98,11 @@ d --> delete
 4. a database is being used to keep track of logged in users --> OLTP
 
 # ---------------------------- POSTGRESS DEFAULTS ---------------------------- #
-# url - localhost
-# port - 5432
-# username - postgres
-# password - root
-# connection url - local host
+url - localhost
+port - 5432
+username - postgres
+password - root
+connection url - local host
 
 # ------------------------------- SQL COMMANDS ------------------------------- #
 DDL --> [ CREATE, ALTER, DROP, RENAME, TRUNCATE, COMMENT ] [ DATA DEFINITION LANGUAGE ]
@@ -113,20 +113,22 @@ DCL --> [ GRANT, REVOKE ] [ DATA CONTROL LANGUAGE ]
 NOTE: "" --> double quotes [ COLUMN ], '' --> single quotes [ text/string ]
  
 # --------------------------------- EXERCISE --------------------------------- #
-1. give me a list of all employees in the company [ SELECT * FROM "employees" ]
-2. how many departments are the in the company? [ SELECT * FROM "departments" ]
-3. how many times has employee 10001 had a rise? [  ]
-4. what title does 10006 have? [  ]
+[give me a list of all employees in the company]
+-- SELECT * FROM "employees"
+[how many departments are the in the company?]
+-- SELECT * FROM "departments"
+[how many times has employee 10001 had a rise?]
+[what title does 10006 have?]
 
 # ------------- RENAMING COLUMS [ SELECT colum as '<new_name>' ] ------------- #
-1. SELECT emp_no AS "employee id" FROM "employees" 
-2. SELECT dob AS "birthday" FROM "employees" 
+-- SELECT emp_no AS "employee id" FROM "employees" 
+-- SELECT dob AS "birthday" FROM "employees" 
 
 # --------------------------- COLUMN CONCATTENATION -------------------------- #
-1. SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles [ 10001 is a senior engineer ]
-2. CONCAT(TEXT,TEXT)
-3. CONACT(COLUMN1,COLUMN2) 
-4. SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
+-- SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles
+[CONCAT(TEXT,TEXT)]
+[CONACT(COLUMN1,COLUMN2)]
+-- SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
 
 # ----------------------------- FUNCTIONS IN SQL ----------------------------- #
 1. function is a set of steps that creates a single value
@@ -135,11 +137,14 @@ NOTE: "" --> double quotes [ COLUMN ], '' --> single quotes [ text/string ]
 4. SCALAR --> it works on individual row and gives individual result for each row, operate on each record independently
 
 # ---------------------------- AGGREGATE FUNCTIONS --------------------------- #
-# AVG()
-# COUNT() [ SELECT count(emp_no) FROM employees; ]
-# MIN() 
-# MAX() [ SELECT max(salary) FROM salaries; ]
-# SUM() [ SELECT sum(salary) FROM slaries; ]
+AVG()
+COUNT()
+MIN() 
+MAX()
+SUM()
+-- SELECT max(salary) FROM salaries;
+-- SELECT sum(salary) FROM slaries;
+-- SELECT count(emp_no) FROM employees; 
 
 # ------------------------------ ADDING COMMENTS ----------------------------- #
 -- SINGLE LINE COMMENT
@@ -158,52 +163,54 @@ NOTE: "" --> double quotes [ COLUMN ], '' --> single quotes [ text/string ]
 6. invalid column name
 
 # ------------------- HOW TO FILTER DATA [ WHERE keyword ] ------------------- #
-1. get a list of all female employees [ SELECT first_name FROM employees WHERE gender = 'F'; ]
+[get a list of all female employees]
+-- SELECT first_name FROM employees WHERE gender = 'F';
 
 # -------------------------------- AND KEYWORD ------------------------------- #
 # ---------- [ used to filter data based on two or more condition ] ---------- #
 # ------------------------------- [ chainning ] ------------------------------ #
-1. SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
-2. SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023'; [ filtering based on 3 conditions ]
+-- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
+-- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
+[ filtering based on 2 & 3 conditions ]
 
 # -------------------------------- OR KEYWORD -------------------------------- #
-1. SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
-2. SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
-3. SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
-4. SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
+-- SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
+-- SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
+-- SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
+-- SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
 
 # ----------------- FILTER WITH AND/OR [ LOGICAL OPERATORS ] ----------------- #
-1. how many female customers do we have from the state of kerala or tamilnadu.
-# SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
+[how many female customers do we have from the state of kerala or tamilnadu]
+-- SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
 
 # ------------- NOT KEYWORD [ filter everthing except some data ] ------------ #
-# SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
-1. how many customers are not 55 years age ?
-# SELECT COUNT(age) FROM customers NOT age = 55; 
-2. how many customers are not 55 and 76 years age ?
-# SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
+-- SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
+[how many customers are not 55 years age ?]
+-- SELECT COUNT(age) FROM customers NOT age = 55; 
+[how many customers are not 55 and 76 years age ?]
+-- SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
 
 # --------------------------- COMPARISION OPERATORS -------------------------- #
-1. who over the age of 44 has an income of 100000?
-# SELECT name from employees WHERE age >44 AND income = 100000;
+[who over the age of 44 has an income of 100000?]
+-- SELECT name from employees WHERE age >44 AND income = 100000;
 
-# 10 > 20 [false]
-# 10 < 20 [true]
-# 10 <= 20 [true]
-# 10 >= 20 [false]
-# 0 = 0 [true]
-# 1 != 0 [true]
-# 1 <> 0 [true]
-# 'Mo' = 'mo' [false]
+[10 > 20     - false]
+[10 < 20     - true]
+[10 <= 20    - true]
+[10 >= 20    - false]
+[0 = 0       - true]
+[1 != 0      - true]
+[1 <> 0      - true]
+['Mo' = 'mo' - false]
 
 # ---------------------------- ORDER OF OPERATION ---------------------------- #
-1. FROM [ which table ]
-2. WHERE [ what to filter the data ]
-3. SELECT [ display the selected / sorted data ]
+[FROM (which table)]
+[WHERE (what to filter the data)]
+[SELECT (display the selected / sorted data)]
 
 # ---------------------------- OPERATOR PRECEDENCE --------------------------- #
-1. A statement having multiple operators is evaluated based on the priority of operators.
-    [parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or]
-2. if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left.
-3. use parenthesis while using operators to avoid clash between operators.
+[A statement having multiple operators is evaluated based on the priority of operators]
+[parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or]
+[if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left]
+[use parenthesis while using operators to avoid clash between operators]
 
