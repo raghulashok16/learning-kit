@@ -1,0 +1,100 @@
+Reverse a string.
+Check if a string is a palindrome.
+Find the factorial of a number.
+Check if a number is prime.
+Find the Fibonacci sequence up to a certain number of terms.
+Find the largest element in an array.
+Find the smallest element in an array.
+Find the sum of all elements in an array.
+Find the average of elements in an array.
+Count the number of occurrences of an element in an array.
+Remove duplicates from an array.
+Merge two sorted arrays.
+Find the intersection of two arrays.
+Find the union of two arrays.
+Check if two strings are anagrams of each other.
+Count the number of vowels in a string.
+Count the number of words in a string.
+Reverse words in a string.
+Check if a number is even or odd.
+Find the largest among three numbers.
+Find the smallest among three numbers.
+Swap two numbers without using a temporary variable.
+Convert temperature from Celsius to Fahrenheit.
+Convert temperature from Fahrenheit to Celsius.
+Convert a decimal to binary.
+Convert binary to decimal.
+Convert a decimal to hexadecimal.
+Convert hexadecimal to decimal.
+Find the GCD (Greatest Common Divisor) of two numbers.
+Find the LCM (Least Common Multiple) of two numbers.
+Check if a year is a leap year.
+Find the sum of digits of a number.
+Check if a number is an Armstrong number.
+Find all Armstrong numbers within a range.
+Check if a number is a perfect number.
+Find all perfect numbers within a range.
+Implement a binary search algorithm.
+Implement a bubble sort algorithm.
+Implement a selection sort algorithm.
+Implement an insertion sort algorithm.
+Implement a merge sort algorithm.
+Implement a quick sort algorithm.
+Implement a stack using an array.
+Implement a stack using linked list.
+Implement a queue using an array.
+Implement a queue using linked list.
+Implement a linked list.
+Implement a doubly linked list.
+Implement a binary tree.
+Implement depth-first search (DFS) for a binary tree.
+Implement breadth-first search (BFS) for a binary tree.
+Implement a binary search tree (BST).
+Implement in-order traversal for a binary tree.
+Implement pre-order traversal for a binary tree.
+Implement post-order traversal for a binary tree.
+Reverse a linked list.
+Find the length of a linked list.
+Find the nth node from the end of a linked list.
+Find the middle element of a linked list.
+Check if a linked list contains a cycle.
+Detect and remove a cycle in a linked list.
+Merge two sorted linked lists.
+Check if a binary tree is balanced.
+Find the height of a binary tree.
+Find the lowest common ancestor (LCA) of two nodes in a binary tree.
+Find the diameter of a binary tree.
+Check if a binary tree is a binary search tree (BST).
+Serialize and deserialize a binary tree.
+Implement a trie (prefix tree).
+Implement string matching using trie.
+Find the longest common prefix in an array of strings.
+Reverse bits of a 32-bit unsigned integer.
+Find missing number in an array of integers.
+Implement atoi (string to integer) function.
+Implement itoa (integer to string) function.
+Implement strstr (substring search) function.
+Find longest substring without repeating characters.
+Find longest palindrome substring in a string.
+Implement regular expression matching.
+Implement a calculator.
+Implement a basic interpreter.
+Implement a simple text editor (supporting operations like insert, delete, undo).
+Implement a job scheduler.
+Design a parking lot.
+Design a deck of cards.
+Design a chess game.
+Design a vending machine.
+Design a file system.
+Design a URL shortening service.
+Design an online shopping system.
+Design a social media platform.
+Design a chat application.
+Design an elevator system.
+Design a restaurant reservation system.
+Design a music streaming service.
+Design a stock trading system.
+Design an alarm clock.
+Design a calendar application.
+Design a weather forecasting system.
+Design an automatic door lock system.
