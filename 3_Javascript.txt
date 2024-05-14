@@ -227,5 +227,17 @@ Examples of Falsy Values:
 4. if we want to check any of the conditions are true, we can use '||'.
 5. if we want to check a condition is not true, we can use '!'.
 
+# -------------------------- ACTIVATING STRICT MODE -------------------------- #
 
-
+# --------------------------------- FUNCTIONS -------------------------------- #
+1. there are 3 types of functions in javascript.
+2. (Named Functions/function declarations), (Anonymous Functions/function expressions),  (Arrow Functions).
+3. function is a set of instructions that can be used repeatedly in a program.
+4. In JavaScript, functions are objects that can be declared, assigned, and passed as parameters to other functions.
+5. function declaration - can be used before its declared.
+6. function expression - essentially a function value stored in a variable.
+7. arrow function - great for one line function, this keyword won't work in arrow function.
+ 
+# ---------------------- FUNCTION CALLING OTHER FUNCTION --------------------- #
+1. we can call a function inside another function in javascript.
+2. inside function1 we need to to call the function2().
