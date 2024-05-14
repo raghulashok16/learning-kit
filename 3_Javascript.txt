@@ -301,3 +301,28 @@ NOTES: Template literals offer a more concise and readable way to create strings
     of() - Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.
 
 # ---------------------------------- OBJECTS --------------------------------- #
+1. object is a versatile way to store collection of data.
+2. an obeject is a collection of properties.
+3. each property defined by key-value pair.
+
+    const obj = {
+        key1: value1,
+        key2: value2,
+        // ...
+    };
+
+# -------------------------- DOT VS BRACKET NOTATION ------------------------- #
+1. to access a property in an object we can use dot notation and bracket notation.
+
+    console.log(object.key_name);
+    console.log(object['key_name']);
+
+2. when we use bracket notation, we can set dynamic key name using unary operator.
+
+    const newValue = 'Name';
+    console.log(object['first' + newValue]);
+    console.log(object['last' + newValue]);
+
+3. dot notation dont allow us to set dynamic key.
+4. we can create a new property using both the notation.
+
