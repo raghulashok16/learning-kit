@@ -1,0 +1,231 @@
+# ---------------------------- JAVASCRIPT RELEASES --------------------------- #
+1. in 1995 brendan eich created the first version of javascript in just 10 days.
+2. this version was named mocha and it had many fundamental features of modern javascript.
+3. in 1996, in order to attract java users, it was remaned to livescript and then to javascript.
+4. javascript has almost nothing to do with java.
+5. microsoft created internet explorer, copying javascript from netscape and named it Jscript.
+6. to standadize javascript, it was submitted to European Computer Manufacturers Association (ECMA).
+7. in 1997, ECMA released the official first version of javascript named ECMAScript 1 (ES1).
+8. in 2009, ES5 is released with lot of good features.
+9. in 2015, ES6 is released which is the biggest update to the language ever.
+10. ECMAScript decided anual release policy to ship less feature per update.
+
+# -------------- BASIC INFORMATION ABOUT JAVASCRIPT PROGRAMMING -------------- #
+1. JS is backward compatible.
+2. old features are not removed, so websites keepswork forever.
+3. JS is not forward compatible.
+4. babel tool is used to convert latest features to old ES5 compatible.
+5. most of the browser support ES5.
+
+# -------------------------------- DATA TYPES -------------------------------- #
+1. 7 different data types in javascript.
+2. Number - floating point numbers - used for decimals and integers.
+3. String - sequence of character - used for text.
+4. Boolean - logical type that can be true or false - used for taking decisions.
+5. Undefined - value taken by a variable that is not defined - empty value.
+6. Null - also means empty value.
+7. Symbol (ES2015) - values that is unique and cannot be changed - not usefull for now.
+8. BigInt (ES2020) - larger integers than Number type can hold.
+9. javascript has dynamic typing.
+10. we do not have to manually define the data type of the value stored in a variable.
+11. instead datatypes are defined automatically.
+
+-- typeof ('javascript')
+-- typeof ('A')
+-- typeof (true)
+-- typeof (false)
+-- typeof (12)
+-- typeof (1.2)
+-- let value_1;
+[undefined means a variable has been declared but has not yet been assigned a value]
+-- typeof (value_1)
+-- let value_2 = null;
+[null is an assignment value, meaning that a variable has been declared and given the value of null]
+-- typeof (value_2)
+-- typeof (null)
+[typeof null is object and it is not corrected for leagacy reasons]
+
+# ------------------------------- LET-CONST-VAR ------------------------------ #
+1. The let and const keyword was introduced in the later version of JavaScript known as ES6(ES2015).
+2. And it's the preferred way to declare variables.
+3. let - block-scoped. let does not allow to redeclare variables. Hoisting does not occur in let.
+4. var - function scoped. var allows to redeclare variables. Hoisting occurs in var.
+5. const - declare a variable that cannot be reassigned a new value. 
+
+# ------------------------------ VARIABLE SCOPE ------------------------------ #
+1. the scope of a variable determines where it can be accessed within the code.
+2. Global Scope, Local (Function) Scope, Block-Level Scope.
+
+# --------------------------- JAVASCRIPT OPERATORS --------------------------- #
+1. JavaScript operators are special symbols that perform operations on one or more operands (values).
+2. an operator is a symbol or keyword that performs an operation on one or more operands, producing a result.
+3. Arithmetic Operators: Used for basic arithmetic operations like addition, subtraction, multiplication, division, and modulus.
+[Addition (+), Subtraction (-), Multiplication (*), Division (/), Modulus (%), Increment (++) and Decrement (--)]
+4. Assignment Operators: Used to assign values to variables.
+[Assignment (=), Compound Assignment (e.g., +=, -=, *=, /=, %=)]
+5. Comparison Operators: Used to compare values and return a Boolean result.
+[Equal to (==), Not equal to (!=), Strict equal to (===), Strict not equal to (!==), Greater than (>), Less than (<), Greater than or equal to (>=), Less than or equal to (<=)]
+6. Logical Operators: Used to combine or manipulate Boolean values.
+[Logical AND (&&), Logical OR (||), Logical NOT (!)]
+7. Bitwise Operators: Used to perform bitwise operations on binary representations of numbers.
+[Bitwise AND (&), Bitwise OR (|), Bitwise XOR (^), Bitwise NOT (~), Left Shift (<<), Right Shift (>>), Zero-fill Right Shift (>>>)]
+8. Unary Operators: Operators that only require a single operand.
+[Unary plus (+), Unary minus (-), Logical NOT (!)]
+9. Ternary Operator (Conditional Operator): An operator that takes three operands and evaluates a Boolean expression, returning one of two values depending on whether the expression is true or false.
+10. Type Operators: Used to check the data type of a value.
+[typeof, instanceof]
+11. Comma Operator: Allows multiple expressions to be evaluated in a single statement, returning the value of the last expression.
+
+# ---------------------------- OPERATOR PRECEDENCE --------------------------- #
+1. operators have a defined order of precedence, which determines the sequence in which they are evaluated when expressions are parsed.
+2. Here's a breakdown of the order of precedence in JavaScript, from highest to lowest.
+3. Grouping: ( ) - Parentheses are used to group expressions and control the order of evaluation.
+4. Member Access: . - Access properties or methods of objects.
+5. Computed Member Access: [ ] - Access properties or methods of objects using a computed value.
+6. Function Call: ( ) - Call functions or constructors and pass arguments.
+7. Postfix Increment/Decrement: ++, --
+8. Logical NOT: ! 
+9. Unary Plus and Minus: +, - 
+10. Exponentiation: ** 
+11. Multiplication, Division, Remainder: *, /, % 
+12. Addition and Subtraction: +, - 
+13. Relational Operators: <, <=, >, >=, instanceof
+14. Equality Operators: ==, !=, ===, !== 
+15. Bitwise Shift Operators: <<, >>, >>> 
+16. Bitwise AND: & 
+17. Bitwise XOR: ^ 
+18. Bitwise OR: | 
+19. Logical AND: && 
+20. Logical OR: || 
+21. Conditional (Ternary) Operator
+22. Assignment Operators: =, +=, -=, *=, /=, etc.
+
+# ------------------------ STRING VS TEMPLATE LITERAL ------------------------ #
+1. Strings in JavaScript are sequences of characters enclosed in single quotes (') or double quotes (").
+2. They are immutable, meaning once created, their value cannot be changed.
+3. To include variables or expressions within a string, you need to concatenate them using the + operator or use string interpolation functions like String.prototype.concat() or String.prototype.slice().
+
+-- let carName1 = "Volvo XC60";
+[Double quotes]
+-- let carName2 = 'Volvo XC60';  
+[Single quotes]
+
+# ----------------------------- TEMPLATE LITERALS ---------------------------- #
+1. Template literals/ String literals were introduced in ES6.
+2. Template Strings use back-ticks (``) rather than the quotes ("") to define a string
+3. Template literals support string interpolation, allowing you to embed expressions or variables directly within the string using ${} syntax.
+4. They support multi-line strings without the need for escape characters like \n.
+
+NOTES: Template literals offer a more concise and readable way to create strings with variable interpolation and multiline support, making them often preferred over traditional string concatenation, especially in modern JavaScript code. However, for compatibility with older browsers or environments, traditional strings may still be used.
+
+-- `string text`
+-- `string text ${expression} string text`
+-- `string text line 1
+    string text line 2`
+
+# ------------------------------- IF STATEMENT ------------------------------- #
+1. The if statement executes a block of code if a specified condition is true.
+
+-- if (condition) {
+  //  block of code to be executed if the condition is true
+}
+
+# ---------------------------------- IF ELSE --------------------------------- #
+1. The if...else statement executes one block of code if a specified condition is true and another block of code if the condition is false.
+
+-- if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+
+# ---------------------------------- ELSE IF --------------------------------- #
+1. The if...else if...else statement allows you to chain multiple conditions together.
+
+-- if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+
+# ----------------------------- SWITCH STATEMENT ----------------------------- #
+1. The switch statement evaluates an expression.
+2. Matches the expression's value to a case clause.
+3. Executes the block of code associated with that case.
+
+-- switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+# ----------------------------- TERNARY OPERATOR ----------------------------- #
+1. The ternary operator evaluates a condition and returns one of two expressions based on whether the condition is true or false.
+
+-- condition ? exprIfTrue : exprIfFalse
+
+# ------------------------------ TYPE CONVERSION ----------------------------- #
+1. Type conversion explicitly converts a value from one data type to another using built-in functions or methods.
+2. It occurs when a developer intentionally changes the data type of a value.
+3. Type conversion typically results in a new value of the desired data type.
+4. Examples of type conversion include using functions like Number(), String(), Boolean(),etc.
+
+-- let y = Number("10");
+[Explicitly convert x to a number]
+
+-- console.log(typeof y);
+[Output: number]
+
+# ------------------------------- TYPE COERCION ------------------------------ #
+1. Type coercion in JavaScript is an implicit process where values are automatically converted from one data type to another during operations.
+2. It occurs when JavaScript automatically converts the data type of a value to perform an operation.
+3. Type coercion can sometimes lead to unexpected results if the developer is not aware of how JavaScript handles different data types.
+4. Examples of type coercion include when using operators like +, -, ==, ===, !, etc.
+
+-- let y = "10" + 5;
+[JavaScript coerces 5 into a string and performs string concatenation]
+
+# -------------------------- TRUTHY AND FLASY VALUES ------------------------- #
+Examples of Truthy Values:
+-- "hello" (a non-empty string)
+-- 42 (a non-zero number)
+-- ["apple", "banana"] (a non-empty array)
+-- {"name": "John"} (a non-empty object)
+-- function() { } (a non-empty function)
+
+Examples of Falsy Values:
+-- false
+-- null
+-- undefined
+-- 0
+-- -0
+-- NaN
+-- "" (an empty string)
+
+# ------------------------------ LOOSE EQUALITY ------------------------------ #
+1. (==) compares values and returns true.
+2. it won't check datatypes differences so sometimes values will be converted before comparison.
+3. Type coercion in JavaScript can sometimes lead to unexpected results, so it's mostly recommended to use the strict equality operator === instead of the loose equality operator ==.
+
+# ------------------------------ STRICT EQUALITY ----------------------------- #
+1. while comparing the variables, it first checks if is same data types.
+2. If the types match, then it checks for the value.
+3. If the values are same, it returns true.
+4. If it has different data types then it will return false.
+
+# ----------------------------- LOGICAL OPERATOR ----------------------------- #
+1. And-Or-Not 
+2. these 3 play major role in condition validation.
+3. if we want to check both the conditions are true, we can use '&&'.
+4. if we want to check any of the conditions are true, we can use '||'.
+5. if we want to check a condition is not true, we can use '!'.
+
+
+
