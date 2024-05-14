@@ -30,20 +30,20 @@
 10. we do not have to manually define the data type of the value stored in a variable.
 11. instead datatypes are defined automatically.
 
--- typeof ('javascript')
--- typeof ('A')
--- typeof (true)
--- typeof (false)
--- typeof (12)
--- typeof (1.2)
--- let value_1;
-[undefined means a variable has been declared but has not yet been assigned a value]
--- typeof (value_1)
--- let value_2 = null;
-[null is an assignment value, meaning that a variable has been declared and given the value of null]
--- typeof (value_2)
--- typeof (null)
-[typeof null is object and it is not corrected for leagacy reasons]
+    typeof ('javascript')
+    typeof ('A')
+    typeof (true)
+    typeof (false)
+    typeof (12)
+    typeof (1.2)
+    let value_1;
+    [undefined means a variable has been declared but has not yet been assigned a value]
+    typeof (value_1)
+    let value_2 = null;
+    [null is an assignment value, meaning that a variable has been declared and given the value of null]
+    typeof (value_2)
+    typeof (null)
+    [typeof null is object and it is not corrected for leagacy reasons]
 
 # ------------------------------- LET-CONST-VAR ------------------------------ #
 1. The let and const keyword was introduced in the later version of JavaScript known as ES6(ES2015).
@@ -105,10 +105,10 @@
 2. They are immutable, meaning once created, their value cannot be changed.
 3. To include variables or expressions within a string, you need to concatenate them using the + operator or use string interpolation functions like String.prototype.concat() or String.prototype.slice().
 
--- let carName1 = "Volvo XC60";
-[Double quotes]
--- let carName2 = 'Volvo XC60';  
-[Single quotes]
+    let carName1 = "Volvo XC60";
+    [Double quotes]
+    let carName2 = 'Volvo XC60';  
+    [Single quotes]
 
 # ----------------------------- TEMPLATE LITERALS ---------------------------- #
 1. Template literals/ String literals were introduced in ES6.
@@ -118,58 +118,58 @@
 
 NOTES: Template literals offer a more concise and readable way to create strings with variable interpolation and multiline support, making them often preferred over traditional string concatenation, especially in modern JavaScript code. However, for compatibility with older browsers or environments, traditional strings may still be used.
 
--- `string text`
--- `string text ${expression} string text`
--- `string text line 1
-    string text line 2`
+    `string text`
+    `string text ${expression} string text`
+    `string text line 1
+     string text line 2`
 
 # ------------------------------- IF STATEMENT ------------------------------- #
 1. The if statement executes a block of code if a specified condition is true.
 
--- if (condition) {
-  //  block of code to be executed if the condition is true
-}
+    if (condition) {
+      //  block of code to be executed if the condition is true
+    }
 
 # ---------------------------------- IF ELSE --------------------------------- #
 1. The if...else statement executes one block of code if a specified condition is true and another block of code if the condition is false.
 
--- if (condition) {
-  //  block of code to be executed if the condition is true
-} else {
-  //  block of code to be executed if the condition is false
-}
+    if (condition) {
+      //  block of code to be executed if the condition is true
+    } else {
+      //  block of code to be executed if the condition is false
+    }
 
 # ---------------------------------- ELSE IF --------------------------------- #
 1. The if...else if...else statement allows you to chain multiple conditions together.
 
--- if (condition1) {
-  //  block of code to be executed if condition1 is true
-} else if (condition2) {
-  //  block of code to be executed if the condition1 is false and condition2 is true
-} else {
-  //  block of code to be executed if the condition1 is false and condition2 is false
-}
+    if (condition1) {
+      //  block of code to be executed if condition1 is true
+    } else if (condition2) {
+      //  block of code to be executed if the condition1 is false and condition2 is true
+    } else {
+      //  block of code to be executed if the condition1 is false and condition2 is false
+    }
 
 # ----------------------------- SWITCH STATEMENT ----------------------------- #
 1. The switch statement evaluates an expression.
 2. Matches the expression's value to a case clause.
 3. Executes the block of code associated with that case.
 
--- switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
-}
+    switch(expression) {
+      case x:
+        // code block
+        break;
+      case y:
+        // code block
+        break;
+      default:
+        // code block
+    }
 
 # ----------------------------- TERNARY OPERATOR ----------------------------- #
 1. The ternary operator evaluates a condition and returns one of two expressions based on whether the condition is true or false.
 
--- condition ? exprIfTrue : exprIfFalse
+    condition ? exprIfTrue : exprIfFalse
 
 # ------------------------------ TYPE CONVERSION ----------------------------- #
 1. Type conversion explicitly converts a value from one data type to another using built-in functions or methods.
@@ -177,11 +177,11 @@ NOTES: Template literals offer a more concise and readable way to create strings
 3. Type conversion typically results in a new value of the desired data type.
 4. Examples of type conversion include using functions like Number(), String(), Boolean(),etc.
 
--- let y = Number("10");
-[Explicitly convert x to a number]
+    let y = Number("10");
+    [Explicitly convert x to a number]
 
--- console.log(typeof y);
-[Output: number]
+    console.log(typeof y);
+    [Output: number]
 
 # ------------------------------- TYPE COERCION ------------------------------ #
 1. Type coercion in JavaScript is an implicit process where values are automatically converted from one data type to another during operations.
@@ -189,25 +189,27 @@ NOTES: Template literals offer a more concise and readable way to create strings
 3. Type coercion can sometimes lead to unexpected results if the developer is not aware of how JavaScript handles different data types.
 4. Examples of type coercion include when using operators like +, -, ==, ===, !, etc.
 
--- let y = "10" + 5;
-[JavaScript coerces 5 into a string and performs string concatenation]
+    let y = "10" + 5;
+    [JavaScript coerces 5 into a string and performs string concatenation]
 
 # -------------------------- TRUTHY AND FLASY VALUES ------------------------- #
-Examples of Truthy Values:
--- "hello" (a non-empty string)
--- 42 (a non-zero number)
--- ["apple", "banana"] (a non-empty array)
--- {"name": "John"} (a non-empty object)
--- function() { } (a non-empty function)
+1. Examples of Truthy Values:
 
-Examples of Falsy Values:
--- false
--- null
--- undefined
--- 0
--- -0
--- NaN
--- "" (an empty string)
+    "hello" (a non-empty string)
+    42 (a non-zero number)
+    ["apple", "banana"] (a non-empty array)
+    {"name": "John"} (a non-empty object)
+    function() { } (a non-empty function)
+
+2. Examples of Falsy Values:
+
+    false
+    null
+    undefined
+    0
+    -0
+    NaN
+    "" (an empty string)
 
 # ------------------------------ LOOSE EQUALITY ------------------------------ #
 1. (==) compares values and returns true.
@@ -237,7 +239,31 @@ Examples of Falsy Values:
 5. function declaration - can be used before its declared.
 6. function expression - essentially a function value stored in a variable.
 7. arrow function - great for one line function, this keyword won't work in arrow function.
- 
+
 # ---------------------- FUNCTION CALLING OTHER FUNCTION --------------------- #
 1. we can call a function inside another function in javascript.
 2. inside function1 we need to to call the function2().
+
+# ----------------------------------- ARRAY ---------------------------------- #
+1. An array is a special variable, which can hold more than one value.
+
+    const array_name = [item1, item2, ...];
+    const array_name = new Array(item1, item2, ...);
+
+2. we can use different datatypes inside a array.
+3. we can use a array as a value inside a array.
+
+# ---------------------------- ARRAY BASIC METHODS --------------------------- #
+1. Mutator Methods [These methods modify the array]
+
+    push() - Adds one or more elements to the end of an array and returns the new length of the array.
+    pop() - Removes the last element from an array and returns that element.
+    shift() - Removes the first element from an array and returns that element.
+    unshift() - Adds one or more elements to the front of an array and returns the new length of the array.
+    splice() - Changes the contents of an array by removing or replacing existing elements and/or adding new elements.
+    sort() - Sorts the elements of an array in place and returns the array.
+    reverse() - Reverses the order of the elements in an array in place.
+    copyWithin() - Shallow copies part of an array to another location in the same array and returns it, without modifying its     length.
+    fill() - Fills all the elements of an array from a start index to an end index with a static value.
+
+2. Accessor Methods [These methods do not modify the array but return some representation of the array]
