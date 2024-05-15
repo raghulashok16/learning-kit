@@ -269,18 +269,22 @@
 
 # ----------------------- ADDING ELEMENTS IN COMPONENT ----------------------- #
 1. always use fragment as parent element when adding elements in components.
-#   <React.Fragment>
+
+    <React.Fragment>
     ...
     </React.Fragment>
+
 2. simple way fo react fragment
-#   <>
+
+    <>
     ...
     </>
 
 # ----------------------- JAVASCRIPT EXPRESSION IN JSX ----------------------- #
 1. use curybrases and write javascript code.
 2. in this below example task value is declared inside the component function and just abouve the return statement.
-#   const Todo = () => {
+
+   const Todo = () => {
         const tasks = 12;
         return (
             <>
@@ -289,6 +293,7 @@
         );
     };
     export default Todo;
+
 3. example 
 
 
@@ -345,10 +350,11 @@
 10. <p> SortBy:{sortBy} Category:{category} </p>
 11. this line of p tag will get the details from the query string and print the values.
 12. we can also set the searchParams manually by using on click button event.
-13. setSearchParams({
+    
+    setSearchParams({
     sortBy: "views",
     category:"author",
-})
+    })
 
 # ------------------------------ NESTED ROUTING ------------------------------ #
 1. 
