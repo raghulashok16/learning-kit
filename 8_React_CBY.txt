@@ -407,7 +407,15 @@
 # ------------------------- USEEFFECT HOOK IN DETAIL ------------------------- #
 1. it is used to peform side effects in our components.
 2. side effects are actions which are performed with the 'outside world'.
+
     fetching data from api,
     accesing local storage,
     directly updating dom,
     timer functios (setTimeout - setInterval)
+
+3. useEffect(()=>{}); [this code will run everytime when app gets the mount and re-render happens]
+4. useEffect(()=>{},[]); [this code will run only once when the app gets mounted]
+5. useEffect(()=>{},[dependencies]); [this code will run everytime when app gets mounted and when dependencies changes]
+
+# ------------------------ USEEFFECT CLEANUP FUNCTION ------------------------ #
+1. when we use 
