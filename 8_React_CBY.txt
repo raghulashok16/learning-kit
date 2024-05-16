@@ -419,3 +419,53 @@
 
 # ------------------------ USEEFFECT CLEANUP FUNCTION ------------------------ #
 1. when we use 
+
+# ------------------------------- HTTP REQUESTS ------------------------------ #
+
+    get    - used to fetching data from server.
+    post   - used to sumbit data to server.
+    put    - used to replace data at server.
+    patch  - used to update specific data at server.
+    delete - used to delete data from server.
+
+# ------------------------------ NEED FOR AXIOS ------------------------------ #
+1. in react backend comminication is achived using HTTP protocol.
+2. fetch api in js is also used but axios was prefered by most of the developers.
+3. because axios has much aditional features.
+4. it can be used in both client-side and server-side(node.js) HTTP requests.
+
+# ------------------------- FETCHING DATA WITH AXIOS ------------------------- #
+1. we need to install axios in our app.
+
+    npm install axios
+
+2. then import it in our component.
+
+    import axios from 'axios';
+
+3. axios has get method which is used to fetch data from server.
+
+    axios.get('url')
+
+4. this code will return a promise, we can handle it using (then) or (async/await).
+
+    .then((res)=>{console.log(res)});
+
+5. always console log the response(res) to view the structure of the json.
+6. this helps how the data was binded in the json.
+7. you can check the network->fetch/xhr in the inspect page.
+8. this will show the status of our axios method.
+9. 200 is the status success message.
+10. every http requests & response is divided into two sections.
+11. HEADER - here we define meta data.
+12. BODY - here we define or get data.
+13. we can use the axios response value to a state in our component.
+
+    .then((res)=> setMethod(res.data));
+
+14. in fetch method we need a additional line to convert into json format.
+
+    .then((res)=> res.json())
+    .then((data)=> setMethod(data.results));
+
+15. so using axios we can avoid this line of converting into json.
