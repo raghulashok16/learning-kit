@@ -469,3 +469,18 @@
     .then((data)=> setMethod(data.results));
 
 15. so using axios we can avoid this line of converting into json.
+
+# ---------------------------- LOADING INDICATORS ---------------------------- #
+1. create state named isLoading.
+2. this state is going to handle loading indicator.
+3. this helps us to show the end users that the data are loading behind.
+4. first we need to set false in isLoading.
+5. inside useEffect set false before api call.
+6. after api call set true.
+7. now use this state to conditionally reder with && operator and ternary operator.
+8. sometimes we cannot abe to see the loading indicators because we have high speed internet.
+9. we can reduce the inter speed in our brouser using inspect mode.
+10. goto network tab and change no throttling to slow 3g.
+11. this will reduce the internet speed.
+12. always use loading indicators(any spiner animation) with easy animation class given in tailwind.
+
