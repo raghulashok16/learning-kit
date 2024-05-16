@@ -374,8 +374,7 @@
 2. then import that compoent in App Component.
 3. this increases readability of our code.
 
-# ------------------------ PROGRAMMATICALLY NAVIGATION 
------------------------ #
+# ------------------------ PROGRAMMATICALLY NAVIGATION ----------------------- #
 1. this feature is used conditionally jump to the home page.
 2. for example if a employee try one accesing a page of manager using the link.
 3. then we can conditionally check if login credentials matches the manager.
