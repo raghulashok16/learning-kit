@@ -516,3 +516,47 @@
     };
 
 4. this method should be called inside useEffect.
+
+# ----------------------- 2 ways to work with API data ----------------------- #
+1. optimistic method
+
+    update data on UI -> call API to update data at backend
+
+2. pessimistic method
+
+    call API to update data at backend -> update data on UI
+
+3. all modern wbsite use optimistic method because the ui path should be updated immediatly when user clicked.
+4. in social media if we hit a like button it must be display immediatly.
+5. pessimistic method will take some time to update data on UI.
+
+# -------------------------- API for adding new data ------------------------- #
+1. we need to use axios post method to add data to the server.
+2. status code for successfully created data is 201.
+3. while adding new data to api, never forget to add id information.
+4. this will help us to use it at map function.
+5. this allow us to identify difference between 
+
+    axios.post('API url', newSellers)
+    .then(res => setSellers([res.data, ...sellers]))
+
+6. sometimes error will come so it can be handled using catch method or by using try/catch block.
+7. jsonplaceholder websites allow total of 11 count so after 11 it will show error regarding 'id'.
+
+# ------------------------------ deleting seller ----------------------------- #
+1. to delete a seller we can use a handle delete seller function.
+2. we need to pass seller id to the handle function, so use a arrow function to pass data.
+3. after using filter method set that filtered data to the sellers.
+4. then update the server about the deleted seller using delete() method.
+5. if any error occurs catch them.
+
+    const deleteSellers = (id) => {
+        setSellers(sellers.filter((s) => s.id !== id));
+        axios.delete('apiurl/${id}')
+        .catch((err) => {
+            setErrors(err.message);
+            setSellers(sellers);
+        });
+    };
+
+6. status 200 will show that it has been successfully deleted.
