@@ -560,3 +560,9 @@
     };
 
 6. status 200 will show that it has been successfully deleted.
+
+# -------------------------- updating seller details ------------------------- #
+1. create a handleUpdate function with seller details as argument.
+2. so use arrow function for onClick.
+3. as we know axios patch() method is used to update specific data in server.
+4. 
