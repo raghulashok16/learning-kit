@@ -484,3 +484,35 @@
 11. this will reduce the internet speed.
 12. always use loading indicators(any spiner animation) with easy animation class given in tailwind.
 
+# ------------------------------ handling errors ----------------------------- #
+1. when we are working in promises, we can use catch method for error handling.
+2. after then method, at the end we need to use catch method.
+3. create a state variable for error messages.
+4. based on this message we can create custom error page that will be displayed to the users.
+
+    .then((res)=>{...})
+    .catch((err)=>{
+        setIsLoading(false); // for removing loading indicators
+        setErrors(err.message);
+    });
+
+5. prefered method by users due to less code and maintainability.
+
+# --------------------- handling promise with async await -------------------- #
+1. for fetching api data, we can use a seperate async function.
+2. inside useEffect call that fetchAPI function.
+3. while using async function, use a try/catch to handle errors.
+
+    const fetchAPI = async ()=>{
+        setIsLoading(true);
+        try{
+            const res = await axios.get('url');
+            setState(res.data);
+            setIsLoading(false);
+        }catch (err) {
+            setIsLoading(false);
+            setErrorState(err.message);
+        }
+    };
+
+4. this method should be called inside useEffect.
