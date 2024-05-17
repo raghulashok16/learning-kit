@@ -73,4 +73,17 @@
 
 # ----------------------------- array map method ----------------------------- #
 1. these method do not mutate the original array.
-2. 
+2. basically a map method will loop through all the element in the array and returs the same length with some operation applied.
+
+    const x = [1,2,3,4,5].map((el) => el*2);
+
+# ---------------------------- array filter method --------------------------- #
+1. it is used to filter out elements based on the conditions we apply.
+
+    const x = [1,2,3,4,5,6].filter((el) => el%2===0);
+    const indianBooks = books.filter((book) => book.contry ==='india' );
+
+2. we chain multiple filter methods.
+
+    const x = [1,2,3,4,5,6].filter((el) => el%2===0)..filter((el) => el%3===0);
+
