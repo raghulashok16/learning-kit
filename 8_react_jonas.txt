@@ -1,0 +1,20 @@
+# ---------------------- destructuring objects and array --------------------- #
+1. destructuring allow us to access single or multiple values in a single line.
+
+    const {title, author} = bookObject;
+
+2. the name we use to destruct must be same as the key name in the object.
+3. this is very helpfull when we work with api.
+4. for array destructuring, we can use the same way but we should use a square bracket instead of cury braces.
+
+    const [firstElement, SecondElement, ThirdElement] = ourArray;
+
+# -------------------------- rest / spread operator -------------------------- #
+1. rest operator is used to store the remaining values into our required operation.
+2. in array destructuring we can use rest operator to store excess element in a array.
+
+        const [firstElement, ...otherElements] = ourArray;
+
+3. in array destructuring it is mandatory to use rest operator at end.
+4. if we destruct a element after rest operator it will result in a error.
+5. the main use of spread operator
