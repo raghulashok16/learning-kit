@@ -37,4 +37,27 @@
 9. the above code will create a new object without affecting the original oldObj.
 10. the additional properties will be overwritten in the newObj.
 11. to override an existing property always use spread operator at the begining.
-12. 
+
+# ----------------------------- template literals ---------------------------- #
+1. it was introduced in es6.
+2. it mainly used to use js expressions inside strings.
+
+    const summary = `${title} ia a book with ${5+6} pages`;
+    const letters = `${author.split('-')}`;
+
+# --------------------------------- ternaries -------------------------------- #
+1. it is a special operator with three operands.
+
+    pages>1000 ? 'over a thousand' : 'less than thousand';
+    const result = `rammin got ${marks>49 ? 'pass' : 'fail'} marks`;
+
+# ------------------------------ arrow function ------------------------------ #
+1. it is a new way of writing functions in javascript.
+2. it was introduced in es6.
+3. it is also called one liner function.
+
+# ------------------ short circuiting and logical operators ------------------ #
+1. in the short circuiting with &&, if the first value is true then the second value will run, if first value is false then the second value will not run.
+2. in the short circuiting with ||,if first value is true then the second value will not run, if the first value is false then the second value will run.
+3. but when we use nullish coalescing operator, if the first value is null/undefined then the second value will run.
+
