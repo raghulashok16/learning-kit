@@ -582,3 +582,24 @@
             setErrors(err.message)
         };
     }
+
+# ------------------ making axios variable for HTTP request ------------------ #
+1. axios allow us to create a base url.
+2. this helps us to shortern the API url link.
+3. in the source folder create a sub folder named utils.
+4. inside utils create a file named 'api-client.js'.
+5. this help us make http request using axios.
+6. inside the file, use this code.
+
+    import axios from "axios";
+    export default axios.create({
+        baseURL : "http://jsonplaceholder.typicode.com",
+    })
+
+7. instead of importing axios in our component, import apiClient.
+
+    import apiClient from '../../utils/api-client';
+
+8. replace 'axios' with 'apiClient'.
+9. finnaly remove the baseURL in all api method -get,post,delete,patch.
+10. after this process app will run the same way before.
