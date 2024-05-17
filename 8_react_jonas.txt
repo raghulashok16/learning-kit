@@ -13,8 +13,28 @@
 1. rest operator is used to store the remaining values into our required operation.
 2. in array destructuring we can use rest operator to store excess element in a array.
 
-        const [firstElement, ...otherElements] = ourArray;
+    const [firstElement, ...otherElements] = ourArray;
 
 3. in array destructuring it is mandatory to use rest operator at end.
 4. if we destruct a element after rest operator it will result in a error.
-5. the main use of spread operator
+5. the main use of spread operator is to get all the value out of a array/object.
+
+    const ourArray = [...arr1, ...arr2];
+
+6. the above code is used to create a new array without affecting the original array.
+
+    const ourArray = [...arr1, 'newElement'];
+
+7. in this example we can create a new array by adding a aditional string element at the end.
+8. same is used to create an object.
+
+    const newObj = {
+        ...oldObj,
+        pages:1210,
+        author:'raghul ashok',
+    };
+
+9. the above code will create a new object without affecting the original oldObj.
+10. the additional properties will be overwritten in the newObj.
+11. to override an existing property always use spread operator at the begining.
+12. 
