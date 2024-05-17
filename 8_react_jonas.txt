@@ -61,3 +61,16 @@
 2. in the short circuiting with ||,if first value is true then the second value will not run, if the first value is false then the second value will run.
 3. but when we use nullish coalescing operator, if the first value is null/undefined then the second value will run.
 
+# ----------------------------- optional chaining ---------------------------- #
+1. sometimes we face a error 'cannot read properties of undefined'.
+2. this occurs mostly in accessing obect key which was not there.
+
+    const bookReview = book.reviews.libraryyhing?.reviews;
+    const bookReview = book.reviews?.libraryyhing?.reviews ?? 0;
+
+3. (?.) - is the optional chanining symbol.
+4. by using optional chanining we can set default value because js will throw error if we try to read undefined.
+
+# ----------------------------- array map method ----------------------------- #
+1. these method do not mutate the original array.
+2. 
