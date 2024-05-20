@@ -109,7 +109,7 @@ OLAP --> ONLINE ANALYTICAL PROCESSING
 4. then install valentina studio.
 5. mandatory key required.
 6. register in website which is absolutly free.
-
+7. from the orders tab copy the serial key and use it in valentina studio.
 
 # ---------------------------- POSTGRESS DEFAULTS ---------------------------- #
 url - localhost
@@ -117,6 +117,15 @@ port - 5432
 username - postgres
 password - root
 connection url - local host
+
+# -------------------------- importing the database -------------------------- #
+1. if our postgres not showing in the valentina.
+2. then connect manually and add it using our postgres password.
+3. downlaod the data.zip from udemy resource.
+4. extract it in our pc.
+5. in the schema editor right click and choose new database.
+6. create a name for our database.
+7. file -> 
 
 # ------------------------------- SQL COMMANDS ------------------------------- #
 DDL --> [ CREATE, ALTER, DROP, RENAME, TRUNCATE, COMMENT ] [ DATA DEFINITION LANGUAGE ]
