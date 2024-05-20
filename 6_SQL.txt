@@ -159,27 +159,27 @@ NOTE: "" --> double quotes [ COLUMN ]
 
 # --------------------------- COLUMN CONCATTENATION -------------------------- #
 1. to make our data prettier, simpler, etc.
-[CONCAT(TEXT,TEXT)]
-[CONACT(COLUMN1,COLUMN2)]
-2.
--- SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles;
+[concat(TEXT,TEXT)]
+[concat(COLUMN1,COLUMN2)]
+2.concatenate the employee number and title name of the employee into one column.
+-- SELECT concat(emp_no,'is a',title) AS "employee detail" FROM titles;
 3. concatenate the first and last name of the employee into one column.
--- SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
+-- SELECT emp_no, concat(first_name, ' ', last_name) AS "full name" FROM "employees"; 
 
-# ----------------------------- FUNCTIONS IN SQL ----------------------------- #
+# --------------------------------- functions -------------------------------- #
 1. function is a set of steps that creates a single value
 2. Two types of functions in SQL are aggregate and scalar function
 3. AGGREGATE --> it works on all given data and gives a single data output, operate on many records to produce 1 value
 4. SCALAR --> it works on individual row and gives individual result for each row, operate on each record independently
 
 # ---------------------------- AGGREGATE FUNCTIONS --------------------------- #
-AVG()
-COUNT()
-MIN() 
-MAX()
-SUM()
+avg()
+count()
+min() 
+max()
+sum()
 
-# ------------------------------ ADDING COMMENTS ----------------------------- #
+# --------------------------------- comments --------------------------------- #
 -- SINGLE LINE COMMENT
 
 /*
@@ -187,7 +187,7 @@ SUM()
 *COMMENTS
 */
 
-# -------------------------- COMMON SELECT MISTAKES -------------------------- #
+# ------------------------------ common mistakes ----------------------------- #
 1. misspelling commands
 2. using ; instad of , or vice versa
 3. using " instad of '
@@ -195,32 +195,32 @@ SUM()
 5. ' is for text/string
 6. invalid column name
 
-# ------------------- HOW TO FILTER DATA [ WHERE keyword ] ------------------- #
-[get a list of all female employees]
+# -------------------------------- filter data ------------------------------- #
+1. get a list of all female employees.
+2. 'where' keyword is used to filter out data.
 -- SELECT first_name FROM employees WHERE gender = 'F';
 
-# -------------------------------- AND KEYWORD ------------------------------- #
-# ---------- [ used to filter data based on two or more condition ] ---------- #
-# ------------------------------- [ chainning ] ------------------------------ #
+# --------------------- filter using  multiple conditions -------------------- #
+1. filtering based on 2 & 3 conditions.
+2. 'and' keyword is used to filter multiple conditions.
 -- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
 -- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
-[ filtering based on 2 & 3 conditions ]
 
-# -------------------------------- OR KEYWORD -------------------------------- #
+# -------------------------------- or keyword -------------------------------- #
 -- SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
 -- SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
 -- SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
 -- SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
 
-# ----------------- FILTER WITH AND/OR [ LOGICAL OPERATORS ] ----------------- #
-[how many female customers do we have from the state of kerala or tamilnadu]
+# --------------------------- filter using and/not --------------------------- #
+1. how many female customers do we have from the state of kerala or tamilnadu
 -- SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
 
-# ------------- NOT KEYWORD [ filter everthing except some data ] ------------ #
+# -------------------------------- not keyword ------------------------------- #
+1. how many customers are not 55 years age ?
 -- SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
-[how many customers are not 55 years age ?]
+2. how many customers are not 55 and 76 years age ?
 -- SELECT COUNT(age) FROM customers NOT age = 55; 
-[how many customers are not 55 and 76 years age ?]
 -- SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
 
 # --------------------------- COMPARISION OPERATORS -------------------------- #
