@@ -1,35 +1,35 @@
 # --------------------------------- DATABASE --------------------------------- #
-[it's a collection of data, a method for accessing and manipulating that data]
-[data is everywhere and it is the most valuable commodity in the world]
-[everyday we deal with tons of data like drone footages, camera photos, location data and many more]
-[databases aren't anything special, they're just hardware and software, there's just computers]
-[hardware is the mechanical part and the software is the actual code on top that allows usto collect and use the data really useful]
-[without data no websites can work]
-[drum memory was used initially to store data before disk drive was introduced]
-[drum memory is a cylindrical shaped and thats why databases have cylindrical icons]
+1. it's a collection of data, a method for accessing and manipulating that data.
+2. data is everywhere and it is the most valuable commodity in the world.
+3. everyday we deal with tons of data like drone footages, camera photos, location data and many more.
+4. databases aren't anything special, they're just hardware and software, there's just computers.
+5. hardware is the mechanical part and the software is the actual code on top that allows usto collect and use the data really useful.
+6. without data no websites can work.
+7. drum memory was used initially to store data before disk drive was introduced.
+8. drum memory is a cylindrical shaped and thats why databases have cylindrical icons.
 
 # --------------------------- WHAT IS A DATABASE ? --------------------------- #
-[database is a system, hardware and software that allows a user to store, organize and use data]
+1. database is a system, hardware and software that allows a user to store, organize and use data.
 
 # ------------------------------ DATABASE BRANDS ----------------------------- #
 [maria db, microsoft sql server, cassandra, mongo db, my sql, oracle database, redis, sql lite, postgres sql, ibm db2 and many more]
 
 # ------------------------ THINGS TO KNOW IN DATABASE ------------------------ #
-[how to put data in db]
-[how to use/update/learn from data]
-[how to remove data]
+1. how to put data in db.
+2. how to use/update/learn from data.
+3. how to remove data.
 
 # ---------------------------- CONFUSING ACRONYMS ---------------------------- #
-[DBMS - DataBase Management System]
-[RDBMS - Relational DataBase Management System]
-[SQL - Structured Query Language]
+DBMS - DataBase Management System
+RDBMS - Relational DataBase Management System
+SQL - Structured Query Language
 
 # ----------------------------- FIVE DATA MODELS ----------------------------- #
-[relational model -> mysql, postgres -> most popular, e-comerce]
-[document model -> mongo db, firebase -> data in document]
-[key value model -> dinamo db -> simplest way to access data]
-[graph model -> more complex, data connected in differentways, social media uses these model]
-[wide columnar model -> newly introduced -> cassandra, google big table]
+1. relational model -> mysql, postgres -> most popular, e-comerce.
+2. document model -> mongo db, firebase -> data in document.
+3. key value model -> dinamo db -> simplest way to access data.
+4. graph model -> more complex, data connected in differentways, social media uses these model.
+5. wide columnar model -> newly introduced -> cassandra, google big table.
 
 # ------------------------------- WHAT IS SQL ? ------------------------------ #
 1. SQL is a language that is used to talk to a databases.
@@ -39,10 +39,10 @@
 
 # ------------------------------ QUERY BREAKDOWN ----------------------------- #
 -- SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
-[NAME --> identifier]
-[WHERE --> keyword]
-[ROLE = 'MANAGER' --> condition]
-['MANAGER' --> expression]
+NAME --> identifier
+WHERE --> keyword
+ROLE = 'MANAGER' --> condition
+'MANAGER' --> expression
 
 # ------------------------- DECLARATIVE VS IMPERATIVE ------------------------ #
 
@@ -63,31 +63,31 @@ u --> update
 d --> delete
 
 # ----------------------------------- TABLE ---------------------------------- #
-[table is the representation of object]
-[each table has its name]
-[each column represent specific types of data]
-[each row represent singular piece of data]
+1. table is the representation of object.
+2. each table has its name.
+3. each column represent specific types of data.
+4. each row represent singular piece of data.
 
 # ---------------------------------- COLUMN ---------------------------------- #
-[each column has its own name]
-[collection of columns is called degree]
-[we can specify what data should be put in that column and that concept is called domain/constraint]
-[column is also called as attributes]
+1. each column has its own name.
+2. collection of columns is called degree.
+3. we can specify what data should be put in that column and that concept is called domain/constraint.
+4. column is also called as attributes.
 
 # ----------------------------------- ROWS ----------------------------------- #
-[rows are also called as tuples]
-[tuple is nothing but single record of data]
-[tuples is nothing but multiple record of data]
-[each tuples must follow the column constraint]
-[collection of rows/tuples is called cardinallity]
+1. rows are also called as tuples.
+2. tuple is nothing but single record of data.
+3. tuples is nothing but multiple record of data.
+4. each tuples must follow the column constraint.
+5. collection of rows/tuples is called cardinallity.
 
 # ------------------------ PRIMARY KEY AND FOREIGN KEY ----------------------- #
-[primary key uniquely identify data in the table]
-[foreign key is used to add data to the main table but it is a primary key in the secondary table]
-[foreign key is used to make a relationship between two or more tables]
+1. primary key uniquely identify data in the table.
+2. foreign key is used to add data to the main table but it is a primary key in the secondary table.
+3. foreign key is used to make a relationship between two or more tables.
 
 # ------------------------------- OLTP vs OLAP ------------------------------- #
-[realtional databases support day to day office work and support in analysis]
+1. realtional databases support day to day office work and support in analysis.
 OLTP --> ONLINE TRANSACTION PROCESSING
 OLAP --> ONLINE ANALYTICAL PROCESSING
 
@@ -125,34 +125,46 @@ connection url - local host
 4. extract it in our pc.
 5. in the schema editor right click and choose new database.
 6. create a name for our database.
-7. file -> 
+7. click on the database name -> file -> load dumb.
+8. in the dialog box choose sql and choose the database data in our extracted folder.
+9. dump process will run for some times and database data will be created.
+10. do this process for all the databases.
+11. after you imported all the databases data check each database and its table data.
 
 # ------------------------------- SQL COMMANDS ------------------------------- #
-DDL --> [ CREATE, ALTER, DROP, RENAME, TRUNCATE, COMMENT ] [ DATA DEFINITION LANGUAGE ]
-DQL --> [ SELECT ] [ DATA QUERY LANGUAGE ]
-DML --> [ INSERT, UPDATE, DELETE, MERGE, CALL, EXPLAIN PLAN, LOCK TABLE ] [ DATA MODIFICATION LANGUAGE ]
-DCL --> [ GRANT, REVOKE ] [ DATA CONTROL LANGUAGE ]
+
+DDL - data definition language
+DQL - data query language
+DML - data manipulation language
+DCL - data control language
+
+DDL - create, alter, drop, rename, truncate, comment
+DQL - select
+DML - insert, update, delete, merge, call, explain plan , lock table
+DCL -->  grant, revoke
+
+# -------------------------- basic questions in sql -------------------------- #
+1. give me a list of all employees in the company?
+2. how many departments are the in the company?
+3. how many times has employee 10001 had a rise?
+4. what title does 10006 have?
 
 NOTE: "" --> double quotes [ COLUMN ]
       '' --> single quotes [ text/string ]
  
-# --------------------------------- EXERCISE --------------------------------- #
-[give me a list of all employees in the company]
-    -- SELECT * FROM "employees"
-[how many departments are the in the company?]
-    -- SELECT * FROM "departments"
-[how many times has employee 10001 had a rise?]
-[what title does 10006 have?]
-
-# ------------- RENAMING COLUMS [ SELECT colum as '<new_name>' ] ------------- #
-    -- SELECT emp_no AS "employee id" FROM "employees" 
-    -- SELECT dob AS "birthday" FROM "employees" 
+# ------------------------------ renaming colums ----------------------------- #
+-- SELECT emp_no AS "Employee Id" FROM "employees" 
+-- SELECT dob AS "Birthday" FROM "employees" 
+-- SELECT first_name AS "First Name" FROM "employees" 
 
 # --------------------------- COLUMN CONCATTENATION -------------------------- #
-    -- SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles
+1. to make our data prettier, simpler, etc.
 [CONCAT(TEXT,TEXT)]
 [CONACT(COLUMN1,COLUMN2)]
-    -- SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
+2.
+-- SELECT CONCAT(emp_no,'is a',title) AS "employee detail" FROM titles;
+3. concatenate the first and last name of the employee into one column.
+-- SELECT emp_no, CONCAT(first_name, ' ', last_name) AS "full name" FROM "employees"; 
 
 # ----------------------------- FUNCTIONS IN SQL ----------------------------- #
 1. function is a set of steps that creates a single value
@@ -166,9 +178,6 @@ COUNT()
 MIN() 
 MAX()
 SUM()
-    -- SELECT max(salary) FROM salaries;
-    -- SELECT sum(salary) FROM slaries;
-    -- SELECT count(emp_no) FROM employees; 
 
 # ------------------------------ ADDING COMMENTS ----------------------------- #
 -- SINGLE LINE COMMENT
@@ -188,35 +197,35 @@ SUM()
 
 # ------------------- HOW TO FILTER DATA [ WHERE keyword ] ------------------- #
 [get a list of all female employees]
-    -- SELECT first_name FROM employees WHERE gender = 'F';
+-- SELECT first_name FROM employees WHERE gender = 'F';
 
 # -------------------------------- AND KEYWORD ------------------------------- #
 # ---------- [ used to filter data based on two or more condition ] ---------- #
 # ------------------------------- [ chainning ] ------------------------------ #
-    -- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
-    -- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
+-- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
+-- SELECT firstname, lastname FROM users WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
 [ filtering based on 2 & 3 conditions ]
 
 # -------------------------------- OR KEYWORD -------------------------------- #
-    -- SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
-    -- SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
-    -- SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
-    -- SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
+-- SELECT firstname FROM users WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
+-- SELECT firstname FROM users WHERE salary = 2000 OR firstname = 'Kumar'; 
+-- SELECT firstname FROM users WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
+-- SELECT firstname FROM users WHERE firstname = 'Raghul' OR firstname = 'Ram';
 
 # ----------------- FILTER WITH AND/OR [ LOGICAL OPERATORS ] ----------------- #
 [how many female customers do we have from the state of kerala or tamilnadu]
-    -- SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
+-- SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
 
 # ------------- NOT KEYWORD [ filter everthing except some data ] ------------ #
-    -- SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
+-- SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
 [how many customers are not 55 years age ?]
-    -- SELECT COUNT(age) FROM customers NOT age = 55; 
+-- SELECT COUNT(age) FROM customers NOT age = 55; 
 [how many customers are not 55 and 76 years age ?]
-    -- SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
+-- SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
 
 # --------------------------- COMPARISION OPERATORS -------------------------- #
 [who over the age of 44 has an income of 100000?]
-    -- SELECT name from employees WHERE age >44 AND income = 100000;
+-- SELECT name from employees WHERE age >44 AND income = 100000;
 
 [10 > 20     - false]
 [10 < 20     - true]
