@@ -217,14 +217,14 @@ sum()
 -- SELECT COUNT(name) FROM customers WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
 
 # -------------------------------- not keyword ------------------------------- #
-1. how many customers are not 55 years age ?
+1. to filter everthing except certain condition.
+2. select all customers are not male?
 -- SELECT firstName, gender FROM users WHERE NOT gender = 'M'; 
-2. how many customers are not 55 and 76 years age ?
--- SELECT COUNT(age) FROM customers NOT age = 55; 
+3. how many customers are not 55 and 76 years age ?
 -- SELECT COUNT(age) FROM customers NOT age = 55 AND NOT age = 76;
 
-# --------------------------- COMPARISION OPERATORS -------------------------- #
-[who over the age of 44 has an income of 100000?]
+# --------------------------- comparision operators -------------------------- #
+1. who over the age of 44 has an income of 100000?
 -- SELECT name from employees WHERE age >44 AND income = 100000;
 
 [10 > 20     - false]
@@ -236,14 +236,60 @@ sum()
 [1 <> 0      - true]
 ['Mo' = 'mo' - false]
 
-# ---------------------------- ORDER OF OPERATION ---------------------------- #
-[FROM (which table)]
-[WHERE (what to filter the data)]
-[SELECT (display the selected / sorted data)]
+2. How many female customers do we have from the state of Oregon (OR)?
+-- SELECT COUNT(firstName) FROM customers WHERE gender = 'F' and state = 'OR';
+3. Who over the age of 44 has an income of 100 000 or more? (excluding 44)
+-- SELECT COUNT(income) FROM customers WHERE age > 44 and income >= 100000;
+4. Who between the ages of 30 and 50 has an income less than 50 000?
+-- (include 30 and 50 in the results)
+-- SELECT COUNT(income) FROM customers WHERE age >= 30 and age <= 50 AND income < 50000;
+5. What is the average income between the ages of 20 and 50? (Excluding 20 and 50)
+-- SELECT AVG(income) FROM customers WHERE age > 20 and age < 50;
 
-# ---------------------------- OPERATOR PRECEDENCE --------------------------- #
-[A statement having multiple operators is evaluated based on the priority of operators]
-[parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or]
-[if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left]
-[use parenthesis while using operators to avoid clash between operators]
+# ---------------------------- order of operation ---------------------------- #
+1. FROM (which table).
+2. WHERE (what to filter the data).
+3. SELECT (display the selected / sorted data).
 
+# ---------------------------- operator precedence --------------------------- #
+1. A statement having multiple operators is evaluated based on the priority of operators.
+2. parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or.
+3. if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left.
+4. use parenthesis while using operators to avoid clash between operators.
+5. Always remember the following: HIGHEST to LOWEST,
+    1. Parenthesis
+    2. Arithmetic Operators
+    3. Concatenation Operators
+    4. Comparison Conditions
+    5. IS NULL, LIKE, NOT IN, etc.
+    6. NOT
+    7. AND
+    8. OR
+6. OR is the lowest on the totem pole.
+
+# ----------------------- operator precedence exercise ----------------------- #
+1. Select people either under 30 or over 50 with an income above 50000 that are from either Japan or Australia
+2. What was our total sales in June of 2004 for orders over 100 dollars?
+
+# -------------------------------- null values ------------------------------- #
+1. when a record does not have a value then it is considered as empty.
+2. 'null' is the term used to represent a missing/empty value.
+3. null value is different from a zero value or a field that contains spaces.
+4. to set a null value, be carefull in that situation.
+5. null is acontentious issue no matter what opinion you have people may dsagree.
+6. null is also a special value.
+-- 1=1 [output: true]
+-- 1!=1 [output: false]
+-- null=null [output: null]
+-- null<>null [output: null]
+7. no matter what you do with null it will always be null(subtract, divide, equal, etc).
+
+# -------------------------------- is keyword -------------------------------- #
+1. always check for nulls when necessary.
+2. filter out nulls.
+3. 'is' operator allow us to filter on values that are null, not null, true or false.
+-- SELECT name, lastName from "Student" WHERE name IS NOT NULL;
+-- SELECT * FROM users WHERE age = 20 IS FALSE;
+
+# ------------------------------ null coalescing ----------------------------- #
+1. 
