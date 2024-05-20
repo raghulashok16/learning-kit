@@ -97,6 +97,20 @@ OLAP --> ONLINE ANALYTICAL PROCESSING
 3. a database is being used to derive statistics for reporting to the executives --> OLAP
 4. a database is being used to keep track of logged in users --> OLTP
 
+# ------------------------------- valentina db ------------------------------- #
+1. valentina DB is a cross platform tool which has the UI that help to manage postgres SQL.
+2. postgres is the most popular relational database available in the market.
+3. these two are free.
+
+# -------------------------------- installing -------------------------------- #
+1. install latest version of postgres with compatible 32/64 bit.
+2. set password for postgres in installation process.
+3. use 'root' as pasword.
+4. then install valentina studio.
+5. mandatory key required.
+6. register in website which is absolutly free.
+
+
 # ---------------------------- POSTGRESS DEFAULTS ---------------------------- #
 url - localhost
 port - 5432
