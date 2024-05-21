@@ -32,25 +32,29 @@
      -->
 </head>
 
-<body>
-    <!-- 
-        body tag contains all the contents of the html document.
-        contents like headings, images, hyperlinks, tables, list, etc.
-     -->
+
+# --------------------------------- body tag --------------------------------- #
+    <body>
+    ...
+    </body>
+1. body tag contains all the contents of the html document.
+2. contents like headings, images, hyperlinks, tables, list, etc.
+
+# ------------------------------- heading tags ------------------------------- #
     <h1>heading 1 tag</h1>
     <h2>heading 2 tag</h2>
     <h3>heading 3 tag</h3>
     <h4>heading 4 tag</h4>
     <h5>heading 5 tag</h5>
     <h6>heading 6 tag</h6>
-    <!-- 
-        heading tags are used to seperate headings and subheadings on our webpages.
-     -->
-    <!-- h1 is largest and most important -->
-    <!-- h6 is least important -->
+1. heading tags are used to seperate headings and subheadings on our webpages.
+2. h1 is largest and most important.
+3. h6 is least important.
 
+# ------------------------------- paragraph tag ------------------------------ #
     <p>paragraph tag</p>
-    <!-- blank line inserted before and after them -->
+1. blank line inserted before and after them.
+
 
     <a href="www.google.com">hyperlink</a>
     <!-- a tag  used to jump from page to page with the help of the link we used in the href attribute -->
@@ -152,11 +156,17 @@
 
     <!-- The <ins> tag defines a text that has been inserted into a document. Browsers will usually underline inserted text -->
 
-    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
-    <!-- The <dfn> tag stands for the "definition element", and it specifies a term that is going to be defined within the content.The nearest parent of the <dfn> tag must also contain the definition/explanation for the term -->
+# ---------------------------- definition element ---------------------------- #
+    <dfn>HTML</dfn>
+1. The <dfn> tag stands for the "definition element",
+2. it specifies a term that is going to be defined within the content.
+3. The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.
 
-    <p>We <em>cannot</em> live like this.</p>
-    <!-- The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.A screen reader will pronounce the words in <em> with an emphasis, using verbal stress -->
+# ------------------------------ emphasized text ----------------------------- #
+    <em>cannot</em>
+1. The <em> tag is used to define emphasized text.
+2. The content inside is typically displayed in italic.
+3. A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
 
 # ------------------------------ horizontal rule ----------------------------- #
     <hr>
@@ -171,6 +181,6 @@
 
 
 
-</body>
+
 
 </html>
