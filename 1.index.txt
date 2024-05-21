@@ -72,21 +72,27 @@
     <cite>Avengers</cite>
 1. it defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, etc.).
 
+# ------------------------------ blockquote tag ------------------------------ #
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
         works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
         globally.
     </blockquote>
-    <!-- The <blockquote> tag specifies a section that is quoted from another source, Browsers usually indent <blockquote> elements, cite attribute used to add link to the source of the quote -->
+1. The <blockquote> tag specifies a section that is quoted from another source.
+2. Browsers usually indent <blockquote> elements, cite attribute used to add link to the source of the quote.
 
+# ------------------------------ short quotation ----------------------------- #
     <p>WWF's goal is to:
         <q>Build a future where people live in harmony with nature.</q>
         We hope they succeed.
     </p>
-    <!-- The <q> tag defines a short quotation, Browsers normally insert quotation marks around the quotation -->
+1. The <q> tag defines a short quotation.
+2. Browsers normally insert quotation marks around the quotation.
 
+# ------------------------------ keyboard input ------------------------------ #
     <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
-    <!-- The <kbd> tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font -->
+1. The <kbd> tag is used to define keyboard input.
+2. The content inside is displayed in the browser's default monospace font.
 
     <p>The HTML <code>button</code> tag defines a clickable button.</p>
     <!-- The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font -->
