@@ -499,3 +499,59 @@ sum()
 --  SHOW TIMEZONE;
 
 # ---------------------------- setting time zones ---------------------------- #
+1. there is a command to set utc for all user session.
+2. setting this will set utc any time if we come back.
+3. there are certain other ways to set utc at server.
+--  ALTER USER postgres SET timezone = 'UTC';
+--  SHOW TIMEZONE;
+
+# ---------------------- how do we format date and time ---------------------- #
+1. postgres uses ISO-8601
+2. when you use ISO-8601, the date format will look sa below.
+3. YYYY-MM-DDTHH:MM:SS
+4. 2017-08-17T12:47:16+02:00
+5. a format is a way of representing a date and time.
+6. a timestamp is a date with time and timezone info.
+
+# --------------------------------- timestamp -------------------------------- #
+--  CREATE TABLE timezones (
+        ts TIMESTAMP WITHOUT TIMEZONE,
+        tz TIMESTAMP WITH TIME ZONE
+);
+--  INSERT INTO timezones VALUES (
+        TIMESTAMP WITHOUT TIME ZONE '2000-01-01 10:00:00-05',
+        TIMESTAMP WITH TIME ZONE '2000-01-01 10:00:00-05'
+);
+1. here we are creating and inserting data into a table.
+2. tz stores the extra information about the time zone.
+3. should we use timestamp or dates, it depends on what you're storing.
+4. postgres gives us date operators to help simplify dates.
+
+# ------------------------------ date functions ------------------------------ #
+1. if we want to get the current date, there are 2 main ways.
+--  SELECT NOW()::date;
+--  SELECT CURRENT_DATE;
+2. TO_CHAR command is used to format the current date.
+--  SELECT TO_CHAR (CURRENT_DATE, 'dd/mm/yyy');
+3. in the postgres documentation there are a lot of identifiers like DDD, WWW, HH, etc.
+4. go check that if you need it.
+
+# ------------------------ date difference and casting ----------------------- #
+1. what if we want to calculate difference between two dates?
+--  select now() - '1800/01/01'
+2. to cast a string to date, use 'date' to format that.
+--  select date '1800/01/01';
+3. to date converts a date to a date format for postgres.
+
+# ------------------------------ age calculation ----------------------------- #
+1. age function is used to find the age in postgres.
+--  SELECT AGE (date '1995-09-16');
+2. we can also calculate age between two dates.
+--  SELECT AGE (date '2024-05-21', date '1995-09-16');
+
+# -------------------------- extracting information -------------------------- #
+1. extract keyword is used to extract what we want from the date.
+--  SELECT EXTRACT (DAY FROM date '1992/11/13') AS DAY;
+--  SELECT EXTRACT (YEAR FROM date '1992/11/13') AS YEAR;
+2. to round the date or normalize them to the first day of the month, the first day of the year.
+--   SELECT DATE_TRUNC ('year', date '1992/11/13');
