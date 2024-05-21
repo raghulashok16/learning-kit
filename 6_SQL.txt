@@ -471,4 +471,13 @@ sum()
 --  SELECT count(customerid) 
     FROM customers 
     WHERE zip::text LIKE '%2%';
-4. 
+4. How many people's zipcode start with 2 with the 3rd character being a 1.
+--  SELECT count(customerid) 
+    FROM customers
+    WHERE zip::text LIKE '2_1%';
+5. Which states have phone numbers starting with 302?
+( Replace null values with "No State" )
+--  SELECT coalesce(state, 'No State') as "State" 
+    FROM customers
+    WHERE phone::text LIKE '302%';
+
