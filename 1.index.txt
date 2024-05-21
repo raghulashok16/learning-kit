@@ -191,10 +191,15 @@
 2. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.
 3. Tip: If the content is time- or date-related, use the <time> element instead.
 
-    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
-    <!-- The <del> tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text -->
+# ---------------------------------- deleted --------------------------------- #
+    <p>My favorite color is <del>blue</del></p>
+1. The <del> tag defines text that has been deleted from a document.
+2. Browsers will usually strike a line through deleted text.
 
-    <!-- The <ins> tag defines a text that has been inserted into a document. Browsers will usually underline inserted text -->
+# --------------------------------- inserted --------------------------------- #
+    <p>My favorite color is <ins>red</ins>!</p>
+1. The <ins> tag defines a text that has been inserted into a document.
+2. Browsers will usually underline inserted text.
 
 # ---------------------------- definition element ---------------------------- #
     <dfn>HTML</dfn>
