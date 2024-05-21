@@ -498,3 +498,4 @@ sum()
 --  SET TIME ZONE 'UTC';
 --  SHOW TIMEZONE;
 
+# ---------------------------- setting time zones ---------------------------- #
