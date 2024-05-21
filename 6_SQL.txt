@@ -292,4 +292,58 @@ sum()
 -- SELECT * FROM users WHERE age = 20 IS FALSE;
 
 # ------------------------------ null coalescing ----------------------------- #
-1. 
+1. null value substitution is the ability to replace null values to operate on the data.
+-- SELECT coalesce(<column>, 'any_text') AS column_alias FROM <table>;
+2. if there is a null value then replace it with 'any_text' string.
+3. coalesce allows us to use multiple column name.
+-- SELECT coalesce(<column1>, <column1>, <column1>, 'any_text') AS column_alias FROM <table>;
+4. with help of the null coalescing we can set default values.
+-- SELECT sum( coalesce(age, 20) ) FROM students;
+
+# ------------------------- null coalescing exercise ------------------------- #
+1. Assuming a students minimum age for the class is 15, what is the average age of a student?
+-- SELECT avg(coalesce(age, 15)) FROM "Student";
+2. Replace all empty first or last names with a default?
+-- SELECT id, coalesce(name, 'fallback'), coalesce(lastName, 'lastName'), age FROM "Student";
+
+# ------------------------------ 3 valued logic ------------------------------ #
+1. besides true and false, the result of logical expressions can be also be unknown.
+2. SQL null ia value that could be anything.
+3. nothing equals null, not even null, each null could be different.
+4. that is why we use 'is null' check.
+5. it tells if the value is null or not.
+6. (null = 1) OR (1=1) [output: true]
+7. (null = 1) AND (0=1) [output: null]
+8. null will always return null.
+-- SELECT <column> FROM <table> Where <column> IS NULL;
+9. while checking null always use 'IS NULL' to check null values.
+10. dont use = operator while checking null because null is not equal to null.
+
+# ----------------------------- exercise on null ----------------------------- #
+1. adjust the following query to display the null values as "No Address"
+-- SELECT COALESCE(address2, 'No Address') FROM customers;
+2. Fix the following query to apply proper 3VL
+-- SELECT * FROM customers WHERE address2 IS NOT null;
+3. Fix the following query to apply proper 3VL
+-- SELECT coalesce(lastName, 'Empty'), * from customers where (age IS NULL);
+
+# -------------------------------- between and ------------------------------- #
+1. shorthand to match agains a range of values.
+-- SELECT <colum> FROM <table> WHERE <column> BETWEEN x AND y;
+2. this will sort between the given range x and y.
+3. note that 'between and' is sensitive to the order of arguments.
+4. it is more readable and maintainable.
+
+# --------------------------- between and exercise --------------------------- #
+1. Who between the ages of 30 and 50 has an income less than 50 000?(include 30 and 50 in the results)
+-- SELECT * FROM customers WHERE age BETWEEN 30 AND 50 AND income < 50000;
+2. What is the average income between the ages of 20 and 50? (Including 20 and 50)
+-- SELECT AVG(income) FROM customers WHERE age BETWEEN 20 AND 50;
+
+# -------------------------------- in keyword -------------------------------- #
+1. what if i want to find multiple values but not write endless 'AND' statements?
+2. 'IN' keyword checks if a value matches any vlue in a list of values.
+-- SELECT * FROM <table> WHERE <column> IN (vallue1,value2,...);
+-- SELECT * FROM employees WHERE emp_no IN (10001,10006,10402);
+3. 'IN' keyword is very powerfull beacause it reduce the use of multiple 'AND' used as below.
+-- SELECT * FROM employees WHERE emp_no = 10001 OR emp_no = 10006;
