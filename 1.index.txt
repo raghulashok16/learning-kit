@@ -1,7 +1,9 @@
-<!-- 
-        HTML ?
-        hypertext markup language, it descibes the structure of the webpage.
-     -->
+# ----------------------------------- HTML ----------------------------------- #
+1. HTML - hypertext markup language.
+2. it descibes the structure of the webpage.
+
+
+
 <!DOCTYPE html>
 <!-- 
     doctype tells the web browser about what html version wriiten on it.
@@ -156,11 +158,16 @@
     <p>We <em>cannot</em> live like this.</p>
     <!-- The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.A screen reader will pronounce the words in <em> with an emphasis, using verbal stress -->
 
+# ------------------------------ horizontal rule ----------------------------- #
     <hr>
-    <!-- The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page -->
+1. it is a thematic break in an HTML page.
+2. it is most often displayed as a horizontal rule that is used to separate content in an HTML page.
 
-    <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
-    <!-- The <i> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc. -->
+# -------------------------------- italic text ------------------------------- #
+    <i>Lorem ipsum</i>
+1. <i> tag defines a part of text in an alternate voice or mood.
+2. The content inside is typically displayed in italic.
+3. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
 
 
 
