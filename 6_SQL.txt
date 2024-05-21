@@ -347,3 +347,27 @@ sum()
 -- SELECT * FROM employees WHERE emp_no IN (10001,10006,10402);
 3. 'IN' keyword is very powerfull beacause it reduce the use of multiple 'AND' used as below.
 -- SELECT * FROM employees WHERE emp_no = 10001 OR emp_no = 10006;
+
+# ---------------------------- in keyword exercise --------------------------- #
+1. How many orders were made by customer 7888, 1082, 12808, 9623
+-- SELECT COUNT(orderid) FROM orders WHERE customerid IN (7888, 1082, 12808, 9623);
+2. How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
+-- SELECT COUNT(id) FROM city WHERE district IN ('Zuid-Holland','Noord-Brabant', 'Utrecht');
+
+# ------------------------------- like keyword ------------------------------- #
+1. what if you dont know exactly what you are searching for?
+2. it is called partial lookups.
+3. get everyone who's name start with 'M'.
+-- SELECT first_name FROM employees WHERE first_name LIKE 'M%';
+4. this concept is called pattern matching.
+5. in order to use like you need to build patterns to match.
+6. '%' - any number of characters.
+7. '_' - 1 character.
+
+# ------------------------- pattern matching examples------------------------ #
+1. LIKE '%2'    - fields that end with 2.
+2. LIKE '%2%'   - fields that have 2 anywhere in the value.
+3. LIKE '_00%'  - fields that have 2 zero's as the second and third character and anything.
+4. LIKE '%200%' - fields that have 200 anywhere in the value.
+5. LIKE '2_%_%' - fields any values that start with 2 and are at least 3 characters in length.
+6. LIKE '2___3' - fields any values in a five-digit number that start with 2 and end with 3.
