@@ -481,3 +481,20 @@ sum()
     FROM customers
     WHERE phone::text LIKE '302%';
 
+# ----------------------------- date and timezone ---------------------------- #
+1. dates are hard.
+2. we all live in different places in the world, so times are different in different places.
+3. in 1884, sir sanford fleming went to an international conference in the uk in greenwich.
+4. at the conference, he proposed that we pick a point in the world and we offset every other contry's time.
+5. that central point is greenwich.
+6. at that time greenwich was a central hub of commerce in the world at that time.
+7. so for storing times in the database needs a standard to work with different websites in same time around the world.
+8. apart from gmt, utc was used.
+9. UTC -> universal coordinate time.
+10. utc is not a time zone, it is a way to measure time.
+11. no country is using utc as time zone.
+12. gmt is a time zone, utc is a time standard.
+13. to set utc time for current session.
+--  SET TIME ZONE 'UTC';
+--  SHOW TIMEZONE;
+
