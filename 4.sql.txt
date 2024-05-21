@@ -558,3 +558,13 @@ sum()
 --   SELECT DATE_TRUNC ('month', date '1992/11/13');
 3. this is very helpful when we need data from the begining of the month.
 
+# --------------------------------- intervals -------------------------------- #
+1. intervals allow us to write queries in a way that mirrors language.
+--  SELECT *
+    FROM orders
+    WHERE purchaseDate <= now() - interval '30 days';
+2. it can store and manipulate a period of time in years, months, days, hours, minutes, seconds, etc.
+3. INTERVAL '1 year 2 months 3 days';
+4. INTERVAL '2 weeks ago';
+5. INTERVAL '1 yrar 3 hours 20 minutes';
+--  SELECT EXTRACT (year FROM INTERVAL '5 years 20 months');
