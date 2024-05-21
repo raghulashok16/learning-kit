@@ -55,19 +55,22 @@
     <p>paragraph tag</p>
 1. blank line inserted before and after them.
 
-
+# --------------------------------- hyperlink -------------------------------- #
     <a href="www.google.com">hyperlink</a>
-    <!-- a tag  used to jump from page to page with the help of the link we used in the href attribute -->
+1. anchor tag  used to jump from page to page with the help of the link we used in the href attribute.
 
+# --------------------------------- break tag -------------------------------- #
     <br>
-    <!-- br is used to add a single line break in the text, its a self closing tag -->
+1. br is used to add a single line break in the text, its a self closing tag.
 
+# ----------------------------- abbreviation tag ----------------------------- #
     <abbr title="do message">DM</abbr>
-    <!-- when hover this DM text in the browser, the title attribute will popup from the text -->
-    <!-- it defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". -->
+1. when hover this DM text in the browser, the title attribute will popup from the text.
+2. it defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
 
+# --------------------------------- cite tag --------------------------------- #
     <cite>Avengers</cite>
-    <!-- it defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, etc.). -->
+1. it defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, etc.).
 
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
