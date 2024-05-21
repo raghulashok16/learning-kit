@@ -123,8 +123,11 @@
 2. The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
 3. The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
 
+# ------------------------------ subscript text ------------------------------ #
     <p>This text contains <sub>subscript</sub> text.</p>
-    <!-- The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O -->
+1. The <sub> tag defines subscript text.
+2. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
+3. Subscript text can be used for chemical formulas, like H2O.
 
     <address>
         Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
