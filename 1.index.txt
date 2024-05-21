@@ -129,6 +129,7 @@
 2. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
 3. Subscript text can be used for chemical formulas, like H2O.
 
+# -------------------------------- address tag ------------------------------- #
     <address>
         Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
         Visit us at:<br>
@@ -136,43 +137,59 @@
         Box 564, Disneyland<br>
         USA
     </address>
-    <!-- The <address> tag defines the contact information for the author/owner of a document or an article.The contact information can be an email address, URL, physical address, phone number, social media handle, etc.The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element -->
+1. The <address> tag defines the contact information for the author/owner of a document or an article.
+2. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+3. The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
 
+# ------------------------------ unordered list ------------------------------ #
     <ul>
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ul>
-    <!-- An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.The list items will be marked with bullets (small black circles) by default -->
+1. An unordered list starts with the <ul> tag.
+2. Each list item starts with the <li> tag.
+3. The list items will be marked with bullets (small black circles) by default.
 
+# ------------------------------- ordered list ------------------------------- #
     <ol>
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ol>
-    <!-- An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.The list items will be marked with numbers by default -->
+1. An ordered list starts with the <ol> tag.
+2. Each list item starts with the <li> tag.
+3. The list items will be marked with numbers by default.
 
+# ----------------------------- description lists ---------------------------- #
     <dl>
         <dt>Coffee</dt>
         <dd>- black hot drink</dd>
         <dt>Milk</dt>
         <dd>- white cold drink</dd>
     </dl>
-    <!-- HTML also supports description lists.A description list is a list of terms, with a description of each term.The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term: -->
+1. HTML also supports description lists.
+2. A description list is a list of terms, with a description of each term.
+3. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
 
-    <!-- <ul>	Defines an unordered list
+# ---------------------------------------------------------------------------- #
+         <ul>	Defines an unordered list
          <ol>	Defines an ordered list
          <li>	Defines a list item
          <dl>	Defines a description list
          <dt>	Defines a term in a description list
          <dd>	Describes the term in a description list -->
+# ---------------------------------------------------------------------------- #
 
+# --------------------------------- data tag --------------------------------- #
     <ul>
         <li><data value="21053">Cherry Tomato</data></li>
         <li><data value="21054">Beef Tomato</data></li>
         <li><data value="21055">Snack Tomato</data></li>
     </ul>
-    <!-- The <data> tag is used to add a machine-readable translation of a given content. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser. Tip: If the content is time- or date-related, use the <time> element instead -->
+1. The <data> tag is used to add a machine-readable translation of a given content.
+2. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.
+3. Tip: If the content is time- or date-related, use the <time> element instead.
 
     <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
     <!-- The <del> tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text -->
