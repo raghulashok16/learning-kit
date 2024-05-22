@@ -179,3 +179,46 @@
 
 2. avoid returns from async function beacuse javascript wont wait in normal function.
 3. so for that purpose async functions was introduced just to set state variable for component.
+
+# --------------------- rendering root component in react -------------------- #
+1. delete all files in src folder.
+2. create index.js, it is the entry point.
+
+    import React from 'react';
+    import ReactDom from 'react-dom/client';
+
+3. now create a function app.
+
+    function App() {
+        return <h1>Hello Raghul</h1>;
+    }
+
+4. now create the root.
+
+    const root = ReactDom.createRoot(document.getElementById("root"));
+
+5. finally render the app component with root which we created now.
+
+    root.render(<App/>);
+
+6. this method is react v18 and before 18 render was different.
+
+# ----------------------------- react strict mode ---------------------------- #
+1. wrapping app component inside react.strictmode component.
+
+    root.render(
+        <React.StrictMode>
+            <App/>
+        </React.StrictMode>
+    );
+2. it will render twice while development.
+3. it will check if there are any outdated parts of the React API.
+4. it is a good practise to use strict mode in development process because it will help us find bugs.
+
+# --------------------------------- debugging -------------------------------- #
+1. if our changes did not reflect in browser, then check if our app is running, if not we can stop and restart the app again, you can also hard reload the browser.
+2. always check on the terminal and inpect window open in all time.
+3. Eslint will warn about the unused variables as warnings.
+
+# ----------------------- component as building blocks ----------------------- #
+1 .
