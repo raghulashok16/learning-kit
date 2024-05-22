@@ -1,3 +1,19 @@
+# ----------------- es topics that we need to learn react js ----------------- #
+1. destructuring objects and arrays.
+2. rest/spread operator.
+3. template literals.
+4. ternaries.
+5. arrow function.
+6. short circuiting.
+7. optional chanining.
+8. array map method.
+9. array filter method.
+10. array reduce method.
+11. array sort method.
+12. working with immutable arrays.
+13. asynchronous javascript: promises.
+14. asynchronous javascript: async/await.
+
 # ---------------------- destructuring objects and array --------------------- #
 1. destructuring allow us to access single or multiple values in a single line.
 
@@ -85,5 +101,52 @@
 
 2. we chain multiple filter methods.
 
-    const x = [1,2,3,4,5,6].filter((el) => el%2===0)..filter((el) => el%3===0);
+    const x = [1,2,3,4,5,6].filter((el) => el%2 === 0).filter((el) => el%3 === 0);
 
+# ---------------------------- array reduce method --------------------------- #
+1. reduce method is the most versatile and most powerfull method in js.
+2. the goal of the reduce method is to reduce to a single value output.
+3. reduce method has 2 things a function and a starting value.
+4. that function has 2 things accumulator and a working array value.
+
+    const pagesAllBooks = books.reduce((acc,book)=>acc+book.pages,0);
+
+# ----------------------------- array sort method ---------------------------- #
+1. to sort a array in ascending way use a-b;
+
+    const sorted = arr.sort((a,b) => a-b);
+
+2. to sort a array in descending way use b-a;
+
+    const sorted = arr.sort((a,b) => b-a);
+
+3. while using array sort method use it caustious, because it mutates the original array.
+4. in react we need this sort method in most times.
+5. so there is a solution for that using slice().
+
+    const sorted = arr.slice().sort((a,b) => a-b);
+
+6. with this method we can still work without affecting the original array.
+7. this same method is used for sorting objects using any key.
+
+    const sorted = arr.slice().sort((a,b) => a.pages-b.pages);
+
+8. here we have to mention the correct key name of property or else it wont work.
+9. finally we can do both ascending and descending sort with both object and array.
+
+# ----------------------- working with immutable arrays ---------------------- #
+1. add book object to end of the array.
+
+    const newBook = {
+        id: 6,
+        author: 'kim',
+    };
+    const booksAfterAdd = [...books, newBook];
+
+2. delete book object from array having id 3.
+
+    const booksAfterDelete = books.filter((book) => book.id !== 3);
+
+3. update book page number to 1 in object which has id = 1 in the array.
+
+    const bookAfterUpdate = books.map((book) => book.id === 1 ? { ...book, pages: 1 } : book);
