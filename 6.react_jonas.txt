@@ -147,6 +147,16 @@
 
     const booksAfterDelete = books.filter((book) => book.id !== 3);
 
-3. update book page number to 1 in object which has id = 1 in the array.
+3. update book page number to 1201 in object which has id = 1 in the array.
 
-    const bookAfterUpdate = books.map((book) => book.id === 1 ? { ...book, pages: 1 } : book);
+    const bookAfterUpdate = books.map((book) => book.id === 1 ? { ...book, pages: 1201 } : book);
+
+# --------------------- asynchronous javascript: promises -------------------- #
+1. in order to fetch data from an api in the browser we have a method called fetch API.
+2. it is a function into which we pass a url of an api.
+3. to test the fetch method use a dummy api.
+4. json placeholder is a dummy api website availabe.
+5. fetch method basically returns a promise.
+6. promise can be anything like - pending,error,fullfiled,etc.
+7. we can add .then() to work with that promise.
+8. then() will be automatically called as soon the promise fullfiled status.
