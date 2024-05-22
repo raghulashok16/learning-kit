@@ -160,3 +160,22 @@
 6. promise can be anything like - pending,error,fullfiled,etc.
 7. we can add .then() to work with that promise.
 8. then() will be automatically called as soon the promise fullfiled status.
+
+    fetch('api url')
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+
+9. res is the response from the api which needs to be converted.
+10. data is the converted format which we use in the react applications.
+
+# ------------------- asynchronous javascript: async/await ------------------- #
+1. this is another method to fetch data from api url.
+
+    async function getData() {
+        const res = await fetch('api url');
+        const data = await res.json();
+        console.log(data);
+    }
+
+2. avoid returns from async function beacuse javascript wont wait in normal function.
+3. so for that purpose async functions was introduced just to set state variable for component.
