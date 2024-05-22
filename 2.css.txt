@@ -1,5 +1,5 @@
 # -------------------------------- what is css ------------------------------- #
-1. css -cascading style sheet.
+1. css - cascading style sheet.
 2. it make our webpage look good.
 3. usualy webpage consist html.
 4. html shows content on your page.
@@ -14,5 +14,23 @@
 3. still css3 is in development.
 4. and no css4 will be there.
 5. instead of creating new versions css was sub divided into independent modules.
-6. modeules on text, modeules on color, modules on shadows, etc.
- 
+6. modules on text, modules on color, modules on shadows, etc.
+
+# ---------------------- 3 different ways of adding css ---------------------- #
+1. using inline styling.
+
+    <p style="color:red">helo css</p>
+
+2. using style tag.
+
+    <style>
+        p{
+            color:red;
+        }
+    </style>
+
+3. using external css file.[create a file name 'main.css'][inside this file write the css code]
+
+    <link rel="stylesheet" href="main.css">
+
+
