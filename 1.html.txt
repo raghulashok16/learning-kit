@@ -246,8 +246,3 @@
 2. The content inside is typically displayed in italic.
 3. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
 
-
-
-
-
-</html>
