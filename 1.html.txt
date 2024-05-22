@@ -2,36 +2,58 @@
 1. HTML - hypertext markup language.
 2. it descibes the structure of the webpage.
 
+# ---------------------------------- doctype --------------------------------- #
+    <!DOCTYPE html> 
+1. doctype tells the web browser about what html version wriiten on it.
 
+# ---------------------------- language attribute ---------------------------- #
+    <html lang="en">
+1. lang attribute is used to determine the language of the text used on our webpage.
 
-<!DOCTYPE html>
-<!-- 
-    doctype tells the web browser about what html version wriiten on it.
- -->
-<html lang="en">
-<!-- 
-    lang attribute is used to determine the language of the text used on our webpage.
- -->
+# --------------------------------- head tag --------------------------------- #
+1. it is used to contain metadata and links to resources that are pertinent to the document but not part of the content displayed to users.
+2. meta tags are packed inside head tag.
 
-<head>
-    <!-- 
-        meta tags gives the additional information about our webpage to the search engines.
-     -->
+# --------------------------------- meta tag --------------------------------- #
+    <meta>
+1. meta tags gives the additional information about our webpage to the search engines.
+
+# ---------------------------- Character Encoding ---------------------------- #
     <meta charset="UTF-8">
-    <!-- 
-        charset attribute is used to specify the character encoding used in our document.
-        UTF-8 charset is the latest one which contains all the character and symbols in the world.
-     -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 
-        to achive responsive webpages we use viewport to find which device we are using.
-     -->
-    <title>Document</title>
-    <!-- 
-        contents of the title tag is very important for search engine optimization.
-     -->
-</head>
+1. charset attribute is used to specify the character encoding used in our document.
+2. UTF-8 charset is the latest one which contains all the character and symbols in the world.
 
+# ----------------------------- Viewport Settings ---------------------------- #
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+1. Controls the layout on mobile browsers to ensure responsiveness
+2. to achive responsive webpages we use viewport to find which device we are using.
+
+# --------------------------- Title of the Document -------------------------- #
+    <title>Document</title>
+1. contents of the title tag is very important for search engine optimization.
+2. Sets the title of the webpage, which appears in the browser tab and is used by search engines.
+
+# -------------------------- Author and Description -------------------------- #
+    <meta name="author" content="Author Name">
+    <meta name="description" content="Description of the page">
+1. Provides information about the author and a brief description of the webpage for search engines and social media.
+
+# --------------------------------- Keywords --------------------------------- #
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+1. Lists keywords relevant to the page content for search engines (though less commonly used today).
+
+# -------------------------------- Link to CSS ------------------------------- #
+    <link rel="stylesheet" href="styles.css">
+1. Links to external CSS files for styling the document.
+
+# ---------------------------- External JavaScript --------------------------- #
+    <script src="script.js" defer></script>
+1. Links to external JavaScript files, with attributes like defer or async to control the loading behavior.
+
+# ------------------------------- Link to Icons ------------------------------ #
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+1. Specifies icons for the webpage, including favicons and touch icons for mobile devices.
 
 # --------------------------------- body tag --------------------------------- #
     <body>
