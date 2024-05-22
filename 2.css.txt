@@ -51,3 +51,34 @@
 2. copy the link tag and past above the css link tag.
 3. and then we can use our selected font using 'font-family' property availabe in the website.
 
+# --------------------------------- selectors -------------------------------- #
+1. element selector.
+
+    h1{
+        color: red;
+    }
+
+2. class selector.
+
+    .class_name{
+        color: red;
+    }
+
+3. universal selector. [rarely use this one]
+
+    *{
+        color: red;
+    }
+
+4. id selector.
+
+    #id_name{
+        color: red;
+    }
+
+6. attribute selector.
+
+    [attribute_name]{
+        color: red;
+    }
+
