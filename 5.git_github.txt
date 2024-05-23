@@ -375,7 +375,7 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 [copy commit_hash you want to reset]
 -- git reset commit_hash
 6. this command will remove the commits from repo but it will not remove the changes in the working directory.
-7. now we can create a new branch and commit those changes.
+7. now we can create a new branch and commit those changes..
 
 
 
