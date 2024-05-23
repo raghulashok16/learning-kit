@@ -394,6 +394,17 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 8. if you want to reverse commits that you havent shared with others.
 9. then use reset command, no one will ever know about the commit.
 
+# ----------------------------- what is github ? ----------------------------- #
+1. github is a service that host git repositories in the cloud and makes it easier to collaborate with other people in the world.
+2. it is just a hosting platform for git repositories.
+3. you can put your own git repo on github and access them from anywhere and share them with people around the world.
+4. beyond hosting github provides additional features that are native to git.
+5. finally github helps people share and collaborate on repos.
+6. github is not the only option but there are other brands like gitlab, bitbucket, gerrit, etc.
+7. founded in 2008.
+8. early 2020 it reached over 40 million users and over 190 million repositories on the platform.
+9. github is now the world's largest host of source code.
+10. in 2021, 56 million users.
 
 
 
