@@ -431,4 +431,7 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 3. before cloning make sure you are not in a repository.
 4. after cloning it gives you access to the full git history of the cloned project.
 
+# -------------------------- cloning not github repo ------------------------- #
+1. git clone is not particular made for github.
+2. it can be use to clone from other hosting urls.
 
