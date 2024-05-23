@@ -210,7 +210,7 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 -- git merge sub_branch
 5. this method is called a fast-forward merge.
 
-MERGE CONFLICTS
+# ------------------------------ MERGE CONFLICTS ----------------------------- #
 1. when merging 2 branches merge conflicts occurs.
 2. git will tell us if there is an conflict and we have to open that file and resolve the conflicts.
 3. git will decorate the code where the conflict occurs with their branch name.
