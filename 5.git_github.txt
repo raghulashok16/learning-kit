@@ -406,5 +406,29 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 9. github is now the world's largest host of source code.
 10. in 2021, 56 million users.
 
+# --------------------------- why you should github -------------------------- #
+1. collaboration.
+2. if you everr plan on working ona project with at least on other person.
+3. github will make your life easier.
+4. whether you are building a hobby project with your friend or you are collaborating with the entire world.
+5. github is essential for collaborating with people.
+6. open source projects.
+7. today github is the home of opensource projects on the internet.
+8. projects ranging from react to swift are hosted on github.
+9. if you plan on contributing to open source projects, you'll need to get comfortable working with github.
+10. exposure.
+11. your github profile showcase your own projects and contributions to other projects.
+12. it can act as a sort of resume that many employers will consult in the hiring process.
+13. additionally, you can gain some clout on the platform for creating or contributing to popular projects.
+14. stay up to date.
+15. being cactive on github is the best way to stay up to date with the projects and tools you rely on.
+16. learn about upcoming changes and the decisions/debate behind them.
+
+# -------------------- cloning github repo with git clone -------------------- #
+1. cloning - if we want a local copy of an existing repository.
+2. all we need is the github repo url.
+-- git clone url
+3. before cloning make sure you are not in a repository.
+4. after cloning it gives you access to the full git history of the cloned project.
 
 
