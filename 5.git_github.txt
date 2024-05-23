@@ -181,7 +181,7 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 3. this combination will do in a single line.
 -- git switch -c branch_name
 -- git checkout -b branch_name
-[-c and -b both will create a new branch]
+[these both commands will create a new branch]
 
 # ------------------ SWITCHING BRANCHES WITH UNSTAGED FILES ------------------ #
 1. data will be lost without commiting and switching branches.
