@@ -366,7 +366,15 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 4. but removed from the staging area.3
 
 # --------------------------------- GIT RESET -------------------------------- #
-1. 
+1. by mistake we made some commits on the main branch.
+2. but we need to make those commits in other branch.
+3. to undo these commits you can use git reset command.
+4. running this command will reset the repo to a specific commit.
+5. it is called plain reseet.
+-- git log --oneline
+-- git reset commit_hash
+6. this command will remove the commit but not remove the changes in the working directory.
+7. now we can create a new branch and commit those changes.
 
 
 

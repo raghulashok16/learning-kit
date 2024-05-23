@@ -554,8 +554,8 @@ sum()
 --  SELECT EXTRACT (DAY FROM date '1992/11/13') AS DAY;
 --  SELECT EXTRACT (YEAR FROM date '1992/11/13') AS YEAR;
 2. to round the date or normalize them to the first day of the month, the first day of the year.
---   SELECT DATE_TRUNC ('year', date '1992/11/13');
---   SELECT DATE_TRUNC ('month', date '1992/11/13');
+--  SELECT DATE_TRUNC ('year', date '1992/11/13');
+--  SELECT DATE_TRUNC ('month', date '1992/11/13');
 3. this is very helpful when we need data from the begining of the month.
 
 # --------------------------------- intervals -------------------------------- #
