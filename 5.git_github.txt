@@ -376,8 +376,23 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 -- git reset commit_hash
 6. this command will remove the commits from repo but it will not remove the changes in the working directory.
 7. now we can create a new branch and commit those changes.
-8. 
+8. there is a alternate method called hard reset.
+-- git reset --hard commit_hash
+9. if you want to undo both commit and the actual changes in your files.
+10. the use this code.
+11. we can also use HEAD~1 or any tilde values.
 
+# ----------------------------- reverting commits ---------------------------- #
+1. it is similar to git reset while the undo things.
+2. but unlike git reset, revert will create a brand new commit which reverses/undos the changes from a commit.
+3. beacuse it results in a new commit, you will be promted to enter a new commit message for that new revert commit.
+-- git revert commit_hash
+4. both git reset and revert help us reverse changes.
+5. but there is significant difference when it comes to collaboration [this topic is down below somewhere, find it]
+6. if you want to reverse some commits that other people already have on their machine
+7. then you should use revert command.
+8. if you want to reverse commits that you havent shared with others.
+9. then use reset command, no one will ever know about the commit.
 
 
 
