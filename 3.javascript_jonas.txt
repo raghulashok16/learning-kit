@@ -326,3 +326,39 @@ NOTES: Template literals offer a more concise and readable way to create strings
 3. dot notation dont allow us to set dynamic key.
 4. we can create a new property using both the notation.
 
+# ------------------------------ object methods ------------------------------ #
+1. when a function is used inside a object and it contains a function value then we can say it as method.
+
+    const jonas = {
+        calcAge: function (birthyear) {
+            return 2037 - birthyear;
+        },
+    };
+    console.log(jonas.calcAge(1991));
+    console.log(jonas['calcAge'](1991));
+
+2. so we can use both dot and bracket notation for accessing object.
+3. but make sure sure you use the correct key name.
+4. javascript allow us access values between properties using 'this' keyword.
+5. 'this' point to the current object calling.
+
+    const jonas = {
+        birthyear: 1991,
+        calcAge: function () {
+            return 2037 - this.birthyear;
+        },
+    };
+    console.log(jonas.calcAge());
+    console.log(jonas['calcAge']());
+
+6. we can create new property using dot notation.
+
+    const jonas = {
+        birthyear: 1991,
+        calcAge: function () {
+            this.age = 2037 - this.birthyear;
+            return;
+        },
+    };
+
+7. the above code will will create a new property with key name 'age'.
