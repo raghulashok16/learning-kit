@@ -360,5 +360,69 @@ NOTES: Template literals offer a more concise and readable way to create strings
             return;
         },
     };
+    console.log(jonas.calcAge());
 
 7. the above code will will create a new property with key name 'age'.
+
+# ---------------------------- iteration: for loop --------------------------- #
+
+    for (initialization; condition; finalExpression) {
+        // code to be executed
+    };
+
+1. iteration means to run a code repeatedly based on the condition.
+2. for loop is way to iterate a block of code.
+3. it will run until the codition reach false.
+4. on the other hand we change the final expression on every iteration.
+
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    };
+    // Output: 0, 1, 2, 3, 4
+
+# ------------------ looping arrays, breaking and continuing ----------------- #
+1. to loop a array use array.length to find the length of the array.
+
+    const arr = [0,1,2,3,4,5];
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    };
+    // Output: 0, 1, 2, 3, 4, 5
+
+2. in the above code the array length is 6.
+3. so loop will run from 0 to 5.
+4. break statement will skip all remaining iteration.
+5. continue statement will skip the current iteration and run the remaining iteration.
+6. use break and continue in loop with coditions appiled to it.
+
+    const arr = [0,1,2,3,4,5,6,7,8,9];
+    for (let i = 0; i < arr.length; i++) {
+        if(i==2){
+            continue;
+        };
+        if(i==5){
+            break;
+        };
+        console.log(arr[i]);
+    };
+    // Output: 0, 1, 3, 4
+
+# ------------------- looping backward and loop inside loop ------------------ #
+1. to loop backward first find the length.
+2. initialize with that length and decrement it.
+3. finally make the condition.
+
+    const arr = [0,1,2,3,4,5];
+    for (let i = arr.length; i > 0; i--) {
+        console.log(arr[i]);
+    };
+    // Output: 5, 4, 3, 2, 1, 0
+
+4. we can use a loop inside another loop.
+5. this concept is called nested loop.
+
+    for (let i = 0; i < 2; i++) {
+        for (let i = 0; i > 2; i++) {
+            console.log([i,j]);
+        };
+    };
