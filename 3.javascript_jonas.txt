@@ -422,7 +422,28 @@ NOTES: Template literals offer a more concise and readable way to create strings
 5. this concept is called nested loop.
 
     for (let i = 0; i < 2; i++) {
-        for (let i = 0; i > 2; i++) {
+        for (let j = 0; i < 2; j++) {
             console.log([i,j]);
         };
     };
+    // Output: [0,0][0,1][1,0][1,1]
+
+# -------------------------------- while loop -------------------------------- #
+1. while loop checks the condition before executing the loop's body.
+2. If the condition is true, the code inside the loop is executed.
+3. This process repeats until the condition evaluates to false.
+
+    while (condition) {
+        // code to be executed
+    }
+
+4. the below program will explain while loop.
+
+    let count = 0;
+
+    while (count < 5) {
+        console.log(count);
+        count++;
+    }
+    // Output: 0, 1, 2, 3, 4
+
