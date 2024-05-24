@@ -435,3 +435,39 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 1. git clone is not particular made for github.
 2. it can be use to clone from other hosting urls.
 
+# -------------------------- github setup SSH config ------------------------- #
+1. adding ssh key is different in versions.
+2. watch the latest updated video in udemy.
+
+# -------------------------- creating repo in github ------------------------- #
+1. option 1 - existing repo in machine [just push your local repo to your github repo]
+2. option 2 - start from scratch [create repo in github, clone it, make changes, push to your repo]
+
+# -------------------------------- git remotes ------------------------------- #
+1. before we can push anything up to github, we need to tell about our remote repository on github.
+2. we need to setup a destination to push up to.
+3. in git we refer these destination as remotes.
+4. each reotes is simply a url where a hosted repository lives.
+5. to view any existing remotes for your repository, we can run git remote or git remote -v (verbose, for more info).
+-- git remote -v
+6. this just displays a list of remotes.
+7. if you havent added any remotes yet, you wont see anything.
+8. we can add a new remote.
+-- git remote add <name> <url>
+9. a remote is really two things: a url and a lebel.
+10. to add a new remote, we need to provide both to git.
+-- git remote add origin https://github.com/blah/repo.git
+[this tells git, anytime i use the name 'origin', i am refering to this particular github repo url]
+11. orgin is a conventional git remote name, but it is not at all special.
+12. it is just a name for a url.
+13. when we clone a github repo, default remote name setup for us is called origin.
+14. you can change it.
+-- git remote add mygithuburl https://github.com/test/repo.git
+15. most people leave it as it is.
+16. there are some commands ro rename and delete remotes if needed.
+-- git remote rename <old> <new>
+-- git remote remove <name>
+
+# --------------------------------- git push --------------------------------- #
+1. to push some work up to github, we need to use the git push command.
+2. we need to specify the remote we want to push up to and the specific local branch we want to push up to that remote.
