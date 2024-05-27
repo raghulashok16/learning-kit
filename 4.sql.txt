@@ -594,3 +594,24 @@ sum()
     FROM orders
     WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
 
+# ----------------------------- distinct keyword ----------------------------- #
+1. it remove duplicates.
+2. distinct clause keeps one row for each group of duplicates.
+3. multiple columns will evaluate based on the combination of the columns.
+--  SELECT DISTINCT <col1>, <col2>
+    FROM <table>;
+--  SELECT DISTINCT salary FROM salaries;
+4. this will return all the unique salary in the table.
+--   SELECT DISTINCT salary, from_date FROM salaries;
+
+# ----------------------- exercise on distinct keyword ----------------------- #
+1. What unique titles do we have?
+--  SELECT DISTINCT title 
+    FROM titles;
+2. How many unique birth dates are there?
+--  SELECT COUNT(DISTINCT birth_date)
+    FROM employees;
+3. Can I get a list of distinct life expectancy ages, Make sure there are no nulls
+--  SELECT DISTINCT lifeexpectancy 
+    FROM country
+    WHERE lifeexpectancy IS NOT NULL ORDER BY lifeexpectancy;
