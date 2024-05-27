@@ -716,4 +716,8 @@ sum()
 3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
 
 # -------------------------------- outer join -------------------------------- #
-1. 
+1. what if i also need the rows that don't match.
+2. outer joins add the data that don't have a match.
+3. left outer joins add the data that don't have a match from table A.
+4. in sql we have two outer joints -> left outer joint and right outer joints.
+
