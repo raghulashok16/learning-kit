@@ -695,7 +695,7 @@ sum()
     INNER JOIN titles as c ON c.emp_no = a.emp_no
     AND c.from_date = (b.from_date + interval '2 days')
     ORDER BY a.emp_no;
-8. in the above sql command, the tile change always follows 2 days after the raise.
+8. in the above sql command, the title change always follows 2 days after the raise.
 --  SELECT a.emp_no,
     concat(a.first_name, a.last_name) as "name",
     b.salary,
@@ -720,4 +720,25 @@ sum()
 2. outer joins add the data that don't have a match.
 3. left outer joins add the data that don't have a match from table A.
 4. in sql we have two outer joints -> left outer joint and right outer joints.
-
+--  SELECT *
+    FFROM <table A> as a
+    LEFT [OUTER] JOIN <table B> as b
+    ON a.id = b.id;
+5. any value that does not match is made to be null.
+6. you want to know how many employees aren't managers?
+--  SELECT count(emp.emp_no)
+    FROM employees as emp
+    LEFT JOIN dep_manager as dep ON emp.emp_no = dep.emp_no
+    WHERE dep.emp_no IS NULL;
+6. you want to know how many employees are managers?
+--  SELECT count(emp.emp_no)
+    FROM employees as emp
+    LEFT JOIN dep_manager as dep ON emp.emp_no = dep.emp_no
+    WHERE dep.emp_no IS NOT NULL;
+7. you want to know every salary raise and also know which ones were a promotion.
+--  SELECT a.emp_no, b.salary, coalesce(c.title, 'no title change')
+    FROM employees as a 
+    INNER JOIN salaries as b ON b.emp_no = a.emp_no
+    LEFT JOIN titles as c ON c.emp_no = a.emp_no
+    AND (c.from_date = b.from_date OR c.from_date = b.from_date + INTERVAL '2 days')
+    ORDER BY a.emp_no;
