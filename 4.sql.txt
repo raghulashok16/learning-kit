@@ -658,3 +658,62 @@ sum()
     FROM employees
     WHERE first_name ILIKE 'k%'
     ORDER BY hire_date;
+
+# ---------------------------- multi table select ---------------------------- #
+1. this concept is very helpfull when we used to combine two related table.
+--  SELECT a.emp_no, concat(a.first_name, a.last_name) as "name", b.salary
+    FROM employees as a, salaries as b;
+2. here a is table one and b is table two.
+--  SELECT a.emp_no, concat(a.first_name, a.last_name) as "name", b.salary
+    FROM employees as a, salaries as b
+    WHERE a.emp_no = b.emp_no;
+3. primary key and foreign key are responsible for this.
+4. actually we joined two tables using primary and foreign key.
+5. a join combines columns from one table with those of another.
+6. join take a column from one table that can map to the column of another table.
+7. most common approach -> link primary key to foreign key.
+8. there are different ways of joinning tables.
+
+# -------------------------------- inner join -------------------------------- #
+1. inner join finds the intersection of two data set based on a link and it returns you back subset.
+2. if you have a columns that links the column from table A to table B you can use an inner join.
+3. all sql syntax have a seperate keyword for doing joints.
+--  SELECT a.emp_no, concat(a.first_name, a.last_name) as "name", b.salary
+    FROM employees as a
+    INNER JOIN salaries as b ON b.emp_no = a.emp_no;
+4. inner join syntax is generally considered a best practice.
+5. it's more readable than using the where syntax.
+6. it shows you what's being joined.
+7. results come back unsorted and we have to sort it.
+--  SELECT a.emp_no,
+    concat(a.first_name, a.last_name) as "name",
+    b.salary,
+    c.title,
+    c.from_date as "promoted on"
+    FROM employees as a
+    INNER JOIN salaries as b ON a.emp_no = b.emp_no
+    INNER JOIN titles as c ON c.emp_no = a.emp_no
+    AND c.from_date = (b.from_date + interval '2 days')
+    ORDER BY a.emp_no;
+8. in the above sql command, the tile change always follows 2 days after the raise.
+--  SELECT a.emp_no,
+    concat(a.first_name, a.last_name) as "name",
+    b.salary,
+    c.title,
+    c.from_date as "promoted on"
+    FROM employees as a
+    INNER JOIN salaries as b ON a.emp_no = b.emp_no
+    INNER JOIN titles as c ON c.emp_no = a.emp_no
+    AND (c.from_date = (b.from_date + interval '2 days') OR c.from_date = b.from_date )
+    ORDER BY a.emp_no;
+
+# --------------------------------- self join -------------------------------- #
+1. joining a table to itself.
+2. this usually can be done when a table has a foreign key referencing its primary key.
+--  SELECT a.id, a.name as "employee", b.name as "supervisor name"
+    FROM employee as a, employee as b
+    WHERE a.supervisorID = b.id;
+3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
+
+# -------------------------------- outer join -------------------------------- #
+1. 
