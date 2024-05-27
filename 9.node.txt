@@ -1,0 +1,6 @@
+# ----------------------------- javascript engine ---------------------------- #
+1. every browser has built in javascript engine.
+2. chrome uses v8 engine.
+3. internet explorer in chakra.
+4. mozilla firefox uses spider monkey.
+5. safari uses javascript core webkit.
