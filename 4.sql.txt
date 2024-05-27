@@ -600,9 +600,11 @@ sum()
 3. multiple columns will evaluate based on the combination of the columns.
 --  SELECT DISTINCT <col1>, <col2>
     FROM <table>;
---  SELECT DISTINCT salary FROM salaries;
+--  SELECT DISTINCT salary 
+    FROM salaries;
 4. this will return all the unique salary in the table.
---   SELECT DISTINCT salary, from_date FROM salaries;
+--   SELECT DISTINCT salary, from_date 
+    FROM salaries;
 
 # ----------------------- exercise on distinct keyword ----------------------- #
 1. What unique titles do we have?
@@ -614,4 +616,45 @@ sum()
 3. Can I get a list of distinct life expectancy ages, Make sure there are no nulls
 --  SELECT DISTINCT lifeexpectancy 
     FROM country
-    WHERE lifeexpectancy IS NOT NULL ORDER BY lifeexpectancy;
+    WHERE lifeexpectancy IS NOT NULL 
+    ORDER BY lifeexpectancy;
+
+# ------------------------------- sorting data ------------------------------- #
+1. relational database doont care about sorting.
+2. but there is a way to sort data either ascending or descending by column.
+--  SELECT *
+    FROM customers
+    ORDER BY <column> [ASC/DESC];
+3. sort name column by ascending.
+--  SELECT *
+    FROM customers
+    ORDER BY name ASC;
+4. sort name column by descending.
+--  SELECT *
+    FROM customers
+    ORDER BY name DESC;
+5. it allow to sort by multiple columns.
+--  SELECT *
+    FROM customers
+    ORDER BY name ASC, lastName DESC;
+6. we can use sort with different sort methods.
+7. one column ascending and another descending.
+--  SELECT *
+    FROM customers
+    ORDER BY length(name);
+8. we can also use expressions with order by keyword.
+
+# ------------------------- exercise on sorting data ------------------------- #
+1. Sort employees by first name ascending and last name descending
+--  SELECT * 
+    FROM employees
+    ORDER BY first_name ASC, last_name DESC;
+2. Sort employees by age
+--  SELECT * 
+    FROM employees
+    ORDER BY birth_date;
+3. Sort employees who's name starts with a "k" by hire_date
+--  SELECT * 
+    FROM employees
+    WHERE first_name ILIKE 'k%'
+    ORDER BY hire_date;
