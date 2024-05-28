@@ -851,3 +851,8 @@ sum()
     WHERE de.dept_no = 'd005'
     GROUP BY e.emp_no, de.from_date, de.to_date
     ORDER BY e.emp_no, de.to_date;
+
+# ------------------------------ having keyword ------------------------------ #
+1. what if i wnat to filter groups?
+2. "WHERE" applies filters to individual rows.
+3. "HAVING" applies filters to a group as a whole.
