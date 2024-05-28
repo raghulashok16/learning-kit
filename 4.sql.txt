@@ -802,3 +802,16 @@ sum()
     INNER JOIN department AS d USING(dept_no);
 5. try to use "USING" in most scenario.
 
+# ------------------------------ groupby keyword ----------------------------- #
+1. in read world there are some analytical data that are used with SQL.
+2. groupby is a keyword that is used to summarize or aggregate data by groups.
+3. so why would i group data?
+4. to get in-depth information by group.
+5. what if we wanted to know how many employees worked in each department?
+6. how would we do that?
+--  SELECT dept_no, count(emp_no)
+    FROM dept_emp;
+7. the above code is wrong because cont returns 1 record and dept_no will return a bunch of records.
+8. here comes group by.
+9. group by splits data into groups or chunks so we can apply functions against the group rather than the entire table.
+10. 
