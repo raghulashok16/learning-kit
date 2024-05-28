@@ -32,8 +32,8 @@ SQL - Structured Query Language
 5. wide columnar model -> newly introduced -> cassandra, google big table.
 
 # ------------------------------- WHAT IS SQL ? ------------------------------ #
-1. SQL is a language that is used to talk to a databases.
-2. SQL statement is nothing but a Query
+1. SQL is a language that is used to communicate with a databases.
+2. SQL statement is also called as Query
 3. SELECT * FROM USERS
 4. the above is the Query or SQL Statement
 
@@ -671,9 +671,7 @@ sum()
             b.salary
     FROM employees AS a, salaries AS b;
 2. here a is table one and b is table two.
---  SELECT  a.emp_no, 
-            concat(a.first_name, a.last_name) AS "name", 
-            b.salary
+--  SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a, salaries AS b
     WHERE a.emp_no = b.emp_no;
 3. primary key and foreign key are responsible for this.
@@ -687,9 +685,7 @@ sum()
 1. inner join finds the intersection of two data set based on a link and it returns you back subset.
 2. if you have a columns that links the column from table A to table B you can use an inner join.
 3. all sql syntax have a seperate keyword for doing joints.
---  SELECT  a.emp_no,
-            concat(a.first_name, a.last_name) AS "name",
-            b.salary
+--  SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a
     INNER JOIN salaries AS b ON b.emp_no = a.emp_no;
 4. inner join syntax is generally considered a best practice.
@@ -721,9 +717,7 @@ sum()
 # --------------------------------- self join -------------------------------- #
 1. joining a table to itself.
 2. this usually can be done when a table has a foreign key referencing its primary key.
---  SELECT  a.id,
-            a.name AS "employee", 
-            b.name AS "supervisor name"
+--  SELECT  a.id, a.name AS "employee", b.name AS "supervisor name"
     FROM employee AS a, employee AS b
     WHERE a.supervisorID = b.id;
 3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
@@ -779,9 +773,7 @@ sum()
 
 # ---------------------------- inner join exercise --------------------------- #
 1. Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state, ordered by orderid.
---  SELECT  c.firstname, 
-            c.lastname, 
-            o.orderid 
+--  SELECT  c.firstname, c.lastname, o.orderid 
     FROM orders AS o
     INNER JOIN customers AS c ON o.customerid = c.customerid
     WHERE c.state IN ('NY', 'OH', 'OR')
@@ -789,7 +781,7 @@ sum()
 2. Show me the inventory for each product
 --  SELECT p.prod_id, i.quan_in_stock
     FROM products as p
-    INNER JOIN inventory AS i oN p.prod_id = i.prod_id 
+    INNER JOIN inventory AS i ON p.prod_id = i.prod_id 
 3. Show me for each employee which department they work in
 --  SELECT e.first_name, dp.dept_name
     FROM employees AS e
