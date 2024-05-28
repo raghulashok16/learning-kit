@@ -837,4 +837,3 @@ sum()
     FROM employees
     GROUP BY hire_date
     ORDER BY "amount" DESC;
-    
