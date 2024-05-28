@@ -350,7 +350,10 @@ sum()
 --  SELECT avg(coalesce(age, 15))
     FROM "Student";
 2. Replace all empty first or last names with a default?
---  SELECT id, coalesce(name, 'fallback'), coalesce(lastName, 'lastName'), age 
+--  SELECT  id, 
+            coalesce(name, 'fallback'), 
+            coalesce(lastName, 'lastName'), 
+            age 
     FROM "Student";
 
 # ------------------------------ 3 valued logic ------------------------------ #
@@ -460,7 +463,9 @@ sum()
 
 # --------------------------- like keyword exercise -------------------------- #
 1. Find the age of all employees who's name starts with M.
---  SELECT emp_no, first_name, EXTRACT (YEAR FROM AGE(birth_date)) AS "age" 
+--  SELECT emp_no, 
+            first_name, 
+            EXTRACT (YEAR FROM AGE(birth_date)) AS "age" 
     FROM employees 
     WHERE first_name ILIKE 'M%';
 2. How many people's name start with A and end with R?
@@ -477,7 +482,7 @@ sum()
     WHERE zip::text LIKE '2_1%';
 5. Which states have phone numbers starting with 302?
 ( Replace null values with "No State" )
---  SELECT coalesce(state, 'No State') as "State" 
+--  SELECT coalesce(state, 'No State') AS "State" 
     FROM customers
     WHERE phone::text LIKE '302%';
 
@@ -603,7 +608,7 @@ sum()
 --  SELECT DISTINCT salary 
     FROM salaries;
 4. this will return all the unique salary in the table.
---   SELECT DISTINCT salary, from_date 
+--  SELECT DISTINCT salary, from_date 
     FROM salaries;
 
 # ----------------------- exercise on distinct keyword ----------------------- #
@@ -662,14 +667,14 @@ sum()
 # ---------------------------- multi table select ---------------------------- #
 1. this concept is very helpfull when we used to combine two related table.
 --  SELECT  a.emp_no, 
-            concat(a.first_name, a.last_name) as "name", 
+            concat(a.first_name, a.last_name) AS "name", 
             b.salary
-    FROM employees as a, salaries as b;
+    FROM employees AS a, salaries AS b;
 2. here a is table one and b is table two.
 --  SELECT  a.emp_no, 
-            concat(a.first_name, a.last_name) as "name", 
+            concat(a.first_name, a.last_name) AS "name", 
             b.salary
-    FROM employees as a, salaries as b
+    FROM employees AS a, salaries AS b
     WHERE a.emp_no = b.emp_no;
 3. primary key and foreign key are responsible for this.
 4. actually we joined two tables using primary and foreign key.
@@ -683,33 +688,33 @@ sum()
 2. if you have a columns that links the column from table A to table B you can use an inner join.
 3. all sql syntax have a seperate keyword for doing joints.
 --  SELECT  a.emp_no,
-            concat(a.first_name, a.last_name) as "name",
+            concat(a.first_name, a.last_name) AS "name",
             b.salary
-    FROM employees as a
-    INNER JOIN salaries as b ON b.emp_no = a.emp_no;
+    FROM employees AS a
+    INNER JOIN salaries AS b ON b.emp_no = a.emp_no;
 4. inner join syntax is generally considered a best practice.
 5. it's more readable than using the where syntax.
 6. it shows you what's being joined.
 7. results come back unsorted and we have to sort it.
 --  SELECT  a.emp_no,
-            concat(a.first_name, a.last_name) as "name",
+            concat(a.first_name, a.last_name) AS "name",
             b.salary,
             c.title,
-            c.from_date as "promoted on"
-    FROM employees as a
-    INNER JOIN salaries as b ON a.emp_no = b.emp_no
-    INNER JOIN titles as c ON c.emp_no = a.emp_no
+            c.from_date AS "promoted on"
+    FROM employees AS a
+    INNER JOIN salaries AS b ON a.emp_no = b.emp_no
+    INNER JOIN titles AS c ON c.emp_no = a.emp_no
     AND c.from_date = (b.from_date + interval '2 days')
     ORDER BY a.emp_no;
 8. in the above sql command, the title change always follows 2 days after the raise.
 --  SELECT  a.emp_no,
-            concat(a.first_name, a.last_name) as "name",
+            concat(a.first_name, a.last_name) AS "name",
             b.salary,
             c.title,
-            c.from_date as "promoted on"
-    FROM employees as a
-    INNER JOIN salaries as b ON a.emp_no = b.emp_no
-    INNER JOIN titles as c ON c.emp_no = a.emp_no
+            c.from_date AS "promoted on"
+    FROM employees AS a
+    INNER JOIN salaries AS b ON a.emp_no = b.emp_no
+    INNER JOIN titles AS c ON c.emp_no = a.emp_no
     AND (c.from_date = (b.from_date + interval '2 days') OR c.from_date = b.from_date )
     ORDER BY a.emp_no;
 
@@ -717,9 +722,9 @@ sum()
 1. joining a table to itself.
 2. this usually can be done when a table has a foreign key referencing its primary key.
 --  SELECT  a.id,
-            a.name as "employee", 
-            b.name as "supervisor name"
-    FROM employee as a, employee as b
+            a.name AS "employee", 
+            b.name AS "supervisor name"
+    FROM employee AS a, employee AS b
     WHERE a.supervisorID = b.id;
 3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
 
@@ -729,38 +734,65 @@ sum()
 3. left outer joins add the data that don't have a match from table A.
 4. in sql we have two outer joints -> left outer joint and right outer joints.
 --  SELECT *
-    FFROM <table A> as a
-    LEFT [OUTER] JOIN <table B> as b
+    FFROM <table A> AS a
+    LEFT [OUTER] JOIN <table B> AS b
     ON a.id = b.id;
 5. any value that does not match is made to be null.
 6. you want to know how many employees aren't managers?
 --  SELECT count(emp.emp_no)
-    FROM employees as emp
-    LEFT JOIN dep_manager as dep ON emp.emp_no = dep.emp_no
+    FROM employees AS emp
+    LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NULL;
 6. you want to know how many employees are managers?
 --  SELECT count(emp.emp_no)
-    FROM employees as emp
-    LEFT JOIN dep_manager as dep ON emp.emp_no = dep.emp_no
+    FROM employees AS emp
+    LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NOT NULL;
 7. you want to know every salary raise and also know which ones were a promotion.
 --  SELECT  a.emp_no, 
             b.salary, 
-            coalesce(c.title, 'no title change') as "promotions",
-            coalesce(c.from_date::text, '-') as "title taken on"
-    FROM employees as a 
-    INNER JOIN salaries as b ON b.emp_no = a.emp_no
-    LEFT JOIN titles as c ON c.emp_no = a.emp_no
+            coalesce(c.title, 'no title change') AS "promotions",
+            coalesce(c.from_date::text, '-') AS "title taken on"
+    FROM employees AS a 
+    INNER JOIN salaries AS b ON b.emp_no = a.emp_no
+    LEFT JOIN titles AS c ON c.emp_no = a.emp_no
     AND (c.from_date = b.from_date OR c.from_date = b.from_date + INTERVAL '2 days')
     ORDER BY a.emp_no;
 8. right joins add the data that dont have a match from table B.
 --  SELECT *
-    FROM <table A> as a 
-    RIGHT [OUTER] JOIN <table B> as b 
+    FROM <table A> AS a 
+    RIGHT [OUTER] JOIN <table B> AS b 
     ON a.id = b.id;
 9. like we discussed earlier, any values that does not match is made to be null.
 10. there are more join techniques they just arent used that often.
 
 # ---------------------- joints that are not used often ---------------------- #
 1. cross join - create a combination of every row.
-2. 
+--  SELECT *
+    FROM "cartesianA"
+    CROSS JOIN "cartesianB";
+2. it will create cross join between two tables.
+3. full outer join - returns results from both whether they match or not.
+--  SELECT *
+    FROM "cartesianA" AS a 
+    FULL JOIN "cartesianB" AS b ON a.id = b.id;
+
+# ---------------------------- inner join exercise --------------------------- #
+1. Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state, ordered by orderid.
+--  SELECT  c.firstname, 
+            c.lastname, 
+            o.orderid 
+    FROM orders AS o
+    INNER JOIN customers AS c ON o.customerid = c.customerid
+    WHERE c.state IN ('NY', 'OH', 'OR')
+    ORDER BY o.orderid;
+2. Show me the inventory for each product
+--  SELECT p.prod_id, i.quan_in_stock
+    FROM products as p
+    INNER JOIN inventory AS i oN p.prod_id = i.prod_id 
+3. Show me for each employee which department they work in
+--  SELECT e.first_name, dp.dept_name
+    FROM employees AS e
+    INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
+    INNER JOIN departments AS dp ON dp.dept_no = de.dept_no
+
