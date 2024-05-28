@@ -796,3 +796,17 @@ sum()
     INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
     INNER JOIN departments AS dp ON dp.dept_no = de.dept_no
 
+# ------------------------------- using keyword ------------------------------ #
+1. we are going to use join often.
+2. beacause we have so many tables in database.
+3. while using joins we can use "USING" instead of "ON".
+4. this helps reduce the text to type.
+--  SELECT e.emp_no, e.first_name, de.dept_no
+    FROM employees AS e 
+    INNER JOIN dept_emp AS de USING(emp_no);
+--  SELECT e.emp_no, e.first_name, d.dept_name
+    FROM employees AS e 
+    INNER JOIN dept_emp AS de USING(emp_no)
+    INNER JOIN department AS d USING(dept_no);
+5. try to use "USING" in most scenario.
+
