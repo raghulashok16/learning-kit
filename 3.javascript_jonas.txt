@@ -447,3 +447,41 @@ NOTES: Template literals offer a more concise and readable way to create strings
     }
     // Output: 0, 1, 2, 3, 4
 
+# -------------------------- think like a developer -------------------------- #
+1. stay calm and get to the problem with a plan.
+2. take a logical and rational approach.
+3. 4-step framework to solve any problem.
+
+# ---------------------- 4-step problem solving approach --------------------- #
+1. make sure you 100% understand the probem.
+2. ask the right questions to get a clear picture of the problem.
+3. example - "we need a function that reverse whatever we pass into it"
+4. "whatever" means what?
+5. like array, string, numbers, etc.
+6. "what should it do if we pass something else?"
+7. "how the output should be look like - array, string, or anything else."
+8. "how to recognize whether the argument is a number, a string, or an array?"
+9. how to revese a number, a string, andd an array?
+10. always use divide and conquer method to break a big problem into small sub-problems.
+11. sub - problems -> check if arguments is a number, a srting, or an number -> implement reversing a number -> implement reversing a string -> implement reversing an array -> return reversed value.
+12. do research till you find answers for your solutions.
+13. write pseudo-code before the actual code.
+
+# ------------------------ debugging with online tools ----------------------- #
+1. stackoverflow -> use it to find answers for any questions that come for us.
+2. debugging -> use to check wether any error arise in our code.
+3. mdn website -> use to check the function names and how it behaves in javascript.
+
+# --------------------------- errors in javascript --------------------------- #
+1. software bug -> defect or problem in a computer program.
+2. it is the unexpected or unintended behaviour of a computer program is a software bug.
+3. bugs are completely normal in software development.
+4. become aware there a bug in our program.
+5. identify - during development -> testing software -> user reports during production -> contexts: browsers, users, etc.
+6. find - developer console [simple code], debugger [complex code].
+7. fix - replace wrong solution with new correct solution.
+8. prevent - searching for the same bug in similar code -> writing tests using testing software.
+
+# ------------------ debugging with console and breakpoints ------------------ #
+1. read and write notes.
+
