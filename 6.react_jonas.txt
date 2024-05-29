@@ -269,3 +269,64 @@
 
 17. this above useReducer is created only to manage single state.
 18. for using multiple states, we must create the state in object format.
+
+# -------------------- managing all states in a component -------------------- #
+1. first thing is to create a initial value object.
+
+    const initialState = {
+        count: 0,
+        step: 1,
+    };
+
+2. create the useReducer hook with name 'state' or your prefered name.
+3. next pass the initialState value for the useReducer.
+
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+4. next destruct the state.
+
+    const {count, step} = state;
+
+5. by this method we can use these values inside our component.
+6. in the reducer function, use switch statement instead of if statement.
+
+    function reducer(state, action){
+       switch(action.type){
+        case "dec":
+            return {...state, count: state.count - state.step};
+        case "inc":
+            return {...state, count: state.count + state.step};
+        case "setCount":
+            return {...state, count: action.payload};
+        case "setStep":
+            return {...state, step: action.payload};
+        default:
+            throw new Error("unknown error");
+       };
+    };
+
+7. by this way we can handle multiple states using useReducer.
+8. in this method resetting value is very easy.
+
+    case "reset":
+        return {count:0, step:1};
+
+9. so just dispatch with type 'reset'.
+
+    dispatch({type: "reset"});
+
+10. useReducer is mainly creadted to centralize all the state updates of the component in a single place.
+
+# -------------------- managing state with useReducer hook ------------------- #
+1. why useReducer?
+2. state management with useState is not enough in certain situations.
+3. when components have a lot of state variables and state updates, spread across amny event handlers all over the component.
+4. when multiple state updates need to happen at the same time (as a reaction to the same event, like "starting a game").
+5. when updating one piece of state depends in one or multiple other pieces of state.
+6. in all these situations, useReducer can be of great help.
+7. state with useReducer, an alternative way of setting, ideal for complex state and related pieces of state.
+8. state with useReducer, stores pieces of state in astate object.
+9. reducer: function that containing all logic to update state. decouples state logic from component.
+10. reducer: pure function(no side effects!) that takes current state and action, and returns the next state.
+11. action: object that describes how to update state.
+12. dispatch: function to trigger state updates, by "sending" actions from event handlers to reducer.
