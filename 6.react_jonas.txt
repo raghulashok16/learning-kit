@@ -246,5 +246,26 @@
 8. place this dispatch function inside our event handler.
 9. this dispatch function will then call the reducer function.
 10. in reducer function, state->previous state, action-> our_next_state_value.
-11. 
+11. in the useReducer 0 is the initial state value.
 
+    function reducer(state, action){
+        return state + action;
+    }
+
+12. the returned value from the reducer function will be the new state value.
+13. when we have multiple actions we mention it with 'type' and 'payload'.
+14. this type and payload should be wrapped in {  }.
+
+    dispatch({type: "type_name", payload: our_next_state_value});
+
+15. this template is also used in the redux.
+16. with the type came into the reducer function we can return based on that type as below.
+
+    function reducer(state, action){
+        if(action.type === "inc") return state + action.payload;
+        if(action.type === "dec") return state - action.payload;
+        if(action.type === "setcount") return action.payload;
+    };
+
+17. this above useReducer is created only to manage single state.
+18. for using multiple states, we must create the state in object format.
