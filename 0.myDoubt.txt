@@ -4,3 +4,39 @@
 # npm install
 2. this will install all the dependencies of that app.
 
+# --------------------------- vs code shortcut keys -------------------------- #
+1. caf→ const arrow function implicit return
+
+const ░name = (░) => █
+
+2. cafe→	const arrow function explicit return
+
+const ░name = (░) => {
+  ░return █
+}
+
+3. rfce-> import/export component
+
+import React from 'react'
+
+function $1() {
+  return <div>$0</div>
+}
+
+export default $1
+
+4. nfn→ function definition
+
+const functionName = (params) => { }
+
+5. usf -> Declare a new state variable using State Hook
+
+const [|, set|] = useState();
+
+6. uef - useEffect Hook
+
+useEffect(() => {
+  |
+}, []);
+
+7.
