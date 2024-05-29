@@ -211,6 +211,7 @@
             <App/>
         </React.StrictMode>
     );
+
 2. it will render twice while development.
 3. it will check if there are any outdated parts of the React API.
 4. it is a good practise to use strict mode in development process because it will help us find bugs.
@@ -222,3 +223,28 @@
 
 # ----------------------- component as building blocks ----------------------- #
 1 .
+
+# ------------------------------ useReducer hook ----------------------------- #
+1. this is a another way to manage state in React.
+2. useReducer hook works with a reducer function which is a pure function.
+3. this function will take in the previous state and it is called action as an argument and will then return the next state.
+4. the below example is a use reducer for managing single state.
+
+    const [count, dispatch] = useReducer(reducer, 0);
+
+5. after this create the reducer function outside the function component.
+
+    function reducer(state, action){
+
+    }
+
+6. so there is doubt, when does this reducer function will be called?
+7. now dispatch function will come in play.
+
+    dispatch(our_next_state_value);
+
+8. place this dispatch function inside our event handler.
+9. this dispatch function will then call the reducer function.
+10. in reducer function, state->previous state, action-> our_next_state_value.
+11. 
+
