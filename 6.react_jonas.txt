@@ -271,7 +271,7 @@
 18. for using multiple states, we must create the state in object format.
 
 # -------------------- managing all states in a component -------------------- #
-1. first thing is to create a initial value object.
+1. first thing is to create a initial value object outside the function component.
 
     const initialState = {
         count: 0,
@@ -330,3 +330,37 @@
 10. reducer: pure function(no side effects!) that takes current state and action, and returns the next state.
 11. action: object that describes how to update state.
 12. dispatch: function to trigger state updates, by "sending" actions from event handlers to reducer.
+
+# ---------------------- react quiz app using useReducer --------------------- #
+1. this app works using fake API.
+2. we can create a fake API using an npm package called json-server.
+3. open terminal window in the bottom of vs code.
+4. open new terminal for the fake API and run the below command.
+
+    npm i json-server
+
+5. now create a new folder in our react app (foler_name -> data).
+6. now paste the json file containing all the quiz for our app.
+7. to run the json server we need add some script in the package.json file.
+
+    "script":{
+        "server": "json-server --watch data/questions.json --port 9000",
+    }
+
+8. add the above "server" inside the "scripts" in package.json file.
+9. make sure the port is not used for other process.
+10. finally run the below command in the new terminal.
+
+    npm run server
+
+11. the above command will run in port 9000 and our react app will run in port 3000.
+12. to check if our fake API worked or not, type the below url in the browser and the json format will be displayed.
+
+    localgost:9000/questions
+
+13. if any doubt check the video lecture.
+14. inside our react app, using fetch method get all the data from the fake API.
+
+    useEffect(function () {
+        
+    })
