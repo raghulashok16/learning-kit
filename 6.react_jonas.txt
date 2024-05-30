@@ -368,3 +368,39 @@
         .catch((err) => dispatch({ type: 'dataFailed'}));
     }, []);
 
+15. now create the initialState outside function component.
+
+    const initialState = {
+        questions: [],
+        // 'loading', 'error', 'ready', 'active', finished'
+        status: 'loading'
+    }
+
+16. now create the reducer function for the basic state updates.
+
+    function reducer(state, action) {
+        switch(action.type) {
+            case 'dataRecevied':
+                return {
+                    ...state,
+                    questions: action.payload,
+                    status: 'ready',
+                };
+            case 'dataFailed':
+                return {
+                    ...state,
+                    status: 'error',
+                };
+            default:
+                throw new Error('Action unknown');
+        }
+    };
+
+17. in the useReducer hook, we destruct our states.
+
+    const [ {questions, status}, dispatch ] = useReducer( reducer, initialState );
+
+18. using 'status' state we can conditionally display components.
+19. if 'status' === 'loading', we can display a loader component.
+20. if 'status' === 'error', we can display a error component.
+21. 
