@@ -417,3 +417,24 @@
     {status === 'ready' && <StartScreen numQuestions={numQuestions} />}
 
 24. here numQuestions is the length of the questions in our quiz.
+25. if status changed to 'active' then render the Questions component.
+
+    {status === 'active' && <Questions/>}
+
+26. now create a action type in reducer function that changes the status to 'active'.
+27. we can do it inside the <StartScreen/> component.
+28. to do so we the dispatch function inside it, so we pass the function as props to it.
+
+    {status === 'ready' && <StartScreen numQuestions={numQuestions} dispatch ={dispatch} />}
+
+29. in the <StartScreen/> component, create a button that starts the quiz.
+
+    onclick={() => dispatch({ type: "start" })}
+
+30. in the reducer function add a case that changes the status 'active'.
+
+    case 'start':
+        return { 
+            ...state, 
+            status: 'active' 
+        };
