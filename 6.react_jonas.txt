@@ -439,4 +439,11 @@
             status: 'active' 
         };
 
-31.
+31. to track the question we create a state variable named 'index'.
+
+    const initialState = {
+        index: 0,
+    }
+
+32. <Questions/> component will be displayed when the status === active.
+33. in this component we pass the props value ( question )
