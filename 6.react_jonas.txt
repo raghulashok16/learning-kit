@@ -403,4 +403,17 @@
 18. using 'status' state we can conditionally display components.
 19. if 'status' === 'loading', we can display a loader component.
 20. if 'status' === 'error', we can display a error component.
-21. 
+
+    {status === 'loading' && <Loader/>}
+    {status === 'error' && <Error/>}
+
+21. check the working using network tab in inpect console window by choosing slow 3g and by stopping the json-server.
+22. after the status got ready, render the quiz welcome component.
+
+    {status === 'ready' && <StartScreen/>}
+
+23. now calculate the questions state length and pass it as a props to the StartScreen
+
+    {status === 'ready' && <StartScreen numQuestions={numQuestions} />}
+
+24. here numQuestions is the length of the questions in our quiz.
