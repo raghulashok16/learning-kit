@@ -356,11 +356,15 @@
 11. the above command will run in port 9000 and our react app will run in port 3000.
 12. to check if our fake API worked or not, type the below url in the browser and the json format will be displayed.
 
-    localgost:9000/questions
+    localhost:9000/questions
 
 13. if any doubt check the video lecture.
 14. inside our react app, using fetch method get all the data from the fake API.
 
     useEffect(function () {
-        
-    })
+        fetch("http://localhost:9000/questions")
+        .then((res) => res.json())
+        .then((data) => dispatch({ type: 'dataRecevied", payload: data }))
+        .catch((err) => dispatch({ type: 'dataFailed'}));
+    }, []);
+
