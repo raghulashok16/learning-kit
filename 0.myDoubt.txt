@@ -1,4 +1,3 @@
-
 # ------------- THINGS TODO WHEN REACT APP DOWNLOADED FROM GITHUB ------------ #
 1. open terminal inside the app directory
 # npm install
