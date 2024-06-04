@@ -446,4 +446,7 @@
     }
 
 32. <Questions/> component will be displayed when the status === active.
-33. in this component we pass the props value ( question )
+33. in this component we pass the props value ( question = {questions[index]} )
+34. inside the Questions component destruct the question props.
+35. before using inside the component, just console and check the structure of the question.
+36. 
