@@ -45,3 +45,23 @@
 
     _+6
 
+# ------------------------------- core modules ------------------------------- #
+1. in our traditional way, we just link the javascript file to the html file and see the outputs in the console window in the browser.
+2. but after installing node in our windows operating system, we just need a single line command to see the outputs in the terminal window.
+
+    node file_name
+
+3. this command will run and the outputs will be displayed in the vscode terminal if use terminal inside vscode.
+4. basically node.js is build with bunch of modules.
+5. these modeules are specific for doing certain works.
+6. for example for reading files, we can use fs modeule.
+7. so how can we use these modules in our code?
+
+    const fs = require('fs');
+
+8. by this code, we will get access to functions for reading data and writing data right to the file system.
+9. by calling the fs module will then return an object in which there are lots of functions that we can use.
+10. for learning other modules and its uses, we need node documentation.
+11. go to node website and click docs, on the left side we can see the versions list in that select our version.
+12. in the select version you will see all the required list of modules and its examples.
+
