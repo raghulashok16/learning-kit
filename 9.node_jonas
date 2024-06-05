@@ -65,3 +65,26 @@
 11. go to node website and click docs, on the left side we can see the versions list in that select our version.
 12. in the select version you will see all the required list of modules and its examples.
 
+# ------------------------- reading and writing files ------------------------ #
+1. fs modeule is responsible for reading and writing files.
+
+    const fs = require('fs');
+
+2. the above code will give access to functions in fs module.
+3. readFileSync function taks two arguments, the first one is the path to the file we're reading, and then also the character encoded.
+
+    fs.readFileSync('./txt/input.txt', 'utf-8');
+
+4. here input.txt file is located first and then the utf-8 character encoding was selected.
+5. the above code will return the text in the file, so store it in a variable.
+
+    const textIn = fs.readFileSync('./txt/input.txt', 'utf-8');
+
+6. we can console textIn and check the output.
+7. also fs has write file functions.
+
+    const textOut = `text to be written on a file`;
+    fs.writeFileSync('./txt/output.txt', textOut);
+
+8. after running this code a new file will be created with the name 'output.txt'.
+
