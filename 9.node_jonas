@@ -12,7 +12,7 @@
 
 # ---------------------------- when to use node js --------------------------- #
 1. pros
-    -- it is single-threaded, based on event driven, non-blocking I/O model which makes node js very ligthweight and efficient.
+    -- it is single-threaded, based on event driven, non-blocking IO model which makes node js very ligthweight and efficient.
     -- it is perfect for building super-fast and scalable data-intensive apps.
     -- companies like netflix, uber, paypal, ebay have started using node in production.
     -- using same language for the entire stack development.
