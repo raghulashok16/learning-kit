@@ -92,7 +92,7 @@
 # --------- blocking and non-blocking: asynchronous nature of node js -------- #
 1. in syncronous, code is processed one after another, line by line.
 2. here each line waits for the results of the previous line.
-3. this create a probem of slow execution.
+3. this create a problem of slow execution.
 4. in other words, syncronous code is also called blocking code.
 5. asynchronous code is called non-blocking code.
 6. in asynchronous we upload heavy work to basically be worked in the background.
@@ -105,4 +105,15 @@
 13. remember, node.js is basically single threaded and so for each application, there's only one thread.
 14. this is the way the node.js was designed.
 15. this means that all the users accessing your application are all using the same thread.
-16. so whenever they are interacting with the application, the code that is running for each user 
+16. so whenever they are interacting with the application, the code that is running for each user will be executed all in the same thread at the same place in the computer running the application.
+17. if you have 5 users or 5 million users, all have only one thread.
+18. when one usser blocks the single thread with syncronous code, then all other users have to wait for that execution to finish.
+19. this is not a problem, if we have 5 users.
+20. but consider 50000000 users, then it is a problem.
+21. to solve this problem, use asynchronous code for heavy work.
+22. now no thread will be blocked and heavy work will run in background.
+23. this is why node.js is completly degined around callbacks.
+24. in other programming languages, things works differently, if a user log in happens, a new thread will be created and the concept is called muti-threading.
+25. when we use callbacks in our code, that doesn't automatically make it asynchronous.
+26. it works for some specific functions in node.js
+27. when we face callback hell[check what is callback hell in internet?], 
