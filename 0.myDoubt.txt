@@ -6,7 +6,7 @@
 # --------------------------- vs code shortcut keys -------------------------- #
 1. caf→ const arrow function implicit return
 2. cafe→	const arrow function explicit return
-3. rafce-> import/export component
+3. rafce-> import/export component with component name
 4. nfn→ function definition
 5. usf -> Declare a new state variable using 
 6. uef - useEffect Hook
