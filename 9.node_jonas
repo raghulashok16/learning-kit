@@ -128,3 +128,28 @@
     console.log('loading data...');
 
 4. the callback function takes two arguments, first the error, second the data to be passed[this is the data from the file we read].
+5. we can read text file and using that text we read a new file matches that name in our txt folder.
+
+    fs.readFile('./txt/start.txt', 'utf-8', (err,data1) => {
+        fs.readFile(`./txt/${data1}.txt`, 'utf-8', (err,data2) => {
+            console.log(data2);
+        });
+    });
+    console.log('loading data...');
+
+6. in the above code data1 file text from first readFile() is read and passed using string literals in the second readFile()[refer video].
+
+    fs.readFile('./txt/start.txt', 'utf-8', (err,data1) => {
+        fs.readFile(`./txt/${data1}.txt`, 'utf-8', (err,data2) => {
+            console.log(data2);
+            fs.readFile(`./txt/append.txt`, 'utf-8', (err,data3) => {
+                console.log(data3);
+                fs.writeFile(`./txt/final.txt`, `${data2} ${data3}`, 'utf-8', (err) => {
+                    console.log('your file has been writen in final.txt file....');
+                });
+            });
+        });
+    });
+    console.log('loading data...');
+
+7. writeFile() function takes four arguments, first the file location, second the text to be written, third the character encoding, fourth the callback function.
