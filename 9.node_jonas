@@ -1,0 +1,47 @@
+# ---------------------- what is node and why we use it? --------------------- #
+1. node.js ia a javascript runtime built on google's open-source V8 javascript engine.
+2. node.js is just like a container, like an environment in which the progrom written in javascript can be executed, but outside of any browser.
+3. v8 engine developed by google comes into play. because that is exactly where javascript code will be parsed and run in node js.
+4. we can use javascript on the server-side of web development.
+5. we can build fast and highly scalable network applications(back-end).
+6. we can use node for API with database behind it(preferably NoSQL).
+7. we can use it for data streaming.
+8. we can use it for real-time chat applications.
+9. we can use it for server-side web applications.
+
+
+# ---------------------------- when to use node js --------------------------- #
+1. pros
+    -- it is single-threaded, based on event driven, non-blocking I/O model which makes node js very ligthweight and efficient.
+    -- it is perfect for building super-fast and scalable data-intensive apps.
+    -- companies like netflix, uber, paypal, ebay have started using node in production.
+    -- using same language for the entire stack development.
+    -- NPM: huge library of open-source pakages available for everyone for free.
+    -- very active developer community.
+
+
+2. cons
+    -- applications with heavy server-side processing(cpu-intensive)(image manipulations, video conversion, file compression, etc)
+
+# -------------------- running javascript outside browser -------------------- #
+1. this section is created to intract with node.
+2. just open a new terminal in vs code.
+
+    node
+
+3. this command will enable node REPL which stand for read-eval-print-loop.
+4. in REPL we can write javascript code just like in a normal terminal.
+5. any javascript will work in here.
+6. to exit the REPL use the below command.
+
+    .exit
+
+7. ctrl + k will clear the terminal(just for information purpose).
+8. ctrl + d will also exit the REPL.
+9. in the REPL, hit tab single/twice.
+10. now you can see all the global variables that are available in node.
+11. the global variables are listed in the terminal.
+12. in node there is a underscore variable(underscore is your previous result).
+
+    _+6
+
