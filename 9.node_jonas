@@ -53,8 +53,8 @@
 
 3. this command will run and the outputs will be displayed in the vscode terminal if use terminal inside vscode.
 4. basically node.js is build with bunch of modules.
-5. these modeules are specific for doing certain works.
-6. for example for reading files, we can use fs modeule.
+5. these modules are specific for doing certain works.
+6. for example for reading files, we can use fs module.
 7. so how can we use these modules in our code?
 
     const fs = require('fs');
@@ -66,7 +66,7 @@
 12. in the select version you will see all the required list of modules and its examples.
 
 # ------------------------- reading and writing files ------------------------ #
-1. fs modeule is responsible for reading and writing files.
+1. fs module is responsible for reading and writing files.
 
     const fs = require('fs');
 
@@ -87,4 +87,22 @@
     fs.writeFileSync('./txt/output.txt', textOut);
 
 8. after running this code a new file will be created with the name 'output.txt'.
+9. these two functions are syncronous.
 
+# --------- blocking and non-blocking: asynchronous nature of node js -------- #
+1. in syncronous, code is processed one after another, line by line.
+2. here each line waits for the results of the previous line.
+3. this create a probem of slow execution.
+4. in other words, syncronous code is also called blocking code.
+5. asynchronous code is called non-blocking code.
+6. in asynchronous we upload heavy work to basically be worked in the background.
+7. and when the work is done, a callback function that we register before is called to handle the result.
+8. during all the time the rest of the code can be still be executing without being blocked by the heavy task, which is now running in the background.
+9. in fs module we have file read and write function in both syncronous and asynchronous.
+10. in node.js process[this is where our app runs], there's only one single thread.
+11. the thread is just like a set of instructions that is run in the computer's cpu.
+12. thread is where our code is actually executed in a machine's processor.
+13. remember, node.js is basically single threaded and so for each application, there's only one thread.
+14. this is the way the node.js was designed.
+15. this means that all the users accessing your application are all using the same thread.
+16. so whenever they are interacting with the application, the code that is running for each user 
