@@ -48,6 +48,7 @@
 
     console.log(x[y]);
 
+# ---------------------------------------------------------------------------- #
 17. what are the features of react.
 18. why it is one way data binding.
 19. what is the use of babel.
@@ -69,4 +70,41 @@
 35. explain left join.
 36. how do you upload your application to server.
 37. are you intrested in learning node js, i am looking for a full stack developer.
-38. 
+
+# ---------------------------------------------------------------------------- #
+38. difference between class and functional component.
+39. which one is best in performance.
+40. what is the use of redux.
+41. why do you use useEffect.
+42. why do you use useState.
+43. tell some other hooks in react.
+44. do you use console.log while developing code.
+45. if there is a big project[like 2000 logs] at that time what you will you do, without commenting what do you do.
+46. ways to disable and enable whenever we want.
+
+# ---------------------------------------------------------------------------- #
+47. in html first tag is doctype and why we use it.
+48. does it make any difference in the html and structure of the files.
+49. do you know the major difference between css3 and plain css.
+50. do you know the purpose of box sizing.
+51. what is ecmascript in js.
+52. difference between let, const, var.
+53. if i have a wepage i need some global[scope] keys and those values will not be changed, one way i can be store it in const.what difference it makes in speed.
+54. do you know about spread operator.
+55. do you know about arrow functions.
+56. do you often use arrow functions.
+57. do you know about typescript.
+58. do you know about settimeout and setTimeinterval.
+59. how to stop set time interval.
+60. is there any function to stop the execution of settimeinterval.
+61. program to find the highest time an element orrcs in the array.
+62. what is react js.
+63. what will it do.
+64. do you know about controlled and uncontrolled components.
+65. what is hooks in react js.
+66. why we use props in react js.
+67. props is the best way for passing data, or is there any other ways to manage state.
+68. what is middleware.
+
+# ---------------------------------------------------------------------------- #
+69. 
