@@ -16,6 +16,18 @@
 6. so most interviewer ask about big o notation.
 
 # ------------------------------ timing our code ----------------------------- #
-1. 
+1. when solving problems, always check for any mathematical formulas instead of multiple looping [for example: calculate sum of all numbers from 1 to n numbers. 
+2. method 1 -> loop from 1 to 6 and store it in a new variable. 
+3. method 2 -> use mathematical function instad of loop (n*(n+1)/2)]
+4. so always keep in mind to do better code that satisfies the below conditions.
+    -- faster?
+    -- less memory-intensive?
+    -- more readable?
+    -- less code? [optional preference]
+5. the first two consition are more important.
+6. our browser gives a method to calculate the time taken to complete the process we do.
+
+    
+
 
 
