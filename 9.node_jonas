@@ -153,3 +153,39 @@
     console.log('loading data...');
 
 7. writeFile() function takes four arguments, first the file location, second the text to be written, third the character encoding, fourth the callback function.
+8. to rember while using arrow functions, this keyword is not availabe.
+9. we can handle error if readFile is not availabe.
+
+    if(err) return console.log('file not found');
+
+10. use this code inside callback function.
+
+# ----------------------- creating a simpler web server ---------------------- #
+1. http module gives us networking capabilities such as building an http server.
+2. it accepts request and sends back response.
+
+    const http = require('http');
+
+3. create a variable for that module.
+4. now use this to access methods to create server.
+
+    const server = http.createServer((req, res) => {
+        res.end('this is the message from the server');
+    })
+
+5. now we need to listen to the server that we created above in certain port and host address.
+
+    server.listen(8000, '127.0.0.1', () => {
+        console.log('listening to requests on port 8000');
+    });
+
+6. remember that use command ctrl + d to close REPL and ctrl + c to close running node file.
+7. now start the file using node space file_name.
+8. now the app wont close automatically because it is running and we need to close it manually using ctrl + c.
+9. goto 127.0.0.1:8000 in your browser.
+10. the text in the end() will be displayed in the webpage.
+11. this text came from the server we created using http module.
+12. we can also use console.log() and it will be displayed in our terminal where we run our node command.
+
+# ---------------------------------- routing --------------------------------- #
+1. 
