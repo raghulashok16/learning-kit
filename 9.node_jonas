@@ -188,4 +188,6 @@
 12. we can also use console.log() and it will be displayed in our terminal where we run our node command.
 
 # ---------------------------------- routing --------------------------------- #
-1. 
+1. routing means implementing different actions for different urls.
+2. routing can actually become very very complicated in a big, real world application, and so on in that case we use a tool for that like express.
+3. 
