@@ -1,0 +1,72 @@
+1. what are react hooks.
+2. difference between controlled and uncontrolled components.
+3. what are the advantages of using react hooks.
+4. what is jsx.
+5. difference between state and props.
+6. use of keys in react js.
+7. what is HOC / higher order component.
+8. examples of using HOC.
+9. difference between real dom vs virtual dom.
+10. use of useMemo.
+11. use of useContext.
+12. what do you prefer? useContext or redux.
+13. what is hoisting.
+14. explain the program and tell the output.
+
+    function func1(){
+        setTimeout(()=>{
+            console.log(x);
+            console.log(y);
+        },3000);
+        var x = 2;
+        let y = 12;
+    }
+    func1();
+
+15. explain the program and tell the output.
+
+    function func2(){
+       for(var i=0;i<3;i++){
+        setTimeout(()=> console.log(i),2000);
+       }
+    }
+    func2();
+
+    function func2(){
+       for(let i=0;i<3;i++){
+        setTimeout(()=> console.log(i),2000);
+       }
+    }
+    func2();
+
+16. explain the program and tell the output.
+
+    let x = {}, y = {name:"ronny"}, z = {name:"john"};
+
+    x[y] = {name:"vivek"};
+    x[z] = {name:"akki"};
+
+    console.log(x[y]);
+
+17. what are the features of react.
+18. why it is one way data binding.
+19. what is the use of babel.
+20. difference between real dom and virtual dom.
+21. react js ia framework or library.
+22. what is the use of es6.
+23. what are the different types of the component.
+24. which component type is best.
+25. what is the use of useState in react.
+26. difference between controlled and uncontrolled component.
+27. what is the use of prop drilling.
+28. can we creat our custom hooks.
+29. do you know strict mode in react.
+30. how to pass the data between component, tell all methods.
+31. which method is better.
+32. is redux third party.
+33. explain how router works in react.
+34. do you know the joins in sql.
+35. explain left join.
+36. how do you upload your application to server.
+37. are you intrested in learning node js, i am looking for a full stack developer.
+38. 
