@@ -27,7 +27,11 @@
 5. the first two consition are more important.
 6. our browser gives a method to calculate the time taken to complete the process we do.
 
-    
+    var t1 = performance.now();
+    addUpTo(1000000000);
+    var t2 = performance.now();
+    console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`);
+
 
 
 
