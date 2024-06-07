@@ -165,3 +165,68 @@
         <h3>nope</h3>
         <p>css applied</p>
     </div>
+
+# ------------------- how to check box model in our browser ------------------ #
+1. every element in html is interpreted as a box by css.
+2. you can see the box in the chrome developer tool by inspecting that element.
+3. every element has a content that is the blue area in the inspect window.
+4. green area represents the padding.
+5. yellow represents the border.
+6. finally the orange color and it represents margin.
+
+# ------------------------ understanding the box model ----------------------- #
+1. add padding to the content.
+
+    padding: 20px;
+
+2. padding represents the gap between the content and the border.
+3. border represents the line between the padding and the marging.
+4. we can also add border style, border color, border width in addition.
+
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+
+5. margin is the gap above the border.
+
+    margin: 20px;
+
+6. we can have a padding without margin and can have margin without border.
+7. so anything is possible.
+
+# -------------------------- removing default margin ------------------------- #
+1. every element contains default margin.
+2. css allow us to edit the default values.
+
+    body{
+        margin: 0;
+    }
+
+# ---------------------- understanding margin collapsing --------------------- #
+1. if you have two elements next to each other.
+2. either horizontal or vertical.
+3. the margin with higher one win.
+4. element1 - 2px and element2 - 5px, so margin between these two elements are 5px.
+5. remember bigger margin wins.
+6. in general use either one margin-top or margin-bottom.
+7. this reduces marging collapsing.
+
+# --------------------------- shorthand properties --------------------------- #
+1. when combined values of multiple properties are wrapped in a single property it is known as shorthand property.
+2. it is written in single line.
+
+    border: 2px dashed orange;
+
+3. we can mix the order of the arguments.
+4. but while using margins order of arguments is important.
+
+    margin: 5px 10px 5px 10px;
+    margin: 5px 10px;
+    margin:10px;
+
+5. for 4 arguments - top, right, bottom, left.
+6. for 2 arguments - top & bottom , left & right.
+7. fot 1 argument - all sides.
+8. we use lot of shorthand in css.
+9. it allow us to write cleaner and shorter code.
+10. 
