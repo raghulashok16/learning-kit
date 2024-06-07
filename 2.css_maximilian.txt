@@ -229,4 +229,38 @@
 7. fot 1 argument - all sides.
 8. we use lot of shorthand in css.
 9. it allow us to write cleaner and shorter code.
-10. 
+
+# ------------------------- height and width property ------------------------ #
+1. we can tell css to take our custom width.
+2. also rember that block level element takes the full width.
+
+    width: 100%;
+    width: 50%;
+
+3. width can be specified with percentage as well as using values.
+
+    width: 300px;
+    width: 700px;
+
+4. height propert is similar to width.
+
+    height: 100%;
+
+5. this code will take the full height of the parent container and not the full screen.
+6. if we have multiple child then it adjust to the full height in the remainning available space inside the parent container.
+7. we can also specify values to height argument.
+
+    height: 400px;
+
+# ------------------------- understanding box sizing ------------------------- #
+1. default box sizing is content box sizing.
+2. if we set a width and height of the content, not of the entire box including padding and border.
+3. there is a way to include width and height of the content to the entire box including padding and border.
+4. and that is border-box.
+    
+    box-sizing: content-box;
+    box-sizing: border-box;
+
+5. note that margin dont involve in this concept.
+6. this concept involve just content, padding and border.
+
