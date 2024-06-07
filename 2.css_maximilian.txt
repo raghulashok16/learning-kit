@@ -242,7 +242,7 @@
     width: 300px;
     width: 700px;
 
-4. height propert is similar to width.
+4. height property is similar to width.
 
     height: 100%;
 
@@ -264,3 +264,41 @@
 5. note that margin dont involve in this concept.
 6. this concept involve just content, padding and border.
 
+# --------------------------- adding header styles --------------------------- #
+1. create a section, inside it add a div and nav.
+2. inside the div place your logo.
+3. inside the nav element place your links.
+4. note that the links should be inside unordered list.
+5. now add the css code.
+
+    .main-header{
+        width: 100%;
+        background: #2ddf5c;
+        padding: 8px 16px;
+    }
+
+# ---------------------- understanding display property ---------------------- #
+1. in html we got inline and block level elements.
+2. block takes the full width.
+3. inline is placed in same line.
+
+    display: inline;
+    display: block;
+
+4. we do have other display properties like none.
+
+    display: none;
+
+5. if we add the css code thent he element will not render in our webpage and its space is taken by the next element.
+6. the code will be visible in the inspect window but it will not render.
+7. this will be helpfull to show modals.
+
+    display: inline-block;
+
+8. this will setup in onle line, this behaves like an inline elements such that they only take as much widht as their content sheets and they fit into one line but they still have a box where we can set a padding and so on.
+9. if we try to apply padding for element inside inline-block then the padding will be applied to left and right.
+10. the padding will not be applied to the top and bottom, since the element is inside the inline-block element.
+11. but if we try to add padding to the inline-block element then padding will be applied to all sides.
+
+# -------------------- display: none vs visibility: hidden ------------------- #
+1. 
