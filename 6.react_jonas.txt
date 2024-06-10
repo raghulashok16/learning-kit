@@ -283,7 +283,7 @@
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
-4. next destruct the state.
+4. next destruct the state in our functional component.
 
     const {count, step} = state;
 
@@ -396,7 +396,7 @@
         }
     };
 
-17. in the useReducer hook, we destruct our states.
+17. in the useReducer hook, we destruct our states[nested destructuring].
 
     const [ {questions, status}, dispatch ] = useReducer( reducer, initialState );
 
@@ -417,11 +417,11 @@
     {status === 'ready' && <StartScreen numQuestions={numQuestions} />}
 
 24. here numQuestions is the length of the questions in our quiz.
-25. if status changed to 'active' then render the Questions component.
+25. now create a action type in reducer function that changes the status to 'active'.
+26. if status changed to 'active' then render the Questions component.
 
     {status === 'active' && <Questions/>}
 
-26. now create a action type in reducer function that changes the status to 'active'.
 27. we can do it inside the <StartScreen/> component.
 28. to do so we the dispatch function inside it, so we pass the function as props to it.
 
