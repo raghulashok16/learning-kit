@@ -423,7 +423,7 @@
     {status === 'active' && <Questions/>}
 
 27. we can do it inside the <StartScreen/> component.
-28. to do so we the dispatch function inside it, so we pass the function as props to it.
+28. to do so we pass dispatch() function inside it, so we pass the function as props to it.
 
     {status === 'ready' && <StartScreen numQuestions={numQuestions} dispatch ={dispatch} />}
 
@@ -439,7 +439,7 @@
             status: 'active' 
         };
 
-31. to track the question we create a state variable named 'index'.
+31. to track the question we create a state variable named 'index' or 'questionIndex'.
 
     const initialState = {
         index: 0,
@@ -448,5 +448,33 @@
 32. <Questions/> component will be displayed when the status === active.
 33. in this component we pass the props value ( question = {questions[index]} )
 34. inside the Questions component destruct the question props.
-35. before using inside the component, just console and check the structure of the question.
-36. 
+35. before using, inside the component, just console and check the structure of the question.
+36. inside the <Questions/> component map the options array as individual buttons to track the record.
+37. to reduce the code size create a separate component for options and pass the question as props.
+38. more states and dispach function added refer the video.
+39. conditionally rendered components, please refer  the video.
+40. learn cleanup function in timers (setinterval cleanup).
+
+# -------------------------- useState vs useReducer -------------------------- #
+1. useState
+    -- ideal for single independent pieces of state(numbers, strings, single arrays, etc.)
+    -- logic to update state is placed directly in event handlers or effects, spread all over one or multiple components.
+
+    setScore(0);
+    setPlaying(true);
+
+    -- state is updated by calling setState (setter returned from useState)
+    -- imperative state update.
+    -- easier to understand and to use.
+    
+2. useReducer
+    -- ideal for multiple related pieces of state and complex state(eg. object with many values and nested objects or arrays).
+    -- logic to update state lives in one central place, decoupled from components: the reducer.
+    -- state is updated by dispatching an actioon to a reducer.
+    -- declarative state updates: complex state transtions are mapped to actions.
+
+    dispach({type: 'startGame'});
+
+    -- more difficult to understand and implement.
+
+3. ask yourself, do you have single or multiple states, do they want to update individualy or at the same time together, 
