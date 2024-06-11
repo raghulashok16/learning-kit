@@ -377,4 +377,9 @@
     }
 
 # ----------------- what is pseudo class and pseudo element? ----------------- #
-1. 
+1. pseudo class allow us to define a stlye for a special state of an element, like hover or active state.
+2. pseudo elements allow us to define a style of a specific part of an element.
+3. pseudo classes are defined with a single colon and pseudo_class_name.
+4. pseudo elements are defined by adding two colons.
+5. check MDN website has all these list of class and element.
+
