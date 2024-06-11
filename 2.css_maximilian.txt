@@ -338,6 +338,8 @@
     class= "product-overview"
     class= "section-title"
 
+4. refer BEM naming methodology for css.
+
 # --------------------- unexpected inline-block behavoiur -------------------- #
 1. after setting display property to inline-block, sometimes there will white space will affect the flow of the document.
 2. refer the video to understand.
@@ -393,5 +395,59 @@
 
 # -------------------------- font-weigth and borders ------------------------- #
 1. we can add different border style to our element using border property.
+2. we do have css to style font weight.
 
-    
+    font-weight: bold;
+
+# ---------------- overriding css rules via order of the file ---------------- #
+1. we created our webpage and we have 1000 lines of code.
+2. its hard to find multiple updates in that css file.
+3. we can override styles by adding styles to the end of the css code.
+4. when we have same specificity, order of code changes the priority.
+5. finally this method is not recomended.
+
+# -------------------------- adding background image ------------------------- #
+1. background url property can be used to add background in our design.
+
+    background: url("https://......");
+    background: url("subfolder/....");
+    background: url("file_name.jpeg");
+
+2. we can specify the url using this 3 ways.
+
+# ---------------- multiple css classes and combined selectors --------------- #
+1. we can add any number of classes to a element.
+2. but we need a whitespace to separate them.
+3. while using multiple classes, if any styles clashes to one another then the order of code wins in this clash.
+
+    <div class="class1 class2 class3">
+
+4. also we a unofficial selector which can target element that has the id or class we specify.
+5. this targets the element only if the class matches.
+6. this is not like combinators because we use whitespace in combinator.
+
+    <a href="#" class="active">
+    a.active {
+        ...css styles...
+    }
+
+# ---------------------- what should we use class or id ---------------------- #
+1. class selectors
+    -- can be reused in multiple elements.
+    -- used for styling purpose only.
+    -- classes are strongle connected to css.
+    -- most used.
+
+2. id selectors
+    -- used only once per page.
+    -- cannot be reused.
+
+# ----------------------------- using !important ----------------------------- #
+1. !important - overrides specificity to all other selectors.
+2. dont use it unless you need it.
+
+    border: 1px solid red !important;
+
+# -------------------- selecting the opposite with :not() -------------------- #
+1. :not() comes under pseudo class.
+2. 
