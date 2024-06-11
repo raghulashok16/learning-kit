@@ -301,4 +301,32 @@
 11. but if we try to add padding to the inline-block element then padding will be applied to all sides.
 
 # -------------------- display: none vs visibility: hidden ------------------- #
-1. 
+
+    display: none;
+
+1. this value removes the element to which you apply it from the document flow.
+2. This means that the element is not visible and it also doesn't "block its position". Other elements can (and will) take its place instead.
+
+    visibility: hidden;
+
+3. If you only want to hide an element but you want to keep its place (other elements don't fill the empty spot), you can use visibility-hidden.
+
+# ---------------------- block-level vs inline elements ---------------------- #
+1. Block-level elements are rendered as a block and hence take up all the available horizontal space.
+2. You can set margin-top and margin-bottom and two block-level elements will render in two different lines.
+3. <div> , <section> , <article> , <nav>  but also <h1> , <h2>  etc and <p> are block-level-elements.
+4. Inline elements on the other hand only take up the space they require to fit their content in.
+5. Hence two inline-elements will fit into the same line (as long as the combined content doesn't take up the entire space in which case a line break would be added).
+6. They also use the box-model you learned about but margin-top  and margin-bottom  have no effect on the element.
+7. padding-top  and padding-bottom  also have a different effect.
+8. They don't push the adjacent content away but they will do so with the element border. 
+9. setting a width  or height  on an inline element also has no effect.
+10. The width and height is auto to take as much space as required by the content.
+11. Logically, this makes sense since you don't want your inline elements to destroy your multi-line text-layout.
+12. If you want to do so or need both block-level and inline behavior, you can set display: inline-block  to merge behaviors.
+13. Some example elements are: <a> , <span> , <img>.
+
+# ------------------------ naming css classes in html ------------------------ #
+1. for main parent element use dash [-].
+2. for sub child element use underscore [_].
+
