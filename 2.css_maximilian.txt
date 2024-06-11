@@ -383,3 +383,15 @@
 4. pseudo elements are defined by adding two colons.
 5. check MDN website has all these list of class and element.
 
+# ------------------------------ grouping rules ------------------------------ #
+1. when we have multiple selector to add same property to a element, then we can use the grouping technique to use them in the same line of css code.
+
+    .main-nav__item a:hover,
+    .main-nav__item a:active {
+        color: white;
+    }
+
+# -------------------------- font-weigth and borders ------------------------- #
+1. we can add different border style to our element using border property.
+
+    
