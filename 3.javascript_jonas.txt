@@ -230,6 +230,13 @@ NOTES: Template literals offer a more concise and readable way to create strings
 5. if we want to check a condition is not true, we can use '!'.
 
 # -------------------------- ACTIVATING STRICT MODE -------------------------- #
+1. Strict mode in JavaScript is a way to opt into a restricted variant of JavaScript, thereby catching common coding errors and preventing potentially unsafe actions.
+2.  It was introduced in ECMAScript 5 (ES5) and helps developers write more secure and robust code by changing the semantics of JavaScript execution.
+3. Using strict mode can help catch common mistakes and improve the overall quality of your code by enforcing stricter parsing and error handling.
+4. It is generally a good practice to use strict mode in your JavaScript projects to avoid subtle bugs and enhance the performance of your code.
+5. Strict mode can be enabled in two ways:
+    -- Global Strict Mode
+    -- Function-level Strict Mode
 
 # --------------------------------- FUNCTIONS -------------------------------- #
 1. there are 3 types of functions in javascript.
