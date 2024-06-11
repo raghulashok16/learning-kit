@@ -329,4 +329,52 @@
 # ------------------------ naming css classes in html ------------------------ #
 1. for main parent element use dash [-].
 2. for sub child element use underscore [_].
+3. below are some examples of css class names.
 
+    class= "main-header"
+    class= "main-nav"
+    class= "main-nav__items"
+    class= "main-nav__item"
+    class= "product-overview"
+    class= "section-title"
+
+# --------------------- unexpected inline-block behavoiur -------------------- #
+1. after setting display property to inline-block, sometimes there will white space will affect the flow of the document.
+2. refer the video to understand.
+
+# ------------------ text-decoration and vertical-alignment ------------------ #
+1. some element in css have default decorations like underline, italics, etc.
+2. so we can remove it using decoration property.
+
+    text-decoration: none;
+
+3. vertical-alignment property will set the alignment in vertical position.
+
+    vertical-align: middle;
+
+# ---------------------------- styling anchor tags --------------------------- #
+1. to make distance between each other in nav links.
+    .main-nav__item {
+        margin: 0 16px;
+    }
+
+2. change text color to green for anchor tag inside the main nav bar.
+3. remove the underline in anchor tag.
+
+    .main-nav__item a {
+        text-decoration: none;
+        color: 0e4f1f;
+    }
+
+# ---------------------------- adding pseudo class --------------------------- #
+    .main-nav__item a:hover {
+       
+        color: white;
+    }
+    .main-nav__item a:active {
+        
+        color: blue;
+    }
+
+# ----------------- what is pseudo class and pseudo element? ----------------- #
+1. 
