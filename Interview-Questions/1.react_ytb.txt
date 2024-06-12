@@ -1,3 +1,4 @@
+# ------------------------------------- 1 ------------------------------------ #
 1. what are react hooks.
 2. difference between controlled and uncontrolled components.
 3. what are the advantages of using react hooks.
@@ -48,7 +49,7 @@
 
     console.log(x[y]);
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------- 2 ------------------------------------ #
 17. what are the features of react.
 18. why it is one way data binding.
 19. what is the use of babel.
@@ -71,7 +72,7 @@
 36. how do you upload your application to server.
 37. are you intrested in learning node js, i am looking for a full stack developer.
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------- 3 ------------------------------------ #
 38. difference between class and functional component.
 39. which one is best in performance.
 40. what is the use of redux.
@@ -82,7 +83,7 @@
 45. if there is a big project[like 2000 logs] at that time what you will you do, without commenting what do you do.
 46. ways to disable and enable whenever we want.
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------- 4 ------------------------------------ #
 47. in html first tag is doctype and why we use it.
 48. does it make any difference in the html and structure of the files.
 49. do you know the major difference between css3 and plain css.
@@ -106,5 +107,5 @@
 67. props is the best way for passing data, or is there any other ways to manage state.
 68. what is middleware.
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------- 5 ------------------------------------ #
 69. 
