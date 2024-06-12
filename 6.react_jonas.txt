@@ -222,7 +222,61 @@
 3. Eslint will warn about the unused variables as warnings.
 
 # ----------------------- component as building blocks ----------------------- #
-1 .
+1 .components are the fundamental parts of react.
+2. react applications are entirely made out of components.
+3. these are building blocks of user interfaces in react.
+4. basically react takes all components and draw them onto a webpage.
+5. in technical terms, react renders a view for each component, ald all these views together make up the user interface.
+6. component is piece of ui that has its own data, logic and appearance.
+7. in react we build complex ui by building multiple components and combining them.
+8. components can be reused, nested inside each other, and pass data between them.
+
+# --------------------- creating and reusing a component --------------------- #
+1. in react we write components using functions and it is called functional components.
+
+    function Pizza () {
+        return (
+            <h2>pizza</h2>
+        );
+    }
+
+2. rules: 
+    -- function name should start with capital letter.
+    -- function needs to return some markups.
+    -- each function should return one single parent element.
+    -- multiple child element are not allowed to return from the functional component.
+    -- nesting components will work but not recomended.
+
+    function App () {
+        function Pizza () {
+            return (
+                <h2>pizza</h2>
+            );
+        }
+        return (
+            <div>
+                <p>today special</p>
+                <Pizza/>
+            </div>
+        );
+    }
+
+    -- the above code will work but not recomended by develpers.
+
+
+3. after creating the functional component add the component name as element as shown below.
+
+    function App () {
+        return (
+            <div>
+                <p>today special</p>
+                <Pizza/>
+            </div>
+        );
+    }
+
+# ------------------------------- what is JSX? ------------------------------- #
+1.
 
 # ------------------------------ useReducer hook ----------------------------- #
 1. this is a another way to manage state in React.
@@ -477,4 +531,5 @@
 
     -- more difficult to understand and implement.
 
-3. ask yourself, do you have single or multiple states, do they want to update individualy or at the same time together, 
+3. ask yourself, do you have single or multiple states, do they want to update individualy or at the same time together.
+
