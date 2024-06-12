@@ -276,7 +276,30 @@
     }
 
 # ------------------------------- what is JSX? ------------------------------- #
-1.
+1. JSX is a declarative syntax to describe what components look like and how they work.
+2. so each component must return one block of JSX, which react will ten use to render the component on the ui.
+3. JSX is the extension of javascript that allows us to embed javascript, css and react components into HTML.
+4. babel is a tool which is included when we create a react app and this tool automatically converts our JSX into javascript.
+5. each JSX element is connverted automatically to a React.createElement function call like the below.
+
+    <header>
+        <h1 style= "color: red">
+            Hello React!
+        </h1>
+    </header>
+
+    React.createElement(
+        'header',
+        null,
+        React.createElement(
+            'h1',
+            { style: { color: 'red' } },
+            'Hello React!',
+        )
+    );
+
+6. when we try to build UI using vanilla javascript, we will use a imperative approach.
+7. this means that we manually select elements, 
 
 # ------------------------------ useReducer hook ----------------------------- #
 1. this is a another way to manage state in React.
