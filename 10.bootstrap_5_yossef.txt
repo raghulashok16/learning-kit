@@ -152,4 +152,35 @@
     d-lg-flex
     d-lg-inline-flex
 
-4. 
+4. inside the flex box we can specify the elements direction horizontal/vertical.
+
+    d-flex flex-row
+    d-flex flex-column
+
+5. after choosing the direction we can reverse the direction of elements.
+
+    d-flex flex-row-reverse
+    d-flex flex-column-reverse
+
+6. in flex-row we can justify contents in the horizontal way.
+
+    justify-content-center
+    justify-content-start
+    justify-content-end
+    justify-content-between
+    justify-content-around
+    justify-content-evenly
+
+7. with flex-row we can only apply align-items if there is suitable height.
+
+    align-items-center
+    align-items-start`
+    align-items-end
+    align-items-baseline
+    align-items-stretch
+
+8. we can add bootstrap class to the div inside flex-row container.
+
+    align-self-start
+    
+
