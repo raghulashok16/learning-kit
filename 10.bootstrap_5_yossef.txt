@@ -73,7 +73,7 @@
     border border-danger
     border border-info
 
-4. we can also apply border width using bootrap class.
+4. we can also apply border width using bootstrap class.
 
     border border-1
     border border-2
@@ -91,7 +91,7 @@
     rounded-circle
     rounded-pill
 
-6. we can also change the size of the border radius using bootsrap class.
+6. we can also change the size of the border radius using bootstrap class.
 
     rounded-0
     rounded-1
@@ -99,4 +99,25 @@
     rounded-3
 
 # ---------------------------------- colors ---------------------------------- #
-1. 
+1. we can add opacity for text using bootstrap class.
+
+    text-primary text-opacity-75
+    text-primary text-opacity-50
+    text-primary text-opacity-25
+
+2. we can also add colors to the text using bootstrap class.
+
+    text-primary
+    text-secondary
+    text-danger
+    text-warning
+    text-info
+    text-light
+    text-dark
+    text-white
+    text-muted
+    text-black-50
+    text-white-50
+
+# ---------------------------------- display --------------------------------- #
+1. we 
