@@ -1,0 +1,102 @@
+# --------------------------------- utilities -------------------------------- #
+1. Background
+2. Borders
+3. Colors
+4. Display
+5. Flex
+6. Float
+7. Interactions
+8. Opacity
+9. Overflow
+10. Position
+11. Shadows
+12. Sizing
+13. Spacing
+14. Text
+15. Vertical alignment
+16. Visibility
+
+# -------------------------------- background -------------------------------- #
+1. to add a gradient just add the bg-gradient class after the class of the bg-color.
+
+    .bg-primary.bg-gradient
+    .bg-danger.bg-gradient
+    .bg-info.bg-gradient
+
+2. opacity can be added using style attribute.[just add this inside style attribute]
+
+    --bs-bg-opacity-75:0.75
+    --bs-bg-opacity-50:0.5
+    --bs-bg-opacity-25:0.25
+    --bs-bg-opacity-10:0.1
+
+3. opacity can be added using bootstrap class names.
+
+    bg-opacity-75
+    bg-opacity-50
+    bg-warning bg-opacity-25
+    bg-secondary bg-opacity-10
+
+
+3. we do have predefined background color classes in bootstrap listed below.
+
+    bg-primary
+    bg-secondary
+    bg-danger
+    bg-warning
+    bg-info
+    bg-light
+    bg-dark
+    bg-white
+    bg-transparent
+
+# ---------------------------------- borders --------------------------------- #
+1. we can add borders to cutom sides using bootstrap class.
+
+    border
+    border-top
+    border-bottom
+    border-start
+    border-end
+
+2. the above class are called additives classes in border and we do have subtractive classes also and they are listed below.
+
+    border-0
+    border-top-0
+    border-end-0
+    border-bottom-0
+    border-start-0
+
+3. we can also apply border colors using bootstrap class.
+
+    border border-primary
+    border border-danger
+    border border-info
+
+4. we can also apply border width using bootrap class.
+
+    border border-1
+    border border-2
+    border border-3
+    border border-4
+    border border-5
+
+5. we can also add border radius with custom position.
+
+    rounded
+    rounded-top
+    rounded-end
+    rounded-bottom
+    rounded-start
+    rounded-circle
+    rounded-pill
+
+6. we can also change the size of the border radius using bootsrap class.
+
+    rounded-0
+    rounded-1
+    rounded-2
+    rounded-3
+
+# ---------------------------------- colors ---------------------------------- #
+1. 
