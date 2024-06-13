@@ -120,4 +120,36 @@
     text-white-50
 
 # ---------------------------------- display --------------------------------- #
-1. we 
+1. in display property we have inline class in bootstrap.
+
+    d-inline
+
+2. in display property we have block class in bootstrap.
+
+    d-block
+
+3. in display property we have print-none class which is used to display only in screen and not on prints.
+
+    d-print-none
+
+4. we do have other print only class which is used to display only in print only and dont displayed in screen.
+
+    d-none d-print-block
+
+5. we do have classes to display elements based on scren size.
+
+    d-none d-lg-block
+
+# ----------------------------------- flex ----------------------------------- #
+1. we have two major flex class in bootstrap.
+
+    d-flex
+    d-inline-flex
+
+2. flex takes 100% width and inline-flex takes content only width.
+3. we can enable flex class based on the screen size.
+
+    d-lg-flex
+    d-lg-inline-flex
+
+4. 
