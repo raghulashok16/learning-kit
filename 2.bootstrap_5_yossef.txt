@@ -174,7 +174,7 @@
 7. with flex-row we can only apply align-items if there is suitable height.
 
     align-items-center
-    align-items-start`
+    align-items-start
     align-items-end
     align-items-baseline
     align-items-stretch
