@@ -20,9 +20,9 @@
 3. how to remove data.
 
 # ---------------------------- CONFUSING ACRONYMS ---------------------------- #
-DBMS - DataBase Management System
-RDBMS - Relational DataBase Management System
-SQL - Structured Query Language
+DBMS  -  DataBase Management System
+RDBMS -  Relational DataBase Management System
+SQL   -  Structured Query Language
 
 # ----------------------------- FIVE DATA MODELS ----------------------------- #
 1. relational model -> mysql, postgres -> most popular, e-comerce.
@@ -38,7 +38,7 @@ SQL - Structured Query Language
 4. the above is the Query or SQL Statement
 
 # ------------------------------ QUERY BREAKDOWN ----------------------------- #
--- SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
+----SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
 NAME --> identifier
 WHERE --> keyword
 ROLE = 'MANAGER' --> condition
