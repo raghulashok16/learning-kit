@@ -39,10 +39,10 @@ SQL   -  Structured Query Language
 
 # ------------------------------ QUERY BREAKDOWN ----------------------------- #
 ----SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
-NAME --> identifier
-WHERE --> keyword
-ROLE = 'MANAGER' --> condition
-'MANAGER' --> expression
+NAME              --> identifier
+WHERE             --> keyword
+ROLE = 'MANAGER'  --> condition
+'MANAGER'         --> expression
 
 # ------------------------- DECLARATIVE VS IMPERATIVE ------------------------ #
 
