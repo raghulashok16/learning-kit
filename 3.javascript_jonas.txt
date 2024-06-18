@@ -490,5 +490,17 @@ NOTES: Template literals offer a more concise and readable way to create strings
 8. prevent - searching for the same bug in similar code -> writing tests using testing software.
 
 # ------------------ debugging with console and breakpoints ------------------ #
-1. read and write notes.
+1. first step is to identify where and in which place the bug occurs.
+2. besides console.log() we have console.warn() and console.error().
+3. we need to manually log that warning and error to show thae user.
+4. second step is to find what causes the bug.
+3. like this forgotten errors (remember propmt function always returs a string).
+4. console.table() will print like a table in console window.
+5. third step is to fix the bug by finding solutions.
+6. for some task use the breakpoints in order to find the current values of the variables.
+7. in chrome browser goto inspect window and click sources, under that click our js file and create a breakpoint by just clicking on the line number.
+8. when we reload, program will stop at each breakpoint and we can check the values at each breakpoints.
+9. use play,pause,next button to control the flow of the file.
+
+
 
