@@ -520,10 +520,11 @@ finding solution using problem-solving framework:
     -transform each element into string with *C 
     -string needs to contain day (index + 1)
     -add ... between elements and start and end of string.
+    -log string in console to check the output value.
 
     const data1 = [17, 21, 23];
     const data2 = [12, 5, -5, 0, 4];
     
     const printForecast = function(arr){
-        
+
     }
