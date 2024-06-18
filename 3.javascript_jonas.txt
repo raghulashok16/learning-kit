@@ -511,4 +511,19 @@ NOTES: Template literals offer a more concise and readable way to create strings
 TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
 
+finding solution using problem-solving framework: 
+1. understand the problem.
+    -array transformed to string, seperated by ...
+    -what is the x days? answer: index + 1
+2. break it up into sub-problems.
+    -transform array into string
+    -transform each element into string with *C 
+    -string needs to contain day (index + 1)
+    -add ... between elements and start and end of string.
 
+    const data1 = [17, 21, 23];
+    const data2 = [12, 5, -5, 0, 4];
+    
+    const printForecast = function(arr){
+        
+    }
