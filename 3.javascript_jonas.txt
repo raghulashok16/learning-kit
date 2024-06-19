@@ -534,3 +534,17 @@ finding solution using problem-solving framework:
     }
     printForecast(data1);
     printForecast(data2);
+
+# ------------------------ DOM Events Fundamentals ----------------------- #
+1. to select a element in our html, we can use query selector to select elements using class/id selector.
+
+    document.querySelector('.message');
+
+2. the above code will select all the elements that has the class 'message'.
+
+    console.log(document.querySelector('.message').textContent);
+
+3. this above code will return the text of the the selected element.
+
+# ------------------------- DOM and DOM manipulation ------------------------- #
+1. 
