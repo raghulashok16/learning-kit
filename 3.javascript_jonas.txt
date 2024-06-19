@@ -538,13 +538,13 @@ finding solution using problem-solving framework:
 # ------------------------ DOM Events Fundamentals ----------------------- #
 1. to select a element in our html, we can use query selector to select elements using class/id selector.
 
-    document.querySelector('.message');
+    console.log(document.querySelector('.message'));
 
-2. the above code will select all the elements that has the class 'message'.
+2. the above code will log the element that has the class name 'message'.
 
     console.log(document.querySelector('.message').textContent);
 
-3. this above code will return the text of the the selected element.
+3. this above code will log the text content of the the selected element.
 
 # ------------------------- DOM and DOM manipulation ------------------------- #
 1. DOM is called document object model.
@@ -557,3 +557,20 @@ finding solution using problem-solving framework:
 8. DOM methods and properties are the part of web APIs.
 9. web APIs are implemented by our browser which we can intract with them using JavaScript.
 10. other than dom methods we have numerous APIs like Timers, Fetch, etc.
+
+# -------------------- selecting and manipulating elements ------------------- #
+1. using querySelector we can select and manipulate elements by using the below code.
+
+    document.querySelector('.message').textContent = 'new text';
+
+2. value property is used to set and get values of a element.
+
+    console.log(document.querySelector('.guess').value);
+    document.querySelector('.guess').value = 23;
+
+3. the above first code is get value and second code is set value.
+
+# --------------------------- handling click events -------------------------- #
+1. event is something that happen in our page like mouse click, keyboard click, etc.
+2. with event listner we can wait for a event to happen and react to that event.
+3.  
