@@ -573,4 +573,12 @@ finding solution using problem-solving framework:
 # --------------------------- handling click events -------------------------- #
 1. event is something that happen in our page like mouse click, keyboard click, etc.
 2. with event listner we can wait for a event to happen and react to that event.
-3.  
+3. select that element and then call addEventListner().
+4. inside the addEventListner we need to specify the type of event to happen and a function[ this function will call every time if the event occurs ].
+
+    document.querySelector('.check').addEventListner('click', function(){
+        console.log(document.querySelector('.guess').value);
+    });
+
+5. remember this eventListner will be called only when the event occurs.
+
