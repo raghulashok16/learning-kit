@@ -3,7 +3,7 @@
 # npm install
 2. this will install all the dependencies of that app.
 
-# --------------------------- vs code shortcut keys -------------------------- #
+# --------------------------- VS CODE SHORTCUT KEYS -------------------------- #
 1. caf    -> const arrow function implicit return
 2. cafe   -> const arrow function explicit return
 3. rafce  -> import/export component with component name
