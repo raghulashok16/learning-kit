@@ -382,7 +382,7 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 10. the use this code.
 11. we can also use HEAD~1 or any tilde values.
 
-# ----------------------------- reverting commits ---------------------------- #
+# ----------------------------- REVERTING COMMITS ---------------------------- #
 1. it is similar to git reset while the undo things.
 2. but unlike git reset, revert will create a brand new commit which reverses/undos the changes from a commit.
 3. beacuse it results in a new commit, you will be promted to enter a new commit message for that new revert commit.
@@ -394,7 +394,7 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 8. if you want to reverse commits that you havent shared with others.
 9. then use reset command, no one will ever know about the commit.
 
-# ----------------------------- what is github ? ----------------------------- #
+# ----------------------------- WHAT IS GITHUB ? ----------------------------- #
 1. github is a service that host git repositories in the cloud and makes it easier to collaborate with other people in the world.
 2. it is just a hosting platform for git repositories.
 3. you can put your own git repo on github and access them from anywhere and share them with people around the world.
@@ -406,7 +406,7 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 9. github is now the world's largest host of source code.
 10. in 2021, 56 million users.
 
-# --------------------------- why you should github -------------------------- #
+# --------------------------- WHY YOU SHOULD GITHUB -------------------------- #
 1. collaboration.
 2. if you everr plan on working ona project with at least on other person.
 3. github will make your life easier.
@@ -424,26 +424,26 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 15. being cactive on github is the best way to stay up to date with the projects and tools you rely on.
 16. learn about upcoming changes and the decisions/debate behind them.
 
-# -------------------- cloning github repo with git clone -------------------- #
+# -------------------- CLONING GITHUB REPO WITH GIT CLONE -------------------- #
 1. cloning - if we want a local copy of an existing repository.
 2. all we need is the github repo url.
 -- git clone url
 3. before cloning make sure you are not in a repository.
 4. after cloning it gives you access to the full git history of the cloned project.
 
-# -------------------------- cloning not github repo ------------------------- #
+# -------------------------- CLONING NOT GITHUB REPO ------------------------- #
 1. git clone is not particular made for github.
 2. it can be use to clone from other hosting urls.
 
-# -------------------------- github setup SSH config ------------------------- #
+# -------------------------- GITHUB SETUP SSH CONFIG ------------------------- #
 1. adding ssh key is different in versions.
 2. watch the latest updated video in udemy.
 
-# -------------------------- creating repo in github ------------------------- #
+# -------------------------- CREATING REPO IN GITHUB ------------------------- #
 1. option 1 - existing repo in machine [just push your local repo to your github repo]
 2. option 2 - start from scratch [create repo in github, clone it, make changes, push to your repo]
 
-# -------------------------------- git remotes ------------------------------- #
+# -------------------------------- GIT REMOTES ------------------------------- #
 1. before we can push anything up to github, we need to tell about our remote repository on github.
 2. we need to setup a destination to push up to.
 3. in git we refer these destination as remotes.
@@ -468,6 +468,6 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 -- git remote rename <old> <new>
 -- git remote remove <name>
 
-# --------------------------------- git push --------------------------------- #
+# --------------------------------- GIT PUSH --------------------------------- #
 1. to push some work up to github, we need to use the git push command.
 2. we need to specify the remote we want to push up to and the specific local branch we want to push up to that remote.
