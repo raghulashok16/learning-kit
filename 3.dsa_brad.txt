@@ -1,4 +1,4 @@
-# -------------------------------- calculator -------------------------------- #
+# -------------------------------- CALCULATOR -------------------------------- #
 const method1 = (num1, num2, operator) => {
     switch (operator) {
         case "+": return num1 + num2;
@@ -11,7 +11,7 @@ const method1 = (num1, num2, operator) => {
 }
 console.log(method1(3, 8, "*"));
 
-# ----------------------------- count occurrences ---------------------------- #
+# ----------------------------- COUNT OCCURRENCES ---------------------------- #
 const method1 = (str, val) => {
     count = 0;
     for (let i = 0; i < str.length; i++) {
@@ -29,7 +29,7 @@ const method2 = (str, val) => {
 }
 method2("raaghul", "a");
 
-# -------------------------------- max number -------------------------------- #
+# -------------------------------- MAX NUMBER -------------------------------- #
 const method1 = (arr) => {
     console.log(Math.max(...arr));
 }
@@ -47,7 +47,7 @@ const method2 = (arr) => {
 method2([1, 56, 2, 6, 65, 51, 452, 26, 62, 2]);
 
 
-# --------------------------------- titleCase -------------------------------- #
+# --------------------------------- TITLECASE -------------------------------- #
 const method1 = (str) => {
     let words = str.toLowerCase().split(" ");
     for (let i = 0; i < words.length; i++) {
@@ -57,7 +57,7 @@ const method1 = (str) => {
 }
 method1("hello world hello world");
 
-# ------------------------------ reverse string ------------------------------ #
+# ------------------------------ REVERSE STRING ------------------------------ #
 const method1 = (str) => {
     console.log(str.split('').reverse().join(''));
 }
@@ -72,7 +72,7 @@ const method2 = (str) => {
 }
 method2('jasper');
 
-# -------------------------------- palindrome -------------------------------- #
+# -------------------------------- PALINDROME -------------------------------- #
 const method1 = (str) => {
     console.log((str.split('').reverse().join('')) === str);
 }
@@ -88,7 +88,7 @@ const method2 = (str) => {
 }
 method2("racecar");
 
-# ------------------------------- count vowels ------------------------------- #
+# ------------------------------- COUNT VOWELS ------------------------------- #
 const method1 = (str) => {
     let count = 0;
     const input = str.toLowerCase();
@@ -106,7 +106,7 @@ const method1 = (str) => {
 }
 method1('time to get all the inputs');
 
-# ----------------------------- remove duplicates ---------------------------- #
+# ----------------------------- REMOVE DUPLICATES ---------------------------- #
 const method1 = (arr) => {
     const uniqueArray = [];
     for (let i = 0; i < arr.length; i++) {
@@ -123,7 +123,7 @@ const method2 = (arr) => {
 }
 method2([1, 8, 5, 6, 4, 8, 5, 6, 5, 9, 5, 1]);
 
-# --------------------------------- fizzbuzz --------------------------------- #
+# --------------------------------- FIZZBUZZ --------------------------------- #
 const method1 = (num) => {
     let arr = [];
     for (let i = 1; i <= num; i++) {
@@ -142,7 +142,7 @@ const method1 = (num) => {
 method1(15);
 method1(5);
 
-# ---------------------------- array intersection ---------------------------- #
+# ---------------------------- ARRAY INTERSECTION ---------------------------- #
 const method1 = (arr1, arr2) => {
     const intersection = [];
 
@@ -155,7 +155,7 @@ const method1 = (arr1, arr2) => {
 };
 method1([1, 5, 3, 6, 8], [1, 33, 5, 43, 10]);
 
-# ------------------------------- display likes ------------------------------ #
+# ------------------------------- DISPLAY LIKES ------------------------------ #
 const method1 = (arr) => {
     const count = arr.length;
     console.log(count);
@@ -179,7 +179,7 @@ method1(['raghul', 'ashok', 'kamal', 'sundar', 'suresh']);
 method1(['raghul', 'ashok', 'kamal']);
 method1([]);
 
-# ------------------------------ missing numbers ----------------------------- #
+# ------------------------------ MISSING NUMBERS ----------------------------- #
 const method1 = (arr) => {
     let actualValue = 0;
     const n = arr.length + 1;
@@ -191,7 +191,7 @@ const method1 = (arr) => {
 };
 method1([1, 2, 3, 4, 5, 7, 8, 9, 10]);
 
-# ------------------------------ missing letters ----------------------------- #
+# ------------------------------ MISSING LETTERS ----------------------------- #
 const method1 = (arr) => {
     const letters = 'abcdefghijklmnopqrstvuwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const index = letters.indexOf(arr[0]);
@@ -227,7 +227,7 @@ method2(['e', 'g', 'h']);
 method2(['R', 'T', 'U']);
 method2(['K', 'L', 'N']);
 
-# ----------------------------- all chars unique ----------------------------- #
+# ----------------------------- ALL CHARS UNIQUE ----------------------------- #
 const method1 = (str) => {
     const uniqueArray = [];
     for (let i = 0; i < str.length; i++) {
@@ -273,7 +273,7 @@ console.log(method3('abcdefg'));
 console.log(method3('abab'));
 console.log(method3('Aeioua'));
 
-# ------------------------ first non repeating numbers ----------------------- #
+# ------------------------ FIRST NON REPEATING NUMBERS ----------------------- #
 const method1 = (arr) => {
     const tempObject = {};
     for (const char of arr) {
@@ -289,7 +289,7 @@ const method1 = (arr) => {
 };
 console.log(method1(['a', 'd', 'f', 'r', 'q', 'd', 'p', 'a', 'a']));
 
-# --------------------------------- dice game -------------------------------- #
+# --------------------------------- DICE GAME -------------------------------- #
 function rollDice() {
     const diceValue = Math.floor(Math.random() * 6) + 1;
     return diceValue;
@@ -316,7 +316,7 @@ const method1 = (numSimulations) => {
 };
 console.log(method1(4));
 
-# ---------------------------- format phone number --------------------------- #
+# ---------------------------- FORMAT PHONE NUMBER --------------------------- #
 const method1 = (phoneNumber) => {
     const areacode = phoneNumber.slice(0, 3).join('');
     const prefix = phoneNumber.slice(3, 6).join('');
@@ -333,10 +333,10 @@ const method2 = (phoneNumber) => {
 };
 console.log(method2([9, 8, 6, 8, 1, 8, 4, 6, 2, 6,]));
 
-# ------------------------------- format email ------------------------------- #
+# ------------------------------- FORMAT EMAIL ------------------------------- #
 const method1 = (index) => { };
 
-# ----------------------------- sum even squares ----------------------------- #
+# ----------------------------- SUM EVEN SQUARES ----------------------------- #
 const method1 = (nums) => {
     const answer = nums.filter((num) => num % 2 === 0)
         .map((num) => num * num)
@@ -346,7 +346,7 @@ const method1 = (nums) => {
 };
 console.log(method1([1, 2, 3, 4, 5, 6, 7, 8]));
 
-# --------------------------- calculate total sales -------------------------- #
+# --------------------------- CALCULATE TOTAL SALES -------------------------- #
 const method1 = (products, tax) => {
     const totalSales = products.reduce((sum, product) => sum + product.price * product.quantity, 0);
     // console.log(totalSales);
@@ -361,7 +361,7 @@ console.log(method1([
     { name: 'mat', price: 15000, quantity: 5 }
 ], 18))
 
-# --------------------------- highest scoring word --------------------------- #
+# --------------------------- HIGHEST SCORING WORD --------------------------- #
 const method1 = (str) => {
     const words = str.split(' ');
     // console.log(words);
@@ -380,7 +380,7 @@ const method1 = (str) => {
 };
 console.log(method1("my name is xaviour"));
 
-# ------------------------------- valid anagram ------------------------------ #
+# ------------------------------- VALID ANAGRAM ------------------------------ #
 const method1 = (str1, str2) => {
 
 };
