@@ -333,7 +333,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
 3. dot notation dont allow us to set dynamic key.
 4. we can create a new property using both the notation.
 
-# ------------------------------ object methods ------------------------------ #
+# ------------------------------ OBJECT METHODS ------------------------------ #
 1. when a function is used inside a object and it contains a function value then we can say it as method.
 
     const jonas = {
@@ -371,7 +371,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
 
 7. the above code will will create a new property with key name 'age'.
 
-# ---------------------------- iteration: for loop --------------------------- #
+# ---------------------------- ITERATION: FOR LOOP --------------------------- #
 
     for (initialization; condition; finalExpression) {
         // code to be executed
@@ -387,7 +387,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
     };
     // Output: 0, 1, 2, 3, 4
 
-# ------------------ looping arrays, breaking and continuing ----------------- #
+# ------------------ LOOPING ARRAYS, BREAKING AND CONTINUING ----------------- #
 1. to loop a array use array.length to find the length of the array.
 
     const arr = [0,1,2,3,4,5];
@@ -414,7 +414,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
     };
     // Output: 0, 1, 3, 4
 
-# ------------------- looping backward and loop inside loop ------------------ #
+# ------------------- LOOPING BACKWARD AND LOOP INSIDE LOOP ------------------ #
 1. to loop backward first find the length.
 2. initialize with that length and decrement it.
 3. finally make the condition.
@@ -435,7 +435,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
     };
     // Output: [0,0][0,1][1,0][1,1]
 
-# -------------------------------- while loop -------------------------------- #
+# -------------------------------- WHILE LOOP -------------------------------- #
 1. while loop checks the condition before executing the loop's body.
 2. If the condition is true, the code inside the loop is executed.
 3. This process repeats until the condition evaluates to false.
@@ -454,12 +454,12 @@ NOTES: Template literals offer a more concise and readable way to create strings
     }
     // Output: 0, 1, 2, 3, 4
 
-# -------------------------- think like a developer -------------------------- #
+# -------------------------- THINK LIKE A DEVELOPER -------------------------- #
 1. stay calm and get to the problem with a plan.
 2. take a logical and rational approach.
 3. 4-step framework to solve any problem.
 
-# ---------------------- 4-step problem solving approach --------------------- #
+# ---------------------- 4-STEP PROBLEM SOLVING APPROACH --------------------- #
 1. make sure you 100% understand the probem.
 2. ask the right questions to get a clear picture of the problem.
 3. example - "we need a function that reverse whatever we pass into it"
@@ -474,12 +474,12 @@ NOTES: Template literals offer a more concise and readable way to create strings
 12. do research till you find answers for your solutions.
 13. write pseudo-code before the actual code.
 
-# ------------------------ debugging with online tools ----------------------- #
+# ------------------------ DEBUGGING WITH ONLINE TOOLS ----------------------- #
 1. stackoverflow -> use it to find answers for any questions that come for us.
 2. debugging -> use to check wether any error arise in our code.
 3. mdn website -> use to check the function names and how it behaves in javascript.
 
-# --------------------------- errors in javascript --------------------------- #
+# --------------------------- ERRORS IN JAVASCRIPT --------------------------- #
 1. software bug -> defect or problem in a computer program.
 2. it is the unexpected or unintended behaviour of a computer program is a software bug.
 3. bugs are completely normal in software development.
@@ -489,7 +489,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
 7. fix - replace wrong solution with new correct solution.
 8. prevent - searching for the same bug in similar code -> writing tests using testing software.
 
-# ------------------ debugging with console and breakpoints ------------------ #
+# ------------------ DEBUGGING WITH CONSOLE AND BREAKPOINTS ------------------ #
 1. first step is to identify where and in which place the bug occurs.
 2. besides console.log() we have console.warn() and console.error().
 3. we need to manually log that warning and error to show thae user.
@@ -502,7 +502,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
 8. when we reload, program will stop at each breakpoint and we can check the values at each breakpoints.
 9. use play,pause,next button to control the flow of the file.
 
-# ---------------------------- coding challenge 1 ---------------------------- #
+# ---------------------------- CODING CHALLENGE 1 ---------------------------- #
 1. given an array of forecasted maximum temperatures, the thermometer displays a string with these temperatures.
 2. Examples: [17,21,23] will print "...17*C in 1 days ... 21*C in 2 days ... 23*C in 3 days ..."
 3. create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console.
@@ -535,7 +535,7 @@ finding solution using problem-solving framework:
     printForecast(data1);
     printForecast(data2);
 
-# ------------------------ DOM Events Fundamentals ----------------------- #
+# ------------------------ DOM EVENTS FUNDAMENTALS ----------------------- #
 1. to select a element in our html, we can use query selector to select elements using class/id selector.
 
     console.log(document.querySelector('.message'));
@@ -546,7 +546,7 @@ finding solution using problem-solving framework:
 
 3. this above code will log the text content of the the selected element.
 
-# ------------------------- DOM and DOM manipulation ------------------------- #
+# ------------------------- DOM AND DOM MANIPULATION ------------------------- #
 1. DOM is called document object model.
 2. it is the structured representation of html documents.
 3. dom allows javascript to access html elements and styles to manipulate them.
@@ -558,7 +558,7 @@ finding solution using problem-solving framework:
 9. web APIs are implemented by our browser which we can intract with them using JavaScript.
 10. other than dom methods we have numerous APIs like Timers, Fetch, etc.
 
-# -------------------- selecting and manipulating elements ------------------- #
+# -------------------- SELECTING AND MANIPULATING ELEMENTS ------------------- #
 1. using querySelector we can select and manipulate elements by using the below code.
 
     document.querySelector('.message').textContent = 'new text';
@@ -570,7 +570,7 @@ finding solution using problem-solving framework:
 
 3. the above first code is get value and second code is set value.
 
-# --------------------------- handling click events -------------------------- #
+# --------------------------- HANDLING CLICK EVENTS -------------------------- #
 1. event is something that happen in our page like mouse click, keyboard click, etc.
 2. with event listner we can wait for a event to happen and react to that event.
 3. select that element and then call addEventListner().
