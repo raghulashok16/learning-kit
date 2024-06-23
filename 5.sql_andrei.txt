@@ -97,12 +97,12 @@ OLAP --> ONLINE ANALYTICAL PROCESSING
 3. a database is being used to derive statistics for reporting to the executives --> OLAP
 4. a database is being used to keep track of logged in users --> OLTP
 
-# ------------------------------- valentina db ------------------------------- #
+# ------------------------------- VALENTINA DB ------------------------------- #
 1. valentina DB is a cross platform tool which has the UI that help to manage postgres SQL.
 2. postgres is the most popular relational database available in the market.
 3. these two are free.
 
-# -------------------------------- installing -------------------------------- #
+# -------------------------------- INSTALLING -------------------------------- #
 1. install latest version of postgres with compatible 32/64 bit.
 2. set password for postgres in installation process.
 3. use 'root' as pasword.
@@ -118,7 +118,7 @@ username - postgres
 password - root
 connection url - local host
 
-# -------------------------- importing the database -------------------------- #
+# -------------------------- IMPORTING THE DATABASE -------------------------- #
 1. if our postgres not showing in the valentina.
 2. then connect manually and add it using our postgres password.
 3. downlaod the data.zip from udemy resource.
@@ -143,7 +143,7 @@ DQL - select
 DML - insert, update, delete, merge, call, explain plan , lock table
 DCL -->  grant, revoke
 
-# -------------------------- basic questions in sql -------------------------- #
+# -------------------------- BASIC QUESTIONS IN SQL -------------------------- #
 1. give me a list of all employees in the company?
 2. how many departments are the in the company?
 3. how many times has employee 10001 had a rise?
@@ -152,7 +152,7 @@ DCL -->  grant, revoke
 NOTE: "" --> double quotes [ COLUMN ]
       '' --> single quotes [ text/string ]
  
-# ------------------------------ renaming columns ----------------------------- #
+# ------------------------------ RENAMING COLUMNS ----------------------------- #
 1. 'AS' keyword is used to rename the column name
 ----SELECT emp_no AS "Employee Id" 
     FROM "employees" 
@@ -172,7 +172,7 @@ NOTE: "" --> double quotes [ COLUMN ]
 ----SELECT emp_no, concat(first_name, ' ', last_name) AS "full name" 
     FROM "employees"; 
 
-# --------------------------------- functions -------------------------------- #
+# --------------------------------- FUNCTIONS -------------------------------- #
 1. function is a set of steps that creates a single value
 2. Two types of functions in SQL are aggregate and scalar function
 3. AGGREGATE --> it works on all given data and gives a single data output, operate on many records to produce 1 value
@@ -185,7 +185,7 @@ min()
 max()
 sum()
 
-# --------------------------------- comments --------------------------------- #
+# --------------------------------- COMMENTS --------------------------------- #
 -- SINGLE LINE COMMENT
 
 /*
@@ -193,7 +193,7 @@ sum()
 *COMMENTS
 */
 
-# ------------------------------ common mistakes ----------------------------- #
+# ------------------------------ COMMON MISTAKES ----------------------------- #
 1. misspelling commands
 2. using ; instad of , or vice versa
 3. using " instad of '
@@ -201,14 +201,14 @@ sum()
 5. ' is for text/string
 6. invalid column name
 
-# -------------------------------- filter data ------------------------------- #
+# -------------------------------- FILTER DATA ------------------------------- #
 1. get a list of all female employees.
 2. 'where' keyword is used to filter out data.
 ----SELECT first_name 
     FROM employees 
     WHERE gender = 'F';
 
-# --------------------- filter using  multiple conditions -------------------- #
+# --------------------- FILTER USING  MULTIPLE CONDITIONS -------------------- #
 1. filtering based on 2 & 3 conditions.
 2. 'and' keyword is used to filter multiple conditions.
 ----SELECT firstname, lastname 
@@ -218,7 +218,7 @@ sum()
     FROM users 
     WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
 
-# -------------------------------- or keyword -------------------------------- #
+# -------------------------------- OR KEYWORD -------------------------------- #
 ----SELECT firstname 
     FROM users 
     WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
@@ -232,13 +232,13 @@ sum()
     FROM users 
     WHERE firstname = 'Raghul' OR firstname = 'Ram';
 
-# --------------------------- filter using and/not --------------------------- #
+# --------------------------- FILTER USING AND/NOT --------------------------- #
 1. how many female customers do we have from the state of kerala or tamilnadu
 ----SELECT COUNT(name) 
     FROM customers 
     WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
 
-# -------------------------------- not keyword ------------------------------- #
+# -------------------------------- NOT KEYWORD ------------------------------- #
 1. to filter everthing except certain condition.
 2. select all customers are not male?
 ----SELECT firstName, gender 
@@ -249,7 +249,7 @@ sum()
     FROM customers 
     WHERE NOT age = 55 AND NOT age = 76;
 
-# --------------------------- comparision operators -------------------------- #
+# --------------------------- COMPARISION OPERATORS -------------------------- #
 1. who over the age of 44 has an income of 100000?
 ----SELECT name 
     FROM employees 
@@ -282,12 +282,12 @@ sum()
     FROM customers 
     WHERE age > 20 and age < 50;
 
-# ---------------------------- order of operation ---------------------------- #
+# ---------------------------- ORDER OF OPERATION ---------------------------- #
 1. FROM (which table).
 2. WHERE (what to filter the data).
 3. SELECT (display the selected / sorted data).
 
-# ---------------------------- operator precedence --------------------------- #
+# ---------------------------- OPERATOR PRECEDENCE --------------------------- #
 1. A statement having multiple operators is evaluated based on the priority of operators.
 2. parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or.
 3. if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left.
@@ -303,11 +303,11 @@ sum()
     8. OR
 6. OR is the lowest on the totem pole.
 
-# ----------------------- operator precedence exercise ----------------------- #
+# ----------------------- OPERATOR PRECEDENCE EXERCISE ----------------------- #
 1. Select people either under 30 or over 50 with an income above 50000 that are from either Japan or Australia
 2. What was our total sales in June of 2004 for orders over 100 dollars?
 
-# -------------------------------- null values ------------------------------- #
+# -------------------------------- NULL VALUES ------------------------------- #
 1. when a record does not have a value then it is considered as empty.
 2. 'null' is the term used to represent a missing/empty value.
 3. null value is different from a zero value or a field that contains spaces.
@@ -320,7 +320,7 @@ sum()
 -- null<>null [output: null]
 7. no matter what you do with null it will always be null(subtract, divide, equal, etc).
 
-# -------------------------------- is keyword -------------------------------- #
+# -------------------------------- IS KEYWORD -------------------------------- #
 1. always check for nulls when necessary.
 2. filter out nulls.
 3. 'is' operator allow us to filter on values that are null, not null, true or false.
@@ -331,7 +331,7 @@ sum()
     FROM users 
     WHERE age = 20 IS FALSE;
 
-# ------------------------------ null coalescing ----------------------------- #
+# ------------------------------ NULL COALESCING ----------------------------- #
 1. null value substitution is the ability to replace null values to operate on the data.
 ----SELECT coalesce(<column>, 'any_text') 
     AS column_alias 
@@ -345,7 +345,7 @@ sum()
 ----SELECT sum( coalesce(age, 20) ) 
     FROM students;
 
-# ------------------------- null coalescing exercise ------------------------- #
+# ------------------------- NULL COALESCING EXERCISE ------------------------- #
 1. Assuming a students minimum age for the class is 15, what is the average age of a student?
 ----SELECT avg(coalesce(age, 15))
     FROM "Student";
@@ -356,7 +356,7 @@ sum()
             age 
     FROM "Student";
 
-# ------------------------------ 3 valued logic ------------------------------ #
+# ------------------------------ 3 VALUED LOGIC ------------------------------ #
 1. besides true and false, the result of logical expressions can be also be unknown.
 2. SQL null ia value that could be anything.
 3. nothing equals null, not even null, each null could be different.
@@ -371,7 +371,7 @@ sum()
 9. while checking null always use 'IS NULL' to check null values.
 10. dont use = operator while checking null because null is not equal to null.
 
-# ----------------------------- exercise on null ----------------------------- #
+# ----------------------------- EXERCISE ON NULL ----------------------------- #
 1. adjust the following query to display the null values as "No Address"
 ----SELECT COALESCE(address2, 'No Address')
     FROM customers;
@@ -384,7 +384,7 @@ sum()
     FROM customers 
     WHERE (age IS NULL);
 
-# -------------------------------- between and ------------------------------- #
+# -------------------------------- BETWEEN AND ------------------------------- #
 1. shorthand to match agains a range of values.
 ----SELECT <colum> 
     FROM <table> 
@@ -393,7 +393,7 @@ sum()
 3. note that 'between and' is sensitive to the order of arguments.
 4. it is more readable and maintainable.
 
-# --------------------------- between and exercise --------------------------- #
+# --------------------------- BETWEEN AND EXERCISE --------------------------- #
 1. Who between the ages of 30 and 50 has an income less than 50 000?(include 30 and 50 in the results)
 ----SELECT * 
     FROM customers 
@@ -403,7 +403,7 @@ sum()
     FROM customers 
     WHERE age BETWEEN 20 AND 50;
 
-# -------------------------------- in keyword -------------------------------- #
+# -------------------------------- IN KEYWORD -------------------------------- #
 1. what if i want to find multiple values but not write endless 'AND' statements?
 2. 'IN' keyword checks if a value matches any vlue in a list of values.
 ----SELECT * 
@@ -417,7 +417,7 @@ sum()
     FROM employees 
     WHERE emp_no = 10001 OR emp_no = 10006;
 
-# ---------------------------- in keyword exercise --------------------------- #
+# ---------------------------- IN KEYWORD EXERCISE --------------------------- #
 1. How many orders were made by customer 7888, 1082, 12808, 9623
 ----SELECT COUNT(orderid) 
     FROM orders 
@@ -427,7 +427,7 @@ sum()
     FROM city 
     WHERE district IN ('Zuid-Holland','Noord-Brabant', 'Utrecht');
 
-# ------------------------------- like keyword ------------------------------- #
+# ------------------------------- LIKE KEYWORD ------------------------------- #
 1. what if you dont know exactly what you are searching for?
 2. it is called partial lookups.
 3. get everyone who's name start with 'M'.
@@ -445,7 +445,7 @@ sum()
 12. finally 'LIKE' keyword is case sensitive.
 
 
-# ------------------------- pattern matching examples------------------------ #
+# ------------------------- PATTERN MATCHING EXAMPLES------------------------ #
 1. LIKE '%2'    - fields that end with 2.
 2. LIKE '%2%'   - fields that have 2 anywhere in the value.
 3. LIKE '_00%'  - fields that have 2 zero's as the second and third character and anything.
@@ -453,7 +453,7 @@ sum()
 5. LIKE '2_%_%' - fields any values that start with 2 and are at least 3 characters in length.
 6. LIKE '2___3' - fields any values in a five-digit number that start with 2 and end with 3.
 
-# ------------------------------- ilike keyword ------------------------------ #
+# ------------------------------- ILIKE KEYWORD ------------------------------ #
 1. this is for case insensitive matching.
 2. name ILIKE 'MO%';
 3. it is the different way of using like keyword.
@@ -461,7 +461,7 @@ sum()
     FROM employees 
     WHERE first_name ILIKE 'g%GER';
 
-# --------------------------- like keyword exercise -------------------------- #
+# --------------------------- LIKE KEYWORD EXERCISE -------------------------- #
 1. Find the age of all employees who's name starts with M.
 ----SELECT emp_no, 
             first_name, 
@@ -486,7 +486,7 @@ sum()
     FROM customers
     WHERE phone::text LIKE '302%';
 
-# ----------------------------- date and timezone ---------------------------- #
+# ----------------------------- DATE AND TIMEZONE ---------------------------- #
 1. dates are hard.
 2. we all live in different places in the world, so times are different in different places.
 3. in 1884, sir sanford fleming went to an international conference in the uk in greenwich.
@@ -503,14 +503,14 @@ sum()
 ----SET TIME ZONE 'UTC';
 ----SHOW TIMEZONE;
 
-# ---------------------------- setting time zones ---------------------------- #
+# ---------------------------- SETTING TIME ZONES ---------------------------- #
 1. there is a command to set utc for all user session.
 2. setting this will set utc any time if we come back.
 3. there are certain other ways to set utc at server.
 ----ALTER USER postgres SET timezone = 'UTC';
 ----SHOW TIMEZONE;
 
-# ---------------------- how do we format date and time ---------------------- #
+# ---------------------- HOW DO WE FORMAT DATE AND TIME ---------------------- #
 1. postgres uses ISO-8601
 2. when you use ISO-8601, the date format will look sa below.
 3. YYYY-MM-DDTHH:MM:SS
@@ -518,7 +518,7 @@ sum()
 5. a format is a way of representing a date and time.
 6. a timestamp is a date with time and timezone info.
 
-# --------------------------------- timestamp -------------------------------- #
+# --------------------------------- TIMESTAMP -------------------------------- #
 ----CREATE TABLE timezones (
         ts TIMESTAMP WITHOUT TIMEZONE,
         tz TIMESTAMP WITH TIME ZONE
@@ -532,7 +532,7 @@ sum()
 3. should we use timestamp or dates, it depends on what you're storing.
 4. postgres gives us date operators to help simplify dates.
 
-# ------------------------------ date functions ------------------------------ #
+# ------------------------------ DATE FUNCTIONS ------------------------------ #
 1. if we want to get the current date, there are 2 main ways.
 ----SELECT NOW()::date;
 ----SELECT CURRENT_DATE;
@@ -541,20 +541,20 @@ sum()
 3. in the postgres documentation there are a lot of identifiers like DDD, WWW, HH, etc.
 4. go check that if you need it.
 
-# ------------------------ date difference and casting ----------------------- #
+# ------------------------ DATE DIFFERENCE AND CASTING ----------------------- #
 1. what if we want to calculate difference between two dates?
 ----select now() - '1800/01/01'
 2. to cast a string to date, use 'date' to format that.
 ----select date '1800/01/01';
 3. to date converts a date to a date format for postgres.
 
-# ------------------------------ age calculation ----------------------------- #
+# ------------------------------ AGE CALCULATION ----------------------------- #
 1. age function is used to find the age in postgres.
 ----SELECT AGE (date '1995-09-16');
 2. we can also calculate age between two dates.
 ----SELECT AGE (date '2024-05-21', date '1995-09-16');
 
-# -------------------------- extracting information -------------------------- #
+# -------------------------- EXTRACTING INFORMATION -------------------------- #
 1. extract keyword is used to extract what we want from the date.
 ----SELECT EXTRACT (DAY FROM date '1992/11/13') AS DAY;
 ----SELECT EXTRACT (YEAR FROM date '1992/11/13') AS YEAR;
@@ -563,7 +563,7 @@ sum()
 ----SELECT DATE_TRUNC ('month', date '1992/11/13');
 3. this is very helpful when we need data from the begining of the month.
 
-# --------------------------------- intervals -------------------------------- #
+# --------------------------------- INTERVALS -------------------------------- #
 1. intervals allow us to write queries in a way that mirrors language.
 ----SELECT *
     FROM orders
@@ -574,7 +574,7 @@ sum()
 5. INTERVAL '1 yrar 3 hours 20 minutes';
 ----SELECT EXTRACT (year FROM INTERVAL '5 years 20 months');
 
-# ------------------------ exercise date and timestamp ----------------------- #
+# ------------------------ EXERCISE DATE AND TIMESTAMP ----------------------- #
 1. Get me all the employees above 60, use the appropriate date functions
 ----SELECT AGE(birth_date), * 
     FROM employees
@@ -599,7 +599,7 @@ sum()
     FROM orders
     WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
 
-# ----------------------------- distinct keyword ----------------------------- #
+# ----------------------------- DISTINCT KEYWORD ----------------------------- #
 1. it remove duplicates.
 2. distinct clause keeps one row for each group of duplicates.
 3. multiple columns will evaluate based on the combination of the columns.
@@ -611,7 +611,7 @@ sum()
 ----SELECT DISTINCT salary, from_date 
     FROM salaries;
 
-# ----------------------- exercise on distinct keyword ----------------------- #
+# ----------------------- EXERCISE ON DISTINCT KEYWORD ----------------------- #
 1. What unique titles do we have?
 ----SELECT DISTINCT title 
     FROM titles;
@@ -624,7 +624,7 @@ sum()
     WHERE lifeexpectancy IS NOT NULL 
     ORDER BY lifeexpectancy;
 
-# ------------------------------- sorting data ------------------------------- #
+# ------------------------------- SORTING DATA ------------------------------- #
 1. relational database doont care about sorting.
 2. but there is a way to sort data either ascending or descending by column.
 ----SELECT *
@@ -649,7 +649,7 @@ sum()
     ORDER BY length(name);
 8. we can also use expressions with order by keyword.
 
-# ------------------------- exercise on sorting data ------------------------- #
+# ------------------------- EXERCISE ON SORTING DATA ------------------------- #
 1. Sort employees by first name ascending and last name descending
 ----SELECT * 
     FROM employees
@@ -664,7 +664,7 @@ sum()
     WHERE first_name ILIKE 'k%'
     ORDER BY hire_date;
 
-# ---------------------------- multi table select ---------------------------- #
+# ---------------------------- MULTI TABLE SELECT ---------------------------- #
 1. this concept is very helpfull when we used to combine two related table.
 ----SELECT  a.emp_no, 
             concat(a.first_name, a.last_name) AS "name", 
@@ -681,7 +681,7 @@ sum()
 7. most common approach -> link primary key to foreign key.
 8. there are different ways of joinning tables.
 
-# -------------------------------- inner join -------------------------------- #
+# -------------------------------- INNER JOIN -------------------------------- #
 1. inner join finds the intersection of two data set based on a link and it returns you back subset.
 2. if you have a columns that links the column from table A to table B you can use an inner join.
 3. all sql syntax have a seperate keyword for doing joints.
@@ -714,7 +714,7 @@ sum()
     AND (c.from_date = (b.from_date + interval '2 days') OR c.from_date = b.from_date )
     ORDER BY a.emp_no;
 
-# --------------------------------- self join -------------------------------- #
+# --------------------------------- SELF JOIN -------------------------------- #
 1. joining a table to itself.
 2. this usually can be done when a table has a foreign key referencing its primary key.
 ----SELECT  a.id, a.name AS "employee", b.name AS "supervisor name"
@@ -722,7 +722,7 @@ sum()
     WHERE a.supervisorID = b.id;
 3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
 
-# -------------------------------- outer join -------------------------------- #
+# -------------------------------- OUTER JOIN -------------------------------- #
 1. what if i also need the rows that don't match.
 2. outer joins add the data that don't have a match.
 3. left outer joins add the data that don't have a match from table A.
@@ -760,7 +760,7 @@ sum()
 9. like we discussed earlier, any values that does not match is made to be null.
 10. there are more join techniques they just arent used that often.
 
-# ---------------------- joints that are not used often ---------------------- #
+# ---------------------- JOINTS THAT ARE NOT USED OFTEN ---------------------- #
 1. cross join - create a combination of every row.
 ----SELECT *
     FROM "cartesianA"
@@ -771,7 +771,7 @@ sum()
     FROM "cartesianA" AS a 
     FULL JOIN "cartesianB" AS b ON a.id = b.id;
 
-# ---------------------------- inner join exercise --------------------------- #
+# ---------------------------- INNER JOIN EXERCISE --------------------------- #
 1. Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state, ordered by orderid.
 ----SELECT  c.firstname, c.lastname, o.orderid 
     FROM orders AS o
@@ -788,7 +788,7 @@ sum()
     INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
     INNER JOIN departments AS dp ON dp.dept_no = de.dept_no
 
-# ------------------------------- using keyword ------------------------------ #
+# ------------------------------- USING KEYWORD ------------------------------ #
 1. we are going to use join often.
 2. beacause we have so many tables in database.
 3. while using joins we can use "USING" instead of "ON".
@@ -802,7 +802,7 @@ sum()
     INNER JOIN department AS d USING(dept_no);
 5. try to use "USING" in most scenario.
 
-# ----------------------------- group by keyword ----------------------------- #
+# ----------------------------- GROUP BY KEYWORD ----------------------------- #
 1. in read world there are some analytical data that are used with SQL.
 2. groupby is a keyword that is used to summarize or aggregate data by groups.
 3. so why would i group data?
@@ -831,7 +831,7 @@ sum()
 17. combine groups with a single value into single value.
 18. GROUP BY happens after WHERE/FROM.
 
-# ----------------------------- group by exercise ---------------------------- #
+# ----------------------------- GROUP BY EXERCISE ---------------------------- #
 1. How many people were hired on did we hire on any given hire date?
 ----SELECT hire_date, COUNT(emp_no) as "amount"
     FROM employees
@@ -852,7 +852,7 @@ sum()
     GROUP BY e.emp_no, de.from_date, de.to_date
     ORDER BY e.emp_no, de.to_date;
 
-# ------------------------------ having keyword ------------------------------ #
+# ------------------------------ HAVING KEYWORD ------------------------------ #
 1. what if i wnat to filter groups?
 2. "WHERE" applies filters to individual rows.
 3. "HAVING" applies filters to a group as a whole.
