@@ -1,4 +1,4 @@
-# -------------------------------- what is css ------------------------------- #
+# -------------------------------- WHAT IS CSS ------------------------------- #
 1. css - cascading style sheet.
 2. it make our webpage look good.
 3. usualy webpage consist html.
@@ -8,7 +8,7 @@
 7. it allow us to add colors, shadows, visual effects, etc.
 8. css will change our boring html pages into good looking webpage.
 
-# ----------------------- css history, present & future ---------------------- #
+# ----------------------- CSS HISTORY, PRESENT & FUTURE ---------------------- #
 1. it was introduced in 1996, refered as css 1.
 2. in 1998, css2 was introduced.
 3. still css3 is in development.
@@ -16,7 +16,7 @@
 5. instead of creating new versions css was sub divided into independent modules.
 6. modules on text, modules on color, modules on shadows, etc.
 
-# ---------------------- 3 different ways of adding css ---------------------- #
+# ---------------------- 3 DIFFERENT WAYS OF ADDING CSS ---------------------- #
 1. using inline styling.
 
     <p style="color:red">helo css</p>
@@ -33,12 +33,12 @@
 
     <link rel="stylesheet" href="main.css">
 
-# -------------------------------- font color -------------------------------- #
+# -------------------------------- FONT COLOR -------------------------------- #
 1. to change a font color use 'color' property.
 
     color: white;
 
-# ---------------------------- changing font style --------------------------- #
+# ---------------------------- CHANGING FONT STYLE --------------------------- #
 1. to change font style use 'font-family' property.
 
     font-family: sans-serif;
@@ -46,12 +46,12 @@
 2. there are some default fonts available in our browser.
 3. open your browser setting and you change the default and other fonts.
 
-# ------------------------------- google fonts ------------------------------- #
+# ------------------------------- GOOGLE FONTS ------------------------------- #
 1. goto google fonts website and select your prefered font.
 2. copy the link tag and past above the css link tag.
 3. and then we can use our selected font using 'font-family' property availabe in the website.
 
-# --------------------------------- selectors -------------------------------- #
+# --------------------------------- SELECTORS -------------------------------- #
 1. element selector.
 
     h1{
@@ -82,7 +82,7 @@
         color: red;
     }
 
-# ------------------------- cascading and specificity ------------------------ #
+# ------------------------- CASCADING AND SPECIFICITY ------------------------ #
 1. if try to style two times to a tag, then some style override others.
 2. so multiple rules affect the css styles.
 3. specificity comes to play when we use multiple rules.
@@ -92,16 +92,16 @@
 7. inline->ID->class,pseudo-class,attribute->tag,pseudo-element selectors.
 8. these are the order of specificity and inline has the highest priority.
 
-# -------------------------------- inheritance ------------------------------- #
+# -------------------------------- INHERITANCE ------------------------------- #
 1. some styles pass down to the child elements.
 2. usualy font-family comes to the child elements.
 3. this will work when we set specific font-family to the body tag.
 4. so inheritance is very important when passing down styles to the child elements.
 
-# -------------------------------- combinators ------------------------------- #
+# -------------------------------- COMBINATORS ------------------------------- #
 1. combinator allow us to combine multiple selectors to be more precise about what we want to select.
 
-# ---------------------------- list of combinators --------------------------- #
+# ---------------------------- LIST OF COMBINATORS --------------------------- #
 1. adjacent sibling [element share same parent] [second element comes immediately after first element]
 
     h2 + p {
@@ -166,7 +166,7 @@
         <p>css applied</p>
     </div>
 
-# ------------------- how to check box model in our browser ------------------ #
+# ------------------- HOW TO CHECK BOX MODEL IN OUR BROWSER ------------------ #
 1. every element in html is interpreted as a box by css.
 2. you can see the box in the chrome developer tool by inspecting that element.
 3. every element has a content that is the blue area in the inspect window.
@@ -174,7 +174,7 @@
 5. yellow represents the border.
 6. finally the orange color and it represents margin.
 
-# ------------------------ understanding the box model ----------------------- #
+# ------------------------ UNDERSTANDING THE BOX MODEL ----------------------- #
 1. add padding to the content.
 
     padding: 20px;
@@ -194,7 +194,7 @@
 6. we can have a padding without margin and can have margin without border.
 7. so anything is possible.
 
-# -------------------------- removing default margin ------------------------- #
+# -------------------------- REMOVING DEFAULT MARGIN ------------------------- #
 1. every element contains default margin.
 2. css allow us to edit the default values.
 
@@ -202,7 +202,7 @@
         margin: 0;
     }
 
-# ---------------------- understanding margin collapsing --------------------- #
+# ---------------------- UNDERSTANDING MARGIN COLLAPSING --------------------- #
 1. if you have two elements next to each other.
 2. either horizontal or vertical.
 3. the margin with higher one win.
@@ -211,7 +211,7 @@
 6. in general use either one margin-top or margin-bottom.
 7. this reduces marging collapsing.
 
-# --------------------------- shorthand properties --------------------------- #
+# --------------------------- SHORTHAND PROPERTIES --------------------------- #
 1. when combined values of multiple properties are wrapped in a single property it is known as shorthand property.
 2. it is written in single line.
 
@@ -230,7 +230,7 @@
 8. we use lot of shorthand in css.
 9. it allow us to write cleaner and shorter code.
 
-# ------------------------- height and width property ------------------------ #
+# ------------------------- HEIGHT AND WIDTH PROPERTY ------------------------ #
 1. we can tell css to take our custom width.
 2. also rember that block level element takes the full width.
 
@@ -252,7 +252,7 @@
 
     height: 400px;
 
-# ------------------------- understanding box sizing ------------------------- #
+# ------------------------- UNDERSTANDING BOX SIZING ------------------------- #
 1. default box sizing is content box sizing.
 2. if we set a width and height of the content, not of the entire box including padding and border.
 3. there is a way to include width and height of the content to the entire box including padding and border.
@@ -264,7 +264,7 @@
 5. note that margin dont involve in this concept.
 6. this concept involve just content, padding and border.
 
-# --------------------------- adding header styles --------------------------- #
+# --------------------------- ADDING HEADER STYLES --------------------------- #
 1. create a section, inside it add a div and nav.
 2. inside the div place your logo.
 3. inside the nav element place your links.
@@ -277,7 +277,7 @@
         padding: 8px 16px;
     }
 
-# ---------------------- understanding display property ---------------------- #
+# ---------------------- UNDERSTANDING DISPLAY PROPERTY ---------------------- #
 1. in html we got inline and block level elements.
 2. block takes the full width.
 3. inline is placed in same line.
@@ -300,7 +300,7 @@
 10. the padding will not be applied to the top and bottom, since the element is inside the inline-block element.
 11. but if we try to add padding to the inline-block element then padding will be applied to all sides.
 
-# -------------------- display: none vs visibility: hidden ------------------- #
+# -------------------- DISPLAY: NONE VS VISIBILITY: HIDDEN ------------------- #
 
     display: none;
 
@@ -311,7 +311,7 @@
 
 3. If you only want to hide an element but you want to keep its place (other elements don't fill the empty spot), you can use visibility-hidden.
 
-# ---------------------- block-level vs inline elements ---------------------- #
+# ---------------------- BLOCK-LEVEL VS INLINE ELEMENTS ---------------------- #
 1. Block-level elements are rendered as a block and hence take up all the available horizontal space.
 2. You can set margin-top and margin-bottom and two block-level elements will render in two different lines.
 3. <div> , <section> , <article> , <nav>  but also <h1> , <h2>  etc and <p> are block-level-elements.
@@ -326,7 +326,7 @@
 12. If you want to do so or need both block-level and inline behavior, you can set display: inline-block  to merge behaviors.
 13. Some example elements are: <a> , <span> , <img>.
 
-# ------------------------ naming css classes in html ------------------------ #
+# ------------------------ NAMING CSS CLASSES IN HTML ------------------------ #
 1. for main parent element use dash [-].
 2. for sub child element use underscore [_].
 3. below are some examples of css class names.
@@ -340,11 +340,11 @@
 
 4. refer BEM naming methodology for css.
 
-# --------------------- unexpected inline-block behavoiur -------------------- #
+# --------------------- UNEXPECTED INLINE-BLOCK BEHAVOIUR -------------------- #
 1. after setting display property to inline-block, sometimes there will white space will affect the flow of the document.
 2. refer the video to understand.
 
-# ------------------ text-decoration and vertical-alignment ------------------ #
+# ------------------ TEXT-DECORATION AND VERTICAL-ALIGNMENT ------------------ #
 1. some element in css have default decorations like underline, italics, etc.
 2. so we can remove it using decoration property.
 
@@ -354,7 +354,7 @@
 
     vertical-align: middle;
 
-# ---------------------------- styling anchor tags --------------------------- #
+# ---------------------------- STYLING ANCHOR TAGS --------------------------- #
 1. to make distance between each other in nav links.
     .main-nav__item {
         margin: 0 16px;
@@ -368,7 +368,7 @@
         color: 0e4f1f;
     }
 
-# ---------------------------- adding pseudo class --------------------------- #
+# ---------------------------- ADDING PSEUDO CLASS --------------------------- #
     .main-nav__item a:hover {
        
         color: white;
@@ -378,14 +378,14 @@
         color: blue;
     }
 
-# ----------------- what is pseudo class and pseudo element? ----------------- #
+# ----------------- WHAT IS PSEUDO CLASS AND PSEUDO ELEMENT? ----------------- #
 1. pseudo class allow us to define a stlye for a special state of an element, like hover or active state.
 2. pseudo elements allow us to define a style of a specific part of an element.
 3. pseudo classes are defined with a single colon and pseudo_class_name.
 4. pseudo elements are defined by adding two colons.
 5. check MDN website has all these list of class and element.
 
-# ------------------------------ grouping rules ------------------------------ #
+# ------------------------------ GROUPING RULES ------------------------------ #
 1. when we have multiple selector to add same property to a element, then we can use the grouping technique to use them in the same line of css code.
 
     .main-nav__item a:hover,
@@ -393,20 +393,20 @@
         color: white;
     }
 
-# -------------------------- font-weigth and borders ------------------------- #
+# -------------------------- FONT-WEIGTH AND BORDERS ------------------------- #
 1. we can add different border style to our element using border property.
 2. we do have css to style font weight.
 
     font-weight: bold;
 
-# ---------------- overriding css rules via order of the file ---------------- #
+# ---------------- OVERRIDING CSS RULES VIA ORDER OF THE FILE ---------------- #
 1. we created our webpage and we have 1000 lines of code.
 2. its hard to find multiple updates in that css file.
 3. we can override styles by adding styles to the end of the css code.
 4. when we have same specificity, order of code changes the priority.
 5. finally this method is not recomended.
 
-# -------------------------- adding background image ------------------------- #
+# -------------------------- ADDING BACKGROUND IMAGE ------------------------- #
 1. background url property can be used to add background in our design.
 
     background: url("https://......");
@@ -415,7 +415,7 @@
 
 2. we can specify the url using this 3 ways.
 
-# ---------------- multiple css classes and combined selectors --------------- #
+# ---------------- MULTIPLE CSS CLASSES AND COMBINED SELECTORS --------------- #
 1. we can add any number of classes to a element.
 2. but we need a whitespace to separate them.
 3. while using multiple classes, if any styles clashes to one another then the order of code wins in this clash.
@@ -431,7 +431,7 @@
         ...css styles...
     }
 
-# ---------------------- what should we use class or id ---------------------- #
+# ---------------------- WHAT SHOULD WE USE CLASS OR ID ---------------------- #
 1. class selectors
     -- can be reused in multiple elements.
     -- used for styling purpose only.
@@ -442,12 +442,12 @@
     -- used only once per page.
     -- cannot be reused.
 
-# ----------------------------- using !important ----------------------------- #
+# ----------------------------- USING !IMPORTANT ----------------------------- #
 1. !important - overrides specificity to all other selectors.
 2. dont use it unless you need it.
 
     border: 1px solid red !important;
 
-# -------------------- selecting the opposite with :not() -------------------- #
+# -------------------- SELECTING THE OPPOSITE WITH :NOT() -------------------- #
 1. :not() comes under pseudo class.
 2. 
