@@ -1,4 +1,4 @@
-# ----------------- es topics that we need to learn react js ----------------- #
+# ----------------- ES TOPICS THAT WE NEED TO LEARN REACT JS ----------------- #
 1. destructuring objects and arrays.
 2. rest/spread operator.
 3. template literals.
@@ -14,7 +14,7 @@
 13. asynchronous javascript: promises.
 14. asynchronous javascript: async/await.
 
-# ---------------------- destructuring objects and array --------------------- #
+# ---------------------- DESTRUCTURING OBJECTS AND ARRAY --------------------- #
 1. destructuring allow us to access single or multiple values in a single line.
 
     const {title, author} = bookObject;
@@ -25,7 +25,7 @@
 
     const [firstElement, SecondElement, ThirdElement] = ourArray;
 
-# -------------------------- rest / spread operator -------------------------- #
+# -------------------------- REST / SPREAD OPERATOR -------------------------- #
 1. rest operator is used to store the remaining values into our required operation.
 2. in array destructuring we can use rest operator to store excess element in a array.
 
@@ -54,30 +54,30 @@
 10. the additional properties will be overwritten in the newObj.
 11. to override an existing property always use spread operator at the begining.
 
-# ----------------------------- template literals ---------------------------- #
+# ----------------------------- TEMPLATE LITERALS ---------------------------- #
 1. it was introduced in es6.
 2. it mainly used to use js expressions inside strings.
 
     const summary = `${title} ia a book with ${5+6} pages`;
     const letters = `${author.split('-')}`;
 
-# --------------------------------- ternaries -------------------------------- #
+# --------------------------------- TERNARIES -------------------------------- #
 1. it is a special operator with three operands.
 
     pages>1000 ? 'over a thousand' : 'less than thousand';
     const result = `rammin got ${marks>49 ? 'pass' : 'fail'} marks`;
 
-# ------------------------------ arrow function ------------------------------ #
+# ------------------------------ ARROW FUNCTION ------------------------------ #
 1. it is a new way of writing functions in javascript.
 2. it was introduced in es6.
 3. it is also called one liner function.
 
-# ------------------ short circuiting and logical operators ------------------ #
+# ------------------ SHORT CIRCUITING AND LOGICAL OPERATORS ------------------ #
 1. in the short circuiting with &&, if the first value is true then the second value will run, if first value is false then the second value will not run.
 2. in the short circuiting with ||,if first value is true then the second value will not run, if the first value is false then the second value will run.
 3. but when we use nullish coalescing operator, if the first value is null/undefined then the second value will run.
 
-# ----------------------------- optional chaining ---------------------------- #
+# ----------------------------- OPTIONAL CHAINING ---------------------------- #
 1. sometimes we face a error 'cannot read properties of undefined'.
 2. this occurs mostly in accessing obect key which was not there.
 
@@ -87,13 +87,13 @@
 3. (?.) - is the optional chanining symbol.
 4. by using optional chanining we can set default value because js will throw error if we try to read undefined.
 
-# ----------------------------- array map method ----------------------------- #
+# ----------------------------- ARRAY MAP METHOD ----------------------------- #
 1. these method do not mutate the original array.
 2. basically a map method will loop through all the element in the array and returs the same length with some operation applied.
 
     const x = [1,2,3,4,5].map((el) => el*2);
 
-# ---------------------------- array filter method --------------------------- #
+# ---------------------------- ARRAY FILTER METHOD --------------------------- #
 1. it is used to filter out elements based on the conditions we apply.
 
     const x = [1,2,3,4,5,6].filter((el) => el%2===0);
@@ -103,7 +103,7 @@
 
     const x = [1,2,3,4,5,6].filter((el) => el%2 === 0).filter((el) => el%3 === 0);
 
-# ---------------------------- array reduce method --------------------------- #
+# ---------------------------- ARRAY REDUCE METHOD --------------------------- #
 1. reduce method is the most versatile and most powerfull method in js.
 2. the goal of the reduce method is to reduce to a single value output.
 3. reduce method has 2 things a function and a starting value.
@@ -111,7 +111,7 @@
 
     const pagesAllBooks = books.reduce((acc,book)=>acc+book.pages,0);
 
-# ----------------------------- array sort method ---------------------------- #
+# ----------------------------- ARRAY SORT METHOD ---------------------------- #
 1. to sort a array in ascending way use a-b;
 
     const sorted = arr.sort((a,b) => a-b);
@@ -134,7 +134,7 @@
 8. here we have to mention the correct key name of property or else it wont work.
 9. finally we can do both ascending and descending sort with both object and array.
 
-# ----------------------- working with immutable arrays ---------------------- #
+# ----------------------- WORKING WITH IMMUTABLE ARRAYS ---------------------- #
 1. add book object to end of the array.
 
     const newBook = {
@@ -151,7 +151,7 @@
 
     const bookAfterUpdate = books.map((book) => book.id === 1 ? { ...book, pages: 1201 } : book);
 
-# --------------------- asynchronous javascript: promises -------------------- #
+# --------------------- ASYNCHRONOUS JAVASCRIPT: PROMISES -------------------- #
 1. in order to fetch data from an api in the browser we have a method called fetch API.
 2. it is a function into which we pass a url of an api.
 3. to test the fetch method use a dummy api.
@@ -168,7 +168,7 @@
 9. res is the response from the api which needs to be converted.
 10. data is the converted format which we use in the react applications.
 
-# ------------------- asynchronous javascript: async/await ------------------- #
+# ------------------- ASYNCHRONOUS JAVASCRIPT: ASYNC/AWAIT ------------------- #
 1. this is another method to fetch data from api url.
 
     async function getData() {
@@ -180,7 +180,7 @@
 2. avoid returns from async function beacuse javascript wont wait in normal function.
 3. so for that purpose async functions was introduced just to set state variable for component.
 
-# --------------------- rendering root component in react -------------------- #
+# --------------------- RENDERING ROOT COMPONENT IN REACT -------------------- #
 1. delete all files in src folder.
 2. create index.js, it is the entry point.
 
@@ -203,7 +203,7 @@
 
 6. this method is react v18 and before 18 render was different.
 
-# ----------------------------- react strict mode ---------------------------- #
+# ----------------------------- REACT STRICT MODE ---------------------------- #
 1. wrapping app component inside react.strictmode component.
 
     root.render(
@@ -216,12 +216,12 @@
 3. it will check if there are any outdated parts of the React API.
 4. it is a good practise to use strict mode in development process because it will help us find bugs.
 
-# --------------------------------- debugging -------------------------------- #
+# --------------------------------- DEBUGGING -------------------------------- #
 1. if our changes did not reflect in browser, then check if our app is running, if not we can stop and restart the app again, you can also hard reload the browser.
 2. always check on the terminal and inpect window open in all time.
 3. Eslint will warn about the unused variables as warnings.
 
-# ----------------------- component as building blocks ----------------------- #
+# ----------------------- COMPONENT AS BUILDING BLOCKS ----------------------- #
 1 .components are the fundamental parts of react.
 2. react applications are entirely made out of components.
 3. these are building blocks of user interfaces in react.
@@ -231,7 +231,7 @@
 7. in react we build complex ui by building multiple components and combining them.
 8. components can be reused, nested inside each other, and pass data between them.
 
-# --------------------- creating and reusing a component --------------------- #
+# --------------------- CREATING AND REUSING A COMPONENT --------------------- #
 1. in react we write components using functions and it is called functional components.
 
     function Pizza () {
@@ -275,7 +275,7 @@
         );
     }
 
-# ------------------------------- what is JSX? ------------------------------- #
+# ------------------------------- WHAT IS JSX? ------------------------------- #
 1. JSX is a declarative syntax to describe what components look like and how they work.
 2. so each component must return one block of JSX, which react will ten use to render the component on the ui.
 3. JSX is the extension of javascript that allows us to embed javascript, css and react components into HTML.
@@ -301,7 +301,7 @@
 6. when we try to build UI using vanilla javascript, we will use a imperative approach.
 7. this means that we manually select elements, 
 
-# ------------------------------ useReducer hook ----------------------------- #
+# ------------------------------ USEREDUCER HOOK ----------------------------- #
 1. this is a another way to manage state in React.
 2. useReducer hook works with a reducer function which is a pure function.
 3. this function will take in the previous state and it is called action as an argument and will then return the next state.
@@ -347,7 +347,7 @@
 17. this above useReducer is created only to manage single state.
 18. for using multiple states, we must create the state in object format.
 
-# -------------------- managing all states in a component -------------------- #
+# -------------------- MANAGING ALL STATES IN A COMPONENT -------------------- #
 1. first thing is to create a initial value object outside the function component.
 
     const initialState = {
@@ -394,7 +394,7 @@
 
 10. useReducer is mainly creadted to centralize all the state updates of the component in a single place.
 
-# -------------------- managing state with useReducer hook ------------------- #
+# -------------------- MANAGING STATE WITH USEREDUCER HOOK ------------------- #
 1. why useReducer?
 2. state management with useState is not enough in certain situations.
 3. when components have a lot of state variables and state updates, spread across amny event handlers all over the component.
@@ -408,7 +408,7 @@
 11. action: object that describes how to update state.
 12. dispatch: function to trigger state updates, by "sending" actions from event handlers to reducer.
 
-# ---------------------- react quiz app using useReducer --------------------- #
+# ---------------------- REACT QUIZ APP USING USEREDUCER --------------------- #
 1. this app works using fake API.
 2. we can create a fake API using an npm package called json-server.
 3. open terminal window in the bottom of vs code.
@@ -532,7 +532,7 @@
 39. conditionally rendered components, please refer  the video.
 40. learn cleanup function in timers (setinterval cleanup).
 
-# -------------------------- useState vs useReducer -------------------------- #
+# -------------------------- USESTATE VS USEREDUCER -------------------------- #
 1. useState
     -- ideal for single independent pieces of state(numbers, strings, single arrays, etc.)
     -- logic to update state is placed directly in event handlers or effects, spread all over one or multiple components.
