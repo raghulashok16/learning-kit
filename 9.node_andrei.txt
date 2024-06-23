@@ -1,4 +1,4 @@
-# ----------------------------- javascript engine ---------------------------- #
+# ----------------------------- JAVASCRIPT ENGINE ---------------------------- #
 1. every browser has built in javascript engine.
 2. chrome uses v8 engine.
 3. internet explorer in chakra.
