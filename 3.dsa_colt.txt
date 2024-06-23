@@ -1,4 +1,4 @@
-# ----------------------- objectives in big o notation ----------------------- #
+# ----------------------- OBJECTIVES IN BIG O NOTATION ----------------------- #
 1. the need for something like big o notation.
 2. describe what big o notation is.
 3. simplify big o expressions.
@@ -6,7 +6,7 @@
 5. evaluate the time complexity and space complexity of different algorithm using big o notation.
 6. describe what a logarithm is.
 
-# ------------------------------ big o notation ------------------------------ #
+# ------------------------------ BIG O NOTATION ------------------------------ #
 1. we can have different solutions when solving chalenges.
 2. but there will be only one solution which is the best among every solution.
 3. this best is determined by the big o notation.
@@ -15,7 +15,7 @@
 6. for example when we work in company and we are working on huge amount of data, at that time one algorithm implementation can save an hour everty time it runs compared to our code.
 6. so most interviewer ask about big o notation.
 
-# ------------------------------ timing our code ----------------------------- #
+# ------------------------------ TIMING OUR CODE ----------------------------- #
 1. when solving problems, always check for any mathematical formulas instead of multiple looping [for example: calculate sum of all numbers from 1 to n numbers. 
 2. method 1 -> loop from 1 to 6 and store it in a new variable. 
 3. method 2 -> use mathematical function instad of loop (n*(n+1)/2)]
