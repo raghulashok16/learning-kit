@@ -617,4 +617,92 @@
 
 # ------------------------- CUSTOM PROVIDER AND HOOK ------------------------- #
 1. this topic is a advanced pattern of context api.
-2. 
+2. note: the implementation of PROVIDER, VALUE & CONSUMERS are located on the same file.
+3. note: this above implementation will also work, but separating the provider code in a separate file is a good practise because it makes the code redability when we work on huge projects.
+4. the key idea is to separate the state and the state updating logic into a separate into our own custom context provider component.
+5. now create a file named PostContext.js inside the src folder.
+
+    const PostContext = createContext();
+
+6. add the createContext before creating the provider function.
+7. next step is to create a function which is use to act as a provider.
+
+    function PostProvider() {
+        ... copy all the state and state updating logics here...
+        return(
+            <PostContext.Provider 
+                value = {{
+                    posts: searchPosts,
+                    onAddPost: handleAddPost,
+                    onClearPost: handleClearPosts,
+                    searchQuery,
+                    setSearchQuery,
+            }}>
+            </PostContext.Provider>
+        )
+    }
+
+8. now wrap the desired component using PostProvider component as below.
+
+    <PostProvider>
+         <parentcomponent>
+            <childcomponent>
+                ...any child component and son on...
+            </childcomponent>
+        </parentcomponent>
+    </PostProvider>    
+
+9. after this step we have to mention that some children are comming in as prop.
+10. so that the PostProvider compont can give access to the values.
+
+    function PostProvider({children}) {
+        
+    }
+
+11. also use the children prop in the return statement.
+
+    return(
+        <PostContext.Provider 
+                value = {{
+                    posts: searchPosts,
+                    onAddPost: handleAddPost,
+                    onClearPost: handleClearPosts,
+                    searchQuery,
+                    setSearchQuery,
+        }}>
+        {children}
+        </PostContext.Provider>
+    )
+
+12. Note: instead of default exporting, use name exports in the PostContext file.
+
+    export { PostProvider, PostContext };
+
+13. we can also encapsulate the consumer useContext(PostContext).
+
+    function usePosts() {
+        const context = useContext( PostContext );
+        return context;
+    }
+
+14. after this we can change the name of the named export as below.
+
+    export { PostProvider, usePosts };
+
+15. in the consumer component we can use the consumer code like the below, which looks very encapsulated.
+
+    const { onClearPost } = usePosts();
+
+16. this is a good practise used by the developers because it seperates all logic inside the same file and secured.
+17. in certain case context will be used outside the provider by mistake.
+18. this can be identified by throwing custom errors.
+
+    function usePosts() {
+        const context = useContext( PostContext );
+        if( context === undefined ){
+            throw new Error("PostContext was used outside of the PostProvider");
+        }
+        return context;
+    }
+
+19. the above code will throw error if the context used outside.
