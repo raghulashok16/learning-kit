@@ -301,6 +301,7 @@
 6. when we try to build UI using vanilla javascript, we will use a imperative approach.
 7. this means that we manually select elements, 
 
+# ------------------------------- SECTION - 16 ------------------------------- #
 # ------------------------------ USEREDUCER HOOK ----------------------------- #
 1. this is a another way to manage state in React.
 2. useReducer hook works with a reducer function which is a pure function.
@@ -556,3 +557,17 @@
 
 3. ask yourself, do you have single or multiple states, do they want to update individualy or at the same time together.
 
+# ------------------------------- SECTION - 17 ------------------------------- #
+# --------------------------- WHAT IS CONTEXT API ? -------------------------- #
+1. when we pass state into multiple deeply nested child components, we involve in a concept called prop drilling.
+2. prop drilling is not prefered by developers beacuse it is very hard to find the flow of data and in debugging.
+3. so react created a method to pass the state from parent to deeply located child component directly without prop drilling.
+4. so that concept was called context API.
+5. when we use context api, it allows us to read state from everywhere in the tree.
+6. in other words, context api is system to pass data throughout the app without manually passing props down the tree.
+7. it allows us to "broadcast" global state to the entire app.
+8. PROVIDER   - gives all child components access to value.
+9. VALUE      - data that we want to make available (usually state and functions)
+10. CONSUMERS - all components that read the provided context value.
+11. usually PROVIDER wraps around the APP component.
+12. whenever the VALUE is updated all CONSUMERS will be re-render.
