@@ -571,3 +571,36 @@
 10. CONSUMERS - all components that read the provided context value.
 11. usually PROVIDER wraps around the APP component.
 12. whenever the VALUE is updated all CONSUMERS will be re-render.
+
+# --------------------- CREATING AND PROVIDING A CONTEXT --------------------- #
+1. create a custom context using createContext() method.
+
+    const PostContext = createContext();
+
+2. here PostContext is considered as a component so that it starts with the uppercase.
+3. now wrap the desired component using our custom context we created earlier.
+
+    <PostContext.Provider>
+        <parentcomponent>
+            <childcomponent>
+                ...any child component and son on...
+            </childcomponent>
+        </parentcomponent>
+    </PostContext.Provider>
+
+4. after wrapping, provide the values to the child component using provider.
+
+    <PostContext.Provider 
+    value = {{
+        posts: searchPosts,
+        onAddPost: handleAddPost,
+        onClearPost: handleClearPosts,
+        searchQuery,
+        setSearchQuery,
+    }}>
+        <parentcomponent>
+            <childcomponent>
+                ...any child component and son on...
+            </childcomponent>
+        </parentcomponent>
+    </PostContext.Provider>
