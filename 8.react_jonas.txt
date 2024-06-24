@@ -604,3 +604,13 @@
             </childcomponent>
         </parentcomponent>
     </PostContext.Provider>
+
+# --------------------------- CONSUMING THE CONTEXT -------------------------- #
+1. to consume a context, there is a special react hook called useContext().
+2. this will return all the states and handler functions we passed in the value of the context provider.
+
+    const { onClearPost } = useContext(PostContext);
+
+3. it is important to mention which context we are consuming from inside the useContext().
+4. also we can destruct the value object for our required things.
+5. by this way we can avoid prop drilling.
