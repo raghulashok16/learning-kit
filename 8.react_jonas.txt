@@ -706,3 +706,7 @@
     }
 
 19. the above code will throw error if the context used outside.
+
+# ------------------------- ADVANCED STATE MANAGEMENT ------------------------ #
+1. it gives each piece of state the right home.
+2. 
