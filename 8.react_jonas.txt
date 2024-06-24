@@ -614,3 +614,7 @@
 3. it is important to mention which context we are consuming from inside the useContext().
 4. also we can destruct the value object for our required things.
 5. by this way we can avoid prop drilling.
+
+# ------------------------- CUSTOM PROVIDER AND HOOK ------------------------- #
+1. this topic is a advanced pattern of context api.
+2. 
