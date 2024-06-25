@@ -580,5 +580,5 @@ finding solution using problem-solving framework:
         console.log(document.querySelector('.guess').value);
     });
 
-5. remember this eventListner will be called only when the event occurs.
+5. remember, this eventListner will be called only when the event occurs.
 
