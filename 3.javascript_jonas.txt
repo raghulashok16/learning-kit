@@ -582,3 +582,5 @@ finding solution using problem-solving framework:
 
 5. remember, this eventListner will be called only when the event occurs.
 
+# ------------------------ IMPLEMENTING THE GAME LOGIC ----------------------- #
+1. 
