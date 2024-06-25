@@ -583,4 +583,35 @@ finding solution using problem-solving framework:
 5. remember, this eventListner will be called only when the event occurs.
 
 # ------------------------ IMPLEMENTING THE GAME LOGIC ----------------------- #
-1. 
+1. the main logic of the game is to create a random number using Math funcction.
+
+    const secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+2. here match.random returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1.
+3. with that random number we multiply with 20 to get a random floating number between 0 to 19.
+4. finally we remove the floating points using trunc function and then finally we add a 1 to it to tally the value.
+5. at the end we get a random value between 1 to 20.
+
+# --------------------------------- SECTION 9 -------------------------------- #
+# --------------------------- DESTRUCTURING ARRAYS --------------------------- #
+1. in the ES6 version array destructuring was introduced.
+2. it simplifies the destructuring using a single line of code.
+
+    const [x, y, z] = arr;
+
+3. if you see this first, it is hard to understand what was going.
+4. always use the const while destructuring.
+5. we can also destruct array inside the object.
+
+    const [firstElement, SecondElement] = restaurant.categories;
+
+6. we can also skip the element using a blank space.
+
+    const [firstElement, , ThirdElement] = restaurant.categories;
+
+7. using this way we can destruct what we need and we can skip what we dont want.
+8. we can also use this destructuring to swap the values of two variables.
+
+    [main, secondary] = [secondary, main];
+
+9. 
