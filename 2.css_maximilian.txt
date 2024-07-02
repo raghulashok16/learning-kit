@@ -450,4 +450,14 @@
 
 # -------------------- SELECTING THE OPPOSITE WITH :NOT() -------------------- #
 1. :not() comes under pseudo class.
+2. not() selects all element with dont match.
+
+    a:not(class_name){
+        color: red;
+    }
+
+3. dont add any white space in the selectors.
+
+# ------------------------------ BROWSER SUPPORT ----------------------------- #
+1. some features dont support in some browser versions and in some browser.
 2. 
