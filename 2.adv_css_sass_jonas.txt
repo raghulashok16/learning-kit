@@ -1,0 +1,46 @@
+# ----------------------- SOME COLORS MIGHT BE USEFULL ----------------------- #
+1. light green - #7ed56f
+2. medium green - #55c57a
+3. dark green - #28b485
+# ------------------------- BUILDING HEADER PART - 1 ------------------------- #
+1. always use header tag to create navigation part.
+2. use "header" as class_name.
+3. follow the basic reset settings to neglect default spacings.
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+4. these are enough to reset the browser defaults.
+5. then add font to the body which is then inherited by all the elements in the body tag.
+
+    body {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #777; //grey shade
+        padding: 30px;
+    }
+
+6. dont forget to add the google cdn for the font "Lato".
+7. next we add styles to the header class.
+
+    header {
+        height: 95vh;
+        background-image: linear-gradient(to right bottom, rgba( 126, 213, 111, 0.8 ), rgba( 40, 180, 131, 0.8 )), url(../file_location); //with opacity rgba
+        background-size: cover; // cover-fits inside the box
+        background-position: top;  // top position is fixed
+    }
+
+8. to clip out image we use "clip-path" which is a mordern css feature.
+
+    header {
+        clip-path: polygon (0 0, 100% 0, 100% 75vh, 0 100%);
+    }
+
+9. there are many "clip-path" designs we can do.
+10. check the below webite for custom shapes.
+11. bennettfeely.com/clippy/
