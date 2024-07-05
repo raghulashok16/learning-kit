@@ -108,3 +108,72 @@
         left: 50%;
         transform: translate( -50%, -50% );
     }
+
+# -------------------------- CREATING CSS ANIMATIONS ------------------------- #
+1. now we are going to add animations using keyframes.
+2. inside keyframes we specify the start to end animattions in percentages.
+3. we can add any percentages in keyframes from 0 to 100.
+
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        80% {
+            transform: translateX(10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+4. after creating animations add it inside h1 span1 heading class.
+
+    .heading-primary-main {
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+5. some other animation properties.
+
+    [ animation-delay: 3s; ] this delays the animation start time.
+    [ animation-iteration-count: 3; ] this repeats the animation.
+
+6. now create a animation for span2 inside the h1 that move in right direction.
+
+    @keyframes moveInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        80% {
+            transform: translateX(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+7. this is similar to the moveInLeft but the direction is in the opposite.
+8. there is a shorthand property which specifies all animation in a single line.
+
+    .heading-primary-sub {
+        animation: moveInRight 1s ease-out;
+    }
+
+9. some times there will be a slight vertical glitch which occurs in animation.
+10. but there is a solution for that.
+11. just add this property in the parent element of the animation element.
+
+    .heading-primary {
+        backface-visibility: hidden;
+    }
+
+12. when transforming element there will be some back part glitch, its visibility is hidden by this property.
