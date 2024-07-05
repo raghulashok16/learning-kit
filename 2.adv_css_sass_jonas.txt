@@ -22,7 +22,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.7;
-        color: #777; //grey shade
+        color: #777; // grey shade
         padding: 30px;
     }
 
@@ -31,7 +31,7 @@
 
     .header {
         height: 95vh;
-        background-image: linear-gradient(to right bottom, rgba( 126, 213, 111, 0.8 ), rgba( 40, 180, 131, 0.8 )), url(../file_location); //with opacity rgba
+        background-image: linear-gradient(to right bottom, rgba( 126, 213, 111, 0.8 ), rgba( 40, 180, 131, 0.8 )), url(../file_location); // with opacity rgba
         background-size: cover; // cover-fits inside the box
         background-position: top;  // top position is fixed
     }
@@ -79,7 +79,7 @@
 13. class_name "heading-primary-sub" for 2st span.
 
     .heading-primary {
-        color: #fff //white color
+        color: #fff // white color
         text-transform: uppercase;
     }
 
@@ -177,3 +177,65 @@
     }
 
 12. when transforming element there will be some back part glitch, its visibility is hidden by this property.
+
+# ---------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 1 --------------- #
+1. create a button under the h1 tag but inside the div of text-box.
+2. add class_names as "btn btn-white".
+3. since this the white color button.
+
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+    }
+
+    .btn-white {
+        background-color: #fff; // white color
+        color: #777; // grey shade
+    }
+
+4. inline elements are considered as text so add text center to the parent  will make the button horizontally center.
+
+    .text-box {
+       text-align: center;
+    }
+
+5.when hover we need to add animation to the button.
+
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+
+6. we also need to add animation when clicked.
+
+    .btn:active {
+        transform: translateY(-1px); 
+    }
+
+7. now add border radius to the button.
+
+    .btn:link,
+    .btn:visited {
+        border-radius: 100px;
+    }
+
+8. to add animation run smoothly we add the transition property in the initial state.
+
+    .btn:link,
+    .btn:visited {
+        transition: all .2s;
+    }
+
+9. now adding box shadow in hover state.
+
+    .btn:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); // shadow downwards
+    }
+
+10. now adding box shadow in active state which is smaller than the hover state.
+
+    .btn:active {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); // shadow downwards
+    }
