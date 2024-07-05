@@ -239,3 +239,7 @@
     .btn:active {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); // shadow downwards
     }
+
+# ---------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 2 
+--------------- #
+1. 
