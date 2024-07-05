@@ -242,4 +242,4 @@
 
 # ---------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 2 
 --------------- #
-1. 
+1. if needed refer the video.
