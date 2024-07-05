@@ -2,6 +2,7 @@
 1. light green - #7ed56f
 2. medium green - #55c57a
 3. dark green - #28b485
+
 # ------------------------- BUILDING HEADER PART - 1 ------------------------- #
 1. always use header tag to create navigation part.
 2. use "header" as class_name.
@@ -28,7 +29,7 @@
 6. dont forget to add the google cdn for the font "Lato".
 7. next we add styles to the header class.
 
-    header {
+    .header {
         height: 95vh;
         background-image: linear-gradient(to right bottom, rgba( 126, 213, 111, 0.8 ), rgba( 40, 180, 131, 0.8 )), url(../file_location); //with opacity rgba
         background-size: cover; // cover-fits inside the box
@@ -37,10 +38,73 @@
 
 8. to clip out image we use "clip-path" which is a mordern css feature.
 
-    header {
+    .header {
         clip-path: polygon (0 0, 100% 0, 100% 75vh, 0 100%);
     }
 
 9. there are many "clip-path" designs we can do.
 10. check the below webite for custom shapes.
 11. bennettfeely.com/clippy/
+
+# ------------------------- BUILDING HEADER PART - 2 ------------------------- #
+1. learning transform feature is really very important in modern css.
+2. first add the logo image inside the header top left corner.
+3. remember img tag is a inline element so wrap it inside a div.
+4. name div class_name as "logo-box" and img class_name as "logo".
+
+    .logo-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+5. css dont know which element it should take the relative.
+6. so we need to specify that also.
+
+    .header {
+        position: relative;
+    }
+    
+7. next we are going to set the height of the img tag.
+
+    .logo {
+        height: 35px;
+    }
+
+8. by setting the height property css will automatically adjust the width based on the height.
+9. so remember just specify the height property.
+10. now create a h1 tag and 2 span elements inside it.
+11. class_name "heading-primary" for h1.
+12. class_name "heading-primary-main" for 1st span.
+13. class_name "heading-primary-sub" for 2st span.
+
+    .heading-primary {
+        color: #fff //white color
+        text-transform: uppercase;
+    }
+
+14. span element by default is a inline element, so change it to block.
+
+    .heading-primary-main {
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 35px;
+    }
+
+    .heading-primary-sub {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 17.4px; 
+    }
+
+15. to display the h1 in middle center of the header in verticaal and horizontal position.
+16. to do so wrap it inside a div and name the class_name as "text-box".
+
+    .text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+    }
