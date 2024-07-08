@@ -250,3 +250,19 @@
 1. responsive design - [ fluid layouts, media queries, responsive images, correct units, desktop-first vs mobile-first ].
 2. maintainable and scalable code - [ clean, easy-to-understand, growth, reusable, how to organize files, how to name classes, how to structure HTML ].
 3. web performance - [ less HTTP requests, less code, compress code, less images, compress images ].
+
+# ---------------------- HOW CSS WORKS BEHIND THE SCENES --------------------- #
+1. first the browser starts to load the initial html file.
+2. the html file is then parsed which means that it decodes the code line by line.
+3. from this process the browser builds the DOM. 
+4. DOM describes the entire web document, like a tree like structure.
+5. as the browser parses the html, it also finds the style sheets included in the html head, and it starts loading them as well.
+6. like html css is also parsed, but the parsing of css is a bit more complex.
+7. during the css parsing phase there are two main steps.
+8. in first step the conflicting css declarations are resolved through a process known as the cascade.
+9. in the second step the final css values are processed like converting margin units from percentage to pixels.
+10. after parsing phase CSS object model is created like a tree like structure called CSSOM similar to the DOM.
+11. these parsed DOM and CSSOM is stored together in a tree called RENDER TREE.
+12. with that we need everthing that we need to render a page.
+13. in order to render a page we need a visual formatting model.
+14. visual formatting model renders our page in the final step.
