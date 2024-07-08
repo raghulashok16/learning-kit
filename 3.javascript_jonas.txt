@@ -460,7 +460,7 @@ NOTES: Template literals offer a more concise and readable way to create strings
 3. 4-step framework to solve any problem.
 
 # ---------------------- 4-STEP PROBLEM SOLVING APPROACH --------------------- #
-1. make sure you 100% understand the probem.
+1. make sure you 100% understand the problem.
 2. ask the right questions to get a clear picture of the problem.
 3. example - "we need a function that reverse whatever we pass into it"
 4. "whatever" means what?
@@ -616,8 +616,8 @@ finding solution using problem-solving framework:
 
 9. for example in a restaurant app we can use the below line of code to destruct the menu.
 
-    const [starter_menu, main_menu] = restaurant.order(2, 0);
-    console.log(starter_menu, main_menu);
+    const [starterMenu, mainMenu] = restaurant.order(2, 0);
+    console.log(starterMenu, mainMenu);
 
 10. by this way we can destruct and create a new variable.
 11. another example for destructuring array,
@@ -647,3 +647,25 @@ finding solution using problem-solving framework:
 
 19. the output will be p -> 8 and q -> 1, r -> 1.
 20. this method is used when we get data from API.
+
+
+# --------------------------- DESTRUCTURING OBJECTS -------------------------- #
+1. to destructure object we use curly braces.
+2. before destructuring remaining that the variable name should be same as the object key name.
+3. otherwise it wont destructure that object correctly.
+4. order of element is not a problem in object destructuring. 
+
+    const {name, openingHours, categories} = restaurant;
+
+5. this topic is very usefull in API calls and to destruct that object.
+6. this topic is very important in react development.
+7. we can also rename the variable we destruct to our preferred variable name as below.
+
+    const {name : restaurantName , openingHours : hours , categories : tags} = restaurant;
+
+8. like array destructuring, we do have options to set default values in the object destructuring.
+
+    const {menu = [], starterMenu: starters = []} = restaurant;
+
+9. this will be very helpfull in situations when we try to acess undefined values.
+10. 
