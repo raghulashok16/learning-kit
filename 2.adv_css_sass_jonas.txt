@@ -242,4 +242,7 @@
 
 # ---------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 2 
 --------------- #
-1. if needed refer the video.
+1. this is for animation when we hover the button.
+2. watch the video to see detailed instructions.
+3. this is based on the scaling animation.
+
