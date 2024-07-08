@@ -260,9 +260,12 @@
 6. like html css is also parsed, but the parsing of css is a bit more complex.
 7. during the css parsing phase there are two main steps.
 8. in first step the conflicting css declarations are resolved through a process known as the cascade.
-9. in the second step the final css values are processed like converting margin units from percentage to pixels.
+9. in second step the final css values are processed like converting margin units from percentage to pixels.
 10. after parsing phase CSS object model is created like a tree like structure called CSSOM similar to the DOM.
 11. these parsed DOM and CSSOM is stored together in a tree called RENDER TREE.
 12. with that we need everthing that we need to render a page.
 13. in order to render a page we need a visual formatting model.
 14. visual formatting model renders our page in the final step.
+
+ # ---------- HOW CSS IS PARSED, PART 1: THE CASCADE AND SPECIFICITY ---------- #
+ 1. cascade - process of combining different stylesheets and resolving conflicts between different css rules and declarations, when more than one rule applies to a certain element.
