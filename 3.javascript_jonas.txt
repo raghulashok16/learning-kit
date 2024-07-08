@@ -614,4 +614,36 @@ finding solution using problem-solving framework:
 
     [main, secondary] = [secondary, main];
 
-9. 
+9. for example in a restaurant app we can use the below line of code to destruct the menu.
+
+    const [starter_menu, main_menu] = restaurant.order(2, 0);
+    console.log(starter_menu, main_menu);
+
+10. by this way we can destruct and create a new variable.
+11. another example for destructuring array,
+
+    const nested = [2, 4, [5, 6]];
+    const [i, , j] = nested;
+    console.log(i, j);
+
+12. the output will be i -> 2 and j -> [5, 6].
+13. in the same example we can destruct further more.
+
+    const [i, , [j, k]] = nested;
+    console.log(i, j, k);
+
+14. the output will be i -> 2 and j -> 5, k -> 6.
+15. apply this example only if you know the array length and only for small array.
+16. if we try to destruct something out of box then undefined is the output we get for the variable.
+
+    const [p, q, r] = [8, 9];
+    console.log(p, q, r);
+
+17. the output will be p -> 8 and q -> 9, r -> undefined.
+18. in that case we can set a default value for that if there is nothing to read.
+
+    const [p = 1, q = 1, r = 1] = [8];
+    console.log(p, q, r);
+
+19. the output will be p -> 8 and q -> 1, r -> 1.
+20. this method is used when we get data from API.
