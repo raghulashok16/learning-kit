@@ -246,3 +246,7 @@
 2. watch the video to see detailed instructions.
 3. this is based on the scaling animation.
 
+# ---------------- THREE PILLARS OF WRITING GOOD HTML AND CSS ---------------- #
+1. responsive design - [ fluid layouts, media queries, responsive images, correct units, desktop-first vs mobile-first ].
+2. maintainable and scalable code - [ clean, easy-to-understand, growth, reusable, how to organize files, how to name classes, how to structure HTML ].
+3. web performance - [ less HTTP requests, less code, compress code, less images, compress images ].
