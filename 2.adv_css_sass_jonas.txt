@@ -289,3 +289,18 @@
 8. it is little bit complicated and most of the developers use less often.
 9. the second one is the SCSS which is called sassy CSS which looks similar to original css with curly braces.
 10. this is the main difference between sass and scss.
+
+# --------------- FIRST STEPS WITH SASS: VARIABLES AND NESTING --------------- #
+1. to use sass in our local system, we need sass to be installed.
+2. for learning purpose use codepen website.
+3. open a new project, and change css preprocessor to scss in the settings.
+4. in sass variables are like containers that stores data, for example like variable color.
+5. by this variable we declare it only once and we can use it many times.
+6. so any change we want to change to the variable it will reflect in all places we used.
+7. in sass we use comments as below.
+
+    // sass comments
+    /* css comments */
+
+8. sass identifies a variable using dollor sign ( $ ).
+9. ampersand symbol ( & ) represent the last navigation block and it is mainly used for pseudo classes.
