@@ -493,3 +493,9 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 # -------------------------- PRACTICE WITH GIT PUSH -------------------------- #
 1. while pushing our code from local machine to github, we can not push two branches at same time.
 2. we need to push one by one.
+
+# ------------------------- A CLOSER LOOK AT GIT PUSH ------------------------ #
+1. when we first create a repo and push local files to git using "master" branch then it will create a master branch in the github.
+2. after creating the master branch in the github we the add some files in the local machine and push that commit to the github at same master branch.
+3. now the master branch is not created again, but instead the github tells that there is a branch name "master" so use that branch.
+4. this is how push command works on the git and git command.
