@@ -481,3 +481,4 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 -- git push orgin master
 6. we can push any branch in our local machine.
 -- git push orgin <branch_name>
+7. we can push n number of branches to the github.
