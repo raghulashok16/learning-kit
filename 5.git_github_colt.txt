@@ -469,5 +469,15 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 -- git remote remove <name>
 
 # --------------------------- INTRODUCING GIT PUSH --------------------------- #
-1. to push some work up to github, we need to use the git push command.
-2. we need to specify the remote we want to push up to and the specific local branch we want to push up to that remote.
+1. if you already have an existing repo locally that you want to get on github.
+    # create a new repo on github.
+    # connect your local repo ( add a remote ).
+    # push up your changes to github.
+2. now that we have a remote set up, lets push some work up to github.
+3. to do this, we need to use git push command.
+-- git push <remote> <branch>
+4. we need to specify the remote we want to push up to and the specific local branch we want to push up to that remote.
+5. git push master tells git to push up the master branch to our orgin remote.
+-- git push orgin master
+6. we can push any branch in our local machine.
+-- git push orgin <branch_name>
