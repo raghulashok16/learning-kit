@@ -490,3 +490,6 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 4. like git kraken it dont have visual ui but it will display a detailed message.
 5. if you have any doubt watch the video again.
 
+# -------------------------- PRACTICE WITH GIT PUSH -------------------------- #
+1. while pushing our code from local machine to github, we can not push two branches at same time.
+2. we need to push one by one.
