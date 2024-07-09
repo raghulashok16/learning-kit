@@ -468,6 +468,6 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 -- git remote rename <old> <new>
 -- git remote remove <name>
 
-# --------------------------------- GIT PUSH --------------------------------- #
+# --------------------------- INTRODUCING GIT PUSH --------------------------- #
 1. to push some work up to github, we need to use the git push command.
 2. we need to specify the remote we want to push up to and the specific local branch we want to push up to that remote.
