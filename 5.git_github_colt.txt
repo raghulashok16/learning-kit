@@ -482,3 +482,11 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 6. we can push any branch in our local machine.
 -- git push orgin <branch_name>
 7. we can push n number of branches to the github.
+
+# --------------------------- TOURING A GITHUB REPO -------------------------- #
+1. in github website goto our repository we currently working on.
+2. in that repo we have bunch of stuff we can view.
+3. on the of the main thing is we can swith brances with dropdown, its very simple.
+4. like git kraken it dont have visual ui but it will display a detailed message.
+5. if you have any doubt watch the video again.
+
