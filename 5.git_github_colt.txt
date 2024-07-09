@@ -505,3 +505,8 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 -- git push orgin pancake:dosa
 7. here we are pussing a local pancake branch to a remote dosa branch.
 
+# ----------------------- WHAT DOES "git push -u" MEAN? ---------------------- #
+1. there is push command with "-u" option allows us to set  the upstream of the branch we are pushing.
+2. you can think of this as a link connecting our local branch to a branch on github.
+-- git push -u orgin master
+3. running this command will sets the upstream of the local master branch so that it tracks the master branch on the orgin repo.
