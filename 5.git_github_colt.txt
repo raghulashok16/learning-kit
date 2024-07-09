@@ -499,3 +499,9 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 2. after creating the master branch in the github we the add some files in the local machine and push that commit to the github at same master branch.
 3. now the master branch is not created again, but instead the github tells that there is a branch name "master" so use that branch.
 4. this is how push command works on the git and git command.
+5. in certain cases we have to push a branch to github with different branch name.
+6. so there is way to do it.
+-- git push <remote> <local-branch>:<remote-branch>
+-- git push orgin pancake:dosa
+7. here we are pussing a local pancake branch to a remote dosa branch.
+
