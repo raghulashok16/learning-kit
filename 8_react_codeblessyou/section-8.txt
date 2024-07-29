@@ -2,6 +2,7 @@
 
 # ------------------------------- REACT ROUTER ------------------------------- #
 1. check the latest npm for react router and run in terminal.
+    --> npm i react-router
 2. in main.jsx import BrowserRouter from react-router-dom. [short-tips: type rrd , vscode will auto type the word]
 3. wrap 'App' component inside 'BrowserRouter' component.
 4. BrowserRouter component is very import and without that routing will not work.
