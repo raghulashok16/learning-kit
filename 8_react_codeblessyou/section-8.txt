@@ -1,0 +1,107 @@
+# --------------- Section 8: React Routing - Basics to Advanced -------------- #
+
+# ------------------------------- REACT ROUTER ------------------------------- #
+1. check the latest npm for react router and run in terminal.
+2. in main.jsx import BrowserRouter from react-router-dom. [short-tips: type rrd , vscode will auto type the word]
+3. wrap 'App' component inside 'BrowserRouter' component.
+4. BrowserRouter component is very import and without that routing will not work.
+5. this component keeps the record of current url and navigation of our history.
+6. Route is the main toll to specify which component should display based on the path 'attribute'.
+7. always use 'Route' inside 'Routes' or else error message will be displayed in the console saying 'Route' never rendered directly.
+8. so always import 'Routes' and 'Route' combined.
+9. always use path='/' for home page.
+10. element={</Home>} is used to display which component should be display when the path was selected.
+
+# --------------------------- ADDING NOT FOUND PAGE -------------------------- #
+1. it is important to create a 404 page not found in every app.
+2. because end user wants to know what happend in the website.
+3. <Route path='*' element={ <NotFound/> } />
+4. we can create our own style of 404 page not found component.
+
+# -------------------------- SINGLE PAGE APPLICATION ------------------------- #
+1. single page application will not reload.
+2. if we use ancchor tag for page jump, the app will reload.
+3. <a href='/article'>Article</a>
+4. for this unnecessary reload, 'Link' compoent was created in react-router-dom.
+5. <Link to='/article'>Article</Link>
+6. <NavLink to='/article'>Article</NavLink>
+7. the main difference between 'Link' and 'NavLink' is that 'NavLink' will add active class if selected.
+8. this feature is not availabe in 'Link'.
+
+# ----------------------------- ROUTE PARAMETERS ----------------------------- #
+1. route parameter is a dynamic segment of the URL that allows you to capture values from the URL and pass them as props.
+2. it can be identified by a colon followed by the parameter name.
+3. <Route path="/users/:userId" elememt={ <UserDetail/> } />
+4. :userId is a route parameter. 
+5. e.g., /users/123 , React Router will extract the value of userId from the URL and pass it to the UserDetail component as a prop.
+6. You can access route parameters inside your component using React Router's useParams().
+7. let { userId } = useParams();
+8. importing useParams is mandatory.
+
+# ------------------------------- QUERY STRING ------------------------------- #
+1. it is used to pass data to web servers through HTTP GET requests.
+2. https://example.com/search?sortBy=name&category=book
+3. query string begins with ? and contains two key-value pairs
+3. 'sortBy' and 'category' are the key.
+4. 'name' and 'book' are their corresponding values.
+5. 'useSearchParams' is used to get that key and values associated with the query string.
+6. importing useSearchParams from react-router-dom is mandatory.
+7. const [searchParams, setSearchParams] = useSearchParams();
+8. const sortBy = searchParams.get('sortBy');
+9. const category = searchParams.get('category');
+10. <p> SortBy:{sortBy} Category:{category} </p>
+11. this line of p tag will get the details from the query string and print the values.
+12. we can also set the searchParams manually by using on click button event.
+    
+    setSearchParams({
+    sortBy: "views",
+    category:"author",
+    })
+
+# ------------------------------ NESTED ROUTING ------------------------------ #
+1. for using nested routing, we need to create a <Route> inside <Route>
+
+    <Route path='/admin' element={<Admin/>} >
+        <Route path='sales' element={<Sales/>} >
+        <Route path='sellers' element={<Sellers/>} >
+    </Route>
+
+2. react-router-dom has a componrnt which is used to display our sub route components in our specified location.
+3. Outlet is used to add our nested rout element in that place.
+4. it is mandatory to import outlet from react-router-dom.
+5. <Outlet/>
+
+# --------------------------- ROUTING BEST PRACTISE -------------------------- #
+1. always create a separate component named (<AllRouting/>) for routing.
+2. then import that compoent in App Component.
+3. this increases readability of our code.
+
+# ------------------------ PROGRAMMATICALLY NAVIGATION ----------------------- #
+1. this feature is used conditionally jump to the home page.
+2. for example if a employee try one accesing a page of manager using the link.
+3. then we can conditionally check if login credentials matches the manager.
+4. if not we can redirect the current page to home page or any other page using 'Navigate' component.
+5. we need to import it from react-router-dom.
+
+    if (user.role !== 'manager'){
+        return <Navigate to='/' />
+    }
+
+6. in the above example we used 'Navigate' component.
+7. but in react there is a hook named 'useNavigate'
+8. we need to import this hook from react-router-dom.
+9. inside our component we need to use navigate variable.
+
+    const navigate = useNavigate();
+
+10. now when we click a go back button, use this handler function.
+
+    const handleBack = () => {
+        navigate(-1);
+    }
+
+11. if we need to jump to a different page then we can specify the location.
+
+    const handleNavigate = () => {
+        navigate('/articles');
+    }
