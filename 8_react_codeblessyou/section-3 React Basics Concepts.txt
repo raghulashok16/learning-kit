@@ -1,0 +1,66 @@
+# --------------------- Section 3: React Basics Concepts --------------------- #
+
+
+# ------------------------------ BASICS OF REACT ----------------------------- #
+1. building components.
+2. jsx & babel.
+3. adding elememts.
+4. adding js expression.
+5. attributes.
+6. events.
+7. state.
+8. useState hook.
+9. handling inputs.
+10. mapping lists.
+
+# -------------------------- BUILDING OWN COMPONENT -------------------------- #
+1. component is reusable piece of code that used to define certain part of user interface.
+2. always create a folder inside src folder named "components".
+3. inside that component folder create our own component named "Card.jsx".
+4. always use ".jsx" extension while creating components.
+5. file name of components should start in uppercase like "Card.jsx", "Cart.jsx" otherwise it will not work in browser.
+6. always import react in every component we create. [1st line]
+#   import React from "react";
+7. there are 2 types of components functional and class components.
+8. class components are old because it requires advanced concept of javascript.
+9. so class components are little complex compared with functional components.
+10. install vs code extension - es7/react snippet.
+11. "rafce" shortcut keyword for component boiler plate and press tab button.
+12. every component must return a single element / nested single element.
+13. otherwise it will show error "jsx expression must have one parent".
+14. always use parenthesis for the return statement in components.
+
+# ------------------------------- JSX AND BABEL ------------------------------ #
+1. jsx code which is modern code for writing html and javascript together.
+2. our browser dont understand jsx, it understand just vanilla javascript / plain javascript.
+3. so a compiler comes into action, it will convert jsx into javascript.
+4. babel will do this work.
+
+# ----------------------- ADDING ELEMENTS IN COMPONENT ----------------------- #
+1. always use fragment as parent element when adding elements in components.
+
+    <React.Fragment>
+    ...
+    </React.Fragment>
+
+2. simple way fo react fragment
+
+    <>
+    ...
+    </>
+
+# ----------------------- JAVASCRIPT EXPRESSION IN JSX ----------------------- #
+1. use curybrases and write javascript code.
+2. in this below example task value is declared inside the component function and just abouve the return statement.
+
+   const Todo = () => {
+        const tasks = 12;
+        return (
+            <>
+            <h1>Tasks : {task}</h1>
+            </>
+        );
+    };
+    export default Todo;
+
+3. example 

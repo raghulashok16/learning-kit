@@ -1,0 +1,85 @@
+# ---------------------- section-1 Introduction of React --------------------- #
+
+
+# ------------------------------- WHAT IS REACT ------------------------------ #
+1. it is an open source javascript library used for building frontend applications.
+2. with react we can create fast and better frontend application.
+3. react was created by facebook in 2011.
+4. currently it is the most popoular and most used javascript  frontend library.
+
+# -------------------------- WHY REACT IS SO POPULAR ------------------------- #
+1. before react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
+2. this tree structure is called document object model[DOM].
+3. by using this dom in javascript, we can add various functionality for our application like hiding side bar on button click, handling form inputs, etc.
+4. to achive these functionality with vanilla javascript we need to type large number of lines.
+5. with this approach it is hard to manage and very messy while work on large applications.
+6. so in react we dont need to worry about the vanilla javascript code.
+7. beacuse in react we divide our application into small piece of code called components.
+8. and react will take care of creating and updating dom.
+9. components is used to write reusable and better organized code.
+10. we buid all components individually and then combine them to build our page.
+11. so by creating small components we can easily manage our code and our application also works fast.
+12. with react we can create single page application which means our application loads only one time.
+13. and all pages comes without reloading the entire page.
+14. this will make our application almost 50% faster than normal applications.
+
+# -------------------------------- VIRTUAL DOM ------------------------------- #
+1. react is so fast because of the virtual dom feature.
+2. when we create a web page with react it will maintain a virtual representation of your webpage.
+3. so this virtual representaion is called vitual dom.
+4. whenever we want to update our webpage, we describe the changes to the virtual dom.
+5. actualy we dont directly modify the real dom, reacts virtual dom efficienty compares the new virtual dom.
+6. by this way react will know which compoents should be removed and which components should be added based on the virtual dom comparison.
+7. in this approach, we will update only necessary things and we dont need to load the whole page.
+8. Virtual dom makes updating the real dom smoother and more efficient, and it ehances the performance and increaces the user experiences.
+
+# ---------------------------- SOFTWARES REQUIRED ---------------------------- #
+1. node js[node pakacge manager is used to install react and some aditional features]
+2. code editor[visual studio code]
+3. es7/react snippets in vs code.
+3. browser[chrome recommended]
+
+# ---------------------------- CREATING REACT APP ---------------------------- #
+1. create react app [method 1]
+2. vite [method 2]
+3. creact react app is old way and it take much time compare to vite.
+
+# ----------------------- CREATING REACT APP WITH VITE ----------------------- #
+1. go to our project folder and run vite command in the terminal.
+# npm create vite@latest
+2. tpye your project_name and hit enter.
+3. select the framework[react] and hit enter.
+4. select javascript[recomended for basic projects] or typescript[recomended for typecscript projects] base and hit enter.
+5. now we need to change directory
+# cd project_name
+6. we need to install some pakages like webpack, babel, etc.
+# npm install
+7. open the project in vs code and open the terminal and launch with the below command.
+# npm run dev
+8. it will show the link of our application[localhost link]
+
+# ------------------------ INSIDE VITE REACT TEMPLATE ------------------------ #
+1. we have node folder where we have all the required pakages and libraries for our application.
+2. without node modules we cant run our application and that is why we use # npm install command.
+3. finally we dont touch this foler.
+4. in src folder we spend all the time writing our code.
+5. in asserts folder we put all our images, icons, fonts, etc.
+6. app.jsx is the root component of our application.
+7. app.jsx is the starting pont of the component chain and it is called root component.
+8. .jsx is the extension the react component but it is similar to the js file.
+9. unlike normal html code we use jsx[javascript XML].
+10. with jsx we can write HTML and javascript code together and this is the heart of the react application.
+11. we need to export default component so that we can use that in the other component.
+12. app.css file is used to style our react application.
+13. we import that css file at top of the each components.
+14. main.jsx is the most important file of the react. 
+15. this main file connect our components to the index.html file.
+16. index.html is the main html file running in our react application.
+17. every component inside our react applicaton is rendered inside the root id of the html file.
+18. in .gitignore file we can define what files should not be uploaded in git.
+19. this is because some important api keys will be there when we work on large projects.
+20. in pakage.json file all the information will be available including which version we use in our project.
+21. finally we have shorts for the commands we will be using for the terminals.
+
+# ------------------------ MAIN THINGS IN THE INDEX.JS ----------------------- #
+# ReactDOM.createRoot(document.getElementById('root')).render();
