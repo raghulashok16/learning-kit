@@ -1,0 +1,12 @@
+# ------------------------- OUR FIRST TYPE ANNOTATION ------------------------ #
+1. there are types in typescript.
+2. Primitive Types -> Number, String, Boolean, Null, Undefined, Void, Any, Never, Unknown.
+3. Object Types -> Object, Array, Function, Tuple, Enum, Others.
+4. using this types we can tell typescript some basic conditions like "this object must have a property called colors, set to an array of strings", "this function returns a boolean", "this function accepts two numbers and returns a number", "this variable is a string".
+
+    const sample = 'so awesome';
+    const sample: string = 'so awsome';
+
+5. if we give the value to different type after we set it to string, then the editor itself complain with the error occured.
+6. this is due to the extension we installed -- refer section-2.
+7. 
