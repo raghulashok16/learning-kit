@@ -1,0 +1,11 @@
+# -------------------------- THE CASE FOR TYPESCRIPT ------------------------- #
+1. what is typescript and why it is needed?
+2. typescript is a language that is build on top of javascript with the purpose of helping us avoid the common pitfalls and bugs that arise in javascript.
+3. and also it seeks to improves the experience of writing Javascript.
+4. typescript is javascript with types. 
+
+# ---------------------------- TYPESCRIPT OVERVIEW --------------------------- #
+1. typescript is a javascript with type system.
+2. typescript performs something called static checking, which is a feature of lot of programming languages.
+3. typescript detects errors in our code without running it.
+4. this is called static checking.
