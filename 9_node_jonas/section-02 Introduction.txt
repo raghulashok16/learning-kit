@@ -1,20 +1,205 @@
 # ------------------------------- INTRODUCTION ------------------------------- #
 
 # -------------------- 5. What Is Node.js and Why Use It? -------------------- #
-6. Running Javascript Outside the Browser
-7. Using Modules 1: Core Modules
-8. Reading and Writing Files
-9. Blocking and Non-Blocking: Asynchronous Nature of Node.js
-10. Reading and Writing Files Asynchronously
-11. Creating a Simple Web Server
-12. Routing
-13. Building a (Very) Simple API
-14. HTML Templating: Building the Templates
-15. HTML Templating: Filling the Templates
-16. Parsing Variables from URLs
-17. Using Modules 2: Our Own Modules
-18. Introduction to NPM and the package.json File
-19. Types of Packages and Installs
-20. Using Modules 3: 3rd Party Modules
-21. Package Versioning and Updating
-22. Setting up Prettier in VS Code
+1. node.js ia a javascript runtime built on google's open-source V8 javascript engine.
+2. node.js is just like a container[like an environment] in which the progrom written in javascript can be executed, outside the browser.
+3. v8 engine developed by google comes into play, because that is exactly where javascript code will be parsed and run in node js.
+4. we can use javascript on the server-side of web development.
+5. we can build fast and highly scalable network applications(back-end).
+6. we can use node for API with database behind it(preferably NoSQL).
+7. we can use it for data streaming.
+8. we can use it for real-time chat applications.
+9. we can use it for server-side web applications.
+
+Why Use It:
+1. pros
+    -- it is single-threaded, based on event driven, non-blocking IO model which makes node js very ligthweight and efficient.
+    -- it is perfect for building super-fast and scalable data-intensive apps.
+    -- companies like netflix, uber, paypal, ebay have started using node in production.
+    -- using same language for the entire stack development.
+    -- NPM: huge library of open-source pakages available for everyone for free.
+    -- very active developer community.
+
+2. cons
+    -- applications with heavy server-side processing(cpu-intensive)(image manipulations, video conversion, file compression, etc)
+
+# ----------------- 6. Running Javascript Outside the Browser ---------------- #
+1. this section is created to intract with node.
+2. just open a new terminal in vs code.
+
+    node
+
+3. this command will enable node REPL which stand for read-eval-print-loop.
+4. in REPL we can write javascript code just like in a normal terminal.
+5. any javascript will work in here.
+6. to exit the REPL use the below command.
+
+    .exit
+
+7. ctrl + k will clear the terminal(just for information purpose).
+8. ctrl + d will also exit the REPL.
+9. in the REPL, hit tab single/twice.
+10. now you can see all the global variables that are available in node.
+11. the global variables are listed in the terminal.
+12. in node there is a underscore variable(underscore is your previous result).
+
+    _+6
+
+# --------------------- 7. Using Modules 1: Core Modules --------------------- #
+1. in our traditional way, we just link the javascript file to the html file and see the outputs in the console window in the browser.
+2. but after installing node in our windows operating system, we just need a single line command to see the outputs in the terminal window.
+
+    node file_name
+
+3. this command will run and the outputs will be displayed in the vscode terminal if use terminal inside vscode.
+4. basically node.js is build with bunch of modules.
+5. these modules are specific for doing certain works.
+6. for example for reading files, we can use fs module.
+7. so how can we use these modules in our code?
+
+    const fs = require('fs');
+
+8. by this code, we will get access to functions for reading data and writing data right to the file system.
+9. by calling the fs module will then return an object in which there are lots of functions that we can use.
+10. for learning other modules and its uses, we need node documentation.
+11. go to node website and click docs, on the left side we can see the versions list in that select our version.
+12. in the select version you will see all the required list of modules and its examples.
+
+# ----------------------- 8. Reading and Writing Files ----------------------- #
+1. fs module is responsible for reading and writing files.
+
+    const fs = require('fs');
+
+2. the above code will give access to functions in fs module.
+3. readFileSync() function taks two arguments, the first one is the path to the file we're reading, and then also the character encoded.
+
+    fs.readFileSync('./txt/input.txt', 'utf-8');
+
+4. here input.txt file is located first and then the utf-8 character encoding was selected.
+5. the above code will return the text in the file, so store it in a variable.
+
+    const textIn = fs.readFileSync('./txt/input.txt', 'utf-8');
+
+6. we can console textIn and check the output.
+7. also fs has write file functions.
+
+    const textOut = `text to be written on a file`;
+    fs.writeFileSync('./txt/output.txt', textOut);
+
+8. after running this code a new file will be created with the name 'output.txt'.
+9. these two functions are syncronous.
+
+# ------- 9. Blocking and Non-Blocking: Asynchronous Nature of Node.js ------- #
+1. in syncronous, code is processed one after another, line by line.
+2. here each line waits for the results of the previous line.
+3. this create a problem of slow execution.
+4. in other words, syncronous code is also called blocking code.
+5. asynchronous code is called non-blocking code.
+6. in asynchronous we upload heavy work to basically be worked in the background.
+7. and when the work is done, a callback function that we register before is called to handle the result.
+8. during all the time the rest of the code can be still be executing without being blocked by the heavy task, which is now running in the background.
+9. in fs module we have file read and write function in both syncronous and asynchronous.
+10. in node.js process[this is where our app runs], there's only one single thread.
+11. the thread is just like a set of instructions that is run in the computer's cpu.
+12. thread is where our code is actually executed in a machine's processor.
+13. remember, node.js is basically single threaded and so for each application, there's only one thread.
+14. this is the way the node.js was designed.
+15. this means that all the users accessing your application are all using the same thread.
+16. so whenever they are interacting with the application, the code that is running for each user will be executed all in the same thread at the same place in the computer running the application.
+17. if you have 5 users or 5 million users, all have only one thread.
+18. when one usser blocks the single thread with syncronous code, then all other users have to wait for that execution to finish.
+19. this is not a problem, if we have 5 users.
+20. but consider 50000000 users, then it is a problem.
+21. to solve this problem, use asynchronous code for heavy work.
+22. now no thread will be blocked and heavy work will run in background.
+23. this is why node.js is completly degined around callbacks.
+24. in other programming languages, things works differently, if a user log in happens, a new thread will be created and the concept is called muti-threading.
+25. when we use callbacks in our code, that doesn't automatically make it asynchronous.
+26. it works for some specific functions in node.js
+27. when we face callback hell[check what is callback hell in internet?], use promises or Async/Await.
+
+# --------------- 10. Reading and Writing Files Asynchronously --------------- #
+1. create a file with name 'start.txt'.
+2. using fs module call the readFile() module.
+3. this method takes three arguments, first the file location, second the character encoding, third the callback function.
+
+    fs.readFile('./txt/start.txt', 'utf-8', (err,data) => {
+        console.log(data);
+    });
+    console.log('loading data...');
+
+4. the callback function takes two arguments, first the error, second the data to be passed[this is the data from the file we read].
+5. we can read text file and using that text we read a new file matches that name in our txt folder.
+
+    fs.readFile('./txt/start.txt', 'utf-8', (err,data1) => {
+        fs.readFile(`./txt/${data1}.txt`, 'utf-8', (err,data2) => {
+            console.log(data2);
+        });
+    });
+    console.log('loading data...');
+
+6. in the above code data1 file text from first readFile() is read and passed using string literals in the second readFile()[refer video].
+
+    fs.readFile('./txt/start.txt', 'utf-8', (err,data1) => {
+        fs.readFile(`./txt/${data1}.txt`, 'utf-8', (err,data2) => {
+            console.log(data2);
+            fs.readFile(`./txt/append.txt`, 'utf-8', (err,data3) => {
+                console.log(data3);
+                fs.writeFile(`./txt/final.txt`, `${data2} ${data3}`, 'utf-8', (err) => {
+                    console.log('your file has been writen in final.txt file....');
+                });
+            });
+        });
+    });
+    console.log('loading data...');
+
+7. writeFile() function takes four arguments, first the file location, second the text to be written, third the character encoding, fourth the callback function.
+8. to rember while using arrow functions, this keyword is not availabe.
+9. we can handle error if readFile is not availabe.
+
+    if(err) return console.log('file not found');
+
+10. use this code inside callback function.
+
+# --------------------- 11. Creating a Simple Web Server --------------------- #
+1. http module gives us networking capabilities such as building an http server.
+2. it accepts request and sends back response.
+
+    const http = require('http');
+
+3. create a variable for that module.
+4. now use this to access methods to create server.
+
+    const server = http.createServer((req, res) => {
+        res.end('this is the message from the server');
+    })
+
+5. now we need to listen to the server that we created above in certain port and host address.
+
+    server.listen(8000, '127.0.0.1', () => {
+        console.log('listening to requests on port 8000');
+    });
+
+6. remember that use command ctrl + d to close REPL and ctrl + c to close running node file.
+7. now start the file using node space file_name.
+8. now the app wont close automatically because it is running and we need to close it manually using ctrl + c.
+9. goto 127.0.0.1:8000 in your browser.
+10. the text in the end() will be displayed in the webpage.
+11. this text came from the server we created using http module.
+12. we can also use console.log() and it will be displayed in our terminal where we run our node command.
+
+# -------------------------------- 12. Routing ------------------------------- #
+1. routing means implementing different actions for different urls.
+2. routing can actually become very very complicated in a big, real world application, and so on in that case we use a tool for that like express.
+3. 
+
+# --------------------- 13. Building a (Very) Simple API --------------------- #
+# ---------------- 14. HTML Templating: Building the Templates --------------- #
+# ---------------- 15. HTML Templating: Filling the Templates ---------------- #
+# ---------------------- 16. Parsing Variables from URLs --------------------- #
+# ------------------- 17. Using Modules 2: Our Own Modules ------------------- #
+# ------------- 18. Introduction to NPM and the package.json File ------------ #
+# -------------------- 19. Types of Packages and Installs -------------------- #
+# ------------------ 20. Using Modules 3: 3rd Party Modules ------------------ #
+# -------------------- 21. Package Versioning and Updating ------------------- #
+# -------------------- 22. Setting up Prettier in VS Code -------------------- #
