@@ -1,0 +1,20 @@
+# ------------------------------- INTRODUCTION ------------------------------- #
+
+# -------------------- 5. What Is Node.js and Why Use It? -------------------- #
+6. Running Javascript Outside the Browser
+7. Using Modules 1: Core Modules
+8. Reading and Writing Files
+9. Blocking and Non-Blocking: Asynchronous Nature of Node.js
+10. Reading and Writing Files Asynchronously
+11. Creating a Simple Web Server
+12. Routing
+13. Building a (Very) Simple API
+14. HTML Templating: Building the Templates
+15. HTML Templating: Filling the Templates
+16. Parsing Variables from URLs
+17. Using Modules 2: Our Own Modules
+18. Introduction to NPM and the package.json File
+19. Types of Packages and Installs
+20. Using Modules 3: 3rd Party Modules
+21. Package Versioning and Updating
+22. Setting up Prettier in VS Code
