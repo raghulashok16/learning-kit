@@ -1,0 +1,68 @@
+# -------------------- Section 4: High Order Array Methods ------------------- #
+26. Simple Examples
+27. Sum Of Even Squares
+28. Calculate Total Sales
+29. Highest Scoring Word
+30. Valid Anagrams
+31. Hashtag Generator
+32. Valid IPv4
+33. Analyze Car Mileage
+34. Password Validator
+35. Find Missing Letter Refactor
+
+# ---------------------------- 26. Simple Examples --------------------------- #
+# -------------------------- 27. Sum Of Even Squares ------------------------- #
+const method1 = (nums) => {
+    const answer = nums.filter((num) => num % 2 === 0)
+        .map((num) => num * num)
+        .reduce((sum, square) => sum + square, 0);
+    // console.log(answer);
+    return answer;
+};
+console.log(method1([1, 2, 3, 4, 5, 6, 7, 8]));
+
+# ------------------------- 28. Calculate Total Sales ------------------------ #
+const method1 = (products, tax) => {
+    const totalSales = products.reduce((sum, product) => sum + product.price * product.quantity, 0);
+    // console.log(totalSales);
+    const taxableAmount = (totalSales * tax) / 100;
+    // console.log(taxableAmount);
+    return totalSales + taxableAmount;
+};
+
+console.log(method1([
+    { name: 'ball', price: 360, quantity: 20 },
+    { name: 'bat', price: 5300, quantity: 50 },
+    { name: 'mat', price: 15000, quantity: 5 }
+], 18))
+
+# ------------------------- 29. Highest Scoring Word ------------------------- #
+const method1 = (str) => {
+    const words = str.split(' ');
+    // console.log(words);
+    const scores = words.map((word) => {
+        let totalScore = 0;
+        for (const letter of word) {
+            totalScore = totalScore + (letter.charCodeAt(0) - 96);
+            // console.log(totalScore);
+        }
+        return totalScore;
+    }
+    );
+    // console.log(scores);
+    const indexValue = Math.max(...scores);
+    return words[scores.indexOf(indexValue)];
+};
+console.log(method1("my name is xaviour"));
+
+# ---------------------------- 30. Valid Anagrams ---------------------------- #
+const method1 = (str1, str2) => {
+
+};
+console.log(method1('test', 'sett'));
+
+# --------------------------- 31. Hashtag Generator -------------------------- #
+# ------------------------------ 32. Valid IPv4 ------------------------------ #
+# -------------------------- 33. Analyze Car Mileage ------------------------- #
+# -------------------------- 34. Password Validator -------------------------- #
+# --------------------- 35. Find Missing Letter Refactor --------------------- #

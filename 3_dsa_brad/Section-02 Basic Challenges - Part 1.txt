@@ -1,9 +1,18 @@
 # ------------------- Section 2: Basic Challenges - Part 1 ------------------- #
-# ---------------------- HELLO WORLD (STARTER CHALLENGE) --------------------- #
+6. Hello World (Starter Challenge)
+7. Get Sum (Starter Challenege)
+8. Calculator
+9. Count Occurences
+10. Find Max Number
+11. Title Case
+12. Reverse String
+13. Palindrome
+14. Count Vowels
+15. Remove Duplicates
 
-# ----------------------- GET SUM (STARTER CHALLENEGE) ----------------------- #
-
-# -------------------------------- CALCULATOR -------------------------------- #
+# -------------------- 6. Hello World (Starter Challenge) -------------------- #
+# ---------------------- 7. Get Sum (Starter Challenege) --------------------- #
+# ------------------------------- 8. Calculator ------------------------------ #
 const method1 = (num1, num2, operator) => {
     switch (operator) {
         case "+": return num1 + num2;
@@ -16,7 +25,7 @@ const method1 = (num1, num2, operator) => {
 }
 console.log(method1(3, 8, "*"));
 
-# ----------------------------- COUNT OCCURRENCES ---------------------------- #
+# ---------------------------- 9. Count Occurences --------------------------- #
 const method1 = (str, val) => {
     count = 0;
     for (let i = 0; i < str.length; i++) {
@@ -34,7 +43,7 @@ const method2 = (str, val) => {
 }
 method2("raaghul", "a");
 
-# -------------------------------- MAX NUMBER -------------------------------- #
+# ---------------------------- 10. Find Max Number --------------------------- #
 const method1 = (arr) => {
     console.log(Math.max(...arr));
 }
@@ -51,8 +60,7 @@ const method2 = (arr) => {
 }
 method2([1, 56, 2, 6, 65, 51, 452, 26, 62, 2]);
 
-
-# --------------------------------- TITLECASE -------------------------------- #
+# ------------------------------ 11. Title Case ------------------------------ #
 const method1 = (str) => {
     let words = str.toLowerCase().split(" ");
     for (let i = 0; i < words.length; i++) {
@@ -62,7 +70,7 @@ const method1 = (str) => {
 }
 method1("hello world hello world");
 
-# ------------------------------ REVERSE STRING ------------------------------ #
+# ---------------------------- 12. Reverse String ---------------------------- #
 const method1 = (str) => {
     console.log(str.split('').reverse().join(''));
 }
@@ -77,7 +85,7 @@ const method2 = (str) => {
 }
 method2('jasper');
 
-# -------------------------------- PALINDROME -------------------------------- #
+# ------------------------------ 13. Palindrome ------------------------------ #
 const method1 = (str) => {
     console.log((str.split('').reverse().join('')) === str);
 }
@@ -93,7 +101,7 @@ const method2 = (str) => {
 }
 method2("racecar");
 
-# ------------------------------- COUNT VOWELS ------------------------------- #
+# ----------------------------- 14. Count Vowels ----------------------------- #
 const method1 = (str) => {
     let count = 0;
     const input = str.toLowerCase();
@@ -111,7 +119,7 @@ const method1 = (str) => {
 }
 method1('time to get all the inputs');
 
-# ----------------------------- REMOVE DUPLICATES ---------------------------- #
+# --------------------------- 15. Remove Duplicates -------------------------- #
 const method1 = (arr) => {
     const uniqueArray = [];
     for (let i = 0; i < arr.length; i++) {

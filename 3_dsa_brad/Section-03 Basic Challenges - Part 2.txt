@@ -1,6 +1,16 @@
+# ------------------- Section 3: Basic Challenges - Part 2 ------------------- #
+16. FizzBuzz Array
+17. Array Intersection
+18. Display Likes
+19. Find Missing Number
+20. Find Missing Letter
+21. Are All Chars Unique?
+22. First Non-Repeating Character
+23. Dice Game Simulation
+24. Format Phone Number
+25. Validate Email
 
-
-# --------------------------------- FIZZBUZZ --------------------------------- #
+# ---------------------------- 16. FizzBuzz Array ---------------------------- #
 const method1 = (num) => {
     let arr = [];
     for (let i = 1; i <= num; i++) {
@@ -19,7 +29,7 @@ const method1 = (num) => {
 method1(15);
 method1(5);
 
-# ---------------------------- ARRAY INTERSECTION ---------------------------- #
+# -------------------------- 17. Array Intersection -------------------------- #
 const method1 = (arr1, arr2) => {
     const intersection = [];
 
@@ -32,7 +42,7 @@ const method1 = (arr1, arr2) => {
 };
 method1([1, 5, 3, 6, 8], [1, 33, 5, 43, 10]);
 
-# ------------------------------- DISPLAY LIKES ------------------------------ #
+# ----------------------------- 18. Display Likes ---------------------------- #
 const method1 = (arr) => {
     const count = arr.length;
     console.log(count);
@@ -56,7 +66,7 @@ method1(['raghul', 'ashok', 'kamal', 'sundar', 'suresh']);
 method1(['raghul', 'ashok', 'kamal']);
 method1([]);
 
-# ------------------------------ MISSING NUMBERS ----------------------------- #
+# -------------------------- 19. Find Missing Number ------------------------- #
 const method1 = (arr) => {
     let actualValue = 0;
     const n = arr.length + 1;
@@ -68,7 +78,7 @@ const method1 = (arr) => {
 };
 method1([1, 2, 3, 4, 5, 7, 8, 9, 10]);
 
-# ------------------------------ MISSING LETTERS ----------------------------- #
+# -------------------------- 20. Find Missing Letter ------------------------- #
 const method1 = (arr) => {
     const letters = 'abcdefghijklmnopqrstvuwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const index = letters.indexOf(arr[0]);
@@ -104,7 +114,7 @@ method2(['e', 'g', 'h']);
 method2(['R', 'T', 'U']);
 method2(['K', 'L', 'N']);
 
-# ----------------------------- ALL CHARS UNIQUE ----------------------------- #
+# ------------------------- 21. Are All Chars Unique? ------------------------ #
 const method1 = (str) => {
     const uniqueArray = [];
     for (let i = 0; i < str.length; i++) {
@@ -150,7 +160,7 @@ console.log(method3('abcdefg'));
 console.log(method3('abab'));
 console.log(method3('Aeioua'));
 
-# ------------------------ FIRST NON REPEATING NUMBERS ----------------------- #
+# --------------------- 22. First Non-Repeating Character -------------------- #
 const method1 = (arr) => {
     const tempObject = {};
     for (const char of arr) {
@@ -166,7 +176,7 @@ const method1 = (arr) => {
 };
 console.log(method1(['a', 'd', 'f', 'r', 'q', 'd', 'p', 'a', 'a']));
 
-# --------------------------------- DICE GAME -------------------------------- #
+# ------------------------- 23. Dice Game Simulation ------------------------- #
 function rollDice() {
     const diceValue = Math.floor(Math.random() * 6) + 1;
     return diceValue;
@@ -193,7 +203,7 @@ const method1 = (numSimulations) => {
 };
 console.log(method1(4));
 
-# ---------------------------- FORMAT PHONE NUMBER --------------------------- #
+# -------------------------- 24. Format Phone Number ------------------------- #
 const method1 = (phoneNumber) => {
     const areacode = phoneNumber.slice(0, 3).join('');
     const prefix = phoneNumber.slice(3, 6).join('');
@@ -210,56 +220,4 @@ const method2 = (phoneNumber) => {
 };
 console.log(method2([9, 8, 6, 8, 1, 8, 4, 6, 2, 6,]));
 
-# ------------------------------- FORMAT EMAIL ------------------------------- #
-const method1 = (index) => { };
-
-# ----------------------------- SUM EVEN SQUARES ----------------------------- #
-const method1 = (nums) => {
-    const answer = nums.filter((num) => num % 2 === 0)
-        .map((num) => num * num)
-        .reduce((sum, square) => sum + square, 0);
-    // console.log(answer);
-    return answer;
-};
-console.log(method1([1, 2, 3, 4, 5, 6, 7, 8]));
-
-# --------------------------- CALCULATE TOTAL SALES -------------------------- #
-const method1 = (products, tax) => {
-    const totalSales = products.reduce((sum, product) => sum + product.price * product.quantity, 0);
-    // console.log(totalSales);
-    const taxableAmount = (totalSales * tax) / 100;
-    // console.log(taxableAmount);
-    return totalSales + taxableAmount;
-};
-
-console.log(method1([
-    { name: 'ball', price: 360, quantity: 20 },
-    { name: 'bat', price: 5300, quantity: 50 },
-    { name: 'mat', price: 15000, quantity: 5 }
-], 18))
-
-# --------------------------- HIGHEST SCORING WORD --------------------------- #
-const method1 = (str) => {
-    const words = str.split(' ');
-    // console.log(words);
-    const scores = words.map((word) => {
-        let totalScore = 0;
-        for (const letter of word) {
-            totalScore = totalScore + (letter.charCodeAt(0) - 96);
-            // console.log(totalScore);
-        }
-        return totalScore;
-    }
-    );
-    // console.log(scores);
-    const indexValue = Math.max(...scores);
-    return words[scores.indexOf(indexValue)];
-};
-console.log(method1("my name is xaviour"));
-
-# ------------------------------- VALID ANAGRAM ------------------------------ #
-const method1 = (str1, str2) => {
-
-};
-console.log(method1('test', 'sett'));
-
+# ---------------------------- 25. Validate Email ---------------------------- #
