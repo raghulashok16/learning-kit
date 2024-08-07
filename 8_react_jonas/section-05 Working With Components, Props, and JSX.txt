@@ -1,0 +1,165 @@
+# ------------ Section 5: Working With Components, Props, and JSX ------------ #
+33. Rendering the Root Component and Strict Mode
+34. Before We Start Coding: Debugging
+35. Components as Building Blocks
+36. Creating And Reusing a Component
+37. What is JSX?
+38. Creating More Components
+39. JavaScript Logic in Components
+40. Separation of Concerns
+41. Styling React Applications
+42. Passing and Receiving Props
+43. Props, Immutability, and One-Way Data Flow
+44. CHALLENGE #1: Profile Card (v1)
+45. The Rules of JSX
+46. Rendering Lists
+47. Conditional Rendering With &&
+48. Conditional Rendering With Ternaries
+49. Conditional Rendering With Multiple Returns
+50. Extracting JSX Into a New Component
+51. Destructuring Props
+52. React Fragments
+53. Setting Classes and Text Conditionally
+54. Section Summary
+55. CHALLENGE #2: Profile Card (v2)
+
+# ------------- 33. Rendering the Root Component and Strict Mode ------------- #
+1. delete all files in src folder.
+2. create index.js, it is the entry point.
+
+    import React from 'react';
+    import ReactDom from 'react-dom/client';
+
+3. now create a function app.
+
+    function App() {
+        return <h1>Hello Raghul</h1>;
+    }
+
+4. now create the root.
+
+    const root = ReactDom.createRoot(document.getElementById("root"));
+
+5. finally render the app component with root which we created now.
+
+    root.render(<App/>);
+
+6. this method is react v18 and before 18 render was different.
+
+Strict Mode:
+1. wrapping app component inside react.strictmode component.
+
+    root.render(
+        <React.StrictMode>
+            <App/>
+        </React.StrictMode>
+    );
+
+2. it will render twice while development.
+3. it will check if there are any outdated parts of the React API.
+4. it is a good practise to use strict mode in development process because it will help us find bugs.
+
+
+# ------------------- 34. Before We Start Coding: Debugging ------------------ #
+1. if our changes did not reflect in browser, then check if our app is running, if not we can stop and restart the app again, you can also hard reload the browser.
+2. always check on the terminal and inpect window open in all time.
+3. Eslint will warn about the unused variables as warnings.
+
+# --------------------- 35. Components as Building Blocks -------------------- #
+1 .components are the fundamental parts of react.
+2. react applications are entirely made out of components.
+3. these are building blocks of user interfaces in react.
+4. basically react takes all components and draw them onto a webpage.
+5. in technical terms, react renders a view for each component, ald all these views together make up the user interface.
+6. component is piece of ui that has its own data, logic and appearance.
+7. in react we build complex ui by building multiple components and combining them.
+8. components can be reused, nested inside each other, and pass data between them.
+
+# ------------------- 36. Creating And Reusing a Component ------------------- #
+1. in react we write components using functions and it is called functional components.
+
+    function Pizza () {
+        return (
+            <h2>pizza</h2>
+        );
+    }
+
+2. rules: 
+    -- function name should start with capital letter.
+    -- function needs to return some markups.
+    -- each function should return one single parent element.
+    -- multiple child element are not allowed to return from the functional component.
+    -- nesting components will work but not recomended.
+
+    function App () {
+        function Pizza () {
+            return (
+                <h2>pizza</h2>
+            );
+        }
+        return (
+            <div>
+                <p>today special</p>
+                <Pizza/>
+            </div>
+        );
+    }
+
+    -- the above code will work but not recomended by develpers.
+
+
+3. after creating the functional component add the component name as element as shown below.
+
+    function App () {
+        return (
+            <div>
+                <p>today special</p>
+                <Pizza/>
+            </div>
+        );
+    }
+
+# ----------------------------- 37. What is JSX? ----------------------------- #
+1. JSX is a declarative syntax to describe what components look like and how they work.
+2. so each component must return one block of JSX, which react will ten use to render the component on the ui.
+3. JSX is the extension of javascript that allows us to embed javascript, css and react components into HTML.
+4. babel is a tool which is included when we create a react app and this tool automatically converts our JSX into javascript.
+5. each JSX element is connverted automatically to a React.createElement function call like the below.
+
+    <header>
+        <h1 style= "color: red">
+            Hello React!
+        </h1>
+    </header>
+
+    React.createElement(
+        'header',
+        null,
+        React.createElement(
+            'h1',
+            { style: { color: 'red' } },
+            'Hello React!',
+        )
+    );
+
+6. when we try to build UI using vanilla javascript, we will use a imperative approach.
+7. this means that we manually select elements, 
+
+# ----------------------- 38. Creating More Components ----------------------- #
+# -------------------- 39. JavaScript Logic in Components -------------------- #
+# ------------------------ 40. Separation of Concerns ------------------------ #
+# ---------------------- 41. Styling React Applications ---------------------- #
+# ---------------------- 42. Passing and Receiving Props --------------------- #
+# -------------- 43. Props, Immutability, and One-Way Data Flow -------------- #
+# -------------------- 44. CHALLENGE 1: Profile Card (v1) -------------------- #
+# --------------------------- 45. The Rules of JSX --------------------------- #
+# ---------------------------- 46. Rendering Lists --------------------------- #
+# --------------------- 47. Conditional Rendering With && -------------------- #
+# ----------------- 48. Conditional Rendering With Ternaries ----------------- #
+# -------------- 49. Conditional Rendering With Multiple Returns ------------- #
+# ------------------ 50. Extracting JSX Into a New Component ----------------- #
+# -------------------------- 51. Destructuring Props ------------------------- #
+# ---------------------------- 52. React Fragments --------------------------- #
+# ---------------- 53. Setting Classes and Text Conditionally ---------------- #
+# ---------------------------- 54. Section Summary --------------------------- #
+# -------------------- 55. CHALLENGE 2: Profile Card (v2) -------------------- #

@@ -1,0 +1,181 @@
+# ------ Section 4: [Optional] Review of Essential JavaScript for React ------ #
+18. Destructuring Objects and Arrays
+19. Rest/Spread Operator
+20. Template Literals
+21. Ternaries Instead of if/else Statements
+22. Arrow Functions
+23. Short-Circuiting And Logical Operators: &&, ||, ??
+24. Optional Chaining
+25. The Array map Method
+26. The Array filter Method
+27. The Array reduce Method
+28. The Array sort Method
+29. Working With Immutable Arrays
+30. Asynchronous JavaScript: Promises
+31. Asynchronous JavaScript: Async/Await 
+
+# ------------------- 18. Destructuring Objects and Arrays ------------------- #
+1. destructuring allow us to access single or multiple values in a single line.
+
+    const {title, author} = bookObject;
+
+2. the name we use to destruct must be same as the key name in the object.
+3. this is very helpfull when we work with api.
+4. for array destructuring, we can use the same way but we should use a square bracket instead of cury braces.
+
+    const [firstElement, SecondElement, ThirdElement] = ourArray;
+
+# ------------------------- 19. Rest/Spread Operator ------------------------- #
+1. rest operator is used to store the remaining values into our required operation.
+2. in array destructuring we can use rest operator to store excess element in a array.
+
+    const [firstElement, ...otherElements] = ourArray;
+
+3. in array destructuring it is mandatory to use rest operator at end.
+4. if we destruct a element after rest operator it will result in a error.
+5. the main use of spread operator is to get all the value out of a array/object.
+
+    const ourArray = [...arr1, ...arr2];
+
+6. the above code is used to create a new array without affecting the original array.
+
+    const ourArray = [...arr1, 'newElement'];
+
+7. in this example we can create a new array by adding a aditional string element at the end.
+8. same is used to create an object.
+
+    const newObj = {
+        ...oldObj,
+        pages:1210,
+        author:'raghul ashok',
+    };
+
+9. the above code will create a new object without affecting the original oldObj.
+10. the additional properties will be overwritten in the newObj.
+11. to override an existing property always use spread operator at the begining.
+
+# --------------------------- 20. Template Literals -------------------------- #
+1. it was introduced in es6.
+2. it mainly used to use js expressions inside strings.
+
+    const summary = `${title} ia a book with ${5+6} pages`;
+    const letters = `${author.split('-')}`;
+
+# ---------------- 21. Ternaries Instead of if/else Statements --------------- #
+1. it is a special operator with three operands.
+
+    pages>1000 ? 'over a thousand' : 'less than thousand';
+    const result = `rammin got ${marks>49 ? 'pass' : 'fail'} marks`;
+
+# ---------------------------- 22. Arrow Functions --------------------------- #
+1. it is a new way of writing functions in javascript.
+2. it was introduced in es6.
+3. it is also called one liner function.
+
+# ---------- 23. Short-Circuiting And Logical Operators: &&, ||, ?? ---------- #
+1. in the short circuiting with &&, if the first value is true then the second value will run, if first value is false then the second value will not run.
+2. in the short circuiting with ||,if first value is true then the second value will not run, if the first value is false then the second value will run.
+3. but when we use nullish coalescing operator, if the first value is null/undefined then the second value will run.
+
+# --------------------------- 24. Optional Chaining -------------------------- #
+1. sometimes we face a error 'cannot read properties of undefined'.
+2. this occurs mostly in accessing obect key which was not there.
+
+    const bookReview = book.reviews.libraryyhing?.reviews;
+    const bookReview = book.reviews?.libraryyhing?.reviews ?? 0;
+
+3. (?.) - is the optional chanining symbol.
+4. by using optional chanining we can set default value because js will throw error if we try to read undefined.
+
+# ------------------------- 25. The Array map Method ------------------------- #
+1. these method do not mutate the original array.
+2. basically a map method will loop through all the element in the array and returs the same length with some operation applied.
+
+    const x = [1,2,3,4,5].map((el) => el*2);
+
+# ------------------------ 26. The Array filter Method ----------------------- #
+1. it is used to filter out elements based on the conditions we apply.
+
+    const x = [1,2,3,4,5,6].filter((el) => el%2===0);
+    const indianBooks = books.filter((book) => book.contry ==='india' );
+
+2. we chain multiple filter methods.
+
+    const x = [1,2,3,4,5,6].filter((el) => el%2 === 0).filter((el) => el%3 === 0);
+
+# ------------------------ 27. The Array reduce Method ----------------------- #
+1. reduce method is the most versatile and most powerfull method in js.
+2. the goal of the reduce method is to reduce to a single value output.
+3. reduce method has 2 things a function and a starting value.
+4. that function has 2 things accumulator and a working array value.
+
+    const pagesAllBooks = books.reduce((acc,book)=>acc+book.pages,0);
+
+# ------------------------- 28. The Array sort Method ------------------------ #
+1. to sort a array in ascending way use a-b;
+
+    const sorted = arr.sort((a,b) => a-b);
+
+2. to sort a array in descending way use b-a;
+
+    const sorted = arr.sort((a,b) => b-a);
+
+3. while using array sort method use it caustious, because it mutates the original array.
+4. in react we need this sort method in most times.
+5. so there is a solution for that using slice().
+
+    const sorted = arr.slice().sort((a,b) => a-b);
+
+6. with this method we can still work without affecting the original array.
+7. this same method is used for sorting objects using any key.
+
+    const sorted = arr.slice().sort((a,b) => a.pages-b.pages);
+
+8. here we have to mention the correct key name of property or else it wont work.
+9. finally we can do both ascending and descending sort with both object and array.
+
+# --------------------- 29. Working With Immutable Arrays -------------------- #
+1. add book object to end of the array.
+
+    const newBook = {
+        id: 6,
+        author: 'kim',
+    };
+    const booksAfterAdd = [...books, newBook];
+
+2. delete book object from array having id 3.
+
+    const booksAfterDelete = books.filter((book) => book.id !== 3);
+
+3. update book page number to 1201 in object which has id = 1 in the array.
+
+    const bookAfterUpdate = books.map((book) => book.id === 1 ? { ...book, pages: 1201 } : book);
+
+# ------------------- 30. Asynchronous JavaScript: Promises ------------------ #
+1. in order to fetch data from an api in the browser we have a method called fetch API.
+2. it is a function into which we pass a url of an api.
+3. to test the fetch method use a dummy api.
+4. json placeholder is a dummy api website availabe.
+5. fetch method basically returns a promise.
+6. promise can be anything like - pending,error,fullfiled,etc.
+7. we can add .then() to work with that promise.
+8. then() will be automatically called as soon the promise fullfiled status.
+
+    fetch('api url')
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+
+9. res is the response from the api which needs to be converted.
+10. data is the converted format which we use in the react applications.
+
+# ----------------- 31. Asynchronous JavaScript: Async/Await ----------------- #
+1. this is another method to fetch data from api url.
+
+    async function getData() {
+        const res = await fetch('api url');
+        const data = await res.json();
+        console.log(data);
+    }
+
+2. avoid returns from async function beacuse javascript wont wait in normal function.
+3. so for that purpose async functions was introduced just to set state variable for component.
