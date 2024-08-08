@@ -1,0 +1,54 @@
+# ----------------- Section 2: Diving Into the Basics of CSS ----------------- #
+14. Adding CSS to our Project with Inline Styles
+15. Understanding the <style> Tag & Creating a .css File
+16. Applying Additional Styles & Importing Google Fonts
+17. Theory Time - Selectors
+18. Understanding the "Cascading" Style & Specificity​
+19. Understanding Inheritance
+20. Adding Combinators
+21. Theory Time - Combinators
+22. Summarizing Properties & Selectors
+
+# ------------- 14. Adding CSS to our Project with Inline Styles ------------- #
+1. using inline styling.
+
+    <p style="color:red">helo css</p>
+
+# --------- 15. Understanding the <style> Tag & Creating a .css File --------- #
+1. using style tag.
+
+    <style>
+        p{
+            color:red;
+        }
+    </style>
+
+2. using external css file.[create a file name 'main.css'][inside this file write the css code]
+
+    <link rel="stylesheet" href="main.css">
+
+# ---------- 16. Applying Additional Styles & Importing Google Fonts --------- #
+FONT COLOR:
+1. to change a font color use 'color' property.
+
+    color: white;
+
+CHANGING FONT STYLE:
+1. to change font style use 'font-family' property.
+
+    font-family: sans-serif;
+
+2. there are some default fonts available in our browser.
+3. open your browser setting and you change the default and other fonts.
+
+GOOGLE FONTS:
+1. goto google fonts website and select your prefered font.
+2. copy the link tag and past above the css link tag.
+3. and then we can use our selected font using 'font-family' property availabe in the website.
+
+# ------------------------ 17. Theory Time - Selectors ----------------------- #
+# ---------- 18. Understanding the "Cascading" Style & Specificity​ ---------- #
+# ----------------------- 19. Understanding Inheritance ---------------------- #
+# -------------------------- 20. Adding Combinators -------------------------- #
+# ----------------------- 21. Theory Time - Combinators ---------------------- #
+# ------------------ 22. Summarizing Properties & Selectors ------------------ #
