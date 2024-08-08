@@ -1,0 +1,21 @@
+# -------------------------- Section-01 Introduction ------------------------- #
+2. What is CSS?
+4. CSS History, Present & Future
+
+# ------------------------------ 2. What is CSS? ----------------------------- #
+1. css - cascading style sheet.
+2. it make our webpage look good.
+3. usualy webpage consist html.
+4. html shows content on your page.
+5. so there are no webpage without html.
+6. on the otherhand css allow us to style the html content.
+7. it allow us to add colors, shadows, visual effects, etc.
+8. css will change our boring html pages into good looking webpage.
+
+# --------------------- 4. CSS History, Present & Future --------------------- #
+1. it was introduced in 1996, refered as css 1.
+2. in 1998, css2 was introduced.
+3. still css3 is in development.
+4. and no css4 will be there.
+5. instead of creating new versions css was sub divided into independent modules.
+6. modules on text, modules on color, modules on shadows, etc.
