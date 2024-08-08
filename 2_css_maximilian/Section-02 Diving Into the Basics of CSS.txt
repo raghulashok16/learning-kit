@@ -78,6 +78,15 @@ GOOGLE FONTS:
     }
 
 # ---------- 18. Understanding the "Cascading" Style & Specificity​ ---------- #
+1. if try to style two times to a tag, then some style override others.
+2. so multiple rules affect the css styles.
+3. specificity comes to play when we use multiple rules.
+4. highest priority selectors will win.
+5. "cascading" in  CSS  describes the method by which the browser determines which styles to apply to a given HTML element when there are multiple, potentially conflicting, rules.
+6. so specificity resolves these conflicts.
+7. inline->ID->class,pseudo-class,attribute->tag,pseudo-element selectors.
+8. these are the order of specificity and inline has the highest priority.
+
 # ----------------------- 19. Understanding Inheritance ---------------------- #
 # -------------------------- 20. Adding Combinators -------------------------- #
 # ----------------------- 21. Theory Time - Combinators ---------------------- #
