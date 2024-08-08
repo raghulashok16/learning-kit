@@ -12,10 +12,10 @@
 19. CHALLENGE #2
 
 # -------------------------- 9. Introduction to HTML ------------------------- #
-1. html stands for hypertext markup language.
+1. 'html' stands for hypertext markup language.
 2. it is one of the core web technologies along with css and javasccript.
-3. html is a markup language that web developers use to structure and describe the content of a webpage [it is not a programming language].
-4. html consists of elements that describe different types of content: paragraph, links, headings, images, video, etc.
+3. 'html' is a markup language that web developers use to structure and describe the content of a webpage [it is not a programming language].
+4. 'html' consists of elements that describe different types of content: paragraph, links, headings, images, video, etc.
 5. web browser understand html code and render html code as websites.
 
     ANATOMY OF AN HTML ELEMENT:
@@ -28,10 +28,85 @@
 6. in certain tags there will be no closing tag and that elements are called self closing elements.
 
 # ------------------------ 10. HTML Document Structure ----------------------- #
+1. <!DOCTYPE html> this is used to tell the browser that this document contains html.
+
 # ----------------------------- 11. Text Elements ---------------------------- #
+HEADINGS:
+    1. <h1>heading 1</h1>
+    2. <h1>heading 2</h1>
+    3. <h1>heading 3</h1>
+    4. <h1>heading 4</h1>
+    5. <h1>heading 5</h1>
+    6. <h1>heading 6</h1>
+    7. 'h1' is most important and most big in size.
+    8. 'h6' is least important and most small in size.
+
+PARAGRAPH:
+    1. <p>sample text here</p>
+    2. this helps to add text content in webpages.
+
+COMMENTS:
+    1. there are 2 different comment in html.
+    2. single line and multi line comments.
+
+BOLD TEXT:
+    1. <b>bolded text</b>
+    2. 'b' is not a good practice because it is the old way.
+    3. <strong>new method of bold text</strong>
+    4. same result as 'b' element.
+
+ITALIC TEXT:
+    1. <i>italic text</i>
+    2. it is the older way.
+    3. so use the new method using emphasize.
+    4. <em>same as italic text</em>
+    
 # ----------------------- 12. More Text Elements: Lists ---------------------- #
+ORDERED LIST:
+    1.  <ol>
+            <li>list content</li>
+            <li>list content</li>
+            <li>list content</li>
+            <li>list content</li>
+        </ol>
+    2. 'li' is the list item.
+    3. 'ol' is the ordered list.
+    4. 'li' is the child element of the parent element 'ol'.
+    5. this comes with numbered list styles.
+UNORDERED LIST:
+    1.  <ul>
+            <li>list content</li>
+            <li>list content</li>
+            <li>list content</li>
+            <li>list content</li>
+        </ul>
+    2. 'li' is the list item.
+    3. 'ul' is the unordered list.
+    4. 'li' is the child element of the parent element 'ul'.
+    5. this comes with bullet list styles.
+
 # ------------------------- 13. Images and Attributes ------------------------ #
+1. <img /> is used to show images in the html page.
+2. Attributes are pieces of data which we can use to describe elements.
+3. there are lot of attributes in html and one of them is source attribute.
+4. <img source="post.jpg" alt="this image consists of html code" />
+5. 'alt' stand for alternative text.
+6. 'alt' should contain some text which describes the image because it will be used in the search engines which helps identify the browser what is in the image.
+7. this will be also very helpfull for the blind people beacuse the device will read the alternative text which will describe the image to that blind people.
+8. <img source="post.jpg" width="500" height="200" />
+9. height and width property can be set to the images using attributes.
+10. on addition we can set units to the height and width property.
+11. we have another attribute called "lang" which is used to specify the language used in the html file.
+12. <html lang="en"></html> for english.
+13. <html lang="de"></html> for german.
+14. <html lang="pt"></html> for portuguese.
+15. to specify the charater set used in the document there is a attribute called charset and it should be used in the 'meta' tag inside 'head' tag.
+16. <meta charset="UTF-8" />
+
 # ------------------------------ 14. Hyperlinks ------------------------------ #
+1. 
+
+
 # ------------------------- 15. Structuring our Page ------------------------- #
 # ------------------------ 16. A Note on Semantic HTML ----------------------- #
 # --------------- 17. Installing Additional VS Code Extensions --------------- #
