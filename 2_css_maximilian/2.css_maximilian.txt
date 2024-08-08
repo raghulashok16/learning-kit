@@ -6,72 +6,8 @@
 # -------------------------------- INHERITANCE ------------------------------- #
 
 # -------------------------------- COMBINATORS ------------------------------- #
-1. combinator allow us to combine multiple selectors to be more precise about what we want to select.
 
 # ---------------------------- LIST OF COMBINATORS --------------------------- #
-1. adjacent sibling [element share same parent] [second element comes immediately after first element]
-
-    h2 + p {
-        color: red;
-    }
-
-    <div>
-        <h2>nope</h2>
-        <p>css applied</p>
-        <h2>nope</h2>
-        <h3>nope</h3>
-        <p>nope</p>
-        <h2>nope</h2>
-        <p>css applied</p>
-    </div>
-
-2. general sibling [elements share same parent] [second element comes after first element]
-
-    h2 ~ p {
-        color: red;
-    }
-
-    <div>
-        <h2>nope</h2>
-        <p>css applied</p>
-        <h2>nope</h2>
-        <h3>nope</h3>
-        <p>css applied</p>
-    </div>
-
-3. child combinator [second element is a direct child of first element]
-
-    div > p {
-        color: red;
-    }
-
-    <div>
-        <h2>nope</h2>
-        <p>css applied</p>
-        <div>nope</div>
-        <article>
-            <p>nope</p>
-        </article>
-        <h3>nope</h3>
-        <p>css applied</p>
-    </div>
-
-4. descendant combinator [second element is a descendant of the first element]
-
-    div p {
-        color: red;
-    }
-
-    <div>
-        <h2>nope</h2>
-        <p>css applied</p>
-        <div>nope</div>
-        <article>
-            <p>css applied</p>
-        </article>
-        <h3>nope</h3>
-        <p>css applied</p>
-    </div>
 
 # ------------------- HOW TO CHECK BOX MODEL IN OUR BROWSER ------------------ #
 1. every element in html is interpreted as a box by css.
