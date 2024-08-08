@@ -4,10 +4,6 @@
 # ------------------------- CASCADING AND SPECIFICITY ------------------------ #
 
 # -------------------------------- INHERITANCE ------------------------------- #
-1. some styles pass down to the child elements.
-2. usualy font-family comes to the child elements.
-3. this will work when we set specific font-family to the body tag.
-4. so inheritance is very important when passing down styles to the child elements.
 
 # -------------------------------- COMBINATORS ------------------------------- #
 1. combinator allow us to combine multiple selectors to be more precise about what we want to select.
