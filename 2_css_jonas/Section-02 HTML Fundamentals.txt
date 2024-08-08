@@ -104,10 +104,24 @@ UNORDERED LIST:
 16. <meta charset="UTF-8" />
 
 # ------------------------------ 14. Hyperlinks ------------------------------ #
+1. we can place links into two big categories.
+2. links that point to other pages within our own websites.
+3. links that point to outside of our website.
+4. 'a' tag is called Hyperlinks/anchor tag.
+5. <a href="paste mdn website link" >MDN Web Docs</a>
+6. we can place the link inside a paragraph tag.
+7. we can also open a link in the new tab using 'target' attribute.
+8. <a href="..." target="_blank" >MDN Web Docs</a>
+9. in the above example, we used link which points to outside of our website.
+10. <a href="file_name.html">contacts page</a>
+11. in the above example, we used link which points to inside of our website.
+12. <a href="#">goto top of our page</a>
+13. this moves to the top of our webpage.
+
+# ------------------------- 15. Structuring our Page ------------------------- #
 1. 
 
 
-# ------------------------- 15. Structuring our Page ------------------------- #
 # ------------------------ 16. A Note on Semantic HTML ----------------------- #
 # --------------- 17. Installing Additional VS Code Extensions --------------- #
 # ------------------------------ 18. CHALLENGE 1 ----------------------------- #
