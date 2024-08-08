@@ -119,10 +119,26 @@ UNORDERED LIST:
 13. this moves to the top of our webpage.
 
 # ------------------------- 15. Structuring our Page ------------------------- #
-1. 
+1. 'nav' stands for navigation and wrap the anchor tags inside it.
+2. wrap the heading and nav inside the 'header' tag.
+3. 'article' is 
+4. inside the article tag we can use header tag to specifically mention it.
+5. 'footer' is used to specify the bootom of the webpage which contain like copyright.
 
 
 # ------------------------ 16. A Note on Semantic HTML ----------------------- #
+1. in html semantic means is that certain elements have actually a meaning or a purpose attached to them.
+2. so when we think a certain html element, we should actually not think about what that element look like as it's rendered on the page but instead, we should think about what that element actually means and what it stands for.
+3. so that is basically the definition of semantic html.
+4. not all elements in html are semantic.
+5. semantic html helps in seo optimization.
+
 # --------------- 17. Installing Additional VS Code Extensions --------------- #
+1. image preview - Extension
+2. color hilight - Extension
+3. auto rename tag - Extension
+4. live server - Extension
+
 # ------------------------------ 18. CHALLENGE 1 ----------------------------- #
+
 # ------------------------------ 19. CHALLENGE 2 ----------------------------- #

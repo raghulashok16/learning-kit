@@ -1,0 +1,48 @@
+# ------------------------ Section 3: CSS Fundamentals ----------------------- #
+21. Introduction to CSS
+22. Inline, Internal and External CSS
+23. Styling Text
+24. Combining Selectors
+25. Class and ID Selectors
+26. Working With Colors
+27. Pseudo-classes
+28. Styling Hyperlinks
+29. Using Chrome DevTools
+30. CSS Theory #1: Conflicts Between Selectors
+31. CSS Theory #2: Inheritance and the Universal Selector
+32. CHALLENGE #1
+33. CSS Theory #3: The CSS Box Model
+34. Using Margins and Paddings
+35. Adding Dimensions
+36. Centering our Page
+37. CHALLENGE #2
+38. CSS Theory #4: Types of Boxes
+39. CSS Theory #5: Absolute Positioning
+40. Pseudo-elements
+41. Developer Skill #1: Googling and Reading Documentation
+42. Developer Skill #2: Debugging and Asking Questions
+43. CHALLENGE #3
+
+# -------------------------- 21. Introduction to CSS ------------------------- #
+# ------------------- 22. Inline, Internal and External CSS ------------------ #
+# ----------------------------- 23. Styling Text ----------------------------- #
+# -------------------------- 24. Combining Selectors ------------------------- #
+# ------------------------ 25. Class and ID Selectors ------------------------ #
+# -------------------------- 26. Working With Colors ------------------------- #
+# ---------------------------- 27. Pseudo-classes ---------------------------- #
+# -------------------------- 28. Styling Hyperlinks -------------------------- #
+# ------------------------- 29. Using Chrome DevTools ------------------------ #
+# --------------- 30. CSS Theory 1: Conflicts Between Selectors -------------- #
+# --------- 31. CSS Theory 2: Inheritance and the Universal Selector --------- #
+# ------------------------------ 32. CHALLENGE 1 ----------------------------- #
+# -------------------- 33. CSS Theory 3: The CSS Box Model ------------------- #
+# ---------------------- 34. Using Margins and Paddings ---------------------- #
+# --------------------------- 35. Adding Dimensions -------------------------- #
+# -------------------------- 36. Centering our Page -------------------------- #
+# ------------------------------ 37. CHALLENGE 2 ----------------------------- #
+# --------------------- 38. CSS Theory 4: Types of Boxes --------------------- #
+# ------------------ 39. CSS Theory 5: Absolute Positioning ------------------ #
+# ---------------------------- 40. Pseudo-elements --------------------------- #
+# --------- 41. Developer Skill 1: Googling and Reading Documentation -------- #
+# ----------- 42. Developer Skill 2: Debugging and Asking Questions ---------- #
+# ------------------------------ 43. CHALLENGE 3 ----------------------------- #
