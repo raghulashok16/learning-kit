@@ -66,5 +66,8 @@ Method 2:
 9. here you have to create this <HomePage/> and <Books/> component.
 
 # ----------------------------- 7. Styling Paths ----------------------------- #
+1. using syleed components is a way of creating components.
+2. it reduces to create new files separate for css.
+
 # -------------------------- 8. 404 Not Found Routes ------------------------- #
 # ------------------------- 9. Redirecting 404 Routes ------------------------ #
