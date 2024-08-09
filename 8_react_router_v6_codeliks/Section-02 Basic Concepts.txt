@@ -41,6 +41,26 @@ Method 2:
 
     import {BrowserRouter, Routes, Route} from "react-router-dom";
 
+3. with 'Route' we are going to specify which component is going to render in which url.
+4. multiple 'Route' can be specified inside 'Routes' component.
+5. every 'Route' consists two configurations one is path and another one is element.
+6. '/' is the home route path.
+
+    localhost:3000/contact
+    localhost:3000/cart
+    localhost:3000/products
+
+7. '/contact' '/cart' '/products' are the example of home route path.
+8. when we run this link in the browser the required path will be rendered based on the match.
+
+    <Router>
+        <Routes>
+            <Route path='/' element={<HomePage/>} />
+            <Route path='/books' element={<Books/>} />
+        </Routes>
+    </Router>
+
+9. here you have to create this <HomePage/> and <Books/> component.
 
 # ----------------------------- 7. Styling Paths ----------------------------- #
 # -------------------------- 8. 404 Not Found Routes ------------------------- #
