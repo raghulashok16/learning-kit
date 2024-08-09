@@ -10,6 +10,9 @@
 2. react dev tools is must so install that chrome extension in the chrome web store.
 3. it helps view the components in our react app using the chrome dev tool.
 4. now install 'react-router-dom' using 'npm i react-router-dom' command.
+[react consists of react-router-dom and react-router-native]
+[react-router-dom consists dom related apis]
+[react-router-native consits of native related apis]
 5. after installing import 'browser-router' using the below code.
 
     import {BrowserRouter} from "react-router-dom";
@@ -50,7 +53,7 @@ Method 2:
     localhost:3000/cart
     localhost:3000/products
 
-7. '/contact' '/cart' '/products' are the example of home route path.
+7. '/contact' '/cart' '/products' are the example of route path.
 8. when we run this link in the browser the required path will be rendered based on the match.
 
     <Router>
