@@ -70,4 +70,7 @@ Method 2:
 2. it reduces to create new files separate for css.
 
 # -------------------------- 8. 404 Not Found Routes ------------------------- #
+1. 
+
+
 # ------------------------- 9. Redirecting 404 Routes ------------------------ #
