@@ -1,0 +1,43 @@
+# ------------------------- Section-02 Basic Concepts ------------------------ #
+5. Using Browser Router Element
+6. Declaring Paths
+7. Styling Paths
+8. 404 Not Found Routes
+9. Redirecting 404 Routes
+
+# ---------------------- 5. Using Browser Router Element --------------------- #
+1. app functional component is the core container component of the whole project.
+2. react dev tools is must so install that chrome extension in the chrome web store.
+3. it helps view the components in our react app using the chrome dev tool.
+4. now install 'react-router-dom' using 'npm i react-router-dom' command.
+5. after installing import 'browser-router' using the below code.
+
+    import {BrowserRouter} from "react-router-dom";
+
+    import {BrowserRouter as Router} from "react-router-dom";
+
+6. in the above imports the methods are same but in the second import we conditionally renamed the BrowserRouter as Router.
+7. using 'Router' is something meaningfull.
+8. this browser-router must wrap all the visuall ui component we create using react.
+9. for example, we can wrap it around app component or we can use it inside app component and wrap it around other components.
+
+Method 1:
+    function App(){
+        return (
+            <>
+                <Router>Hiii</Router>
+            </>
+        )
+    }
+
+Method 2:
+    <Router>
+        <App/>
+    </Router>
+
+10. 
+
+# ---------------------------- 6. Declaring Paths ---------------------------- #
+# ----------------------------- 7. Styling Paths ----------------------------- #
+# -------------------------- 8. 404 Not Found Routes ------------------------- #
+# ------------------------- 9. Redirecting 404 Routes ------------------------ #
