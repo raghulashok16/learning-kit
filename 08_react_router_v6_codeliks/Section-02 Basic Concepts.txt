@@ -70,7 +70,38 @@ Method 2:
 2. it reduces to create new files separate for css.
 
 # -------------------------- 8. 404 Not Found Routes ------------------------- #
-1. 
+1. when the path name does not match the url in uor router, the component will not render anything.
+2. this tell user nothing about the problem occured.
+3. to overcome this issue we can specify a default error page when no url match the route path.
+
+    <Router>
+        <Routes>
+            <Route path='/' element={<HomePage/>} />
+            <Route path='/books' element={<Books/>} />
+            <Route path='*' element={<ErrorPage/>} />
+        </Routes>
+    </Router>
+
+4. now if any url dont match then react will render the <ErrorPage/> component.
+5. specifying '*' at last route is very important.
 
 
 # ------------------------- 9. Redirecting 404 Routes ------------------------ #
+1. Redirecting to a specific page is achived using navigate component.
+2. to do so we need to install 'Navigate'.
+
+    import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+
+3. we need to use the navigate component in the wildcard route.
+4. inside the navigate component we need to give a specific path name.
+
+    <Router>
+        <Routes>
+            <Route path='/' element={<HomePage/>} />
+            <Route path='/books' element={<Books/>} />
+            <Route path='*' element={<Navigate to='/login' />} />
+        </Routes>
+    </Router>
+
+5. this is very helpfull when a user try to access a forbiden url path.
+6. then react will Redirect them to the login page or our desired page.
