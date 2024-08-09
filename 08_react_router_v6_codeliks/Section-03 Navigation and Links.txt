@@ -15,3 +15,7 @@
     <Link to={"/contact"}>Contact</Link>
 
 # ------------------- 11. Handling states of active NavLink ------------------ #
+1. alternative to 'Link' is 'NavLink'.
+2. the main difference between them is 'active' is automatically added to the 'NavLink' when clicked and it will be automatically removed when other 'NavLink' cliked.
+3. this feature is not available in the 'Link' component.
+4. we can style the active class which was added using 'NavLink'.
