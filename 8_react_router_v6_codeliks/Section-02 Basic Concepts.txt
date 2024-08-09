@@ -35,9 +35,13 @@ Method 2:
         <App/>
     </Router>
 
-10. 
-
 # ---------------------------- 6. Declaring Paths ---------------------------- #
+1. the main usecase of react-router is to show/render different components based on the url/link/button we click.
+2. to achive that 'browser-router' is not enough, we need to import other 2 important component which is 'Routes' and 'Route'.
+
+    import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+
 # ----------------------------- 7. Styling Paths ----------------------------- #
 # -------------------------- 8. 404 Not Found Routes ------------------------- #
 # ------------------------- 9. Redirecting 404 Routes ------------------------ #
