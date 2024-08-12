@@ -1,0 +1,19 @@
+# ----------------- Section 6: Project 1 - Clipboard Website ----------------- #
+
+34. Project Intro
+35. Setup & Config
+36. Hero Section & Background Image
+37. 4 - Snippets Section & Using Directives
+38. Features Section & Items
+39. Supercharge Section
+40. References & Footer
+41. Deploy To Netlify
+
+# ----------------------------- 34. Project Intro ---------------------------- #
+# ---------------------------- 35. Setup & Config ---------------------------- #
+# -------------------- 36. Hero Section & Background Image ------------------- #
+# ---------------- 37. 4 - Snippets Section & Using Directives --------------- #
+# ----------------------- 38. Features Section & Items ----------------------- #
+# -------------------------- 39. Supercharge Section ------------------------- #
+# -------------------------- 40. References & Footer ------------------------- #
+# --------------------------- 41. Deploy To Netlify -------------------------- #

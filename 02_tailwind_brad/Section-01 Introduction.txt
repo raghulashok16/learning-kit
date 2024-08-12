@@ -1,0 +1,14 @@
+# -------------------------- Section-01 Introduction ------------------------- #
+1. Introduction
+2. Course Outline & Projects
+3. Project Links
+4. What Is Tailwind CSS?
+5. Basic Environment Setup
+6. Tailwind Sandbox Setup
+
+# ------------------------------ 1. Introduction ----------------------------- #
+# ----------------------- 2. Course Outline & Projects ----------------------- #
+# ----------------------------- 3. Project Links ----------------------------- #
+# ------------------------- 4. What Is Tailwind CSS? ------------------------- #
+# ------------------------ 5. Basic Environment Setup ------------------------ #
+# ------------------------- 6. Tailwind Sandbox Setup ------------------------ #

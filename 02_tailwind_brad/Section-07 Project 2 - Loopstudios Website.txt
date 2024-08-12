@@ -1,0 +1,21 @@
+# ---------------- Section 7: Project 2 - Loopstudios Website ---------------- #
+
+42. Project Intro
+43. Setup & Config
+44. Hero With Desktop Navigation
+45. Feature Section
+46. Creations Section With Gradient Overlays
+47. Footer
+48. Hamburger Button & Animation
+49. Mobile Menu & JavaScript
+50. Deploy To Vercel
+
+# ----------------------------- 42. Project Intro ---------------------------- #
+# ---------------------------- 43. Setup & Config ---------------------------- #
+# --------------------- 44. Hero With Desktop Navigation --------------------- #
+# ---------------------------- 45. Feature Section --------------------------- #
+# --------------- 46. Creations Section With Gradient Overlays --------------- #
+# -------------------------------- 47. Footer -------------------------------- #
+# --------------------- 48. Hamburger Button & Animation --------------------- #
+# ----------------------- 49. Mobile Menu & JavaScript ----------------------- #
+# --------------------------- 50. Deploy To Vercel --------------------------- #

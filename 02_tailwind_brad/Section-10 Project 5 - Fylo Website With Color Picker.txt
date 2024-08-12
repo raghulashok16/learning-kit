@@ -1,0 +1,19 @@
+# ---------- Section 10: Project 5 - Fylo Website With Color Picker ---------- #
+
+66. Project Intro
+67. Setup & Config
+68. Header & Dark Mode Button
+69. JavaScript For Color Mode
+70. Hero Section
+71. Features & Productive Sections
+72. Testimonials & Early Access
+73. Smooth Scroll & Footer
+
+# ----------------------------- 66. Project Intro ---------------------------- #
+# ---------------------------- 67. Setup & Config ---------------------------- #
+# ----------------------- 68. Header & Dark Mode Button ---------------------- #
+# ----------------------- 69. JavaScript For Color Mode ---------------------- #
+# ----------------------------- 70. Hero Section ----------------------------- #
+# -------------------- 71. Features & Productive Sections -------------------- #
+# ---------------------- 72. Testimonials & Early Access --------------------- #
+# ------------------------ 73. Smooth Scroll & Footer ------------------------ #

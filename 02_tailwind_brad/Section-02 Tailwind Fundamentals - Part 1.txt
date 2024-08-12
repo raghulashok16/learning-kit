@@ -1,0 +1,21 @@
+# ----------------- Section 2: Tailwind Fundamentals - Part 1 ---------------- #
+
+7. Utility-First Example
+8. Working With Colors
+9. Container & Spacing
+10. Typography
+11. Width & Height
+12. Layout & Position
+13. Backgrounds & Shadows
+14. Borders & Border Radius
+15. Filters
+
+# ------------------------- 7. Utility-First Example ------------------------- #
+# -------------------------- 8. Working With Colors -------------------------- #
+# -------------------------- 9. Container & Spacing -------------------------- #
+# ------------------------------ 10. Typography ------------------------------ #
+# ---------------------------- 11. Width & Height ---------------------------- #
+# --------------------------- 12. Layout & Position -------------------------- #
+# ------------------------- 13. Backgrounds & Shadows ------------------------ #
+# ------------------------ 14. Borders & Border Radius ----------------------- #
+# -------------------------------- 15. Filters ------------------------------- #
