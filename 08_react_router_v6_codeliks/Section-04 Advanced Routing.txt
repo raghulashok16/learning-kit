@@ -1,0 +1,25 @@
+# ------------------------ Section 4: Advanced Routing ----------------------- #
+
+12. Nested Routes with Outlet
+13. Fetching Data via Nested Routes
+14. Relative and Absolute Navigation
+15. Dynamic Routes
+16. Accessing Route Params
+17. Fetching Data with Route Params
+18. Implementing Programmatic Navigation
+19. Passing State along Navigation
+20. Navigation Deltas Concepts
+21. Domain-Driven Routes
+22. Restricting Access to Routes
+
+# ----------------------- 12. Nested Routes with Outlet ---------------------- #
+# -------------------- 13. Fetching Data via Nested Routes ------------------- #
+# ------------------- 14. Relative and Absolute Navigation ------------------- #
+# ---------------------------- 15. Dynamic Routes ---------------------------- #
+# ------------------------ 16. Accessing Route Params ------------------------ #
+# -------------------- 17. Fetching Data with Route Params ------------------- #
+# ----------------- 18. Implementing Programmatic Navigation ----------------- #
+# -------------------- 19. Passing State along Navigation -------------------- #
+# ---------------------- 20. Navigation Deltas Concepts ---------------------- #
+# ------------------------- 21. Domain-Driven Routes ------------------------- #
+# --------------------- 22. Restricting Access to Routes --------------------- #

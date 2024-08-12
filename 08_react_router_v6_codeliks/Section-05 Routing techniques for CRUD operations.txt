@@ -1,0 +1,27 @@
+# ------------- Section 5: Routing techniques for CRUD operations ------------ #
+
+23. a Second Approach of Relative Paths
+24. Using Link with Nested Routes
+25. Creating a New Book
+26. Redirecting after Creating Books
+27. Reading an Existing Book
+28. Updating a Book
+29. Deleting a Book
+30. Using Search Params
+31. Linking UI state with Search Params States
+32. Rendering UI with Search Params
+33. Adding Page Scrolling upon Route Changes
+34. Object-based Route Setup
+
+# ------------------ 23. a Second Approach of Relative Paths ----------------- #
+# --------------------- 24. Using Link with Nested Routes -------------------- #
+# -------------------------- 25. Creating a New Book ------------------------- #
+# ------------------- 26. Redirecting after Creating Books ------------------- #
+# ----------------------- 27. Reading an Existing Book ----------------------- #
+# ---------------------------- 28. Updating a Book --------------------------- #
+# ---------------------------- 29. Deleting a Book --------------------------- #
+# -------------------------- 30. Using Search Params ------------------------- #
+# -------------- 31. Linking UI state with Search Params States -------------- #
+# -------------------- 32. Rendering UI with Search Params ------------------- #
+# --------------- 33. Adding Page Scrolling upon Route Changes --------------- #
+# ----------------------- 34. Object-based Route Setup ----------------------- #
