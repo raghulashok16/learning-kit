@@ -48,6 +48,22 @@
 6. if any error occured in fetching display the error page.
 
 # ------------------- 14. Relative and Absolute Navigation ------------------- #
+1. create a diicated card component <BookCard/> for the book and use map method to display all the books inside the <BookList/> component.
+2. inside the div you need to wrap all the text and the book image inside the 'Link' tag, because it will help to navigate to a new page when we click on the book component.
+3. Realative path -> localhost:3000/books/book_name
+4. Absolute path  -> localhost:3000/book_name
+5. the main difference between them is the end 'url' is followed by the parent url.
+6. Relative path is achived using the below code.
+
+    <Link to={books.id} />
+
+6. Absolute path is achived using the backticks in the below code.
+
+    <Link to={`/${books.id}`} />
+
+7. Relative path is quite a meaningfull way and can be understand using the url name.
+8. import thing is this 'to' attribute is added to the 'Link' tag inside the <BookCard/> component.
+
 # ---------------------------- 15. Dynamic Routes ---------------------------- #
 # ------------------------ 16. Accessing Route Params ------------------------ #
 # -------------------- 17. Fetching Data with Route Params ------------------- #
