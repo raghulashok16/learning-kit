@@ -13,6 +13,20 @@
 22. Restricting Access to Routes
 
 # ----------------------- 12. Nested Routes with Outlet ---------------------- #
+1. to create a nested routes we have to wrap the child routes into a parent route.
+
+    <Route path="/" element={<Books/>}>
+        <Route path="/books" element={<BookList/>} />
+    </Route>
+
+2. after this step we have to add the outlet component in the parent 'Route' that is <Books/> component.
+3. we need to import the 'outlet' from react-router-dom in the parent component.
+
+    import {Outlet} from "react-router-dom";
+
+4. add this <Outlet/> component in your desired place where you want to render your child-component/nested-component.
+5. you can have many child routes with different path names and the outlet will render the exact element the path match.
+
 # -------------------- 13. Fetching Data via Nested Routes ------------------- #
 # ------------------- 14. Relative and Absolute Navigation ------------------- #
 # ---------------------------- 15. Dynamic Routes ---------------------------- #
