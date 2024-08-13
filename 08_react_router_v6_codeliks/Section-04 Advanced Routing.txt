@@ -65,6 +65,21 @@
 8. import thing is this 'to' attribute is added to the 'Link' tag inside the <BookCard/> component.
 
 # ---------------------------- 15. Dynamic Routes ---------------------------- #
+1. now need a specific url which help render the <Book/> component.
+2. this <Book/> component has the data of a single book which we clicked.
+3. we can add a additional route for this book component to render.
+
+    <Route path="/" element={<Books/>}>
+        <Route path="/books" element={<BookList/>} />
+        <Route path=":id" element={<Book/>} />
+    </Route>
+
+4. this is called Dynamic route or Dynamic url.
+5. because ":id" comes from the <BookCard/> component when we click it.
+6. and it matches the all the routes we have.
+7. if it dont match it will render the wildcard component.
+8. that is why we add the ":id" path and render the <Book/> component.
+
 # ------------------------ 16. Accessing Route Params ------------------------ #
 # -------------------- 17. Fetching Data with Route Params ------------------- #
 # ----------------- 18. Implementing Programmatic Navigation ----------------- #
