@@ -28,6 +28,25 @@
 5. you can have many child routes with different path names and the outlet will render the exact element the path match.
 
 # -------------------- 13. Fetching Data via Nested Routes ------------------- #
+1. with the help of axios we can get the books data from the server using 'get' method.
+2. in the BookList component we can use "useState" and "useEffect" to get data from the server and set it in the useState variable using the below code.
+
+        const [data, setData] = useState(null);
+
+        useEffect(() => {
+            (
+                async () => {
+                    const response = await axios.get("/books");
+                    setData(response.data);
+                }
+            )();
+        });   
+
+3. also we can conditionally render the data.
+4. if 'data' is 'null' then render loading spinner.
+5. if 'data'  persists then render the books data.
+6. if any error occured in fetching display the error page.
+
 # ------------------- 14. Relative and Absolute Navigation ------------------- #
 # ---------------------------- 15. Dynamic Routes ---------------------------- #
 # ------------------------ 16. Accessing Route Params ------------------------ #
