@@ -1,0 +1,22 @@
+# --------------- Section-05 Developer skills and Editor Setup --------------- #
+53. Section Intro
+54. Section Roadmap
+55. Setting up Prettier and VS Code
+56. Installing Node.js and Setting Up a Dev Environment
+57. Learning How to Code
+58. How to Think Like a Developer: Become a Problem Solver!
+59. Using Google, StackOverflow and MDN
+60. Debugging (Fixing Errors)
+61. Debugging with the Console and Breakpoints
+62. Coding Challenge #1
+
+# ----------------------------- 53. Section Intro ---------------------------- #
+# ---------------------------- 54. Section Roadmap --------------------------- #
+# -------------------- 55. Setting up Prettier and VS Code ------------------- #
+# ---------- 56. Installing Node.js and Setting Up a Dev Environment --------- #
+# ------------------------- 57. Learning How to Code ------------------------- #
+# -------- 58. How to Think Like a Developer: Become a Problem Solver! ------- #
+# ------------------ 59. Using Google, StackOverflow and MDN ----------------- #
+# ----------------------- 60. Debugging (Fixing Errors) ---------------------- #
+# -------------- 61. Debugging with the Console and Breakpoints -------------- #
+# -------------------------- 62. Coding Challenge 1 -------------------------- #
