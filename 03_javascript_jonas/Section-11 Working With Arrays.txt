@@ -1,0 +1,58 @@
+# ---------------------- Section-11 Working With Arrays ---------------------- #
+141. Section Intro
+142. Section Roadmap
+143. Simple Array Methods
+144. The new at Method
+145. Looping Arrays: forEach
+146. forEach With Maps and Sets
+147. PROJECT: "Bankist" App
+148. Creating DOM Elements
+149. Coding Challenge #1
+150. Data Transformations: map, filter, reduce
+151. The map Method
+152. Computing Usernames
+153. The filter Method
+154. The reduce Method
+155. Coding Challenge #2
+156. The Magic of Chaining Methods
+157. Coding Challenge #3
+158. The find Method
+159. Implementing Login
+160. Implementing Transfers
+161. The findIndex Method
+162. some and every
+163. flat and flatMap
+164. Sorting Arrays
+165. More Ways of Creating and Filling Arrays
+166. Summary: Which Array Method to Use?
+167. Array Methods Practice
+168. Coding Challenge #4
+
+# ---------------------------- 141. Section Intro ---------------------------- #
+# --------------------------- 142. Section Roadmap --------------------------- #
+# ------------------------- 143. Simple Array Methods ------------------------ #
+# -------------------------- 144. The new at Method -------------------------- #
+# ----------------------- 145. Looping Arrays: forEach ----------------------- #
+# ---------------------- 146. forEach With Maps and Sets --------------------- #
+# ------------------------ 147. PROJECT: "Bankist" App ----------------------- #
+# ------------------------ 148. Creating DOM Elements ------------------------ #
+# -------------------------- 149. Coding Challenge 1 ------------------------- #
+# -------------- 150. Data Transformations: map, filter, reduce -------------- #
+# ---------------------------- 151. The map Method --------------------------- #
+# ------------------------- 152. Computing Usernames ------------------------- #
+# -------------------------- 153. The filter Method -------------------------- #
+# -------------------------- 154. The reduce Method -------------------------- #
+# -------------------------- 155. Coding Challenge 2 ------------------------- #
+# -------------------- 156. The Magic of Chaining Methods -------------------- #
+# -------------------------- 157. Coding Challenge 3 ------------------------- #
+# --------------------------- 158. The find Method --------------------------- #
+# -------------------------- 159. Implementing Login ------------------------- #
+# ------------------------ 160. Implementing Transfers ----------------------- #
+# ------------------------- 161. The findIndex Method ------------------------ #
+# ---------------------------- 162. some and every --------------------------- #
+# --------------------------- 163. flat and flatMap -------------------------- #
+# ---------------------------- 164. Sorting Arrays --------------------------- #
+# --------------- 165. More Ways of Creating and Filling Arrays -------------- #
+# ----------------- 166. Summary: Which Array Method to Use? ----------------- #
+# ------------------------ 167. Array Methods Practice ----------------------- #
+# -------------------------- 168. Coding Challenge 4 ------------------------- #
