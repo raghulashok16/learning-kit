@@ -1,0 +1,54 @@
+# --------- Section 9: Data Structures, Modern Operators and Strings --------- #
+101. Section Intro
+102. Section Roadmap
+103. Destructuring Arrays
+104. Practice Assignments
+105. Destructuring Objects
+106. The Spread Operator (...)
+107. Rest Pattern and Parameters
+108. Short Circuiting (&& and ||)
+109. The Nullish Coalescing Operator (??)
+110. Logical Assignment Operators
+111. Coding Challenge #1
+112. Looping Arrays: The for-of Loop
+113. Enhanced Object Literals
+114. Optional Chaining (?.)
+115. Looping Objects: Object Keys, Values, and Entries
+116. Coding Challenge #2
+117. Sets
+118. Maps: Fundamentals
+119. Maps: Iteration
+120. Summary: Which Data Structure to Use?
+121. Coding Challenge #3
+122. Working With Strings - Part 1
+123. Working With Strings - Part 2
+124. Working With Strings - Part 3
+125. Coding Challenge #4
+126. String Methods Practice
+
+# ---------------------------- 101. Section Intro ---------------------------- #
+# --------------------------- 102. Section Roadmap --------------------------- #
+# ------------------------- 103. Destructuring Arrays ------------------------ #
+# ------------------------- 104. Practice Assignments ------------------------ #
+# ------------------------ 105. Destructuring Objects ------------------------ #
+# ---------------------- 106. The Spread Operator (...) ---------------------- #
+# --------------------- 107. Rest Pattern and Parameters --------------------- #
+# --------------------- 108. Short Circuiting (&& and ||) -------------------- #
+# ----------------- 109. The Nullish Coalescing Operator (??) ---------------- #
+# --------------------- 110. Logical Assignment Operators -------------------- #
+# -------------------------- 111. Coding Challenge 1 ------------------------- #
+# ------------------- 112. Looping Arrays: The for-of Loop ------------------- #
+# ----------------------- 113. Enhanced Object Literals ---------------------- #
+# ------------------------ 114. Optional Chaining (?.) ----------------------- #
+# ---------- 115. Looping Objects: Object Keys, Values, and Entries ---------- #
+# -------------------------- 116. Coding Challenge 2 ------------------------- #
+# --------------------------------- 117. Sets -------------------------------- #
+# -------------------------- 118. Maps: Fundamentals ------------------------- #
+# --------------------------- 119. Maps: Iteration --------------------------- #
+# ---------------- 120. Summary: Which Data Structure to Use? ---------------- #
+# -------------------------- 121. Coding Challenge 3 ------------------------- #
+# -------------------- 122. Working With Strings - Part 1 -------------------- #
+# -------------------- 123. Working With Strings - Part 2 -------------------- #
+# -------------------- 124. Working With Strings - Part 3 -------------------- #
+# -------------------------- 125. Coding Challenge 4 ------------------------- #
+# ----------------------- 126. String Methods Practice ----------------------- #
