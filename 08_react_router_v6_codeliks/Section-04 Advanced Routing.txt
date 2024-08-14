@@ -116,6 +116,42 @@
 4. we need to run this useEffect whenever the id changes.
 
 # ----------------- 18. Implementing Programmatic Navigation ----------------- #
+1. when we manually type the book name in the url it will fetch the book from the server.
+2. but in case there is no such book availabe in the server, then react dont know about this issue.
+3. so for that problem always use "try/catch" block in the useEffect while fetching data from the server.
+
+    useEffect(() =>{
+        (async () => {
+            try{
+            const response = await axios.get(`/books/${id}`);
+            setBook(response.data);
+            } catch (e) {
+                console.warn(e);
+            }
+        })();
+    }, [is]);
+
+4. if we use this 'try/catch' block then react will complain about the error that bad request/book not availabe in the server.
+5. at that time we can move the page to home page or any other page Programmatically using a hook called 'useNavigate'.
+6. to use 'useNavigate' we need to import from the react-route-dom.
+
+    import {useNavigate} from "react-router-dom";
+
+7. using the below code you can add it inside the component and use it to jump to a new page Programmatically.
+
+    const navigate = useNavigate();
+    useEffect(() =>{
+        (async () => {
+            try{
+            const response = await axios.get(`/books/${id}`);
+            setBook(response.data);
+            } catch (e) {
+                console.warn(e);
+                navigate('/');
+            }
+        })();
+    }, [is]);
+
 # -------------------- 19. Passing State along Navigation -------------------- #
 # ---------------------- 20. Navigation Deltas Concepts ---------------------- #
 # ------------------------- 21. Domain-Driven Routes ------------------------- #
