@@ -1,0 +1,35 @@
+# ----------------- Section 17: Modern JavaScript Development ---------------- #
+# --------------------- Modules, Tooling, and Functional --------------------- #
+269. Section Intro
+270. Section Roadmap
+271. An Overview of Modern JavaScript Development
+272. An Overview of Modules in JavaScript
+273. Exporting and Importing in ES6 Modules
+274. Top-Level await (ES2022)
+275. The Module Pattern
+276. CommonJS Modules
+277. A Brief Introduction to the Command Line
+278. Introduction to NPM
+279. Bundling With Parcel and NPM Scripts
+280. Configuring Babel and Polyfilling
+281. Review: Writing Clean and Modern JavaScript
+282. Let's Fix Some Bad Code: Part 1
+283. Declarative and Functional JavaScript Principles
+284. Let's Fix Some Bad Code: Part 2
+
+# ---------------------------- 269. Section Intro ---------------------------- #
+# --------------------------- 270. Section Roadmap --------------------------- #
+# ------------- 271. An Overview of Modern JavaScript Development ------------ #
+# ----------------- 272. An Overview of Modules in JavaScript ---------------- #
+# ---------------- 273. Exporting and Importing in ES6 Modules --------------- #
+# ----------------------- 274. Top-Level await (ES2022) ---------------------- #
+# -------------------------- 275. The Module Pattern ------------------------- #
+# --------------------------- 276. CommonJS Modules -------------------------- #
+# --------------- 277. A Brief Introduction to the Command Line -------------- #
+# ------------------------- 278. Introduction to NPM ------------------------- #
+# ----------------- 279. Bundling With Parcel and NPM Scripts ---------------- #
+# ------------------ 280. Configuring Babel and Polyfilling ------------------ #
+# ------------- 281. Review: Writing Clean and Modern JavaScript ------------- #
+# ------------------- 282. Let's Fix Some Bad Code: Part 1 ------------------- #
+# ----------- 283. Declarative and Functional JavaScript Principles ---------- #
+# ------------------- 284. Let's Fix Some Bad Code: Part 2 ------------------- #
