@@ -1,0 +1,16 @@
+# ----------------- Section-19 Setting up Git and Deployment ----------------- #
+312. Section Intro
+313. Section Roadmap
+314. Simple Deployment With Netlify
+315. Setting Up Git and GitHub
+316. Git Fundamentals
+317. Pushing to GitHub
+318. Setting Up Continuous Integration With Netlify
+
+# ---------------------------- 312. Section Intro ---------------------------- #
+# --------------------------- 313. Section Roadmap --------------------------- #
+# -------------------- 314. Simple Deployment With Netlify ------------------- #
+# ---------------------- 315. Setting Up Git and GitHub ---------------------- #
+# --------------------------- 316. Git Fundamentals -------------------------- #
+# -------------------------- 317. Pushing to GitHub -------------------------- #
+# ------------ 318. Setting Up Continuous Integration With Netlify ----------- #
