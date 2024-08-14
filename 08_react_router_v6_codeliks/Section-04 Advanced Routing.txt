@@ -102,6 +102,19 @@
 6. this 'id' comes from the url.
 
 # -------------------- 17. Fetching Data with Route Params ------------------- #
+1. after getting the book name using the use params, we can use axios to fetch the book data from the server.
+2. we can use the below code to get the book data.
+
+    useEffect(() =>{
+        (async () => {
+            const response = await axios.get(`/books/${id}`);
+            setBook(response.data);
+        })();
+    }, [is]);
+
+3. remember always console the response and verify the data comes from the server and set the book data in the useState.
+4. we need to run this useEffect whenever the id changes.
+
 # ----------------- 18. Implementing Programmatic Navigation ----------------- #
 # -------------------- 19. Passing State along Navigation -------------------- #
 # ---------------------- 20. Navigation Deltas Concepts ---------------------- #
