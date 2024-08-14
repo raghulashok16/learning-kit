@@ -1,0 +1,12 @@
+# --------------- Section 6: [OPTIONAL] HTML & CSS Crash Course -------------- #
+63. Section Intro
+64. Basic HTML Structure and Elements
+65. Attributes, Classes and IDs
+66. Basic Styling with CSS
+67. Introduction to the CSS Box Model
+
+# ----------------------------- 63. Section Intro ---------------------------- #
+# ------------------- 64. Basic HTML Structure and Elements ------------------ #
+# ---------------------- 65. Attributes, Classes and IDs --------------------- #
+# ------------------------ 66. Basic Styling with CSS ------------------------ #
+# ------------------- 67. Introduction to the CSS Box Model ------------------ #
