@@ -1,0 +1,50 @@
+# ---------------- Section 3: JavaScript Fundamentals – Part 2 --------------- #
+31. Section Intro
+32. Activating Strict Mode
+33. Functions
+34. Function Declarations vs. Expressions
+35. Arrow Functions
+36. Functions Calling Other Functions
+37. Reviewing Functions
+Coding Exercise 5: CHALLENGE #1
+38. CHALLENGE #1: Video Solution
+39. Introduction to Arrays
+40. Basic Array Operations (Methods)
+Coding Exercise 6: CHALLENGE #2
+41. CHALLENGE #2: Video Solution
+42. Introduction to Objects
+43. Dot vs. Bracket Notation
+44. Object Methods
+Coding Exercise 7: CHALLENGE #3
+45. CHALLENGE #3: Video Solution
+46. Iteration: The for Loop
+47. Looping Arrays, Breaking and Continuing
+48. Looping Backwards and Loops in Loops
+49. The while Loop
+Coding Exercise 8: CHALLENGE #4
+50. CHALLENGE #4: Video Solution
+
+# ----------------------------- 31. Section Intro ---------------------------- #
+# ------------------------ 32. Activating Strict Mode ------------------------ #
+# ------------------------------- 33. Functions ------------------------------ #
+# ----------------- 34. Function Declarations vs. Expressions ---------------- #
+# ---------------------------- 35. Arrow Functions --------------------------- #
+# ------------------- 36. Functions Calling Other Functions ------------------ #
+# -------------------------- 37. Reviewing Functions ------------------------- #
+# ---------------------- Coding Exercise 5: CHALLENGE 1 ---------------------- #
+# ---------------------- 38. CHALLENGE 1: Video Solution --------------------- #
+# ------------------------ 39. Introduction to Arrays ------------------------ #
+# ------------------- 40. Basic Array Operations (Methods) ------------------- #
+# ---------------------- Coding Exercise 6: CHALLENGE 2 ---------------------- #
+# ---------------------- 41. CHALLENGE 2: Video Solution --------------------- #
+# ------------------------ 42. Introduction to Objects ----------------------- #
+# ----------------------- 43. Dot vs. Bracket Notation ----------------------- #
+# ---------------------------- 44. Object Methods ---------------------------- #
+# ---------------------- Coding Exercise 7: CHALLENGE 3 ---------------------- #
+# ---------------------- 45. CHALLENGE 3: Video Solution --------------------- #
+# ------------------------ 46. Iteration: The for Loop ----------------------- #
+# ---------------- 47. Looping Arrays, Breaking and Continuing --------------- #
+# ----------------- 48. Looping Backwards and Loops in Loops ----------------- #
+# ---------------------------- 49. The while Loop ---------------------------- #
+# ---------------------- Coding Exercise 8: CHALLENGE 4 ---------------------- #
+# ---------------------- 50. CHALLENGE 4: Video Solution --------------------- #
