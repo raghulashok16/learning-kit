@@ -1,0 +1,50 @@
+# --- Section 16: Asynchronous JavaScript: Promises, Async/Await, and AJAX --- #
+245. Section Intro
+246. Section Roadmap
+247. Asynchronous JavaScript, AJAX and APIs
+248. IMPORTANT: API URL Change
+249. Our First AJAX Call: XMLHttpRequest
+250. [OPTIONAL] How the Web Works: Requests and Responses
+251. Welcome to Callback Hell
+252. Promises and the Fetch API
+253. Consuming Promises
+254. Chaining Promises
+255. Handling Rejected Promises
+256. Throwing Errors Manually
+257. Coding Challenge #1
+258. Asynchronous Behind the Scenes: The Event Loop
+259. The Event Loop in Practice
+260. Building a Simple Promise
+261. Promisifying the Geolocation API
+262. Coding Challenge #2
+263. Consuming Promises with Async/Await
+264. Error Handling With try...catch
+265. Returning Values from Async Functions
+266. Running Promises in Parallel
+267. Other Promise Combinators: race, allSettled and any
+268. Coding Challenge #3
+
+# ---------------------------- 245. Section Intro ---------------------------- #
+# --------------------------- 246. Section Roadmap --------------------------- #
+# ---------------- 247. Asynchronous JavaScript, AJAX and APIs --------------- #
+# ---------------------- 248. IMPORTANT: API URL Change ---------------------- #
+# ----------------- 249. Our First AJAX Call: XMLHttpRequest ----------------- #
+# --------- 250. [OPTIONAL] How the Web Works: Requests and Responses -------- #
+# ----------------------- 251. Welcome to Callback Hell ---------------------- #
+# ---------------------- 252. Promises and the Fetch API --------------------- #
+# -------------------------- 253. Consuming Promises ------------------------- #
+# -------------------------- 254. Chaining Promises -------------------------- #
+# ---------------------- 255. Handling Rejected Promises --------------------- #
+# ----------------------- 256. Throwing Errors Manually ---------------------- #
+# -------------------------- 257. Coding Challenge 1 ------------------------- #
+# ------------ 258. Asynchronous Behind the Scenes: The Event Loop ----------- #
+# ---------------------- 259. The Event Loop in Practice --------------------- #
+# ---------------------- 260. Building a Simple Promise ---------------------- #
+# ------------------- 261. Promisifying the Geolocation API ------------------ #
+# -------------------------- 262. Coding Challenge 2 ------------------------- #
+# ----------------- 263. Consuming Promises with Async/Await ----------------- #
+# ------------------- 264. Error Handling With try...catch ------------------- #
+# ---------------- 265. Returning Values from Async Functions ---------------- #
+# --------------------- 266. Running Promises in Parallel -------------------- #
+# --------- 267. Other Promise Combinators: race, allSettled and any --------- #
+# -------------------------- 268. Coding Challenge 3 ------------------------- #
