@@ -1,0 +1,62 @@
+# ---------------- Section 2: JavaScript Fundamentals – Part 1 --------------- #
+5. Section Intro
+6. Hello World!
+7. A Brief Introduction to JavaScript
+8. Linking a JavaScript File
+9. Values and Variables
+10. Practice Assignments
+11. Data Types
+12. let, const and var
+13. Basic Operators
+14. Operator Precedence
+15. A Note About Challenges
+Coding Exercise 1: CHALLENGE #1
+16. CHALLENGE #1: Video Solution
+17. Strings and Template Literals
+18. Taking Decisions: if / else Statements
+Coding Exercise 2: CHALLENGE #2
+19. CHALLENGE #2: Video Solution
+20. Type Conversion and Coercion
+21. Truthy and Falsy Values
+22. Equality Operators: == vs. ===
+23. Boolean Logic
+24. Logical Operators
+Coding Exercise 3: CHALLENGE #3
+25. CHALLENGE #3: Video Solution
+26. The switch Statement
+27. Statements and Expressions
+28. The Conditional (Ternary) Operator
+Coding Exercise 4: CHALLENGE #4
+29. CHALLENGE #4: Video Solution
+30. JavaScript Releases: ES5, ES6+ and ESNext
+
+# ----------------------------- 5. Section Intro ----------------------------- #
+# ------------------------------ 6. Hello World! ----------------------------- #
+# ------------------- 7. A Brief Introduction to JavaScript ------------------ #
+# ----------------------- 8. Linking a JavaScript File ----------------------- #
+# -------------------------- 9. Values and Variables ------------------------- #
+# ------------------------- 10. Practice Assignments ------------------------- #
+# ------------------------------ 11. Data Types ------------------------------ #
+# -------------------------- 12. let, const and var -------------------------- #
+# ---------------------------- 13. Basic Operators --------------------------- #
+# -------------------------- 14. Operator Precedence ------------------------- #
+# ------------------------ 15. A Note About Challenges ----------------------- #
+# ---------------------- Coding Exercise 1: CHALLENGE 1 ---------------------- #
+# ---------------------- 16. CHALLENGE 1: Video Solution --------------------- #
+# --------------------- 17. Strings and Template Literals -------------------- #
+# ---------------- 18. Taking Decisions: if / else Statements ---------------- #
+# ---------------------- Coding Exercise 2: CHALLENGE 2 ---------------------- #
+# ---------------------- 19. CHALLENGE 2: Video Solution --------------------- #
+# --------------------- 20. Type Conversion and Coercion --------------------- #
+# ------------------------ 21. Truthy and Falsy Values ----------------------- #
+# -------------------- 22. Equality Operators: == vs. === -------------------- #
+# ----------------------------- 23. Boolean Logic ---------------------------- #
+# --------------------------- 24. Logical Operators -------------------------- #
+# ---------------------- Coding Exercise 3: CHALLENGE 3 ---------------------- #
+# ---------------------- 25. CHALLENGE 3: Video Solution --------------------- #
+# ------------------------- 26. The switch Statement ------------------------- #
+# ---------------------- 27. Statements and Expressions ---------------------- #
+# ------------------ 28. The Conditional (Ternary) Operator ------------------ #
+# ---------------------- Coding Exercise 4: CHALLENGE 4 ---------------------- #
+# ---------------------- 29. CHALLENGE 4: Video Solution --------------------- #
+# --------------- 30. JavaScript Releases: ES5, ES6+ and ESNext -------------- #
