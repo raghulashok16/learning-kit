@@ -1,0 +1,56 @@
+# ---------- Section 18: Forkify App: Building a Modern Application ---------- #
+285. Section Intro
+286. Section Roadmap
+287. Project Overview and Planning (I)
+288. Latest Code Updates (Parcel v2 and more)
+289. Loading a Recipe from API
+290. Rendering the Recipe
+291. Listening For load and hashchange Events
+292. The MVC Architecture
+293. Refactoring for MVC
+294. Helpers and Configuration Files
+295. Event Handlers in MVC: Publisher-Subscriber Pattern
+296. Implementing Error and Success Messages
+297. Implementing Search Results - Part 1
+298. Implementing Search Results - Part 2
+299. Implementing Pagination - Part 1
+300. Implementing Pagination - Part 2
+301. Project Planning II
+302. Updating Recipe Servings
+303. Developing a DOM Updating Algorithm
+304. Implementing Bookmarks - Part 1
+305. Implementing Bookmarks - Part 2
+306. Storing Bookmarks With localStorage
+307. Project Planning III
+308. Uploading a New Recipe - Part 1
+309. Uploading a New Recipe - Part 2
+310. Uploading a New Recipe - Part 3
+311. Wrapping Up: Final Considerations
+
+# ---------------------------- 285. Section Intro ---------------------------- #
+# --------------------------- 286. Section Roadmap --------------------------- #
+# ------------------ 287. Project Overview and Planning (I) ------------------ #
+# --------------- 288. Latest Code Updates (Parcel v2 and more) -------------- #
+# ---------------------- 289. Loading a Recipe from API ---------------------- #
+# ------------------------- 290. Rendering the Recipe ------------------------ #
+# --------------- 291. Listening For load and hashchange Events -------------- #
+# ------------------------- 292. The MVC Architecture ------------------------ #
+# ------------------------- 293. Refactoring for MVC ------------------------- #
+# ------------------- 294. Helpers and Configuration Files ------------------- #
+# --------- 295. Event Handlers in MVC: Publisher-Subscriber Pattern --------- #
+# --------------- 296. Implementing Error and Success Messages --------------- #
+# ----------------- 297. Implementing Search Results - Part 1 ---------------- #
+# ----------------- 298. Implementing Search Results - Part 2 ---------------- #
+# ------------------- 299. Implementing Pagination - Part 1 ------------------ #
+# ------------------- 300. Implementing Pagination - Part 2 ------------------ #
+# ------------------------- 301. Project Planning II ------------------------- #
+# ----------------------- 302. Updating Recipe Servings ---------------------- #
+# ----------------- 303. Developing a DOM Updating Algorithm ----------------- #
+# ------------------- 304. Implementing Bookmarks - Part 1 ------------------- #
+# ------------------- 305. Implementing Bookmarks - Part 2 ------------------- #
+# ----------------- 306. Storing Bookmarks With localStorage ----------------- #
+# ------------------------- 307. Project Planning III ------------------------ #
+# ------------------- 308. Uploading a New Recipe - Part 1 ------------------- #
+# ------------------- 309. Uploading a New Recipe - Part 2 ------------------- #
+# ------------------- 310. Uploading a New Recipe - Part 3 ------------------- #
+# ------------------ 311. Wrapping Up: Final Considerations ------------------ #
