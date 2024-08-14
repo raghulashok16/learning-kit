@@ -81,6 +81,26 @@
 8. that is why we add the ":id" path and render the <Book/> component.
 
 # ------------------------ 16. Accessing Route Params ------------------------ #
+1. in react v6, there is a hook which is used to grab the parameters from the Routes or Dynamic Routes.
+2. in the below example url the ":id" which is 'delter' can be grabed using this hook.
+
+    localhost:3000/delter
+
+3.this will be very helpfull when we click a book card component and it will open a new page with the full details of that particular book.
+4. and that hook name is 'useParams' and we need to import it from 'react-router-dom'.
+
+    import {useParams} from "react-router-dom";
+
+5. we can use this hook inside our <Book/> component and console log it to view it.
+
+    const params = useParams(); //method 1
+    console.log(params); //output: { id:'delter' }
+
+    const { id } = useParams(); //method 2 [we destructure it, if we know the name]
+    console.log(id); //output:delter
+
+6. this 'id' comes from the url.
+
 # -------------------- 17. Fetching Data with Route Params ------------------- #
 # ----------------- 18. Implementing Programmatic Navigation ----------------- #
 # -------------------- 19. Passing State along Navigation -------------------- #
