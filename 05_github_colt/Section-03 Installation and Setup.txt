@@ -1,0 +1,22 @@
+# --------------------- Section-03 Installation and Setup -------------------- #
+12. What Really Matters In This Section
+13. Installing Git: Terminal Vs. GUIs
+14. WINDOWS Git Installation
+15. MAC Git Installation
+16. Configuring Your Git Name & Email
+17. Installing GitKraken (Our GUI)
+18. Terminal Crash Course: Introduction
+19. Terminal Crash Course: Navigation
+20. Terminal Crash Course: Creating Files & Folders
+21. Terminal Crash Course: Deleting Files & Folders
+
+# ------------------ 12. What Really Matters In This Section ----------------- #
+# ------------------- 13. Installing Git: Terminal Vs. GUIs ------------------ #
+# ----------------------- 14. WINDOWS Git Installation ----------------------- #
+# ------------------------- 15. MAC Git Installation ------------------------- #
+# ------------------- 16. Configuring Your Git Name & Email ------------------ #
+# -------------------- 17. Installing GitKraken (Our GUI) -------------------- #
+# ------------------ 18. Terminal Crash Course: Introduction ----------------- #
+# ------------------- 19. Terminal Crash Course: Navigation ------------------ #
+# ------------ 20. Terminal Crash Course: Creating Files & Folders ----------- #
+# ------------ 21. Terminal Crash Course: Deleting Files & Folders ----------- #

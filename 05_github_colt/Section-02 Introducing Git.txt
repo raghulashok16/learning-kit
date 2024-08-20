@@ -1,0 +1,14 @@
+# ------------------------ Section-02 Introducing Git ------------------------ #
+6. What Really Matters In This Section
+7. What Exactly Is Git?
+8. Visualizing Git
+9. A Quick History Of Git
+10. Who Uses Git?
+11. Git Vs. Github: What's The Difference?
+
+# ------------------ 6. What Really Matters In This Section ------------------ #
+# -------------------------- 7. What Exactly Is Git? ------------------------- #
+# ---------------------------- 8. Visualizing Git ---------------------------- #
+# ------------------------- 9. A Quick History Of Git ------------------------ #
+# ----------------------------- 10. Who Uses Git? ---------------------------- #
+# ---------------- 11. Git Vs. Github: What's The Difference? ---------------- #
