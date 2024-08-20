@@ -153,6 +153,30 @@
     }, [is]);
 
 # -------------------- 19. Passing State along Navigation -------------------- #
+1. we can pass props along with the navigation when using useNavigate hook.
+2. when passing the state we can send any number of state.
+
+    navigate('/', {state: {id}});
+
+3. here we pass 'id' state.
+4. this state can be captured in the receving component using "useLocation" hook which can be imported from the react-router-dom.
+
+    import {useLocation} from "react-router-dom";
+
+5. after importing use the below code in the receving component.
+
+    const location = useLocation();
+
+6. console the 'location' and see the detailed data of the 'location'.
+
+    console.log(location);
+7. inside this 'location' we need just the state value so we can destruct it.
+
+    const {state} = useLocation();
+
+8. this method of passing state is very helpful when users manually type the url and search, and if the link dont match we can redirect to the home page and pass a error message saying the url/book you are accessing dont exists.
+9. we can log it in the console panel or as a pop up message in our browser.
+
 # ---------------------- 20. Navigation Deltas Concepts ---------------------- #
 # ------------------------- 21. Domain-Driven Routes ------------------------- #
 # --------------------- 22. Restricting Access to Routes --------------------- #
