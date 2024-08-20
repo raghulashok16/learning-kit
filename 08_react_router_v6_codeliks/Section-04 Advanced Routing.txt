@@ -190,4 +190,36 @@
 7. this number "-1" is called navigation delta in react-router-dom.
 
 # ------------------------- 21. Domain-Driven Routes ------------------------- #
+1. while using nested route in the app component, our code will look good and if the number of pages and nested routes increases then it will be tedious to understand.
+2. so react-router-dom v6 allows to move the nested route code to the parent component, and mark the path of the parent component with a wildcard symbol "*" in the main app component as below.
+
+    <Router>
+        <Routes>
+            <Route path='/*' element={<Books/>} />
+            <Route path='/admin' element={<Admin/>} />
+            <Route path='*' element={<ErrorPage/>} />
+        </Routes>
+    </Router>
+
+3. this concept is called Domain Driven Routes beacuse all the nested route are driven under the path "/*" and its code can be moved to that path component.
+4. in the parent element use the code as below.
+
+    const Books = () => {
+        return (
+            <>
+               <BooksContainer>
+                    <Logo/>
+                    <Outlet/>
+                    <Routes>
+                        <Route path='/' element={<BookList/>} />
+                        <Route path=':id' element={<Book/>} />
+                    </Routes>
+               </BooksContainer>
+            </>
+        )
+    } 
+
+5. in this method just add the routes, just cut/paste.
+6. this reduces code in the app component.
+
 # --------------------- 22. Restricting Access to Routes --------------------- #
