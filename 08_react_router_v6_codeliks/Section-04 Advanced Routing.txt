@@ -223,3 +223,29 @@
 6. this reduces code in the app component.
 
 # --------------------- 22. Restricting Access to Routes --------------------- #
+1. giving Access to the user to render component based on the auth data.
+2. in the below code the admin path can be accesed by manually typing the url path.
+
+    <Route path='/admin' element={<Admin/>} />
+
+3. in real world case this is not good, since the page should not be accesed in any methods.
+4. to overcome this issue we can render a separate component for "/admin" path and pass the auth data and check wether the user has the admin access.
+5. based on the data we can render the "<Admin/>" component.
+6. create a file named  "ProtectedRoute.jsx" and write the below condition in it.
+
+    const ProtectedRoute = ({ to, auth, element }) => {
+        if(!auth) return <Navigate to={to} />;
+        return(
+            <Routes>
+                <Route path='/' element={element}/>
+            </Routes>
+        )
+    }
+
+7. by this method we can restrict the access from the public users like admin in here.
+8. instead of directly rendering the admin component we conditionally check the auth data and render if true else redirect to the home page using the <Navigate/> of the react-router-dom.
+    <Route path='/admin' element={<Admin/>} />
+
+    <Route 
+        path='/admin' 
+        element={<ProtectedRoute to='/' auth={auth} element={<Admin/>} />} />
