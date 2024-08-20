@@ -178,5 +178,16 @@
 9. we can log it in the console panel or as a pop up message in our browser.
 
 # ---------------------- 20. Navigation Deltas Concepts ---------------------- #
+1. when we use navigation, we can use a string or a number to navigate to the particular path.
+2. string can be quite easy because we can directly mention the path we need to redirect.
+3. also we can use numbers to navigate, it going to redirect to the history of the browser.
+4. for example if we use "-1" it will move back to one step in the history of your browser.
+5. this feature is very helpful when we use a button to go back to the previous page.
+6. the process is to create a button, make a handler function for that button, use the below code inside the handler function.
+
+    navigate(-1);
+
+7. this number "-1" is called navigation delta in react-router-dom.
+
 # ------------------------- 21. Domain-Driven Routes ------------------------- #
 # --------------------- 22. Restricting Access to Routes --------------------- #
