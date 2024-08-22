@@ -26,11 +26,32 @@
     </div>
 7. "divide-y divide-blue-300" is used to add a horizontal line betwee each child and we can change the color of the horizontal line using divide-blue-300.
 8. "outline outline-red-500" is used to add outline for the element and we can change the outline color using outline-red-500.
-9. "shadow-lg shadow-cyan-500" is used to add a shadow to the element and we can change the color of the shadow using shadow-cyan-500.
-
+9. "shadow-lg shadow-cyan-500" "shadow-lg bg-cyan-500 shadow-cyan-500" is used to add a shadow to the element and we can change the color of the shadow using shadow-cyan-500.
+    <input type="checkbox" class="accent-purple-500" checked/>
+10. the above code is used to stlye the checkbox color to purple-500.
+11. "bg-[#427fab]" "bg-[rgb(255,0,0)]" "bg-[steelblue]" is calledd arbitary color.
+12. instead of using default Tailwind colors we can also use arbitary color.
 
 # -------------------------- 9. Container & Spacing -------------------------- #
+1. there are breakpoints for Containers in Tailwind css - sm, md, lg, xl, 2xl.
+2. there is "container" class which allows us to set the width to max in all device size.
+3. "mx-auto" sets the margin x axis to auto, which means equal in left and right of the container.
+4. "m-2" half rem or 8px, "m-4" one rem or 16px, "m-96" 24 rem or 384px which is the max value in margin.
+5. "ml-1 mr-1 mb-1 mt-1 ms-1 me-1" we can also use custom margin direction.
+6. "mt-[20px]" can also be used to set the size of margin.
+7. like margin we do have classes for padding "p-5 pt-4 pb-4".
+    <div class="flex space-x-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+8. in the above code "space-x-4" represent 1rem/16px so items will be spaced in 16px in-between in x-direction.
+9. we do have a spacing class in y direction  "space-y-4".
+10. this space avoids using margin in each child element inside a div.
+
 # ------------------------------ 10. Typography ------------------------------ #
+
 # ---------------------------- 11. Width & Height ---------------------------- #
 # --------------------------- 12. Layout & Position -------------------------- #
 # ------------------------- 13. Backgrounds & Shadows ------------------------ #
