@@ -12,6 +12,23 @@
 
 # ------------------------- 7. Utility-First Example ------------------------- #
 # -------------------------- 8. Working With Colors -------------------------- #
+1. default colors - white, black, red, green, blue, orange, yellow, purple, lime, emarald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber.
+2. Tailwind has cutomized predefined classes for colors which we can use it from the range of "50" to "900".
+3. "text-black text-white text-gray text-gray-700" is the way to stlye the text.
+4. "bg-yellow-500 bg-indigo-200 bg-red" is the example for Background color customization.
+5. "underline decoration-red-500" "underline decoration-emarald-600" "underline decoration-yellow-300" is the way to underline the text and also to change the underline-color.
+6. "border border-blue-400" is the way to add border and also to change the border color.
+    <div class="divide-y divide-blue-300">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+7. "divide-y divide-blue-300" is used to add a horizontal line betwee each child and we can change the color of the horizontal line using divide-blue-300.
+8. "outline outline-red-500" is used to add outline for the element and we can change the outline color using outline-red-500.
+9. "shadow-lg shadow-cyan-500" is used to add a shadow to the element and we can change the color of the shadow using shadow-cyan-500.
+
+
 # -------------------------- 9. Container & Spacing -------------------------- #
 # ------------------------------ 10. Typography ------------------------------ #
 # ---------------------------- 11. Width & Height ---------------------------- #

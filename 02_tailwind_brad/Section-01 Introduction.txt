@@ -10,5 +10,40 @@
 # ----------------------- 2. Course Outline & Projects ----------------------- #
 # ----------------------------- 3. Project Links ----------------------------- #
 # ------------------------- 4. What Is Tailwind CSS? ------------------------- #
+1. tailwind is a framework that uses low-level "utility" classes to create layouts.
+2. this is known as a utility-first framework.
+3. traditional CSS framework like bootstrap use classes that are directly correlated to components(eg.Alerts, Navbars).
+4. Tailwind uses classes as utilities to put together to build your own custom components.
+5. utility classes are simple HTML classes typically scoped to a single and specific CSS property.
+    - named according to their purpose.
+    - easy to understand and remember.
+    - you know exactly what it does
+    - no naming inconsistenties.
+    - allows for very fast layout creation and testing.
+6. tailwind css.
+    - newer framework that is gaining popullarity.
+    - low-level classes for fast ui development.
+    - more flexibility and uniqueness.
+    - customizable with directives and functions.
+    - you need to know quite a bit of CSS.
+    - HTML usually has a lot of classes.
+7. bootstrap css.
+    - popular framework that has been around a while.
+    - high-level pre-designed components.
+    - some bootstrap sites look very similar.
+    - customizable through sass.
+    - easier for beginers.
+    - higher level components usually means less classes.
+8. tailwind has conditional classes naming for breakpoints as well as states such as hover, focus, etc.
+
 # ------------------------ 5. Basic Environment Setup ------------------------ #
+1. text editor - vs code.
+2. node js installed in your pc.
+3. use of git is needed if you are going to use a version control.
+4. live server in vs code.
+5. tailwind css intelisense in vs code.
+6. post css language support in vs code.
+
+
+
 # ------------------------- 6. Tailwind Sandbox Setup ------------------------ #
