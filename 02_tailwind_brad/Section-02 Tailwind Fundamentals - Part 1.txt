@@ -173,4 +173,23 @@
     -> class allow us to change the color of the shadow and "/50" add the opacity in percentage here 50 percentage, deafult opacity is /100.
 
 # ------------------------ 14. Borders & Border Radius ----------------------- #
+1. "border-2 border-4 border-8"
+    -> class allow us to set the border in the element.
+2. "border-2 border-red-300"
+    "border border-blue-300"
+    -> classes allow us to set the border color.
+3. "border-x-2 border-y-4"
+    -> class allow us to set custom border in any on axis.
+4. "border-t-2 border-b-4"
+    "border-l-2 border-r-4"
+    -> class allow us to set custom border in any on direction.
+5. "rounded-lg rounded rounded-xl rounded-2xl"
+    -> class allow us to set the border radious to rounded.
+6. "rounded-t-xl rounded-b-2xl"
+    -> class allow us to set the border radius in any one direction.
+7. "outline outline-4 outline-red-500"
+    -> class allow us to set the outline and its color.
+8. "outline outline-4 outline-red-500 outline-offset-2"
+    -> class allow us to push the outline ouside the cuurent position.
+
 # -------------------------------- 15. Filters ------------------------------- #
