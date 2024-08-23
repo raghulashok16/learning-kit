@@ -193,3 +193,17 @@
     -> class allow us to push the outline ouside the cuurent position.
 
 # -------------------------------- 15. Filters ------------------------------- #
+1. "blur-sm blur-lg blur-3xl"
+    -> class allow us to add a blur effect in the element.
+2. "brightness-50 brightness-200 brightness-100"
+    -> class allow us to add brightness to the element, brightness-100 is the default value.
+3. "contrast-50 contrast-100 contrast-150 contrast-200"
+    -> class allow us to set the contrast filter, contrast-100 is the default value.
+4. "grayscale"
+    -> class allow us to set the grayscale filter.
+5. "invert"
+    -> class allow us to set the invert color filter.
+6. "sepia"
+    -> class allow us to set the sepia filter.
+7. "hue-rotate-15 hue-rotate-30 hue-rotate-180"
+    -> class allow us to set the rgb color to change in the angle.
