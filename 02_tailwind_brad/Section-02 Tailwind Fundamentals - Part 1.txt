@@ -121,6 +121,40 @@
     -> class allows us to set the Height to the device Height.
 
 # --------------------------- 12. Layout & Position -------------------------- #
+1. positioning in tailwind is similar to css.
+
+    <div class="relative w-1/2 h-12 bg-red-100">
+        <p>parent element</p>
+        <div class="absolute bottom-0 right-0 bg-red-500">
+            <p>absolute child</p>
+        </div>
+    </div>
+2. this above code moves the child element to the bottom right corner inside the parent container.
+    <div class="relative w-1/2 h-12 bg-red-100">
+        <p>parent element</p>
+        <div class="absolute left-0 top-0 bg-red-500">
+            <p>absolute child</p>
+        </div>
+    </div>
+3. this above code moves the child element to the top left corner inside the parent container.
+4. similar method we can position element using relative-absolute classes.
+
+    <div class="relative h-32 w-32 ...">
+        <div class="absolute inset-x-0 top-0 h-16 ...">02</div>
+    </div>
+5. this above code spans all the width of parent container and height of 4rem.
+6. "inset-y-0 inset-x-0"
+    -> classes allows us to take the full distance in the parent container based on the axis.
+7. "inline inline-block" 
+    -> class allows us to set the element to stay in same line.
+8. "hidden"
+    -> class allows us to set the display property to none and it will not remove from the document flow.
+9. "z-40 z-30 z-10"
+    -> classes allows us to set the priority of the element in z-axis, higher the value, closer the screen.
+10. "float-left float-right"
+    -> classes allows us to float a containeror image to our prefered direction in x-axis.
+
 # ------------------------- 13. Backgrounds & Shadows ------------------------ #
+
 # ------------------------ 14. Borders & Border Radius ----------------------- #
 # -------------------------------- 15. Filters ------------------------------- #
