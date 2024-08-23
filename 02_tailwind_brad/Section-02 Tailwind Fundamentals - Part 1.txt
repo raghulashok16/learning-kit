@@ -155,6 +155,22 @@
     -> classes allows us to float a containeror image to our prefered direction in x-axis.
 
 # ------------------------- 13. Backgrounds & Shadows ------------------------ #
+1. "bg-no-repeat"
+    -> class allow us to set Background to repeat.
+2. "bg-cover"
+    -> class allow us to set visible part of the image inside the container.
+3. "bg-center"
+    -> class allow us to center the image in the container.
+4. "h-24 bg-gradient-to-r from-cyan-500 to-blue-500"
+    "h-24 bg-gradient-to-l from-cyan-500 to-blue-500"
+    -> classes allow us to set the gradient Background in left and right direction..
+5. "shadow-lg shadow-xl shadow shadow-md"
+    -> classes allow us to set the shadow property.
+6. "shadow-inner" 
+    -> class allow us to change the direction of shadow flow to inner side of the container.
+7. "shadow-xl shadow-blue-500"
+    "shadow-xl shadow-blue-500/50"
+    -> class allow us to change the color of the shadow and "/50" add the opacity in percentage here 50 percentage, deafult opacity is /100.
 
 # ------------------------ 14. Borders & Border Radius ----------------------- #
 # -------------------------------- 15. Filters ------------------------------- #
