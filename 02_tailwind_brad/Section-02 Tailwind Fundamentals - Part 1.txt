@@ -14,19 +14,30 @@
 # -------------------------- 8. Working With Colors -------------------------- #
 1. default colors - white, black, red, green, blue, orange, yellow, purple, lime, emarald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber.
 2. Tailwind has cutomized predefined classes for colors which we can use it from the range of "50" to "900".
-3. "text-black text-white text-gray text-gray-700" is the way to stlye the text.
+3. "text-black text-white text-gray text-gray-700"
+    -> classes allows us to change the text-color.
 4. "bg-yellow-500 bg-indigo-200 bg-red" is the example for Background color customization.
-5. "underline decoration-red-500" "underline decoration-emarald-600" "underline decoration-yellow-300" is the way to underline the text and also to change the underline-color.
-6. "border border-blue-400" is the way to add border and also to change the border color.
+5. "underline decoration-red-500"
+    "underline decoration-emarald-600" 
+    "underline decoration-yellow-300" 
+    -> classes allows to underline the text and also to change the underline-color.
+6. "border border-blue-400"
+    -> classes allows us to add border and also to change the border color.
+
     <div class="divide-y divide-blue-300">
         <div>Item 1</div>
         <div>Item 2</div>
         <div>Item 3</div>
         <div>Item 4</div>
     </div>
-7. "divide-y divide-blue-300" is used to add a horizontal line betwee each child and we can change the color of the horizontal line using divide-blue-300.
-8. "outline outline-red-500" is used to add outline for the element and we can change the outline color using outline-red-500.
-9. "shadow-lg shadow-cyan-500" "shadow-lg bg-cyan-500 shadow-cyan-500" is used to add a shadow to the element and we can change the color of the shadow using shadow-cyan-500.
+7. "divide-y divide-blue-300"
+    -> classes allows us to add a horizontal line betwee each child and we can change the color of the horizontal line using divide-blue-300.
+8. "outline outline-red-500"
+    -> classes allows us to add outline for the element and we can change the outline color using outline-red-500.
+9. "shadow-lg shadow-cyan-500"
+    "shadow-lg bg-cyan-500 shadow-cyan-500" 
+    -> classes allws us to add a shadow to the element and we can change the color of the shadow using shadow-cyan-500.
+
     <input type="checkbox" class="accent-purple-500" checked/>
 10. the above code is used to stlye the checkbox color to purple-500.
 11. "bg-[#427fab]" "bg-[rgb(255,0,0)]" "bg-[steelblue]" is calledd arbitary color.
@@ -34,12 +45,19 @@
 
 # -------------------------- 9. Container & Spacing -------------------------- #
 1. there are breakpoints for Containers in Tailwind css - sm, md, lg, xl, 2xl.
-2. there is "container" class which allows us to set the width to max in all device size.
-3. "mx-auto" sets the margin x axis to auto, which means equal in left and right of the container.
-4. "m-2" half rem or 8px, "m-4" one rem or 16px, "m-96" 24 rem or 384px which is the max value in margin.
-5. "ml-1 mr-1 mb-1 mt-1 ms-1 me-1" we can also use custom margin direction.
-6. "mt-[20px]" can also be used to set the size of margin.
+2. "container"
+    -> class allows us to set the width to max in all device size.
+3. "mx-auto"
+    ->class allows us to sets the margin x axis to auto, which means equal in left and right of the container.
+4. "m-2" half rem or 8px,
+    "m-4" one rem or 16px, 
+    "m-96" 24 rem or 384px which is the max value in margin.
+5. "ml-1 mr-1 mb-1 mt-1 ms-1 me-1" 
+    -> we can also use custom margin direction.
+6. "mt-[20px]"
+    -> can also be used to set the size of margin.
 7. like margin we do have classes for padding "p-5 pt-4 pb-4".
+
     <div class="flex space-x-4">
         <div>Item 1</div>
         <div>Item 2</div>
@@ -51,8 +69,57 @@
 10. this space avoids using margin in each child element inside a div.
 
 # ------------------------------ 10. Typography ------------------------------ #
+1. "font-sans font-serif font-mono"
+    -> classes are the default predefined font styles.
+2. we can also add our custom fonts using multiple ways.
+3. one of the way is by using google font.
+4. just copy-paste your prefered font link in your project and add the below code in the script tag or in the tailwind config file.
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontfamily: {
+                    serif: ['Tapestry', 'Georgia'],
+                }
+            }
+        }
+    </script>
+5. you can add multiple font styles with your prefered name which you can use it in the tailwind class name.
+6. "text-xs text-sm text-base text-lg text-xl text-2xl text-9xl"
+    -> classes allows to set the text sizes, the "text-9xl" is the max value.
+7. "font-light font-normal font-medium font-semibold font-bold"
+    -> classes allows to set the font weight.
+8. "tracking-tight tracking-normal tracking-wide"
+    -> classes allow to set the letter spacing.
+9. "text-left text-right text-center"
+    -> classes allows to set the text alignment.
+10. "underline decoration-4 decoration-blue-500"
+    "underline decoration-double"
+    "underline decoration-dotted"
+    "underline decoration-dashed"
+    "underline decoration-wavy"
+    -> classes allows us to set underline styles [underline thickness and underline style].
+11. "underline decoration-4 decoration-blue-500 underline-offset-8"
+    -> classes allow us to offset the underline from the text.
+12. "normal-case uppercase lowercase capitalize"
+    -> classes allows us to set the case of the text.
 
 # ---------------------------- 11. Width & Height ---------------------------- #
+1. "w-0 w-12 w-48 w-96"
+    -> classes allows us to set the width.
+2. "w-1/2 w-1/3 w-1/4"
+    -> classes allows us to set the width in percentage.
+3. "w-screen"
+    -> class allows us to set the full viewport width.
+4. "w-full"
+    -> class allow us to set the full width of the container.
+5. "w-[300px]"
+    -> class allow us to set the width in arbitary value.
+6. "max-w-sm max-w-lg" 
+    -> classes allows to set the max width in rems sm-24rem lg-32rem.
+7. "h-screen"
+    -> class allows us to set the Height to the device Height.
+
 # --------------------------- 12. Layout & Position -------------------------- #
 # ------------------------- 13. Backgrounds & Shadows ------------------------ #
 # ------------------------ 14. Borders & Border Radius ----------------------- #
