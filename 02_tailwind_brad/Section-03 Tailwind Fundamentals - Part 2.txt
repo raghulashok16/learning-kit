@@ -34,8 +34,30 @@
     -> class allows us to add smooth scroll in the document, it is added in the html tag after the lang attribute.
     
 # ------------------ 17. Breakpoint Classes & Media Queries ------------------ #
+1. "bg- black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-red-800"
+    -> class allows us to set different styles for different screen size.
+    -> we can add this class in body tag, header tag, paragraph, etc.
+    -> each tags responds to the styles we specified screen sizes.
+
 # -------------------------------- 18. Columns ------------------------------- #
+1. "colums-3 colums-3 colums-4 gap-0 gap-1 gap-2"
+    -> class allows us to specify the colums in the screen.
+    -> it is similar to the row/col concept in the bootstrap.
+2. "colums-xs"
+    -> class used for responsive designing of images or containers.
+3. "aspect-video aspect-square"
+    -> class allows us to change the ratio of image or other elements.
+    
 # -------------------------------- 19. Flexbox ------------------------------- #
+1. "flex flex-row flex-col"
+    -> class allows us to set the display flex property for the container/element.
+2. "flex md:flex-col"
+    -> class allows us to change the flex direction based on the device width.
+3. "flex-wrap"
+    -> class allows us to wrap content if it flow over the screen in horizontal direction.
+4. "order-1 order-2 order-3"
+    -> class allows us to arrage items in a container in our desiderd order.  
+
 # --------------------------------- 20. Grid --------------------------------- #
 # ------------------------ 21. Transition & Transform ------------------------ #
 # --------------------- 22. Animation Classes & Keyframes -------------------- #
