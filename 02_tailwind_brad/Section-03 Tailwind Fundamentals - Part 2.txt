@@ -12,36 +12,36 @@
 
 # ----------------------------- 16. Interactivity ---------------------------- #
 1. "hover:bg-orange-500 hover:text-white"
-    -> class allows us to change styles when the elment is hovered.
+    -> allows us to change styles when the elment is hovered.
 2. "focus:bg-orange-500 focus:text-white"
-    -> class allows us to change styles when the elment is clicked on it.
+    -> allows us to change styles when the elment is clicked on it.
 3. "active:bg-orange-500 active:text-white"
-    -> class allows us to change styles when the elment is mouse click down state.
+    -> allows us to change styles when the elment is mouse click down state.
 4.  <div class="group">
         <h3 class="group-hover:text-white">Card title</h3>
         <p class="group-hover:text-red-500">card details</p>
     </div>
-    -> Classes allows us to chain element in the hover state.
+    -> allows us to chain element in the hover state.
 5. "frist:bg-red-600 even:bg-green-400 odd:bg-slate-900"
-    -> Classes allows us to set the styles based on the pseudo conditions, it can can be very helpful when we work with list.
+    -> allows us to set the styles based on the pseudo conditions, it can can be very helpful when we work with list.
 6. "appearance-none"
-    -> class allows us to remove the default style of the browser like arrows in dropdown, using select and option tag.
+    -> allows us to remove the default style of the browser like arrows in dropdown, using select and option tag.
 7. "cursor-pointer cursor-wait cursor-not-allowed"
-    -> class allows us to change the styles of the cursor.
+    -> allows us to change the styles of the cursor.
 8. "select-none select-all select-text"
-    -> class allows us to select the multiple ways of section of text in our document.
+    -> allows us to select the multiple ways of section of text in our document.
 9. "scroll-smooth"
-    -> class allows us to add smooth scroll in the document, it is added in the html tag after the lang attribute.
+    -> allows us to add smooth scroll in the document, it is added in the html tag after the lang attribute.
     
 # ------------------ 17. Breakpoint Classes & Media Queries ------------------ #
 1. "bg- black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-red-800"
-    -> class allows us to set different styles for different screen size.
+    -> allows us to set different styles for different screen size.
     -> we can add this class in body tag, header tag, paragraph, etc.
     -> each tags responds to the styles we specified screen sizes.
 
 # -------------------------------- 18. Columns ------------------------------- #
 1. "colums-3 colums-3 colums-4 gap-0 gap-1 gap-2"
-    -> class allows us to specify the colums in the screen.
+    -> allows us to specify the colums in the screen.
     -> it is similar to the row/col concept in the bootstrap.
 2. "colums-xs"
     -> class used for responsive designing of images or containers.
@@ -59,7 +59,27 @@
     -> class allows us to arrage items in a container in our desiderd order.  
 
 # --------------------------------- 20. Grid --------------------------------- #
+1. "grid grid-cols-3 gap-2"
+    -> allows us to set the colums size to 3.
+    -> allows us to set the gap size to 2.
+2. "col-span-2 row-span-2"
+    -> allows to span an additional column/row inthe grid space.
+3. "md:col-span-2 lg:col-span-3"
+    -> allows you to make responsive design based on the device width.
+
 # ------------------------ 21. Transition & Transform ------------------------ #
+1. "transition transition-all transition-color transition-opacity duration-1000"
+    -> allows us to make smooth transition liker hovering color change effect.
+    -> "duration" class allows us to set the time duration of that transition animation.
+2. "rotate-12"
+    -> allows us to do Transform property with simple class.
+    -> this rotate property is used to rotate the element.
+    -> also we can add the hover effect to that element using "hover:rotate-20".
+    -> by using "transition-transform duration-1000" we can make the animation smooth.
+3. "hover:rotate-180 hover:scale-75 hover:skew-x-12 transition duration-1000"
+    -> allows us to do multiple transition/transform property in a single shot.
+    -> this above classes is used to animate the element when hovered and also to smooth the animation we used transition class.
+4. 
 # --------------------- 22. Animation Classes & Keyframes -------------------- #
 # ------------------------ 23. Config & Customization ------------------------ #
 # ------------------------------- 24. Dark Mode ------------------------------ #
