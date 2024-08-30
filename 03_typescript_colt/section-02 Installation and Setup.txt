@@ -1,0 +1,10 @@
+# --------------------- section-02 Installation and Setup -------------------- #
+7. Installing TypeScript
+8. The TypeScript Playground
+9. Installing Visual Studio Code
+10. How We Use TypeScript
+
+# ------------------------- 7. Installing TypeScript ------------------------- #
+# ----------------------- 8. The TypeScript Playground ----------------------- #
+# --------------------- 9. Installing Visual Studio Code --------------------- #
+# ------------------------- 10. How We Use TypeScript ------------------------ #
