@@ -1,0 +1,22 @@
+# ------- Section 14: [Optional] React Before Hooks: Class-Based React ------- #
+174. Section Overview
+175. Our First Class Component
+176. Working With Event Handlers
+177. Class Components vs. Function Components
+178. Starting the "Classy Weather" App
+179. Fetching Weather Data
+180. Displaying the Weather
+181. Removing Boilerplate Code With Class Fields
+182. Child to Parent Communication
+183. Lifecycle Methods
+
+# --------------------------- 174. Section Overview -------------------------- #
+# ---------------------- 175. Our First Class Component ---------------------- #
+# --------------------- 176. Working With Event Handlers --------------------- #
+# --------------- 177. Class Components vs. Function Components -------------- #
+# ------------------ 178. Starting the "Classy Weather" App ------------------ #
+# ------------------------ 179. Fetching Weather Data ------------------------ #
+# ------------------------ 180. Displaying the Weather ----------------------- #
+# ------------- 181. Removing Boilerplate Code With Class Fields ------------- #
+# -------------------- 182. Child to Parent Communication -------------------- #
+# -------------------------- 183. Lifecycle Methods -------------------------- #
