@@ -1,0 +1,32 @@
+# -------------- Section 13: Custom Hooks, Refs, and More State -------------- #
+159. Section Overview
+160. React Hooks and Their Rules
+161. The Rules of Hooks in Practice
+162. More Details of useState
+163. Initializing State With a Callback (Lazy Initial State)
+164. useState Summary
+165. How NOT to Select DOM Elements in React
+166. Introducing Another Hook: useRef
+167. Refs to Select DOM Elements
+168. Refs to Persist Data Between Renders
+169. What are Custom Hooks? When to Create One?
+170. Creating our First Custom Hook: useMovies
+171. Creating useLocalStorageState
+172. Creating useKey
+173. CHALLENGE #1: useGeolocate
+
+# --------------------------- 159. Section Overview -------------------------- #
+# --------------------- 160. React Hooks and Their Rules --------------------- #
+# -------------------- 161. The Rules of Hooks in Practice ------------------- #
+# ----------------------- 162. More Details of useState ---------------------- #
+# ------- 163. Initializing State With a Callback (Lazy Initial State) ------- #
+# --------------------------- 164. useState Summary -------------------------- #
+# --------------- 165. How NOT to Select DOM Elements in React --------------- #
+# ------------------- 166. Introducing Another Hook: useRef ------------------ #
+# --------------------- 167. Refs to Select DOM Elements --------------------- #
+# ----------------- 168. Refs to Persist Data Between Renders ---------------- #
+# -------------- 169. What are Custom Hooks? When to Create One? ------------- #
+# -------------- 170. Creating our First Custom Hook: useMovies -------------- #
+# -------------------- 171. Creating useLocalStorageState -------------------- #
+# --------------------------- 172. Creating useKey --------------------------- #
+# ---------------------- 173. CHALLENGE 1: useGeolocate ---------------------- #

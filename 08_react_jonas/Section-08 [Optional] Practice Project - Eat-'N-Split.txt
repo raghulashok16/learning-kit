@@ -1,0 +1,20 @@
+# ----------- Section 8: [Optional] Practice Project: Eat-'N-Split ----------- #
+94. Section Overview
+95. Project Setup
+96. Building the Static App: List of Friends
+97. Building the Static App: Forms
+98. Displaying the New Friend Form
+99. Adding a New Friend
+100. Selecting a Friend
+101. Creating Controlled Elements
+102. Splitting a Bill
+
+# --------------------------- 94. Section Overview --------------------------- #
+# ----------------------------- 95. Project Setup ---------------------------- #
+# --------------- 96. Building the Static App: List of Friends --------------- #
+# -------------------- 97. Building the Static App: Forms -------------------- #
+# -------------------- 98. Displaying the New Friend Form -------------------- #
+# -------------------------- 99. Adding a New Friend ------------------------- #
+# -------------------------- 100. Selecting a Friend ------------------------- #
+# --------------------- 101. Creating Controlled Elements -------------------- #
+# --------------------------- 102. Splitting a Bill -------------------------- #
