@@ -1,0 +1,95 @@
+# -------------------------------- interview-3 ------------------------------- #
+1. what are the features of react.
+2. is react faster than angular.
+3. why is it one way data binding.
+4. what is the use of babel.
+5. difference between virtual dom and real dom.
+6. is react js is a framework or library.
+7. what is the use of ES6.
+8. what are the ways to create a component in react js.
+9. which way is more helpful while creating a react component.
+10. what is the use of useState function.
+11. what is the difference between controlled and unctrolled component.
+12. what is prop drilling.
+13. can we create our custom hooks.
+14. how to create a custom hook in react.
+15. what is the use of strict mode in react.
+16. ways to pass the data between component.
+17. can you explain how react router works.
+18. do you know the join in sql.
+19. what is left join.
+
+# -------------------------------- interview-4 ------------------------------- #
+1. how do class component and functional component differ.
+2. which component perform better class or functional component.
+3. what is redux used for.
+4. why do you use useState and useEffect.
+5. tell me about other hook you know.
+6. do you use console.log() while development and why do you use it.
+7. in big project like 7000 lines do you use it.
+8. give me a idea to disable and enable all the logs in the application like a on/off switch.
+
+# -------------------------------- interview-5 ------------------------------- #
+1. in html what is the use of doctype.
+2. does doctype make any difference in the html structure.
+3. do you know the major difference between plain css and css3.
+4. do you the purpose of box sizing.
+5. what is ecmascript in javascript.
+6. difference between let, var and const.
+7. effect of speed and performance in var and const used as the global variable.
+8. explain spread operator.
+9. explain about arrow function.
+10. do you offently use arrow function.
+11. do you know about typescript.
+12. do you know about setTimeout and setInterval functions.
+13. how to stop setInterval.
+14. find the highest repeating element in the given array.
+    const arr = [1,1,2,1,3];
+
+    output: highest repeating - 1
+            occurence - 3
+
+15. explain react js in 3 to 4 line.
+16. do you know about controlled and uncontrolled component.
+16. what is hook in react js.
+17. why we use props in react js.
+18. is props a better way or is there any other way of managing states in react.
+19. what is middleware in redux.
+
+
+# -------------------------------- interview-6 ------------------------------- #
+1. how can we capitalize first letter of ever word with css.
+2. find the output
+    let a = a+1;
+    console.log(a);
+
+3. method to use element selector in css.
+4. first letter of <p> element can be selected using.
+5. why is JSONP used.
+6. find the output
+    console.log(typeof typeof 42);
+
+7. find the output
+    var arr = [1,2,3,4];
+    arr.concat([5]);
+    alert(arr.length);
+
+8. how to refresh the webpage using javascript.
+9. how will you access the value of a text box using javascript.
+10. what are statefull component in react.
+11. which helps react for keeping their data unidirectional.
+
+# -------------------------------- interview-7 ------------------------------- #
+# -------------------------------- interview-8 ------------------------------- #
+# -------------------------------- interview-9 ------------------------------- #
+# -------------------------------- interview-10 ------------------------------ #
+# -------------------------------- interview-11 ------------------------------ #
+# -------------------------------- interview-12 ------------------------------ #
+# -------------------------------- interview-13 ------------------------------ #
+# -------------------------------- interview-14 ------------------------------ #
+# -------------------------------- interview-15 ------------------------------ #
+# -------------------------------- interview-16 ------------------------------ #
+# -------------------------------- interview-17 ------------------------------ #
+# -------------------------------- interview-18 ------------------------------ #
+# -------------------------------- interview-19 ------------------------------ #
+# -------------------------------- interview-20 ------------------------------ #
