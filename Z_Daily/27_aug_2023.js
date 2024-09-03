@@ -65,3 +65,49 @@ function largestNumber(input_array) {
     console.log(temp);
 }
 largestNumber([1, 8, 555, 4, 10, 6, 9]);
+
+//create a function that takes an array of numbers and returns the second largest number in the array
+function secondLargestNumber(input_array) {
+    let temp = null;
+    let second_temp = null;
+    input_array.map((value) => {
+        if (temp < value) {
+            second_temp = temp;
+            temp = value;
+        } else if (second_temp < value) {
+            second_temp = value;
+        }
+    });
+    console.log(second_temp);
+}
+secondLargestNumber([1, 8, 555, 4, 10, 6, 9]);
+
+//create a function that returns the reversed string with splitted words
+function reverseString(input_string) {
+    console.log(input_string.split("").reverse().join(""));
+}
+reverseString("hello world");
+
+// create a function that adds a array values using recursion
+function sumArray(input_array) {
+    let temp = 0;
+    input_array.map((value) => {
+        temp = temp + value;
+    });
+    console.log(temp);
+}
+sumArray([1, 8, 555, 4, 10, 6, 9]);
+
+// Returns true if the given number is an Armstrong number, false otherwise
+function isArmstrongNumber(number) {
+    let sum = 0;
+    let num = number;
+    while (num > 0) {
+        const digit = num % 10;
+        sum += Math.pow(digit, 3);
+        num = Math.floor(num / 10);
+    }
+    return sum === number;
+}
+
+findArmstrongNumber(153);
