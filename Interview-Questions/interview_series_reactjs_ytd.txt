@@ -81,8 +81,74 @@
 
 # -------------------------------- interview-7 ------------------------------- #
 # -------------------------------- interview-8 ------------------------------- #
+1. what is redux.
+2. what is hooks.
+3. how can we add css and javascript globally in react.
+4. create a button using create element and give it some attributes like id,class,style and when you click on that button show alert.
+5. sort object array in ascending order.
+6. how to get the params and query from a url in react.
+
 # -------------------------------- interview-9 ------------------------------- #
+1.  what will be the output
+    const arr = [3,5,7];
+    arr.foo = 'hello';
+    for(let i in arr){
+        console.log(i);
+    }
+    for(let i of arr){
+        console.log(i);
+    }
+
+    let i;
+    for(i=0; i<3; i++){
+        const log = () => {
+            console.log(i);
+        }
+        setTimeout(log, 100);
+    }
+
+    const promise = new Promise(res => res(2));
+    promise.then(v => {
+        console.log(v);
+        return v*2;
+    })
+    .then(v => {
+        console.log(v);
+    })
+    .finally(v => {
+        console.log(v);
+        return v*2;
+    })
+    .then(v => {
+        console.log(v);
+    });
+
 # -------------------------------- interview-10 ------------------------------ #
+1. write a program that takes a array input and returns the minimum value in it.
+2. what is react js.
+3. what is hooks in react.
+4. how many hooks you know or worked with.
+5. what is the use of useEffect.
+6. what is the use of useState.
+7. what are the features of react.
+8. what is jsx.
+9. what is a component.
+10. can we resuse component in react.
+11. difference between real dom vs virtual dom.
+12. can you explain redux work flow.
+13. what is javascript.
+14. explain map, filter ,find in javascript.
+15. difference between map and forEach.
+16. what is the use of props in react.
+17. difference between state and props.
+18. in your previous work which component you used class or functional component.
+19. what is the use of react router.
+20. what is the html.
+21. can you explain html layout.
+22. what are tags in html.
+23. which is best inline or external css.
+24. what are the types of css we add to html. 
+
 # -------------------------------- interview-11 ------------------------------ #
 # -------------------------------- interview-12 ------------------------------ #
 # -------------------------------- interview-13 ------------------------------ #
