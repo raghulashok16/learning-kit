@@ -1,0 +1,52 @@
+# ---------- Section-20 Redux and Modern Redux Toolkit (With Thunks) --------- #
+260. Section Overview
+261. Introduction to Redux
+262. Creating a Reducer: Bank Account
+263. Creating a Redux Store
+264. Working With Action Creators
+265. Adding More State: Customer
+266. Professional Redux File Structure: State Slices
+267. Back to React! Connecting our Redux App With React
+268. Dispatching Actions from Our React App
+269. The Legacy Way of Connecting Components to Redux
+270. Redux Middleware and Thunks
+271. Making an API Call With Redux Thunks
+272. The Redux DevTools
+273. What is Redux Toolkit (RTK)?
+274. Creating the Store With RTK
+275. Creating the Account Slice
+276. Back to Thunks
+277. Creating the Customer Slice
+278. Redux vs. Context API
+
+# --------------------------- 260. Section Overview -------------------------- #
+# ------------------------ 261. Introduction to Redux ------------------------ #
+1. Redux is a third party library to manage global state in a web application.
+2. it is a standalone library, but easy to integrate with react apps using react-redux library.
+3. all global state is stored in one globally accessible store, which is easy to update using 'actions' like (useReducer).
+4. in order to learn redux you need to know about useReducer.
+5. the idea of updating state in react and redux is same.
+6. it is conceptually similar to using the context api and useReducer together.
+7. many developers say Context api is an replacement for the redux.
+8. there are two versions of redux - classic redux and modern redux toolkit.
+9. it is important to know the working of both the versions, but nowadays redux toolkit is widely used.
+10. ideal use case for redux, when there is lots of state that update frequently.
+11. 
+
+# ------------------- 262. Creating a Reducer: Bank Account ------------------ #
+# ------------------------ 263. Creating a Redux Store ----------------------- #
+# --------------------- 264. Working With Action Creators -------------------- #
+# --------------------- 265. Adding More State: Customer --------------------- #
+# ----------- 266. Professional Redux File Structure: State Slices ----------- #
+# ---------- 267. Back to React! Connecting our Redux App With React --------- #
+# ---------------- 268. Dispatching Actions from Our React App --------------- #
+# ----------- 269. The Legacy Way of Connecting Components to Redux ---------- #
+# --------------------- 270. Redux Middleware and Thunks --------------------- #
+# ----------------- 271. Making an API Call With Redux Thunks ---------------- #
+# -------------------------- 272. The Redux DevTools ------------------------- #
+# --------------------- 273. What is Redux Toolkit (RTK)? -------------------- #
+# --------------------- 274. Creating the Store With RTK --------------------- #
+# ---------------------- 275. Creating the Account Slice --------------------- #
+# ---------------------------- 276. Back to Thunks --------------------------- #
+# --------------------- 277. Creating the Customer Slice --------------------- #
+# ------------------------ 278. Redux vs. Context API ------------------------ #
