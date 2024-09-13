@@ -1,0 +1,9 @@
+import { useState } from "react";
+
+const [ input, setInput ] = useState('');
+
+const handleChange = (event) => {
+    setInput(event.target.value);
+}
+
+<input type="text" value={input} onchange={handleChange} />
