@@ -222,6 +222,13 @@ function impedanceCalculator(Dd, Dc, er) {
 // ➞ {}
 
 function expensiveOrders(orders, cost) {
-
+    const entries = Object.entries(orders);
+    let obj = {};
+    for (let [name, price] of entries) {
+        if (price > cost) {
+            obj[`${name}`] = price;
+        }
+    }
+    console.log(obj);
 }
-expensiveOrders({ "Gucci Fur": 24600, "Teak Dining Table": 3200, "Louis Vutton Bag": 5550, "Dolce Gabana Heels": 4000 }, 20000);
+// expensiveOrders({ "a": 3000, "b": 200, "c": 1050 }, 1000);
