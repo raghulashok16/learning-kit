@@ -101,4 +101,4 @@ function isGoodMatch(arr) {
         console.log(tempArr);
     }
 }
-isGoodMatch([2, 6, 7, -2]);
+// isGoodMatch([2, 6, 7, -2]);
