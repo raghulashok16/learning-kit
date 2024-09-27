@@ -25,6 +25,7 @@ function calcBundledTemp(n, temp) {
     console.log(Math.round(val * 10) / 10);
 }
 // calcBundledTemp(4, "6*C");
+/* -------------------------------------------------------------------------- */
 
 // Shhh Be Quiet Function
 // Write a function that removes all capital letters from a sentence except the first letter, puts quotation marks around the sentence and adds ", whispered Edabit." at the end.
@@ -44,6 +45,7 @@ function shhh(sentence) {
     console.log(`"${sclicedSentence}", ${attachmentSentence}`);
 }
 // shhh("HI THERE!");
+/* -------------------------------------------------------------------------- */
 
 // Wash Your Hands :)
 // It takes 21 seconds to wash your hands and help prevent the spread of COVID-19.
@@ -72,6 +74,7 @@ function washHands(N, nM) {
     }
 }
 // washHands(1, 1);
+/* -------------------------------------------------------------------------- */
 
 // Good Match?
 // In this challenge you will be given an array of numbers. Your task is to "marry" each pair of adjacent numbers by adding them, and return the array of "couples" (i.e. sums).
@@ -96,12 +99,12 @@ function isGoodMatch(arr) {
         for (let i = 0; i < arr.length; i += 2) {
             let val = arr[i] + arr[i + 1];
             tempArr.push(val);
-            /* --------------------------- tempArr.push(val); --------------------------- */
         }
         console.log(tempArr);
     }
 }
 // isGoodMatch([2, 6, 7, -2]);
+/* -------------------------------------------------------------------------- */
 
 // Function to Arrow Function
 // Create a function that takes an empty function as a string and returns the function as a arrow function.
@@ -122,3 +125,65 @@ function toArrow(f) {
     console.log(`const ${arr[0]} = (${arr[1]} => {}`)
 }
 // toArrow("function restArgs(...a) {}")
+/* -------------------------------------------------------------------------- */
+
+// Reverse Coding Challenge #6
+// This is a reverse coding challenge. Normally you're given explicit directions with how to create a function. Here, you must generate your own function to satisfy the relationship between the inputs and outputs.
+
+// Your task is to create a function that, when fed the inputs below, produces the sample outputs shown.
+
+// Examples
+// mysteryFunc(152) ➞ 10
+
+// mysteryFunc(832) ➞ 48
+
+// mysteryFunc(19) ➞ 9
+
+// mysteryFunc(133) ➞ 9
+
+function mysteryFunc(num) {
+    let temp = num.toString().split('');
+    let val = 1;
+    for (let i = 0; i < temp.length; i++) {
+        val = val * temp[i];
+    }
+    console.log(val)
+}
+// mysteryFunc(152);
+/* -------------------------------------------------------------------------- */
+
+// Book Shelf
+// Create a Book constructor that has two properties :
+
+// Title
+// Author
+// and two methods:
+
+// A method named getTitle that returns: "Title: " + the instance title.
+// A method named getAuthor that returns: "Author: " + the instance author.
+// and instantiate this constructor by creating 3 new books:
+
+// Pride and Prejudice - Jane Austen (PP)
+// Hamlet - William Shakespeare (H)
+// War and Peace - Leo Tolstoy (WP)
+// The name of the new object instances PP, H, and WP, respectively.
+
+// For instance, if I instantiated the following book using this Book constructor function:
+
+// Harry Potter - J.K. Rowling (HP)
+// I would get the following properties and methods:
+
+// Examples
+// HP.title ➞ "Harry Potter"
+// HP.author ➞ "J.K. Rowling"
+// HP.getTitle() ➞ "Title: Harry Potter"
+// HP.getAuthor() ➞ "Author: J.K. Rowling"
+// Notes
+// Read more about constructor functions in Resources.
+// Remember, after you've finished writing the constructor function, you must instantiate it through the creation of new objects.
+
+function Book(title, author) {
+    // Write your properties and methods here
+}
+
+// Instantiate your Book constructor here
