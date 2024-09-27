@@ -257,4 +257,155 @@ function isScalable(arr) {
     }
     console.log(val);
 }
-isScalable([40, 45, 50, 45, 47, 52]);
+// isScalable([40, 45, 50, 45, 47, 52]);
+/* -------------------------------------------------------------------------- */
+
+// Who's in First Place?
+// Create a function that takes a string road and returns the car that's in first place. The road will be made of "=", and cars will be represented by letters in the alphabet.
+
+// Examples
+// firstPlace("====b===O===e===U=A==") ➞ "A"
+
+// firstPlace("e==B=Fe") ➞ "e"
+
+// firstPlace("proeNeoOJGnfl") ➞ "l"
+// Notes
+// Return "No car available" if there is no car on the road and "No road available" if there is no road.
+
+function firstPlace(road) {
+    let temp = road.split('');
+    let roadVal = false;
+    let carVal = false;
+    let car = '';
+    console.log(temp);
+    for (let i = 0; i < temp.length; i++) {
+        if (temp[i] === '=') {
+            roadVal = true;
+        } else {
+            car = temp[i];
+            carVal = true;
+        }
+    }
+    if (roadVal && carVal) {
+        console.log(car);
+    } else if (!roadVal) {
+        console.log('No road available');
+    } else if (!carVal) {
+        console.log('No car available');
+    }
+    console.log(car, roadVal, carVal);
+}
+// firstPlace("jshisb=");
+/* -------------------------------------------------------------------------- */
+
+// Crypto Wars: Missing Number
+// Our fleet managed to get one of the enemy's top-secret codes from the remains of its fallen ship. The codes were immediately sent over to our code-breaking base over at Bleckley Park ;) for analysis. The team found that each code contains 25 numbers with one missing. The missing number corresponds to a letter in the English alphabet. Your job is to find a more efficient Method of decrypting the messages by digitizing the process.
+
+// Write a function that takes an array, detects the missing number (in the array), and returns its corresponding letter.
+
+// Examples
+// decrypt([19, 12, 14, 21, 22, 3, 11, 20, 9, 16, 24, 17, 2, 10, 13, 18, 7, 8, 4, 5, 1, 6, 25, 23, 26]) ➞ "O"
+// // The missing number is 15.
+
+// decrypt([24, 12, 2, ..., 25]) ➞ "N"
+// // The missing number is 14.
+
+// decrypt([24, 12, 2, ..., 25]) ➞ "P"
+// // The missing number is 16.
+// Notes
+// The array will only contain positive integers from 1 to 26 with one missing.
+// There will be no duplicate numbers.
+// Return the capital letter.
+
+function decrypt(arr) {
+    let maxVal = Math.max(...arr);
+    let totalVal = maxVal * (maxVal + 1) / 2;
+    let actTotalVal = arr.reduce((a, c) => a + c, 0);
+    let missingNumber = totalVal - actTotalVal;
+    console.log(String.fromCharCode(missingNumber + 64))
+    console.log(maxVal, totalVal, actTotalVal, missingNumber);
+}
+// decrypt([19, 12, 14, 21, 22, 3, 11, 20, 9,15, 16, 24, 17, 2, 10, 13, 18, 8, 4, 5, 1, 6, 25, 23, 26]);
+/* -------------------------------------------------------------------------- */
+
+// Last Digit Ultimate
+// Your job is to create a function, that takes 3 numbers: a, b, c and returns true if the last digit of a * b = the last digit of c. Check the examples below for an explanation.
+
+// Examples
+// lastDig(25, 21, 125) ➞ true
+// // The last digit of 25 is 5, the last digit of 21 is 1, and the last
+// // digit of 125 is 5, and the last digit of 5*1 = 5, which is equal
+// // to the last digit of 125(5).
+
+// lastDig(55, 226, 5190) ➞ true
+// // The last digit of 55 is 5, the last digit of 226 is 6, and the last
+// // digit of 5190 is 0, and the last digit of 5*6 = 30 is 0, which is
+// // equal to the last digit of 5190(0).
+
+// lastDig(12, 215, 2142) ➞ false
+// // The last digit of 12 is 2, the last digit of 215 is 5, and the last
+// // digit of 2142 is 2, and the last digit of 2*5 = 10 is 0, which is
+// // not equal to the last digit of 2142(2).
+// Notes
+// Numbers can be negative.
+
+function lastDig(a, b, c) {
+    const val1 = (a * b).toString().split('');
+    const val2 = c.toString().split('');
+    const result = (val1.pop() === val2.pop()) ? true : false;
+    console.log(result);
+}
+// lastDig(25, 21, 125);
+/* -------------------------------------------------------------------------- */
+
+// Hold Your Breath!
+// You will be given an array of numbers which represent your character's altitude above sea level at regular intervals:
+
+// Positive numbers represent height above the water.
+// 0 is sea level.
+// Negative numbers represent depth below the water's surface.
+// Create a function which returns whether your character survives their unsupervised diving experience, given an array of integers.
+
+// Your character starts with a breath meter of 10, which is the maximum. When diving underwater, your breath meter decreases by 2 per item in the array. Watch out! If your breath diminishes to 0, your character dies!
+
+// To prevent this, you can replenish your breath by 4 (up to the maximum of 10) for each item in the array where you are at or above sea level.
+
+// Your function should return true if your character survives, and false if not.
+
+// Worked Example
+// divingMinigame([-5, -15, -4, 0, 5]) ➞ true
+
+// // Breath meter starts at 10.
+// // -5 is below water, so breath meter decreases to 8.
+// // -15 is below water, so breath meter decreases to 6.
+// // -4 is below water, so breath meter decreases to 4.
+// // 0 is at sea level, so breath meter increases to 8.
+// // 5 is above sea level and breath meter is capped at 10 (would've been 12 otherwise).
+// // Character survives!
+// Examples
+// divingMinigame([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) ➞ true
+
+// divingMinigame([-3, -6, -2, -6, -2]) ➞ false
+
+// divingMinigame([2, 1, 2, 1, -3, -4, -5, -3, -4]) ➞ false
+// Notes
+// Lists may be of any length.
+// All arrays are valid.
+
+function divingMinigame(arr) {
+    let val = 10;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            val -= 2;
+        } else {
+            if (val > 6) {
+                val = 10;
+            } else {
+                val += 2;
+            }
+        }
+        console.log(val)
+    }
+    console.log(val > 0 ? true : false);
+}
+// divingMinigame([2, 1, 2, 1, -3, -4, -5, -3, -4]);
