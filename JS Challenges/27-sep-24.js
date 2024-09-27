@@ -102,3 +102,23 @@ function isGoodMatch(arr) {
     }
 }
 // isGoodMatch([2, 6, 7, -2]);
+
+// Function to Arrow Function
+// Create a function that takes an empty function as a string and returns the function as a arrow function.
+
+// Examples
+// "function test(a) {}" ➞  "const test = (a) =>"
+
+// "function twoArgs(a,b) {}" ➞ "const twoArgs = (a,b) =>"
+
+// "function restArgs(...a) {}" ➞  "const restArgs = (...a) =>"
+// Notes
+// Functions can have multiple arguments.
+// The arrow function must be assigned to a const.
+
+function toArrow(f) {
+    let arr = f.slice(9).slice().slice(0, -3).split("(");
+
+    console.log(`const ${arr[0]} = (${arr[1]} => {}`)
+}
+// toArrow("function restArgs(...a) {}")
