@@ -192,4 +192,148 @@ function isPalindrome(str) {
     console.log(revStr === transformedString);
 }
 // isPalindrome("Not a palindrome");
-isPalindrome("A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!");
+// isPalindrome("A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!");
+
+/* -------------------------------------------------------------------------- */
+// Find the Discount
+// Create a function that takes two arguments: the original price and the discount percentage as integers and returns the final price after the discount.
+
+// Alternative Text
+
+// Examples
+// dis(1500, 50) ➞ 750
+
+// dis(89, 20) ➞ 71.2
+
+// dis(100, 75) ➞ 25
+// Notes
+// Your answer should be rounded to two decimal places.
+
+function disc(price, discount) {
+    let discoun = price - (price * discount * 0.01);
+    console.log(discoun);
+}
+// disc(89 , 20);
+
+/* -------------------------------------------------------------------------- */
+// String Slice-athon
+// This challenge has five miniature exercises to help practice proficiency in string slicing. Check the examples below for a visual indicator of how to slice the strings. Good luck!
+
+// Examples
+// const s = "abcdefghijklmnopqrstuvwxyz"
+// challenge1(s) ➞ "abcde"
+// // First 5 characters of the string.
+
+// challenge2(s) ➞ "vwxyz"
+// // Last 5 characters of the string.
+
+// challenge3(s) ➞ "zyxwvutsrqponmlkjihgfedcba"
+// // All characters in the string from back.
+
+// challenge4(s) ➞ "fedcba"
+// // First 6 characters in the string (start with 6th character and go backwards).
+
+// challenge5(s) ➞ "tvxz"
+// // Take last 7 characters and only return odd positioned ones.
+// Notes
+// Check the Tests tab for more examples.
+// See the Resources tab for further information on learning string slicing.
+// You may use methods other than slice() as needed to complete some of the challenges.
+// All test cases follow the same slicing pattern as the above example.
+
+function challenge1(s) {
+}
+
+function challenge2(s) {
+}
+
+function challenge3(s) {
+}
+
+function challenge4(s) {
+}
+
+function challenge5(s) {
+}
+
+/* -------------------------------------------------------------------------- */
+// Position in the Alphabet
+// Given a number between 1-26, return what letter is at that position in the alphabet. Return "invalid" if the number given is not within that range, or isn't an integer.
+
+// Examples
+// letterAtPosition(1) ➞ "a"
+
+// letterAtPosition(26.0) ➞ "z"
+
+// letterAtPosition(0) ➞ "invalid"
+
+// letterAtPosition(4.5) ➞ "invalid"
+// Notes
+// Return a lowercase letter.
+// Numbers that end with ".0" are valid.
+
+function letterAtPosition(n) {
+
+}
+
+/* -------------------------------------------------------------------------- */
+// Imaginary Coding Interview
+// Create a function to check if a candidate is qualified in an imaginary coding interview of an imaginary tech startup.
+
+// The criteria for a candidate to be qualified in the coding interview is:
+
+// The candidate should have complete all the questions.
+// The maximum time given to complete the interview is 120 minutes.
+// The maximum time given for very easy questions is 5 minutes each.
+// The maximum time given for easy questions is 10 minutes each.
+// The maximum time given for medium questions is 15 minutes each.
+// The maximum time given for hard questions is 20 minutes each.
+// If all the above conditions are satisfied, return "qualified", else return "disqualified".
+
+// You will be given an array of time taken by a candidate to solve a particular question and the total time taken by the candidate to complete the interview.
+
+// Given an array, in a true condition will always be in the format [very easy, very easy, easy, easy, medium, medium, hard, hard].
+
+// The maximum time to complete the interview includes a buffer time of 20 minutes.
+
+// Examples
+// interview([5, 5, 10, 10, 15, 15, 20, 20], 120) ➞ "qualified"
+
+// interview([2, 3, 8, 6, 5, 12, 10, 18], 64) ➞  "qualified"
+
+// interview([5, 5, 10, 10, 25, 15, 20, 20], 120) ➞ "disqualified"
+// // Exceeded the time limit for a medium question.
+
+// interview([5, 5, 10, 10, 15, 15, 20], 120) ➞ "disqualified"
+// // Did not complete all the questions.
+
+// interview([5, 5, 10, 10, 15, 15, 20, 20], 130) ➞ "disqualified"
+// // Solved all the questions in their respected time limits but exceeded the total time limit of the interview.
+// Notes
+// Try to solve the problem using only array methods.
+
+function interview(arr, tot) {
+
+}
+
+/* -------------------------------------------------------------------------- */
+// The Missing Link of an Arithmetic Progression
+// Your function will get an array with a number sequence. However, one item will be missing. It's your job to find out which one is not in the array.
+
+// To illustrate, given the array [1, 3, 4, 5], 2 is missing so the output must be 2.
+
+// Examples
+// missing([1, 3, 4, 5]) ➞ 2
+
+// missing([2, 4, 6, 8, 10, 14, 16]) ➞ 12
+
+// missing([1.5, 2, 3]) ➞ 2.5
+// Notes
+// The missing item will never be the smallest or largest number in the array.
+// In every array, exactly one item is missing.
+
+function missing(arr) {
+
+}
+
+/* -------------------------------------------------------------------------- */
