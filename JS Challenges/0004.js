@@ -78,3 +78,30 @@ function multiply(arr) {
     console.log(temp);
 }
 // multiply([4, 5]);
+
+/* -------------------------------------------------------------------------- */
+// Superheroes
+// Create a function that takes an array of superheroes / superheroines names and returns an array of only superheroe names ending in "man". Return the names in alphabetical order.
+
+// Examples
+// superheroes(["Batman", "Superman", "Spider-man", "Hulk", "Wolverine", "Wonder-Woman"])
+// ➞ ["Batman", "Spider-man", "Superman"]
+
+// superheroes(["Catwoman", "Deadpool", "Dr.Strange", "Captain-America", "Aquaman", "Hawkeye"])
+// ➞ ["Aquaman"]
+
+// superheroes(["Wonder-Woman", "Catwoman", "Invisible-Woman"])
+// ➞ []
+// Notes
+// Wonder-Woman, Catwoman and Invisible-Woman are superheroines.
+
+function superheroes(heroes) {
+    let superheroesArr = [];
+    for (const hero of heroes) {
+        console.log(hero.substring(hero.length - 3))
+        if (hero.substring(hero.toLowerCase().length - 3) === "man" && hero.toLowerCase().substring(hero.length - 5) !== "woman") {
+            console.log(hero)
+        }
+    }
+}
+// superheroes(["Batman", "Superman", "Spider-man", "Hulk", "Wolverine", "Wonder-Woman"])

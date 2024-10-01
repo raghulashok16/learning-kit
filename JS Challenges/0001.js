@@ -47,6 +47,7 @@ function lessThanOrEqualToZero(num) {
 
 lessThanOrEqualToZero(-8);
 
+/* -------------------------------------------------------------------------- */
 // Less Than 100?
 // Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
 
@@ -68,6 +69,7 @@ function lessThan100(a, b) {
 }
 
 lessThan100(52, 5);
+/* -------------------------------------------------------------------------- */
 
 // Destructuring Assignment
 // You can assign variables from arrays like this:
@@ -103,6 +105,7 @@ console.log(second)
 console.log(third)
 console.log(others)
 
+/* -------------------------------------------------------------------------- */
 // Fix the Error: Filtering out Empty Arrays
 // I am trying to filter out empty arrays from an array. In other words, I want to transform something that looks like this: ["a", "b", [], [], [1, 2, 3]] to look like ["a", "b", [1, 2, 3]]. My code looks like this:
 
@@ -127,6 +130,7 @@ function removeEmptyArrays(arr) {
 
 console.log(removeEmptyArrays(["a", "b", [], [], [1, 2, 3]]))
 
+/* -------------------------------------------------------------------------- */
 // Just Another Sum Problem But... 😰😱
 // Ok, the challenge is kind of easy, right?
 
@@ -160,6 +164,7 @@ function justAnotherSumProblem(a, b) {
 
 // justAnotherSumProblem(-20, 5);
 
+/* -------------------------------------------------------------------------- */
 // Recursion: Length of a String
 // Write a function that returns the length of a string. Make your function recursive.
 
