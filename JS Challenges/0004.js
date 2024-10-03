@@ -318,15 +318,28 @@ function letterAtPosition(n) {
 // Try to solve the problem using only array methods.
 
 function interview(arr, tot) {
-    let obj = {
-        ve: 5,
-        e: 10,
-        m: 15,
-        h: 20,
-    };
+    let timeArray = [5, 5, 10, 10, 15, 15, 20, 20];
+    let preTime = timeArray.reduce((a, c) => a + c, 0);
+    console.log(preTime);
 
+    let calTime = arr.reduce((a, c) => a + c, 0);
+    console.log(calTime);
+
+    if (arr.length === timeArray.length && tot <= 120 && (calTime <= preTime)) {
+        let calculations = true;
+        for (let i = 0; i < arr.length; i++) {
+            if (!(arr[i] <= timeArray[i])) calculations = false;
+        }
+        if (calculations = true) {
+            console.log("qualified");
+        } else {
+            console.log("disqualified");
+        }
+    } else {
+        console.log("disqualified");
+    }
 }
-interview([5, 5, 10, 10, 15, 15, 20], 120);
+// interview([5, 5, 10, 10, 15, 15, 19, 20], 120);
 
 /* -------------------------------------------------------------------------- */
 // The Missing Link of an Arithmetic Progression
@@ -345,8 +358,10 @@ interview([5, 5, 10, 10, 15, 15, 20], 120);
 // In every array, exactly one item is missing.
 
 function missing(arr) {
-
+    let tempArr = arr.map(a => a / arr[0]);
+    console.log(tempArr);
 }
+missing([1.5, 2, 3])
 
 /* -------------------------------------------------------------------------- */
 // Automorphic Numbers
