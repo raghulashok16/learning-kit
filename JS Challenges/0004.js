@@ -273,8 +273,13 @@ function challenge5(s) {
 // Numbers that end with ".0" are valid.
 
 function letterAtPosition(n) {
-
+    if (Number.isInteger(n) && n > 0 && n < 27) {
+        console.log(String.fromCharCode(96 + n));
+    } else {
+        console.log('invalid');
+    }
 }
+// letterAtPosition(1);
 
 /* -------------------------------------------------------------------------- */
 // Imaginary Coding Interview
@@ -313,8 +318,15 @@ function letterAtPosition(n) {
 // Try to solve the problem using only array methods.
 
 function interview(arr, tot) {
+    let obj = {
+        ve: 5,
+        e: 10,
+        m: 15,
+        h: 20,
+    };
 
 }
+interview([5, 5, 10, 10, 15, 15, 20], 120);
 
 /* -------------------------------------------------------------------------- */
 // The Missing Link of an Arithmetic Progression
@@ -335,5 +347,30 @@ function interview(arr, tot) {
 function missing(arr) {
 
 }
+
+/* -------------------------------------------------------------------------- */
+// Automorphic Numbers
+// A number n is automorphic if n^2 ends in n.
+
+// For example: n=5, n^2=25
+
+// Create a function that takes a number and returns true if the number is automorphic, false if it isn't.
+
+// Examples
+// isAutomorphic(5) ➞ true
+
+// isAutomorphic(8) ➞ false
+
+// isAutomorphic(76) ➞ true
+
+function isAutomorphic(n) {
+    let lastNum = (n ** 2).toString();
+    // console.log(lastNum);
+    // console.log(n)
+    console.log(Number(lastNum.substring((n.toString().length))) === n);
+}
+// isAutomorphic(76);
+// isAutomorphic(8);
+// isAutomorphic(5);
 
 /* -------------------------------------------------------------------------- */
