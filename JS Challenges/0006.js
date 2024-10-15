@@ -192,7 +192,22 @@ function nthSmallest(arr, n) {
 // There will always only be one integer that appears an odd number of times.
 
 function findOdd(arr) {
-
+    let obj = {};
+    for (let i = 0; i < arr.length; i++) {
+        if (`${arr[i]}` in obj) {
+            obj[`${arr[i]}`] = obj[`${arr[i]}`] + 1;
+        } else {
+            obj[`${arr[i]}`] = 1;
+        }
+    }
+    let arrDes = Object.entries(obj);
+    let temp = true;
+    for (const [a, b] of arrDes) {
+        console.log(a, b)
+        if (!(b % 2 === 0)) {
+            console.log(a)
+        }
+    }
 }
 
-findOdd([20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5]);
+// findOdd([1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5]);
