@@ -93,11 +93,11 @@
 
 5. we can use this hook inside our <Book/> component and console log it to view it.
 
-    const params = useParams(); //method 1
-    console.log(params); //output: { id:'delter' }
+    const params = useParams();      //method 1
+    console.log(params);             //output: { id:'delter' }
 
-    const { id } = useParams(); //method 2 [we destructure it, if we know the name]
-    console.log(id); //output:delter
+    const { id } = useParams();      //method 2 [we destructure it, if we know the name]
+    console.log(id);                 //output:delter
 
 6. this 'id' comes from the url.
 
