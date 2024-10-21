@@ -20,6 +20,19 @@
 126. String Methods Practice
 
 # ------------------------- 103. Destructuring Arrays ------------------------ #
+
+1. this is the easy way of destructuring array elements using ES6.
+const arr = [2, 3, 4];
+const [x,y,z] = arr;
+const [first, second] = restaurant.categories;
+2. we can also skip elements while using array destructuring.
+const [first, , third] = restaurant.categories;
+3. array destructuring is used to swap variables in a easy way.
+[a, b] = [b, a];
+4. destructuring nested array is easier.
+const nested = [2, 4, [5, 6]];
+const [i, , [j, k]] = nested;
+
 # ------------------------- 104. Practice Assignments ------------------------ #
 # ------------------------ 105. Destructuring Objects ------------------------ #
 # ---------------------- 106. The Spread Operator (...) ---------------------- #
