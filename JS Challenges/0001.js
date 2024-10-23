@@ -181,4 +181,4 @@ function length(str) {
 
 }
 
-length("apple");
+// length("apple");
