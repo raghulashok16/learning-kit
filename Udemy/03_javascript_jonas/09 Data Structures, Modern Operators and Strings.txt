@@ -1,5 +1,4 @@
 103. Destructuring Arrays
-104. Practice Assignments
 105. Destructuring Objects
 106. The Spread Operator (...)
 107. Rest Pattern and Parameters
@@ -32,9 +31,15 @@ const [first, , third] = restaurant.categories;
 4. destructuring nested array is easier.
 const nested = [2, 4, [5, 6]];
 const [i, , [j, k]] = nested;
+5. setting default values while destructuring.
+const [a=2, b=1, c=8] = [8, 9];
+NOTE: while destructuring array use [] square brackets.
 
-# ------------------------- 104. Practice Assignments ------------------------ #
 # ------------------------ 105. Destructuring Objects ------------------------ #
+
+NOTE: while destructuring objects use {} curly braces.
+1.  
+
 # ---------------------- 106. The Spread Operator (...) ---------------------- #
 # --------------------- 107. Rest Pattern and Parameters --------------------- #
 # --------------------- 108. Short Circuiting (&& and ||) -------------------- #
