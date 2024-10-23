@@ -178,7 +178,7 @@ function justAnotherSumProblem(a, b) {
 // length("") ➞ 0
 
 function length(str) {
-    return
+
 }
 
 length("apple");
