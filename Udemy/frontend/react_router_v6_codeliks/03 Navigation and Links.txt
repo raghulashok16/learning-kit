@@ -6,13 +6,15 @@
 1. if we want to render different components for different url path then we not to type manually everytime.
 2. react-router-dom has a special component called 'Link' which is used to navigate.
 3. for that we need to install the 'Link' component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     import {Link} from "react-router-dom";
+//////////////////////////////////////////////
 
 4. after importing we can use it in the navbar component using the below code.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <Link to={"/cart"}>Cart</Link>
     <Link to={"/contact"}>Contact</Link>
+//////////////////////////////////////////////
 
 # ------------------- 11. Handling states of active NavLink ------------------ #
 1. alternative to 'Link' is 'NavLink'.
