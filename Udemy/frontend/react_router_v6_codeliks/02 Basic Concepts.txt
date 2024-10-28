@@ -25,6 +25,7 @@
 9. for example, we can wrap it around app component or we can use it inside app component and wrap it around other components.
 
 Method 1:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     function App(){
         return (
             <>
@@ -32,36 +33,43 @@ Method 1:
             </>
         )
     }
+//////////////////////////////////////////////
 
 Method 2:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <Router>
         <App/>
     </Router>
+//////////////////////////////////////////////
+
 
 # ---------------------------- 6. Declaring Paths ---------------------------- #
 1. the main usecase of react-router is to show/render different components based on the url/link/button we click.
 2. to achive that 'browser-router' is not enough, we need to import other 2 important component which is 'Routes' and 'Route'.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     import {BrowserRouter, Routes, Route} from "react-router-dom";
+//////////////////////////////////////////////
 
 3. with 'Route' we are going to specify which component is going to render in which url.
 4. multiple 'Route' can be specified inside 'Routes' component.
 5. every 'Route' consists two configurations one is path and another one is element.
 6. '/' is the home route path.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     localhost:3000/contact
     localhost:3000/cart
     localhost:3000/products
+//////////////////////////////////////////////
 
 7. '/contact' '/cart' '/products' are the example of route path.
 8. when we run this link in the browser the required path will be rendered based on the match.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <Router>
         <Routes>
             <Route path='/' element={<HomePage/>} />
             <Route path='/books' element={<Books/>} />
         </Routes>
     </Router>
+//////////////////////////////////////////////
 
 9. here you have to create this <HomePage/> and <Books/> component.
 
@@ -73,7 +81,7 @@ Method 2:
 1. when the path name does not match the url in uor router, the component will not render anything.
 2. this tell user nothing about the problem occured.
 3. to overcome this issue we can specify a default error page when no url match the route path.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <Router>
         <Routes>
             <Route path='/' element={<HomePage/>} />
@@ -81,6 +89,7 @@ Method 2:
             <Route path='*' element={<ErrorPage/>} />
         </Routes>
     </Router>
+//////////////////////////////////////////////
 
 4. now if any url dont match then react will render the <ErrorPage/> component.
 5. specifying '*' at last route is very important.
@@ -94,7 +103,7 @@ Method 2:
 
 3. we need to use the navigate component in the wildcard route.
 4. inside the navigate component we need to give a specific path name.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <Router>
         <Routes>
             <Route path='/' element={<HomePage/>} />
@@ -102,6 +111,7 @@ Method 2:
             <Route path='*' element={<Navigate to='/login' />} />
         </Routes>
     </Router>
+//////////////////////////////////////////////
 
 5. this is very helpfull when a user try to access a forbiden url path.
 6. then react will Redirect them to the login page or our desired page.
