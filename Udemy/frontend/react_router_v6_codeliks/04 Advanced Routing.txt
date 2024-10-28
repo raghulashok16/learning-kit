@@ -14,16 +14,16 @@
 
 # ----------------------- 12. Nested Routes with Outlet ---------------------- #
 1. to create a nested routes we have to wrap the child routes into a parent route.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <Route path="/" element={<Books/>}>
         <Route path="/books" element={<BookList/>} />
     </Route>
-
+//////////////////////////////////////////////
 2. after this step we have to add the outlet component in the parent 'Route' that is <Books/> component.
 3. we need to import the 'outlet' from react-router-dom in the parent component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     import {Outlet} from "react-router-dom";
-
+//////////////////////////////////////////////
 4. add this <Outlet/> component in your desired place where you want to render your child-component/nested-component.
 5. you can have many child routes with different path names and the outlet will render the exact element the path match.
 
@@ -138,7 +138,7 @@
     import {useNavigate} from "react-router-dom";
 
 7. using the below code you can add it inside the component and use it to jump to a new page Programmatically.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const navigate = useNavigate();
     useEffect(() =>{
         (async () => {
@@ -151,22 +151,22 @@
             }
         })();
     }, [is]);
-
+//////////////////////////////////////////////
 # -------------------- 19. Passing State along Navigation -------------------- #
 1. we can pass props along with the navigation when using useNavigate hook.
 2. when passing the state we can send any number of state.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     navigate('/', {state: {id}});
-
+//////////////////////////////////////////////
 3. here we pass 'id' state.
 4. this state can be captured in the receving component using "useLocation" hook which can be imported from the react-router-dom.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     import {useLocation} from "react-router-dom";
-
+//////////////////////////////////////////////
 5. after importing use the below code in the receving component.
-
+```````````````````````````````````````````
     const location = useLocation();
-
+```````````````````````````````````````````
 6. console the 'location' and see the detailed data of the 'location'.
 
     console.log(location);
