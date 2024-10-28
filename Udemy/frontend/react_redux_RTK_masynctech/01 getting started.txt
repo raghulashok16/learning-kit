@@ -1,0 +1,26 @@
+# ------------------------ section 1 - getting started ----------------------- #
+1. About This Course
+2. How To Get Help When You Stuck
+3. What is Redux?
+4. Projects Live Preview
+5. Download The Course PDF Guides
+6. Github Repository For The Course
+7. Course Roadmap
+8. What is a State?
+9. What is state Management?
+10. Types Of Data Source
+11. Ways of Managing State
+12. React State Management Alternatives
+
+# ----------------------------- About This Course ---------------------------- #
+# ---------------------- How To Get Help When You Stuck ---------------------- #
+# ------------------------------ What is Redux? ------------------------------ #
+# --------------------------- Projects Live Preview -------------------------- #
+# ---------------------- Download The Course PDF Guides ---------------------- #
+# --------------------- Github Repository For The Course --------------------- #
+# ------------------------------ Course Roadmap ------------------------------ #
+# ----------------------------- What is a State? ----------------------------- #
+# ------------------------- What is state Management? ------------------------ #
+# --------------------------- Types Of Data Source --------------------------- #
+# -------------------------- Ways of Managing State -------------------------- #
+# -------------------- React State Management Alternatives ------------------- #

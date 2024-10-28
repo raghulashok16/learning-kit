@@ -1,0 +1,17 @@
+# ---------------------- section 3 - redux fundamentals ---------------------- #
+
+15. What is Redux?
+16. When to use Redux
+17. Benefits of Using Redux
+18. Redux Important Terms
+19. How Redux Works IMPORTANT !!!
+20. Assignment-How Redux Works
+21. Redux Store Methods
+
+# ------------------------------ What is Redux? ------------------------------ #
+# ----------------------------- When to use Redux ---------------------------- #
+# -------------------------- Benefits of Using Redux ------------------------- #
+# --------------------------- Redux Important Terms -------------------------- #
+# ----------------------- How Redux Works IMPORTANT !!! ---------------------- #
+# ------------------------ Assignment-How Redux Works ------------------------ #
+# ---------------------------- Redux Store Methods --------------------------- #
