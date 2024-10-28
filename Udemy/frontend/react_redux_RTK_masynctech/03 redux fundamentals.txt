@@ -1,17 +1,32 @@
 # ---------------------- section 3 - redux fundamentals ---------------------- #
 
-15. What is Redux?
 16. When to use Redux
 17. Benefits of Using Redux
 18. Redux Important Terms
 19. How Redux Works IMPORTANT !!!
-20. Assignment-How Redux Works
 21. Redux Store Methods
 
-# ------------------------------ What is Redux? ------------------------------ #
 # ----------------------------- When to use Redux ---------------------------- #
+1. you should use redux when you have a complex state object that is difficult to manage with the local state alone.
+2. redux is also useful for managing side effects such as API calls.
+3. app state is updated frequently.
+4. the logic to update the state may be complex.
+5. the app has a medium or large-sized codebase, and might be worked on by many people.
+
 # -------------------------- Benefits of Using Redux ------------------------- #
+1. predictable.
+2. centralized state management.
+3. debuggable.
+
 # --------------------------- Redux Important Terms -------------------------- #
+1. Actions - the driving force of every dynamic application, as they are the medium by which all changes are communicated within a redux application.
+2. Reducers - event listners which handles the event based on the action type.
+3. Store - it store the application data.
+
 # ----------------------- How Redux Works IMPORTANT !!! ---------------------- #
-# ------------------------ Assignment-How Redux Works ------------------------ #
+1. Action - withdraw, deposit, loan, close account, open account, money transfer. [these are the action type]
+
 # ---------------------------- Redux Store Methods --------------------------- #
+1. getState() - returns the current state tree of your application.
+2. dispatch() - this is the only way to trigger a state change.
+3. subscribe() - listening to any change.
