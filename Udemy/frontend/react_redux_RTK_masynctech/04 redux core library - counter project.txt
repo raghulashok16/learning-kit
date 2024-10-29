@@ -1,0 +1,82 @@
+# ------------- Section - 4 redux core library - counter project ------------- #
+23. Action VS Action Creator
+24. Installing Redux
+25. Action and Action Creator
+26. Rules of a Reducer
+27. Reducer in Practice
+28. Redux Store Setup
+29. How To Dispatch Actions
+30. Dispatch Actions With Payload
+
+# ------------------------- Action VS Action Creator ------------------------- #
+1. Action - it is simply a javascript object that contains information about an event that has occured in your app.
+2. Action Creator - these are functions that create and return actions.
+3. Action Properties - it is a plain obect, it has a type field as a property which is a required, it is an event that occurs in your application, it can accept additional properties(payload), a function that returns an action is called an action creator.
+
+# ----------------------------- Installing Redux ----------------------------- #
+1. the below is the command to install redux in plain js project.
+NPM COMMAND:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    npm init --yes
+    npm i redux
+//////////////////////////////////////////////
+
+2. create a file in the project folder "counter.js".
+
+# ------------------------- Action and Action Creator ------------------------ #
+1. to work with redux we have to follow some steps to create the dataflow.
+2. STEPS: -> Initial State -> Action Creator -> Reducer -> Store.
+3. first create the initial state.
+INITIAL STATE:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const initialState = {
+        count: 0,
+    };
+//////////////////////////////////////////////
+
+4. create the actions and action creators for the project.
+ACTIONS:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+{
+    type: "INCREMENT";
+}
+{
+    type: "DECREMENT";
+}
+{
+    type: "RESET";
+}
+{
+    type: "INCREMENT_BY_AMOUNT";
+}
+//////////////////////////////////////////////
+
+ACTION CREATORS:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const incrementAction = () ={
+    return {
+        type: "INCREMENT",
+    };
+}
+const decrementAction = () ={
+    return {
+        type: "DECREMENT",
+    };
+}
+const resetAction = () ={
+    return {
+        type: "RESET",
+    };
+}
+const incrementByAmountAction = () ={
+    return {
+        type: "INCREMENT_BY_AMOUNT",
+    };
+}
+//////////////////////////////////////////////
+
+# ---------------------------- Rules of a Reducer ---------------------------- #
+# ---------------------------- Reducer in Practice --------------------------- #
+# ----------------------------- Redux Store Setup ---------------------------- #
+# -------------------------- How To Dispatch Actions ------------------------- #
+# ----------------------- Dispatch Actions With Payload ---------------------- #
