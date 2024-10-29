@@ -15,7 +15,7 @@
 
 # ----------------------------- Installing Redux ----------------------------- #
 1. the below is the command to install redux in plain js project.
-NPM COMMAND:
+NPM COMMAND:---------------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     npm init --yes
     npm i redux
@@ -27,7 +27,7 @@ NPM COMMAND:
 1. to work with redux we have to follow some steps to create the dataflow.
 2. STEPS: -> Initial State -> Action Creator -> Reducer -> Store.
 3. first create the initial state.
-INITIAL STATE:
+INITIAL STATE:-------------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const initialState = {
         count: 0,
@@ -35,7 +35,7 @@ INITIAL STATE:
 //////////////////////////////////////////////
 
 4. create the actions and action creators for the project.
-ACTIONS:
+ACTIONS:------------------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 {
     type: "INCREMENT";
@@ -51,7 +51,7 @@ ACTIONS:
 }
 //////////////////////////////////////////////
 
-ACTION CREATORS:
+ACTION CREATORS:------------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const incrementAction = () ={
     return {
@@ -76,7 +76,44 @@ const incrementByAmountAction = () ={
 //////////////////////////////////////////////
 
 # ---------------------------- Rules of a Reducer ---------------------------- #
+1. Reducer - it is a function that recevies the current state and an action object, decides how to update the state base on the action, and returns the new state.
+2. the current state is the state inside the STORE.
+
+RULES:
+1. the new state value should only be calculated based on the state and action arguments.
+2. reducers are not allowed to modify the existing state.
+
 # ---------------------------- Reducer in Practice --------------------------- #
+REDUCER:---------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const counterReducer = ( state = initialState, action ) => {
+    if(action.type === "INCREMENT"){
+        return{
+            count: state.count + 1,
+        };
+    };
+};
+//////////////////////////////////////////////
+
 # ----------------------------- Redux Store Setup ---------------------------- #
+1. redux stores the application data.
+2. it does not contain bussiness logic.
+3. it recevies actions and pass to all the registered middleware.
+4. the only way to change the state inside it is to dispatch an action.
+5. when it recevies an action that causes a change to the state, the store will notify all the registered listners that a change to the state has been made. this will allow various parts of the system, like the UI, to update themselves according to the new state.
+6. to create a store in vanilla javascript we need to use this below code.
+IMPORTING STORE:---------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const { createStore } = require("redux");
+//////////////////////////////////////////////
+
+NOTE: this "require" method wont work in react [react uses "import" method ]
+USING STORE:--------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const store = createStore(counterReducer);
+const stateData = store.getState();
+console.log(stateData);
+//////////////////////////////////////////////
+
 # -------------------------- How To Dispatch Actions ------------------------- #
 # ----------------------- Dispatch Actions With Payload ---------------------- #
