@@ -43,7 +43,7 @@ const { register } = useForm();
 4. without register react-hook-form does not recognize it.
 5. unlike usual way of submiting form, react-hook-form has a special method called handleSubmit.
 6. this has built-in functionalities to prevent the defaults in the form.
-7. also dont forget to add the onsubmit our form.
+7. also dont forget to add the onsubmit in our form.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const { register, handleSubmit } = useForm();
 
