@@ -22,8 +22,9 @@ npm install react-hook-form
 import { useForm } from "react-hook-form";
 //////////////////////////////////////////////
 
-NOTE: useForm hook consists of many informations like register, handleSubmit, watch, etc.
-But we destructure what we in our app.
+NOTE:
+useForm hook consists of many informations like register, handleSubmit, watch, etc.
+But we destructure what we want in our app.
 Also you can console log the use form to view all the informations.
 
 3. registering the input elements is mandatory.
@@ -62,3 +63,22 @@ const sendInfo = (data) => {
 //////////////////////////////////////////////
 
 8. in the above console.log(data), only the registered elements will be logged.
+
+# -------------------------------- validation -------------------------------- #
+1. adding validation if the registered field is empty.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<form onsubmit={handleSubmit(sendInfo)}>
+<input
+    type="text"
+    name="fullName"
+    placeholder="Full Name"
+    className="..."
+    {...register('fullName', { required : true })}
+/>
+</form>
+//////////////////////////////////////////////
+
+2. now if the registered field is empty then the handleSubmit will not work.
+3. instead it will add the error message inside the formState.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const { register, handleSubmit, formState: {errors} } = useForm();
