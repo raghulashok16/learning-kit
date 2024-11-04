@@ -82,3 +82,17 @@ const sendInfo = (data) => {
 3. instead it will add the error message inside the formState.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const { register, handleSubmit, formState: {errors} } = useForm();
+
+<form onsubmit={handleSubmit(sendInfo)}>
+<input
+    type="text"
+    name="fullName"
+    placeholder="Full Name"
+    className="..."
+    {...register('fullName', { required : true })}
+/>
+{errors.fullName && <p>error exist</p>}
+</form>
+//////////////////////////////////////////////
+
+4. in the above code the errors was read only for the fullName input field.
