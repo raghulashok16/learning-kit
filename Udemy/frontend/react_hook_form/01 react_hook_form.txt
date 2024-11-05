@@ -1,5 +1,6 @@
 # ------------------------------- Installation ------------------------------- #
 1. using node pakage manager we can install react hook form.
+TERMINAL COMMAND:-------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 npm install react-hook-form
 //////////////////////////////////////////////
@@ -8,6 +9,7 @@ npm install react-hook-form
 
 # ------------------------- register and handleSubmit ------------------------ #
 1. for using react-hook-form we must have a form elements like input tag and it must be wrapped inside the form tag.
+INPUT ELEMENT TEMPLATE:------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 <input
     type="text"
@@ -18,6 +20,7 @@ npm install react-hook-form
 //////////////////////////////////////////////
 
 2. the first step is to import the "useForm" hook from the react-hook-form;
+IMPORTING USEFORM HOOK:----------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import { useForm } from "react-hook-form";
 //////////////////////////////////////////////
@@ -28,6 +31,7 @@ But we destructure what we want in our app.
 Also you can console log the use form to view all the informations.
 
 3. registering the input elements is mandatory.
+REGISTERING INPUT ELEMENTS:------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const { register } = useForm();
 
@@ -44,6 +48,7 @@ const { register } = useForm();
 5. unlike usual way of submiting form, react-hook-form has a special method called handleSubmit.
 6. this has built-in functionalities to prevent the defaults in the form.
 7. also dont forget to add the onsubmit in our form.
+ADDING HANDLING SUBMIT:---------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const { register, handleSubmit } = useForm();
 
@@ -66,6 +71,7 @@ const sendInfo = (data) => {
 
 # -------------------------------- validation -------------------------------- #
 1. adding validation if the registered field is empty.
+REQUIRED VALIDATION:--------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 <form onsubmit={handleSubmit(sendInfo)}>
 <input
@@ -80,6 +86,7 @@ const sendInfo = (data) => {
 
 2. now if the registered field is empty then the handleSubmit will not work.
 3. instead it will add the error message inside the formState.
+HANDLING ERRORS:----------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const { register, handleSubmit, formState: {errors} } = useForm();
 
@@ -97,6 +104,7 @@ const { register, handleSubmit, formState: {errors} } = useForm();
 
 4. in the above code the errors was read only for the 'fullName' input field.
 5. we can display the error in any color using css/css framework classes.
+CONDITIONAL CLASSES FOR CUSTOM ERRORS:----------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 <input
     type="text"
@@ -119,6 +127,7 @@ const { register, handleSubmit, formState: {errors} } = useForm();
     - validate
 7. after registering an element we can add multiple rules inside the register method using object.
 8. to have our custom error message, we have to write it inside the object.
+CUSTOM ERROR MESSAGES:-----------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 <input
     type="text"
@@ -132,6 +141,7 @@ const { register, handleSubmit, formState: {errors} } = useForm();
 //////////////////////////////////////////////
 
 9. we can also set the minLength and maxLength rule in the form field.
+CUSTOM INPUT LENGTH:----------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 <input
     type="text"
