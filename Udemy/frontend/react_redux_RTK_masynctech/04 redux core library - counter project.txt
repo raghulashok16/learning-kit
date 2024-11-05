@@ -107,8 +107,10 @@ IMPORTING STORE:---------------------
 const { createStore } = require("redux");
 //////////////////////////////////////////////
 
-NOTE: this "require" method wont work in react [react uses "import" method ]
-USING STORE:--------------------
+NOTE:
+this "require" method wont work in react [react uses "import" method ]
+
+USING REDUX STORE:--------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const store = createStore(counterReducer);
 const stateData = store.getState();
@@ -116,4 +118,5 @@ console.log(stateData);
 //////////////////////////////////////////////
 
 # -------------------------- How To Dispatch Actions ------------------------- #
+1. 
 # ----------------------- Dispatch Actions With Payload ---------------------- #
