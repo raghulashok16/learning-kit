@@ -131,8 +131,11 @@ store.subscribe(()=>{
     const data = store.getState();
     console.log(data);
 });
+//////////////////////////////////////////////
 
 3. this methods will be triggered all the time when the state changes.
 4. try to write the subscribe method above the dispatch method.
+5. while dispatching an action, the action type must be in the reducer otherwise it will return "undefined".
+6. to overcome this problem always return the previous state as the default when using reducer with SWITCH case.
 
 # ----------------------- Dispatch Actions With Payload ---------------------- #
