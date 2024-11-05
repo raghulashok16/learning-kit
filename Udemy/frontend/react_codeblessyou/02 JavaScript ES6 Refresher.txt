@@ -25,21 +25,25 @@
 3. it is very usefull when working on advanced topics.
 4. use let or const for assigning arrow function.
 5. always prefer const rather than let, to avoid reassigning that function.
-#    const sayhello = () => {
-        console.log("this is a arrow function");
-    }
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const sayhello = () => {
+    console.log("this is a arrow function");
+}
+//////////////////////////////////////////////
 
 # ----------------------------- ACCESING OBJECTS ----------------------------- #
 1. object is a collection of key/value pair.
 2. we need the exact key to acces that particular value.
 3. square operator is used rarely.
-#    const user = {
-        name: "raghul",
-        email: "snipcot@gmail.com",
-    }
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const user = {
+    name: "raghul",
+    email: "snipcot@gmail.com",
+}
 
-    console.log(user.name);
-    console.log(user["name"]);
+console.log(user.name);
+console.log(user["name"]);
+//////////////////////////////////////////////
 
 # ---------------------------- OBJECT DESTRUCTION ---------------------------- #
 1. this method is tedious because when number of key/value increases it results in large number of line codes.
