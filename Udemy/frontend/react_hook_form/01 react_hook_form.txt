@@ -32,7 +32,7 @@ Also you can console log the use form to view all the informations.
 const { register } = useForm();
 
 <input
-    type="text"
+    type="text" 
     name="fullName"
     placeholder="Full Name"
     className="..."
@@ -95,4 +95,62 @@ const { register, handleSubmit, formState: {errors} } = useForm();
 </form>
 //////////////////////////////////////////////
 
-4. in the above code the errors was read only for the fullName input field.
+4. in the above code the errors was read only for the 'fullName' input field.
+5. we can display the error in any color using css/css framework classes.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<input
+    type="text"
+    name="fullName"
+    placeholder="Full Name"
+    className={ ${errors.fullName ? "border border-red-500" : "border-none"} }
+    {...register('fullName', { required : true })}
+/>
+{errors.fullName && <p>error exist</p>}
+</form>
+//////////////////////////////////////////////
+
+6. react-hook-form supports many validation rules,
+    - required
+    - min
+    - max
+    - minLength
+    - maxLength
+    - pattern
+    - validate
+7. after registering an element we can add multiple rules inside the register method using object.
+8. to have our custom error message, we have to write it inside the object.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<input
+    type="text"
+    name="fullName"
+    placeholder="Full Name"
+    className={ ${errors.fullName ? "border border-red-500" : "border-none"} }
+    {...register('fullName', { required : "this field is required" })}
+/>
+{errors.fullName && <p>{errors.fullName.message}</p>}
+</form>
+//////////////////////////////////////////////
+
+9. we can also set the minLength and maxLength rule in the form field.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<input
+    type="text"
+    name="fullName"
+    placeholder="Full Name"
+    className={ ${errors.fullName ? "border border-red-500" : "border-none"} }
+    {...register('fullName', {
+         required : "this field is required",
+         minLength: {
+            value: 3,
+            message: "this field should have atleast 3 characters",
+         },
+         maxLength: {
+            value: 8,
+            message: "this field should not exceed 8 characters",
+         },
+        })
+    }
+/>
+{errors.fullName && <p>{errors.fullName.message}</p>}
+</form>
+//////////////////////////////////////////////

@@ -12,14 +12,14 @@
 // The length of the string must remain the same as the input.
 
 function cardHide(card) {
-    const cut = card.slice(-4);
-    let symb = '';
-    let i = 0;
-    while (i <= card.length - 5) {
-        symb = symb + '*';
-        i++;
-    }
-    console.log(symb + cut);
+  const cut = card.slice(-4);
+  let symb = "";
+  let i = 0;
+  while (i <= card.length - 5) {
+    symb = symb + "*";
+    i++;
+  }
+  console.log(symb + cut);
 }
 cardHide("8754456321113213");
 
@@ -38,11 +38,11 @@ cardHide("8754456321113213");
 // If you're really stuck, unlock solutions in the Solutions tab.
 
 function lessThanOrEqualToZero(num) {
-    if (num < 0 || num === 0) {
-        console.log(true);
-    } else {
-        console.log(false);
-    }
+  if (num < 0 || num === 0) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
 }
 
 lessThanOrEqualToZero(-8);
@@ -61,11 +61,11 @@ lessThanOrEqualToZero(-8);
 // lessThan100(3, 77) ➞ true
 
 function lessThan100(a, b) {
-    if ((a + b < 100)) {
-        console.log(true);
-    } else {
-        console.log(false);
-    }
+  if (a + b < 100) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
 }
 
 lessThan100(52, 5);
@@ -99,11 +99,11 @@ lessThan100(52, 5);
 // Notes
 // Your solution should be just One Line of code.
 
-const [first, second, third, ...others] = [1, 2, 3, 4, 5, 6, 7, 8]
-console.log(first)
-console.log(second)
-console.log(third)
-console.log(others)
+const [first, second, third, ...others] = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(first);
+console.log(second);
+console.log(third);
+console.log(others);
 
 /* -------------------------------------------------------------------------- */
 // Fix the Error: Filtering out Empty Arrays
@@ -125,10 +125,10 @@ console.log(others)
 
 // Fix this incorrect code so that all tests pass!
 function removeEmptyArrays(arr) {
-    return arr.filter(x => x.length >= 1);
+  return arr.filter((x) => x.length >= 1);
 }
 
-console.log(removeEmptyArrays(["a", "b", [], [], [1, 2, 3]]))
+console.log(removeEmptyArrays(["a", "b", [], [], [1, 2, 3]]));
 
 /* -------------------------------------------------------------------------- */
 // Just Another Sum Problem But... 😰😱
@@ -155,11 +155,11 @@ console.log(removeEmptyArrays(["a", "b", [], [], [1, 2, 3]]))
 // justAnotherSumProblem(90, 45) ➞ 3105
 
 function justAnotherSumProblem(a, b) {
-    let total = 0;
-    for (let i = a; i <= b; i++) {
-        total += i;
-    }
-    console.log(total)
+  let total = 0;
+  for (let i = a; i <= b; i++) {
+    total += i;
+  }
+  console.log(total);
 }
 
 // justAnotherSumProblem(-20, 5);
@@ -177,8 +177,6 @@ function justAnotherSumProblem(a, b) {
 
 // length("") ➞ 0
 
-function length(str) {
-
-}
+function length(str) {}
 
 // length("apple");
