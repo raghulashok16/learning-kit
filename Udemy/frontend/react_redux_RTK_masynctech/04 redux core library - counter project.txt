@@ -118,5 +118,21 @@ console.log(stateData);
 //////////////////////////////////////////////
 
 # -------------------------- How To Dispatch Actions ------------------------- #
-1. 
+1. dispatch method is the only way to trigger a state change.
+DISPATCHING ACTIONS:------------------
+**********************************************
+store.dispatch(incrementAction());
+***********************
+
+2. to view the updated state in the store we need a special method called subscribe.
+SUBSCRIBING TO THE STORE:------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+store.subscribe(()=>{
+    const data = store.getState();
+    console.log(data);
+});
+
+3. this methods will be triggered all the time when the state changes.
+4. try to write the subscribe method above the dispatch method.
+
 # ----------------------- Dispatch Actions With Payload ---------------------- #
