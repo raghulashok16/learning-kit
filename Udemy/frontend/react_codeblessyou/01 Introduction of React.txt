@@ -94,4 +94,6 @@ npm run dev
 21. finally we have shorts for the commands we will be using for the terminals.
 
 # ------------------------ MAIN THINGS IN THE INDEX.JS ----------------------- #
-# ReactDOM.createRoot(document.getElementById('root')).render();
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ReactDOM.createRoot(document.getElementById('root')).render();
+//////////////////////////////////////////////
