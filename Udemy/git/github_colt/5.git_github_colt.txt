@@ -1,67 +1,67 @@
 cmd wont work, use git bash
 
 # ------------------ TERMINAL COMMANDS FOR FILE MANIPULATION ----------------- #
--- ls
 [used to 'list' contents of the current working directory]
+-- ls
 
--- ls -a
 [used to 'list all contents including hidden files and folder' of the current working directory]
+-- ls -a
 
--- start .
 [to open the current working directory in file explorer]
+-- start .
 
--- ls folder_name
 [used to 'list' contents of that folder]
+-- ls folder_name
 
--- ls folder_name/folder_name
 [used to 'list' contents of that folder inside folder]
+-- ls folder_name/folder_name
 
--- pwd
 [used to print the 'present working directory']
 [/c/Users/Administrator]
+-- pwd
 
--- cd folder_name/
 [cd is an acronym for 'Change Directory']
+-- cd folder_name/
 
---cd ..
 [move back from current working directory one level]
+--cd ..
 
--- touch purple.js
 [creates 'purple.js' file in the current Directory]
+-- touch purple.js
 [creating single file]
 
--- touch purple.js red.css
 [creates 'purple.js and red.css' file in the current Directory]
 [creating multiple files]
+-- touch purple.js red.css
 
--- touch Pets/Horses/rocky.png
 [creates 'rocky.png' file in the given path directory]
+-- touch Pets/Horses/rocky.png
 
--- mkdir Raghul
 [creates a 'Raghul' folder in the current working directory]
+-- mkdir Raghul
 
--- mkdir Raghul Raju
 [creates a 'Raghul and Raju' folders in the current working directory]
+-- mkdir Raghul Raju
 
--- rm purple.js
 [to delete the file from the current directory permanantly]
+-- rm purple.js
 
--- rm purple.js red.--s
 [to delete multiple files from current directory permanantly]
+-- rm purple.js red.--s
 
--- rm -rf Raghul
 [to delete the folder from the current working directory]
 [r-recusive,f-force]
+-- rm -rf Raghul
 
 # --------------------- BASIC SETTINGS USING GIT COMMAND --------------------- #
--- git --version 
 [displays the git version installed in our machine]
+-- git --version 
 
--- git config --global user.name "Raghul Ashok"
 [to set user name of git in our machine]
+-- git config --global user.name "Raghul Ashok"
 
--- git config --global user.email raghulashok16@gmail.com
 [to set user email of git in our machine]
+-- git config --global user.email raghulashok16@gmail.com
 
 -- git config user.name
 [to check the user name in our git]
