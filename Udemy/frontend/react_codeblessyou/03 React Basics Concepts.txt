@@ -21,7 +21,7 @@
 5. file name of components should start in uppercase like "Card.jsx", "Cart.jsx" otherwise it will not work in browser.
 6. always import react in every component we create. [1st line]
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-import React from "react";
+    import React from "react";
 //////////////////////////////////////////////
 
 7. there are 2 types of components functional and class components.
@@ -42,31 +42,31 @@ import React from "react";
 # ----------------------- ADDING ELEMENTS IN COMPONENT ----------------------- #
 1. always use fragment as parent element when adding elements in components.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-<React.Fragment>
-...
-</React.Fragment>
+    <React.Fragment>
+    ...
+    </React.Fragment>
 //////////////////////////////////////////////
 
 2. simple way fo react fragment
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-<>
-...
-</>
+    <>
+    ...
+    </>
 //////////////////////////////////////////////
 
 # ----------------------- JAVASCRIPT EXPRESSION IN JSX ----------------------- #
 1. use curybrases and write javascript code.
 2. in this below example task value is declared inside the component function and just abouve the return statement.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-const Todo = () => {
-    const tasks = 12;
-    return (
-        <>
-        <h1>Tasks : {task}</h1>
-        </>
-    );
-};
-export default Todo;
+    const Todo = () => {
+        const tasks = 12;
+        return (
+            <>
+            <h1>Tasks : {task}</h1>
+            </>
+        );
+    };
+    export default Todo;
 //////////////////////////////////////////////
 
 3. example 
