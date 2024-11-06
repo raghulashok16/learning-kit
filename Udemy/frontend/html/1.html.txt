@@ -142,67 +142,101 @@
 2. it defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
 
 # --------------------------------- CITE TAG --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <cite>Avengers</cite>
+//////////////////////////////////////////////
+
 1. it defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, etc.).
 
 # ------------------------------ BLOCKQUOTE TAG ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
         works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
         globally.
     </blockquote>
+//////////////////////////////////////////////
+
 1. The <blockquote> tag specifies a section that is quoted from another source.
 2. Browsers usually indent <blockquote> elements, cite attribute used to add link to the source of the quote.
 
 # ------------------------------ SHORT QUOTATION ----------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>WWF's goal is to:
         <q>Build a future where people live in harmony with nature.</q>
         We hope they succeed.
     </p>
+//////////////////////////////////////////////
+
 1. The <q> tag defines a short quotation.
 2. Browsers normally insert quotation marks around the quotation.
 
 # ------------------------------ KEYBOARD INPUT ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+//////////////////////////////////////////////
+
 1. The <kbd> tag is used to define keyboard input.
 2. The content inside is displayed in the browser's default monospace font.
 
 # ------------------------------- COMPUTER CODE ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>The HTML <code>button</code> tag defines a clickable button.</p>
+//////////////////////////////////////////////
+
 1. The <code> tag is used to define a piece of computer code.
 2. The content inside is displayed in the browser's default monospace font.
 
 # ------------------------------- SAMPLE OUTPUT ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p><samp>File not found.<br>Press F1 to continue</samp></p>
+//////////////////////////////////////////////
+
 1. The <samp> tag is used to define sample output from a computer program.
 2. The content inside is displayed in the browser's default monospace font.
 
 # --------------------------------- BOLD TEXT -------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>This is normal text - <b>and this is bold text</b>.</p>
+//////////////////////////////////////////////
+
 1. The <b> tag specifies bold text without any extra importance.
 
 # ----------------------------- STRONG IMPORTANCE ---------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <strong>This text is important!</strong>
+//////////////////////////////////////////////
+
 1. The <strong> tag is used to define text with strong importance.
 2. The content inside is typically displayed in bold.
 
 # ------------------------------- SMALLER TEXT ------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p><small>This is some smaller text.</small></p>
+//////////////////////////////////////////////
+
 1. The <small> tag defines smaller text (like copyright and other side-comments).
 
 # --------------------------------- SPAN TAG --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+//////////////////////////////////////////////
+
 1. The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
 2. The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
 3. The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
 
 # ------------------------------ SUBSCRIPT TEXT ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>This text contains <sub>subscript</sub> text.</p>
+//////////////////////////////////////////////
+
 1. The <sub> tag defines subscript text.
 2. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
 3. Subscript text can be used for chemical formulas, like H2O.
 
 # -------------------------------- ADDRESS TAG ------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <address>
         Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
         Visit us at:<br>
@@ -210,31 +244,40 @@
         Box 564, Disneyland<br>
         USA
     </address>
+//////////////////////////////////////////////
+
 1. The <address> tag defines the contact information for the author/owner of a document or an article.
 2. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
 3. The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
 
 # ------------------------------- UNORDERD LIST ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <ul>
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ul>
+//////////////////////////////////////////////
+
 1. An unordered list starts with the <ul> tag.
 2. Each list item starts with the <li> tag.
 3. The list items will be marked with bullets (small black circles) by default.
 
 # ------------------------------- ORDERED LIST ------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <ol>
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ol>
+//////////////////////////////////////////////
+
 1. An ordered list starts with the <ol> tag.
 2. Each list item starts with the <li> tag.
 3. The list items will be marked with numbers by default.
 
 # ----------------------------- DESCRIPTION LIST ----------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <dl>
         <dt>Coffee</dt>
         <dd>- black hot drink</dd>
