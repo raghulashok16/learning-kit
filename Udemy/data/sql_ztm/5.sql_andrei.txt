@@ -850,25 +850,36 @@ sum()
 //////////////////////////////////////////////
 
 2. Sort employees by age
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT * 
     FROM employees
     ORDER BY birth_date;
+//////////////////////////////////////////////
+
 3. Sort employees who's name starts with a "k" by hire_date
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT * 
     FROM employees
     WHERE first_name ILIKE 'k%'
     ORDER BY hire_date;
+//////////////////////////////////////////////
 
 # ---------------------------- MULTI TABLE SELECT ---------------------------- #
 1. this concept is very helpfull when we used to combine two related table.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  a.emp_no, 
             concat(a.first_name, a.last_name) AS "name", 
             b.salary
     FROM employees AS a, salaries AS b;
+//////////////////////////////////////////////
+
 2. here a is table one and b is table two.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a, salaries AS b
     WHERE a.emp_no = b.emp_no;
+//////////////////////////////////////////////
+
 3. primary key and foreign key are responsible for this.
 4. actually we joined two tables using primary and foreign key.
 5. a join combines columns from one table with those of another.
@@ -880,13 +891,17 @@ sum()
 1. inner join finds the intersection of two data set based on a link and it returns you back subset.
 2. if you have a columns that links the column from table A to table B you can use an inner join.
 3. all sql syntax have a seperate keyword for doing joints.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a
     INNER JOIN salaries AS b ON b.emp_no = a.emp_no;
+//////////////////////////////////////////////
+
 4. inner join syntax is generally considered a best practice.
 5. it's more readable than using the where syntax.
 6. it shows you what's being joined.
 7. results come back unsorted and we have to sort it.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  a.emp_no,
             concat(a.first_name, a.last_name) AS "name",
             b.salary,
@@ -897,7 +912,10 @@ sum()
     INNER JOIN titles AS c ON c.emp_no = a.emp_no
     AND c.from_date = (b.from_date + interval '2 days')
     ORDER BY a.emp_no;
+//////////////////////////////////////////////
+
 8. in the above sql command, the title change always follows 2 days after the raise.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  a.emp_no,
             concat(a.first_name, a.last_name) AS "name",
             b.salary,
@@ -908,13 +926,17 @@ sum()
     INNER JOIN titles AS c ON c.emp_no = a.emp_no
     AND (c.from_date = (b.from_date + interval '2 days') OR c.from_date = b.from_date )
     ORDER BY a.emp_no;
+//////////////////////////////////////////////
 
 # --------------------------------- SELF JOIN -------------------------------- #
 1. joining a table to itself.
 2. this usually can be done when a table has a foreign key referencing its primary key.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  a.id, a.name AS "employee", b.name AS "supervisor name"
     FROM employee AS a, employee AS b
     WHERE a.supervisorID = b.id;
+//////////////////////////////////////////////
+
 3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
 
 # -------------------------------- OUTER JOIN -------------------------------- #
@@ -922,22 +944,32 @@ sum()
 2. outer joins add the data that don't have a match.
 3. left outer joins add the data that don't have a match from table A.
 4. in sql we have two outer joints -> left outer joint and right outer joints.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT *
     FFROM <table A> AS a
     LEFT [OUTER] JOIN <table B> AS b
     ON a.id = b.id;
+//////////////////////////////////////////////
+
 5. any value that does not match is made to be null.
 6. you want to know how many employees aren't managers?
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT count(emp.emp_no)
     FROM employees AS emp
     LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NULL;
+//////////////////////////////////////////////
+
 6. you want to know how many employees are managers?
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT count(emp.emp_no)
     FROM employees AS emp
     LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NOT NULL;
+//////////////////////////////////////////////
+
 7. you want to know every salary raise and also know which ones were a promotion.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  a.emp_no, 
             b.salary, 
             coalesce(c.title, 'no title change') AS "promotions",
@@ -947,47 +979,66 @@ sum()
     LEFT JOIN titles AS c ON c.emp_no = a.emp_no
     AND (c.from_date = b.from_date OR c.from_date = b.from_date + INTERVAL '2 days')
     ORDER BY a.emp_no;
+//////////////////////////////////////////////
+
 8. right joins add the data that dont have a match from table B.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT *
     FROM <table A> AS a 
     RIGHT [OUTER] JOIN <table B> AS b 
     ON a.id = b.id;
+//////////////////////////////////////////////
+
 9. like we discussed earlier, any values that does not match is made to be null.
 10. there are more join techniques they just arent used that often.
 
 # ---------------------- JOINTS THAT ARE NOT USED OFTEN ---------------------- #
 1. cross join - create a combination of every row.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT *
     FROM "cartesianA"
     CROSS JOIN "cartesianB";
+//////////////////////////////////////////////
+
 2. it will create cross join between two tables.
 3. full outer join - returns results from both whether they match or not.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT *
     FROM "cartesianA" AS a 
     FULL JOIN "cartesianB" AS b ON a.id = b.id;
+//////////////////////////////////////////////
 
 # ---------------------------- INNER JOIN EXERCISE --------------------------- #
 1. Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state, ordered by orderid.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT  c.firstname, c.lastname, o.orderid 
     FROM orders AS o
     INNER JOIN customers AS c ON o.customerid = c.customerid
     WHERE c.state IN ('NY', 'OH', 'OR')
     ORDER BY o.orderid;
+//////////////////////////////////////////////
+
 2. Show me the inventory for each product
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT p.prod_id, i.quan_in_stock
     FROM products as p
     INNER JOIN inventory AS i ON p.prod_id = i.prod_id 
+//////////////////////////////////////////////
+
 3. Show me for each employee which department they work in
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT e.first_name, dp.dept_name
     FROM employees AS e
     INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
     INNER JOIN departments AS dp ON dp.dept_no = de.dept_no
+//////////////////////////////////////////////
 
 # ------------------------------- USING KEYWORD ------------------------------ #
 1. we are going to use join often.
 2. beacause we have so many tables in database.
 3. while using joins we can use "USING" instead of "ON".
 4. this helps reduce the text to type.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT e.emp_no, e.first_name, de.dept_no
     FROM employees AS e 
     INNER JOIN dept_emp AS de USING(emp_no);
@@ -995,6 +1046,8 @@ sum()
     FROM employees AS e 
     INNER JOIN dept_emp AS de USING(emp_no)
     INNER JOIN department AS d USING(dept_no);
+//////////////////////////////////////////////
+
 5. try to use "USING" in most scenario.
 
 # ----------------------------- GROUP BY KEYWORD ----------------------------- #
@@ -1004,18 +1057,27 @@ sum()
 4. to get in-depth information by group.
 5. what if we wanted to know how many employees worked in each department?
 6. how would we do that?
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT dept_no, count(emp_no)
     FROM dept_emp;
+//////////////////////////////////////////////
+
 7. the above code is wrong because cont returns 1 record and dept_no will return a bunch of records.
 8. here comes group by.
 9. group by splits data into groups or chunks so we can apply functions against the group rather than the entire table.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT dept_no, emp_no
     FROM dept_emp
     GROUP BY dept_no, emp_no;
+//////////////////////////////////////////////
+
 10. count employees in each department.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT dept_no, count(emp_no)
     FROM dept_emp
     GROUP BY dept_no;
+//////////////////////////////////////////////
+
 11. we use group by almost exclusively with aggregate function.
 12. when we "GROUP BY" we apply the function per group, not on the entire data set.
 13. group by is stricter than it looks.
@@ -1028,24 +1090,32 @@ sum()
 
 # ----------------------------- GROUP BY EXERCISE ---------------------------- #
 1. How many people were hired on did we hire on any given hire date?
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT hire_date, COUNT(emp_no) as "amount"
     FROM employees
     GROUP BY hire_date
     ORDER BY "amount" DESC;
+//////////////////////////////////////////////
+
 2. Show me all the employees, hired after 1991 and count the amount of positions they've had
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT e.emp_no, count(t.title) as "amount of titles"
     FROM employees as e
     JOIN titles as t USING(emp_no)
     WHERE EXTRACT (YEAR FROM e.hire_date) > 1991
     GROUP BY e.emp_no
     ORDER BY e.emp_no;
+//////////////////////////////////////////////
+
 3. Show me all the employees that work in the department development and the from and to date.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     SELECT e.emp_no, de.from_date, de.to_date
     FROM employees as e
     JOIN dept_emp AS de USING(emp_no)
     WHERE de.dept_no = 'd005'
     GROUP BY e.emp_no, de.from_date, de.to_date
     ORDER BY e.emp_no, de.to_date;
+//////////////////////////////////////////////
 
 # ------------------------------ HAVING KEYWORD ------------------------------ #
 1. what if i wnat to filter groups?
