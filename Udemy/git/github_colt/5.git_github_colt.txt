@@ -355,11 +355,16 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 
 # ---------------------- COMPARING CHANGES ABOUT COMMIT ---------------------- #
 [it returs oneline commit message with commit_hash]
--- git log --online
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git log --online
+//////////////////////////////////////////////
+
 [compares changes between 2 commits using commit hashes]
 [order matters]
--- git diff commit_hash1..commit_hash2
--- git diff commit_hash2..commit_hash1
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git diff commit_hash1..commit_hash2
+    git diff commit_hash2..commit_hash1
+//////////////////////////////////////////////
 
 # --------------------------- WHY WE NEED GIT STASH -------------------------- #
 1. changes come to the destination branch.
@@ -369,37 +374,55 @@ Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so
 [stashing - the changes are temporarily removed from the files in working area and you can choose to restore or discard the changes later by simple commands]
 1. git provides an easy way of stashing these uncommited changes.
 2. so that we can return to them later, without having to make unnecessary commits.
--- git stash
--- git stash save
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git stash
+    git stash save
+//////////////////////////////////////////////
+
 3. it helps you to save changes that you are not yet ready to commit.
 4. we can stash changes and then come back to them later.
 5. running git stash will take all uncommited changes(staged and unstaged) and stash them, reverting the changes in your working copy.
--- git stash pop
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git stash pop
+//////////////////////////////////////////////
+
 6. use pop keyword to remove stashed changes in your stash and re-apply them to your working copy.
 
 # ------------------------------ GIT STASH APPLY ----------------------------- #
 1. use it to apply whatever is stashed away, without removing it from the stash.
 2. this can be useful if you apply stashed changes to multiple branches.
--- git stash apply
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git stash apply
+//////////////////////////////////////////////
 
 # ----------------------- WORKING WITH MULTIPLE STASHES ---------------------- #
 1. you can add multiple stashes on to the stack of stashes.
 2. they will all be stashed in the order you added them.
 [it will list all the stash stack queue we have]
 [it will get the changes we stash in that stack queue]
--- git stash list
--- git stach apply stash@{stash_queue_number}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git stash list
+    git stach apply stash@{stash_queue_number}
+//////////////////////////////////////////////
 
 # ---------------------- DROPING OR CLEARING THE STASHES --------------------- #
 1. removing particular stash based on its stack number.
--- git stash drop stash@{0}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git stash drop stash@{0}
+//////////////////////////////////////////////
+
 2. removing all stashes from stack.
--- git stash clear
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git stash clear
+//////////////////////////////////////////////
 
 # ------------------------ CHECKING OUT OLDER COMMITS ------------------------ #
 1. moving head position to a previous commits.
--- git log --oneline
--- git checkout commit_hash
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git log --oneline
+    git checkout commit_hash
+//////////////////////////////////////////////
+
 2. at this time you will recevie a message saying "you are in detached head state".
 3. here head points to the particular commit_hash
 
@@ -410,54 +433,78 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 # ----------------------------- RE-ATTACHING HEAD ---------------------------- #
 1. for viewing/observing purpose dont edit and code when we are in detached head.
 2. at this time we can switch to the master easily.
--- git log --oneline
--- git checkout commit_hash
--- git switch master
--- git status
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git log --oneline
+    git checkout commit_hash
+    git switch master
+    git status
+//////////////////////////////////////////////
 
 # ------------------- CREATING BRANCHES FROM DETACHED HEAD ------------------- #
 1. for creating a new version from a particular commit, go for detached head at that point and make a new branch at that commit_hash.
--- git log --oneline
--- git checkout commit_hash
--- git switch -c branch_name
--- git status
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git log --oneline
+    git checkout commit_hash
+    git switch -c branch_name
+    git status
+//////////////////////////////////////////////
+
 [update new changes at that branch like create new files/edit files, etc]
--- git add.
--- git commit -m "commit_message"
--- git status
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git add.
+    git commit -m "commit_message"
+    git status
+//////////////////////////////////////////////
 
 # ------------------- CHECKING OUT OLDER COMMAND WITH TILDE ------------------ #
 1. HEAD~1 - refers to the commit before HEAD.
 2. HEAD~2 - refers to 2 commit before HEAD.
--- git checkout HEAD~1
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git checkout HEAD~1
+//////////////////////////////////////////////
 
 # ------------------------ FORGET PREVIOUS BRANCH NAME ----------------------- #
 1. if you are in detached head and if we want to go back to our previous forgotten branch.
--- git switch -
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git switch -
+//////////////////////////////////////////////
 
 # ------------- DISCARDING/REVERTING CHANGES ON OUR WORKING AREA ------------- #
 1. if we done some mistakes in our code and we want to delete that.
 2. deleting line by line is very hard and tedious process.
 3. git helps us to revert changes in our working area with the previous commit we made.
--- git checkout HEAD index.js
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git checkout HEAD index.js
+//////////////////////////////////////////////
+
 [this line of code will revert the change we made]
--- git checkout -- index.js test.js
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git checkout -- index.js test.js
+//////////////////////////////////////////////
 [this is the shorthand]
 [we can also revert multiple file by specifying multiple file names]
 
 # ----------------------- UN-MODIFYING WITH GIT RESTORE ---------------------- #
 1. git introduced new command for undoing operations.
 2. checkout command has various functionality, so restore was introduced to specific function.
--- git restore index.js
 [this method cannot be undone, so think before you use]
--- git restore --source HEAD~2 index.js
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git restore index.js
+//////////////////////////////////////////////
+
 [this will restore the index.js file from 2 commit we preious commited]
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git restore --source HEAD~2 index.js
+//////////////////////////////////////////////
 
 # ----------------------- UNSTAGING FILES WITH RESTORE ----------------------- #
 1. if you accidentally added a file to the staging area and dont want it to be commited.
 [if we added a file that contains important api and credit card details]
 2. it is easy to remove that using restore.
--- git restore --staged api.js
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git restore --staged api.js
+//////////////////////////////////////////////
+
 3. this will remove the file from the staging area and the file is not delted.
 4. but removed from the staging area.3
 
@@ -467,13 +514,22 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 3. to undo these commits you can use git reset command.
 4. running this command will reset the repo to a specific commit.
 5. it is called plain reseet.
--- git log --oneline
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git log --oneline
+//////////////////////////////////////////////
+
 [copy commit_hash you want to reset]
--- git reset commit_hash
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git reset commit_hash
+//////////////////////////////////////////////
+
 6. this command will remove the commits from repo but it will not remove the changes in the working directory.
 7. now we can create a new branch and commit those changes.
 8. there is a alternate method called hard reset.
--- git reset --hard commit_hash
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git reset --hard commit_hash
+//////////////////////////////////////////////
+
 9. if you want to undo both commit and the actual changes in your files.
 10. the use this code.
 11. we can also use HEAD~1 or any tilde values.
@@ -482,7 +538,10 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 1. it is similar to git reset while the undo things.
 2. but unlike git reset, revert will create a brand new commit which reverses/undos the changes from a commit.
 3. beacuse it results in a new commit, you will be promted to enter a new commit message for that new revert commit.
--- git revert commit_hash
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git revert commit_hash
+//////////////////////////////////////////////
+
 4. both git reset and revert help us reverse changes.
 5. but there is significant difference when it comes to collaboration [this topic is down below somewhere, find it]
 6. if you want to reverse some commits that other people already have on their machine
@@ -523,7 +582,10 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 # -------------------- CLONING GITHUB REPO WITH GIT CLONE -------------------- #
 1. cloning - if we want a local copy of an existing repository.
 2. all we need is the github repo url.
--- git clone url
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git clone url
+//////////////////////////////////////////////
+
 3. before cloning make sure you are not in a repository.
 4. after cloning it gives you access to the full git history of the cloned project.
 
@@ -545,24 +607,38 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 3. in git we refer these destination as remotes.
 4. each reotes is simply a url where a hosted repository lives.
 5. to view any existing remotes for your repository, we can run git remote or git remote -v (verbose, for more info).
--- git remote -v
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git remote -v
+//////////////////////////////////////////////
+
 6. this just displays a list of remotes.
 7. if you havent added any remotes yet, you wont see anything.
 8. we can add a new remote.
--- git remote add <name> <url>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git remote add <name> <url>
+//////////////////////////////////////////////
+
 9. a remote is really two things: a url and a lebel.
 10. to add a new remote, we need to provide both to git.
--- git remote add origin https://github.com/blah/repo.git
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git remote add origin https://github.com/blah/repo.git
+//////////////////////////////////////////////
+
 [this tells git, anytime i use the name 'origin', i am refering to this particular github repo url]
 11. orgin is a conventional git remote name, but it is not at all special.
 12. it is just a name for a url.
 13. when we clone a github repo, default remote name setup for us is called origin.
 14. you can change it.
--- git remote add mygithuburl https://github.com/test/repo.git
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git remote add mygithuburl https://github.com/test/repo.git
+//////////////////////////////////////////////
+
 15. most people leave it as it is.
 16. there are some commands ro rename and delete remotes if needed.
--- git remote rename <old> <new>
--- git remote remove <name>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git remote rename <old> <new>
+    git remote remove <name>
+//////////////////////////////////////////////
 
 # --------------------------- INTRODUCING GIT PUSH --------------------------- #
 1. if you already have an existing repo locally that you want to get on github.
@@ -571,12 +647,21 @@ Note: branch reference is a pointer to the last commit made on a particular comm
     # push up your changes to github.
 2. now that we have a remote set up, lets push some work up to github.
 3. to do this, we need to use git push command.
--- git push <remote> <branch>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git push <remote> <branch>
+//////////////////////////////////////////////
+
 4. we need to specify the remote we want to push up to and the specific local branch we want to push up to that remote.
 5. git push master tells git to push up the master branch to our orgin remote.
--- git push orgin master
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git push orgin master
+//////////////////////////////////////////////
+
 6. we can push any branch in our local machine.
--- git push orgin <branch_name>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git push orgin <branch_name>
+//////////////////////////////////////////////
+
 7. we can push n number of branches to the github.
 
 # --------------------------- TOURING A GITHUB REPO -------------------------- #
@@ -597,12 +682,18 @@ Note: branch reference is a pointer to the last commit made on a particular comm
 4. this is how push command works on the git and git command.
 5. in certain cases we have to push a branch to github with different branch name.
 6. so there is way to do it.
--- git push <remote> <local-branch>:<remote-branch>
--- git push orgin pancake:dosa
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git push <remote> <local-branch>:<remote-branch>
+    git push orgin pancake:dosa
+//////////////////////////////////////////////
+
 7. here we are pussing a local pancake branch to a remote dosa branch.
 
 # ----------------------- WHAT DOES "git push -u" MEAN? ---------------------- #
 1. there is push command with "-u" option allows us to set  the upstream of the branch we are pushing.
 2. you can think of this as a link connecting our local branch to a branch on github.
--- git push -u orgin master
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git push -u orgin master
+//////////////////////////////////////////////
+
 3. running this command will sets the upstream of the local master branch so that it tracks the master branch on the orgin repo.
