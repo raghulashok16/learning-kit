@@ -114,12 +114,13 @@ cmd wont work, use git bash
 
 # -------------------------------- REPOSITORY -------------------------------- #
 1. a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
-<------------------------------->
-Note: before we can do anything git-related, we must initialize a repo first!, this is something you do once per project. initialize the repo in the top-level folder containing your project
 
-Note: git status command will display the status of the git only after git init command was used............
+Note:
+-before we can do anything git-related, we must initialize a repo first!, this is something you do once per project. initialize the repo in the top-level folder containing your project
 
-Note: do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized
+-git status command will display the status of the git only after git init command was used............
+
+-do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized
 
 # ----------------------- THINGS TO DO BEFORE COMMITING ---------------------- #
 [gives information on the current status of a git repository and its contents]
