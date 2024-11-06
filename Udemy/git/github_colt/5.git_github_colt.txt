@@ -108,8 +108,10 @@ cmd wont work, use git bash
     git config user.name
 //////////////////////////////////////////////
 
--- git config user.email
 [to check the user email in our git]
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    git config user.email
+//////////////////////////////////////////////
 
 # -------------------------------- REPOSITORY -------------------------------- #
 1. a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
