@@ -47,108 +47,159 @@ console.log(user["name"]);
 
 # ---------------------------- OBJECT DESTRUCTION ---------------------------- #
 1. this method is tedious because when number of key/value increases it results in large number of line codes.
-#    const user = {
-        name: "raghul",
-        email: "snipcot@gmail.com",
-    }
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const user = {
+    name: "raghul",
+    email: "snipcot@gmail.com",
+}
 
-    const name = user.name;
-    const email = user.email;
-    console.log (name, email);
+const name = user.name;
+const email = user.email;
+console.log (name, email);
+//////////////////////////////////////////////
+
 2. to solve this problem object destructuring was introduced.
 3. here we use single line to destruct code.
-# const {name, email} = user;
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const {name, email} = user;
+//////////////////////////////////////////////
+
 4. we can destruct an obeject and also rename that using collen.
-# const {name: userName, email: userEmail} = user;
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const {name: userName, email: userEmail} = user;
+//////////////////////////////////////////////
 
 # -------------------------------- MAP METHOD -------------------------------- #
 1. this is one of the most used array method in react appliction.
 2. it is mostly used to displaying the list of data.
 3. map with normal function.
-#   const products = ["product1", "product2", "product3"];
-    const displayItems = products.map(function(product){
-        return "<li>" + product + "</li>";
-    });
-    console.log(displayUtems);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const products = ["product1", "product2", "product3"];
+const displayItems = products.map(function(product){
+    return "<li>" + product + "</li>";
+});
+
+console.log(displayUtems);
+//////////////////////////////////////////////
+
 4. map with arrow function.
-#   const products = ["product1", "product2", "product3"];
-    const displayItems = products.map((product) => "<li>" + product + "</li>");
-    console.log(displayUtems);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const products = ["product1", "product2", "product3"];
+const displayItems = products.map((product) => "<li>" + product + "</li>");
+console.log(displayUtems);
+//////////////////////////////////////////////
+
 5. map using template literals.
-#   const products = ["product1", "product2", "product3"];
-    const displayItems = products.map((product) => `<li>${product}</li>`);
-    console.log(displayUtems);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const products = ["product1", "product2", "product3"];
+const displayItems = products.map((product) => `<li>${product}</li>`);
+console.log(displayUtems);
+//////////////////////////////////////////////
 
 # ------------------------------- FILTER METHOD ------------------------------ #
 1. filter method is used to filter array.
 2. filter is used to remove items from existing array.
 3. it will always return a new array.
 4. filter method with return.
-#   const ages = [5, 23, 14, 30, 21];
-    console.log(ages);
-    const adults = ages.filter((age) => {
-        return age > 18;
-    });
-    console.log(adults);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const ages = [5, 23, 14, 30, 21];
+console.log(ages);
+const adults = ages.filter((age) => {
+    return age > 18;
+});
+console.log(adults);
+//////////////////////////////////////////////
+
 5. filter method without return.
-#   const ages = [5, 23, 14, 30, 21];
-    console.log(ages);
-    const adults = ages.filter((age) => age > 18);
-    console.log(adults);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const ages = [5, 23, 14, 30, 21];
+console.log(ages);
+const adults = ages.filter((age) => age > 18);
+console.log(adults);
+//////////////////////////////////////////////
+
 6. filtering ages array that dont contain age 30.
-#   const ages = [5, 23, 14, 30, 21];
-    console.log(ages);
-    const adults = ages.filter((age) => age !== 30);
-    console.log(adults);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const ages = [5, 23, 14, 30, 21];
+console.log(ages);
+const adults = ages.filter((age) => age !== 30);
+console.log(adults);
+//////////////////////////////////////////////
 
 # ------------------------------ SPREAD OPERATOR ----------------------------- #
 1. combining two or more array with the old way using concat method.
-#   const arr1 = [1, 2, 3];
-    const arr2 = [4, 5, 6];
-    const arr3 = [7, 8, 9];
-    const numbers = arr1.concat(arr3, arr2);
-    console.log(numbers);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [7, 8, 9];
+const numbers = arr1.concat(arr3, arr2);
+console.log(numbers);
+//////////////////////////////////////////////
+
 2. combining two or more array with modern javascript using spread operator.
-#   const arr1 = [1, 2, 3];
-    const arr2 = [4, 5, 6];
-    const arr3 = [7, 8, 9];
-    const numbers = [0, ...arr1, ...arr2, 8, 99, ...arr3];
-    console.log(numbers);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [7, 8, 9];
+const numbers = [0, ...arr1, ...arr2, 8, 99, ...arr3];
+console.log(numbers);
+//////////////////////////////////////////////
+
 3. we can also use spread operator in objects.
-#   const obj1 = {
-        name : "raghul",
-    };
-    const obj2 = {
-        hobby : ["reading", "cricket"],
-    }
-    const user = {...obj1, ...obj2, nickName : "snipcot"};
-    console.log(user);
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const obj1 = {
+    name : "raghul",
+};
+const obj2 = {
+    hobby : ["reading", "cricket"],
+}
+const user = {...obj1, ...obj2, nickName : "snipcot"};
+console.log(user);
+//////////////////////////////////////////////
 
 # ---------------------- TERNARY / CONDITIONAL OPERATOR ---------------------- #
 1. it is used for adding conditions.
 2. ternary operators are the shortcut way to write if-else condition.
-#   codition ? trueExpression : falseExpression
-#   const marks = 50;
-    const result = marks > 35 ? "pass" : "fail";
-    console.log(result);
+   codition ? trueExpression : falseExpression
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const marks = 50;
+const result = marks > 35 ? "pass" : "fail";
+console.log(result);
+//////////////////////////////////////////////
 
 # -------------------- MODULES / COMPONENTS IN JAVASCRIPT -------------------- #
 1. module is a file that contains code to perform specific task.
 2. it can contain variables, objects, functions, etc.
 3. dividing our code into multiple parts is called modules.
 4. export keyword is used to make a module public so that other modules can use that.
-#   export function boo(){...}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+export function boo(){...}
+//////////////////////////////////////////////
+
 5. developers call modules as components.
 6. import keyword is used to link a module into our current module.
-#   import {boo} from "./location";
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import {boo} from "./location";
+//////////////////////////////////////////////
 
 # ----------------------------- EXPORT AS DEFAULT ---------------------------- #
 1. there is some difference between export vs export default.
-#   export default function boo(){...}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+export default function boo(){...}
+//////////////////////////////////////////////
+
 2. in importing the  export default functions there is no need of curlybraces {}.
-#   import boo from "./location";
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import boo from "./location";
+//////////////////////////////////////////////
+
 3. if we have one default export and some export function in a component.
-#   import boo,{func1, func2} from "./location";
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import boo,{func1, func2} from "./location";
+//////////////////////////////////////////////
+
 4. it is a good practise to have export declaration at the end of every component code.
-#   export default boo;
-    export {function_name}
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+export default boo;
+export {function_name}
+//////////////////////////////////////////////
