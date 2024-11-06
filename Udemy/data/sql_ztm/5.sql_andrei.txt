@@ -361,10 +361,13 @@ sum()
 4. to set a null value, be carefull in that situation.
 5. null is acontentious issue no matter what opinion you have people may dsagree.
 6. null is also a special value.
--- 1=1 [output: true]
--- 1!=1 [output: false]
--- null=null [output: null]
--- null<>null [output: null]
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    1=1 [output: true]
+    1!=1 [output: false]
+    null=null [output: null]
+    null<>null [output: null]
+//////////////////////////////////////////////
+
 7. no matter what you do with null it will always be null(subtract, divide, equal, etc).
 
 # -------------------------------- IS KEYWORD -------------------------------- #
@@ -407,14 +410,19 @@ sum()
 
 # ------------------------- NULL COALESCING EXERCISE ------------------------- #
 1. Assuming a students minimum age for the class is 15, what is the average age of a student?
-----SELECT avg(coalesce(age, 15))
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT avg(coalesce(age, 15))
     FROM "Student";
+//////////////////////////////////////////////
+
 2. Replace all empty first or last names with a default?
-----SELECT  id, 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT  id, 
             coalesce(name, 'fallback'), 
             coalesce(lastName, 'lastName'), 
             age 
     FROM "Student";
+//////////////////////////////////////////////
 
 # ------------------------------ 3 VALUED LOGIC ------------------------------ #
 1. besides true and false, the result of logical expressions can be also be unknown.
@@ -425,75 +433,110 @@ sum()
 6. (null = 1) OR (1=1) [output: true]
 7. (null = 1) AND (0=1) [output: null]
 8. null will always return null.
-----SELECT <column> 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT <column> 
     FROM <table> 
     Where <column> IS NULL;
+//////////////////////////////////////////////
+
 9. while checking null always use 'IS NULL' to check null values.
 10. dont use = operator while checking null because null is not equal to null.
 
 # ----------------------------- EXERCISE ON NULL ----------------------------- #
 1. adjust the following query to display the null values as "No Address"
-----SELECT COALESCE(address2, 'No Address')
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT COALESCE(address2, 'No Address')
     FROM customers;
+//////////////////////////////////////////////
+
 2. Fix the following query to apply proper 3VL
-----SELECT * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT * 
     FROM customers 
     WHERE address2 IS NOT null;
+//////////////////////////////////////////////
+
 3. Fix the following query to apply proper 3VL
-----SELECT coalesce(lastName, 'Empty'), * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT coalesce(lastName, 'Empty'), * 
     FROM customers 
     WHERE (age IS NULL);
+//////////////////////////////////////////////
 
 # -------------------------------- BETWEEN AND ------------------------------- #
 1. shorthand to match agains a range of values.
-----SELECT <colum> 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT <colum> 
     FROM <table> 
     WHERE <column> BETWEEN x AND y;
+//////////////////////////////////////////////
+
 2. this will sort between the given range x and y.
 3. note that 'between and' is sensitive to the order of arguments.
 4. it is more readable and maintainable.
 
 # --------------------------- BETWEEN AND EXERCISE --------------------------- #
 1. Who between the ages of 30 and 50 has an income less than 50 000?(include 30 and 50 in the results)
-----SELECT * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT * 
     FROM customers 
     WHERE age BETWEEN 30 AND 50 AND income < 50000;
+//////////////////////////////////////////////
+
 2. What is the average income between the ages of 20 and 50? (Including 20 and 50)
-----SELECT AVG(income) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT AVG(income) 
     FROM customers 
     WHERE age BETWEEN 20 AND 50;
+//////////////////////////////////////////////
 
 # -------------------------------- IN KEYWORD -------------------------------- #
 1. what if i want to find multiple values but not write endless 'AND' statements?
 2. 'IN' keyword checks if a value matches any vlue in a list of values.
-----SELECT * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT * 
     FROM <table> 
     WHERE <column> IN (vallue1,value2,...);
-----SELECT * 
+//////////////////////////////////////////////
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT * 
     FROM employees 
     WHERE emp_no IN (10001,10006,10402);
+//////////////////////////////////////////////
+
 3. 'IN' keyword is very powerfull beacause it reduce the use of multiple 'AND' used as below.
-----SELECT * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT * 
     FROM employees 
     WHERE emp_no = 10001 OR emp_no = 10006;
+//////////////////////////////////////////////
 
 # ---------------------------- IN KEYWORD EXERCISE --------------------------- #
 1. How many orders were made by customer 7888, 1082, 12808, 9623
-----SELECT COUNT(orderid) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT COUNT(orderid) 
     FROM orders 
     WHERE customerid IN (7888, 1082, 12808, 9623);
+//////////////////////////////////////////////
+
 2. How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
-----SELECT COUNT(id) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT COUNT(id) 
     FROM city 
     WHERE district IN ('Zuid-Holland','Noord-Brabant', 'Utrecht');
+//////////////////////////////////////////////
 
 # ------------------------------- LIKE KEYWORD ------------------------------- #
 1. what if you dont know exactly what you are searching for?
 2. it is called partial lookups.
 3. get everyone who's name start with 'M'.
-----SELECT first_name 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT first_name 
     FROM employees 
     WHERE first_name LIKE 'M%';
+//////////////////////////////////////////////
+
 4. this concept is called pattern matching.
 5. in order to use like you need to build patterns to match.
 6. '%' - any number of characters.
@@ -517,34 +560,50 @@ sum()
 1. this is for case insensitive matching.
 2. name ILIKE 'MO%';
 3. it is the different way of using like keyword.
-----SELECT * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT * 
     FROM employees 
     WHERE first_name ILIKE 'g%GER';
+//////////////////////////////////////////////
 
 # --------------------------- LIKE KEYWORD EXERCISE -------------------------- #
 1. Find the age of all employees who's name starts with M.
-----SELECT emp_no, 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT emp_no, 
             first_name, 
             EXTRACT (YEAR FROM AGE(birth_date)) AS "age" 
     FROM employees 
     WHERE first_name ILIKE 'M%';
+//////////////////////////////////////////////
+
 2. How many people's name start with A and end with R?
-----SELECT count(emp_no) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT count(emp_no) 
     FROM employees 
     WHERE first_name ILIKE 'A%R';
+//////////////////////////////////////////////
+
 3. How many people's zipcode have a 2 in it?.
-----SELECT count(customerid) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT count(customerid) 
     FROM customers 
     WHERE zip::text LIKE '%2%';
+//////////////////////////////////////////////
+
 4. How many people's zipcode start with 2 with the 3rd character being a 1.
-----SELECT count(customerid) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT count(customerid) 
     FROM customers
     WHERE zip::text LIKE '2_1%';
+//////////////////////////////////////////////
+
 5. Which states have phone numbers starting with 302?
 ( Replace null values with "No State" )
-----SELECT coalesce(state, 'No State') AS "State" 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT coalesce(state, 'No State') AS "State" 
     FROM customers
     WHERE phone::text LIKE '302%';
+//////////////////////////////////////////////
 
 # ----------------------------- DATE AND TIMEZONE ---------------------------- #
 1. dates are hard.
@@ -560,15 +619,19 @@ sum()
 11. no country is using utc as time zone.
 12. gmt is a time zone, utc is a time standard.
 13. to set utc time for current session.
-----SET TIME ZONE 'UTC';
-----SHOW TIMEZONE;
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SET TIME ZONE 'UTC';
+    SHOW TIMEZONE;
+//////////////////////////////////////////////
 
 # ---------------------------- SETTING TIME ZONES ---------------------------- #
 1. there is a command to set utc for all user session.
 2. setting this will set utc any time if we come back.
 3. there are certain other ways to set utc at server.
-----ALTER USER postgres SET timezone = 'UTC';
-----SHOW TIMEZONE;
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    ALTER USER postgres SET timezone = 'UTC';
+    SHOW TIMEZONE;
+//////////////////////////////////////////////
 
 # ---------------------- HOW DO WE FORMAT DATE AND TIME ---------------------- #
 1. postgres uses ISO-8601
@@ -579,14 +642,20 @@ sum()
 6. a timestamp is a date with time and timezone info.
 
 # --------------------------------- TIMESTAMP -------------------------------- #
-----CREATE TABLE timezones (
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    CREATE TABLE timezones (
         ts TIMESTAMP WITHOUT TIMEZONE,
         tz TIMESTAMP WITH TIME ZONE
 );
-----INSERT INTO timezones VALUES (
+//////////////////////////////////////////////
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    INSERT INTO timezones VALUES (
         TIMESTAMP WITHOUT TIME ZONE '2000-01-01 10:00:00-05',
         TIMESTAMP WITH TIME ZONE '2000-01-01 10:00:00-05'
 );
+//////////////////////////////////////////////
+
 1. here we are creating and inserting data into a table.
 2. tz stores the extra information about the time zone.
 3. should we use timestamp or dates, it depends on what you're storing.
@@ -594,144 +663,210 @@ sum()
 
 # ------------------------------ DATE FUNCTIONS ------------------------------ #
 1. if we want to get the current date, there are 2 main ways.
-----SELECT NOW()::date;
-----SELECT CURRENT_DATE;
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT NOW()::date;
+    SELECT CURRENT_DATE;
+//////////////////////////////////////////////
+
 2. TO_CHAR command is used to format the current date.
---  SELECT TO_CHAR (CURRENT_DATE, 'dd/mm/yyy');
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT TO_CHAR (CURRENT_DATE, 'dd/mm/yyy');
+//////////////////////////////////////////////
+
 3. in the postgres documentation there are a lot of identifiers like DDD, WWW, HH, etc.
 4. go check that if you need it.
 
 # ------------------------ DATE DIFFERENCE AND CASTING ----------------------- #
 1. what if we want to calculate difference between two dates?
-----select now() - '1800/01/01'
+    select now() - '1800/01/01'
 2. to cast a string to date, use 'date' to format that.
-----select date '1800/01/01';
+    select date '1800/01/01';
 3. to date converts a date to a date format for postgres.
 
 # ------------------------------ AGE CALCULATION ----------------------------- #
 1. age function is used to find the age in postgres.
-----SELECT AGE (date '1995-09-16');
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT AGE (date '1995-09-16');
+//////////////////////////////////////////////
+
 2. we can also calculate age between two dates.
-----SELECT AGE (date '2024-05-21', date '1995-09-16');
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT AGE (date '2024-05-21', date '1995-09-16');
+//////////////////////////////////////////////
 
 # -------------------------- EXTRACTING INFORMATION -------------------------- #
 1. extract keyword is used to extract what we want from the date.
-----SELECT EXTRACT (DAY FROM date '1992/11/13') AS DAY;
-----SELECT EXTRACT (YEAR FROM date '1992/11/13') AS YEAR;
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT EXTRACT (DAY FROM date '1992/11/13') AS DAY;
+    SELECT EXTRACT (YEAR FROM date '1992/11/13') AS YEAR;
 2. to round the date or normalize them to the first day of the month, the first day of the year.
-----SELECT DATE_TRUNC ('year', date '1992/11/13');
-----SELECT DATE_TRUNC ('month', date '1992/11/13');
+    SELECT DATE_TRUNC ('year', date '1992/11/13');
+    SELECT DATE_TRUNC ('month', date '1992/11/13');
+//////////////////////////////////////////////
+
 3. this is very helpful when we need data from the begining of the month.
 
 # --------------------------------- INTERVALS -------------------------------- #
 1. intervals allow us to write queries in a way that mirrors language.
-----SELECT *
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT *
     FROM orders
     WHERE purchaseDate <= now() - interval '30 days';
+//////////////////////////////////////////////
+
 2. it can store and manipulate a period of time in years, months, days, hours, minutes, seconds, etc.
 3. INTERVAL '1 year 2 months 3 days';
 4. INTERVAL '2 weeks ago';
 5. INTERVAL '1 yrar 3 hours 20 minutes';
-----SELECT EXTRACT (year FROM INTERVAL '5 years 20 months');
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT EXTRACT (year FROM INTERVAL '5 years 20 months');
+//////////////////////////////////////////////
 
 # ------------------------ EXERCISE DATE AND TIMESTAMP ----------------------- #
 1. Get me all the employees above 60, use the appropriate date functions
-----SELECT AGE(birth_date), * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT AGE(birth_date), * 
     FROM employees
     WHERE (EXTRACT (YEAR FROM AGE(birth_date))) > 60 ;
+//////////////////////////////////////////////
 
-----SELECT count(birth_date) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT count(birth_date) 
     FROM employees
     WHERE birth_date < now() - interval '61 years';
+//////////////////////////////////////////////
+
 2. How many employees where hired in February?
-----SELECT count(emp_no) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT count(emp_no) 
     FROM employees
     WHERE EXTRACT (MONTH FROM hire_date) = 2;
+//////////////////////////////////////////////
+
 3. How many employees were born in november?
-----SELECT COUNT(emp_no) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT COUNT(emp_no) 
     FROM employees
     WHERE EXTRACT (MONTH FROM birth_date) = 11;
+//////////////////////////////////////////////
+
 4. Who is the oldest employee?
-----SELECT MAX(AGE(birth_date)) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT MAX(AGE(birth_date)) 
     FROM employees;
+//////////////////////////////////////////////
+
 5. How many orders were made in January 2004?
-----SELECT COUNT(orderid)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT COUNT(orderid)
     FROM orders
     WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
+//////////////////////////////////////////////
 
 # ----------------------------- DISTINCT KEYWORD ----------------------------- #
 1. it remove duplicates.
 2. distinct clause keeps one row for each group of duplicates.
 3. multiple columns will evaluate based on the combination of the columns.
-----SELECT DISTINCT <col1>, <col2>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT DISTINCT <col1>, <col2>
     FROM <table>;
-----SELECT DISTINCT salary 
+    SELECT DISTINCT salary 
     FROM salaries;
+//////////////////////////////////////////////
+
 4. this will return all the unique salary in the table.
-----SELECT DISTINCT salary, from_date 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT DISTINCT salary, from_date 
     FROM salaries;
+//////////////////////////////////////////////
 
 # ----------------------- EXERCISE ON DISTINCT KEYWORD ----------------------- #
 1. What unique titles do we have?
-----SELECT DISTINCT title 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT DISTINCT title 
     FROM titles;
+//////////////////////////////////////////////
+
 2. How many unique birth dates are there?
-----SELECT COUNT(DISTINCT birth_date)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT COUNT(DISTINCT birth_date)
     FROM employees;
+//////////////////////////////////////////////
+
 3. Can I get a list of distinct life expectancy ages, Make sure there are no nulls
-----SELECT DISTINCT lifeexpectancy 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT DISTINCT lifeexpectancy 
     FROM country
     WHERE lifeexpectancy IS NOT NULL 
     ORDER BY lifeexpectancy;
+//////////////////////////////////////////////
 
 # ------------------------------- SORTING DATA ------------------------------- #
 1. relational database doont care about sorting.
 2. but there is a way to sort data either ascending or descending by column.
-----SELECT *
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT *
     FROM customers
     ORDER BY <column> [ASC/DESC];
+//////////////////////////////////////////////
+
 3. sort name column by ascending.
-----SELECT *
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT *
     FROM customers
     ORDER BY name ASC;
+//////////////////////////////////////////////
+
 4. sort name column by descending.
-----SELECT *
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT *
     FROM customers
     ORDER BY name DESC;
+//////////////////////////////////////////////
+
 5. it allow to sort by multiple columns.
-----SELECT *
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT *
     FROM customers
     ORDER BY name ASC, lastName DESC;
+//////////////////////////////////////////////
+
 6. we can use sort with different sort methods.
 7. one column ascending and another descending.
-----SELECT *
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+    SELECT *
     FROM customers
     ORDER BY length(name);
+//////////////////////////////////////////////
+
 8. we can also use expressions with order by keyword.
 
 # ------------------------- EXERCISE ON SORTING DATA ------------------------- #
 1. Sort employees by first name ascending and last name descending
-----SELECT * 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    SELECT * 
     FROM employees
     ORDER BY first_name ASC, last_name DESC;
+//////////////////////////////////////////////
+
 2. Sort employees by age
-----SELECT * 
+    SELECT * 
     FROM employees
     ORDER BY birth_date;
 3. Sort employees who's name starts with a "k" by hire_date
-----SELECT * 
+    SELECT * 
     FROM employees
     WHERE first_name ILIKE 'k%'
     ORDER BY hire_date;
 
 # ---------------------------- MULTI TABLE SELECT ---------------------------- #
 1. this concept is very helpfull when we used to combine two related table.
-----SELECT  a.emp_no, 
+    SELECT  a.emp_no, 
             concat(a.first_name, a.last_name) AS "name", 
             b.salary
     FROM employees AS a, salaries AS b;
 2. here a is table one and b is table two.
-----SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
+    SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a, salaries AS b
     WHERE a.emp_no = b.emp_no;
 3. primary key and foreign key are responsible for this.
@@ -745,14 +880,14 @@ sum()
 1. inner join finds the intersection of two data set based on a link and it returns you back subset.
 2. if you have a columns that links the column from table A to table B you can use an inner join.
 3. all sql syntax have a seperate keyword for doing joints.
-----SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
+    SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a
     INNER JOIN salaries AS b ON b.emp_no = a.emp_no;
 4. inner join syntax is generally considered a best practice.
 5. it's more readable than using the where syntax.
 6. it shows you what's being joined.
 7. results come back unsorted and we have to sort it.
-----SELECT  a.emp_no,
+    SELECT  a.emp_no,
             concat(a.first_name, a.last_name) AS "name",
             b.salary,
             c.title,
@@ -763,7 +898,7 @@ sum()
     AND c.from_date = (b.from_date + interval '2 days')
     ORDER BY a.emp_no;
 8. in the above sql command, the title change always follows 2 days after the raise.
-----SELECT  a.emp_no,
+    SELECT  a.emp_no,
             concat(a.first_name, a.last_name) AS "name",
             b.salary,
             c.title,
@@ -777,7 +912,7 @@ sum()
 # --------------------------------- SELF JOIN -------------------------------- #
 1. joining a table to itself.
 2. this usually can be done when a table has a foreign key referencing its primary key.
-----SELECT  a.id, a.name AS "employee", b.name AS "supervisor name"
+    SELECT  a.id, a.name AS "employee", b.name AS "supervisor name"
     FROM employee AS a, employee AS b
     WHERE a.supervisorID = b.id;
 3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
@@ -787,23 +922,23 @@ sum()
 2. outer joins add the data that don't have a match.
 3. left outer joins add the data that don't have a match from table A.
 4. in sql we have two outer joints -> left outer joint and right outer joints.
-----SELECT *
+    SELECT *
     FFROM <table A> AS a
     LEFT [OUTER] JOIN <table B> AS b
     ON a.id = b.id;
 5. any value that does not match is made to be null.
 6. you want to know how many employees aren't managers?
-----SELECT count(emp.emp_no)
+    SELECT count(emp.emp_no)
     FROM employees AS emp
     LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NULL;
 6. you want to know how many employees are managers?
-----SELECT count(emp.emp_no)
+    SELECT count(emp.emp_no)
     FROM employees AS emp
     LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NOT NULL;
 7. you want to know every salary raise and also know which ones were a promotion.
-----SELECT  a.emp_no, 
+    SELECT  a.emp_no, 
             b.salary, 
             coalesce(c.title, 'no title change') AS "promotions",
             coalesce(c.from_date::text, '-') AS "title taken on"
@@ -813,7 +948,7 @@ sum()
     AND (c.from_date = b.from_date OR c.from_date = b.from_date + INTERVAL '2 days')
     ORDER BY a.emp_no;
 8. right joins add the data that dont have a match from table B.
-----SELECT *
+    SELECT *
     FROM <table A> AS a 
     RIGHT [OUTER] JOIN <table B> AS b 
     ON a.id = b.id;
@@ -822,28 +957,28 @@ sum()
 
 # ---------------------- JOINTS THAT ARE NOT USED OFTEN ---------------------- #
 1. cross join - create a combination of every row.
-----SELECT *
+    SELECT *
     FROM "cartesianA"
     CROSS JOIN "cartesianB";
 2. it will create cross join between two tables.
 3. full outer join - returns results from both whether they match or not.
-----SELECT *
+    SELECT *
     FROM "cartesianA" AS a 
     FULL JOIN "cartesianB" AS b ON a.id = b.id;
 
 # ---------------------------- INNER JOIN EXERCISE --------------------------- #
 1. Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state, ordered by orderid.
-----SELECT  c.firstname, c.lastname, o.orderid 
+    SELECT  c.firstname, c.lastname, o.orderid 
     FROM orders AS o
     INNER JOIN customers AS c ON o.customerid = c.customerid
     WHERE c.state IN ('NY', 'OH', 'OR')
     ORDER BY o.orderid;
 2. Show me the inventory for each product
-----SELECT p.prod_id, i.quan_in_stock
+    SELECT p.prod_id, i.quan_in_stock
     FROM products as p
     INNER JOIN inventory AS i ON p.prod_id = i.prod_id 
 3. Show me for each employee which department they work in
-----SELECT e.first_name, dp.dept_name
+    SELECT e.first_name, dp.dept_name
     FROM employees AS e
     INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
     INNER JOIN departments AS dp ON dp.dept_no = de.dept_no
@@ -853,10 +988,10 @@ sum()
 2. beacause we have so many tables in database.
 3. while using joins we can use "USING" instead of "ON".
 4. this helps reduce the text to type.
-----SELECT e.emp_no, e.first_name, de.dept_no
+    SELECT e.emp_no, e.first_name, de.dept_no
     FROM employees AS e 
     INNER JOIN dept_emp AS de USING(emp_no);
-----SELECT e.emp_no, e.first_name, d.dept_name
+    SELECT e.emp_no, e.first_name, d.dept_name
     FROM employees AS e 
     INNER JOIN dept_emp AS de USING(emp_no)
     INNER JOIN department AS d USING(dept_no);
@@ -869,16 +1004,16 @@ sum()
 4. to get in-depth information by group.
 5. what if we wanted to know how many employees worked in each department?
 6. how would we do that?
-----SELECT dept_no, count(emp_no)
+    SELECT dept_no, count(emp_no)
     FROM dept_emp;
 7. the above code is wrong because cont returns 1 record and dept_no will return a bunch of records.
 8. here comes group by.
 9. group by splits data into groups or chunks so we can apply functions against the group rather than the entire table.
-----SELECT dept_no, emp_no
+    SELECT dept_no, emp_no
     FROM dept_emp
     GROUP BY dept_no, emp_no;
 10. count employees in each department.
-----SELECT dept_no, count(emp_no)
+    SELECT dept_no, count(emp_no)
     FROM dept_emp
     GROUP BY dept_no;
 11. we use group by almost exclusively with aggregate function.
@@ -893,19 +1028,19 @@ sum()
 
 # ----------------------------- GROUP BY EXERCISE ---------------------------- #
 1. How many people were hired on did we hire on any given hire date?
-----SELECT hire_date, COUNT(emp_no) as "amount"
+    SELECT hire_date, COUNT(emp_no) as "amount"
     FROM employees
     GROUP BY hire_date
     ORDER BY "amount" DESC;
 2. Show me all the employees, hired after 1991 and count the amount of positions they've had
-----SELECT e.emp_no, count(t.title) as "amount of titles"
+    SELECT e.emp_no, count(t.title) as "amount of titles"
     FROM employees as e
     JOIN titles as t USING(emp_no)
     WHERE EXTRACT (YEAR FROM e.hire_date) > 1991
     GROUP BY e.emp_no
     ORDER BY e.emp_no;
 3. Show me all the employees that work in the department development and the from and to date.
-----SELECT e.emp_no, de.from_date, de.to_date
+    SELECT e.emp_no, de.from_date, de.to_date
     FROM employees as e
     JOIN dept_emp AS de USING(emp_no)
     WHERE de.dept_no = 'd005'
