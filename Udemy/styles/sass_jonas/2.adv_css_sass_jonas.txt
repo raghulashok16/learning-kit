@@ -7,16 +7,17 @@
 1. always use header tag to create navigation part.
 2. use "header" as class_name.
 3. follow the basic reset settings to neglect default spacings.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+//////////////////////////////////////////////
 
 4. these are enough to reset the browser defaults.
 5. then add font to the body which is then inherited by all the elements in the body tag.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     body {
         font-family: "Lato", sans-serif;
         font-weight: 400;
@@ -25,22 +26,25 @@
         color: #777; // grey shade
         padding: 30px;
     }
+//////////////////////////////////////////////
 
 6. dont forget to add the google cdn for the font "Lato".
 7. next we add styles to the header class.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .header {
         height: 95vh;
         background-image: linear-gradient(to right bottom, rgba( 126, 213, 111, 0.8 ), rgba( 40, 180, 131, 0.8 )), url(../file_location); // with opacity rgba
         background-size: cover; // cover-fits inside the box
         background-position: top;  // top position is fixed
     }
+//////////////////////////////////////////////
 
 8. to clip out image we use "clip-path" which is a mordern css feature.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .header {
         clip-path: polygon (0 0, 100% 0, 100% 75vh, 0 100%);
     }
+//////////////////////////////////////////////
 
 9. there are many "clip-path" designs we can do.
 10. check the below webite for custom shapes.
@@ -51,25 +55,28 @@
 2. first add the logo image inside the header top left corner.
 3. remember img tag is a inline element so wrap it inside a div.
 4. name div class_name as "logo-box" and img class_name as "logo".
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .logo-box {
         position: absolute;
         top: 40px;
         left: 40px;
     }
+//////////////////////////////////////////////
 
 5. css dont know which element it should take the relative.
 6. so we need to specify that also.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .header {
         position: relative;
     }
+//////////////////////////////////////////////
     
 7. next we are going to set the height of the img tag.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .logo {
         height: 35px;
     }
+//////////////////////////////////////////////
 
 8. by setting the height property css will automatically adjust the width based on the height.
 9. so remember just specify the height property.
@@ -77,14 +84,15 @@
 11. class_name "heading-primary" for h1.
 12. class_name "heading-primary-main" for 1st span.
 13. class_name "heading-primary-sub" for 2st span.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .heading-primary {
         color: #fff // white color
         text-transform: uppercase;
     }
+//////////////////////////////////////////////
 
 14. span element by default is a inline element, so change it to block.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .heading-primary-main {
         display: block;
         font-size: 60px;
@@ -98,22 +106,24 @@
         font-weight: 700;
         letter-spacing: 17.4px; 
     }
+//////////////////////////////////////////////
 
 15. to display the h1 in middle center of the header in verticaal and horizontal position.
 16. to do so wrap it inside a div and name the class_name as "text-box".
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .text-box {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate( -50%, -50% );
     }
+//////////////////////////////////////////////
 
 # -------------------------- CREATING CSS ANIMATIONS ------------------------- #
 1. now we are going to add animations using keyframes.
 2. inside keyframes we specify the start to end animattions in percentages.
 3. we can add any percentages in keyframes from 0 to 100.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     @keyframes moveInLeft {
         0% {
             opacity: 0;
@@ -129,14 +139,16 @@
             transform: translate(0);
         }
     }
+//////////////////////////////////////////////
 
 4. after creating animations add it inside h1 span1 heading class.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .heading-primary-main {
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
     }
+//////////////////////////////////////////////
 
 5. some other animation properties.
 
@@ -144,7 +156,7 @@
     [ animation-iteration-count: 3; ] this repeats the animation.
 
 6. now create a animation for span2 inside the h1 that move in right direction.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     @keyframes moveInRight {
         0% {
             opacity: 0;
@@ -160,21 +172,24 @@
             transform: translate(0);
         }
     }
+//////////////////////////////////////////////
 
 7. this is similar to the moveInLeft but the direction is in the opposite.
 8. there is a shorthand property which specifies all animation in a single line.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .heading-primary-sub {
         animation: moveInRight 1s ease-out;
     }
+//////////////////////////////////////////////
 
 9. some times there will be a slight vertical glitch which occurs in animation.
 10. but there is a solution for that.
 11. just add this property in the parent element of the animation element.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .heading-primary {
         backface-visibility: hidden;
     }
+//////////////////////////////////////////////
 
 12. when transforming element there will be some back part glitch, its visibility is hidden by this property.
 
@@ -182,7 +197,7 @@
 1. create a button under the h1 tag but inside the div of text-box.
 2. add class_names as "btn btn-white".
 3. since this the white color button.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .btn:link,
     .btn:visited {
         text-transform: uppercase;
@@ -195,50 +210,58 @@
         background-color: #fff; // white color
         color: #777; // grey shade
     }
+//////////////////////////////////////////////
 
 4. inline elements are considered as text so add text center to the parent  will make the button horizontally center.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .text-box {
        text-align: center;
     }
+//////////////////////////////////////////////
 
 5.when hover we need to add animation to the button.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .btn:hover {
         transform: translateY(-3px);
     }
+//////////////////////////////////////////////
 
 6. we also need to add animation when clicked.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .btn:active {
         transform: translateY(-1px); 
     }
+//////////////////////////////////////////////
 
 7. now add border radius to the button.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .btn:link,
     .btn:visited {
         border-radius: 100px;
     }
+//////////////////////////////////////////////
 
 8. to add animation run smoothly we add the transition property in the initial state.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .btn:link,
     .btn:visited {
         transition: all .2s;
     }
+//////////////////////////////////////////////
 
 9. now adding box shadow in hover state.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .btn:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); // shadow downwards
     }
+//////////////////////////////////////////////
 
 10. now adding box shadow in active state which is smaller than the hover state.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .btn:active {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); // shadow downwards
     }
+//////////////////////////////////////////////
 
 # ---------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 2 
 --------------- #
