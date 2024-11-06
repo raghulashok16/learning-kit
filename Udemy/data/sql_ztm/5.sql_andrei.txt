@@ -154,12 +154,20 @@ NOTE: "" --> double quotes [ COLUMN ]
  
 # ------------------------------ RENAMING COLUMNS ----------------------------- #
 1. 'AS' keyword is used to rename the column name
-----SELECT emp_no AS "Employee Id" 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+SELECT emp_no AS "Employee Id" 
     FROM "employees" 
-----SELECT dob AS "Birthday" 
+//////////////////////////////////////////////
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+SELECT dob AS "Birthday" 
     FROM "employees" 
-----SELECT first_name AS "First Name" 
+//////////////////////////////////////////////
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+SELECT first_name AS "First Name" 
     FROM "employees" 
+//////////////////////////////////////////////
 
 # --------------------------- COLUMN CONCATTENATION -------------------------- #
 1. to make our data prettier, simpler, etc.
