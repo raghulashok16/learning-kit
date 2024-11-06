@@ -34,41 +34,41 @@
 
 4. create the actions and action creators for the project.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-{
-    type: "INCREMENT";
-}
-{
-    type: "DECREMENT";
-}
-{
-    type: "RESET";
-}
-{
-    type: "INCREMENT_BY_AMOUNT";
-}
+    {
+        type: "INCREMENT";
+    }
+    {
+        type: "DECREMENT";
+    }
+    {
+        type: "RESET";
+    }
+    {
+        type: "INCREMENT_BY_AMOUNT";
+    }
 //////////////////////////////////////////////
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-const incrementAction = () ={
-    return {
-        type: "INCREMENT",
-    };
-}
-const decrementAction = () ={
-    return {
-        type: "DECREMENT",
-    };
-}
-const resetAction = () ={
-    return {
-        type: "RESET",
-    };
-}
-const incrementByAmountAction = () ={
-    return {
-        type: "INCREMENT_BY_AMOUNT",
-    };
-}
+    const incrementAction = () ={
+        return {
+            type: "INCREMENT",
+        };
+    }
+    const decrementAction = () ={
+        return {
+            type: "DECREMENT",
+        };
+    }
+    const resetAction = () ={
+        return {
+            type: "RESET",
+        };
+    }
+    const incrementByAmountAction = () ={
+        return {
+            type: "INCREMENT_BY_AMOUNT",
+        };
+    }
 //////////////////////////////////////////////
 
 # ---------------------------- Rules of a Reducer ---------------------------- #
@@ -81,13 +81,13 @@ RULES:
 
 # ---------------------------- Reducer in Practice --------------------------- #
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-const counterReducer = ( state = initialState, action ) => {
-    if(action.type === "INCREMENT"){
-        return{
-            count: state.count + 1,
+    const counterReducer = ( state = initialState, action ) => {
+        if(action.type === "INCREMENT"){
+            return{
+                count: state.count + 1,
+            };
         };
     };
-};
 //////////////////////////////////////////////
 
 # ----------------------------- Redux Store Setup ---------------------------- #
@@ -98,30 +98,30 @@ const counterReducer = ( state = initialState, action ) => {
 5. when it recevies an action that causes a change to the state, the store will notify all the registered listners that a change to the state has been made. this will allow various parts of the system, like the UI, to update themselves according to the new state.
 6. to create a store in vanilla javascript we need to use this below code.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-const { createStore } = require("redux");
+    const { createStore } = require("redux");
 //////////////////////////////////////////////
 
 NOTE:
 this "require" method wont work in react [react uses "import" method ]
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-const store = createStore(counterReducer);
-const stateData = store.getState();
-console.log(stateData);
+    const store = createStore(counterReducer);
+    const stateData = store.getState();
+    console.log(stateData);
 //////////////////////////////////////////////
 
 # -------------------------- How To Dispatch Actions ------------------------- #
 1. dispatch method is the only way to trigger a state change.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-store.dispatch(incrementAction());
+    store.dispatch(incrementAction());
 //////////////////////////////////////////////
 
 2. to view the updated state in the store we need a special method called subscribe.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-store.subscribe(()=>{
-    const data = store.getState();
-    console.log(data);
-});
+    store.subscribe(()=>{
+        const data = store.getState();
+        console.log(data);
+    });
 //////////////////////////////////////////////
 
 3. this methods will be triggered all the time when the state changes.
