@@ -21,66 +21,76 @@
 2. useReducer hook works with a reducer function which is a pure function.
 3. this function will take in the previous state and it is called action as an argument and will then return the next state.
 4. the below example is a use reducer for managing single state.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const [count, dispatch] = useReducer(reducer, 0);
+//////////////////////////////////////////////
 
 5. after this create the reducer function outside the function component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     function reducer(state, action){
 
     }
+//////////////////////////////////////////////
 
 6. so there is doubt, when does this reducer function will be called?
 7. now dispatch function will come in play.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     dispatch(our_next_state_value);
+//////////////////////////////////////////////
 
 8. place this dispatch function inside our event handler.
 9. this dispatch function will then call the reducer function.
 10. in reducer function, state->previous state, action-> our_next_state_value.
 11. in the useReducer 0 is the initial state value.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     function reducer(state, action){
         return state + action;
     }
+//////////////////////////////////////////////
 
 12. the returned value from the reducer function will be the new state value.
 13. when we have multiple actions we mention it with 'type' and 'payload'.
 14. this type and payload should be wrapped in {  }.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     dispatch({type: "type_name", payload: our_next_state_value});
+//////////////////////////////////////////////
 
 15. this template is also used in the redux.
 16. with the type came into the reducer function we can return based on that type as below.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     function reducer(state, action){
         if(action.type === "inc") return state + action.payload;
         if(action.type === "dec") return state - action.payload;
         if(action.type === "setcount") return action.payload;
     };
+//////////////////////////////////////////////
 
 17. this above useReducer is created only to manage single state.
 18. for using multiple states, we must create the state in object format.
+
 # ------------------- 188. Managing Related Pieces of State ------------------ #
 1. first thing is to create a initial value object outside the function component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const initialState = {
         count: 0,
         step: 1,
     };
+//////////////////////////////////////////////
 
 2. create the useReducer hook with name 'state' or your prefered name.
 3. next pass the initialState value for the useReducer.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const [state, dispatch] = useReducer(reducer, initialState);
+//////////////////////////////////////////////
 
 4. next destruct the state in our functional component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const {count, step} = state;
+//////////////////////////////////////////////
 
 5. by this method we can use these values inside our component.
 6. in the reducer function, use switch statement instead of if statement.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     function reducer(state, action){
        switch(action.type){
         case "dec":
@@ -95,16 +105,19 @@
             throw new Error("unknown error");
        };
     };
+//////////////////////////////////////////////
 
 7. by this way we can handle multiple states using useReducer.
 8. in this method resetting value is very easy.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     case "reset":
         return {count:0, step:1};
+//////////////////////////////////////////////
 
 9. so just dispatch with type 'reset'.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     dispatch({type: "reset"});
+//////////////////////////////////////////////
 
 10. useReducer is mainly creadted to centralize all the state updates of the component in a single place.
 
@@ -127,48 +140,54 @@
 2. we can create a fake API using an npm package called json-server.
 3. open terminal window in the bottom of vs code.
 4. open new terminal for the fake API and run the below command.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     npm i json-server
+//////////////////////////////////////////////
 
 5. now create a new folder in our react app (foler_name -> data).
 6. now paste the json file containing all the quiz for our app.
 7. to run the json server we need add some script in the package.json file.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     "script":{
         "server": "json-server --watch data/questions.json --port 9000",
     }
+//////////////////////////////////////////////
 
 8. add the above "server" inside the "scripts" in package.json file.
 9. make sure the port is not used for other process.
 10. finally run the below command in the new terminal.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     npm run server
+//////////////////////////////////////////////
 
 11. the above command will run in port 9000 and our react app will run in port 3000.
 12. to check if our fake API worked or not, type the below url in the browser and the json format will be displayed.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     localhost:9000/questions
+//////////////////////////////////////////////
 
 13. if any doubt check the video lecture.
 14. inside our react app, using fetch method get all the data from the fake API.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     useEffect(function () {
         fetch("http://localhost:9000/questions")
         .then((res) => res.json())
         .then((data) => dispatch({ type: 'dataRecevied", payload: data }))
         .catch((err) => dispatch({ type: 'dataFailed'}));
     }, []);
+//////////////////////////////////////////////
 
 15. now create the initialState outside function component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const initialState = {
         questions: [],
         // 'loading', 'error', 'ready', 'active', finished'
         status: 'loading'
     }
+//////////////////////////////////////////////
 
 16. now create the reducer function for the basic state updates.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     function reducer(state, action) {
         switch(action.type) {
             case 'dataRecevied':
@@ -186,55 +205,65 @@
                 throw new Error('Action unknown');
         }
     };
+//////////////////////////////////////////////
 
 17. in the useReducer hook, we destruct our states[nested destructuring].
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const [ {questions, status}, dispatch ] = useReducer( reducer, initialState );
+//////////////////////////////////////////////
 
 18. using 'status' state we can conditionally display components.
 19. if 'status' === 'loading', we can display a loader component.
 20. if 'status' === 'error', we can display a error component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     {status === 'loading' && <Loader/>}
     {status === 'error' && <Error/>}
+//////////////////////////////////////////////
 
 21. check the working using network tab in inpect console window by choosing slow 3g and by stopping the json-server.
 22. after the status got ready, render the quiz welcome component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     {status === 'ready' && <StartScreen/>}
+//////////////////////////////////////////////
 
 23. now calculate the questions state length and pass it as a props to the StartScreen
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     {status === 'ready' && <StartScreen numQuestions={numQuestions} />}
+//////////////////////////////////////////////
 
 24. here numQuestions is the length of the questions in our quiz.
 25. now create a action type in reducer function that changes the status to 'active'.
 26. if status changed to 'active' then render the Questions component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     {status === 'active' && <Questions/>}
+//////////////////////////////////////////////
 
 27. we can do it inside the <StartScreen/> component.
 28. to do so we pass dispatch() function inside it, so we pass the function as props to it.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     {status === 'ready' && <StartScreen numQuestions={numQuestions} dispatch ={dispatch} />}
+//////////////////////////////////////////////
 
 29. in the <StartScreen/> component, create a button that starts the quiz.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     onclick={() => dispatch({ type: "start" })}
+//////////////////////////////////////////////
 
 30. in the reducer function add a case that changes the status 'active'.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     case 'start':
         return { 
             ...state, 
             status: 'active' 
         };
+//////////////////////////////////////////////
 
 31. to track the question we create a state variable named 'index' or 'questionIndex'.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const initialState = {
         index: 0,
     }
+//////////////////////////////////////////////
 
 32. <Questions/> component will be displayed when the status === active.
 33. in this component we pass the props value ( question = {questions[index]} )
