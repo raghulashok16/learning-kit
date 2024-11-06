@@ -8,34 +8,39 @@
 20. Adding Combinators
 21. Theory Time - Combinators
 
-# ------------- 14. Adding CSS to our Project with Inline Styles ------------- #
+# --------------- Adding CSS to our Project with Inline Styles --------------- #
 1. using inline styling.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p style="color:red">helo css</p>
+//////////////////////////////////////////////
 
-# --------- 15. Understanding the <style> Tag & Creating a .css File --------- #
+# ------------ Understanding the <style> Tag & Creating a .css File --------- #
 1. using style tag.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <style>
         p{
             color:red;
         }
     </style>
+//////////////////////////////////////////////
 
 2. using external css file.[create a file name 'main.css'][inside this file write the css code]
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <link rel="stylesheet" href="main.css">
+//////////////////////////////////////////////
 
-# ---------- 16. Applying Additional Styles & Importing Google Fonts --------- #
+# -------------- Applying Additional Styles & Importing Google Fonts --------- #
 FONT COLOR:
 1. to change a font color use 'color' property.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     color: white;
+//////////////////////////////////////////////
 
 CHANGING FONT STYLE:
 1. to change font style use 'font-family' property.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     font-family: sans-serif;
+//////////////////////////////////////////////
 
 2. there are some default fonts available in our browser.
 3. open your browser setting and you change the default and other fonts.
@@ -45,38 +50,43 @@ GOOGLE FONTS:
 2. copy the link tag and past above the css link tag.
 3. and then we can use our selected font using 'font-family' property availabe in the website.
 
-# ------------------------ 17. Theory Time - Selectors ----------------------- #
+# ---------------------------- Theory Time - Selectors ----------------------- #
 1. element selector.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     h1{
         color: red;
     }
+//////////////////////////////////////////////
 
 2. class selector.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .class_name{
         color: red;
     }
+//////////////////////////////////////////////
 
 3. universal selector. [rarely use this one]
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     *{
         color: red;
     }
+//////////////////////////////////////////////
 
 4. id selector.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     #id_name{
         color: red;
     }
+//////////////////////////////////////////////
 
 6. attribute selector.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     [attribute_name]{
         color: red;
     }
+//////////////////////////////////////////////
 
-# ---------- 18. Understanding the "Cascading" Style & Specificity​ ---------- #
+# -------------- Understanding the "Cascading" Style & Specificity​ ---------- #
 1. if try to style two times to a tag, then some style override others.
 2. so multiple rules affect the css styles.
 3. specificity comes to play when we use multiple rules.
@@ -86,18 +96,18 @@ GOOGLE FONTS:
 7. inline->ID->class,pseudo-class,attribute->tag,pseudo-element selectors.
 8. these are the order of specificity and inline has the highest priority.
 
-# ----------------------- 19. Understanding Inheritance ---------------------- #
+# --------------------------- Understanding Inheritance ---------------------- #
 1. some styles pass down to the child elements.
 2. usualy font-family comes to the child elements.
 3. this will work when we set specific font-family to the body tag.
 4. so inheritance is very important when passing down styles to the child elements.
 
-# -------------------------- 20. Adding Combinators -------------------------- #
+# ------------------------------ Adding Combinators -------------------------- #
 1. combinator allow us to combine multiple selectors to be more precise about what we want to select.
 
-# ----------------------- 21. Theory Time - Combinators ---------------------- #
+# --------------------------- Theory Time - Combinators ---------------------- #
 1. adjacent sibling [element share same parent] [second element comes immediately after first element]
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     h2 + p {
         color: red;
     }
@@ -111,9 +121,10 @@ GOOGLE FONTS:
         <h2>nope</h2>
         <p>css applied</p>
     </div>
+//////////////////////////////////////////////
 
 2. general sibling [elements share same parent] [second element comes after first element]
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     h2 ~ p {
         color: red;
     }
@@ -125,9 +136,10 @@ GOOGLE FONTS:
         <h3>nope</h3>
         <p>css applied</p>
     </div>
+//////////////////////////////////////////////
 
 3. child combinator [second element is a direct child of first element]
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     div > p {
         color: red;
     }
@@ -142,9 +154,10 @@ GOOGLE FONTS:
         <h3>nope</h3>
         <p>css applied</p>
     </div>
+//////////////////////////////////////////////
 
 4. descendant combinator [second element is a descendant of the first element]
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     div p {
         color: red;
     }
@@ -159,3 +172,4 @@ GOOGLE FONTS:
         <h3>nope</h3>
         <p>css applied</p>
     </div>
+//////////////////////////////////////////////
