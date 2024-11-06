@@ -33,20 +33,24 @@
 
 # ------------------------- FETCHING DATA WITH AXIOS ------------------------- #
 1. we need to install axios in our app.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     npm install axios
+//////////////////////////////////////////////
 
 2. then import it in our component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     import axios from 'axios';
+//////////////////////////////////////////////
 
 3. axios has get method which is used to fetch data from server.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     axios.get('url')
+//////////////////////////////////////////////
 
 4. this code will return a promise, we can handle it using (then) or (async/await).
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .then((res)=>{console.log(res)});
+//////////////////////////////////////////////
 
 5. always console log the response(res) to view the structure of the json.
 6. this helps how the data was binded in the json.
@@ -57,13 +61,15 @@
 11. HEADER - here we define meta data.
 12. BODY - here we define or get data.
 13. we can use the axios response value to a state in our component.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .then((res)=> setMethod(res.data));
+//////////////////////////////////////////////
 
 14. in fetch method we need a additional line to convert into json format.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .then((res)=> res.json())
     .then((data)=> setMethod(data.results));
+//////////////////////////////////////////////
 
 15. so using axios we can avoid this line of converting into json.
 
@@ -86,12 +92,13 @@
 2. after then method, at the end we need to use catch method.
 3. create a state variable for error messages.
 4. based on this message we can create custom error page that will be displayed to the users.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     .then((res)=>{...})
     .catch((err)=>{
         setIsLoading(false); // for removing loading indicators
         setErrors(err.message);
     });
+//////////////////////////////////////////////
 
 5. prefered method by users due to less code and maintainability.
 
@@ -99,7 +106,7 @@
 1. for fetching api data, we can use a seperate async function.
 2. inside useEffect call that fetchAPI function.
 3. while using async function, use a try/catch to handle errors.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const fetchAPI = async ()=>{
         setIsLoading(true);
         try{
@@ -111,6 +118,7 @@
             setErrorState(err.message);
         }
     };
+//////////////////////////////////////////////
 
 4. this method should be called inside useEffect.
 
@@ -133,9 +141,10 @@
 3. while adding new data to api, never forget to add id information.
 4. this will help us to use it at map function.
 5. this allow us to identify difference between 
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     axios.post('API url', newSellers)
     .then(res => setSellers([res.data, ...sellers]))
+//////////////////////////////////////////////
 
 6. sometimes error will come so it can be handled using catch method or by using try/catch block.
 7. jsonplaceholder websites allow total of 11 count so after 11 it will show error regarding 'id'.
@@ -146,7 +155,7 @@
 3. after using filter method set that filtered data to the sellers.
 4. then update the server about the deleted seller using delete() method.
 5. if any error occurs catch them.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const deleteSellers = (id) => {
         setSellers(sellers.filter((s) => s.id !== id));
         axios.delete('apiurl/${id}')
@@ -155,6 +164,7 @@
             setSellers(sellers);
         });
     };
+//////////////////////////////////////////////
 
 6. status 200 will show that it has been successfully deleted.
 
@@ -166,7 +176,7 @@
 5. second map the sellers array and use ternary operator to conditionally check if the id matches.
 6. if id matches return updated seller object.
 7. if id not matched return same seller object.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const handleUpdate = (seller) => {
         const updatedSeller = {
             ...seller, name: seller.name + "updated text",
@@ -179,6 +189,7 @@
             setErrors(err.message)
         };
     }
+//////////////////////////////////////////////
 
 # ------------------ MAKING AXIOS VARIABLE FOR HTTP REQUEST ------------------ #
 1. axios allow us to create a base url.
@@ -187,15 +198,17 @@
 4. inside utils create a file named 'api-client.js'.
 5. this help us make http request using axios.
 6. inside the file, use this code.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     import axios from "axios";
     export default axios.create({
         baseURL : "http://jsonplaceholder.typicode.com",
     })
+//////////////////////////////////////////////
 
 7. instead of importing axios in our component, import apiClient.
-
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     import apiClient from '../../utils/api-client';
+//////////////////////////////////////////////
 
 8. replace 'axios' with 'apiClient'.
 9. finnaly remove the baseURL in all api method -get,post,delete,patch.

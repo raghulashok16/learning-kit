@@ -2,7 +2,10 @@
 
 # ------------------------------- REACT ROUTER ------------------------------- #
 1. check the latest npm for react router and run in terminal.
-    --> npm i react-router
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+npm i react-router
+//////////////////////////////////////////////
+
 2. in main.jsx import BrowserRouter from react-router-dom. [short-tips: type rrd , vscode will auto type the word]
 3. wrap 'App' component inside 'BrowserRouter' component.
 4. BrowserRouter component is very import and without that routing will not work.
@@ -16,8 +19,11 @@
 # --------------------------- ADDING NOT FOUND PAGE -------------------------- #
 1. it is important to create a 404 page not found in every app.
 2. because end user wants to know what happend in the website.
-3. <Route path='*' element={ <NotFound/> } />
-4. we can create our own style of 404 page not found component.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<Route path='*' element={ <NotFound/> } />
+//////////////////////////////////////////////
+
+3. we can create our own style of 404 page not found component.
 
 # -------------------------- SINGLE PAGE APPLICATION ------------------------- #
 1. single page application will not reload.
@@ -53,24 +59,28 @@
 10. <p> SortBy:{sortBy} Category:{category} </p>
 11. this line of p tag will get the details from the query string and print the values.
 12. we can also set the searchParams manually by using on click button event.
-    
-    setSearchParams({
-    sortBy: "views",
-    category:"author",
-    })
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\    
+setSearchParams({
+sortBy: "views",
+category:"author",
+})
+//////////////////////////////////////////////
 
 # ------------------------------ NESTED ROUTING ------------------------------ #
 1. for using nested routing, we need to create a <Route> inside <Route>
-
-    <Route path='/admin' element={<Admin/>} >
-        <Route path='sales' element={<Sales/>} >
-        <Route path='sellers' element={<Sellers/>} >
-    </Route>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<Route path='/admin' element={<Admin/>} >
+    <Route path='sales' element={<Sales/>} >
+    <Route path='sellers' element={<Sellers/>} >
+</Route>
+//////////////////////////////////////////////
 
 2. react-router-dom has a componrnt which is used to display our sub route components in our specified location.
 3. Outlet is used to add our nested rout element in that place.
 4. it is mandatory to import outlet from react-router-dom.
-5. <Outlet/>
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<Outlet/>
+//////////////////////////////////////////////
 
 # --------------------------- ROUTING BEST PRACTISE -------------------------- #
 1. always create a separate component named (<AllRouting/>) for routing.
@@ -83,26 +93,30 @@
 3. then we can conditionally check if login credentials matches the manager.
 4. if not we can redirect the current page to home page or any other page using 'Navigate' component.
 5. we need to import it from react-router-dom.
-
-    if (user.role !== 'manager'){
-        return <Navigate to='/' />
-    }
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+if (user.role !== 'manager'){
+    return <Navigate to='/' />
+}
+//////////////////////////////////////////////
 
 6. in the above example we used 'Navigate' component.
 7. but in react there is a hook named 'useNavigate'
 8. we need to import this hook from react-router-dom.
 9. inside our component we need to use navigate variable.
-
-    const navigate = useNavigate();
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const navigate = useNavigate();
+//////////////////////////////////////////////
 
 10. now when we click a go back button, use this handler function.
-
-    const handleBack = () => {
-        navigate(-1);
-    }
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const handleBack = () => {
+    navigate(-1);
+}
+//////////////////////////////////////////////
 
 11. if we need to jump to a different page then we can specify the location.
-
-    const handleNavigate = () => {
-        navigate('/articles');
-    }
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const handleNavigate = () => {
+    navigate('/articles');
+}
+//////////////////////////////////////////////
