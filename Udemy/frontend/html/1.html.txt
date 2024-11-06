@@ -3,11 +3,17 @@
 2. it descibes the structure of the webpage.
 
 # ---------------------------------- DOCTYPE --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <!DOCTYPE html> 
+//////////////////////////////////////////////
+
 1. doctype tells the web browser about what html version wriiten on it.
 
 # ---------------------------- LANGUAGE ATTRIBUTE ---------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <html lang="en">
+//////////////////////////////////////////////
+
 1. lang attribute is used to determine the language of the text used on our webpage.
 
 # --------------------------------- HEAD TAG --------------------------------- #
@@ -15,78 +21,123 @@
 2. meta tags are packed inside head tag.
 
 # --------------------------------- META TAG --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <meta>
+//////////////////////////////////////////////
+
 1. meta tags gives the additional information about our webpage to the search engines.
 
 # ---------------------------- CHARACTER ENCODING ---------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <meta charset="UTF-8">
+//////////////////////////////////////////////
+
 1. charset attribute is used to specify the character encoding used in our document.
 2. UTF-8 charset is the latest one which contains all the character and symbols in the world.
 
 # ----------------------------- VIEWPORT SETTINGS ---------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//////////////////////////////////////////////
+
 1. Controls the layout on mobile browsers to ensure responsiveness
 2. to achive responsive webpages we use viewport to find which device we are using.
 
 # --------------------------- TITLE OF THE DOCUMENT -------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <title>Document</title>
+//////////////////////////////////////////////
+
 1. contents of the title tag is very important for search engine optimization.
 2. Sets the title of the webpage, which appears in the browser tab and is used by search engines.
 
 # -------------------------- AUTHOR AND DESCRIPTION -------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <meta name="author" content="Author Name">
     <meta name="description" content="Description of the page">
+//////////////////////////////////////////////
+
 1. Provides information about the author and a brief description of the webpage for search engines and social media.
 
 # --------------------------------- KEYWORDS --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <meta name="keywords" content="HTML, CSS, JavaScript">
+//////////////////////////////////////////////
+
 1. Lists keywords relevant to the page content for search engines (though less commonly used today).
 
 # -------------------------------- LINK TO CSS ------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <link rel="stylesheet" href="styles.css">
+//////////////////////////////////////////////
+
 1. Links to external CSS files for styling the document.
 
 # ---------------------------- EXTERNAL JAVASCRIPT --------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <script src="script.js" defer></script>
+//////////////////////////////////////////////
+
 1. Links to external JavaScript files, with attributes like defer or async to control the loading behavior.
 
 # ------------------------------- LINK TO ICONS ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+//////////////////////////////////////////////
+
 1. Specifies icons for the webpage, including favicons and touch icons for mobile devices.
 
 # --------------------------------- BODY TAG --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <body>
     ...
     </body>
+//////////////////////////////////////////////
+
 1. body tag contains all the contents of the html document.
 2. contents like headings, images, hyperlinks, tables, list, etc.
 
 # -------------------------------- HEADING TAG ------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <h1>heading 1 tag</h1>
     <h2>heading 2 tag</h2>
     <h3>heading 3 tag</h3>
     <h4>heading 4 tag</h4>
     <h5>heading 5 tag</h5>
     <h6>heading 6 tag</h6>
+//////////////////////////////////////////////
+
 1. heading tags are used to seperate headings and subheadings on our webpages.
 2. h1 is largest and most important.
 3. h6 is least important.
 
 # ------------------------------- PARAGRAPH TAG ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>paragraph tag</p>
+//////////////////////////////////////////////
+
 1. blank line inserted before and after them.
 
 # --------------------------------- HYPERLINK -------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <a href="www.google.com">hyperlink</a>
+//////////////////////////////////////////////
+
 1. anchor tag  used to jump from page to page with the help of the link we used in the href attribute.
 
 # --------------------------------- BREAK TAG -------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <br>
+//////////////////////////////////////////////
+
 1. br is used to add a single line break in the text, its a self closing tag.
 
 # ----------------------------- ABBREVIATION TAG ----------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <abbr title="do message">DM</abbr>
+//////////////////////////////////////////////
+
 1. when hover this DM text in the browser, the title attribute will popup from the text.
 2. it defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
 
