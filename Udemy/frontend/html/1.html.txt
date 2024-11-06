@@ -284,6 +284,8 @@
         <dt>Milk</dt>
         <dd>- white cold drink</dd>
     </dl>
+//////////////////////////////////////////////
+
 1. HTML also supports description lists.
 2. A description list is a list of terms, with a description of each term.
 3. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
@@ -298,44 +300,65 @@
 # ---------------------------------------------------------------------------- #
 
 # --------------------------------- DATA TAG --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <ul>
         <li><data value="21053">Cherry Tomato</data></li>
         <li><data value="21054">Beef Tomato</data></li>
         <li><data value="21055">Snack Tomato</data></li>
     </ul>
+//////////////////////////////////////////////
+
 1. The <data> tag is used to add a machine-readable translation of a given content.
 2. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.
 3. Tip: If the content is time- or date-related, use the <time> element instead.
 
 # ---------------------------------- DELETED --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>My favorite color is <del>blue</del></p>
+//////////////////////////////////////////////
+
 1. The <del> tag defines text that has been deleted from a document.
 2. Browsers will usually strike a line through deleted text.
 
 # --------------------------------- INSERTED --------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <p>My favorite color is <ins>red</ins>!</p>
+//////////////////////////////////////////////
+
 1. The <ins> tag defines a text that has been inserted into a document.
 2. Browsers will usually underline inserted text.
 
 # ---------------------------- DEFINITION ELEMENT ---------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <dfn>HTML</dfn>
+//////////////////////////////////////////////
+
 1. The <dfn> tag stands for the "definition element",
 2. it specifies a term that is going to be defined within the content.
 3. The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.
 
 # ------------------------------ EMPHASIZED TEXT ----------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <em>cannot</em>
+//////////////////////////////////////////////
+
 1. The <em> tag is used to define emphasized text.
 2. The content inside is typically displayed in italic.
 3. A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
 
 # ------------------------------ HORIZONTAL RULE ----------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <hr>
+//////////////////////////////////////////////
+
 1. it is a thematic break in an HTML page.
 2. it is most often displayed as a horizontal rule that is used to separate content in an HTML page.
 
 # -------------------------------- ITALIC TEXT ------------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     <i>Lorem ipsum</i>
+//////////////////////////////////////////////
+
 1. <i> tag defines a part of text in an alternate voice or mood.
 2. The content inside is typically displayed in italic.
 3. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
