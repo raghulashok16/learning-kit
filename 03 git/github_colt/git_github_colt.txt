@@ -1,126 +1,126 @@
 cmd wont work, use git bash
 
 # ------------------ TERMINAL COMMANDS FOR FILE MANIPULATION ----------------- #
-1. [used to 'list' contents of the current working directory]
+1. used to 'list' contents of the current working directory.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     ls
 //////////////////////////////////////////////
 
-2. [used to 'list all contents including hidden files and folder' of the current working directory]
+2. used to 'list all contents including hidden files and folder' of the current working directory.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     ls -a
 //////////////////////////////////////////////
 
-3. [to open the current working directory in file explorer]
+3. to open the current working directory in file explorer.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     start .
 //////////////////////////////////////////////
 
-4. [used to 'list' contents of that folder]
+4. used to 'list' contents of that folder.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     ls folder_name
 //////////////////////////////////////////////
 
-5. [used to 'list' contents of that folder inside folder]
+5. used to 'list' contents of that folder inside folder.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     ls folder_name/folder_name
 //////////////////////////////////////////////
 
-6. [used to print the 'present working directory']
+6. used to print the 'present working directory'.
 7. [/c/Users/Administrator]
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     pwd
 //////////////////////////////////////////////
 
-8. [cd is an acronym for 'Change Directory']
+8. cd is an acronym for 'Change Directory'.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\    
     cd folder_name/
 //////////////////////////////////////////////
 
-9. [move back from current working directory one level]
+9. move back from current working directory one level.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     cd ..
 //////////////////////////////////////////////
 
-10. [creates 'purple.js' file in the current Directory]
-11. [creating single file]
+10. creates 'purple.js' file in the current Directory.
+11. creating single file.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     touch purple.js
 //////////////////////////////////////////////
 
 
-12. [creates 'purple.js and red.css' file in the current Directory]
-13. [creating multiple files]
+12. creates 'purple.js and red.css' file in the current Directory.
+13. creating multiple files.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     touch purple.js red.css
 //////////////////////////////////////////////
 
-14. [creates 'rocky.png' file in the given path directory]
+14. creates 'rocky.png' file in the given path directory.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     touch Pets/Horses/rocky.png
 //////////////////////////////////////////////
 
-15. [creates a 'Raghul' folder in the current working directory]
+15. creates a 'Raghul' folder in the current working directory.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     mkdir Raghul
 //////////////////////////////////////////////
 
-16. [creates a 'Raghul and Raju' folders in the current working directory]
+16. creates a 'Raghul and Raju' folders in the current working directory.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     mkdir Raghul Raju
 //////////////////////////////////////////////
 
-17. [to delete the file from the current directory permanantly]
+17. to delete the file from the current directory permanantly.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     rm purple.js
 //////////////////////////////////////////////
 
-18. [to delete multiple files from current directory permanantly]
+18. to delete multiple files from current directory permanantly.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     rm purple.js red.--s
 //////////////////////////////////////////////
 
-19. [to delete the folder from the current working directory]
+19. to delete the folder from the current working directory.
 20. [r-recusive,f-force]
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     rm -rf Raghul
 //////////////////////////////////////////////
 
 # --------------------- BASIC SETTINGS USING GIT COMMAND --------------------- #
-21. [displays the git version installed in our machine]
+21. displays the git version installed in our machine.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     git --version 
 //////////////////////////////////////////////
 
-22. [to set user name of git in our machine]
+22. to set user name of git in our machine.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     git config --global user.name "Raghul Ashok"
 //////////////////////////////////////////////
 
-23. [to set user email of git in our machine]
+23. to set user email of git in our machine.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     git config --global user.email raghulashok16@gmail.com
 //////////////////////////////////////////////
 
-24. [to check the user name in our git]
+24. to check the user name in our git.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     git config user.name
 //////////////////////////////////////////////
 
-25. [to check the user email in our git]
+25. to check the user email in our git.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     git config user.email
 //////////////////////////////////////////////
 
 # -------------------------------- REPOSITORY -------------------------------- #
-1. a git repo is a workspace which tracks and manages files within a folder, each repo has its own history
+1. a git repo is a workspace which tracks and manages files within a folder, each repo has its own history.
 
 Note:
--before we can do anything git-related, we must initialize a repo first!, this is something you do once per project. initialize the repo in the top-level folder containing your project
+-before we can do anything git-related, we must initialize a repo first!, this is something you do once per project. initialize the repo in the top-level folder containing your project.
 
 -git status command will display the status of the git only after git init command was used............
 
--do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized
+-do not use [git init] inside a repo, this will corrupt that REPOSITORY, so always use [git status] to check wether repo is already initialized.
 
 # ----------------------- THINGS TO DO BEFORE COMMITING ---------------------- #
 [gives information on the current status of a git repository and its contents]
