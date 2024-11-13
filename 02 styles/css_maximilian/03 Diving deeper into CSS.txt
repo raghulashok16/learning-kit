@@ -214,19 +214,90 @@ display: none vs visibility: hidden
 12. If you want to do so or need both block-level and inline behavior, you can set display: inline-block  to merge behaviors.
 13. Some example elements are: <a> , <span> , <img>.
 
+# ----------- Understanding an Unexpected "inline-block" Behaviour ----------- #
+1. after setting display property to inline-block, sometimes there will white space will affect the flow of the document.
+2. refer the video to understand.
+
+# ------------- Working with "text-decoration" & "vertical-align" ------------ #
+1. some element in css have default decorations like underline, italics, etc.
+2. so we can remove it using decoration property.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    text-decoration: none;
+//////////////////////////////////////////////
+
+3. vertical-alignment property will set the alignment in vertical position.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    vertical-align: middle;
+//////////////////////////////////////////////
 
 
+# ---------------------------- Styling Anchor Tags --------------------------- #
+1. to make distance between each other in nav links.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    .main-nav__item {
+        margin: 0 16px;
+    }
+//////////////////////////////////////////////
+
+2. change text color to green for anchor tag inside the main nav bar.
+3. remove the underline in anchor tag.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    .main-nav__item a {
+        text-decoration: none;
+        color: 0e4f1f;
+    }
+//////////////////////////////////////////////
+
+# --------------------------- Adding Pseudo Classes -------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+   .main-nav__item a:hover {
+       
+        color: white;
+    }
+    .main-nav__item a:active {
+        
+        color: blue;
+    }
+//////////////////////////////////////////////
+
+# -------------- Theory Time - Pseudo Classes & Pseudo Elements -------------- #
+1. pseudo class allow us to define a stlye for a special state of an element, like hover or active state.
+2. pseudo elements allow us to define a style of a specific part of an element.
+3. pseudo classes are defined with a single colon and pseudo_class_name.
+4. pseudo elements are defined by adding two colons.
+5. check MDN website has all these list of class and element.
 
 
+1. when we have multiple selector to add same property to a element, then we can use the grouping technique to use them in the same line of css code.
 
-Applying the Display Property & Styling our Navigation Bar
-Understanding an Unexpected "inline-block" Behaviour
-Working with "text-decoration" & "vertical-align"
-Styling Anchor Tags
-Adding Pseudo Classes
-Theory Time - Pseudo Classes & Pseudo Elements
-Grouping Rules
-Working with "font-weight" & "border"
-Adding & Styling a CTA-Button
-Adding a Background Image to our Project
-Properties Worth to Remember
+# ------------------------------ Grouping Rules ------------------------------ #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    .main-nav__item a:hover,
+    .main-nav__item a:active {
+        color: white;
+    }
+//////////////////////////////////////////////
+
+# ------------------- Working with "font-weight" & "border" ------------------ #
+1. we can add different border style to our element using border property.
+2. we do have css to style font weight.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    font-weight: bold;
+//////////////////////////////////////////////
+
+# ---------------- OVERRIDING CSS RULES VIA ORDER OF THE FILE ---------------- #
+1. we created our webpage and we have 1000 lines of code.
+2. its hard to find multiple updates in that css file.
+3. we can override styles by adding styles to the end of the css code.
+4. when we have same specificity, order of code changes the priority.
+5. finally this method is not recomended.
+
+# ----------------- Adding a Background Image to our Project ----------------- #
+1. background url property can be used to add background in our design.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    background: url("https://......");
+    background: url("subfolder/....");
+    background: url("file_name.jpeg");
+//////////////////////////////////////////////
+
+2. we can specify the url using this 3 ways.
