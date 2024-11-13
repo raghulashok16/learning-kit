@@ -1,14 +1,4 @@
 
-# --------------------------------- SELECTORS -------------------------------- #
-
-# ------------------------- CASCADING AND SPECIFICITY ------------------------ #
-
-# -------------------------------- INHERITANCE ------------------------------- #
-
-# -------------------------------- COMBINATORS ------------------------------- #
-
-# ---------------------------- LIST OF COMBINATORS --------------------------- #
-
 # ------------------- HOW TO CHECK BOX MODEL IN OUR BROWSER ------------------ #
 1. every element in html is interpreted as a box by css.
 2. you can see the box in the chrome developer tool by inspecting that element.
