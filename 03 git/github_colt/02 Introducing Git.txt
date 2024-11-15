@@ -41,3 +41,10 @@ Birth of Git:
 2. most major comapanies uses git.
 
 # ---------------- 11. Git Vs. Github: What's The Difference? ---------------- #
+1. git and github are not the same thing.
+2. git is a VSC which runs on your local machine .
+3. it tracks your work locally which dont need any internet connection.
+4. we can use git without github and without any registration for an account.
+5. but github is a web service which host out git repositories in the cloud to make it easier to coloborate with other people.
+6. we need a account to use github.
+7. finally github is an online place to share work that is done using git.
