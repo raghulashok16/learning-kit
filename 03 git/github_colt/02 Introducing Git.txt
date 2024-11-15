@@ -6,9 +6,38 @@
 10. Who Uses Git?
 11. Git Vs. Github: What's The Difference?
 
-# ------------------ 6. What Really Matters In This Section ------------------ #
+
 # -------------------------- 7. What Exactly Is Git? ------------------------- #
+1. git is the world most popular version control system.
+2. it is also called as VSC in short form.
+3. version control is a software that tracks and manages changes to file over time.
+4. verion control system generally allows users to revisit earlier versions of the files, compare changes between versions, undo changes, and a whole lot more.
+5. git is just one of the many version control systems available today.
+
 # ---------------------------- 8. Visualizing Git ---------------------------- #
+git help us:
+    - track changes across multiple files.
+    - compare versions of a project.
+    - 'time travel' back to old versions.
+    - revert to a previous version.
+    - collaborate and share changes.
+    - combine changes.
+
 # ------------------------- 9. A Quick History Of Git ------------------------ #
+Linus Torvalds:
+    - he is a legendary software engineer.
+    - he is the creator and main developer behind Linux and Git.
+    - in 2005, while working on linux, he became frustrated with the available version control systems.
+    - the existing tools were slow, closed-source, and usually paid.
+    - he used bitkeeper VSC.
+
+Birth of Git:
+    - on 3rd april 2005, he started using git in his project.
+    - later a couple of month he released the official version of git.
+    - 15 years later 90% developer stated using git on daily basis.
+
 # ----------------------------- 10. Who Uses Git? ---------------------------- #
+1. engineers and developers uses git for their day today work.
+2. most major comapanies uses git.
+
 # ---------------- 11. Git Vs. Github: What's The Difference? ---------------- #
