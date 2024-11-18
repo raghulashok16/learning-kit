@@ -64,9 +64,10 @@
             type: "RESET",
         };
     }
-    const incrementByAmountAction = () ={
+    const incrementByAmountAction = (amount) ={
         return {
             type: "INCREMENT_BY_AMOUNT",
+            payload: amount,
         };
     }
 //////////////////////////////////////////////
@@ -130,3 +131,9 @@ this "require" method wont work in react [react uses "import" method ]
 6. to overcome this problem always return the previous state as the default when using reducer with SWITCH case.
 
 # ----------------------- Dispatch Actions With Payload ---------------------- #
+1. action is a object which has data - type and payload.
+2. we can access these using 'action.type' and 'ation.paylaod'.
+3. passing action type is mandatory and action payload can be used as our preference.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    store.dispatch(incrementByAmountAction(10));
+//////////////////////////////////////////////
