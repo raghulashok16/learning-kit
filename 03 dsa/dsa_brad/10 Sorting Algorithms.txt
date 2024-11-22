@@ -1,3 +1,9 @@
+104. Bubble Sort Algorithm
+106. Insertion Sort Algorithm
+108. Selection Sort Algorithm
+110. Merge Sort Algorithm
+112. Quick Sort Algorithm
+
 # -------------------------------- bubble sort ------------------------------- #
 
 function bubleSort(arr){
