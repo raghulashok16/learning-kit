@@ -112,6 +112,7 @@ NOTE:
     - this operator is used to expand an array into all of its individual elements.
     - mainly used to take shallow copy of array and to merge two arrays.
     - Spread operator works on all iterables [arrays, strings, maps, sets, etc] but not objects.
+    - we cannot use spread inside the template/string Literals.
 
 
 1. creating an new array with existing arrays.
@@ -134,7 +135,17 @@ NOTE:
     const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 ////////////////////////////////////////////// 
 
-5. 
+5. manipulating strings.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const str = 'Jonas';
+    const strArr = [...str];
+//////////////////////////////////////////////
+
+6. calling functions by spreading arguments.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    restaurant.orderPasta(...ingredients);
+//////////////////////////////////////////////
+
 # --------------------- 107. Rest Pattern and Parameters --------------------- #
 # --------------------- 108. Short Circuiting (&& and ||) -------------------- #
 # ----------------- 109. The Nullish Coalescing Operator (??) ---------------- #
