@@ -110,6 +110,9 @@ NOTE:
 
 NOTE:
     - this operator is used to expand an array into all of its individual elements.
+    - mainly used to take shallow copy of array and to merge two arrays.
+    - Spread operator works on all iterables [arrays, strings, maps, sets, etc] but not objects.
+
 
 1. creating an new array with existing arrays.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -121,7 +124,17 @@ NOTE:
     const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 //////////////////////////////////////////////
 
-3. 
+3. take copy of an array.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const mainMenuCopy = [...restaurant.mainMenu];
+//////////////////////////////////////////////
+
+4. join 2 arrays.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+////////////////////////////////////////////// 
+
+5. 
 # --------------------- 107. Rest Pattern and Parameters --------------------- #
 # --------------------- 108. Short Circuiting (&& and ||) -------------------- #
 # ----------------- 109. The Nullish Coalescing Operator (??) ---------------- #
