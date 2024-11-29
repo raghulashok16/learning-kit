@@ -20,42 +20,107 @@
 
 # ------------------------- 103. Destructuring Arrays ------------------------ #
 
+NOTE: 
+    - while destructuring array use [] square brackets.
+    - here "restaurant" is a object and "categories" is a array.
+
 1. destructuring array elements using es6.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    const arr = [2, 3, 4];
-    const [x,y,z] = arr;
-    const [first, second] = restaurant.categories;
+    const arr = [ 2, 3, 4 ];
+    const [ x,y,z ] = arr;
+    const [ first, second ] = restaurant.categories;
 //////////////////////////////////////////////
 
 2. skip elements in array destructuring.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    const [first, , third] = restaurant.categories;
+    const [ first, , third ] = restaurant.categories;
 //////////////////////////////////////////////
 
 3. array destructuring to swap variables.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    [a, b] = [b, a];
+    [ a, b ] = [ b, a ];
 //////////////////////////////////////////////
 
 4. destructuring nested array.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    const nested = [2, 4, [5, 6]];
-    const [i, , [j, k]] = nested;
+    const nested = [ 2, 4, [ 5, 6 ] ];
+    const [ i, , [ j, k ] ] = nested;
 //////////////////////////////////////////////
 
 5. setting default values in destructuring.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    const [a=2, b=1, c=8] = [8, 9];
+    const [ a = 2, b = 1, c = 8 ] = [ 8, 9 ];
 //////////////////////////////////////////////
-
-NOTE: while destructuring array use [] square brackets.
 
 # ------------------------ 105. Destructuring Objects ------------------------ #
 
-NOTE: while destructuring objects use {} curly braces.
-1.  
+NOTE: 
+    - while destructuring objects use {} curly braces.
+    - we need to write the exact property names in object destructuring.
+    - destructuring allows us to write less code.
+    - this will be very helpfull when we work with API.
+
+1.  destructuring object using exact object property names.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const { name, openingHours, categories } = restaurant;
+//////////////////////////////////////////////
+
+2. destructuring object using renamed object property names.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const { name: restaurantName, openingHours: hours, categories: tags } = restaurant;
+//////////////////////////////////////////////
+
+3. we can also set default values while destructuring object.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const { menu = [], starterMenu: staters = [] } = restaurant;
+//////////////////////////////////////////////
+
+4. we can mutate variables while destructuring objects.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    let a = 111;
+    let b = 999;
+    const obj = { a: 23, b: 7, c:14 };
+    ({ a, b } = obj);
+//////////////////////////////////////////////
+
+5. destructuring nested object.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const { fri: { open, close } } = openingHours;
+//////////////////////////////////////////////
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const { fri: { open: o, close: c } } = openingHours;
+//////////////////////////////////////////////
+
+6. destructuring object at function argument.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    function orderInRestaurant ({ starterIndex, mainIndex, time, address }){
+        ...
+    }
+//////////////////////////////////////////////
+
+7. destructuring object at function argument with default values.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    function orderInRestaurant ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }){
+        ...
+    }
+//////////////////////////////////////////////
 
 # ---------------------- 106. The Spread Operator (...) ---------------------- #
+NOTE:
+    - this operator is used to expand an array into all of its individual elements.
+
+1. creating an new array with existing arrays.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const newArr = [ ...arr1, ...arr2 ];
+//////////////////////////////////////////////
+
+2. creating an new array by add a element with an existing array.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const newMenu = [ ...restaurant.mainMenu, 'Gnocci' ];
+//////////////////////////////////////////////
+
+3. 
 # --------------------- 107. Rest Pattern and Parameters --------------------- #
 # --------------------- 108. Short Circuiting (&& and ||) -------------------- #
 # ----------------- 109. The Nullish Coalescing Operator (??) ---------------- #
