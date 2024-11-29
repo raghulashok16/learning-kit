@@ -20,30 +20,30 @@
 
 # ------------------------- 103. Destructuring Arrays ------------------------ #
 
-1. destructuring array elements using es6
+1. destructuring array elements using es6.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const arr = [2, 3, 4];
     const [x,y,z] = arr;
     const [first, second] = restaurant.categories;
 //////////////////////////////////////////////
 
-2. skip elements in array destructuring
+2. skip elements in array destructuring.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const [first, , third] = restaurant.categories;
 //////////////////////////////////////////////
 
-3. array destructuring to swap variables
+3. array destructuring to swap variables.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     [a, b] = [b, a];
 //////////////////////////////////////////////
 
-4. destructuring nested array
+4. destructuring nested array.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const nested = [2, 4, [5, 6]];
     const [i, , [j, k]] = nested;
 //////////////////////////////////////////////
 
-5. setting default values in destructuring
+5. setting default values in destructuring.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const [a=2, b=1, c=8] = [8, 9];
 //////////////////////////////////////////////
