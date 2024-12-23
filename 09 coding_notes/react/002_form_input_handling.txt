@@ -1,0 +1,4 @@
+Handling user inputs in React can be done in various ways, depending on the complexity and requirements of the application. Here are some common methods to handle user inputs in React:
+
+# ------------------------- 1. Controlled Components ------------------------- #
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
