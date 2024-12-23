@@ -1,7 +1,7 @@
 React Fragments allow you to group multiple elements without adding extra nodes to the DOM
 
 
-1. Example using React.Fragment:
+# --------------------- 1. Example using React.Fragment: --------------------- #
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import React from 'react';
 
@@ -17,7 +17,7 @@ function FragmentExample() {
 export default FragmentExample;
 //////////////////////////////////////////////
 
-2. Example using the shorthand syntax:
+# ------------------ 2. Example using the shorthand syntax: ------------------ #
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import React from 'react';
 
@@ -33,7 +33,7 @@ function FragmentShorthandExample() {
 export default FragmentShorthandExample;
 //////////////////////////////////////////////
 
-3. Example with List and Keys:
+# ---------------------- 3. Example with List and Keys: ---------------------- #
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 import React from 'react';
 
