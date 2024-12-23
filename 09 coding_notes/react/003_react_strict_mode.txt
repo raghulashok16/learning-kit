@@ -1,0 +1,37 @@
+# ---------------- This is typically done in the index.js file --------------- #
+
+1. Wrapping your application with StrictMode
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+//////////////////////////////////////////////
+
+2. Using StrictMode for specific parts of your application
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import SomeComponent from './SomeComponent';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+    <SomeComponent />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+//////////////////////////////////////////////
