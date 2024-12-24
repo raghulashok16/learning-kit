@@ -65,54 +65,94 @@ function selectionSort(arr){
 
 # -------------------------------- merge sort -------------------------------- #
 
-function mergeSort(arr){
-    if(arr.length <= 1){
+function mergeSort(arr) {
+    // Base case: arrays with 0 or 1 elements are already sorted
+    if (arr.length <= 1) {
         return arr;
     }
-    const mid = Math.floor(arr.length/2);
-    const left = mergeSort(arr.slice(0,mid));
+
+    // Split the array into two halves
+    const mid = Math.floor(arr.length / 2);
+    const left = mergeSort(arr.slice(0, mid));
     const right = mergeSort(arr.slice(mid));
 
-    return merge(left,right);
+    // Merge the sorted halves
+    return merge(left, right);
 }
 
-function merge(left, right){
+function merge(left, right) {
     let merged = [];
     let leftIndex = 0;
-    let rigthIndex = 0;
-    
-    while(leftIndex < left.length && rigthIndex < right.length){
-        if(left[leftIndex] < right[rigthIndex]){
+    let rightIndex = 0;
+
+    // Compare elements from left and right arrays and merge them in sorted order
+    while (leftIndex < left.length && rightIndex < right.length) {
+        if (left[leftIndex] < right[rightIndex]) {
             merged.push(left[leftIndex]);
             leftIndex++;
         } else {
-            merged.push(right[rigthIndex]);
-            rigthIndex++;
+            merged.push(right[rightIndex]);
+            rightIndex++;
         }
     }
-    return merged.concat(left.slice(leftIndex).concat(right.slice(rigthIndex)));
+
+    // Concatenate any remaining elements from left and right arrays
+    return merged.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
+
+// Example usage:
+const arr = [38, 27, 43, 3, 9, 82, 10];
+const sortedArray = mergeSort(arr);
+console.log(sortedArray); // Output: [3, 9, 10, 27, 38, 43, 82]
+
+Explanation:
+1. Base Case: If the array length is 1 or less, it's already sorted, so return it as is.
+2. Splitting the Array: The array is split into two halves, left and right, by finding the middle index.
+3. Recursive Sorting: Each half is recursively sorted using the mergeSort function.
+4. Merging: The merge function merges the two sorted halves into a single sorted array.
+merge Function:
+5. Initialization: Initialize merged array to hold the combined sorted elements, and leftIndex and rightIndex to track positions in the left and right arrays.
+6. Comparison Loop: Compare elements from left and right arrays and push the smaller element to merged. Increment the corresponding index.
+7. Remaining Elements: After the loop, concatenate any remaining elements from left and right arrays to merged.
+8. This implementation ensures that the array is divided and sorted correctly, and then merged back together in sorted order.
 
 # -------------------------------- quick sort -------------------------------- #
 
-function quickSort(arr){
-    if(arr.length <= 1){
+function quickSort(arr) {
+    // Base case: arrays with 0 or 1 elements are already sorted
+    if (arr.length <= 1) {
         return arr;
     }
 
-    const pivot = arr[arr.length-1];
+    // Choose the pivot element
+    const pivot = arr[arr.length - 1];
     const left = [];
-    const rigth = [];
+    const right = [];
 
-    for(let i = 0; i<arr.length-1; i++){
-        if(arr[i] < pivot){
-            left.push(arr[i]);
-        }else{
-            right.push(arr[i]);
+    // Partition the array into two halves
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] < pivot) {
+            left.push(arr[i]); // Elements less than the pivot go to the left array
+        } else {
+            right.push(arr[i]); // Elements greater than or equal to the pivot go to the right array
         }
-
     }
+
+    // Recursively sort the left and right arrays, then combine them with the pivot
     return [...quickSort(left), pivot, ...quickSort(right)];
 }
+
+// Example usage:
+const arr = [3, 6, 8, 10, 1, 2, 1];
+const sortedArray = quickSort(arr);
+console.log(sortedArray); // Output: [1, 1, 2, 3, 6, 8, 10]
+
+
+Explanation:
+1. Base Case: If the array has 0 or 1 elements, it is already sorted, so return it as is.
+2. Pivot Selection: The pivot is chosen as the last element of the array.
+3. Partitioning: Iterate through the array (excluding the pivot) and partition the elements into left and right arrays based on whether they are less than or greater than/equal to the pivot.
+4. Recursive Sorting: Recursively sort the left and right arrays and then combine them with the pivot in between.
+5. This recursive approach ensures that the array is divided and sorted correctly.
 
 # ---------------------------------------------------------------------------- #
