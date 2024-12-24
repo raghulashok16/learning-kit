@@ -1,0 +1,170 @@
+Passing and receiving props in React is a fundamental concept that allows data to be passed from parent components to child components. Props (short for properties) are read-only data passed down from parent to child components.
+
+# ----------------------- Example 1: Basic Prop Passing ---------------------- #
+In this example, we have a parent component that passes a prop to a child component.
+Parent Component:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+function ParentComponent() {
+  const message = "Hello from Parent Component!";
+
+  return (
+    <div>
+      <h1>Parent Component</h1>
+      <ChildComponent message={message} />
+    </div>
+  );
+}
+
+export default ParentComponent;
+//////////////////////////////////////////////
+
+Child Component:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+
+function ChildComponent(props) {
+  return (
+    <div>
+      <h2>Child Component</h2>
+      <p>{props.message}</p>
+    </div>
+  );
+}
+
+export default ChildComponent;
+//////////////////////////////////////////////
+
+Explanation:
+1. The ParentComponent defines a message variable and passes it to ChildComponent using the message prop.
+2. The ChildComponent receives the message prop and displays it.
+
+# --------------------- Example 2: Passing Multiple Props -------------------- #
+You can pass multiple props from the parent to the child component.
+
+Parent Component:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+function ParentComponent() {
+  const user = {
+    name: "John Doe",
+    age: 30
+  };
+
+  return (
+    <div>
+      <h1>Parent Component</h1>
+      <ChildComponent name={user.name} age={user.age} />
+    </div>
+  );
+}
+
+export default ParentComponent;
+//////////////////////////////////////////////
+
+Child Component:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+
+function ChildComponent(props) {
+  return (
+    <div>
+      <h2>Child Component</h2>
+      <p>Name: {props.name}</p>
+      <p>Age: {props.age}</p>
+    </div>
+  );
+}
+
+export default ChildComponent;
+//////////////////////////////////////////////
+
+# -------------- Example 3: Using Destructuring to Receive Props ------------- #
+You can use destructuring to extract props directly in the function parameter.
+
+Child Component with Destructuring:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+
+function ChildComponent({ name, age }) {
+  return (
+    <div>
+      <h2>Child Component</h2>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+    </div>
+  );
+}
+
+export default ChildComponent;
+//////////////////////////////////////////////
+
+# ------------------- Example 4: Passing Functions as Props ------------------ #
+You can also pass functions as props to handle events or actions in the child component.
+
+Parent Component:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+function ParentComponent() {
+  const handleClick = () => {
+    alert("Button clicked in Child Component!");
+  };
+
+  return (
+    <div>
+      <h1>Parent Component</h1>
+      <ChildComponent onButtonClick={handleClick} />
+    </div>
+  );
+}
+
+export default ParentComponent;
+//////////////////////////////////////////////
+
+Child Component:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+
+function ChildComponent({ onButtonClick }) {
+  return (
+    <div>
+      <h2>Child Component</h2>
+      <button onClick={onButtonClick}>Click Me</button>
+    </div>
+  );
+}
+
+export default ChildComponent;
+//////////////////////////////////////////////
+
+# ------------------------- Example 5: Default Props ------------------------- #
+You can define default props for a component, which will be used if no value is passed for that prop.
+
+Child Component with Default Props:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+import React from 'react';
+
+function ChildComponent({ message = "Default message" }) {
+  return (
+    <div>
+      <h2>Child Component</h2>
+      <p>{message}</p>
+    </div>
+  );
+}
+
+export default ChildComponent;
+//////////////////////////////////////////////
+
+Key Points:
+1. Props are Read-Only: Props cannot be modified by the child component.
+2. Pass Functions: You can pass functions as props to handle events in child components.
+3. Default Props: Use default props to provide default values for props.
+
+These examples illustrate how to pass and receive props in React, which is essential for building reusable and modular components.
