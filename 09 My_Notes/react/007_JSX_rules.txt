@@ -1,6 +1,6 @@
 JSX (JavaScript XML) is a syntax extension for JavaScript that is commonly used with React to describe what the UI should look like. JSX allows you to write HTML-like syntax within JavaScript code. Here are the key rules and guidelines for using JSX:
 
-1. Embedding Expressions in JSX
+# ---------------------- 1. Embedding Expressions in JSX --------------------- #
 You can embed JavaScript expressions inside JSX by wrapping them in curly braces {}.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -8,7 +8,7 @@ const name = 'John';
 const element = <h1>Hello, {name}!</h1>;
 //////////////////////////////////////////////
 
-2. JSX Must Have One Parent Element
+# -------------------- 2. JSX Must Have One Parent Element ------------------- #
 JSX elements must be wrapped in a single parent element. You can use a <div>, <Fragment>, or <> (shorthand for React.Fragment) to group multiple elements.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -27,7 +27,7 @@ const element = (
 );
 //////////////////////////////////////////////
 
-3. JSX Tags Must Be Properly Closed
+# -------------------- 3. JSX Tags Must Be Properly Closed ------------------- #
 All JSX tags must be properly closed. Self-closing tags like <img /> and <input /> are required to have a closing slash.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -38,7 +38,7 @@ const element = <img src="image.png" alt="description" />;
 const element = <img src="image.png" alt="description">
 //////////////////////////////////////////////
 
-4. JavaScript Keywords as Attribute Names
+# ----------------- 4. JavaScript Keywords as Attribute Names ---------------- #
 Since JSX is closer to JavaScript, you cannot use JavaScript reserved keywords as attribute names (e.g., class, for). Instead, use className and htmlFor.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -49,7 +49,7 @@ const element = <div className="my-class">Content</div>;
 const element = <div class="my-class">Content</div>;
 //////////////////////////////////////////////
 
-5. CamelCase for Attributes
+# ------------------------ 5. CamelCase for Attributes ----------------------- #
 Use camelCase for attribute names in JSX instead of the standard HTML attribute names.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -60,7 +60,7 @@ const element = <input type="text" defaultValue="Hello" />;
 const element = <input type="text" defaultvalue="Hello" />;
 //////////////////////////////////////////////
 
-6. JSX Prevents Injection Attacks
+# --------------------- 6. JSX Prevents Injection Attacks -------------------- #
 JSX automatically escapes any values embedded in it to prevent injection attacks.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -68,7 +68,7 @@ const title = response.potentiallyMaliciousInput;
 const element = <h1>{title}</h1>; // Safe, the title will be escaped
 //////////////////////////////////////////////
 
-7. Conditional Rendering
+# ------------------------- 7. Conditional Rendering ------------------------- #
 You can conditionally render JSX elements using JavaScript expressions.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -80,13 +80,13 @@ const element = (
 );
 //////////////////////////////////////////////
 
-8. Inline Styles
+# ----------------------------- 8. Inline Styles ----------------------------- #
 Inline styles in JSX are specified as an object with camelCased properties.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const element = <div style={{ color: 'blue', fontSize: '14px' }}>Styled Text</div>;
 //////////////////////////////////////////////
 
-9. Comments in JSX
+# ---------------------------- 9. Comments in JSX ---------------------------- #
 You can add comments in JSX using curly braces and the /* */ syntax.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -98,7 +98,7 @@ const element = (
 );
 //////////////////////////////////////////////
 
-10. Key Attribute in Lists
+# ------------------------ 10. Key Attribute in Lists ------------------------ #
 When rendering lists of elements, each element must have a unique key attribute to help React identify which items have changed.
 jsx:
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
