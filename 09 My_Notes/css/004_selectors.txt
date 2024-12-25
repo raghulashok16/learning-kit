@@ -1,0 +1,56 @@
+CSS selectors are used to select HTML elements to apply styles to them. Here are some of the different types of CSS selectors:
+
+# ----------------------------- Element Selector: ---------------------------- #
+
+1. Selects all elements of the specified type.
+Example:
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+p {
+  color: blue;
+}
+//////////////////////////////////////////////
+
+# ------------------------------ Class Selector: ----------------------------- #
+
+1. Selects all elements with the specified class.
+Example:
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.myClass {
+  background-color: yellow;
+}
+//////////////////////////////////////////////
+
+# ------------------------------- ID Selector: ------------------------------- #
+
+1. Selects the element with the specified ID.
+Example:
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#myId {
+  margin: 10px;
+}
+//////////////////////////////////////////////
+
+# ---------------------------- Universal Selector: --------------------------- #
+
+1. Selects all elements.
+Example:
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+* {
+  font-family: Arial, sans-serif;
+}
+//////////////////////////////////////////////
+
+# ---------------------------- Attribute Selector: --------------------------- #
+
+1. Selects elements with a specified attribute.
+Example:
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+a[href] {
+  color: red;
+}
+//////////////////////////////////////////////

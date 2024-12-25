@@ -1,0 +1,66 @@
+There are three primary ways to add CSS to a website: Inline CSS, Internal CSS, and External CSS. Here's a brief overview of each method:
+
+# -------------------------------- Inline CSS: ------------------------------- #
+
+1. CSS is added directly within HTML elements using the style attribute.
+2. This method is useful for applying unique styles to individual elements.
+Example:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<h1 style="color: blue; text-align: center;">Hello, World!</h1>
+//////////////////////////////////////////////
+
+# ------------------------------- Internal CSS: ------------------------------ #
+
+1. CSS is added within the <style> tag inside the <head> section of an HTML document.
+2. This method is useful for styling a single HTML document.
+Example:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<html>
+<head>
+  <style>
+    body {
+      background-color: lightgrey;
+    }
+    h1 {
+      color: blue;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+//////////////////////////////////////////////
+
+# ------------------------------- External CSS: ------------------------------ #
+
+1. CSS is written in a separate file with a .css extension and linked to the HTML document using the <link> tag.
+2. This method is useful for applying styles to multiple HTML documents, promoting consistency across a website.
+
+Example:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!-- HTML Document (index.html) -->
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+//////////////////////////////////////////////
+
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* External CSS File (styles.css) */
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: blue;
+  text-align: center;
+}
+//////////////////////////////////////////////
+
+Each method has its use cases, and often, a combination of these methods is used to achieve the desired styling for a website. For larger projects, external CSS is preferred for better organization and maintainability.
