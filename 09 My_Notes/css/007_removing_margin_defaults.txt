@@ -1,4 +1,4 @@
-include the CSS rules at the beginning of your main CSS file or in the <head> section of your HTML document before your custom styles. This ensures that the reset styles are applied first, and your styles will override them as needed.
+Include the CSS rules at the beginning of your main CSS file or in the <head> section of your HTML document before your custom styles. This ensures that the reset styles are applied first, and your styles will override them as needed.
 
 Example:
 1. Here’s how you might include a universal reset in an HTML document.
