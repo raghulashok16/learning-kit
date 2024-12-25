@@ -1,0 +1,126 @@
+The height property in CSS is used to set the height of an element. The value can be specified in various units such as pixels (px), percentages (%), viewport height (vh), and more. Here's an overview of how the height property works, along with some examples:
+
+# ------------------------------- Basic Usage: ------------------------------- #
+Setting Height in Pixels:
+CSS:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Sets the height of the element to 200 pixels */
+element {
+    height: 200px;
+}
+//////////////////////////////////////////////
+
+Setting Height in Percentages:
+1. When you use percentages, the height is calculated relative to the height of the parent element.
+
+CSS:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Sets the height of the element to 50% of its parent element's height */
+element {
+    height: 50%;
+}
+//////////////////////////////////////////////
+
+Setting Height Using Viewport Units:
+2. Viewport units are relative to the size of the viewport (the visible area of the browser). The vh unit is 1% of the viewport height.
+
+CSS:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Sets the height of the element to 100% of the viewport height */
+element {
+    height: 100vh;
+}
+//////////////////////////////////////////////
+
+# --------------------------------- Examples: -------------------------------- #
+Example 1: Fixed Height:
+1. In this example, the height is fixed at 300 pixels.
+
+HTML:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Height Example</title>
+    <style>
+        .fixed-height {
+            height: 300px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-height">This div has a fixed height of 300px.</div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+Example 2: Percentage Height:
+In this example, the child element's height is set to 50% of the parent element's height.
+
+HTML:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Height Example</title>
+    <style>
+        .parent {
+            height: 400px;
+            background-color: lightcoral;
+        }
+        .child {
+            height: 50%;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">This div has a height of 50% of its parent.</div>
+    </div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+Example 3: Viewport Height:
+1. In this example, the element's height is set to 100% of the viewport height.
+
+HTML:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport Height Example</title>
+    <style>
+        .full-viewport-height {
+            height: 100vh;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-viewport-height">This div has a height of 100vh (100% of the viewport height).</div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+Notes:
+1. Auto Height: When height: auto; is used, the height of the element is determined by its content.
+2. Min-height and Max-height: You can also use min-height and max-height properties to set minimum and maximum height constraints for an element.
+
+CSS:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+element {
+    min-height: 100px; /* Minimum height constraint */
+    max-height: 500px; /* Maximum height constraint */
+}
+//////////////////////////////////////////////
+
+Understanding the height property is crucial for controlling the layout and appearance of elements in your web design. It allows you to create flexible and responsive layouts that adapt to different screen sizes and content.
