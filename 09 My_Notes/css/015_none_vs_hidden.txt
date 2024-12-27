@@ -1,0 +1,80 @@
+The display: none and visibility: hidden properties in CSS are used to control the visibility of elements, but they function in different ways.
+
+# ------------------------------- display: none ------------------------------ #
+1. Effect: Completely removes the element from the document flow. The element does not take up any space, and it is as if it does not exist in the DOM.
+2. Use Case: Useful for hiding elements that should not affect the layout or be accessible (e.g., hiding a modal dialog).
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.hidden {
+    display: none;
+}
+//////////////////////////////////////////////
+
+# --------------------------------- Example: --------------------------------- #
+HTML:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>This div is visible.</div>
+    <div class="hidden">This div is hidden and does not take up space.</div>
+    <div>This div is also visible.</div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+# ---------------------------- visibility: hidden ---------------------------- #
+1. Effect: Hides the element but it still takes up space in the document layout. The element is invisible, but its allocated space remains.
+2. Use Case: Useful when you want to hide elements without collapsing the layout (e.g., hiding a tooltip).
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.invisible {
+    visibility: hidden;
+}
+//////////////////////////////////////////////
+
+# --------------------------------- Example: --------------------------------- #
+HTML:
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div>This div is visible.</div>
+    <div class="invisible">This div is hidden but still takes up space.</div>
+    <div>This div is also visible.</div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+# -------------------------------- Comparison -------------------------------- #
+                 display: none;                                   visibility: hidden;
+Visibility	    -Element is not visible	                        - Element is not visible
+Space in Layout	-Element does not take up any space	            - Element still takes up space
+Accessibility	-Element is not accessible by screen readers	- Element may still be accessible by screen readers
+Re-rendering	-Causes reflow and repaint when toggled	        - Only causes repaint when toggled
+
+# ---------------------------------- Summary --------------------------------- #
+1. Use display: none when you want to completely remove an element from the layout and the document flow.
+1. Use visibility: hidden when you want to hide an element but retain its space in the layout, preserving the overall structure.
+
+
+Understanding the difference between these properties helps in making better decisions for layout and element visibility management in web development.
+
