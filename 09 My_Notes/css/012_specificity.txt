@@ -1,0 +1,63 @@
+Specificity in CSS is a mechanism that determines which CSS rule is applied to an element when there are multiple conflicting rules. It is based on the weight of each selector type used in the rule. The more specific the selector, the higher its weight, and thus the higher its priority. Specificity is calculated using a point system, where different types of selectors contribute different amounts of specificity points.
+
+# -------------------------- Specificity Calculation ------------------------- #
+Specificity is calculated based on the following components, each contributing a different weight:
+
+1. Inline Styles: Styles declared directly in the HTML element using the style attribute.
+
+Example: <div style="color: red;"></div>
+Weight: 1000
+
+2. ID Selectors: Selectors that use the # character to target elements with specific IDs.
+
+Example: #header
+Weight: 0100
+
+3. Class, Attribute, and Pseudo-class Selectors: Selectors that use the . character (class), [] (attribute), or : (pseudo-class).
+
+Example: .button, [type="text"], :hover
+Weight: 0010
+
+4. Type Selectors and Pseudo-element Selectors: Selectors that use the element name (type) or :: (pseudo-element).
+
+Example: div, ::before
+Weight: 0001
+
+# --------------------------- Specificity Hierarchy -------------------------- #
+The specificity hierarchy works by comparing the weights of each selector. The rule with the highest weight takes precedence. If two selectors have the same weight, the one that appears later in the CSS file will be applied.
+
+Example
+Consider the following CSS rules:
+
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Type selector - specificity: 0001 */
+p {
+    color: blue;
+}
+
+/* Class selector - specificity: 0010 */
+.intro {
+    color: green;
+}
+
+/* ID selector - specificity: 0100 */
+#main {
+    color: red;
+}
+
+/* Inline style - specificity: 1000 */
+<p style="color: purple;">This is a paragraph.</p>
+//////////////////////////////////////////////
+
+In this example:
+
+1. The paragraph with the style attribute will be purple because inline styles have the highest specificity (1000).
+2. If an element has the ID main, it will be red because ID selectors have a higher specificity (0100) than class (0010) or type (0001) selectors.
+3. An element with the class intro will be green, overriding any type selectors, but not ID selectors or inline styles.
+Any <p> elements without the above selectors will be blue.
+
+# ---------------------------------- Summary --------------------------------- #
+1. Understanding specificity is crucial for writing effective and maintainable CSS.
+2. It helps avoid conflicts and ensures that the correct styles are applied to elements.
+3. By knowing how specificity is calculated and how different selectors contribute to it, you can control which styles take precedence in your CSS.
