@@ -1,0 +1,152 @@
+The display property in CSS specifies how an element is displayed on the web page. It is one of the most important properties in CSS as it determines the layout behavior of an element. The display property has several values, each of which changes how the element is rendered.
+
+# ---------------------- Common display Property Values ---------------------- #
+1. display: block;:
+- The element is displayed as a block-level element.
+- It starts on a new line and takes up the full width available.
+- Examples: <div>, <h1>, <p>
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.block {
+    display: block;
+}
+//////////////////////////////////////////////
+
+2. display: inline;:
+- The element is displayed as an inline element.
+- It does not start on a new line and only takes up as much width as necessary.
+- Examples: <span>, <a>, <strong>
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.inline {
+    display: inline;
+}
+//////////////////////////////////////////////
+
+3. display: inline-block;:
+- The element is displayed as an inline-level block container.
+- It flows with text like an inline element but can have a width and height like a block element.
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.inline-block {
+    display: inline-block;
+}
+//////////////////////////////////////////////
+
+4. display: none;:
+- The element is not displayed at all (it is removed from the document flow).
+- It does not occupy any space on the page.
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.hidden {
+    display: none;
+}
+//////////////////////////////////////////////
+
+5. display: flex;:
+- The element becomes a flex container, enabling the use of flexbox layout.
+- Child elements (flex items) are arranged according to flexbox rules.
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.flex-container {
+    display: flex;
+}
+//////////////////////////////////////////////
+
+6. display: grid;:
+- The element becomes a grid container, enabling the use of grid layout.
+- Child elements (grid items) are arranged according to grid rules.
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.grid-container {
+    display: grid;
+}
+//////////////////////////////////////////////
+
+# ---------------------------------- Example --------------------------------- #
+Here is an example demonstrating some of the different display property values:
+
+HTML
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .block {
+            display: block;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            width: 100px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: lightgray;
+        }
+
+        .flex-item {
+            background-color: lightsalmon;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightyellow;
+        }
+
+        .grid-item {
+            background-color: lightpink;
+            padding: 10px;
+        }
+    </style>
+    <title>CSS Display Property</title>
+</head>
+<body>
+    <div class="block">Block Element</div>
+    <span class="inline">Inline Element</span>
+    <span class="inline">Inline Element</span>
+    <div class="inline-block">Inline-Block Element</div>
+    <div class="inline-block">Inline-Block Element</div>
+
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+    </div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+# -------------------------------- Explanation ------------------------------- #
+1. Block Element: Takes up the full width and starts on a new line.
+2. Inline Elements: Flow within the text and take up only as much space as necessary.
+3. Inline-Block Elements: Flow within the text but can have set dimensions.
+4. Flex Container: Uses display: flex; to arrange child elements using flexbox layout.
+5. Grid Container: Uses display: grid; to arrange child elements using grid layout.
+
+# ---------------------------------- Summary --------------------------------- #
+1. The display property is essential for controlling the layout and presentation of elements on a webpage.
+2. By understanding and using different display values, you can achieve a variety of layouts and designs.
