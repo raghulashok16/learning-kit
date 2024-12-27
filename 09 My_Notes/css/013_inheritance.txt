@@ -1,0 +1,72 @@
+Inheritance in CSS refers to the mechanism by which certain properties applied to a parent element are passed down, or inherited, by its child elements. This allows for consistent styling across a webpage without the need to repeatedly specify the same styles for each element.
+
+# ----------------------- Key Points About Inheritance ----------------------- #
+1. Inherited Properties: Not all CSS properties are inheritable. Common inheritable properties include:
+- color
+- font-family
+- font-size
+- line-height
+- visibility
+
+2. Non-Inherited Properties: Properties that do not inherit by default typically include:
+- margin
+- padding
+- border
+- background
+- width
+- height
+
+3. The inherit Keyword:
+You can explicitly set a property to be inherited using the inherit keyword, even if it is not inheritable by default.
+
+Example: border: inherit;
+
+# ---------------------------------- Example --------------------------------- #
+Consider the following example to illustrate inheritance:
+
+HTML
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Parent element styles */
+        .parent {
+            color: blue; /* This property will be inherited */
+            font-size: 20px; /* This property will be inherited */
+            margin: 20px; /* This property will NOT be inherited */
+        }
+
+        /* Child element styles */
+        .child {
+            font-size: inherit; /* Explicitly inherit font-size */
+            padding: 10px; /* This property will NOT be inherited */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent Element
+        <div class="child">
+            Child Element
+        </div>
+    </div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+Explanation:
+1. Inherited Properties:
+- The color property set on the .parent class will be inherited by the .child class, so the text inside both the parent and child elements will be blue.
+- The font-size property set on the .parent class will be inherited by the .child class because we explicitly set font-size: inherit; in the .child class.
+
+2. Non-Inherited Properties:
+- The margin property set on the .parent class will not be inherited by the .child class. Each element will have its own margin.
+- The padding property set on the .child class is specific to the child element and will not be influenced by the parent element.
+
+# ---------------------------------- Summary --------------------------------- #
+1. Inheritance in CSS allows for efficient and consistent styling by passing down certain properties from parent elements to their children.
+2.  While not all properties are inheritable, the inherit keyword can be used to explicitly inherit properties when needed.
+3. Understanding inheritance helps in creating more maintainable and organized CSS.
