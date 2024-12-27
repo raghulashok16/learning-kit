@@ -1,0 +1,85 @@
+The vertical-align property in CSS is used to align inline or inline-block elements vertically relative to the surrounding text or other inline elements. It is most commonly used to align elements like images, text, and other inline elements within their container.
+
+# --------------------- Common Values for vertical-align --------------------- #
+1. baseline (default): Aligns the baseline of the element with the baseline of its parent.
+2. top: Aligns the top of the element with the top of the tallest element on the line.
+3. middle: Aligns the middle of the element with the middle of the line's text.
+4. bottom: Aligns the bottom of the element with the lowest element on the line.
+5. sub: Aligns the element as subscript.
+6. super: Aligns the element as superscript.
+7. text-top: Aligns the top of the element with the top of the parent element's font.
+8. text-bottom: Aligns the bottom of the element with the bottom of the parent element's font.
+9. percentage: Aligns the element at a percentage of the line height above the baseline.
+
+# ---------------------------------- Example --------------------------------- #
+Here's an example demonstrating the use of different vertical-align values:
+
+HTML
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            line-height: 50px; /* Set line-height for better visualization */
+            font-size: 16px;
+            border: 1px solid #ddd;
+        }
+        .baseline {
+            vertical-align: baseline;
+        }
+        .top {
+            vertical-align: top;
+        }
+        .middle {
+            vertical-align: middle;
+        }
+        .bottom {
+            vertical-align: bottom;
+        }
+        .sub {
+            vertical-align: sub;
+        }
+        .super {
+            vertical-align: super;
+        }
+        .text-top {
+            vertical-align: text-top;
+        }
+        .text-bottom {
+            vertical-align: text-bottom;
+        }
+    </style>
+    <title>Vertical Align Example</title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="baseline"> Baseline
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="top"> Top
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="middle"> Middle
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="bottom"> Bottom
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="sub"> Sub
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="super"> Super
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="text-top"> Text-Top
+        <img src="https://via.placeholder.com/30" alt="Placeholder" class="text-bottom"> Text-Bottom
+    </div>
+</body>
+</html>
+//////////////////////////////////////////////
+
+# -------------------------------- Explanation ------------------------------- #
+1. Baseline: The image aligns with the baseline of the text, which is the default behavior.
+2. Top: The image aligns with the top of the tallest element on the line.
+3. Middle: The image aligns with the middle of the text line.
+4. Bottom: The image aligns with the bottom of the lowest element on the line.
+5. Sub: The image is aligned as a subscript.
+6. Super: The image is aligned as a superscript.
+7. Text-Top: The top of the image aligns with the top of the parent's font.
+8. Text-Bottom: The bottom of the image aligns with the bottom of the parent's font.
+
+# ---------------------------------- Summary --------------------------------- #
+1. The vertical-align property is a powerful tool for controlling the vertical positioning of inline and inline-block elements.
+2. It is especially useful for aligning images and text within a line of content.
+3. By understanding and using different values of vertical-align, you can achieve precise vertical alignment in your web designs.
