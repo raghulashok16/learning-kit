@@ -1,0 +1,144 @@
+Text decoration in CSS refers to the styling of text, such as underlining, overlining, line-through (strikethrough), and more. The primary property used for text decoration is text-decoration. This property is a shorthand for several other properties that control different aspects of text decoration.
+
+# ------------------------- text-decoration Property ------------------------- #
+The text-decoration property is a shorthand that allows you to set several text decoration properties at once. The values it can take include:
+
+- text-decoration-line
+- text-decoration-style
+- text-decoration-color
+
+# --------------------------- text-decoration-line --------------------------- #
+This property specifies what kind of line decoration to use. Possible values are:
+
+- none: No decoration.
+- underline: Adds a line underneath the text.
+- overline: Adds a line above the text.
+- line-through: Adds a line through the text.
+- blink (deprecated): Makes the text blink (not recommended or widely supported).
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Example */
+.underline {
+    text-decoration-line: underline;
+}
+
+.overline {
+    text-decoration-line: overline;
+}
+
+.line-through {
+    text-decoration-line: line-through;
+}
+//////////////////////////////////////////////
+
+# --------------------------- text-decoration-style -------------------------- #
+This property specifies the style of the line used for decoration. Possible values are:
+
+- solid: Default solid line.
+- double: Double line.
+- dotted: Dotted line.
+- dashed: Dashed line.
+- wavy: Wavy line.
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Example */
+.solid {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.dashed {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.wavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+//////////////////////////////////////////////
+
+# --------------------------- text-decoration-color -------------------------- #
+This property specifies the color of the decoration line.
+
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Example */
+.red-underline {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+.blue-underline {
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}
+//////////////////////////////////////////////
+
+# ------------------------- text-decoration Shorthand ------------------------ #
+You can combine all these properties using the shorthand text-decoration property.
+
+CSS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/* Example */
+.complete-decoration {
+    text-decoration: underline dotted red;
+}
+//////////////////////////////////////////////
+
+# ---------------------------------- Example --------------------------------- #
+Here's a complete example demonstrating different text decorations:
+
+HTML
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .underline {
+            text-decoration-line: underline;
+        }
+
+        .overline {
+            text-decoration-line: overline;
+        }
+
+        .line-through {
+            text-decoration-line: line-through;
+        }
+
+        .wavy-underline {
+            text-decoration: underline wavy blue;
+        }
+
+        .dotted-underline {
+            text-decoration: underline dotted green;
+        }
+
+        .red-underline {
+            text-decoration: underline solid red;
+        }
+    </style>
+    <title>Text Decoration Example</title>
+</head>
+<body>
+    <p class="underline">This text is underlined.</p>
+    <p class="overline">This text has an overline.</p>
+    <p class="line-through">This text has a line through it.</p>
+    <p class="wavy-underline">This text has a wavy underline in blue.</p>
+    <p class="dotted-underline">This text has a dotted underline in green.</p>
+    <p class="red-underline">This text has a solid red underline.</p>
+</body>
+</html>
+//////////////////////////////////////////////
+
+# ---------------------------------- Summary --------------------------------- #
+1. The text-decoration property and its sub-properties provide a flexible way to style text with underlines, overlines, and strikethroughs in various styles and colors.
+2. This helps in enhancing the visual presentation and readability of text content on web pages.
