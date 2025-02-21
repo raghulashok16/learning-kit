@@ -1,0 +1,25 @@
+4. Basic regex pattern
+5. Test method in Javascript
+6. Match method in Javascript
+7. Regular expression modifiers/flags part 1
+8. Regular expression modifiers/flags part 2
+9. Using regular expressions in search and replace functions
+
+# -------------------------- 4. Basic regex pattern -------------------------- #
+1. regular expression (regex) pattern is used inside the /.../
+2. inside this slashes we can use regex flags to do any search/match conditions.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+let rex = / /;
+//////////////////////////////////////////////
+
+# ----------------------- 5. Test method in Javascript ----------------------- #
+1. test method returns a boolean value - true/false.
+2. true if there is a match, false if there is not a match.
+3. this test method is used in real world scenario during pattern matching.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+let string = "this is a string in javascript";
+let rex = /javascript/;
+let check = rex.test(string);
+//////////////////////////////////////////////
+4. the above code will result 'true' because the rex is available in the string.
+5. regular expression is case sensitive by default so 'javascript' and 'Javascript' are different.
