@@ -64,7 +64,7 @@ const postReducer = (
         error: "",
       };
     case FETCH_POSTS_FAILURE:
-      return {
+      return {11
         ...state,
         loading: false,
         posts: [],
