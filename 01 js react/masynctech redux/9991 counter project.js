@@ -11,9 +11,7 @@ const INCREMENT_BY_AMT = "INCREMENT_BY_AMT";
 const initialState = {
   count: 0,
 };
-{
-  type: "Add";
-}
+
 //Counter Action Creators
 const incrementAction = () => {
   return {
