@@ -21,7 +21,26 @@ ____________________
 let string = "this is a string in javascript";
 let rex = /javascript/;
 let check = rex.test(string);
-console.log(check); _____ OUTPUT (  )
+console.log(check); _____true 
+document.write(rex.test(string));
+document.write(/javascript/.test("this is a string in javascript"));
 __________
-4. the above code will result 'true' because the rex is available in the string.
-5. regular expression is case sensitive by default so 'javascript' and 'Javascript' are different.
+4. regular expression is case sensitive by default so 'javascript' and 'Javascript' are different.
+
+# ----------------------- 6. Match method in Javascript ---------------------- #
+1. the 'match' method returns the matched string in array separated by a comma.
+-> SYNTAX : string.match(regularExpression);
+____________________
+let string = "this is a string in javascript";
+let string2 = "this is a string";
+let rex = /javascript/;
+let check = string.match(rex);
+console.log(check); _____[
+                            'javascript',
+                            index: 20,
+                            input: 'this is a string in javascript,javascript,javascript',
+                            groups: undefined
+                            ]
+let check2 = string2.match(rex);
+console.log(check2); _____null 
+__________
