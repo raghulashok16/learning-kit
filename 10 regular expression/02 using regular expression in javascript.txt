@@ -13,7 +13,7 @@ let rex = / /;
 //////////////////////////////////////////////
 
 # ----------------------- 5. Test method in Javascript ----------------------- #
-1. test method returns a boolean value - true/false.
+1. 'test' method returns a boolean value - true/false.
 2. true if there is a match, false if there is not a match.
 3. this test method is used in real world scenario during pattern matching.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
