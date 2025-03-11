@@ -1,0 +1,54 @@
+40. Why PostgreSQL
+41. Environment Tooling
+42. Having Trouble Registering A Serial Key For ValentinaDB?
+43. SQL Tooling Alternatives
+44. Command Line 101
+45. Getting Help With The Setup
+46. WINDOWS Setup
+47. Optional: Setting Up Windows For Command Line
+48. MAC Setup
+49. MAC Commandline tools
+50. LINUX Setup
+51. Importing The Databases
+52. Exercise: Imposter Syndrome
+
+# ----------------------------- 46. WINDOWS Setup ---------------------------- #
+1. install latest version of postgres with compatible 32/64 bit.
+2. set password for postgres in installation process.
+3. use 'root' as pasword.
+4. then install valentina studio.
+5. mandatory key required.
+6. register in website which is absolutly free.
+7. from the orders tab copy the serial key and use it in valentina studio.
+
+# ---------------------------- POSTGRESS DEFAULTS ---------------------------- #
+url - localhost
+port - 5432
+username - postgres
+password - root
+connection url - local host
+
+# ------------------------ 51. Importing The Databases ----------------------- #
+1. if our postgres not showing in the valentina.
+2. then connect manually and add it using our postgres password.
+3. downlaod the data.zip from udemy resource.
+4. extract it in our pc.
+5. in the schema editor right click and choose new database.
+6. create a name for our database.
+7. click on the database name -> file -> load dumb.
+8. in the dialog box choose sql and choose the database data in our extracted folder.
+9. dump process will run for some times and database data will be created.
+10. do this process for all the databases.
+11. after you imported all the databases data check each database and its table data.
+
+# ------------------------------- SQL COMMANDS ------------------------------- #
+
+DDL - data definition language
+DQL - data query language
+DML - data manipulation language
+DCL - data control language
+
+DDL - create, alter, drop, rename, truncate, comment
+DQL - select
+DML - insert, update, delete, merge, call, explain plan , lock table
+DCL -->  grant, revoke
