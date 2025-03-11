@@ -11,6 +11,7 @@
 ____________________
 let rex = / /;
 __________
+NOTE: regular expression is case sensitive.
 
 # ----------------------- 5. Test method in Javascript ----------------------- #
 1. 'test' method returns a boolean value - true/false.
@@ -25,6 +26,8 @@ console.log(check); _____true
 document.write(rex.test(string));
 document.write(/javascript/.test("this is a string in javascript"));
 __________
+NOTE: regular expression is case sensitive.
+
 4. regular expression is case sensitive by default so 'javascript' and 'Javascript' are different.
 
 # ----------------------- 6. Match method in Javascript ---------------------- #
@@ -35,12 +38,43 @@ let string = "this is a string in javascript";
 let string2 = "this is a string";
 let rex = /javascript/;
 let check = string.match(rex);
-console.log(check); _____[
-                            'javascript',
-                            index: 20,
-                            input: 'this is a string in javascript,javascript,javascript',
-                            groups: undefined
-                            ]
+console.log(check); _____['javascript', index: 20, input: 'this is a string in javascript', groups: undefined ]
 let check2 = string2.match(rex);
 console.log(check2); _____null 
 __________
+NOTE: regular expression is case sensitive.
+
+# --------------- 7. Regular expression modifiers/flags part 1 --------------- #
+    global flag           - g
+    case_insensitive flag - i
+    multi_line flag       - m
+
+1. flags are also called modifiers in javascript.
+2. default behavior of regularExpression will match only one instance.
+3. with the help of modifiers we can match all the instance of the string using global modifiers.
+-> SYNTAX : let regex = /regularExpression/g;
+____________________
+let string = "this is a string in javascript, javascript, javascript, Javascript";
+let rex = /javascript/g;
+let check = string.match(rex);
+console.log(check); _____['javascript','javascript','javascript']
+__________
+NOTE: regular expression is case sensitive.
+4. using match method method with global modifiers will return all the matched instance in a array.
+5. to make regularExpression case insensitive we can use the "i" flag.
+-> SYNTAX : let regex = /regularExpression/i;
+____________________
+let string = "this is a string in javascript, javascript, javascript, Javascript";
+let rex = /javascript/gi;
+let check = string.match(rex);
+console.log(check); _____['javascript','javascript','javascript','Javascript']
+__________
+NOTE: regular expression flags can be written in any order.
+-> SYNTAX : let regex = /regularExpression/ig;
+-> SYNTAX : let regex = /regularExpression/gi;
+
+# --------------- 8. Regular expression modifiers/flags part 2 --------------- #
+
+
+# ------- 9. Using regular expressions in search and replace functions ------- #
+1. we can use regular expressions in search and replace functions.
