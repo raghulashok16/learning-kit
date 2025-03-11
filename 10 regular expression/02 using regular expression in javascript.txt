@@ -8,18 +8,20 @@
 # -------------------------- 4. Basic regex pattern -------------------------- #
 1. regular expression (regex) pattern is used inside the /.../
 2. inside this slashes we can use regex flags to do any search/match conditions.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+____________________
 let rex = / /;
-//////////////////////////////////////////////
+__________
 
 # ----------------------- 5. Test method in Javascript ----------------------- #
 1. 'test' method returns a boolean value - true/false.
 2. true if there is a match, false if there is not a match.
 3. this test method is used in real world scenario during pattern matching like phone number validation, password validation, email id validation.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-> SYNTAX : regularExpression.test(string);
+____________________
 let string = "this is a string in javascript";
 let rex = /javascript/;
 let check = rex.test(string);
-//////////////////////////////////////////////
+console.log(check); _____ OUTPUT (  )
+__________
 4. the above code will result 'true' because the rex is available in the string.
 5. regular expression is case sensitive by default so 'javascript' and 'Javascript' are different.
