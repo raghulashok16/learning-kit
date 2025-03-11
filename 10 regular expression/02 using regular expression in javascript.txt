@@ -8,9 +8,10 @@
 # -------------------------- 4. Basic regex pattern -------------------------- #
 1. regular expression (regex) pattern is used inside the /.../
 2. inside this slashes we can use regex flags to do any search/match conditions.
-____________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 let rex = / /;
-__________
+//////////////////////////////////////////////
+
 NOTE: regular expression is case sensitive.
 
 # ----------------------- 5. Test method in Javascript ----------------------- #
@@ -18,14 +19,15 @@ NOTE: regular expression is case sensitive.
 2. true if there is a match, false if there is not a match.
 3. this test method is used in real world scenario during pattern matching like phone number validation, password validation, email id validation.
 -> SYNTAX : regularExpression.test(string);
-____________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 let string = "this is a string in javascript";
 let rex = /javascript/;
 let check = rex.test(string);
 console.log(check); _____true 
 document.write(rex.test(string));
 document.write(/javascript/.test("this is a string in javascript"));
-__________
+//////////////////////////////////////////////
+
 NOTE: regular expression is case sensitive.
 
 4. regular expression is case sensitive by default so 'javascript' and 'Javascript' are different.
@@ -33,7 +35,7 @@ NOTE: regular expression is case sensitive.
 # ----------------------- 6. Match method in Javascript ---------------------- #
 1. the 'match' method returns the matched string in array separated by a comma.
 -> SYNTAX : string.match(regularExpression);
-____________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 let string = "this is a string in javascript";
 let string2 = "this is a string";
 let rex = /javascript/;
@@ -41,7 +43,8 @@ let check = string.match(rex);
 console.log(check); _____['javascript', index: 20, input: 'this is a string in javascript', groups: undefined ]
 let check2 = string2.match(rex);
 console.log(check2); _____null 
-__________
+//////////////////////////////////////////////
+
 NOTE: regular expression is case sensitive.
 
 # --------------- 7. Regular expression modifiers/flags part 1 --------------- #
@@ -53,22 +56,24 @@ NOTE: regular expression is case sensitive.
 2. default behavior of regularExpression will match only one instance.
 3. with the help of modifiers we can match all the instance of the string using global modifiers.
 -> SYNTAX : let regex = /regularExpression/g;
-____________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 let string = "this is a string in javascript, javascript, javascript, Javascript";
 let rex = /javascript/g;
 let check = string.match(rex);
 console.log(check); _____['javascript','javascript','javascript']
-__________
+//////////////////////////////////////////////
+
 NOTE: regular expression is case sensitive.
 4. using match method method with global modifiers will return all the matched instance in a array.
 5. to make regularExpression case insensitive we can use the "i" flag.
 -> SYNTAX : let regex = /regularExpression/i;
-____________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 let string = "this is a string in javascript, javascript, javascript, Javascript";
 let rex = /javascript/gi;
 let check = string.match(rex);
 console.log(check); _____['javascript','javascript','javascript','Javascript']
-__________
+//////////////////////////////////////////////
+
 NOTE: regular expression flags can be written in any order.
 -> SYNTAX : let regex = /regularExpression/ig;
 -> SYNTAX : let regex = /regularExpression/gi;
