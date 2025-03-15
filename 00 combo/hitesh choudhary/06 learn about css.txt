@@ -1,0 +1,79 @@
+16. The current state of CSS
+17. You can write css at 3 places
+18. Building a web project - Login page
+19. Masterclass on CSS selectors
+20. Box model, inline and block elements
+21. Navbar project with Pseudo element
+22. Twitter style navbar in CSS
+23. Dropdown navbars and positions
+24. Build a custom coming soon template Project
+25. Flexbox Masterclass
+26. Meet grid layout in CSS - You will love it
+27. Grid Masterclass
+28. Assignment to build cards from codepen
+29. Breakpoints for mobile tablet and web
+30. Hands on Bootstrap integration
+31. Assignment - Build a complete page with this design
+Quiz 2: A quiz on CSS
+
+
+# ----------------------- 16. The current state of CSS ----------------------- #
+# --------------------- 17. You can write css at 3 places -------------------- #
+# ------------------ 18. Building a web project - Login page ----------------- #
+# --------------------- 19. Masterclass on CSS selectors --------------------- #
+1. universal selector:
+    - The universal selector (`*`) in CSS targets all elements on a webpage, applying the specified styles universally unless overridden by more specific selectors.
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    //////////////////////////////////////////////
+
+2. type selector:
+    - A type selector in CSS is a simple selector that matches elements by their node name, applying styles to all instances of a specified HTML element type.
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    p {
+        font-size: 16px;
+        margin: 20px 10px 20px 10px;
+        padding: 1px 2px 3px 4px;
+    }
+    //////////////////////////////////////////////
+
+3. class selector:
+    - A class selector in CSS targets elements with a specific class attribute, denoted by a period (.) followed by the class name, to apply styles to all elements sharing that class.
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    .highlight {
+        background-color: #21a2c9;
+    }
+    //////////////////////////////////////////////
+
+4. id selector:
+    - The ID selector in CSS targets a unique element with a specific `id` attribute, using the `#` symbol followed by the ID name.
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    #header {
+        background-color: red;
+    }
+    //////////////////////////////////////////////
+
+5. attribute selector:
+    - An attribute selector in CSS targets elements based on the presence or value of a specific attribute, using syntax like `[attribute]`, `[attribute="value"]`, or `[attribute~="value"]`.
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    input[type= "text"] {
+        border: 1px solid blue;
+    }
+    //////////////////////////////////////////////
+# ----------------- 20. Box model, inline and block elements ----------------- #
+# ------------------ 21. Navbar project with Pseudo element ------------------ #
+# ---------------------- 22. Twitter style navbar in CSS --------------------- #
+# -------------------- 23. Dropdown navbars and positions -------------------- #
+# -------------- 24. Build a custom coming soon template Project ------------- #
+# -------------------------- 25. Flexbox Masterclass ------------------------- #
+# -------------- 26. Meet grid layout in CSS - You will love it -------------- #
+# --------------------------- 27. Grid Masterclass --------------------------- #
+# ---------------- 28. Assignment to build cards from codepen ---------------- #
+# ----------------- 29. Breakpoints for mobile tablet and web ---------------- #
+# -------------------- 30. Hands on Bootstrap integration -------------------- #
+# ---------- 31. Assignment - Build a complete page with this design --------- #
+# --------------------------- Quiz 2: A quiz on CSS -------------------------- #
