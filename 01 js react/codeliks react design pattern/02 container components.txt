@@ -1,0 +1,59 @@
+6. What are design patterns
+7. Introduction
+8. Server Setup
+9. Loader Component for CurrentUser Data
+10. Loader Component for User Data
+11. Loader Component for Resource Data
+12. DataSource Component
+13. Container Component with Render Props Pattern
+14. Local Storage Data Loader Component
+
+# ------------------------ 6. What are design patterns ----------------------- #
+1. Design patterns are reusable/effective solutions to common problems in software design, providing templates for writing clean, maintainable, and scalable code.
+2. common things in react
+    - design patterns that are specific to react and have emerged from personal experience and industry best practices.
+    - best practices for managing from state.
+    - functional programming in the context of react js.
+
+# ------------------------------ 7. Introduction ----------------------------- #
+1. Container Component:
+    - Container components in React are responsible for managing state, data fetching, and logic, while passing props to presentational components.
+    - They focus on how things work, separating concerns from UI rendering.
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const Component = () => {
+        //manage data
+        const [data, setdata] = useState();
+
+        //load data
+        useEffect( ()=>{...}, [] );
+
+        return(
+            //display data in JSX
+        )
+    }
+    //////////////////////////////////////////////
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    const Container = () => {
+         //manage data
+        const [data, setdata] = useState();
+
+        //load data
+        useEffect( ()=>{...}, [] );
+
+        return(
+            //pass data to children as props
+            <ChildComponent data={ data } />
+        )
+    }
+    //////////////////////////////////////////////
+
+    - components are unaware of the source or management of their data.
+
+# ----------------- 9. Loader Component for CurrentUser Data ----------------- #
+
+# -------------------- 10. Loader Component for User Data -------------------- #
+# ------------------ 11. Loader Component for Resource Data ------------------ #
+# ------------------------- 12. DataSource Component ------------------------- #
+# ------------- 13. Container Component with Render Props Pattern ------------ #
+# ------------------ 14. Local Storage Data Loader Component ----------------- #
