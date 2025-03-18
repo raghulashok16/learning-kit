@@ -19,9 +19,11 @@
 126. String Methods Practice
 
 # ------------------------- 103. Destructuring Arrays ------------------------ #
+
 📝📝📝📝NOTES
     - while destructuring array use [] square brackets.
     - here "restaurant" is a object and "categories" is a array.
+
 
 ✅ 1. destructuring array elements using es6.
 🚩🚩🚩🚩
@@ -64,91 +66,101 @@
     - this will be very helpfull when we work with API.
 
 ✅ 1.  destructuring object using exact object property names.
-
 🚩🚩🚩🚩
     const { name, openingHours, categories } = restaurant;
 ⚡⚡⚡⚡
 
+
 ✅ 2. destructuring object using renamed object property names.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     const { name: restaurantName, openingHours: hours, categories: tags } = restaurant;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 ✅ 3. we can also set default values while destructuring object.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     const { menu = [], starterMenu: staters = [] } = restaurant;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 ✅ 4. we can mutate variables while destructuring objects.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     let a = 111;
     let b = 999;
     const obj = { a: 23, b: 7, c:14 };
     ({ a, b } = obj);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-✅ 5. destructuring nested object.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. destructuring nested object with/without renaming .
+🚩🚩🚩🚩
     const { fri: { open, close } } = openingHours;
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     const { fri: { open: o, close: c } } = openingHours;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 ✅ 6. destructuring object at function argument.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     function orderInRestaurant ({ starterIndex, mainIndex, time, address }){
         ...
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 ✅ 7. destructuring object at function argument with default values.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     function orderInRestaurant ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }){
         ...
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------- 106. The Spread Operator (...) ---------------------- #
 
-NOTE:
+📝📝📝📝NOTES
     - this operator is used to expand an array into all of its individual elements.
     - mainly used to take shallow copy of array and to merge two arrays.
     - Spread operator works on all iterables [arrays, strings, maps, sets, etc] but not objects.
     - we cannot use spread inside the template/string Literals.
 
 
-1. creating an new array with existing arrays.
-👇👇👇
+✅ 1. creating an new array with existing arrays.
+🚩🚩🚩🚩
     const newArr = [...arr1, ...arr2];
-☝☝☝
+⚡⚡⚡⚡
 
-2. creating an new array by add a element with an existing array.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. creating an new array by add a element with an existing array.
+🚩🚩🚩🚩
     const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. take copy of an array.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. take copy of an array.
+🚩🚩🚩🚩
     const mainMenuCopy = [...restaurant.mainMenu];
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. join 2 arrays.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. join 2 arrays.
+🚩🚩🚩🚩
     const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-////////////////////////////////////////////// 
+⚡⚡⚡⚡
+ 
 
-5. manipulating strings.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 5. manipulating strings.
+🚩🚩🚩🚩
     const str = 'Jonas';
     const strArr = [...str];
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. calling functions by spreading arguments.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 6. calling functions by spreading arguments.
+🚩🚩🚩🚩
     restaurant.orderPasta(...ingredients);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # --------------------- 107. Rest Pattern and Parameters --------------------- #
 # --------------------- 108. Short Circuiting (&& and ||) -------------------- #
