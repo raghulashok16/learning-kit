@@ -1,1 +1,25 @@
-# --------------------- Section-06 Working With Branches --------------------- #
+42. What Really Matters In This Section
+43. Introducing Branches
+44. The Master Branch (Or Is It Main?)
+45. What On Earth Is HEAD?
+46. Viewing All Branches With Git Branch
+47. Creating & Switching Branches
+48. More Practice With Branching
+49. Another Option: Git Checkout Vs. Git Switch
+50. Switching Branches With Unstaged Changes?
+51. Deleting & Renaming Branches
+52. How Git Stores HEAD & Branches
+53. Branching Exercise
+
+# ------------------ 42. What Really Matters In This Section ----------------- #
+# ------------------------- 43. Introducing Branches ------------------------- #
+# ------------------ 44. The Master Branch (Or Is It Main?) ------------------ #
+# ------------------------ 45. What On Earth Is HEAD? ------------------------ #
+# ----------------- 46. Viewing All Branches With Git Branch ----------------- #
+# --------------------- 47. Creating & Switching Branches -------------------- #
+# --------------------- 48. More Practice With Branching --------------------- #
+# -------------- 49. Another Option: Git Checkout Vs. Git Switch ------------- #
+# --------------- 50. Switching Branches With Unstaged Changes? -------------- #
+# --------------------- 51. Deleting & Renaming Branches --------------------- #
+# -------------------- 52. How Git Stores HEAD & Branches -------------------- #
+# -------------------------- 53. Branching Exercise -------------------------- #

@@ -1,1 +1,22 @@
-# ---------- Section-04 The Very Basics Of Git - Adding & Committing --------- #
+23. What Really Matters In This Section
+24. What Is A Git Repo?
+25. Our First Commands: Git Init and Git Status
+26. The Mysterious .Git Folder
+27. A Common Early Git Mistake
+28. The Committing Workflow Overview
+29. Staging Changes With Git Add
+30. Finally, The Git Commit Command!
+31. The Git Log Command (And More Committing)
+32. Committing Exercise
+
+# ------------------ 23. What Really Matters In This Section ----------------- #
+# -------------------------- 24. What Is A Git Repo? ------------------------- #
+# -------------- 25. Our First Commands: Git Init and Git Status ------------- #
+# ---------------------- 26. The Mysterious .Git Folder ---------------------- #
+# ---------------------- 27. A Common Early Git Mistake ---------------------- #
+# ------------------- 28. The Committing Workflow Overview ------------------- #
+# --------------------- 29. Staging Changes With Git Add --------------------- #
+# ------------------- 30. Finally, The Git Commit Command! ------------------- #
+# --------------- 31. The Git Log Command (And More Committing) -------------- #
+# -------------------------- 32. Committing Exercise ------------------------- #
+

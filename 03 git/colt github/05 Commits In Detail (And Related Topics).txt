@@ -1,1 +1,20 @@
-# ------------- Section-05 Commits In Detail (And Related Topics) ------------ #
+33. What Really Matters In This Section
+34. Navigating The Git Documentation
+35. Keeping Your Commits Atomic
+36. Commit Messages: Present Or Past Tense?
+37. Escaping VIM & Configuring Git's Default Editor
+38. A Closer Look At The Git Log Command
+39. Committing With A GUI
+40. Fixing Mistakes With Amend
+41. Ignoring Files w/ .gitignore
+
+# ------------------ 33. What Really Matters In This Section ----------------- #
+# ------------------- 34. Navigating The Git Documentation ------------------- #
+# ---------------------- 35. Keeping Your Commits Atomic --------------------- #
+# ---------------- 36. Commit Messages: Present Or Past Tense? --------------- #
+# ------------ 37. Escaping VIM & Configuring Git's Default Editor ----------- #
+# ----------------- 38. A Closer Look At The Git Log Command ----------------- #
+# ------------------------- 39. Committing With A GUI ------------------------ #
+# ---------------------- 40. Fixing Mistakes With Amend ---------------------- #
+# --------------------- 41. Ignoring Files w/ .gitignore --------------------- #
+

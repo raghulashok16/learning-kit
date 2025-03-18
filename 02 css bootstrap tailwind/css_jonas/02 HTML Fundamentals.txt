@@ -31,59 +31,66 @@
 ✅ 1. <!DOCTYPE html> this is used to tell the browser that this document contains html.
 
 # ----------------------------- 11. Text Elements ---------------------------- #
-HEADINGS:
-    1. <h1>heading 1</h1>
-    2. <h1>heading 2</h1>
-    3. <h1>heading 3</h1>
-    4. <h1>heading 4</h1>
-    5. <h1>heading 5</h1>
-    6. <h1>heading 6</h1>
-    7. 'h1' is most important and most big in size.
-    8. 'h6' is least important and most small in size.
+✅ 1. HEADINGS:
+    - <h1>heading 1</h1>
+    - <h1>heading 2</h1>
+    - <h1>heading 3</h1>
+    - <h1>heading 4</h1>
+    - <h1>heading 5</h1>
+    - <h1>heading 6</h1>
+    - 'h1' is most important and most big in size.
+    - 'h6' is least important and most small in size.
 
-PARAGRAPH:
-    1. <p>sample text here</p>
-    2. this helps to add text content in webpages.
+✅ 2. PARAGRAPH:
+    - <p>sample text here</p>
+    - this helps to add text content in webpages.
 
-COMMENTS:
-    1. there are 2 different comment in html.
-    2. single line and multi line comments.
+✅ 3. COMMENTS:
+    - there are 2 different comment in html.
+    - single line and multi line comments.
 
-BOLD TEXT:
-    1. <b>bolded text</b>
-    2. 'b' is not a good practice because it is the old way.
-    3. <strong>new method of bold text</strong>
-    4. same result as 'b' element.
+✅ 4. BOLD TEXT:
+    - <b>bolded text</b>
+    - 'b' is not a good practice because it is the old way.
+    - <strong>new method of bold text</strong>
+    - same result as 'b' element.
 
-ITALIC TEXT:
-    1. <i>italic text</i>
-    2. it is the older way.
-    3. so use the new method using emphasize.
-    4. <em>same as italic text</em>
+✅ 5. ITALIC TEXT:
+    - <i>italic text</i>
+    - it is the older way.
+    - so use the new method using emphasize.
+    - <em>same as italic text</em>
     
 # ----------------------- 12. More Text Elements: Lists ---------------------- #
-ORDERED LIST:
-    1.  <ol>
-            <li>list content</li>
-            <li>list content</li>
-            <li>list content</li>
-            <li>list content</li>
-        </ol>
-    2. 'li' is the list item.
-    3. 'ol' is the ordered list.
-    4. 'li' is the child element of the parent element 'ol'.
-    5. this comes with numbered list styles.
-UNORDERED LIST:
-    1.  <ul>
-            <li>list content</li>
-            <li>list content</li>
-            <li>list content</li>
-            <li>list content</li>
-        </ul>
-    2. 'li' is the list item.
-    3. 'ul' is the unordered list.
-    4. 'li' is the child element of the parent element 'ul'.
-    5. this comes with bullet list styles.
+✅ 1. ORDERED LIST:
+🚩🚩🚩🚩
+    <ol>
+        <li>list content</li>
+        <li>list content</li>
+        <li>list content</li>
+        <li>list content</li>
+    </ol>
+⚡⚡⚡⚡
+    - 'li' is the list item.
+    - 'ol' is the ordered list.
+    - 'li' is the child element of the parent element 'ol'.
+    - this comes with numbered list styles.
+
+
+✅ 2. UNORDERED LIST:
+🚩🚩🚩🚩
+    <ul>
+        <li>list content</li>
+        <li>list content</li>
+        <li>list content</li>
+        <li>list content</li>
+    </ul>
+⚡⚡⚡⚡
+    - 'li' is the list item.
+    - 'ul' is the unordered list.
+    - 'li' is the child element of the parent element 'ul'.
+    - this comes with bullet list styles.
+
 
 # ------------------------- 13. Images and Attributes ------------------------ #
 ✅ 1. <img /> is used to show images in the html page.
