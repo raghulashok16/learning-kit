@@ -10,18 +10,18 @@
 # -------------------------- 2. Join The Community! -------------------------- #
 # -------------------------- 3. Course Prerequisites ------------------------- #
 # ------------------------ 4. The Case For TypeScript ------------------------ #
-1. what is typescript and why it is needed?
-2. typescript is a language that is build on top of javascript with the purpose of helping us avoid the common pitfalls and bugs that arise in javascript.
-3. and also it seeks to improves the experience of writing Javascript.
-4. typescript is javascript with types. 
+✅ 1. what is typescript and why it is needed?
+✅ 2. typescript is a language that is build on top of javascript with the purpose of helping us avoid the common pitfalls and bugs that arise in javascript.
+✅ 3. and also it seeks to improves the experience of writing Javascript.
+✅ 4. typescript is javascript with types. 
 
 # -------------------------- 5. TypeScript Overview -------------------------- #
-1. typescript is a javascript with type system.
-2. typescript performs something called static checking, which is a feature of lot of programming languages.
-3. typescript detects errors in our code without running it (it doesn't actually execute our code, that is the job of javascript).
-4. this is called static checking.
-5. type checking in typescript does this error checking on the basis of the "kind of data" in our program.
-6. you can use typescript website playground to check simple examples.
+✅ 1. typescript is a javascript with type system.
+✅ 2. typescript performs something called static checking, which is a feature of lot of programming languages.
+✅ 3. typescript detects errors in our code without running it (it doesn't actually execute our code, that is the job of javascript).
+✅ 4. this is called static checking.
+✅ 5. type checking in typescript does this error checking on the basis of the "kind of data" in our program.
+✅ 6. you can use typescript website playground to check simple examples.
 
 # ------------------------- 6. GET THE COURSE SLIDES! ------------------------ #
 
