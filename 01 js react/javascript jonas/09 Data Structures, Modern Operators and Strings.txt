@@ -24,16 +24,16 @@
     - here "restaurant" is a object and "categories" is a array.
 
 1. destructuring array elements using es6.
-👇👇👇
+👇
     const arr = [2, 3, 4];
     const [x, y, z] = arr;
     const [first, second] = restaurant.categories;
-☝☝☝
+☝
 
 2. skip elements in array destructuring.
-👇👇👇
+👇
     const [first, , third] = restaurant.categories;
-☝☝☝
+☝
 
 3. array destructuring to swap variables.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
