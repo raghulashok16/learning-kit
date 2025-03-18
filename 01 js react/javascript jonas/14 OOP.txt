@@ -32,13 +32,42 @@
 
 📝📝📝📝NOTES
     - object-oriented programming or OOP is a programming paradigm that is based on the concept of objects.
-    - paradigm ( the style of the code, how we organize code and how we write the code )
-    - we use objects to describe aspects of the real world like [ a user / to-do-list-item / HTML components / some kind of data structure ].
+    - paradigm (the style of the code, how we organize code and how we write the code)
+    - we use objects to describe aspects of the real world like (a user / to-do-list-item / HTML components / some kind of data structure).
     - objects can contain data(properties) and its corresponding behaviour(methods).
     - we can say that we pack data and its corresponding behaviour into one big block which is called object.
     - in OOP, objects are like self contained block of code which act as a small application on its own.
-    - objects are  building blocks of the applications, and interact with one another.
+    - objects are building blocks of the applications, and interact with one another.
     - interactions happens through a public interface (API): methods that the code outside  of the object can access and use to communicate with the object.
+    - OOP was developed with the goal of organizing code, to make it more flexible and easier to maintain (to avoid spagatti code).
+    - OOP was was most widely used programming paradigm in large scale software companies.
+    - remember OOP was not only the programming paradigm in coding, but we do have functional programming paradigm which is also becoming very popular.
+
+
+✅ 1. Class and Instance (traditional OOP)
+    - in traditional OOP, we use Classes to create new objects.
+    - Class is a like a blue-print from which new object are created based on the rules described in the class.
+    - so from a single class, we can create 'n' numbers of objects.
+    - each object can have different data in them but all will share the same functionality in the class.
+
+
+✅ 2. Four Fundamental OOP Principles
+    - there are 4 Fundamental Principles that guide us toward a good class implementation.
+    - Abstraction, Encapsulation, Inheritance and Polymorphism.
+
+
+✅ 3. Abstraction
+    - ignoring or hiding details that dont matter, allowing us to get an overview perspective of the thing we are implementing, instead of messing with details that dont really matter to our implementation.
+    - real example for Abstraction is our mobile phone because we dont get all the details about our phone (verifyTemp(), verifyVol(), rearCameraOn(), rearCameraOff()).
+    - but we get the basic required functioanlities (homeBtn(), volumeBtn(), Screen(), etc).
+    - so the remaining functionalities are abstracted from us.
+    - some real world examples of Abstraction are Car, TV Remote ,E-Commerce Platform, etc.
+    - as a user we dont need some functionalities so that can be abstracted from the users.
+
+
+✅ 4. Encapsulation
+    - keeping properties and methods private inside the class, so they are not accessisble from outside the class.
+    
 # -------------------------- 218. OOP in JavaScript -------------------------- #
 # -------------- 219. Constructor Functions and the new Operator ------------- #
 # ------------------------------ 220. Prototypes ----------------------------- #
