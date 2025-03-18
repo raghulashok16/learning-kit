@@ -23,27 +23,27 @@
 
 # ------------ 221. CHALLENGE 1: Understand "The Atomic Blog" App ------------ #
 # ----------------------- 222. What is the Context API? ---------------------- #
-1. when we pass state into multiple deeply nested child components, we involve in a concept called prop drilling.
-2. prop drilling is not prefered by developers beacuse it is very hard to find the flow of data and in debugging.
-3. so react created a method to pass the state from parent to deeply located child component directly without prop drilling.
-4. so that concept was called context API.
-5. when we use context api, it allows us to read state from everywhere in the tree.
-6. in other words, context api is system to pass data throughout the app without manually passing props down the tree.
-7. it allows us to "broadcast" global state to the entire app.
-8. PROVIDER   - gives all child components access to value.
-9. VALUE      - data that we want to make available (usually state and functions)
-10. CONSUMERS - all components that read the provided context value.
-11. usually PROVIDER wraps around the APP component.
-12. whenever the VALUE is updated all CONSUMERS will be re-render.
+✅ 1. when we pass state into multiple deeply nested child components, we involve in a concept called prop drilling.
+✅ 2. prop drilling is not prefered by developers beacuse it is very hard to find the flow of data and in debugging.
+✅ 3. so react created a method to pass the state from parent to deeply located child component directly without prop drilling.
+✅ 4. so that concept was called context API.
+✅ 5. when we use context api, it allows us to read state from everywhere in the tree.
+✅ 6. in other words, context api is system to pass data throughout the app without manually passing props down the tree.
+✅ 7. it allows us to "broadcast" global state to the entire app.
+✅ 8. PROVIDER   - gives all child components access to value.
+✅ 9. VALUE      - data that we want to make available (usually state and functions)
+✅ 10. CONSUMERS - all components that read the provided context value.
+✅ 11. usually PROVIDER wraps around the APP component.
+✅ 12. whenever the VALUE is updated all CONSUMERS will be re-render.
 
 # ------------------- 223. Creating and Providing a Context ------------------ #
-1. create a custom context using createContext() method.
+✅ 1. create a custom context using createContext() method.
 
     const PostContext = createContext();
 
-2. here PostContext is considered as a component so that it starts with the uppercase.
-3. now wrap the desired component using our custom context we created earlier.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2. here PostContext is considered as a component so that it starts with the uppercase.
+✅ 3. now wrap the desired component using our custom context we created earlier.
+🚩🚩🚩🚩
     <PostContext.Provider>
         <parentcomponent>
             <childcomponent>
@@ -51,10 +51,11 @@
             </childcomponent>
         </parentcomponent>
     </PostContext.Provider>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. after wrapping, provide the values to the child component using provider.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. after wrapping, provide the values to the child component using provider.
+🚩🚩🚩🚩
     <PostContext.Provider 
     value = {{
         posts: searchPosts,
@@ -69,32 +70,35 @@
             </childcomponent>
         </parentcomponent>
     </PostContext.Provider>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------ 224. Consuming the Context ------------------------ #
-1. to consume a context, there is a special react hook called useContext().
-2. this will return all the states and handler functions we passed in the value of the context provider.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. to consume a context, there is a special react hook called useContext().
+✅ 2. this will return all the states and handler functions we passed in the value of the context provider.
+🚩🚩🚩🚩
     const { onClearPost } = useContext(PostContext);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. it is important to mention which context we are consuming from inside the useContext().
-4. also we can destruct the value object for our required things.
-5. by this way we can avoid prop drilling.
+
+✅ 3. it is important to mention which context we are consuming from inside the useContext().
+✅ 4. also we can destruct the value object for our required things.
+✅ 5. by this way we can avoid prop drilling.
 
 # ------------- 225. Advanced Pattern: A Custom Provider and Hook ------------ #
-1. this topic is a advanced pattern of context api.
-2. note: the implementation of PROVIDER, VALUE & CONSUMERS are located on the same file.
-3. note: this above implementation will also work, but separating the provider code in a separate file is a good practise because it makes the code redability when we work on huge projects.
-4. the key idea is to separate the state and the state updating logic into a separate into our own custom context provider component.
-5. now create a file named PostContext.js inside the src folder.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. this topic is a advanced pattern of context api.
+✅ 2. note: the implementation of PROVIDER, VALUE & CONSUMERS are located on the same file.
+✅ 3. note: this above implementation will also work, but separating the provider code in a separate file is a good practise because it makes the code redability when we work on huge projects.
+✅ 4. the key idea is to separate the state and the state updating logic into a separate into our own custom context provider component.
+✅ 5. now create a file named PostContext.js inside the src folder.
+🚩🚩🚩🚩
     const PostContext = createContext();
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. add the createContext before creating the provider function.
-7. next step is to create a function which is use to act as a provider.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 6. add the createContext before creating the provider function.
+✅ 7. next step is to create a function which is use to act as a provider.
+🚩🚩🚩🚩
     function PostProvider() {
         ... copy all the state and state updating logics here...
         return(
@@ -109,10 +113,11 @@
             </PostContext.Provider>
         )
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. now wrap the desired component using PostProvider component as below.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 8. now wrap the desired component using PostProvider component as below.
+🚩🚩🚩🚩
     <PostProvider>
          <parentcomponent>
             <childcomponent>
@@ -120,18 +125,20 @@
             </childcomponent>
         </parentcomponent>
     </PostProvider>    
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-9. after this step we have to mention that some children are comming in as prop.
-10. so that the PostProvider compont can give access to the values.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 9. after this step we have to mention that some children are comming in as prop.
+✅ 10. so that the PostProvider compont can give access to the values.
+🚩🚩🚩🚩
     function PostProvider({children}) {
         
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-11. also use the children prop in the return statement.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 11. also use the children prop in the return statement.
+🚩🚩🚩🚩
     return(
         <PostContext.Provider 
                 value = {{
@@ -144,35 +151,40 @@
         {children}
         </PostContext.Provider>
     )
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-12. Note: instead of default exporting, use name exports in the PostContext file.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 12. Note: instead of default exporting, use name exports in the PostContext file.
+🚩🚩🚩🚩
     export { PostProvider, PostContext };
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-13. we can also encapsulate the consumer useContext(PostContext).
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 13. we can also encapsulate the consumer useContext(PostContext).
+🚩🚩🚩🚩
     function usePosts() {
         const context = useContext( PostContext );
         return context;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-14. after this we can change the name of the named export as below.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 14. after this we can change the name of the named export as below.
+🚩🚩🚩🚩
     export { PostProvider, usePosts };
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-15. in the consumer component we can use the consumer code like the below, which looks very encapsulated.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 15. in the consumer component we can use the consumer code like the below, which looks very encapsulated.
+🚩🚩🚩🚩
     const { onClearPost } = usePosts();
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-16. this is a good practise used by the developers because it seperates all logic inside the same file and secured.
-17. in certain case context will be used outside the provider by mistake.
-18. this can be identified by throwing custom errors.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 16. this is a good practise used by the developers because it seperates all logic inside the same file and secured.
+✅ 17. in certain case context will be used outside the provider by mistake.
+✅ 18. this can be identified by throwing custom errors.
+🚩🚩🚩🚩
     function usePosts() {
         const context = useContext( PostContext );
         if( context === undefined ){
@@ -180,9 +192,10 @@
         }
         return context;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-19. the above code will throw error if the context used outside.
+
+✅ 19. the above code will throw error if the context used outside.
 
 # ------------- 226. Thinking In React: Advanced State Management ------------ #
 # ------------ 227. Back to "WorldWise": Creating a CitiesContext ------------ #

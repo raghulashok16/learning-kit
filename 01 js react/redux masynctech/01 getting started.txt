@@ -1,4 +1,3 @@
-# ------------------------ section 1 - getting started ----------------------- #
 3. What is Redux?
 8. What is a State?
 9. What is state Management?
@@ -7,37 +6,37 @@
 12. React State Management Alternatives
 
 # ------------------------------ What is Redux? ------------------------------ #
-1. redux is an open-source javascript library for managing and centralizing application state.
-2. redux is a way to store all the application state in one single spot.
-3. this helps find and update any changes and easy to debug.
-4. redux is a predictable state container for JS apps.
+✅ 1. redux is an open-source javascript library for managing and centralizing application state.
+✅ 2. redux is a way to store all the application state in one single spot.
+✅ 3. this helps find and update any changes and easy to debug.
+✅ 4. redux is a predictable state container for JS apps.
 
 # ----------------------------- What is a State? ----------------------------- #
-1. any data in your application than can change based on conditions.
-2. these data are changable, meaning you keep updating as time goes on.
+✅ 1. any data in your application than can change based on conditions.
+✅ 2. these data are changable, meaning you keep updating as time goes on.
 
 # ------------------------- What is state Management? ------------------------ #
-1. it is the ability to control the information that is passed between react components.
-2. state management is the process of determining how to manage state information in a web application.
-3. state management can be used to track - User data, Session data, application data, Component data.
+✅ 1. it is the ability to control the information that is passed between react components.
+✅ 2. state management is the process of determining how to manage state information in a web application.
+✅ 3. state management can be used to track - User data, Session data, application data, Component data.
 
 # --------------------------- Types Of Data Source --------------------------- #
-1. Server data - external source/can be fetched using API.
-2. Global state - data that we manage across multiple components.
-3. Local state - form data management/management inside single component.
-4. URL state - path name/query parameters(eg:/id,/bookName).
-5. Routing data.
-6. Local Storage data.
+✅ 1. Server data - external source/can be fetched using API.
+✅ 2. Global state - data that we manage across multiple components.
+✅ 3. Local state - form data management/management inside single component.
+✅ 4. URL state - path name/query parameters(eg:/id,/bookName).
+✅ 5. Routing data.
+✅ 6. Local Storage data.
 
 # -------------------------- Ways of Managing State -------------------------- #
-1. useState() - hook for managing state in a particular component.
-2. useContext() - 
-3. Redux -
-4. RTX - 
-5. RTK Query - 
+✅ 1. useState() - hook for managing state in a particular component.
+✅ 2. useContext() - 
+✅ 3. Redux -
+✅ 4. RTX - 
+✅ 5. RTK Query - 
 
 # -------------------- React State Management Alternatives ------------------- #
-1. Zustand
-2. Recoil
-3. Jotai
-4. Redux
+✅ 1. Zustand
+✅ 2. Recoil
+✅ 3. Jotai
+✅ 4. Redux

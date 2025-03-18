@@ -1,23 +1,24 @@
-# ---------------------- Section 3: Navigation and Links --------------------- #
 10. Navigation
 11. Handling states of active NavLink
 
 # ------------------------------ 10. Navigation ------------------------------ #
-1. if we want to render different components for different url path then we not to type manually everytime.
-2. react-router-dom has a special component called 'Link' which is used to navigate.
-3. for that we need to install the 'Link' component.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. if we want to render different components for different url path then we not to type manually everytime.
+✅ 2. react-router-dom has a special component called 'Link' which is used to navigate.
+✅ 3. for that we need to install the 'Link' component.
+🚩🚩🚩🚩
     import {Link} from "react-router-dom";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. after importing we can use it in the navbar component using the below code.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. after importing we can use it in the navbar component using the below code.
+🚩🚩🚩🚩
     <Link to={"/cart"}>Cart</Link>
     <Link to={"/contact"}>Contact</Link>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------- 11. Handling states of active NavLink ------------------ #
-1. alternative to 'Link' is 'NavLink'.
-2. the main difference between them is 'active' is automatically added to the 'NavLink' when clicked and it will be automatically removed when other 'NavLink' cliked.
-3. this feature is not available in the 'Link' component.
-4. we can style the active class which was added using 'NavLink'.
+✅ 1. alternative to 'Link' is 'NavLink'.
+✅ 2. the main difference between them is 'active' is automatically added to the 'NavLink' when clicked and it will be automatically removed when other 'NavLink' cliked.
+✅ 3. this feature is not available in the 'Link' component.
+✅ 4. we can style the active class which was added using 'NavLink'.

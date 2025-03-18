@@ -1,5 +1,3 @@
-# ------------------------ Section 4: Advanced Routing ----------------------- #
-
 12. Nested Routes with Outlet
 13. Fetching Data via Nested Routes
 14. Relative and Absolute Navigation
@@ -13,26 +11,28 @@
 22. Restricting Access to Routes
 
 # ----------------------- 12. Nested Routes with Outlet ---------------------- #
-1. to create a nested routes we have to wrap the child routes into a parent route.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. to create a nested routes we have to wrap the child routes into a parent route.
+🚩🚩🚩🚩
     <Route path="/" element={<Books/>}>
         <Route path="/books" element={<BookList/>} />
     </Route>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. after this step we have to add the outlet component in the parent 'Route' that is <Books/> component.
-3. we need to import the 'outlet' from react-router-dom in the parent component.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. after this step we have to add the outlet component in the parent 'Route' that is <Books/> component.
+✅ 3. we need to import the 'outlet' from react-router-dom in the parent component.
+🚩🚩🚩🚩
     import {Outlet} from "react-router-dom";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. add this <Outlet/> component in your desired place where you want to render your child-component/nested-component.
-5. you can have many child routes with different path names and the outlet will render the exact element the path match.
+
+✅ 4. add this <Outlet/> component in your desired place where you want to render your child-component/nested-component.
+✅ 5. you can have many child routes with different path names and the outlet will render the exact element the path match.
 
 # -------------------- 13. Fetching Data via Nested Routes ------------------- #
-1. with the help of axios we can get the books data from the server using 'get' method.
-2. in the BookList component we can use "useState" and "useEffect" to get data from the server and set it in the useState variable using the below code.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. with the help of axios we can get the books data from the server using 'get' method.
+✅ 2. in the BookList component we can use "useState" and "useEffect" to get data from the server and set it in the useState variable using the below code.
+🚩🚩🚩🚩
         const [data, setData] = useState(null);
 
         useEffect(() => {
@@ -43,93 +43,101 @@
                 }
             )();
         });   
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. also we can conditionally render the data.
-4. if 'data' is 'null' then render loading spinner.
-5. if 'data'  persists then render the books data.
-6. if any error occured in fetching display the error page.
+
+✅ 3. also we can conditionally render the data.
+✅ 4. if 'data' is 'null' then render loading spinner.
+✅ 5. if 'data'  persists then render the books data.
+✅ 6. if any error occured in fetching display the error page.
 
 # ------------------- 14. Relative and Absolute Navigation ------------------- #
-1. create a diicated card component <BookCard/> for the book and use map method to display all the books inside the <BookList/> component.
-2. inside the div you need to wrap all the text and the book image inside the 'Link' tag, because it will help to navigate to a new page when we click on the book component.
-3. Realative path -> localhost:3000/books/book_name
-4. Absolute path  -> localhost:3000/book_name
-5. the main difference between them is the end 'url' is followed by the parent url.
-6. Relative path is achived using the below code.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. create a diicated card component <BookCard/> for the book and use map method to display all the books inside the <BookList/> component.
+✅ 2. inside the div you need to wrap all the text and the book image inside the 'Link' tag, because it will help to navigate to a new page when we click on the book component.
+✅ 3. Realative path -> localhost:3000/books/book_name
+✅ 4. Absolute path  -> localhost:3000/book_name
+✅ 5. the main difference between them is the end 'url' is followed by the parent url.
+✅ 6. Relative path is achived using the below code.
+🚩🚩🚩🚩
     <Link to={books.id} />
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. Absolute path is achived using the backticks in the below code.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 6. Absolute path is achived using the backticks in the below code.
+🚩🚩🚩🚩
     <Link to={`/${books.id}`} />
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. Relative path is quite a meaningfull way and can be understand using the url name.
-8. import thing is this 'to' attribute is added to the 'Link' tag inside the <BookCard/> component.
+
+✅ 7. Relative path is quite a meaningfull way and can be understand using the url name.
+✅ 8. import thing is this 'to' attribute is added to the 'Link' tag inside the <BookCard/> component.
 
 # ---------------------------- 15. Dynamic Routes ---------------------------- #
-1. now need a specific url which help render the <Book/> component.
-2. this <Book/> component has the data of a single book which we clicked.
-3. we can add a additional route for this book component to render.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. now need a specific url which help render the <Book/> component.
+✅ 2. this <Book/> component has the data of a single book which we clicked.
+✅ 3. we can add a additional route for this book component to render.
+🚩🚩🚩🚩
     <Route path="/" element={<Books/>}>
         <Route path="/books" element={<BookList/>} />
         <Route path=":id" element={<Book/>} />
     </Route>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. this is called Dynamic route or Dynamic url.
-5. because ":id" comes from the <BookCard/> component when we click it.
-6. and it matches the all the routes we have.
-7. if it dont match it will render the wildcard component.
-8. that is why we add the ":id" path and render the <Book/> component.
+
+✅ 4. this is called Dynamic route or Dynamic url.
+✅ 5. because ":id" comes from the <BookCard/> component when we click it.
+✅ 6. and it matches the all the routes we have.
+✅ 7. if it dont match it will render the wildcard component.
+✅ 8. that is why we add the ":id" path and render the <Book/> component.
 
 # ------------------------ 16. Accessing Route Params ------------------------ #
-1. in react v6, there is a hook which is used to grab the parameters from the Routes or Dynamic Routes.
-2. in the below example url the ":id" which is 'delter' can be grabed using this hook.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. in react v6, there is a hook which is used to grab the parameters from the Routes or Dynamic Routes.
+✅ 2. in the below example url the ":id" which is 'delter' can be grabed using this hook.
+🚩🚩🚩🚩
     localhost:3000/delter
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3.this will be very helpfull when we click a book card component and it will open a new page with the full details of that particular book.
-4. and that hook name is 'useParams' and we need to import it from 'react-router-dom'.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3.this will be very helpfull when we click a book card component and it will open a new page with the full details of that particular book.
+✅ 4. and that hook name is 'useParams' and we need to import it from 'react-router-dom'.
+🚩🚩🚩🚩
     import {useParams} from "react-router-dom";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. we can use this hook inside our <Book/> component and console log it to view it.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. we can use this hook inside our <Book/> component and console log it to view it.
+🚩🚩🚩🚩
     const params = useParams();      //method 1
     console.log(params);             //output: { id:'delter' }
 
     const { id } = useParams();      //method 2 [we destructure it, if we know the name]
     console.log(id);                 //output:delter
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. this 'id' comes from the url.
+
+✅ 6. this 'id' comes from the url.
 
 # -------------------- 17. Fetching Data with Route Params ------------------- #
-1. after getting the book name using the use params, we can use axios to fetch the book data from the server.
-2. we can use the below code to get the book data.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. after getting the book name using the use params, we can use axios to fetch the book data from the server.
+✅ 2. we can use the below code to get the book data.
+🚩🚩🚩🚩
     useEffect(() =>{
         (async () => {
             const response = await axios.get(`/books/${id}`);
             setBook(response.data);
         })();
     }, [is]);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. remember always console the response and verify the data comes from the server and set the book data in the useState.
-4. we need to run this useEffect whenever the id changes.
+
+✅ 3. remember always console the response and verify the data comes from the server and set the book data in the useState.
+✅ 4. we need to run this useEffect whenever the id changes.
 
 # ----------------- 18. Implementing Programmatic Navigation ----------------- #
-1. when we manually type the book name in the url it will fetch the book from the server.
-2. but in case there is no such book availabe in the server, then react dont know about this issue.
-3. so for that problem always use "try/catch" block in the useEffect while fetching data from the server.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. when we manually type the book name in the url it will fetch the book from the server.
+✅ 2. but in case there is no such book availabe in the server, then react dont know about this issue.
+✅ 3. so for that problem always use "try/catch" block in the useEffect while fetching data from the server.
+🚩🚩🚩🚩
     useEffect(() =>{
         (async () => {
             try{
@@ -140,17 +148,19 @@
             }
         })();
     }, [is]);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. if we use this 'try/catch' block then react will complain about the error that bad request/book not availabe in the server.
-5. at that time we can move the page to home page or any other page Programmatically using a hook called 'useNavigate'.
-6. to use 'useNavigate' we need to import from the react-route-dom.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. if we use this 'try/catch' block then react will complain about the error that bad request/book not availabe in the server.
+✅ 5. at that time we can move the page to home page or any other page Programmatically using a hook called 'useNavigate'.
+✅ 6. to use 'useNavigate' we need to import from the react-route-dom.
+🚩🚩🚩🚩
     import {useNavigate} from "react-router-dom";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. using the below code you can add it inside the component and use it to jump to a new page Programmatically.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 7. using the below code you can add it inside the component and use it to jump to a new page Programmatically.
+🚩🚩🚩🚩
     const navigate = useNavigate();
     useEffect(() =>{
         (async () => {
@@ -163,66 +173,69 @@
             }
         })();
     }, [is]);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 # -------------------- 19. Passing State along Navigation -------------------- #
-1. we can pass props along with the navigation when using useNavigate hook.
-2. when passing the state we can send any number of state.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. we can pass props along with the navigation when using useNavigate hook.
+✅ 2. when passing the state we can send any number of state.
+🚩🚩🚩🚩
     navigate('/', {state: {id}});
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. here we pass 'id' state.
-4. this state can be captured in the receving component using "useLocation" hook which can be imported from the react-router-dom.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. here we pass 'id' state.
+✅ 4. this state can be captured in the receving component using "useLocation" hook which can be imported from the react-router-dom.
+🚩🚩🚩🚩
     import {useLocation} from "react-router-dom";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. after importing use the below code in the receving component.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. after importing use the below code in the receving component.
+🚩🚩🚩🚩
     const location = useLocation();
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. console the 'location' and see the detailed data of the 'location'.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 6. console the 'location' and see the detailed data of the 'location'.
+🚩🚩🚩🚩
     console.log(location);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. inside this 'location' we need just the state value so we can destruct it.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 7. inside this 'location' we need just the state value so we can destruct it.
+🚩🚩🚩🚩
     const {state} = useLocation();
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. this method of passing state is very helpful when users manually type the url and search, and if the link dont match we can redirect to the home page and pass a error message saying the url/book you are accessing dont exists.
-9. we can log it in the console panel or as a pop up message in our browser.
+✅ 8. this method of passing state is very helpful when users manually type the url and search, and if the link dont match we can redirect to the home page and pass a error message saying the url/book you are accessing dont exists.
+✅ 9. we can log it in the console panel or as a pop up message in our browser.
 
 # ---------------------- 20. Navigation Deltas Concepts ---------------------- #
-1. when we use navigation, we can use a string or a number to navigate to the particular path.
-2. string can be quite easy because we can directly mention the path we need to redirect.
-3. also we can use numbers to navigate, it going to redirect to the history of the browser.
-4. for example if we use "-1" it will move back to one step in the history of your browser.
-5. this feature is very helpful when we use a button to go back to the previous page.
-6. the process is to create a button, make a handler function for that button, use the below code inside the handler function.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. when we use navigation, we can use a string or a number to navigate to the particular path.
+✅ 2. string can be quite easy because we can directly mention the path we need to redirect.
+✅ 3. also we can use numbers to navigate, it going to redirect to the history of the browser.
+✅ 4. for example if we use "-1" it will move back to one step in the history of your browser.
+✅ 5. this feature is very helpful when we use a button to go back to the previous page.
+✅ 6. the process is to create a button, make a handler function for that button, use the below code inside the handler function.
+🚩🚩🚩🚩
     navigate(-1);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. this number "-1" is called navigation delta in react-router-dom.
+✅ 7. this number "-1" is called navigation delta in react-router-dom.
 
 # ------------------------- 21. Domain-Driven Routes ------------------------- #
-1. while using nested route in the app component, our code will look good and if the number of pages and nested routes increases then it will be tedious to understand.
-2. so react-router-dom v6 allows to move the nested route code to the parent component, and mark the path of the parent component with a wildcard symbol "*" in the main app component as below.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. while using nested route in the app component, our code will look good and if the number of pages and nested routes increases then it will be tedious to understand.
+✅ 2. so react-router-dom v6 allows to move the nested route code to the parent component, and mark the path of the parent component with a wildcard symbol "*" in the main app component as below.
+🚩🚩🚩🚩
     <Routes>
         <Route path='/*' element={<Books/>} />
         <Route path='/admin' element={<Admin/>} />
         <Route path='*' element={<ErrorPage/>} />
     </Routes>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 
-3. this concept is called Domain Driven Routes beacuse all the nested route are driven under the path "/*" and its code can be moved to that path component.
-4. in the parent element use the code as below.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 3. this concept is called Domain Driven Routes beacuse all the nested route are driven under the path "/*" and its code can be moved to that path component.
+✅ 4. in the parent element use the code as below.
+🚩🚩🚩🚩
     const Books = () => {
         return (
             <>
@@ -237,23 +250,23 @@
             </>
         )
     } 
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. in this method just add the routes, just cut/paste.
-6. this reduces code in the app component.
+✅ 5. in this method just add the routes, just cut/paste.
+✅ 6. this reduces code in the app component.
 
 # --------------------- 22. Restricting Access to Routes --------------------- #
-1. giving Access to the user to render component based on the auth data.
-2. in the below code the admin path can be accesed by manually typing the url path.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. giving Access to the user to render component based on the auth data.
+✅ 2. in the below code the admin path can be accesed by manually typing the url path.
+🚩🚩🚩🚩
     <Route path='/admin' element={<Admin/>} />
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. in real world case this is not good, since the page should not be accesed in any methods.
-4. to overcome this issue we can render a separate component for "/admin" path and pass the auth data and check wether the user has the admin access.
-5. based on the data we can render the "<Admin/>" component.
-6. create a file named  "ProtectedRoute.jsx" and write the below condition in it.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 3. in real world case this is not good, since the page should not be accesed in any methods.
+✅ 4. to overcome this issue we can render a separate component for "/admin" path and pass the auth data and check wether the user has the admin access.
+✅ 5. based on the data we can render the "<Admin/>" component.
+✅ 6. create a file named  "ProtectedRoute.jsx" and write the below condition in it.
+🚩🚩🚩🚩
     const ProtectedRoute = ({ to, auth, element }) => {
         if(!auth) return <Navigate to={to} />;
         return(
@@ -262,14 +275,14 @@
             </Routes>
         )
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. by this method we can restrict the access from the public users like admin in here.
-8. instead of directly rendering the admin component we conditionally check the auth data and render if true else redirect to the home page using the <Navigate/> of the react-router-dom.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 7. by this method we can restrict the access from the public users like admin in here.
+✅ 8. instead of directly rendering the admin component we conditionally check the auth data and render if true else redirect to the home page using the <Navigate/> of the react-router-dom.
+🚩🚩🚩🚩
     <Route path='/admin' element={<Admin/>} />
 
     <Route 
         path='/admin' 
         element={<ProtectedRoute to='/' auth={auth} element={<Admin/>} />} />
-//////////////////////////////////////////////
+⚡⚡⚡⚡

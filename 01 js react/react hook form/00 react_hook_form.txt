@@ -26,7 +26,7 @@
 
 
 📝📝📝📝NOTES
-    - useForm hook consists of many informations like register, handleSubmit, watch, etc.
+    - useForm hook consists of many informations like 'register', 'handleSubmit', 'watch', etc.
     - But we destructure what we want in our app.
     - Also you can console log the use form to view all the informations.
 
@@ -44,7 +44,7 @@
 ⚡⚡⚡⚡
 
 
-✅ 4. without register react-hook-form does not recognize it.
+✅ 4. without 'register' react-hook-form does not recognize it.
 ✅ 5. unlike usual way of submiting form, react-hook-form has a special method called handleSubmit.
 ✅ 6. this has built-in functionalities to prevent the defaults in the form.
 ✅ 7. also dont forget to add the onsubmit in our form.

@@ -21,17 +21,17 @@
 
 # --------------------------- 260. Section Overview -------------------------- #
 # ------------------------ 261. Introduction to Redux ------------------------ #
-1. Redux is a third party library to manage global state in a web application.
-2. it is a standalone library, but easy to integrate with react apps using react-redux library.
-3. all global state is stored in one globally accessible store, which is easy to update using 'actions' like (useReducer).
-4. in order to learn redux you need to know about useReducer.
-5. the idea of updating state in react and redux is same.
-6. it is conceptually similar to using the context api and useReducer together.
-7. many developers say Context api is an replacement for the redux.
-8. there are two versions of redux - classic redux and modern redux toolkit.
-9. it is important to know the working of both the versions, but nowadays redux toolkit is widely used.
-10. ideal use case for redux, when there is lots of state that update frequently.
-11. 
+✅ 1. Redux is a third party library to manage global state in a web application.
+✅ 2. it is a standalone library, but easy to integrate with react apps using react-redux library.
+✅ 3. all global state is stored in one globally accessible store, which is easy to update using 'actions' like (useReducer).
+✅ 4. in order to learn redux you need to know about useReducer.
+✅ 5. the idea of updating state in react and redux is same.
+✅ 6. it is conceptually similar to using the context api and useReducer together.
+✅ 7. many developers say Context api is an replacement for the redux.
+✅ 8. there are two versions of redux - classic redux and modern redux toolkit.
+✅ 9. it is important to know the working of both the versions, but nowadays redux toolkit is widely used.
+✅ 10. ideal use case for redux, when there is lots of state that update frequently.
+✅ 11. 
 
 # ------------------- 262. Creating a Reducer: Bank Account ------------------ #
 # ------------------------ 263. Creating a Redux Store ----------------------- #

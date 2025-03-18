@@ -1,4 +1,3 @@
-# ------------------------- Section-02 Basic Concepts ------------------------ #
 5. Using Browser Router Element
 6. Declaring Paths
 7. Styling Paths
@@ -6,26 +5,29 @@
 9. Redirecting 404 Routes
 
 # ---------------------- 5. Using Browser Router Element --------------------- #
-1. app functional component is the core container component of the whole project.
-2. react dev tools is must so install that chrome extension in the chrome web store.
-3. it helps view the components in our react app using the chrome dev tool.
-4. now install 'react-router-dom' using 'npm i react-router-dom' command.
-[react consists of react-router-dom and react-router-native]
-[react-router-dom consists dom related apis]
-[react-router-native consits of native related apis]
-5. after installing import 'browser-router' using the below code.
-
+✅ 1. app functional component is the core container component of the whole project.
+✅ 2. react dev tools is must so install that chrome extension in the chrome web store.
+✅ 3. it helps view the components in our react app using the chrome dev tool.
+✅ 4. now install 'react-router-dom' using 'npm i react-router-dom' command.
+✅ 5. after installing import 'browser-router' using the below code.
+🚩🚩🚩🚩
     import {BrowserRouter} from "react-router-dom";
-
     import {BrowserRouter as Router} from "react-router-dom";
+⚡⚡⚡⚡
 
-6. in the above imports the methods are same but in the second import we conditionally renamed the BrowserRouter as Router.
-7. using 'Router' is something meaningfull.
-8. this browser-router must wrap all the visuall ui component we create using react.
-9. for example, we can wrap it around app component or we can use it inside app component and wrap it around other components.
+
+📝📝📝📝NOTES
+    - react consists of react-router-dom and react-router-native.
+    - react-router-dom consists dom related apis.
+    - react-router-native consits of native related apis.
+
+✅ 6. in the above imports the methods are same but in the second import we conditionally renamed the BrowserRouter as Router.
+✅ 7. using 'Router' is something meaningfull.
+✅ 8. this browser-router must wrap all the visuall ui component we create using react.
+✅ 9. for example, we can wrap it around app component or we can use it inside app component and wrap it around other components.
 
 Method 1:
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     function App(){
         return (
             <>
@@ -33,55 +35,59 @@ Method 1:
             </>
         )
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 Method 2:
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <Router>
         <App/>
     </Router>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 
 # ---------------------------- 6. Declaring Paths ---------------------------- #
-1. the main usecase of react-router is to show/render different components based on the url/link/button we click.
-2. to achive that 'browser-router' is not enough, we need to import other 2 important component which is 'Routes' and 'Route'.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. the main usecase of react-router is to show/render different components based on the url/link/button we click.
+✅ 2. to achive that 'browser-router' is not enough, we need to import other 2 important component which is 'Routes' and 'Route'.
+🚩🚩🚩🚩
     import {BrowserRouter, Routes, Route} from "react-router-dom";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. with 'Route' we are going to specify which component is going to render in which url.
-4. multiple 'Route' can be specified inside 'Routes' component.
-5. every 'Route' consists two configurations one is path and another one is element.
-6. '/' is the home route path.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. with 'Route' we are going to specify which component is going to render in which url.
+✅ 4. multiple 'Route' can be specified inside 'Routes' component.
+✅ 5. every 'Route' consists two configurations one is path and another one is element.
+✅ 6. '/' is the home route path.
+🚩🚩🚩🚩
     localhost:3000/contact
     localhost:3000/cart
     localhost:3000/products
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. '/contact' '/cart' '/products' are the example of route path.
-8. when we run this link in the browser the required path will be rendered based on the match.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 7. '/contact' '/cart' '/products' are the example of route path.
+✅ 8. when we run this link in the browser the required path will be rendered based on the match.
+🚩🚩🚩🚩
     <Router>
         <Routes>
             <Route path='/' element={<HomePage/>} />
             <Route path='/books' element={<Books/>} />
         </Routes>
     </Router>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-9. here you have to create this <HomePage/> and <Books/> component.
+
+✅ 9. here you have to create this <HomePage/> and <Books/> component.
 
 # ----------------------------- 7. Styling Paths ----------------------------- #
-1. using syleed components is a way of creating components.
-2. it reduces to create new files separate for css.
+✅ 1. using syleed components is a way of creating components.
+✅ 2. it reduces to create new files separate for css.
 
 # -------------------------- 8. 404 Not Found Routes ------------------------- #
-1. when the path name does not match the url in uor router, the component will not render anything.
-2. this tell user nothing about the problem occured.
-3. to overcome this issue we can specify a default error page when no url match the route path.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. when the path name does not match the url in uor router, the component will not render anything.
+✅ 2. this tell user nothing about the problem occured.
+✅ 3. to overcome this issue we can specify a default error page when no url match the route path.
+🚩🚩🚩🚩
     <Router>
         <Routes>
             <Route path='/' element={<HomePage/>} />
@@ -89,21 +95,24 @@ Method 2:
             <Route path='*' element={<ErrorPage/>} />
         </Routes>
     </Router>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. now if any url dont match then react will render the <ErrorPage/> component.
-5. specifying '*' at last route is very important.
+
+✅ 4. now if any url dont match then react will render the <ErrorPage/> component.
+✅ 5. specifying '*' at last route is very important.
 
 
 # ------------------------- 9. Redirecting 404 Routes ------------------------ #
-1. Redirecting to a specific page is achived using navigate component.
-2. to do so we need to install 'Navigate'.
-
+✅ 1. Redirecting to a specific page is achived using navigate component.
+✅ 2. to do so we need to install 'Navigate'.
+🚩🚩🚩🚩
     import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+⚡⚡⚡⚡
 
-3. we need to use the navigate component in the wildcard route.
-4. inside the navigate component we need to give a specific path name.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. we need to use the navigate component in the wildcard route.
+✅ 4. inside the navigate component we need to give a specific path name.
+🚩🚩🚩🚩
     <Router>
         <Routes>
             <Route path='/' element={<HomePage/>} />
@@ -111,7 +120,8 @@ Method 2:
             <Route path='*' element={<Navigate to='/login' />} />
         </Routes>
     </Router>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. this is very helpfull when a user try to access a forbiden url path.
-6. then react will Redirect them to the login page or our desired page.
+
+✅ 5. this is very helpfull when a user try to access a forbiden url path.
+✅ 6. then react will Redirect them to the login page or our desired page.

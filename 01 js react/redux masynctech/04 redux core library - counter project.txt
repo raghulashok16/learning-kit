@@ -1,4 +1,3 @@
-# ------------- Section - 4 redux core library - counter project ------------- #
 23. Action VS Action Creator
 24. Installing Redux
 25. Action and Action Creator
@@ -9,31 +8,33 @@
 30. Dispatch Actions With Payload
 
 # ------------------------- Action VS Action Creator ------------------------- #
-1. Action - it is simply a javascript object that contains information about an event that has occured in your app.
-2. Action Creator - these are functions that create and return actions.
-3. Action Properties - it is a plain obect, it has a type field as a property which is a required, it is an event that occurs in your application, it can accept additional properties(payload), a function that returns an action is called an action creator.
+✅ 1. Action - it is simply a javascript object that contains information about an event that has occured in your app.
+✅ 2. Action Creator - these are functions that create and return actions.
+✅ 3. Action Properties - it is a plain obect, it has a type field as a property which is a required, it is an event that occurs in your application, it can accept additional properties(payload), a function that returns an action is called an action creator.
 
 # ----------------------------- Installing Redux ----------------------------- #
-1. the below is the command to install redux in plain js project.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. the below is the command to install redux in plain js project.
+🚩🚩🚩🚩
     npm init --yes
     npm i redux
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. create a file in the project folder "counter.js".
+
+✅ 2. create a file in the project folder "counter.js".
 
 # ------------------------- Action and Action Creator ------------------------ #
-1. to work with redux we have to follow some steps to create the dataflow.
-2. STEPS: -> Initial State -> Action Creator -> Reducer -> Store.
-3. first create the initial state.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. to work with redux we have to follow some steps to create the dataflow.
+✅ 2. STEPS: -> Initial State -> Action Creator -> Reducer -> Store.
+✅ 3. first create the initial state.
+🚩🚩🚩🚩
     const initialState = {
         count: 0,
     };
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. create the actions and action creators for the project.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. create the actions and action creators for the project.
+🚩🚩🚩🚩
     {
         type: "INCREMENT";
     }
@@ -46,9 +47,8 @@
     {
         type: "INCREMENT_BY_AMOUNT";
     }
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     const incrementAction = () ={
         return {
             type: "INCREMENT",
@@ -70,18 +70,19 @@
             payload: amount,
         };
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------------- Rules of a Reducer ---------------------------- #
-1. Reducer - it is a function that recevies the current state and an action object, decides how to update the state base on the action, and returns the new state.
-2. the current state is the state inside the STORE.
+✅ 1. Reducer - it is a function that recevies the current state and an action object, decides how to update the state base on the action, and returns the new state.
+✅ 2. the current state is the state inside the STORE.
 
 RULES:
-1. the new state value should only be calculated based on the state and action arguments.
-2. reducers are not allowed to modify the existing state.
+✅ 1. the new state value should only be calculated based on the state and action arguments.
+✅ 2. reducers are not allowed to modify the existing state.
 
 # ---------------------------- Reducer in Practice --------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     const counterReducer = ( state = initialState, action ) => {
         if(action.type === "INCREMENT"){
             return{
@@ -89,51 +90,54 @@ RULES:
             };
         };
     };
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ----------------------------- Redux Store Setup ---------------------------- #
-1. redux stores the application data.
-2. it does not contain bussiness logic.
-3. it recevies actions and pass to all the registered middleware.
-4. the only way to change the state inside it is to dispatch an action.
-5. when it recevies an action that causes a change to the state, the store will notify all the registered listners that a change to the state has been made. this will allow various parts of the system, like the UI, to update themselves according to the new state.
-6. to create a store in vanilla javascript we need to use this below code.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. redux stores the application data.
+✅ 2. it does not contain bussiness logic.
+✅ 3. it recevies actions and pass to all the registered middleware.
+✅ 4. the only way to change the state inside it is to dispatch an action.
+✅ 5. when it recevies an action that causes a change to the state, the store will notify all the registered listners that a change to the state has been made. this will  allow various parts of the system, like the UI, to update themselves according to the new state.
+✅ 6. to create a store in vanilla javascript we need to use this below code.
+🚩🚩🚩🚩
     const { createStore } = require("redux");
-//////////////////////////////////////////////
-
-NOTE:
-this "require" method wont work in react [react uses "import" method ]
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     const store = createStore(counterReducer);
     const stateData = store.getState();
     console.log(stateData);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
+📝📝📝📝NOTES
+    - this "require" method wont work in react [react uses "import" method ]
 
 # -------------------------- How To Dispatch Actions ------------------------- #
-1. dispatch method is the only way to trigger a state change.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. dispatch method is the only way to trigger a state change.
+🚩🚩🚩🚩
     store.dispatch(incrementAction());
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. to view the updated state in the store we need a special method called subscribe.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. to view the updated state in the store we need a special method called subscribe.
+🚩🚩🚩🚩
     store.subscribe(()=>{
         const data = store.getState();
         console.log(data);
     });
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. this methods will be triggered all the time when the state changes.
-4. try to write the subscribe method above the dispatch method.
-5. while dispatching an action, the action type must be in the reducer otherwise it will return "undefined".
-6. to overcome this problem always return the previous state as the default when using reducer with SWITCH case.
+
+✅ 3. this methods will be triggered all the time when the state changes.
+✅ 4. try to write the subscribe method above the dispatch method.
+✅ 5. while dispatching an action, the action type must be in the reducer otherwise it will return "undefined".
+✅ 6. to overcome this problem always return the previous state as the default when using reducer with SWITCH case.
 
 # ----------------------- Dispatch Actions With Payload ---------------------- #
-1. action is a object which has data - type and payload.
-2. we can access these using 'action.type' and 'ation.paylaod'.
-3. passing action type is mandatory and action payload can be used as our preference.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. action is a object which has data - type and payload.
+✅ 2. we can access these using 'action.type' and 'ation.paylaod'.
+✅ 3. passing action type is mandatory and action payload can be used as our preference.
+🚩🚩🚩🚩
     store.dispatch(incrementByAmountAction(10));
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
