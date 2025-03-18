@@ -1,8 +1,9 @@
 # ------------------------------- REACT ROUTER ------------------------------- #
 ✅ 1. check the latest npm for react router and run in terminal.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     npm i react-router
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 ✅ 2. in main.jsx import BrowserRouter from react-router-dom. [short-tips: type rrd , vscode will auto type the word]
 ✅ 3. wrap 'App' component inside 'BrowserRouter' component.
@@ -68,12 +69,13 @@
 
 # ------------------------------ NESTED ROUTING ------------------------------ #
 ✅ 1. for using nested routing, we need to create a <Route> inside <Route>
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <Route path='/admin' element={<Admin/>} >
         <Route path='sales' element={<Sales/>} >
         <Route path='sellers' element={<Sellers/>} >
     </Route>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 ✅ 2. react-router-dom has a componrnt which is used to display our sub route components in our specified location.
 ✅ 3. Outlet is used to add our nested rout element in that place.

@@ -43,8 +43,6 @@
 ✅ 4. browser[chrome recommended]
 
 # ---------------------------- CREATING REACT APP ---------------------------- #
-
-📝📝📝📝NOTES
 ✅ 1. create react app [method 1]
 ✅ 2. vite [method 2]
 ✅ 3. creact react app is old way and it take much time compare to vite.

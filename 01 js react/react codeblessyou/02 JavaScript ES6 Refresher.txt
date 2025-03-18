@@ -12,18 +12,16 @@
 # ------------------------------- VAR LET CONST ------------------------------ #
 
 📝📝📝📝NOTES
-✅ 1. these 3 keywords are used to define variables in javascript.
-✅ 2. let and const are new features in modern javascript ES6.
-✅ 3. most of the developers use let and const instead of using var.
-✅ 4. var is a function scope so most of the developers dont prefer that because it can make many bugs in reading values.
-✅ 5. on the otherhand let and const are block scope, so it can be availabe inside that perticular block.
-✅ 6. const values can not be reassigned.
-✅ 7. let values can be reassigned at any time.
-✅ 8. finally prefer to use const keyword before let.
+    - these 3 keywords are used to define variables in javascript.
+    - let and const are new features in modern javascript ES6.
+    - most of the developers use let and const instead of using var.
+    - var is a function scope so most of the developers dont prefer that because it can make many bugs in reading values.
+    - on the otherhand let and const are block scope, so it can be availabe inside that perticular block.
+    - const values can not be reassigned.
+    - let values can be reassigned at any time.
+    - finally prefer to use const keyword before let.
 
 # ------------------------------ ARROW FUNCTION ------------------------------ #
-
-📝📝📝📝NOTES
 ✅ 1. arrow function is another way to define javascript functions.
 ✅ 2. it is the simple and easy way.
 ✅ 3. it is very usefull when working on advanced topics.

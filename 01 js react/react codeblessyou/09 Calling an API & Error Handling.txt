@@ -1,112 +1,118 @@
-# ---------------- Section 9: Calling an API & Error Handling ---------------- #
-
-
 # ------------------------- USEEFFECT HOOK IN DETAIL ------------------------- #
-1. it is used to peform side effects in our components.
-2. side effects are actions which are performed with the 'outside world'.
-
+✅ 1. it is used to peform side effects in our components.
+✅ 2. side effects are actions which are performed with the 'outside world'.
+🚩🚩🚩🚩
     fetching data from api,
     accesing local storage,
     directly updating dom,
     timer functios (setTimeout - setInterval)
+⚡⚡⚡⚡
 
-3. useEffect(()=>{}); [this code will run everytime when app gets the mount and re-render happens]
-4. useEffect(()=>{},[]); [this code will run only once when the app gets mounted]
-5. useEffect(()=>{},[dependencies]); [this code will run everytime when app gets mounted and when dependencies changes]
+
+✅ 3. useEffect(()=>{}); [this code will run everytime when app gets the mount and re-render happens]
+✅ 4. useEffect(()=>{},[]); [this code will run only once when the app gets mounted]
+✅ 5. useEffect(()=>{},[dependencies]); [this code will run everytime when app gets mounted and when dependencies changes]
 
 # ------------------------ USEEFFECT CLEANUP FUNCTION ------------------------ #
-1. when we use 
+✅ 1. when we use 
 
 # ------------------------------- HTTP REQUESTS ------------------------------ #
 
-    get    - used to fetching data from server.
-    post   - used to sumbit data to server.
-    put    - used to replace data at server.
-    patch  - used to update specific data at server.
-    delete - used to delete data from server.
+✅ get    - used to fetching data from server.
+✅ post   - used to sumbit data to server.
+✅ put    - used to replace data at server.
+✅ patch  - used to update specific data at server.
+✅ delete - used to delete data from server.
 
 # ------------------------------ NEED FOR AXIOS ------------------------------ #
-1. in react backend comminication is achived using HTTP protocol.
-2. fetch api in js is also used but axios was prefered by most of the developers.
-3. because axios has much aditional features.
-4. it can be used in both client-side and server-side(node.js) HTTP requests.
+✅ 1. in react backend comminication is achived using HTTP protocol.
+✅ 2. fetch api in js is also used but axios was prefered by most of the developers.
+✅ 3. because axios has much aditional features.
+✅ 4. it can be used in both client-side and server-side(node.js) HTTP requests.
 
 # ------------------------- FETCHING DATA WITH AXIOS ------------------------- #
-1. we need to install axios in our app.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. we need to install axios in our app.
+🚩🚩🚩🚩
     npm install axios
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. then import it in our component.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. then import it in our component.
+🚩🚩🚩🚩
     import axios from 'axios';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. axios has get method which is used to fetch data from server.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. axios has get method which is used to fetch data from server.
+🚩🚩🚩🚩
     axios.get('url')
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. this code will return a promise, we can handle it using (then) or (async/await).
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. this code will return a promise, we can handle it using (then) or (async/await).
+🚩🚩🚩🚩
     .then((res)=>{console.log(res)});
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. always console log the response(res) to view the structure of the json.
-6. this helps how the data was binded in the json.
-7. you can check the network->fetch/xhr in the inspect page.
-8. this will show the status of our axios method.
-9. 200 is the status success message.
-10. every http requests & response is divided into two sections.
-11. HEADER - here we define meta data.
-12. BODY - here we define or get data.
-13. we can use the axios response value to a state in our component.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. always console log the response(res) to view the structure of the json.
+✅ 6. this helps how the data was binded in the json.
+✅ 7. you can check the network->fetch/xhr in the inspect page.
+✅ 8. this will show the status of our axios method.
+✅ 9. 200 is the status success message.
+✅ 10. every http requests & response is divided into two sections.
+✅ 11. HEADER - here we define meta data.
+✅ 12. BODY - here we define or get data.
+✅ 13. we can use the axios response value to a state in our component.
+🚩🚩🚩🚩
     .then((res)=> setMethod(res.data));
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-14. in fetch method we need a additional line to convert into json format.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 14. in fetch method we need a additional line to convert into json format.
+🚩🚩🚩🚩
     .then((res)=> res.json())
     .then((data)=> setMethod(data.results));
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-15. so using axios we can avoid this line of converting into json.
+
+✅ 15. so using axios we can avoid this line of converting into json.
 
 # ---------------------------- LOADING INDICATORS ---------------------------- #
-1. create state named isLoading.
-2. this state is going to handle loading indicator.
-3. this helps us to show the end users that the data are loading behind.
-4. first we need to set false in isLoading.
-5. inside useEffect set false before api call.
-6. after api call set true.
-7. now use this state to conditionally reder with && operator and ternary operator.
-8. sometimes we cannot abe to see the loading indicators because we have high speed internet.
-9. we can reduce the inter speed in our brouser using inspect mode.
-10. goto network tab and change no throttling to slow 3g.
-11. this will reduce the internet speed.
-12. always use loading indicators(any spiner animation) with easy animation class given in tailwind.
+✅ 1. create state named isLoading.
+✅ 2. this state is going to handle loading indicator.
+✅ 3. this helps us to show the end users that the data are loading behind.
+✅ 4. first we need to set false in isLoading.
+✅ 5. inside useEffect set false before api call.
+✅ 6. after api call set true.
+✅ 7. now use this state to conditionally reder with && operator and ternary operator.
+✅ 8. sometimes we cannot abe to see the loading indicators because we have high speed internet.
+✅ 9. we can reduce the inter speed in our brouser using inspect mode.
+✅ 10. goto network tab and change no throttling to slow 3g.
+✅ 11. this will reduce the internet speed.
+✅ 12. always use loading indicators(any spiner animation) with easy animation class given in tailwind.
 
 # ------------------------------ HANDLING ERRORS ----------------------------- #
-1. when we are working in promises, we can use catch method for error handling.
-2. after then method, at the end we need to use catch method.
-3. create a state variable for error messages.
-4. based on this message we can create custom error page that will be displayed to the users.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. when we are working in promises, we can use catch method for error handling.
+✅ 2. after then method, at the end we need to use catch method.
+✅ 3. create a state variable for error messages.
+✅ 4. based on this message we can create custom error page that will be displayed to the users.
+🚩🚩🚩🚩
     .then((res)=>{...})
     .catch((err)=>{
         setIsLoading(false); // for removing loading indicators
         setErrors(err.message);
     });
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. prefered method by users due to less code and maintainability.
+
+✅ 5. prefered method by users due to less code and maintainability.
 
 # --------------------- HANDLING PROMISE WITH ASYNC AWAIT -------------------- #
-1. for fetching api data, we can use a seperate async function.
-2. inside useEffect call that fetchAPI function.
-3. while using async function, use a try/catch to handle errors.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. for fetching api data, we can use a seperate async function.
+✅ 2. inside useEffect call that fetchAPI function.
+✅ 3. while using async function, use a try/catch to handle errors.
+🚩🚩🚩🚩
     const fetchAPI = async ()=>{
         setIsLoading(true);
         try{
@@ -118,44 +124,50 @@
             setErrorState(err.message);
         }
     };
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. this method should be called inside useEffect.
+
+✅ 4. this method should be called inside useEffect.
 
 # ----------------------- 2 WAYS TO WORK WITH API DATA ----------------------- #
-1. optimistic method
-
+✅ 1. optimistic method
+🚩🚩🚩🚩
     update data on UI -> call API to update data at backend
+⚡⚡⚡⚡
 
-2. pessimistic method
 
+✅ 2. pessimistic method
+🚩🚩🚩🚩
     call API to update data at backend -> update data on UI
+⚡⚡⚡⚡
 
-3. all modern wbsite use optimistic method because the ui path should be updated immediatly when user clicked.
-4. in social media if we hit a like button it must be display immediatly.
-5. pessimistic method will take some time to update data on UI.
+
+✅ 3. all modern wbsite use optimistic method because the ui path should be updated immediatly when user clicked.
+✅ 4. in social media if we hit a like button it must be display immediatly.
+✅ 5. pessimistic method will take some time to update data on UI.
 
 # -------------------------- API FOR ADDING NEW DATA ------------------------- #
-1. we need to use axios post method to add data to the server.
-2. status code for successfully created data is 201.
-3. while adding new data to api, never forget to add id information.
-4. this will help us to use it at map function.
-5. this allow us to identify difference between 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. we need to use axios post method to add data to the server.
+✅ 2. status code for successfully created data is 201.
+✅ 3. while adding new data to api, never forget to add id information.
+✅ 4. this will help us to use it at map function.
+✅ 5. this allow us to identify difference between 
+🚩🚩🚩🚩
     axios.post('API url', newSellers)
     .then(res => setSellers([res.data, ...sellers]))
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. sometimes error will come so it can be handled using catch method or by using try/catch block.
-7. jsonplaceholder websites allow total of 11 count so after 11 it will show error regarding 'id'.
+
+✅ 6. sometimes error will come so it can be handled using catch method or by using try/catch block.
+✅ 7. jsonplaceholder websites allow total of 11 count so after 11 it will show error regarding 'id'.
 
 # ------------------------------ DELETING SELLER ----------------------------- #
-1. to delete a seller we can use a handle delete seller function.
-2. we need to pass seller id to the handle function, so use a arrow function to pass data.
-3. after using filter method set that filtered data to the sellers.
-4. then update the server about the deleted seller using delete() method.
-5. if any error occurs catch them.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. to delete a seller we can use a handle delete seller function.
+✅ 2. we need to pass seller id to the handle function, so use a arrow function to pass data.
+✅ 3. after using filter method set that filtered data to the sellers.
+✅ 4. then update the server about the deleted seller using delete() method.
+✅ 5. if any error occurs catch them.
+🚩🚩🚩🚩
     const deleteSellers = (id) => {
         setSellers(sellers.filter((s) => s.id !== id));
         axios.delete('apiurl/${id}')
@@ -164,19 +176,20 @@
             setSellers(sellers);
         });
     };
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. status 200 will show that it has been successfully deleted.
+
+✅ 6. status 200 will show that it has been successfully deleted.
 
 # -------------------------- UPDATING SELLER DETAILS ------------------------- #
-1. create a handleUpdate function with seller details as argument.
-2. so use arrow function for onClick.
-3. as we know axios patch() method is used to update specific data in server.
-4. first update the values in a new object using spread operator.
-5. second map the sellers array and use ternary operator to conditionally check if the id matches.
-6. if id matches return updated seller object.
-7. if id not matched return same seller object.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. create a handleUpdate function with seller details as argument.
+✅ 2. so use arrow function for onClick.
+✅ 3. as we know axios patch() method is used to update specific data in server.
+✅ 4. first update the values in a new object using spread operator.
+✅ 5. second map the sellers array and use ternary operator to conditionally check if the id matches.
+✅ 6. if id matches return updated seller object.
+✅ 7. if id not matched return same seller object.
+🚩🚩🚩🚩
     const handleUpdate = (seller) => {
         const updatedSeller = {
             ...seller, name: seller.name + "updated text",
@@ -189,27 +202,30 @@
             setErrors(err.message)
         };
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------ MAKING AXIOS VARIABLE FOR HTTP REQUEST ------------------ #
-1. axios allow us to create a base url.
-2. this helps us to shortern the API url link.
-3. in the source folder create a sub folder named utils.
-4. inside utils create a file named 'api-client.js'.
-5. this help us make http request using axios.
-6. inside the file, use this code.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. axios allow us to create a base url.
+✅ 2. this helps us to shortern the API url link.
+✅ 3. in the source folder create a sub folder named utils.
+✅ 4. inside utils create a file named 'api-client.js'.
+✅ 5. this help us make http request using axios.
+✅ 6. inside the file, use this code.
+🚩🚩🚩🚩
     import axios from "axios";
     export default axios.create({
         baseURL : "http://jsonplaceholder.typicode.com",
     })
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. instead of importing axios in our component, import apiClient.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 7. instead of importing axios in our component, import apiClient.
+🚩🚩🚩🚩
     import apiClient from '../../utils/api-client';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. replace 'axios' with 'apiClient'.
-9. finnaly remove the baseURL in all api method -get,post,delete,patch.
-10. after this process app will run the same way before.
+
+✅ 8. replace 'axios' with 'apiClient'.
+✅ 9. finnaly remove the baseURL in all api method -get,post,delete,patch.
+✅ 10. after this process app will run the same way before.
