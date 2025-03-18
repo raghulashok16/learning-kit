@@ -59,22 +59,22 @@ NOTE:
     - destructuring allows us to write less code.
     - this will be very helpfull when we work with API.
 
-⚡1.  destructuring object using exact object property names.
+✅1.  destructuring object using exact object property names.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const { name, openingHours, categories } = restaurant;
 //////////////////////////////////////////////
 
-⚡2. destructuring object using renamed object property names.
+✅2. destructuring object using renamed object property names.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const { name: restaurantName, openingHours: hours, categories: tags } = restaurant;
 //////////////////////////////////////////////
 
-⚡3. we can also set default values while destructuring object.
+✅3. we can also set default values while destructuring object.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const { menu = [], starterMenu: staters = [] } = restaurant;
 //////////////////////////////////////////////
 
-⚡4. we can mutate variables while destructuring objects.
+✅4. we can mutate variables while destructuring objects.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     let a = 111;
     let b = 999;
@@ -82,7 +82,7 @@ NOTE:
     ({ a, b } = obj);
 //////////////////////////////////////////////
 
-⚡5. destructuring nested object.
+✅5. destructuring nested object.
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     const { fri: { open, close } } = openingHours;
 //////////////////////////////////////////////
