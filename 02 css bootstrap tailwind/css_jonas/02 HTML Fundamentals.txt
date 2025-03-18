@@ -12,11 +12,11 @@
 19. CHALLENGE #2
 
 # -------------------------- 9. Introduction to HTML ------------------------- #
-1. 'html' stands for hypertext markup language.
-2. it is one of the core web technologies along with css and javasccript.
-3. 'html' is a markup language that web developers use to structure and describe the content of a webpage [it is not a programming language].
-4. 'html' consists of elements that describe different types of content: paragraph, links, headings, images, video, etc.
-5. web browser understand html code and render html code as websites.
+✅ 1. 'html' stands for hypertext markup language.
+✅ 2. it is one of the core web technologies along with css and javasccript.
+✅ 3. 'html' is a markup language that web developers use to structure and describe the content of a webpage [it is not a programming language].
+✅ 4. 'html' consists of elements that describe different types of content: paragraph, links, headings, images, video, etc.
+✅ 5. web browser understand html code and render html code as websites.
 
     ANATOMY OF AN HTML ELEMENT:
         <p>EXAMPLE</p>
@@ -25,10 +25,10 @@
         - 'EXAMPLE' is the content.
         - </p> is the closing tag.
 
-6. in certain tags there will be no closing tag and that elements are called self closing elements.
+✅ 6. in certain tags there will be no closing tag and that elements are called self closing elements.
 
 # ------------------------ 10. HTML Document Structure ----------------------- #
-1. <!DOCTYPE html> this is used to tell the browser that this document contains html.
+✅ 1. <!DOCTYPE html> this is used to tell the browser that this document contains html.
 
 # ----------------------------- 11. Text Elements ---------------------------- #
 HEADINGS:
@@ -86,58 +86,58 @@ UNORDERED LIST:
     5. this comes with bullet list styles.
 
 # ------------------------- 13. Images and Attributes ------------------------ #
-1. <img /> is used to show images in the html page.
-2. Attributes are pieces of data which we can use to describe elements.
-3. there are lot of attributes in html and one of them is source attribute.
-4. <img source="post.jpg" alt="this image consists of html code" />
-5. 'alt' stand for alternative text.
-6. 'alt' should contain some text which describes the image because it will be used in the search engines which helps identify the browser what is in the image.
-7. this will be also very helpfull for the blind people beacuse the device will read the alternative text which will describe the image to that blind people.
-8. <img source="post.jpg" width="500" height="200" />
-9. height and width property can be set to the images using attributes.
-10. on addition we can set units to the height and width property.
-11. we have another attribute called "lang" which is used to specify the language used in the html file.
-12. <html lang="en"></html> for english.
-13. <html lang="de"></html> for german.
-14. <html lang="pt"></html> for portuguese.
-15. to specify the charater set used in the document there is a attribute called charset and it should be used in the 'meta' tag inside 'head' tag.
-16. <meta charset="UTF-8" />
+✅ 1. <img /> is used to show images in the html page.
+✅ 2. Attributes are pieces of data which we can use to describe elements.
+✅ 3. there are lot of attributes in html and one of them is source attribute.
+✅ 4. <img source="post.jpg" alt="this image consists of html code" />
+✅ 5. 'alt' stand for alternative text.
+✅ 6. 'alt' should contain some text which describes the image because it will be used in the search engines which helps identify the browser what is in the image.
+✅ 7. this will be also very helpfull for the blind people beacuse the device will read the alternative text which will describe the image to that blind people.
+✅ 8. <img source="post.jpg" width="500" height="200" />
+✅ 9. height and width property can be set to the images using attributes.
+✅ 10. on addition we can set units to the height and width property.
+✅ 11. we have another attribute called "lang" which is used to specify the language used in the html file.
+✅ 12. <html lang="en"></html> for english.
+✅ 13. <html lang="de"></html> for german.
+✅ 14. <html lang="pt"></html> for portuguese.
+✅ 15. to specify the charater set used in the document there is a attribute called charset and it should be used in the 'meta' tag inside 'head' tag.
+✅ 16. <meta charset="UTF-8" />
 
 # ------------------------------ 14. Hyperlinks ------------------------------ #
-1. we can place links into two big categories.
-2. links that point to other pages within our own websites.
-3. links that point to outside of our website.
-4. 'a' tag is called Hyperlinks/anchor tag.
-5. <a href="paste mdn website link" >MDN Web Docs</a>
-6. we can place the link inside a paragraph tag.
-7. we can also open a link in the new tab using 'target' attribute.
-8. <a href="..." target="_blank" >MDN Web Docs</a>
-9. in the above example, we used link which points to outside of our website.
-10. <a href="file_name.html">contacts page</a>
-11. in the above example, we used link which points to inside of our website.
-12. <a href="#">goto top of our page</a>
-13. this moves to the top of our webpage.
+✅ 1. we can place links into two big categories.
+✅ 2. links that point to other pages within our own websites.
+✅ 3. links that point to outside of our website.
+✅ 4. 'a' tag is called Hyperlinks/anchor tag.
+✅ 5. <a href="paste mdn website link" >MDN Web Docs</a>
+✅ 6. we can place the link inside a paragraph tag.
+✅ 7. we can also open a link in the new tab using 'target' attribute.
+✅ 8. <a href="..." target="_blank" >MDN Web Docs</a>
+✅ 9. in the above example, we used link which points to outside of our website.
+✅ 10. <a href="file_name.html">contacts page</a>
+✅ 11. in the above example, we used link which points to inside of our website.
+✅ 12. <a href="#">goto top of our page</a>
+✅ 13. this moves to the top of our webpage.
 
 # ------------------------- 15. Structuring our Page ------------------------- #
-1. 'nav' stands for navigation and wrap the anchor tags inside it.
-2. wrap the heading and nav inside the 'header' tag.
-3. 'article' is 
-4. inside the article tag we can use header tag to specifically mention it.
-5. 'footer' is used to specify the bootom of the webpage which contain like copyright.
+✅ 1. 'nav' stands for navigation and wrap the anchor tags inside it.
+✅ 2. wrap the heading and nav inside the 'header' tag.
+✅ 3. 'article' is 
+✅ 4. inside the article tag we can use header tag to specifically mention it.
+✅ 5. 'footer' is used to specify the bootom of the webpage which contain like copyright.
 
 
 # ------------------------ 16. A Note on Semantic HTML ----------------------- #
-1. in html semantic means is that certain elements have actually a meaning or a purpose attached to them.
-2. so when we think a certain html element, we should actually not think about what that element look like as it's rendered on the page but instead, we should think about what that element actually means and what it stands for.
-3. so that is basically the definition of semantic html.
-4. not all elements in html are semantic.
-5. semantic html helps in seo optimization.
+✅ 1. in html semantic means is that certain elements have actually a meaning or a purpose attached to them.
+✅ 2. so when we think a certain html element, we should actually not think about what that element look like as it's rendered on the page but instead, we should think about what that element actually means and what it stands for.
+✅ 3. so that is basically the definition of semantic html.
+✅ 4. not all elements in html are semantic.
+✅ 5. semantic html helps in seo optimization.
 
 # --------------- 17. Installing Additional VS Code Extensions --------------- #
-1. image preview - Extension
-2. color hilight - Extension
-3. auto rename tag - Extension
-4. live server - Extension
+✅ 1. image preview - Extension
+✅ 2. color hilight - Extension
+✅ 3. auto rename tag - Extension
+✅ 4. live server - Extension
 
 # ------------------------------ 18. CHALLENGE 1 ----------------------------- #
 
