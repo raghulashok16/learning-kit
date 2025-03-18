@@ -23,18 +23,22 @@
 237. CHALLENGE #4
 
 # ---------------------------- 215. Section Intro ---------------------------- #
-1. if you want to become a professional JavaScript developer, then you should learn all the topics under object-oriented-programming.
-2. in this section you will gain all the knowledge about constructor function, ES6 Object.create and different ways to implement inheritance in javascript.
+
+📝📝📝📝NOTES
+    - if you want to become a professional JavaScript developer, then you should learn all the topics under object-oriented-programming.
+    - in this section you will gain all the knowledge about constructor function, ES6 Object.create and different ways to implement inheritance in javascript.
 
 # ----------------- 217. What is Object-Oriented Programming? ---------------- #
-1. object-oriented programming or OOP is a programming paradigm that is based on the concept of objects.
-2. paradigm ( the style of the code, how we organize code and how we write the code )
-3. we use objects to describe aspects of the real world like [ a user / to-do-list-item / HTML components / some kind of data structure ].
-4. objects can contain data(properties) and its corresponding behaviour(methods).
-5. we can say that we pack data and its corresponding behaviour into one big block which is called object.
-6. in OOP, objects are like self contained block of code which act as a small application on its own.
-7. objects are  building blocks of the applications, and interact with one another.
-8. interactions happens through a public interface (API): methods that the code outside  of the object can access and use to communicate with the object.
+
+📝📝📝📝NOTES
+    - object-oriented programming or OOP is a programming paradigm that is based on the concept of objects.
+    - paradigm ( the style of the code, how we organize code and how we write the code )
+    - we use objects to describe aspects of the real world like [ a user / to-do-list-item / HTML components / some kind of data structure ].
+    - objects can contain data(properties) and its corresponding behaviour(methods).
+    - we can say that we pack data and its corresponding behaviour into one big block which is called object.
+    - in OOP, objects are like self contained block of code which act as a small application on its own.
+    - objects are  building blocks of the applications, and interact with one another.
+    - interactions happens through a public interface (API): methods that the code outside  of the object can access and use to communicate with the object.
 # -------------------------- 218. OOP in JavaScript -------------------------- #
 # -------------- 219. Constructor Functions and the new Operator ------------- #
 # ------------------------------ 220. Prototypes ----------------------------- #
