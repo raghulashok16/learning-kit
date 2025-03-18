@@ -6,7 +6,7 @@
 
 
 # -------------------------- 2. Course Walk-Through -------------------------- #
-1. component patterns
+✅ 1. component patterns
     - layout components
     - container components
     - controlled/uncontrolled components
@@ -14,13 +14,13 @@
     - custom hooks
     - functional programming in react.
 
-2. advanced concepts and hooks
+✅ 2. advanced concepts and hooks
     - react portals
     - forwarding refs
     - error boundries
     - advanced hooks
 
-3. design system
+✅ 3. design system
     - core concepts
     - designing components in figma
     - developing components in react
@@ -28,16 +28,16 @@
     - style patterns
     - final project
 
-4. performance optimization
+✅ 4. performance optimization
     - fixing wasted renders
     - catching expensive operations
 
-5. clean code tips
+✅ 5. clean code tips
     - element props
     - optimizing context API
     - useEffect tips
 
-6. advanced typescript
+✅ 6. advanced typescript
     - basics
     - typing hooks
     - typing reducers
@@ -45,16 +45,16 @@
     - using generics
     - component patterns with typescript
 
-7. react router v6
+✅ 7. react router v6
     - basics
     - navigations
     - advanced
 
 # --------------------------- 5. Naming Conventions -------------------------- #
-1. naming Conventions
+✅ 1. naming Conventions
     - react js is unopinionated ( regarding file naming )
     - consistency is key ( regarding file naming )
     - common naming conventions ( pascalCase, camelCase, kebab-case )
 
-2. react style guide
+✅ 2. react style guide
     - detailed style guide
