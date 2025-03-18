@@ -19,8 +19,7 @@
 126. String Methods Practice
 
 # ------------------------- 103. Destructuring Arrays ------------------------ #
-
-NOTE: 
+📝NOTES📝
     - while destructuring array use [] square brackets.
     - here "restaurant" is a object and "categories" is a array.
 
