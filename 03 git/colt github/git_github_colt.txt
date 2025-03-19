@@ -102,34 +102,7 @@ cmd wont work, use git bash
 
 
 # --------------------- BASIC SETTINGS USING GIT COMMAND --------------------- #
-✅ 21. displays the git version installed in our machine.
-🚩🚩🚩🚩
-    git --version 
-⚡⚡⚡⚡
 
-
-✅ 22. to set user name of git in our machine.
-🚩🚩🚩🚩
-    git config --global user.name "Raghul Ashok"
-⚡⚡⚡⚡
-
-
-✅ 23. to set user email of git in our machine.
-🚩🚩🚩🚩
-    git config --global user.email raghulashok16@gmail.com
-⚡⚡⚡⚡
-
-
-✅ 24. to check the user name in our git.
-🚩🚩🚩🚩
-    git config user.name
-⚡⚡⚡⚡
-
-
-✅ 25. to check the user email in our git.
-🚩🚩🚩🚩
-    git config user.email
-⚡⚡⚡⚡
 
 
 # -------------------------------- REPOSITORY -------------------------------- #

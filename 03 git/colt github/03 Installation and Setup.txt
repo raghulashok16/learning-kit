@@ -40,10 +40,77 @@ GUI Clients ❤️‍🔥
     - interface, buttons, menues -> vary from different GUI.
 
 
-# ------------------- 16. Configuring Your Git Name & Email ------------------ #
+# ----------------------- 14. WINDOWS Git Installation ----------------------- #
+✅ 1. after installing git your machine,run this command to check which version git is installed in our machine.
+🚩🚩🚩🚩
+    git --version 
+⚡⚡⚡⚡
 
-# -------------------- 17. Installing GitKraken (Our GUI) -------------------- #
+# ------------------- 16. Configuring Your Git Name & Email ------------------ #
+✅ 1. you dont need to register for any account or anything.
+✅ 2. but you will need to provide: your name and your email-id.
+✅ 3. if you are using a GUI, it should prompt you for your name and email the first time you open the app.
+✅ 4. to configure the name that git will associate with your work, run this command,
+🚩🚩🚩🚩
+    git config --global user.name "Raghul Ashok"
+⚡⚡⚡⚡
+
+
+✅ 5. to check wheter the user name was set, run this code.
+🚩🚩🚩🚩
+    git config user.name
+⚡⚡⚡⚡
+
+
+✅ 6. do the same thing for your email using the following command.
+🚩🚩🚩🚩
+    git config --global user.email raghulashok16@gmail.com
+⚡⚡⚡⚡
+
+
+✅ 7. to check the user email in our git.
+🚩🚩🚩🚩
+    git config user.email
+⚡⚡⚡⚡
+
 # ------------------ 18. Terminal Crash Course: Introduction ----------------- #
+✅ 1. as a developer you need to know som basics Terminal commands.
+✅ 2. use 'ls'(list) to list all the connents of your current directory.
+🚩🚩🚩🚩
+    ls
+⚡⚡⚡⚡
+
+
+✅ 3. to open that listed directory in a new window, we can use 'start' command.
+🚩🚩🚩🚩
+    start .
+⚡⚡⚡⚡
+
+
+✅ 4. after listing the folder, we can also list the sub folders using the below command.
+🚩🚩🚩🚩
+    ls MyStuff
+⚡⚡⚡⚡
+
+
+✅ 5. to print the path of the working directory(where you currently are) use this command.
+🚩🚩🚩🚩
+    pwd
+⚡⚡⚡⚡
+
+
+✅ 6. use 'cd' (change directory) to change and move between folders.
+🚩🚩🚩🚩
+    cd MyProjects/
+⚡⚡⚡⚡
+
+
+✅ 7. to move backwards to one folder, we can use this command.
+🚩🚩🚩🚩
+    cd ..
+⚡⚡⚡⚡
+
+
 # ------------------- 19. Terminal Crash Course: Navigation ------------------ #
 # ------------ 20. Terminal Crash Course: Creating Files & Folders ----------- #
 # ------------ 21. Terminal Crash Course: Deleting Files & Folders ----------- #
