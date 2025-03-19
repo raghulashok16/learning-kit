@@ -73,7 +73,8 @@ GUI Clients ❤️‍🔥
     git config user.email
 ⚡⚡⚡⚡
 
-# ------------------ 18. Terminal Crash Course: Introduction ----------------- #
+
+# ------------------- 19. Terminal Crash Course: Navigation ------------------ #
 ✅ 1. as a developer you need to know som basics Terminal commands.
 ✅ 2. use 'ls'(list) to list all the connents of your current directory.
 🚩🚩🚩🚩
@@ -111,6 +112,5 @@ GUI Clients ❤️‍🔥
 ⚡⚡⚡⚡
 
 
-# ------------------- 19. Terminal Crash Course: Navigation ------------------ #
 # ------------ 20. Terminal Crash Course: Creating Files & Folders ----------- #
 # ------------ 21. Terminal Crash Course: Deleting Files & Folders ----------- #
