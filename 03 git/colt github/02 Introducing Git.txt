@@ -8,11 +8,16 @@
 
 
 # -------------------------- 7. What Exactly Is Git? ------------------------- #
-✅ 1. git is the world most popular version control system.
-✅ 2. it is also called as VSC in short form.
+✅ 1. 'git' is the world most popular version control system.
+✅ 2. it is also called as VCS(Version Control System) in short form.
 ✅ 3. version control is a software that tracks and manages changes to file over time.
 ✅ 4. verion control system generally allows users to revisit earlier versions of the files, compare changes between versions, undo changes, and a whole lot more.
-✅ 5. git is just one of the many version control systems available today.
+✅ 5. 'git' is just one of the many version control systems available today.
+
+
+📝📝📝📝NOTES
+    - git is a free and open source distributed version control system designed to handle everthing from small to very large projects with speed and efficiency.
+
 
 # ---------------------------- 8. Visualizing Git ---------------------------- #
 ✅ 1. git help us:
@@ -29,7 +34,7 @@
     - he is the creator and main developer behind Linux and Git.
     - in 2005, while working on linux, he became frustrated with the available version control systems.
     - the existing tools were slow, closed-source, and usually paid.
-    - he used bitkeeper VSC.
+    - he used bitkeeper VCS(Version Control System).
 
 ✅ 2. Birth of Git:
     - on 3rd april 2005, he started using git in his project.
@@ -39,12 +44,24 @@
 # ----------------------------- 10. Who Uses Git? ---------------------------- #
 ✅ 1. engineers and developers uses git for their day today work.
 ✅ 2. most major comapanies uses git.
+✅ 3. many people in non-developer roles end up learning the basics of git to collaborate with their coworkers.
+✅ 4. Designers in particular often need to work with git.
+✅ 5. in recent years, government have started using git to manage the drafting of laws.
+✅ 6. washington DC city council uses git and github to publish its law.
+✅ 7. citizens have even fouynd and fixed the typo errors collaboratively using git.
+✅ 8. git is also commonly used by research teams at universities.
+✅ 9. some writers using git to managing drafts of complex novels, screenplays to track things they wrote.
+
 
 # ---------------- 11. Git Vs. Github: What's The Difference? ---------------- #
 ✅ 1. git and github are not the same thing.
-✅ 2. git is a VSC which runs on your local machine .
+✅ 2. git is a Version Control systems which runs on your local machine (laptop, pc) .
 ✅ 3. it tracks your work locally which dont need any internet connection.
-✅ 4. we can use git without github and without any registration for an account.
+✅ 4. we can use git without github account and we dont need any kind of online registration for git.
 ✅ 5. but github is a web service which host out git repositories in the cloud to make it easier to coloborate with other people.
 ✅ 6. we need a account to use github.
 ✅ 7. finally github is an online place to share work that is done using git.
+
+📝📝📝📝NOTES
+    - git and github are not the same.
+    
