@@ -12,9 +12,36 @@
 
 # ------------------ 12. What Really Matters In This Section ----------------- #
 # ------------------- 13. Installing Git: Terminal Vs. GUIs ------------------ #
-# ----------------------- 14. WINDOWS Git Installation ----------------------- #
-# ------------------------- 15. MAC Git Installation ------------------------- #
+✅ 1. git is a Terminal tool.
+✅ 2. it was created as command-line tool.
+✅ 3. to use it, we run various git commands in Unix shell.
+✅ 4. this is not the most user friendly experience, but its at the very core of git.
+
+
+✅ 5. the rise of GUI's
+✅ 6. over the last few years, companies have created graphical user interfaces for git that allow people to use git without having to be a command-line expert.
+✅ 7. Popular Git GUI's
+    - github desktop.
+    - sourceTree
+    - tower
+    - GitKraken
+    - ungit
+
+GUI Clients ❤️‍🔥
+🟢Pros:
+    - easy to learn/understand for beginers.
+    - easy to use.
+    - some people prefer the virtual representation of the repositoies.
+
+🔴Cons:
+    - full details of the working is heeden to the user.
+    - often leads to dependance on a particula piece of software.
+    - when things go wrong , it can be very challenging without command-line.
+    - interface, buttons, menues -> vary from different GUI.
+
+
 # ------------------- 16. Configuring Your Git Name & Email ------------------ #
+
 # -------------------- 17. Installing GitKraken (Our GUI) -------------------- #
 # ------------------ 18. Terminal Crash Course: Introduction ----------------- #
 # ------------------- 19. Terminal Crash Course: Navigation ------------------ #
