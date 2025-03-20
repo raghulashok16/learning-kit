@@ -39,76 +39,76 @@
 146. Subquery Exercises
 
 # ------------------------------- 108. GROUP BY ------------------------------ #
-1. in read world there are some analytical data that are used with SQL.
-2. groupby is a keyword that is used to summarize or aggregate data by groups.
-3. so why would i group data?
-4. to get in-depth information by group.
-5. what if we wanted to know how many employees worked in each department?
-6. how would we do that?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. in read world there are some analytical data that are used with SQL.
+✅ 2. groupby is a keyword that is used to summarize or aggregate data by groups.
+✅ 3. so why would i group data?
+✅ 4. to get in-depth information by group.
+✅ 5. what if we wanted to know how many employees worked in each department?
+✅ 6. how would we do that?
+🚩🚩🚩🚩
     SELECT dept_no, count(emp_no)
     FROM dept_emp;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. the above code is wrong because cont returns 1 record and dept_no will return a bunch of records.
-8. here comes group by.
-9. group by splits data into groups or chunks so we can apply functions against the group rather than the entire table.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 7. the above code is wrong because cont returns 1 record and dept_no will return a bunch of records.
+✅ 8. here comes group by.
+✅ 9. group by splits data into groups or chunks so we can apply functions against the group rather than the entire table.
+🚩🚩🚩🚩
     SELECT dept_no, emp_no
     FROM dept_emp
     GROUP BY dept_no, emp_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-10. count employees in each department.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 10. count employees in each department.
+🚩🚩🚩🚩
     SELECT dept_no, count(emp_no)
     FROM dept_emp
     GROUP BY dept_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-11. we use group by almost exclusively with aggregate function.
-12. when we "GROUP BY" we apply the function per group, not on the entire data set.
-13. group by is stricter than it looks.
-14. every column not in the group-by clause must apply a function.
-15. to reduce all records found for the matchin "GROUP" to a single record.
-15. GROUP BY utilizes a split-apply-combine strategy.
-16. apply aggregate against ungrouped columns.
-17. combine groups with a single value into single value.
-18. GROUP BY happens after WHERE/FROM.
+✅ 11. we use group by almost exclusively with aggregate function.
+✅ 12. when we "GROUP BY" we apply the function per group, not on the entire data set.
+✅ 13. group by is stricter than it looks.
+✅ 14. every column not in the group-by clause must apply a function.
+✅ 15. to reduce all records found for the matchin "GROUP" to a single record.
+✅ 15. GROUP BY utilizes a split-apply-combine strategy.
+✅ 16. apply aggregate against ungrouped columns.
+✅ 17. combine groups with a single value into single value.
+✅ 18. GROUP BY happens after WHERE/FROM.
 
 # -------------------------- 109. Group By Exercises ------------------------- #
-1. How many people were hired on did we hire on any given hire date?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. How many people were hired on did we hire on any given hire date?
+🚩🚩🚩🚩
     SELECT hire_date, COUNT(emp_no) as "amount"
     FROM employees
     GROUP BY hire_date
     ORDER BY "amount" DESC;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. Show me all the employees, hired after 1991 and count the amount of positions they've had
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2. Show me all the employees, hired after 1991 and count the amount of positions they've had
+🚩🚩🚩🚩
     SELECT e.emp_no, count(t.title) as "amount of titles"
     FROM employees as e
     JOIN titles as t USING(emp_no)
     WHERE EXTRACT (YEAR FROM e.hire_date) > 1991
     GROUP BY e.emp_no
     ORDER BY e.emp_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. Show me all the employees that work in the department development and the from and to date.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 3. Show me all the employees that work in the department development and the from and to date.
+🚩🚩🚩🚩
     SELECT e.emp_no, de.from_date, de.to_date
     FROM employees as e
     JOIN dept_emp AS de USING(emp_no)
     WHERE de.dept_no = 'd005'
     GROUP BY e.emp_no, de.from_date, de.to_date
     ORDER BY e.emp_no, de.to_date;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # ---------------------------- 110. HAVING Keyword --------------------------- #
-1. what if i wnat to filter groups?
-2. "WHERE" applies filters to individual rows.
-3. "HAVING" applies filters to a group as a whole.
+✅ 1. what if i wnat to filter groups?
+✅ 2. "WHERE" applies filters to individual rows.
+✅ 3. "HAVING" applies filters to a group as a whole.
 
 # --------------------------- 111. Having Exercises -------------------------- #
 # ------------------------ 112. Ordering Grouped Data ------------------------ #
