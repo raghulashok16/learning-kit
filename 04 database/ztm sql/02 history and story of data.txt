@@ -7,35 +7,41 @@
 13. Exercise: What Is A Database?
 
 # -------------------------- 7. What Is a Database? -------------------------- #
-1. it's a collection of data, a method for accessing and manipulating that data.
-2. data is everywhere and it is the most valuable commodity in the world.
-3. everyday we deal with tons of data like drone footages, camera photos, location data and many more.
-4. databases aren't anything special, they're just hardware and software, there's just computers.
-5. hardware is the mechanical part and the software is the actual code on top that allows usto collect and use the data really useful.
-6. without data no websites can work.
-7. drum memory was used initially to store data before disk drive was introduced.
-8. drum memory is a cylindrical shaped and thats why databases have cylindrical icons.
+✅ 1. it's a collection of data, a method for accessing and manipulating that data.
+✅ 2. data is everywhere and it is the most valuable commodity in the world.
+✅ 3. everyday we deal with tons of data like drone footages, camera photos, location data and many more.
+✅ 4. databases aren't anything special, they're just hardware and software, there's just computers.
+✅ 5. hardware is the mechanical part and the software is the actual code on top that allows usto collect and use the data really useful.
+✅ 6. without data no websites can work.
+✅ 7. drum memory was used initially to store data before disk drive was introduced.
+✅ 8. drum memory is a cylindrical shaped and thats why databases have cylindrical icons.
 
 # ------------------- 9. Database Management System (DBMS) ------------------- #
-1. database is a system, hardware and software that allows a user to store, organize and use data.
-
+✅ 1. database is a system, hardware and software that allows a user to store, organize and use data.
+🚩🚩🚩🚩
     [maria db, microsoft sql server, cassandra, 
     mongo db, my sql, oracle database, redis, 
     sql lite, postgres sql, ibm db2 and many more]
+⚡⚡⚡⚡
+
 
 # ------------------------- 12. 5 Types Of Databases ------------------------- #
-1. relational model -> mysql, postgres -> most popular, e-comerce.
-2. document model -> mongo db, firebase -> data in document.
-3. key value model -> dinamo db -> simplest way to access data.
-4. graph model -> more complex, data connected in differentways, social media uses these model.
-5. wide columnar model -> newly introduced -> cassandra, google big table.
+✅ 1. relational model -> mysql, postgres -> most popular, e-comerce.
+✅ 2. document model -> mongo db, firebase -> data in document.
+✅ 3. key value model -> dinamo db -> simplest way to access data.
+✅ 4. graph model -> more complex, data connected in differentways, social media uses these model.
+✅ 5. wide columnar model -> newly introduced -> cassandra, google big table.
 
 # ------------------------ THINGS TO KNOW IN DATABASE ------------------------ #
-1. how to put data in db.
-2. how to use/update/learn from data.
-3. how to remove data.
+✅ 1. how to put data in db.
+✅ 2. how to use/update/learn from data.
+✅ 3. how to remove data.
 
 # ---------------------------- CONFUSING ACRONYMS ---------------------------- #
-DBMS  -  DataBase Management System
-RDBMS -  Relational DataBase Management System
-SQL   -  Structured Query Language
+🚩🚩🚩🚩
+    DBMS  -  DataBase Management System
+    RDBMS -  Relational DataBase Management System
+    SQL   -  Structured Query Language
+⚡⚡⚡⚡
+
+

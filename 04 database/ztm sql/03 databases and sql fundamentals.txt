@@ -25,40 +25,44 @@
 39. Endorsements On LinkedIN
 
 # ----------------------------- 16. What Is SQL? ----------------------------- #
-1. SQL is a language that is used to communicate with a databases.
-2. SQL statement is also called as Query
-3. SELECT * FROM USERS
-4. the above is the Query or SQL Statement
+✅ 1. SQL is a language that is used to communicate with a databases.
+✅ 2. SQL statement is also called as Query
+✅ 3. SELECT * FROM USERS
+✅ 4. the above is the Query or SQL Statement
 
 # ------------------------------ QUERY BREAKDOWN ----------------------------- #
-----SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
-NAME              --> identifier
-WHERE             --> keyword
-ROLE = 'MANAGER'  --> condition
-'MANAGER'         --> expression
+🚩🚩🚩🚩
+    SELECT NAME FROM USERS WHERE ROLE = 'MANAGER';
+⚡⚡⚡⚡
+✅ NAME              --> identifier
+✅ WHERE             --> keyword
+✅ ROLE = 'MANAGER'  --> condition
+✅ 'MANAGER'         --> expression
+
+
 
 # --------------------------- 17. What Is A Query? --------------------------- #
-1. A query is a request for data or information from a database or other data storage systems.
-2. It is typically expressed in a structured format using a query language, such as SQL (Structured Query Language) for relational databases.
-3. Queries can be used to retrieve, insert, update, or delete data, depending on the needs of the user.
+✅ 1. A query is a request for data or information from a database or other data storage systems.
+✅ 2. It is typically expressed in a structured format using a query language, such as SQL (Structured Query Language) for relational databases.
+✅ 3. Queries can be used to retrieve, insert, update, or delete data, depending on the needs of the user.
 
 # ----------------------- 19. Imperative vs Declarative ---------------------- #
-Declarative (SQL's Main Style)
-1. What it means: You tell the database what you want, and it figures out how to get it for you.
-2. Example:
-- Imagine you're at a restaurant.
-- You tell the waiter, "I want a pizza with extra cheese."
-- You don't tell the chef how to make the pizza—you just say what you want, and the kitchen handles the rest.
+Declarative (SQL's Main Style) ❤️‍🔥
+✅ 1. What it means: You tell the database what you want, and it figures out how to get it for you.
+✅ 2. Example:
+    - Imagine you're at a restaurant.
+    - You tell the waiter, "I want a pizza with extra cheese."
+    - You don't tell the chef how to make the pizza—you just say what you want, and the kitchen handles the rest.
 
-Imperative (Less Common in SQL)
-1. What it means: You give the database step-by-step instructions on how to do something.
-2. Example:
-- Back at the restaurant, instead of just ordering, you go into the kitchen and say, "First, take the dough, then add sauce, then add cheese, then bake it for 10 minutes at 400 degrees."
-- You're controlling every step.
+Imperative (Less Common in SQL) ❤️‍🔥
+✅ 1. What it means: You give the database step-by-step instructions on how to do something.
+✅ 2. Example:
+    - Back at the restaurant, instead of just ordering, you go into the kitchen and say, "First, take the dough, then add sauce, then add cheese, then bake it for 10 minutes at 400 degrees."
+    - You're controlling every step.
 
-Key Difference
-- Declarative: "I want this result. You figure out how to get it.". "I want pizza."
-- Imperative: "Do this, then do that, then do this other thing to get the result.". "Here's how to make pizza."
+Key Difference ❤️‍🔥
+    - Declarative: "I want this result. You figure out how to get it.". "I want pizza."
+    - Imperative: "Do this, then do that, then do this other thing to get the result.". "Here's how to make pizza."
 
 # ---------------------------- 20. History of SQL ---------------------------- #
 # -------------------- 22. Exercises: The Select Statement ------------------- #
@@ -68,64 +72,70 @@ Key Difference
 # ---------------------- 25. Database Oriented Approach ---------------------- #
 # ---------------------- 26. Exercise: SQL Starter Quiz ---------------------- #
 # ---------------------------- 27. Database Models --------------------------- #
-1. HIERARCHICAL [TREE LIKE FLOW CHART DESIGN]
-2. NETWORKING 
-3. ENTITY-RELATIONSHIP
-4. RELATIONAL
-5. OBJECT ORIENTED
-6. FLAT
-7. SEMI-STRUCTURED
+✅ 1. HIERARCHICAL [TREE LIKE FLOW CHART DESIGN]
+✅ 2. NETWORKING 
+✅ 3. ENTITY-RELATIONSHIP
+✅ 4. RELATIONAL
+✅ 5. OBJECT ORIENTED
+✅ 6. FLAT
+✅ 7. SEMI-STRUCTURED
 
 # ----------------------------------- CRUD ----------------------------------- #
-c --> create
-r --> read
-u --> update
-d --> delete
+🚩🚩🚩🚩
+    c --> create
+    r --> read
+    u --> update
+    d --> delete
+⚡⚡⚡⚡
+
 
 # ------------------- 28. Hierarchical And Networking Model ------------------ #
 # --------------------------- 29. Relational Model --------------------------- #
 # ---------------------------- 30. DBMS Revisited ---------------------------- #
 # ---------------------- 31. Relational Model Revisited ---------------------- #
 # -------------------------------- 32. Tables -------------------------------- #
-1. table is the representation of object.
-2. each table has its name.
-3. each column represent specific types of data.
-4. each row represent singular piece of data.
+✅ 1. table is the representation of object.
+✅ 2. each table has its name.
+✅ 3. each column represent specific types of data.
+✅ 4. each row represent singular piece of data.
 
 # -------------------------------- 33. Columns ------------------------------- #
-1. each column has its own name.
-2. collection of columns is called degree.
-3. we can specify what data should be put in that column and that concept is called domain/constraint.
-4. column is also called as attributes.
+✅ 1. each column has its own name.
+✅ 2. collection of columns is called degree.
+✅ 3. we can specify what data should be put in that column and that concept is called domain/constraint.
+✅ 4. column is also called as attributes.
 
 # --------------------------------- 34. Rows --------------------------------- #
-1. rows are also called as tuples.
-2. tuple is nothing but single record of data.
-3. tuples is nothing but multiple record of data.
-4. each tuples must follow the column constraint.
-5. collection of rows/tuples is called cardinallity.
+✅ 1. rows are also called as tuples.
+✅ 2. tuple is nothing but single record of data.
+✅ 3. tuples is nothing but multiple record of data.
+✅ 4. each tuples must follow the column constraint.
+✅ 5. collection of rows/tuples is called cardinallity.
 
 # ----------------------- 35. Primary And Foreign Keys ----------------------- #
-1. primary key uniquely identify data in the table.
-2. foreign key is used to add data to the main table but it is a primary key in the secondary table.
-3. foreign key is used to make a relationship between two or more tables.
+✅ 1. primary key uniquely identify data in the table.
+✅ 2. foreign key is used to add data to the main table but it is a primary key in the secondary table.
+✅ 3. foreign key is used to make a relationship between two or more tables.
 
 
 # ----------------------------- 36. OLTP vs OLAP ----------------------------- #
-1. realtional databases support day to day office work and support in analysis.
-OLTP --> ONLINE TRANSACTION PROCESSING
-OLAP --> ONLINE ANALYTICAL PROCESSING
+✅ 1. realtional databases support day to day office work and support in analysis.
+🚩🚩🚩🚩
+    OLTP --> ONLINE TRANSACTION PROCESSING
+    OLAP --> ONLINE ANALYTICAL PROCESSING
+⚡⚡⚡⚡
+
 
 # ------------------------ 37. Exercise: OLTP vs OLAP ------------------------ #
-1. a database is being used to log orders and customers --> OLTP 
-2. a database is being used to figure out what new products we should offer --> OLAP
-3. a database is being used to derive statistics for reporting to the executives --> OLAP
-4. a database is being used to keep track of logged in users --> OLTP
+✅ 1. a database is being used to log orders and customers --> OLTP 
+✅ 2. a database is being used to figure out what new products we should offer --> OLAP
+✅ 3. a database is being used to derive statistics for reporting to the executives --> OLAP
+✅ 4. a database is being used to keep track of logged in users --> OLTP
 
 # -------------------- 38. Exercise: Relational Model Quiz ------------------- #
 # ----------------------- 39. Endorsements On LinkedIN ----------------------- #
 
 # ------------------------------- VALENTINA DB ------------------------------- #
-1. valentina DB is a cross platform tool which has the UI that help to manage postgres SQL.
-2. postgres is the most popular relational database available in the market.
-3. these two are free.
+✅ 1. valentina DB is a cross platform tool which has the UI that help to manage postgres SQL.
+✅ 2. postgres is the most popular relational database available in the market.
+✅ 3. these two are free.

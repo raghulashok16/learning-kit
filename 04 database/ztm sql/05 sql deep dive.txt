@@ -57,762 +57,849 @@
 
 
 # ----------------------- 55. Exercise: Simple Queries ----------------------- #
-1. give me a list of all employees in the company?
-2. how many departments are the in the company?
-3. how many times has employee 10001 had a rise?
-4. what title does 10006 have?
+✅ 1. give me a list of all employees in the company?
+✅ 2. how many departments are the in the company?
+✅ 3. how many times has employee 10001 had a rise?
+✅ 4. what title does 10006 have?
+🚩🚩🚩🚩
+    "" --> double quotes [ COLUMN ]
+    '' --> single quotes [ text/string ]
+⚡⚡⚡⚡
 
-NOTE: "" --> double quotes [ COLUMN ]
-      '' --> single quotes [ text/string ]
- 
+
 # ---------------- 56. Changing Column Names in a SELECT Query --------------- #
-1. 'AS' keyword is used to rename the column name
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. 'AS' keyword is used to rename the column name
+🚩🚩🚩🚩
     SELECT emp_no AS "Employee Id" 
     FROM "employees" 
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     SELECT dob AS "Birthday" 
     FROM "employees" 
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     SELECT first_name AS "First Name" 
     FROM "employees" 
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------------- 57. Concat Function --------------------------- #
-1. to make our data prettier, simpler, etc.
+✅ 1. to make our data prettier, simpler, etc.
 [concat(TEXT,TEXT)]
 [concat(COLUMN1,COLUMN2)]
-2.concatenate the employee number and title name of the employee into one column.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2.concatenate the employee number and title name of the employee into one column.
+🚩🚩🚩🚩
     SELECT concat(emp_no,'is a',title) AS "employee detail" 
     FROM titles;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. concatenate the first and last name of the employee into one column.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. concatenate the first and last name of the employee into one column.
+🚩🚩🚩🚩
     SELECT emp_no, concat(first_name, ' ', last_name) AS "full name" 
     FROM "employees"; 
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------- 58. What Is A Function In SQL? ---------------------- #
-1. function is a set of steps that creates a single value
-2. Two types of functions in SQL are aggregate and scalar function
-3. AGGREGATE --> it works on all given data and gives a single data output, operate on many records to produce 1 value
-4. SCALAR --> it works on individual row and gives individual result for each row, operate on each record independently
+✅ 1. function is a set of steps that creates a single value
+✅ 2. Two types of functions in SQL are aggregate and scalar function
+✅ 3. AGGREGATE --> it works on all given data and gives a single data output, operate on many records to produce 1 value
+✅ 4. SCALAR --> it works on individual row and gives individual result for each row, operate on each record independently
 
 # -------------------------- 59. Aggregate Functions ------------------------- #
-avg()
-count()
-min() 
-max()
-sum()
+🚩🚩🚩🚩
+    avg()
+    count()
+    min() 
+    max()
+    sum()
+⚡⚡⚡⚡
+
 
 # ------------------------ 61. Commenting Your Queries ----------------------- #
--- SINGLE LINE COMMENT
+🚩🚩🚩🚩
+    -- SINGLE LINE COMMENT
+⚡⚡⚡⚡
+🚩🚩🚩🚩
+    /*
+    *MULTI LINE
+    *COMMENTS
+    */
+⚡⚡⚡⚡
 
-/*
-*MULTI LINE
-*COMMENTS
-*/
 
 # ------------------------ 62. Common SELECT Mistakes ------------------------ #
-1. misspelling commands
-2. using ; instad of , or vice versa
-3. using " instad of '
-4. " is for tables
-5. ' is for text/string
-6. invalid column name
+✅ 1. misspelling commands
+✅ 2. using ; instad of , or vice versa
+✅ 3. using " instad of '
+✅ 4. " is for tables
+✅ 5. ' is for text/string
+✅ 6. invalid column name
 
 # ---------------------------- 63. Filtering Data ---------------------------- #
-1. get a list of all female employees.
-2. 'where' keyword is used to filter out data.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. get a list of all female employees.
+✅ 2. 'where' keyword is used to filter out data.
+🚩🚩🚩🚩
     SELECT first_name 
     FROM employees 
     WHERE gender = 'F';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------------ 64. AND and OR ------------------------------ #
-1. filtering based on 2 & 3 conditions.
-2. 'and' and 'or' keyword is used to filter multiple conditions.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. filtering based on 2 & 3 conditions.
+✅ 2. 'and' and 'or' keyword is used to filter multiple conditions.
+🚩🚩🚩🚩
     SELECT firstname, lastname 
     FROM users 
     WHERE firstname = 'Raghul' AND lastname = 'Ashok'; 
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     SELECT firstname, lastname 
     FROM users 
     WHERE firstname = 'Raghul' AND lastname = 'Ashok' AND hire_date = ' 15-11-2023';
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     SELECT firstname 
     FROM users 
     WHERE firstname = 'Raghul' OR lastname = 'Ashok'; 
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     SELECT firstname 
     FROM users 
-    WHERE salary = 2000 OR firstname = 'Kumar'; 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    WHERE salary = 2000 OR firstname = 'Kumar';
+⚡⚡⚡⚡ 
+🚩🚩🚩🚩
     SELECT firstname 
     FROM users 
     WHERE firstname = 'Raghul' AND lastname = 'Kumar' OR salary = 15900; 
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     SELECT firstname 
     FROM users 
     WHERE firstname = 'Raghul' OR firstname = 'Ram';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ----------------------- 65. Exercise: Filtering Data ----------------------- #
-1. how many female customers do we have from the state of kerala or tamilnadu
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. how many female customers do we have from the state of kerala or tamilnadu
+🚩🚩🚩🚩
     SELECT COUNT(name) 
     FROM customers 
     WHERE ( state = 'kerala' OR state = 'tamilnadu') AND gender = 'F'; 
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------------- 66. The NOT Keyword --------------------------- #
-1. to filter everthing except certain condition.
-2. select all customers are not male?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. to filter everthing except certain condition.
+✅ 2. select all customers are not male?
+🚩🚩🚩🚩
     SELECT firstName, gender 
     FROM users 
     WHERE NOT gender = 'M'; 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-3. how many customers are not 55 and 76 years age ?
+⚡⚡⚡⚡
+
+
+✅ 3. how many customers are not 55 and 76 years age ?
 ----SELECT COUNT(age) 
     FROM customers 
     WHERE NOT age = 55 AND NOT age = 76;
 
 # ---------------------- 67. Exercise: The Where Clause ---------------------- #
 # ------------------------- 68. Comparison Operators ------------------------- #
-1. who over the age of 44 has an income of 100000?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. who over the age of 44 has an income of 100000?
+🚩🚩🚩🚩
     SELECT name 
     FROM employees 
     WHERE age >44 AND income = 100000;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+🚩🚩🚩🚩
+    [10 > 20     - false]
+    [10 < 20     - true]
+    [10 <= 20    - true]
+    [10 >= 20    - false]
+    [0 = 0       - true]
+    [1 != 0      - true]
+    [1 <> 0      - true]
+    ['Mo' = 'mo' - false]
+⚡⚡⚡⚡
 
-[10 > 20     - false]
-[10 < 20     - true]
-[10 <= 20    - true]
-[10 >= 20    - false]
-[0 = 0       - true]
-[1 != 0      - true]
-[1 <> 0      - true]
-['Mo' = 'mo' - false]
 
-2. How many female customers do we have from the state of Oregon (OR)?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2. How many female customers do we have from the state of Oregon (OR)?
+🚩🚩🚩🚩
     SELECT COUNT(firstName) 
     FROM customers 
     WHERE gender = 'F' and state = 'OR';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. Who over the age of 44 has an income of 100 000 or more? (excluding 44)
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. Who over the age of 44 has an income of 100 000 or more? (excluding 44)
+🚩🚩🚩🚩
     SELECT COUNT(income) 
     FROM customers 
     WHERE age > 44 and income >= 100000;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. Who between the ages of 30 and 50 has an income less than 50 000?
+
+✅ 4. Who between the ages of 30 and 50 has an income less than 50 000?
    (include 30 and 50 in the results)
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     SELECT COUNT(income) 
     FROM customers 
     WHERE age >= 30 and age <= 50 AND income < 50000;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. What is the average income between the ages of 20 and 50? (Excluding 20 and 50)
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. What is the average income between the ages of 20 and 50? (Excluding 20 and 50)
+🚩🚩🚩🚩
     SELECT AVG(income) 
     FROM customers 
     WHERE age > 20 and age < 50;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # -------------------- 69. Exercise: Comparison Operators -------------------- #
 # --------------------------- 70. Logical Operators -------------------------- #
-1. AND and OR are used to combine multiple conditions.
-2. NOT is used to negate a condition.
-3. BETWEEN, IN, and LIKE are used for filtering based on ranges, lists, or patterns.
-4. IS NULL checks for NULL values.
-5. EXISTS, ALL, ANY, and SOME are used with subqueries for more advanced filtering.
+✅ 1. AND and OR are used to combine multiple conditions.
+✅ 2. NOT is used to negate a condition.
+✅ 3. BETWEEN, IN, and LIKE are used for filtering based on ranges, lists, or patterns.
+✅ 4. IS NULL checks for NULL values.
+✅ 5. EXISTS, ALL, ANY, and SOME are used with subqueries for more advanced filtering.
 
 # -------------------------- 71. Operator Precedence ------------------------- #
-1. FROM (which table).
-2. WHERE (what to filter the data).
-3. SELECT (display the selected / sorted data).
+✅ 1. FROM (which table).
+✅ 2. WHERE (what to filter the data).
+✅ 3. SELECT (display the selected / sorted data).
 
 # ----------------------- 73. Operator Precedence Extra ---------------------- #
-1. A statement having multiple operators is evaluated based on the priority of operators.
-2. parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or.
-3. if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left.
-4. use parenthesis while using operators to avoid clash between operators.
-5. Always remember the following: HIGHEST to LOWEST,
-    1. Parenthesis
-    2. Arithmetic Operators
-    3. Concatenation Operators
-    4. Comparison Conditions
-    5. IS NULL, LIKE, NOT IN, etc.
-    6. NOT
-    7. AND
-    8. OR
-6. OR is the lowest on the totem pole.
+✅ 1. A statement having multiple operators is evaluated based on the priority of operators.
+✅ 2. parenthesis -> multiplication/division -> subraction/addition -> not -> and -> or.
+✅ 3. if the operators have equal precedence, then the operators are evaluated directionally, from left to right or right to left.
+✅ 4. use parenthesis while using operators to avoid clash between operators.
+✅ 5. Always remember the following: HIGHEST to LOWEST,
+🚩🚩🚩🚩
+    - Parenthesis
+    - Arithmetic Operators
+    - Concatenation Operators
+    - Comparison Conditions
+    - IS NULL, LIKE, NOT IN, etc.
+    - NOT
+    - AND
+    - OR
+⚡⚡⚡⚡
+
+
+✅ 6. OR is the lowest on the totem pole.
 
 # --------------------- 74. Exercise: Operator Precedence -------------------- #
-1. Select people either under 30 or over 50 with an income above 50000 that are from either Japan or Australia
-2. What was our total sales in June of 2004 for orders over 100 dollars?
+✅ 1. Select people either under 30 or over 50 with an income above 50000 that are from either Japan or Australia
+✅ 2. What was our total sales in June of 2004 for orders over 100 dollars?
 
 # ----------------------- 75. Checking For NULL Values ----------------------- #
-1. when a record does not have a value then it is considered as empty.
-2. 'null' is the term used to represent a missing/empty value.
-3. null value is different from a zero value or a field that contains spaces.
-4. to set a null value, be carefull in that situation.
-5. null is acontentious issue no matter what opinion you have people may dsagree.
-6. null is also a special value.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. when a record does not have a value then it is considered as empty.
+✅ 2. 'null' is the term used to represent a missing/empty value.
+✅ 3. null value is different from a zero value or a field that contains spaces.
+✅ 4. to set a null value, be carefull in that situation.
+✅ 5. null is acontentious issue no matter what opinion you have people may dsagree.
+✅ 6. null is also a special value.
+🚩🚩🚩🚩
     1=1 [output: true]
     1!=1 [output: false]
     null=null [output: null]
     null<>null [output: null]
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. no matter what you do with null it will always be null(subtract, divide, equal, etc).
+
+✅ 7. no matter what you do with null it will always be null(subtract, divide, equal, etc).
 
 # ------------------------------ 76. IS Keyword ------------------------------ #
-1. always check for nulls when necessary.
-2. filter out nulls.
-3. 'is' operator allow us to filter on values that are null, not null, true or false.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. always check for nulls when necessary.
+✅ 2. filter out nulls.
+✅ 3. 'is' operator allow us to filter on values that are null, not null, true or false.
+🚩🚩🚩🚩
     SELECT name, lastName 
     FROM "Student"
     WHERE name IS NOT NULL;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+🚩🚩🚩🚩
     SELECT * 
     FROM users 
     WHERE age = 20 IS FALSE;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------------- 77. NULL Coalescing --------------------------- #
-1. null value substitution is the ability to replace null values to operate on the data.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. null value substitution is the ability to replace null values to operate on the data.
+🚩🚩🚩🚩
     SELECT coalesce(<column>, 'any_text') 
     AS column_alias 
     FROM <table>;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. if there is a null value then replace it with 'any_text' string.
-3. coalesce allows us to use multiple column name.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. if there is a null value then replace it with 'any_text' string.
+✅ 3. coalesce allows us to use multiple column name.
+🚩🚩🚩🚩
     SELECT coalesce(<column1>, <column1>, <column1>, 'any_text') 
     AS column_alias 
     FROM <table>;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. with help of the null coalescing we can set default values.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. with help of the null coalescing we can set default values.
+🚩🚩🚩🚩
     SELECT sum( coalesce(age, 20) ) 
     FROM students;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # -------------------- 78. Exercise: Null Value Coalescing ------------------- #
-1. Assuming a students minimum age for the class is 15, what is the average age of a student?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. Assuming a students minimum age for the class is 15, what is the average age of a student?
+🚩🚩🚩🚩
     SELECT avg(coalesce(age, 15))
     FROM "Student";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. Replace all empty first or last names with a default?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. Replace all empty first or last names with a default?
+🚩🚩🚩🚩
     SELECT  id, 
             coalesce(name, 'fallback'), 
             coalesce(lastName, 'lastName'), 
             age 
     FROM "Student";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------------- 79. 3 Valued Logic ---------------------------- #
-1. besides true and false, the result of logical expressions can be also be unknown.
-2. SQL null ia value that could be anything.
-3. nothing equals null, not even null, each null could be different.
-4. that is why we use 'is null' check.
-5. it tells if the value is null or not.
-6. (null = 1) OR (1=1) [output: true]
-7. (null = 1) AND (0=1) [output: null]
-8. null will always return null.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. besides true and false, the result of logical expressions can be also be unknown.
+✅ 2. SQL null ia value that could be anything.
+✅ 3. nothing equals null, not even null, each null could be different.
+✅ 4. that is why we use 'is null' check.
+✅ 5. it tells if the value is null or not.
+✅ 6. (null = 1) OR (1=1) [output: true]
+✅ 7. (null = 1) AND (0=1) [output: null]
+✅ 8. null will always return null.
+🚩🚩🚩🚩
     SELECT <column> 
     FROM <table> 
     Where <column> IS NULL;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-9. while checking null always use 'IS NULL' to check null values.
-10. dont use = operator while checking null because null is not equal to null.
+
+✅ 9. while checking null always use 'IS NULL' to check null values.
+✅ 10. dont use = operator while checking null because null is not equal to null.
 
 # ----------------------------- EXERCISE ON NULL ----------------------------- #
-1. adjust the following query to display the null values as "No Address"
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. adjust the following query to display the null values as "No Address"
+🚩🚩🚩🚩
     SELECT COALESCE(address2, 'No Address')
     FROM customers;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. Fix the following query to apply proper 3VL
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. Fix the following query to apply proper 3VL
+🚩🚩🚩🚩
     SELECT * 
     FROM customers 
     WHERE address2 IS NOT null;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. Fix the following query to apply proper 3VL
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. Fix the following query to apply proper 3VL
+🚩🚩🚩🚩
     SELECT coalesce(lastName, 'Empty'), * 
     FROM customers 
     WHERE (age IS NULL);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ----------------------- 80. Exercise: 3 Valued Logic ----------------------- #
 # ----------------------------- 81. BETWEEN + AND ---------------------------- #
-1. shorthand to match agains a range of values.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. shorthand to match agains a range of values.
+🚩🚩🚩🚩
     SELECT <colum> 
     FROM <table> 
     WHERE <column> BETWEEN x AND y;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. this will sort between the given range x and y.
-3. note that 'between and' is sensitive to the order of arguments.
-4. it is more readable and maintainable.
+
+✅ 2. this will sort between the given range x and y.
+✅ 3. note that 'between and' is sensitive to the order of arguments.
+✅ 4. it is more readable and maintainable.
 
 # ------------------------ 82. Exercise: BETWEEN + AND ----------------------- #
-1. Who between the ages of 30 and 50 has an income less than 50 000?(include 30 and 50 in the results)
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. Who between the ages of 30 and 50 has an income less than 50 000?(include 30 and 50 in the results)
+🚩🚩🚩🚩
     SELECT * 
     FROM customers 
     WHERE age BETWEEN 30 AND 50 AND income < 50000;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. What is the average income between the ages of 20 and 50? (Including 20 and 50)
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. What is the average income between the ages of 20 and 50? (Including 20 and 50)
+🚩🚩🚩🚩
     SELECT AVG(income) 
     FROM customers 
     WHERE age BETWEEN 20 AND 50;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------------ 83. IN Keyword ------------------------------ #
-1. what if i want to find multiple values but not write endless 'AND' statements?
-2. 'IN' keyword checks if a value matches any vlue in a list of values.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. what if i want to find multiple values but not write endless 'AND' statements?
+✅ 2. 'IN' keyword checks if a value matches any vlue in a list of values.
+🚩🚩🚩🚩
     SELECT * 
     FROM <table> 
     WHERE <column> IN (vallue1,value2,...);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+🚩🚩🚩🚩
     SELECT * 
     FROM employees 
     WHERE emp_no IN (10001,10006,10402);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. 'IN' keyword is very powerfull beacause it reduce the use of multiple 'AND' used as below.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. 'IN' keyword is very powerfull beacause it reduce the use of multiple 'AND' used as below.
+🚩🚩🚩🚩
     SELECT * 
     FROM employees 
     WHERE emp_no = 10001 OR emp_no = 10006;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------- 84. Exercise: IN Keyword ------------------------- #
-1. How many orders were made by customer 7888, 1082, 12808, 9623
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. How many orders were made by customer 7888, 1082, 12808, 9623
+🚩🚩🚩🚩
     SELECT COUNT(orderid) 
     FROM orders 
     WHERE customerid IN (7888, 1082, 12808, 9623);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
+🚩🚩🚩🚩
     SELECT COUNT(id) 
     FROM city 
     WHERE district IN ('Zuid-Holland','Noord-Brabant', 'Utrecht');
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # --------------------------------- 85. LIKE --------------------------------- #
-1. what if you dont know exactly what you are searching for?
-2. it is called partial lookups.
-3. get everyone who's name start with 'M'.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. what if you dont know exactly what you are searching for?
+✅ 2. it is called partial lookups.
+✅ 3. get everyone who's name start with 'M'.
+🚩🚩🚩🚩
     SELECT first_name 
     FROM employees 
     WHERE first_name LIKE 'M%';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. this concept is called pattern matching.
-5. in order to use like you need to build patterns to match.
-6. '%' - any number of characters.
-7. '_' - 1 character.
-8. postgres 'LIKE' only does text comparision so we must cast whatever we use to text.
-9. casting is the act of changing something something to something else.
-10. cast (salary AS text);
-11. salary::text
-12. finally 'LIKE' keyword is case sensitive.
+
+✅ 4. this concept is called pattern matching.
+✅ 5. in order to use like you need to build patterns to match.
+✅ 6. '%' - any number of characters.
+✅ 7. '_' - 1 character.
+✅ 8. postgres 'LIKE' only does text comparision so we must cast whatever we use to text.
+✅ 9. casting is the act of changing something something to something else.
+✅ 10. cast (salary AS text);
+✅ 11. salary::text
+✅ 12. finally 'LIKE' keyword is case sensitive.
 
 # ------------------------ 86. Exercise: Like Keyword ------------------------ #
-1. LIKE '%2'    - fields that end with 2.
-2. LIKE '%2%'   - fields that have 2 anywhere in the value.
-3. LIKE '_00%'  - fields that have 2 zero's as the second and third character and anything.
-4. LIKE '%200%' - fields that have 200 anywhere in the value.
-5. LIKE '2_%_%' - fields any values that start with 2 and are at least 3 characters in length.
-6. LIKE '2___3' - fields any values in a five-digit number that start with 2 and end with 3.
+✅ 1. LIKE '%2'    - fields that end with 2.
+✅ 2. LIKE '%2%'   - fields that have 2 anywhere in the value.
+✅ 3. LIKE '_00%'  - fields that have 2 zero's as the second and third character and anything.
+✅ 4. LIKE '%200%' - fields that have 200 anywhere in the value.
+✅ 5. LIKE '2_%_%' - fields any values that start with 2 and are at least 3 characters in length.
+✅ 6. LIKE '2___3' - fields any values in a five-digit number that start with 2 and end with 3.
 
 ILIKE:
-1. this is for case insensitive matching.
-2. name ILIKE 'MO%';
-3. it is the different way of using like keyword.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+📝📝📝📝NOTES
+    - this is for case insensitive matching.
+    - name ILIKE 'MO%';
+    - it is the different way of using like keyword.
+🚩🚩🚩🚩
     SELECT * 
     FROM employees 
     WHERE first_name ILIKE 'g%GER';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. Find the age of all employees who's name starts with M.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 1. Find the age of all employees who's name starts with M.
+🚩🚩🚩🚩
     SELECT emp_no, 
             first_name, 
             EXTRACT (YEAR FROM AGE(birth_date)) AS "age" 
     FROM employees 
     WHERE first_name ILIKE 'M%';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. How many people's name start with A and end with R?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. How many people's name start with A and end with R?
+🚩🚩🚩🚩
     SELECT count(emp_no) 
     FROM employees 
     WHERE first_name ILIKE 'A%R';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. How many people's zipcode have a 2 in it?.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. How many people's zipcode have a 2 in it?.
+🚩🚩🚩🚩
     SELECT count(customerid) 
     FROM customers 
     WHERE zip::text LIKE '%2%';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. How many people's zipcode start with 2 with the 3rd character being a 1.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. How many people's zipcode start with 2 with the 3rd character being a 1.
+🚩🚩🚩🚩
     SELECT count(customerid) 
     FROM customers
     WHERE zip::text LIKE '2_1%';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. Which states have phone numbers starting with 302?
-( Replace null values with "No State" )
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. Which states have phone numbers starting with 302?
+    ( Replace null values with "No State" )
+🚩🚩🚩🚩
     SELECT coalesce(state, 'No State') AS "State" 
     FROM customers
     WHERE phone::text LIKE '302%';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # -------------------------- 87. Dates And Timezones ------------------------- #
-1. dates are hard.
-2. we all live in different places in the world, so times are different in different places.
-3. in 1884, sir sanford fleming went to an international conference in the uk in greenwich.
-4. at the conference, he proposed that we pick a point in the world and we offset every other contry's time.
-5. that central point is greenwich.
-6. at that time greenwich was a central hub of commerce in the world at that time.
-7. so for storing times in the database needs a standard to work with different websites in same time around the world.
-8. apart from gmt, utc was used.
-9. UTC -> universal coordinate time.
-10. utc is not a time zone, it is a way to measure time.
-11. no country is using utc as time zone.
-12. gmt is a time zone, utc is a time standard.
-13. to set utc time for current session.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. dates are hard.
+✅ 2. we all live in different places in the world, so times are different in different places.
+✅ 3. in 1884, sir sanford fleming went to an international conference in the uk in greenwich.
+✅ 4. at the conference, he proposed that we pick a point in the world and we offset every other contry's time.
+✅ 5. that central point is greenwich.
+✅ 6. at that time greenwich was a central hub of commerce in the world at that time.
+✅ 7. so for storing times in the database needs a standard to work with different websites in same time around the world.
+✅ 8. apart from gmt, utc was used.
+✅ 9. UTC -> universal coordinate time.
+✅ 10. utc is not a time zone, it is a way to measure time.
+✅ 11. no country is using utc as time zone.
+✅ 12. gmt is a time zone, utc is a time standard.
+✅ 13. to set utc time for current session.
+🚩🚩🚩🚩
     SET TIME ZONE 'UTC';
     SHOW TIMEZONE;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------- 88. Setting Up Timezones ------------------------- #
 # -------------------- 89. How Do We Format Date And Time? ------------------- #
-1. postgres uses ISO-8601
-2. when you use ISO-8601, the date format will look sa below.
-3. YYYY-MM-DDTHH:MM:SS
-4. 2017-08-17T12:47:16+02:00
-5. a format is a way of representing a date and time.
-6. a timestamp is a date with time and timezone info.
+✅ 1. postgres uses ISO-8601
+✅ 2. when you use ISO-8601, the date format will look sa below.
+✅ 3. YYYY-MM-DDTHH:MM:SS
+✅ 4. 2017-08-17T12:47:16+02:00
+✅ 5. a format is a way of representing a date and time.
+✅ 6. a timestamp is a date with time and timezone info.
 
 # ------------------------------ 90. Timestamps ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     CREATE TABLE timezones (
         ts TIMESTAMP WITHOUT TIMEZONE,
         tz TIMESTAMP WITH TIME ZONE
 );
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     INSERT INTO timezones VALUES (
         TIMESTAMP WITHOUT TIME ZONE '2000-01-01 10:00:00-05',
         TIMESTAMP WITH TIME ZONE '2000-01-01 10:00:00-05'
 );
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. here we are creating and inserting data into a table.
-2. tz stores the extra information about the time zone.
-3. should we use timestamp or dates, it depends on what you're storing.
-4. postgres gives us date operators to help simplify dates.
+
+✅ 1. here we are creating and inserting data into a table.
+✅ 2. tz stores the extra information about the time zone.
+✅ 3. should we use timestamp or dates, it depends on what you're storing.
+✅ 4. postgres gives us date operators to help simplify dates.
 
 # ---------------------------- 91. Date Functions ---------------------------- #
-1. if we want to get the current date, there are 2 main ways.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. if we want to get the current date, there are 2 main ways.
+🚩🚩🚩🚩
     SELECT NOW()::date;
     SELECT CURRENT_DATE;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. TO_CHAR command is used to format the current date.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. TO_CHAR command is used to format the current date.
+🚩🚩🚩🚩
     SELECT TO_CHAR (CURRENT_DATE, 'dd/mm/yyy');
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. in the postgres documentation there are a lot of identifiers like DDD, WWW, HH, etc.
-4. go check that if you need it.
+
+✅ 3. in the postgres documentation there are a lot of identifiers like DDD, WWW, HH, etc.
+✅ 4. go check that if you need it.
 
 # ---------------------- 92. Date Difference And Casting --------------------- #
-1. what if we want to calculate difference between two dates?
+✅ 1. what if we want to calculate difference between two dates?
+🚩🚩🚩🚩
     select now() - '1800/01/01'
-2. to cast a string to date, use 'date' to format that.
+⚡⚡⚡⚡
+
+
+✅ 2. to cast a string to date, use 'date' to format that.
+🚩🚩🚩🚩
     select date '1800/01/01';
-3. to date converts a date to a date format for postgres.
+⚡⚡⚡⚡
+
+
+✅ 3. to date converts a date to a date format for postgres.
 
 # ---------------------------- 93. Age Calculation --------------------------- #
-1. age function is used to find the age in postgres.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. age function is used to find the age in postgres.
+🚩🚩🚩🚩
     SELECT AGE (date '1995-09-16');
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. we can also calculate age between two dates.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. we can also calculate age between two dates.
+🚩🚩🚩🚩
     SELECT AGE (date '2024-05-21', date '1995-09-16');
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------ 94. Extracting Information ------------------------ #
-1. extract keyword is used to extract what we want from the date.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. extract keyword is used to extract what we want from the date.
+🚩🚩🚩🚩
     SELECT EXTRACT (DAY FROM date '1992/11/13') AS DAY;
     SELECT EXTRACT (YEAR FROM date '1992/11/13') AS YEAR;
-2. to round the date or normalize them to the first day of the month, the first day of the year.
+⚡⚡⚡⚡
+
+
+✅ 2. to round the date or normalize them to the first day of the month, the first day of the year.
+🚩🚩🚩🚩
     SELECT DATE_TRUNC ('year', date '1992/11/13');
     SELECT DATE_TRUNC ('month', date '1992/11/13');
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. this is very helpful when we need data from the begining of the month.
+
+✅ 3. this is very helpful when we need data from the begining of the month.
 
 # ------------------------------- 95. Intervals ------------------------------ #
-1. intervals allow us to write queries in a way that mirrors language.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. intervals allow us to write queries in a way that mirrors language.
+🚩🚩🚩🚩
     SELECT *
     FROM orders
     WHERE purchaseDate <= now() - interval '30 days';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. it can store and manipulate a period of time in years, months, days, hours, minutes, seconds, etc.
-3. INTERVAL '1 year 2 months 3 days';
-4. INTERVAL '2 weeks ago';
-5. INTERVAL '1 yrar 3 hours 20 minutes';
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2. it can store and manipulate a period of time in years, months, days, hours, minutes, seconds, etc.
+✅ 3. INTERVAL '1 year 2 months 3 days';
+✅ 4. INTERVAL '2 weeks ago';
+✅ 5. INTERVAL '1 yrar 3 hours 20 minutes';
+🚩🚩🚩🚩
     SELECT EXTRACT (year FROM INTERVAL '5 years 20 months');
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # --------------------- 96. Exercise: Date and Timestamp --------------------- #
-1. Get me all the employees above 60, use the appropriate date functions
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. Get me all the employees above 60, use the appropriate date functions
+🚩🚩🚩🚩
     SELECT AGE(birth_date), * 
     FROM employees
     WHERE (EXTRACT (YEAR FROM AGE(birth_date))) > 60 ;
-//////////////////////////////////////////////
-
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+⚡⚡⚡⚡
+🚩🚩🚩🚩
     SELECT count(birth_date) 
     FROM employees
     WHERE birth_date < now() - interval '61 years';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. How many employees where hired in February?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. How many employees where hired in February?
+🚩🚩🚩🚩
     SELECT count(emp_no) 
     FROM employees
     WHERE EXTRACT (MONTH FROM hire_date) = 2;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. How many employees were born in november?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. How many employees were born in november?
+🚩🚩🚩🚩
     SELECT COUNT(emp_no) 
     FROM employees
     WHERE EXTRACT (MONTH FROM birth_date) = 11;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. Who is the oldest employee?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. Who is the oldest employee?
+🚩🚩🚩🚩
     SELECT MAX(AGE(birth_date)) 
     FROM employees;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. How many orders were made in January 2004?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. How many orders were made in January 2004?
+🚩🚩🚩🚩
     SELECT COUNT(orderid)
     FROM orders
     WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------------- 97. DISTINCT ------------------------------- #
-1. it remove duplicates.
-2. distinct clause keeps one row for each group of duplicates.
-3. multiple columns will evaluate based on the combination of the columns.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. it remove duplicates.
+✅ 2. distinct clause keeps one row for each group of duplicates.
+✅ 3. multiple columns will evaluate based on the combination of the columns.
+🚩🚩🚩🚩
     SELECT DISTINCT <col1>, <col2>
     FROM <table>;
     SELECT DISTINCT salary 
     FROM salaries;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. this will return all the unique salary in the table.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. this will return all the unique salary in the table.
+🚩🚩🚩🚩
     SELECT DISTINCT salary, from_date 
     FROM salaries;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------- 98. Exercise: Distinct Keyword ---------------------- #
-1. What unique titles do we have?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. What unique titles do we have?
+🚩🚩🚩🚩
     SELECT DISTINCT title 
     FROM titles;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. How many unique birth dates are there?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. How many unique birth dates are there?
+🚩🚩🚩🚩
     SELECT COUNT(DISTINCT birth_date)
     FROM employees;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. Can I get a list of distinct life expectancy ages, Make sure there are no nulls
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. Can I get a list of distinct life expectancy ages, Make sure there are no nulls
+🚩🚩🚩🚩
     SELECT DISTINCT lifeexpectancy 
     FROM country
     WHERE lifeexpectancy IS NOT NULL 
     ORDER BY lifeexpectancy;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ----------------------------- 99. Sorting Data ----------------------------- #
-1. relational database doont care about sorting.
-2. but there is a way to sort data either ascending or descending by column.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. relational database doont care about sorting.
+✅ 2. but there is a way to sort data either ascending or descending by column.
+🚩🚩🚩🚩
     SELECT *
     FROM customers
     ORDER BY <column> [ASC/DESC];
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. sort name column by ascending.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. sort name column by ascending.
+🚩🚩🚩🚩
     SELECT *
     FROM customers
     ORDER BY name ASC;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. sort name column by descending.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. sort name column by descending.
+🚩🚩🚩🚩
     SELECT *
     FROM customers
     ORDER BY name DESC;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. it allow to sort by multiple columns.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. it allow to sort by multiple columns.
+🚩🚩🚩🚩
     SELECT *
     FROM customers
     ORDER BY name ASC, lastName DESC;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. we can use sort with different sort methods.
-7. one column ascending and another descending.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+
+✅ 6. we can use sort with different sort methods.
+✅ 7. one column ascending and another descending.
+🚩🚩🚩🚩 
     SELECT *
     FROM customers
     ORDER BY length(name);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. we can also use expressions with order by keyword.
+
+✅ 8. we can also use expressions with order by keyword.
 
 # ------------------------ 100. Exercise Sorting Data ------------------------ #
-1. Sort employees by first name ascending and last name descending
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. Sort employees by first name ascending and last name descending
+🚩🚩🚩🚩
     SELECT * 
     FROM employees
     ORDER BY first_name ASC, last_name DESC;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. Sort employees by age
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. Sort employees by age
+🚩🚩🚩🚩
     SELECT * 
     FROM employees
     ORDER BY birth_date;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. Sort employees who's name starts with a "k" by hire_date
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. Sort employees who's name starts with a "k" by hire_date
+🚩🚩🚩🚩
     SELECT * 
     FROM employees
     WHERE first_name ILIKE 'k%'
     ORDER BY hire_date;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # -------------------------- 101. Multi Table SELECT ------------------------- #
-1. this concept is very helpfull when we used to combine two related table.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. this concept is very helpfull when we used to combine two related table.
+🚩🚩🚩🚩
     SELECT  a.emp_no, 
             concat(a.first_name, a.last_name) AS "name", 
             b.salary
     FROM employees AS a, salaries AS b;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. here a is table one and b is table two.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. here a is table one and b is table two.
+🚩🚩🚩🚩
     SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a, salaries AS b
     WHERE a.emp_no = b.emp_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. primary key and foreign key are responsible for this.
-4. actually we joined two tables using primary and foreign key.
-5. a join combines columns from one table with those of another.
-6. join take a column from one table that can map to the column of another table.
-7. most common approach -> link primary key to foreign key.
-8. there are different ways of joinning tables.
+
+✅ 3. primary key and foreign key are responsible for this.
+✅ 4. actually we joined two tables using primary and foreign key.
+✅ 5. a join combines columns from one table with those of another.
+✅ 6. join take a column from one table that can map to the column of another table.
+✅ 7. most common approach -> link primary key to foreign key.
+✅ 8. there are different ways of joinning tables.
 
 # ------------------------------ 102. Inner Join ----------------------------- #
-1. inner join finds the intersection of two data set based on a link and it returns you back subset.
-2. if you have a columns that links the column from table A to table B you can use an inner join.
-3. all sql syntax have a seperate keyword for doing joints.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. inner join finds the intersection of two data set based on a link and it returns you back subset.
+✅ 2. if you have a columns that links the column from table A to table B you can use an inner join.
+✅ 3. all sql syntax have a seperate keyword for doing joints.
+🚩🚩🚩🚩
     SELECT  a.emp_no, concat(a.first_name, a.last_name) AS "name", b.salary
     FROM employees AS a
     INNER JOIN salaries AS b ON b.emp_no = a.emp_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. inner join syntax is generally considered a best practice.
-5. it's more readable than using the where syntax.
-6. it shows you what's being joined.
-7. results come back unsorted and we have to sort it.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 4. inner join syntax is generally considered a best practice.
+✅ 5. it's more readable than using the where syntax.
+✅ 6. it shows you what's being joined.
+✅ 7. results come back unsorted and we have to sort it.
+🚩🚩🚩🚩
     SELECT  a.emp_no,
             concat(a.first_name, a.last_name) AS "name",
             b.salary,
@@ -823,10 +910,11 @@ ILIKE:
     INNER JOIN titles AS c ON c.emp_no = a.emp_no
     AND c.from_date = (b.from_date + interval '2 days')
     ORDER BY a.emp_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. in the above sql command, the title change always follows 2 days after the raise.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 8. in the above sql command, the title change always follows 2 days after the raise.
+🚩🚩🚩🚩
     SELECT  a.emp_no,
             concat(a.first_name, a.last_name) AS "name",
             b.salary,
@@ -837,50 +925,55 @@ ILIKE:
     INNER JOIN titles AS c ON c.emp_no = a.emp_no
     AND (c.from_date = (b.from_date + interval '2 days') OR c.from_date = b.from_date )
     ORDER BY a.emp_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------------ 103. Self Join ------------------------------ #
-1. joining a table to itself.
-2. this usually can be done when a table has a foreign key referencing its primary key.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. joining a table to itself.
+✅ 2. this usually can be done when a table has a foreign key referencing its primary key.
+🚩🚩🚩🚩
     SELECT  a.id, a.name AS "employee", b.name AS "supervisor name"
     FROM employee AS a, employee AS b
     WHERE a.supervisorID = b.id;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
+
+✅ 3. self join and inner join are similar but the major difference is self join works in one table [having primary key and foreign key] and inner join works in multiple table [having primary key and foreign key in different table].
 
 # ------------------------------ 104. Outer Join ----------------------------- #
-1. what if i also need the rows that don't match.
-2. outer joins add the data that don't have a match.
-3. left outer joins add the data that don't have a match from table A.
-4. in sql we have two outer joints -> left outer joint and right outer joints.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. what if i also need the rows that don't match.
+✅ 2. outer joins add the data that don't have a match.
+✅ 3. left outer joins add the data that don't have a match from table A.
+✅ 4. in sql we have two outer joints -> left outer joint and right outer joints.
+🚩🚩🚩🚩
     SELECT *
     FFROM <table A> AS a
     LEFT [OUTER] JOIN <table B> AS b
     ON a.id = b.id;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. any value that does not match is made to be null.
-6. you want to know how many employees aren't managers?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 5. any value that does not match is made to be null.
+✅ 6. you want to know how many employees aren't managers?
+🚩🚩🚩🚩
     SELECT count(emp.emp_no)
     FROM employees AS emp
     LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NULL;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. you want to know how many employees are managers?
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 6. you want to know how many employees are managers?
+🚩🚩🚩🚩
     SELECT count(emp.emp_no)
     FROM employees AS emp
     LEFT JOIN dep_manager AS dep ON emp.emp_no = dep.emp_no
     WHERE dep.emp_no IS NOT NULL;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. you want to know every salary raise and also know which ones were a promotion.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 7. you want to know every salary raise and also know which ones were a promotion.
+🚩🚩🚩🚩
     SELECT  a.emp_no, 
             b.salary, 
             coalesce(c.title, 'no title change') AS "promotions",
@@ -890,66 +983,73 @@ ILIKE:
     LEFT JOIN titles AS c ON c.emp_no = a.emp_no
     AND (c.from_date = b.from_date OR c.from_date = b.from_date + INTERVAL '2 days')
     ORDER BY a.emp_no;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. right joins add the data that dont have a match from table B.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 8. right joins add the data that dont have a match from table B.
+🚩🚩🚩🚩
     SELECT *
     FROM <table A> AS a 
     RIGHT [OUTER] JOIN <table B> AS b 
     ON a.id = b.id;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-9. like we discussed earlier, any values that does not match is made to be null.
-10. there are more join techniques they just arent used that often.
+
+✅ 9. like we discussed earlier, any values that does not match is made to be null.
+✅ 10. there are more join techniques they just arent used that often.
 
 # -------------------------- 105. Less Common Joins -------------------------- #
-1. cross join - create a combination of every row.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. cross join - create a combination of every row.
+🚩🚩🚩🚩
     SELECT *
     FROM "cartesianA"
     CROSS JOIN "cartesianB";
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. it will create cross join between two tables.
-3. full outer join - returns results from both whether they match or not.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. it will create cross join between two tables.
+✅ 3. full outer join - returns results from both whether they match or not.
+🚩🚩🚩🚩
     SELECT *
     FROM "cartesianA" AS a 
     FULL JOIN "cartesianB" AS b ON a.id = b.id;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ------------------------- 106. Inner-Join Exercises ------------------------ #
-1. Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state, ordered by orderid.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state, ordered by orderid.
+🚩🚩🚩🚩
     SELECT  c.firstname, c.lastname, o.orderid 
     FROM orders AS o
     INNER JOIN customers AS c ON o.customerid = c.customerid
     WHERE c.state IN ('NY', 'OH', 'OR')
     ORDER BY o.orderid;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. Show me the inventory for each product
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 2. Show me the inventory for each product
+🚩🚩🚩🚩
     SELECT p.prod_id, i.quan_in_stock
     FROM products as p
     INNER JOIN inventory AS i ON p.prod_id = i.prod_id 
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. Show me for each employee which department they work in
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+✅ 3. Show me for each employee which department they work in
+🚩🚩🚩🚩
     SELECT e.first_name, dp.dept_name
     FROM employees AS e
     INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
     INNER JOIN departments AS dp ON dp.dept_no = de.dept_no
-//////////////////////////////////////////////
+⚡⚡⚡⚡
+
 
 # ---------------------------- 107. USING Keyword ---------------------------- #
-1. we are going to use join often.
-2. beacause we have so many tables in database.
-3. while using joins we can use "USING" instead of "ON".
-4. this helps reduce the text to type.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. we are going to use join often.
+✅ 2. beacause we have so many tables in database.
+✅ 3. while using joins we can use "USING" instead of "ON".
+✅ 4. this helps reduce the text to type.
+🚩🚩🚩🚩
     SELECT e.emp_no, e.first_name, de.dept_no
     FROM employees AS e 
     INNER JOIN dept_emp AS de USING(emp_no);
@@ -957,6 +1057,6 @@ ILIKE:
     FROM employees AS e 
     INNER JOIN dept_emp AS de USING(emp_no)
     INNER JOIN department AS d USING(dept_no);
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. try to use "USING" in most scenario.
+✅ 5. try to use "USING" in most scenario.
