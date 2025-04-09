@@ -1,0 +1,23 @@
+39. OOP Under The Hood Intro
+40. The New Keyword
+41. Prototypes: Part 1
+42. Prototypes: Part 2
+43. Prototypes: Part 3
+44. The Prototype Chain
+45. Classes, Inheritance, & Prototypes
+46. __proto__ vs. prototype
+47. Useful Prototype Methods
+Quiz 2: Section Quiz
+
+
+
+# ----------------------- 39. OOP Under The Hood Intro ----------------------- #
+# ---------------------------- 40. The New Keyword --------------------------- #
+# -------------------------- 41. Prototypes: Part 1 -------------------------- #
+# -------------------------- 42. Prototypes: Part 2 -------------------------- #
+# -------------------------- 43. Prototypes: Part 3 -------------------------- #
+# -------------------------- 44. The Prototype Chain ------------------------- #
+# ------------------ 45. Classes, Inheritance, & Prototypes ------------------ #
+# ------------------------ 46. __proto__ vs. prototype ----------------------- #
+# ----------------------- 47. Useful Prototype Methods ----------------------- #
+# --------------------------- Quiz 2: Section Quiz --------------------------- #
