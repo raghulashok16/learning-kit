@@ -29,27 +29,49 @@ Coding Exercise 2: ArrayUtils exercise
 
 ✅ Properties that dont exist is evaluated to 'undefined'.
 🚩🚩🚩🚩
-o1.age; //🚀OUTPUT🚀 undefined
+    o1.age; //🚀OUTPUT🚀 undefined
 ⚡⚡⚡⚡
 
 
 ✅ all keys get strigified in the objects.
 🚩🚩🚩🚩
-o1[1] = 'show details';
-o1["1"] = 'hide details';
-console.log(o1[1]); //🚀OUTPUT🚀 hide details 
+    o1[1] = 'show details';
+    o1["1"] = 'hide details';
+    console.log(o1[1]); //🚀OUTPUT🚀 hide details 
 ⚡⚡⚡⚡
 
 
 ✅ a property where key is "sayHi" and the value is a function.
 🚩🚩🚩🚩
-o1.sayHi = function() { return "Hi" };
-o1.sayHi(); //🚀OUTPUT🚀 Hi
+    o1.sayHi = function() { return "Hi" };
+    o1.sayHi(); //🚀OUTPUT🚀 Hi
 ⚡⚡⚡⚡
 
 
 
 # ------------------ 8. Mixing Data & Functions With Objects ----------------- #
+☢️POINTS TO REMBER☢️
+
+✅ imagine we have some useful Functions
+🚩🚩🚩🚩
+    /* Area of right triangle */
+    function getTriangleArea (a, b) {
+        return (a*b) / 2;
+    }
+
+    /* Hypotenuse of right triangle */
+    function getTriangleHypotenuse (a, b) {
+        return Math.sqrt (a**2 + b**2);
+    }
+
+    getTriangleArea(3, 4); //🚀OUTPUT🚀 6
+    getTriangleHypotenuse(3, 4) //🚀OUTPUT🚀 5
+⚡⚡⚡⚡
+
+✅ this gets very messy ( all those functions to keep tract of )
+
+
+
 # ------------------------------ 9. Class Basics ----------------------------- #
 # ----------------------------- 10. Constructors ----------------------------- #
 # ---------------------- 11. Practice Time: Bank Account --------------------- #
