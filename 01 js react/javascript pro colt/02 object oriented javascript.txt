@@ -15,6 +15,40 @@ Coding Exercise 2: ArrayUtils exercise
 
 
 # --------------- 7. Working With Plain Old JavaScript Objects --------------- #
+☢️POINTS TO REMBER☢️
+
+✅ plain old JavaScript object ( pojo ).
+🚩🚩🚩🚩
+    let o1 = {};
+    let o2 = new Object(); //same thing.
+
+    o1.name = "raghul"; //using dot notation for creating Properties.
+    o1[name] = "raghul"; //using bracket notation for creating Properties.
+⚡⚡⚡⚡
+
+
+✅ Properties that dont exist is evaluated to 'undefined'.
+🚩🚩🚩🚩
+o1.age; //🚀OUTPUT🚀 undefined
+⚡⚡⚡⚡
+
+
+✅ all keys get strigified in the objects.
+🚩🚩🚩🚩
+o1[1] = 'show details';
+o1["1"] = 'hide details';
+console.log(o1[1]); //🚀OUTPUT🚀 hide details 
+⚡⚡⚡⚡
+
+
+✅ a property where key is "sayHi" and the value is a function.
+🚩🚩🚩🚩
+o1.sayHi = function() { return "Hi" };
+o1.sayHi(); //🚀OUTPUT🚀 Hi
+⚡⚡⚡⚡
+
+
+
 # ------------------ 8. Mixing Data & Functions With Objects ----------------- #
 # ------------------------------ 9. Class Basics ----------------------------- #
 # ----------------------------- 10. Constructors ----------------------------- #
