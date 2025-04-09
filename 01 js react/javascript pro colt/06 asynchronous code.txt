@@ -1,0 +1,38 @@
+48. Callbacks: Our Good Friend
+49. Callback Hell & The Pyramid of Doom
+50. The Basics of Promises
+51. Using .then() and .catch()
+52. Promise Chaining To Flatten Code
+53. Error Handling With Promises
+54. Async/Await Basics
+55. More on Async/Await
+56. Error Handling With Async Functions
+57. Async Patterns: Parallel Async Operations
+58. Async Patterns: Sequential Async Operations
+59. Async Patterns: Promise.all()
+60. Async Patterns: Promise.allSettled()
+61. Async Patterns: Promise.race()
+62. Building Our Own Promise Objects
+63. Promisifying Node's fs.readFile()
+64. Async Num Cards Exercise
+Quiz 3: Section Quiz
+
+
+# ---------------------- 48. Callbacks: Our Good Friend ---------------------- #
+# ------------------ 49. Callback Hell & The Pyramid of Doom ----------------- #
+# ------------------------ 50. The Basics of Promises ------------------------ #
+# ---------------------- 51. Using .then() and .catch() ---------------------- #
+# ------------------- 52. Promise Chaining To Flatten Code ------------------- #
+# --------------------- 53. Error Handling With Promises --------------------- #
+# -------------------------- 54. Async/Await Basics -------------------------- #
+# -------------------------- 55. More on Async/Await ------------------------- #
+# ------------------ 56. Error Handling With Async Functions ----------------- #
+# --------------- 57. Async Patterns: Parallel Async Operations -------------- #
+# -------------- 58. Async Patterns: Sequential Async Operations ------------- #
+# --------------------- 59. Async Patterns: Promise.all() -------------------- #
+# ----------------- 60. Async Patterns: Promise.allSettled() ----------------- #
+# -------------------- 61. Async Patterns: Promise.race() -------------------- #
+# ------------------- 62. Building Our Own Promise Objects ------------------- #
+# ------------------- 63. Promisifying Node's fs.readFile() ------------------ #
+# ----------------------- 64. Async Num Cards Exercise ----------------------- #
+# --------------------------- Quiz 3: Section Quiz --------------------------- #
