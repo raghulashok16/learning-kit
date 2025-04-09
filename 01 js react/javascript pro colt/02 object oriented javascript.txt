@@ -1,0 +1,30 @@
+7. Working With Plain Old JavaScript Objects
+8. Mixing Data & Functions With Objects
+9. Class Basics
+10. Constructors
+11. Practice Time: Bank Account
+12. Instance Methods
+13. Inheritance Basics
+14. The Super Keyword
+15. Static Properties
+16. Static Methods
+17. Use Cases For Static Methods
+Coding Exercise 1: Ebook Exercise
+Coding Exercise 2: ArrayUtils exercise
+18. Connect Four OO Exercise
+
+
+# --------------- 7. Working With Plain Old JavaScript Objects --------------- #
+# ------------------ 8. Mixing Data & Functions With Objects ----------------- #
+# ------------------------------ 9. Class Basics ----------------------------- #
+# ----------------------------- 10. Constructors ----------------------------- #
+# ---------------------- 11. Practice Time: Bank Account --------------------- #
+# --------------------------- 12. Instance Methods --------------------------- #
+# -------------------------- 13. Inheritance Basics -------------------------- #
+# --------------------------- 14. The Super Keyword -------------------------- #
+# --------------------------- 15. Static Properties -------------------------- #
+# ---------------------------- 16. Static Methods ---------------------------- #
+# --------------------- 17. Use Cases For Static Methods --------------------- #
+# --------------------- Coding Exercise 1: Ebook Exercise -------------------- #
+# ------------------ Coding Exercise 2: ArrayUtils exercise ------------------ #
+# ----------------------- 18. Connect Four OO Exercise ----------------------- #
