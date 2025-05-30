@@ -7,9 +7,351 @@
 41. Example 7 - Step Wizard
 
 # ----------------- 35. Example 1 - ToDoList with useReducer ----------------- #
+
+import React, { useReducer } from 'react';
+
+function reducer(state, action) {
+    switch (action.type) {
+        case 'add':
+            return [...state, { id: Date.now(), text: action.text, completed: false }];
+        case 'toggle':
+            return state.map(todo =>
+                todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
+            );
+        case 'delete':
+            return state.filter(todo => todo.id !== action.id);
+        default:
+            throw new Error('Unknown action');
+    }
+}
+
+function App() {
+    const [todos, dispatch] = useReducer(reducer, []);
+    const [text, setText] = React.useState('');
+
+    return (
+        <div>
+            <input value={text} onChange={e => setText(e.target.value)} />
+            <button onClick={() => dispatch({ type: 'add', text })}>Add Todo</button>
+            <ul>
+                {todos.map(todo => (
+                    <li key={todo.id} style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+                        {todo.text}
+                        <button onClick={() => dispatch({ type: 'toggle', id: todo.id })}>
+                            Toggle
+                        </button>
+                        <button onClick={() => dispatch({ type: 'delete', id: todo.id })}>
+                            Delete
+                        </button>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+export default App;
+
 # --------------- 36. Example 2 - Shopping Cart with useReducer -------------- #
+
+import React, { useReducer } from 'react';
+
+// Reducer function to handle cart state updates
+function cartReducer(state, action) {
+    switch (action.type) {
+        case 'add':
+            // Check if item already exists
+            const existingItem = state.find(item => item.id === action.item.id);
+            if (existingItem) {
+                // Update quantity if item exists
+                return state.map(item =>
+                    item.id === action.item.id
+                        ? { ...item, quantity: item.quantity + action.item.quantity }
+                        : item
+                );
+            } else {
+                // Add new item to cart
+                return [...state, action.item];
+            }
+
+        case 'remove':
+            // Remove item by filtering it out
+            return state.filter(item => item.id !== action.id);
+
+        case 'updateQuantity':
+            // Update item quantity
+            return state.map(item =>
+                item.id === action.id
+                    ? { ...item, quantity: action.quantity }
+                    : item
+            );
+
+        case 'clear':
+            // Clear the cart
+            return [];
+
+        default:
+            throw new Error('Unknown action type');
+    }
+}
+
+function App() {
+    const [cart, dispatch] = useReducer(cartReducer, []); // Initial cart is empty
+
+    // Example items (in a real app, these might come from an API)
+    const items = [
+        { id: 1, name: 'Apple', price: 1.5 },
+        { id: 2, name: 'Banana', price: 0.5 },
+        { id: 3, name: 'Cherry', price: 2.0 },
+    ];
+
+    return (
+        <div>
+            <h1>Shopping Cart</h1>
+
+            <h2>Items:</h2>
+            {items.map(item => (
+                <div key={item.id}>
+                    <p>
+                        {item.name} - ${item.price.toFixed(2)}
+                    </p>
+                    <button onClick={() => dispatch({ type: 'add', item: { ...item, quantity: 1 } })}>
+                        Add to Cart
+                    </button>
+                </div>
+            ))}
+
+            <h2>Cart:</h2>
+            {cart.length > 0 ? (
+                <div>
+                    <ul>
+                        {cart.map(item => (
+                            <li key={item.id}>
+                                {item.name} - ${item.price.toFixed(2)} x {item.quantity}
+                                <button onClick={() => dispatch({ type: 'remove', id: item.id })}>
+                                    Remove
+                                </button>
+                                <button onClick={() => dispatch({ type: 'updateQuantity', id: item.id, quantity: item.quantity + 1 })}>
+                                    +
+                                </button>
+                                <button
+                                    onClick={() =>
+                                        dispatch({
+                                            type: 'updateQuantity',
+                                            id: item.id,
+                                            quantity: Math.max(1, item.quantity - 1),
+                                        })
+                                    }
+                                >
+                                    -
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                    <button onClick={() => dispatch({ type: 'clear' })}>Clear Cart</button>
+                </div>
+            ) : (
+                <p>Your cart is empty.</p>
+            )}
+        </div>
+    );
+}
+
+export default App;
+
 # ------------------- 37. Example 3 - Login Form Submission ------------------ #
+
+import React, { useReducer } from 'react';
+
+function formReducer(state, action) {
+    switch (action.type) {
+        case 'updateField':
+            return { ...state, [action.field]: action.value };
+        case 'reset':
+            return action.initialState;
+        default:
+            throw new Error('Unknown action type');
+    }
+}
+
+function App() {
+    const initialState = { name: '', email: '', password: '' };
+    const [state, dispatch] = useReducer(formReducer, initialState);
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        console.log('Form Submitted:', state);
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                Name:
+                <input
+                    type="text"
+                    value={state.name}
+                    onChange={e => dispatch({ type: 'updateField', field: 'name', value: e.target.value })}
+                />
+            </label>
+            <br />
+            <label>
+                Email:
+                <input
+                    type="email"
+                    value={state.email}
+                    onChange={e => dispatch({ type: 'updateField', field: 'email', value: e.target.value })}
+                />
+            </label>
+            <br />
+            <label>
+                Password:
+                <input
+                    type="password"
+                    value={state.password}
+                    onChange={e => dispatch({ type: 'updateField', field: 'password', value: e.target.value })}
+                />
+            </label>
+            <br />
+            <button type="submit">Submit</button>
+            <button type="button" onClick={() => dispatch({ type: 'reset', initialState })}>
+                Reset
+            </button>
+        </form>
+    );
+}
+
+export default App;
+
 # ----------------------- 38. Example 4 - Theme Toggle ----------------------- #
+
+import React, { useReducer } from 'react';
+
+function themeReducer(state, action) {
+    switch (action.type) {
+        case 'toggle':
+            return state === 'light' ? 'dark' : 'light';
+        default:
+            throw new Error('Unknown action type');
+    }
+}
+
+function App() {
+    const [theme, dispatch] = useReducer(themeReducer, 'light');
+
+    return (
+        <div style={{ background: theme === 'light' ? '#fff' : '#333', color: theme === 'light' ? '#000' : '#fff', padding: '20px' }}>
+            <p>Current Theme: {theme}</p>
+            <button onClick={() => dispatch({ type: 'toggle' })}>Toggle Theme</button>
+        </div>
+    );
+}
+
+export default App;
+
 # -------------------- 39. Example 5 - Simple Bank Account ------------------- #
+
+import React, { useReducer } from 'react';
+
+function accountReducer(state, action) {
+    switch (action.type) {
+        case 'deposit':
+            return { ...state, balance: state.balance + action.amount };
+        case 'withdraw':
+            return { ...state, balance: state.balance - action.amount };
+        case 'reset':
+            return { balance: 0 };
+        default:
+            throw new Error('Unknown action type');
+    }
+}
+
+function App() {
+    const [state, dispatch] = useReducer(accountReducer, { balance: 0 });
+
+    return (
+        <div>
+            <h1>Bank Account</h1>
+            <p>Balance: ${state.balance}</p>
+            <button onClick={() => dispatch({ type: 'deposit', amount: 100 })}>Deposit $100</button>
+            <button onClick={() => dispatch({ type: 'withdraw', amount: 50 })}>Withdraw $50</button>
+            <button onClick={() => dispatch({ type: 'reset' })}>Reset Account</button>
+        </div>
+    );
+}
+
+export default App;
+
 # ------------------------- 40. Example 6 - Accordion ------------------------ #
+
+import React, { useReducer } from 'react';
+
+function accordionReducer(state, action) {
+    switch (action.type) {
+        case 'toggle':
+            return state === action.id ? null : action.id;
+        default:
+            throw new Error('Unknown action type');
+    }
+}
+
+function App() {
+    const [openSection, dispatch] = useReducer(accordionReducer, null);
+
+    const sections = [
+        { id: 1, title: 'Section 1', content: 'Content of Section 1' },
+        { id: 2, title: 'Section 2', content: 'Content of Section 2' },
+        { id: 3, title: 'Section 3', content: 'Content of Section 3' },
+    ];
+
+    return (
+        <div>
+            {sections.map(section => (
+                <div key={section.id}>
+                    <h3 onClick={() => dispatch({ type: 'toggle', id: section.id })}>
+                        {section.title}
+                    </h3>
+                    {openSection === section.id && <p>{section.content}</p>}
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export default App;
+
 # ------------------------ 41. Example 7 - Step Wizard ----------------------- #
+
+import React, { useReducer } from 'react';
+
+function stepReducer(state, action) {
+    switch (action.type) {
+        case 'next':
+            return { ...state, step: Math.min(state.step + 1, state.totalSteps) };
+        case 'prev':
+            return { ...state, step: Math.max(state.step - 1, 1) };
+        case 'reset':
+            return { ...state, step: 1 };
+        default:
+            throw new Error('Unknown action type');
+    }
+}
+
+function App() {
+    const initialState = { step: 1, totalSteps: 5 };
+    const [state, dispatch] = useReducer(stepReducer, initialState);
+
+    return (
+        <div>
+            <h1>Step {state.step} of {state.totalSteps}</h1>
+            <button onClick={() => dispatch({ type: 'prev' })} disabled={state.step === 1}>
+                Previous
+            </button>
+            <button onClick={() => dispatch({ type: 'next' })} disabled={state.step === state.totalSteps}>
+                Next
+            </button>
+            <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
+        </div>
+    );
+}
+
+export default App;
