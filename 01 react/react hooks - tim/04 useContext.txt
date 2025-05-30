@@ -1,0 +1,384 @@
+27. What is Prop Drilling?
+28. Example 1 - useContext Hook Intro
+29. Example 2 - Theming with useContext
+30. Example 3 - User Auth Profile
+31. Example 4 - Language Selection - with Challenge
+32. Language Selection Part 2 - Solution
+33. Example 5 - Shopping Cart Example
+34. Example 6 - Nested Contexts Together - Login User Authentication
+
+# ------------------------ 27. What is Prop Drilling? ------------------------ #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [user, setUser] = useState({ name: 'John Doe' });
+    return <Dashboard user={user} />;
+}
+
+function Dashboard({ user }) {
+    return (
+        <div>
+            <h1>Dashboard</h1>
+            <Sidebar user={user} />
+        </div>
+    );
+}
+
+function Sidebar({ user }) {
+    return (
+        <div>
+            <h2>Sidebar</h2>
+            <Profile user={user} />
+        </div>
+    );
+}
+
+function Profile({ user }) {
+    return (
+        <div>
+            <h2>Profile</h2>
+            <p>User Name: {user.name}</p>
+        </div>
+    );
+}
+
+export default App;
+
+# ------------------- 28. Example 1 - useContext Hook Intro ------------------ #
+
+import React, { useState, createContext, useContext } from 'react';
+
+// Create a Context for the user
+const UserContext = createContext();
+
+function App() {
+    const [user, setUser] = useState({ name: 'John Doe' });
+
+    return (
+        <UserContext.Provider value={user}>
+            <Dashboard />
+        </UserContext.Provider>
+    );
+}
+
+function Dashboard() {
+    return (
+        <div>
+            <h1>Dashboard</h1>
+            <Sidebar />
+        </div>
+    );
+}
+
+function Sidebar() {
+    return (
+        <div>
+            <h2>Sidebar</h2>
+            <Profile />
+        </div>
+    );
+}
+
+function Profile() {
+    // Use useContext to access the user from context
+    const user = useContext(UserContext);
+
+    return (
+        <div>
+            <h2>Profile</h2>
+            <p>User Name: {user.name}</p>
+        </div>
+    );
+}
+
+export default App;
+
+# ------------------ 29. Example 2 - Theming with useContext ----------------- #
+
+import React, { useState, createContext, useContext } from 'react';
+
+// Create a ThemeContext
+const ThemeContext = createContext();
+
+function App() {
+    const [theme, setTheme] = useState('light');
+
+    const toggleTheme = () => {
+        setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    };
+
+    return (
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            <Toolbar />
+        </ThemeContext.Provider>
+    );
+}
+
+function Toolbar() {
+    return (
+        <div>
+            <h1>Toolbar</h1>
+            <ThemeToggle />
+        </div>
+    );
+}
+
+function ThemeToggle() {
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
+    return (
+        <div>
+            <p>Current Theme: {theme}</p>
+            <button onClick={toggleTheme}>Toggle Theme</button>
+        </div>
+    );
+}
+
+export default App;
+
+# --------------------- 30. Example 3 - User Auth Profile -------------------- #
+
+import React, { useState, createContext, useContext } from 'react';
+
+// Create an AuthContext
+const AuthContext = createContext();
+
+function App() {
+    const [user, setUser] = useState(null);
+
+    const login = (username) => {
+        setUser({ name: username });
+    };
+
+    const logout = () => {
+        setUser(null);
+    };
+
+    return (
+        <AuthContext.Provider value={{ user, login, logout }}>
+            <Navbar />
+            <MainContent />
+        </AuthContext.Provider>
+    );
+}
+
+function Navbar() {
+    const { user, logout } = useContext(AuthContext);
+
+    return (
+        <nav>
+            <p>{user ? `Welcome, ${user.name}` : 'Not logged in'}</p>
+            {user && <button onClick={logout}>Logout</button>}
+        </nav>
+    );
+}
+
+function MainContent() {
+    const { user, login } = useContext(AuthContext);
+
+    return (
+        <div>
+            {user ? (
+                <p>Hello, {user.name}! Enjoy your session.</p>
+            ) : (
+                <button onClick={() => login('JohnDoe')}>Login</button>
+            )}
+        </div>
+    );
+}
+
+export default App;
+
+# ------------ 31. Example 4 - Language Selection - with Challenge ----------- #
+
+import React, { useState, createContext, useContext } from 'react';
+
+// Create a LanguageContext
+const LanguageContext = createContext();
+
+function App() {
+    const [language, setLanguage] = useState('en');
+
+    const changeLanguage = (lang) => {
+        setLanguage(lang);
+    };
+
+    return (
+        
+    );
+}
+
+function Header() {
+
+    return (
+        <header>
+            <h1>{language === 'en' ? 'Hello' : 'Hola'}</h1>
+            <button onClick={}>English</button>
+            <button onClick={}>Español</button>
+        </header>
+    );
+}
+
+function Content() {
+
+}
+
+export default App;
+
+# ----------------- 32. Language Selection Part 2 - Solution ----------------- #
+
+import React, { useState, createContext, useContext } from 'react';
+
+// Create a LanguageContext
+const LanguageContext = createContext();
+
+function App() {
+    const [language, setLanguage] = useState('en');
+
+    const changeLanguage = (lang) => {
+        setLanguage(lang);
+    };
+
+    return (
+        <LanguageContext.Provider value={{ language, changeLanguage }}>
+            <Header />
+            <Content />
+        </LanguageContext.Provider>
+    );
+}
+
+function Header() {
+    const { language, changeLanguage } = useContext(LanguageContext);
+
+    return (
+        <header>
+            <h1>{language === 'en' ? 'Hello' : 'Hola'}</h1>
+            <button onClick={() => changeLanguage('en')}>English</button>
+            <button onClick={() => changeLanguage('es')}>Español</button>
+        </header>
+    );
+}
+
+function Content() {
+    const { language } = useContext(LanguageContext);
+
+    return (
+        <p>{language === 'en' ? 'Welcome to our site!' : '¡Bienvenido a nuestro sitio!'}</p>
+    );
+}
+
+export default App;
+
+# ------------------- 33. Example 5 - Shopping Cart Example ------------------ #
+
+import React, { useState, createContext, useContext } from 'react';
+
+// Create a CartContext
+const CartContext = createContext();
+
+function App() {
+    const [cart, setCart] = useState([]);
+
+    const addToCart = (item) => {
+        setCart((prevCart) => [...prevCart, item]);
+    };
+
+    const removeFromCart = (item) => {
+        setCart((prevCart) => prevCart.filter((i) => i !== item));
+    };
+
+    return (
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+            <ProductList />
+            <ShoppingCart />
+        </CartContext.Provider>
+    );
+}
+
+function ProductList() {
+    const { addToCart } = useContext(CartContext);
+
+    return (
+        <div>
+            <h2>Products</h2>
+            <button onClick={() => addToCart('Product 1')}>Add Product 1</button>
+            <button onClick={() => addToCart('Product 2')}>Add Product 2</button>
+        </div>
+    );
+}
+
+function ShoppingCart() {
+    const { cart, removeFromCart } = useContext(CartContext);
+
+    return (
+        <div>
+            <h2>Shopping Cart</h2>
+            <ul>
+                {cart.map((item, index) => (
+                    <li key={index}>
+                        {item} <button onClick={() => removeFromCart(item)}>Remove</button>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+export default App;
+
+# --- 34. Example 6 - Nested Contexts Together - Login User Authentication --- #
+
+import React, { createContext, useContext, useState } from 'react';
+
+// Create contexts
+const ThemeContext = createContext();
+const AuthContext = createContext();
+
+function App() {
+    const [theme, setTheme] = useState('light');
+    const [user, setUser] = useState(null);
+
+    return (
+        <ThemeContext.Provider value={{ theme, setTheme }}>
+            <AuthContext.Provider value={{ user, setUser }}>
+                <Main />
+            </AuthContext.Provider>
+        </ThemeContext.Provider>
+    );
+}
+
+function Main() {
+    const { theme } = useContext(ThemeContext);
+    const { user } = useContext(AuthContext);
+
+    return (
+        <div style={{ backgroundColor: theme === 'light' ? 'white' : 'black', color: theme === 'light' ? 'black' : 'white' }}>
+            <h1>{user ? `Hello, ${user.name}` : 'Welcome!'}</h1>
+            <ThemeToggle />
+            <LoginButton />
+        </div>
+    );
+}
+
+function ThemeToggle() {
+    const { theme, setTheme } = useContext(ThemeContext);
+
+    return (
+        <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+            Toggle Theme
+        </button>
+    );
+}
+
+function LoginButton() {
+    const { user, setUser } = useContext(AuthContext);
+
+    return user ? (
+        <button onClick={() => setUser(null)}>Logout</button>
+    ) : (
+        <button onClick={() => setUser({ name: 'John' })}>Login</button>
+    );
+}
+
+export default App;
