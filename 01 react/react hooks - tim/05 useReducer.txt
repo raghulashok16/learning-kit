@@ -1,0 +1,15 @@
+35. Example 1 - ToDoList with useReducer
+36. Example 2 - Shopping Cart with useReducer
+37. Example 3 - Login Form Submission
+38. Example 4 - Theme Toggle
+39. Example 5 - Simple Bank Account
+40. Example 6 - Accordion
+41. Example 7 - Step Wizard
+
+# ----------------- 35. Example 1 - ToDoList with useReducer ----------------- #
+# --------------- 36. Example 2 - Shopping Cart with useReducer -------------- #
+# ------------------- 37. Example 3 - Login Form Submission ------------------ #
+# ----------------------- 38. Example 4 - Theme Toggle ----------------------- #
+# -------------------- 39. Example 5 - Simple Bank Account ------------------- #
+# ------------------------- 40. Example 6 - Accordion ------------------------ #
+# ------------------------ 41. Example 7 - Step Wizard ----------------------- #
