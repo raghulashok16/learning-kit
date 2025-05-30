@@ -6,7 +6,7 @@
 9. Example 6 - Previous Values from State
 10. Example 7 - Conditional Rendering
 
-# ---------------------- 4. Example 1 - a simple counter --------------------- #
+# ----------------------🛩️🛩️ 4. Example 1 - a simple counter 🛩️🛩️--------------------- #
 
 import React, { useState } from 'react';
 
@@ -25,7 +25,7 @@ function App() {
 
 export default App;
 
-# ------------------------ 5. Example 2 - Theme Toggle ----------------------- #
+# ------------------------🛩️🛩️ 5. Example 2 - Theme Toggle 🛩️🛩️----------------------- #
 
 import React, { useState } from 'react';
 
@@ -46,7 +46,7 @@ function App() {
 
 export default App;
 
-# ------------------------ 6. Example 3 - Simple Form ------------------------ #
+# ------------------------🛩️🛩️ 6. Example 3 - Simple Form 🛩️🛩️------------------------ #
 
 import React, { useState } from 'react';
 
@@ -76,7 +76,7 @@ function App() {
 
 export default App;
 
-# ---------------- 7. Example 4 - Arrays in State - ToDo List ---------------- #
+# ----------------🛩️🛩️ 7. Example 4 - Arrays in State - ToDo List 🛩️🛩️---------------- #
 
 import React, { useState } from 'react';
 
@@ -105,7 +105,7 @@ function App() {
 
 export default App;
 
-# ------------ 8. Example 5 - Objects in State - User Profile Form ----------- #
+# ------------🛩️🛩️ 8. Example 5 - Objects in State - User Profile Form 🛩️🛩️----------- #
 
 import React, { useState } from 'react';
 
@@ -145,7 +145,7 @@ function App() {
 
 export default App;
 
-# ----------------- 9. Example 6 - Previous Values from State ---------------- #
+# -----------------🛩️🛩️ 9. Example 6 - Previous Values from State 🛩️🛩️---------------- #
 
 import React, { useState } from 'react';
 
@@ -166,7 +166,7 @@ function App() {
 
 export default App;
 
-# ------------------- 10. Example 7 - Conditional Rendering ------------------ #
+# -------------------🛩️🛩️ 10. Example 7 - Conditional Rendering 🛩️🛩️------------------ #
 
 import React, { useState } from 'react';
 
