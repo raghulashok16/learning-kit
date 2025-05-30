@@ -1,0 +1,188 @@
+4. Example 1 - a simple counter
+5. Example 2 - Theme Toggle
+6. Example 3 - Simple Form
+7. Example 4 - Arrays in State - ToDo List
+8. Example 5 - Objects in State - User Profile Form
+9. Example 6 - Previous Values from State
+10. Example 7 - Conditional Rendering
+
+# ---------------------- 4. Example 1 - a simple counter --------------------- #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [count, setCount] = useState(0);
+
+    return (
+        <div>
+            <h2>Count: {count}</h2>
+            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <button onClick={() => setCount(count - 1)}>Decrement</button>
+            <button onClick={() => setCount(0)}>Reset</button>
+        </div>
+    );
+}
+
+export default App;
+
+# ------------------------ 5. Example 2 - Theme Toggle ----------------------- #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const toggleTheme = () => {
+        setIsDarkMode(prevMode => !prevMode);
+    };
+
+    return (
+        <div style={{ backgroundColor: isDarkMode ? 'black' : 'white', color: isDarkMode ? 'white' : 'black' }}>
+            <h2>{isDarkMode ? 'Dark Mode' : 'Light Mode'}</h2>
+            <button onClick={toggleTheme}>Toggle Theme</button>
+        </div>
+    );
+}
+
+export default App;
+
+# ------------------------ 6. Example 3 - Simple Form ------------------------ #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(`Name: ${name}, Email: ${email}`);
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label>Name:</label>
+                <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    );
+}
+
+export default App;
+
+# ---------------- 7. Example 4 - Arrays in State - ToDo List ---------------- #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [todos, setTodos] = useState([]);
+    const [newTodo, setNewTodo] = useState('');
+
+    const addTodo = () => {
+        setTodos([...todos, newTodo]);
+        setNewTodo('');
+    };
+
+    return (
+        <div>
+            <h2>Todo List</h2>
+            <input type="text" value={newTodo} onChange={(e) => setNewTodo(e.target.value)} />
+            <button onClick={addTodo}>Add Todo</button>
+            <ul>
+                {todos.map((todo, index) => (
+                    <li key={index}>{todo}</li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+export default App;
+
+# ------------ 8. Example 5 - Objects in State - User Profile Form ----------- #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [profile, setProfile] = useState({ name: '', age: '' });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setProfile((prevProfile) => ({
+            ...prevProfile,
+            [name]: value,
+        }));
+    };
+
+    return (
+        <div>
+            <h2>User Profile</h2>
+            <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                value={profile.name}
+                onChange={handleChange}
+            />
+            <input
+                type="number"
+                name="age"
+                placeholder="Age"
+                value={profile.age}
+                onChange={handleChange}
+            />
+            <p>Name: {profile.name}</p>
+            <p>Age: {profile.age}</p>
+        </div>
+    );
+}
+
+export default App;
+
+# ----------------- 9. Example 6 - Previous Values from State ---------------- #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [step, setStep] = useState(0);
+
+    const increment = () => setStep((prevStep) => prevStep + 1);
+    const decrement = () => setStep((prevStep) => prevStep - 1);
+
+    return (
+        <div>
+            <h2>Step: {step}</h2>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
+        </div>
+    );
+}
+
+export default App;
+
+# ------------------- 10. Example 7 - Conditional Rendering ------------------ #
+
+import React, { useState } from 'react';
+
+function App() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => setIsVisible((prev) => !prev);
+
+    return (
+        <div>
+            <button onClick={toggleVisibility}>
+                {isVisible ? 'Hide' : 'Show'} Text
+            </button>
+            {isVisible && <p>This is the text that can be shown or hidden.</p>}
+        </div>
+    );
+}
+
+export default App;
