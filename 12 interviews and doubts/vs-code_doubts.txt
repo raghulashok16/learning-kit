@@ -1,28 +1,32 @@
 # ------------ CREATING REACT-VITE PROJECT INSIDE A PROJECT FOLDER ----------- #
-1. open the project folder in vs code and open the terminal in vs code.
-2. make sure the working directory was correct.
-3. run the below command in the terminal.
-
+✅ 1. open the project folder in vs code and open the terminal in vs code.
+✅ 2. make sure the working directory was correct.
+✅ 3. run the below command in the terminal.
+🚩🚩🚩🚩
     npm create vite@latest .
-
-4. important: the last dot should be after the white space.
-5. choose your prefered library/framework and the language.
-6. this will create the file structure inside the project folder.
+⚡⚡⚡⚡
+ 
+✅ 4. important: the last dot should be after the white space.
+✅ 5. choose your prefered library/framework and the language.
+✅ 6. this will create the file structure inside the project folder.
 
 # ------------- THINGS TODO WHEN REACT APP DOWNLOADED FROM GITHUB ------------ #
-1. open terminal inside the app directory
-
+✅ 1. open terminal inside the app directory
+🚩🚩🚩🚩
     npm install
+⚡⚡⚡⚡
 
+🚩🚩🚩🚩
     npm i
+⚡⚡⚡⚡
 
-2. this will install all the dependencies of that app.
+✅ 2. this will install all the dependencies of that app.
 
 # --------------------------- VS CODE SHORTCUT KEYS -------------------------- #
-1. caf    -> const arrow function implicit return
-2. cafe   -> const arrow function explicit return
-3. rafce  -> import/export component with component name
-4. nfn    -> function definition
-5. us    -> Declare a new state variable using 
-6. ue    -> useEffect Hook
-7. hooks -> to list all react hooks and we can choose what hook we want.
+✅ 1. caf    -> const arrow function implicit return
+✅ 2. cafe   -> const arrow function explicit return
+✅ 3. rafce  -> import/export component with component name
+✅ 4. nfn    -> function definition
+✅ 5. us    -> Declare a new state variable using 
+✅ 6. ue    -> useEffect Hook
+✅ 7. hooks -> to list all react hooks and we can choose what hook we want.
