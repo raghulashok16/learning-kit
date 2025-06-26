@@ -1,0 +1,23 @@
+# ------------ CREATING REACT-VITE PROJECT INSIDE A PROJECT FOLDER ----------- #
+✅ 1. open the project folder in vs code and open the terminal in vs code.
+✅ 2. make sure the working directory was correct.
+✅ 3. run the below command in the terminal.
+🚩🚩🚩🚩
+    npm create vite@latest .
+⚡⚡⚡⚡
+ 
+✅ 4. important: the last dot should be after the white space.
+✅ 5. choose your prefered library/framework and the language.
+✅ 6. this will create the file structure inside the project folder.
+
+# ------------- THINGS TODO WHEN REACT APP DOWNLOADED FROM GITHUB ------------ #
+✅ 1. open terminal inside the app directory
+🚩🚩🚩🚩
+    npm install
+⚡⚡⚡⚡
+
+🚩🚩🚩🚩
+    npm i
+⚡⚡⚡⚡
+
+✅ 2. this will install all the dependencies of that app.
