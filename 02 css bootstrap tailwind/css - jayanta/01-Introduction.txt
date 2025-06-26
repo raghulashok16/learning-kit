@@ -1,0 +1,48 @@
+1. Course Introduction
+2. What is CSS ?
+3. CSS Implementation Tutorial
+
+
+# ----------------------------- 2. What is CSS ? ----------------------------- #
+✅ 1. CSS (Cascading Style Sheets) is a language used to style and layout web pages, controlling how HTML elements look on screen.  
+✅ 2. It allows you to set colors, fonts, spacing, and positioning to create visually appealing designs.  
+✅ 3. CSS works by selecting HTML elements and applying styles via rules (like `h1 { color: red; }`).  
+✅ 4. Styles can be added inline, embedded in `<style>` tags, or linked externally in `.css` files for reusability.  
+✅ 5. With features like Flexbox and Grid, CSS enables responsive designs that adapt to different screen sizes.
+
+# ---------------------- 3. CSS Implementation Tutorial ---------------------- #
+
+✅ 1. Inline CSS  
+   - Applied directly within an HTML element using the `style` attribute.  
+   - Example:  
+🚩🚩🚩🚩
+     <p style="color: blue; font-size: 16px;">This is inline CSS.</p>
+⚡⚡⚡⚡ 
+
+   - ❌ Disadvantage: Hard to maintain, not reusable.  
+
+✅ 2. Internal (Embedded) CSS  
+   - Defined inside a `<style>` tag in the `<head>` section of an HTML file.  
+   - Example:  
+🚩🚩🚩🚩
+     <head>
+       <style>
+         p { color: red; font-family: Arial; }
+       </style>
+     </head>
+⚡⚡⚡⚡ 
+
+   - ✔ Best for: Single-page styling.  
+
+✅ 3. External CSS  
+   - Written in a separate `.css` file and linked to HTML using `<link>`.  
+   - Example:  
+🚩🚩🚩🚩
+     <head>
+       <link rel="stylesheet" href="styles.css">
+     </head>
+⚡⚡⚡⚡ 
+
+   - ✔ Best for: Reusability, maintainability, and multi-page websites.  
+
+Best Practice: Use External CSS for clean, scalable styling! 🚀
