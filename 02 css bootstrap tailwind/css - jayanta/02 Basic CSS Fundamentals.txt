@@ -46,7 +46,7 @@
    div { color: hsl(120, 100%, 50%); } /* Pure Green */
 ⚡⚡⚡⚡  
 
-🟢 Example Usage  
+🛩️🛩️ Example Usage
 🚩🚩🚩🚩
 body {
   color: #333; /* Dark gray text */
@@ -58,7 +58,53 @@ body {
 
 Note: The `color` property affects text content only—for backgrounds, use `background-color`. 🎨
 
+🛩️🛩️ CSS `background-color` Property  
+    - The `background-color` property sets the background color of an element. Unlike `color` (which affects text), this property fills the entire element's background.  
 
+
+🛩️🛩️ Values Accepted:  
+✅ 1. Named Colors (e.g., `red`, `blue`)  
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+   body { background-color: lightgray; }
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
+
+✅ 2. Hexadecimal (`#RRGGBB` or `#RGB`)  
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+   div { background-color: #ff5733; } /* Orange */
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
+
+✅ 3. RGB/RGBA (Red, Green, Blue, Alpha for transparency)  
+🚩🚩🚩🚩
+   header { background-color: rgba(0, 0, 255, 0.5); } /* Semi-transparent Blue */
+⚡⚡⚡⚡  
+
+✅ 4. HSL/HSLA (Hue, Saturation, Lightness, Alpha)  
+🚩🚩🚩🚩
+   button { background-color: hsl(120, 100%, 50%); } /* Pure Green */
+⚡⚡⚡⚡  
+
+✅ 5. Transparent (Makes background see-through)  
+🚩🚩🚩🚩
+   .card { background-color: transparent; }
+⚡⚡⚡⚡  
+
+🛩️🛩️ Example Usage:  
+```css
+.box {
+  background-color: #f0f8ff; /* AliceBlue */
+  padding: 20px;
+}
+.highlight {
+  background-color: yellow;
+}
+```  
+
+Key Notes:  
+- Affects the entire background area (including padding and border, unless modified by `background-clip`).  
+- Default: `transparent`.  
+- Use with `color` for better text readability (e.g., dark text on light background).  
+
+🚀 Tip: Combine with `background-image` for advanced effects!
 # ---------------------- 5. CSS Basic Selectors Tutorial --------------------- #
 # -------------------------- 6. CSS Border Tutorial -------------------------- #
 # -------------------------- 7. CSS Outline Tutorial ------------------------- #
