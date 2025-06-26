@@ -26,37 +26,37 @@
     - The `color` property in CSS sets the text color of an element. It accepts different value formats:  
 
 ✅ 1. Named Colors (e.g., `red`, `blue`, `green`)  
-🚩🚩🚩🚩
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
    h1 { color: purple; }
-⚡⚡⚡⚡  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
 
 ✅ 2. Hexadecimal (`#RRGGBB` or `#RGB`)  
-🚩🚩🚩🚩
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
    p { color: #ff0000; } /* Red */
-⚡⚡⚡⚡  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
 
 ✅ 3. RGB/RGBA (Red, Green, Blue, Alpha for transparency)  
-🚩🚩🚩🚩
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
    span { color: rgb(0, 255, 0); } /* Green */
    a { color: rgba(0, 0, 255, 0.7); } /* Semi-transparent Blue */
-⚡⚡⚡⚡  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
 
 ✅ 4. HSL/HSLA (Hue, Saturation, Lightness, Alpha)  
-🚩🚩🚩🚩
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
    div { color: hsl(120, 100%, 50%); } /* Pure Green */
-⚡⚡⚡⚡  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
 
-🛩️🛩️ Example Usage
-🚩🚩🚩🚩
-body {
-  color: #333; /* Dark gray text */
-}
-.highlight {
-  color: rgb(255, 165, 0); /* Orange */
-}
-⚡⚡⚡⚡ 
+#️⃣ Example Usage
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+    body {
+        color: #333; /* Dark gray text */
+    }
+    .highlight {
+        color: rgb(255, 165, 0); /* Orange */
+    }
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 
 
-Note: The `color` property affects text content only—for backgrounds, use `background-color`. 🎨
+🛩️🛩️ Note: The `color` property affects text content only—for backgrounds, use `background-color`. 🎨
 
 🛩️🛩️ CSS `background-color` Property  
     - The `background-color` property sets the background color of an element. Unlike `color` (which affects text), this property fills the entire element's background.  
@@ -74,22 +74,22 @@ Note: The `color` property affects text content only—for backgrounds, use `bac
 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
 
 ✅ 3. RGB/RGBA (Red, Green, Blue, Alpha for transparency)  
-🚩🚩🚩🚩
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
    header { background-color: rgba(0, 0, 255, 0.5); } /* Semi-transparent Blue */
-⚡⚡⚡⚡  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
 ✅ 4. HSL/HSLA (Hue, Saturation, Lightness, Alpha)  
-🚩🚩🚩🚩
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
    button { background-color: hsl(120, 100%, 50%); } /* Pure Green */
-⚡⚡⚡⚡  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  
 
 ✅ 5. Transparent (Makes background see-through)  
-🚩🚩🚩🚩
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
    .card { background-color: transparent; }
-⚡⚡⚡⚡  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
-🛩️🛩️ Example Usage:  
-```css
+#️⃣ Example Usage:  
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 .box {
   background-color: #f0f8ff; /* AliceBlue */
   padding: 20px;
@@ -97,14 +97,15 @@ Note: The `color` property affects text content only—for backgrounds, use `bac
 .highlight {
   background-color: yellow;
 }
-```  
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
-Key Notes:  
+🛩️🛩️ Key Notes:  
 - Affects the entire background area (including padding and border, unless modified by `background-clip`).  
 - Default: `transparent`.  
 - Use with `color` for better text readability (e.g., dark text on light background).  
 
 🚀 Tip: Combine with `background-image` for advanced effects!
+
 # ---------------------- 5. CSS Basic Selectors Tutorial --------------------- #
 # -------------------------- 6. CSS Border Tutorial -------------------------- #
 # -------------------------- 7. CSS Outline Tutorial ------------------------- #
