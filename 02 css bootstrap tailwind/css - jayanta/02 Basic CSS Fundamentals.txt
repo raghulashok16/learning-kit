@@ -1,0 +1,82 @@
+4. CSS Color & Background Color Tutorial
+5. CSS Basic Selectors Tutorial
+6. CSS Border Tutorial
+7. CSS Outline Tutorial
+8. CSS Padding Tutorial
+9. CSS Margin Tutorial
+10. CSS Height & Width Tutorial
+11. CSS Min-height & Max-height Tutorial
+12. CSS Min-Width & Max-Width Tutorial
+13. CSS Box-Sizing Tutorial
+14. CSS Overflow Tutorial
+15. CSS Border-Radius Tutorial
+16. CSS Box-Shadow Tutorial
+17. CSS Float Tutorial
+18. CSS Clear Tutorial
+19. CSS Cursor Tutorial
+20. CSS Clip-Path Tutorial
+21. CSS Shape-Outside Tutorial
+22. CSS User-Select Tutorial
+23. CSS Box-Decoration-Break
+24. CSS Border-Image Tutorial
+25. CSS !important Hack Tutorial
+
+# ----------------- 4. CSS Color & Background Color Tutorial ----------------- #
+🛩️🛩️ CSS `color` Property  
+    - The `color` property in CSS sets the text color of an element. It accepts different value formats:  
+
+✅ 1. Named Colors (e.g., `red`, `blue`, `green`)  
+🚩🚩🚩🚩
+   h1 { color: purple; }
+⚡⚡⚡⚡  
+
+✅ 2. Hexadecimal (`#RRGGBB` or `#RGB`)  
+🚩🚩🚩🚩
+   p { color: #ff0000; } /* Red */
+⚡⚡⚡⚡  
+
+✅ 3. RGB/RGBA (Red, Green, Blue, Alpha for transparency)  
+🚩🚩🚩🚩
+   span { color: rgb(0, 255, 0); } /* Green */
+   a { color: rgba(0, 0, 255, 0.7); } /* Semi-transparent Blue */
+⚡⚡⚡⚡  
+
+✅ 4. HSL/HSLA (Hue, Saturation, Lightness, Alpha)  
+🚩🚩🚩🚩
+   div { color: hsl(120, 100%, 50%); } /* Pure Green */
+⚡⚡⚡⚡  
+
+🟢 Example Usage  
+🚩🚩🚩🚩
+body {
+  color: #333; /* Dark gray text */
+}
+.highlight {
+  color: rgb(255, 165, 0); /* Orange */
+}
+⚡⚡⚡⚡ 
+
+Note: The `color` property affects text content only—for backgrounds, use `background-color`. 🎨
+
+
+# ---------------------- 5. CSS Basic Selectors Tutorial --------------------- #
+# -------------------------- 6. CSS Border Tutorial -------------------------- #
+# -------------------------- 7. CSS Outline Tutorial ------------------------- #
+# -------------------------- 8. CSS Padding Tutorial ------------------------- #
+# -------------------------- 9. CSS Margin Tutorial -------------------------- #
+# ---------------------- 10. CSS Height & Width Tutorial --------------------- #
+# ----------------- 11. CSS Min-height & Max-height Tutorial ----------------- #
+# ------------------ 12. CSS Min-Width & Max-Width Tutorial ------------------ #
+# ------------------------ 13. CSS Box-Sizing Tutorial ----------------------- #
+# ------------------------- 14. CSS Overflow Tutorial ------------------------ #
+# ---------------------- 15. CSS Border-Radius Tutorial ---------------------- #
+# ------------------------ 16. CSS Box-Shadow Tutorial ----------------------- #
+# -------------------------- 17. CSS Float Tutorial -------------------------- #
+# -------------------------- 18. CSS Clear Tutorial -------------------------- #
+# -------------------------- 19. CSS Cursor Tutorial ------------------------- #
+# ------------------------ 20. CSS Clip-Path Tutorial ------------------------ #
+# ---------------------- 21. CSS Shape-Outside Tutorial ---------------------- #
+# ----------------------- 22. CSS User-Select Tutorial ----------------------- #
+# ----------------------- 23. CSS Box-Decoration-Break ----------------------- #
+# ----------------------- 24. CSS Border-Image Tutorial ---------------------- #
+# --------------------- 25. CSS !important Hack Tutorial --------------------- #
