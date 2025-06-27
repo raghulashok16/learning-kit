@@ -18,33 +18,33 @@
 
 # -------------------------------- BACKGROUND -------------------------------- #
 ✅ 1. to add a gradient just add the bg-gradient class after the class of the bg-color.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     .bg-primary.bg-gradient
     .bg-danger.bg-gradient
     .bg-info.bg-gradient
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 2. opacity can be added using style attribute.[just add this inside style attribute]
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     --bs-bg-opacity-75:0.75
     --bs-bg-opacity-50:0.5
     --bs-bg-opacity-25:0.25
     --bs-bg-opacity-10:0.1
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 3. opacity can be added using bootstrap class names.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     bg-opacity-75
     bg-opacity-50
     bg-warning bg-opacity-25
     bg-secondary bg-opacity-10
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 3. we do have predefined background color classes in bootstrap listed below.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     bg-primary
     bg-secondary
     bg-danger
@@ -54,50 +54,50 @@
     bg-dark
     bg-white
     bg-transparent
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 # ---------------------------------- BORDERS --------------------------------- #
 ✅ 1. we can add borders to cutom sides using bootstrap class.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     border
     border-top
     border-bottom
     border-start
     border-end
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 2. the above class are called additives classes in border and we do have subtractive classes also and they are listed below.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     border-0
     border-top-0
     border-end-0
     border-bottom-0
     border-start-0
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 3. we can also apply border colors using bootstrap class.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     border border-primary
     border border-danger
     border border-info
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 4. we can also apply border width using bootstrap class.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     border border-1
     border border-2
     border border-3
     border border-4
     border border-5
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 5. we can also add border radius with custom position.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     rounded
     rounded-top
     rounded-end
@@ -105,29 +105,29 @@
     rounded-start
     rounded-circle
     rounded-pill
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 6. we can also change the size of the border radius using bootstrap class.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     rounded-0
     rounded-1
     rounded-2
     rounded-3
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 # ---------------------------------- COLORS ---------------------------------- #
 ✅ 1. we can add opacity for text using bootstrap class.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     text-primary text-opacity-75
     text-primary text-opacity-50
     text-primary text-opacity-25
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 2. we can also add colors to the text using bootstrap class.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     text-primary
     text-secondary
     text-danger
@@ -139,93 +139,93 @@
     text-muted
     text-black-50
     text-white-50
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 # ---------------------------------- DISPLAY --------------------------------- #
 ✅ 1. in display property we have inline class in bootstrap.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-inline
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 2. in display property we have block class in bootstrap.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-block
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 3. in display property we have print-none class which is used to display only in screen and not on prints.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-print-none
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 4. we do have other print only class which is used to display only in print only and dont displayed in screen.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-none d-print-block
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 5. we do have classes to display elements based on scren size.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-none d-lg-block
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 # ----------------------------------- FLEX ----------------------------------- #
 ✅ 1. we have two major flex class in bootstrap.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-flex
     d-inline-flex
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 2. flex takes 100% width and inline-flex takes content only width.
 ✅ 3. we can enable flex class based on the screen size.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-lg-flex
     d-lg-inline-flex
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 4. inside the flex box we can specify the elements direction horizontal/vertical.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-flex flex-row
     d-flex flex-column
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 5. after choosing the direction we can reverse the direction of elements.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     d-flex flex-row-reverse
     d-flex flex-column-reverse
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 6. in flex-row we can justify contents in the horizontal way.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     justify-content-center
     justify-content-start
     justify-content-end
     justify-content-between
     justify-content-around
     justify-content-evenly
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 7. with flex-row we can only apply align-items if there is suitable height.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     align-items-center
     align-items-start
     align-items-end
     align-items-baseline
     align-items-stretch
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 8. we can add bootstrap class to the div inside flex-row container.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     align-self-start
     
 
