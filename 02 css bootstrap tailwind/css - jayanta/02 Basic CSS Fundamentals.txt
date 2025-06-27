@@ -43,19 +43,19 @@
 🔺🔺🔺
 
 ✅ 4. HSL/HSLA (Hue, Saturation, Lightness, Alpha)  
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
    div { color: hsl(120, 100%, 50%); } /* Pure Green */
-🔺🔺🔺🔺🔺🔺🔺🔺  
+🔺🔺🔺  
 
 #️⃣ Example Usage
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
     body {
         color: #333; /* Dark gray text */
     }
     .highlight {
         color: rgb(255, 165, 0); /* Orange */
     }
-🔺🔺🔺🔺🔺🔺🔺🔺 
+🔺🔺🔺 
 
 📌 Note: The `color` property affects text content only—for backgrounds, use `background-color`. 
 
@@ -65,32 +65,32 @@
 
 🛩️🛩️ Values Accepted:  
 ✅ 1. Named Colors (e.g., `red`, `blue`)  
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
    body { background-color: lightgray; }
-🔺🔺🔺🔺🔺🔺🔺🔺  
+🔺🔺🔺  
 
 ✅ 2. Hexadecimal (`#RRGGBB` or `#RGB`)  
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
    div { background-color: #ff5733; } /* Orange */
-🔺🔺🔺🔺🔺🔺🔺🔺  
+🔺🔺🔺  
 
 ✅ 3. RGB/RGBA (Red, Green, Blue, Alpha for transparency)  
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
    header { background-color: rgba(0, 0, 255, 0.5); } /* Semi-transparent Blue */
-🔺🔺🔺🔺🔺🔺🔺🔺
+🔺🔺🔺
 
 ✅ 4. HSL/HSLA (Hue, Saturation, Lightness, Alpha)  
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
    button { background-color: hsl(120, 100%, 50%); } /* Pure Green */
-🔺🔺🔺🔺🔺🔺🔺🔺  
+🔺🔺🔺  
 
 ✅ 5. Transparent (Makes background see-through)  
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
    .card { background-color: transparent; }
-🔺🔺🔺🔺🔺🔺🔺🔺
+🔺🔺🔺
 
 #️⃣ Example Usage: 
-🔻🔻🔻🔻🔻🔻🔻🔻
+🔻🔻🔻🔻🔻🔻
 .box {
   background-color: #f0f8ff; /* AliceBlue */
   padding: 20px;
@@ -98,7 +98,7 @@
 .highlight {
   background-color: yellow;
 }
-🔺🔺🔺🔺🔺🔺🔺🔺
+🔺🔺🔺
 
 📌 Key Notes:  
 - Affects the entire background area (including padding and border, unless modified by `background-clip`).  
