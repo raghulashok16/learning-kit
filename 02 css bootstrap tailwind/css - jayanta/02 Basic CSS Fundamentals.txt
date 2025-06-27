@@ -88,8 +88,8 @@
    .card { background-color: transparent; }
 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
-#️⃣ Example Usage:  
-↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+#️⃣ Example Usage: 
+🔻🔻🔻🔻🔻🔻🔻🔻
 .box {
   background-color: #f0f8ff; /* AliceBlue */
   padding: 20px;
@@ -97,7 +97,7 @@
 .highlight {
   background-color: yellow;
 }
-↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+🔺🔺🔺🔺🔺🔺🔺🔺
 
 📌 Key Notes:  
 - Affects the entire background area (including padding and border, unless modified by `background-clip`).  
@@ -127,3 +127,5 @@
 # ----------------------- 23. CSS Box-Decoration-Break ----------------------- #
 # ----------------------- 24. CSS Border-Image Tutorial ---------------------- #
 # --------------------- 25. CSS !important Hack Tutorial --------------------- #
+
+
