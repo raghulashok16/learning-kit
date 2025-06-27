@@ -14,10 +14,10 @@
 
 # ----------------------------- Installing Redux ----------------------------- #
 ✅ 1. the below is the command to install redux in plain js project.
-🚩🚩🚩🚩
+🔻🔻🔻🔻🔻🔻
     npm init --yes
     npm i redux
-⚡⚡⚡⚡
+🔺🔺🔺
 
 
 ✅ 2. create a file in the project folder "counter.js".
