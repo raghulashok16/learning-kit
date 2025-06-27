@@ -99,12 +99,12 @@
 }
 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
-🛩️🛩️ Key Notes:  
+📌 Key Notes:  
 - Affects the entire background area (including padding and border, unless modified by `background-clip`).  
 - Default: `transparent`.  
 - Use with `color` for better text readability (e.g., dark text on light background).  
 
-🚀 Tip: Combine with `background-image` for advanced effects!
+📌 Tip: Combine with `background-image` for advanced effects!
 
 # ---------------------- 5. CSS Basic Selectors Tutorial --------------------- #
 # -------------------------- 6. CSS Border Tutorial -------------------------- #
