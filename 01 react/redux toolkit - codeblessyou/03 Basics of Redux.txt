@@ -1,0 +1,54 @@
+23. Introduction of this section
+24. How Redux works - Important
+25. Introduction of your first Redux application
+26. Designing the Store Structure
+27. Listing all actions
+28. Let’s create Reducer function
+29. Creating the Redux Store
+30. Dispatching the Actions from Store
+31. Making ActionTypes
+32. Understand the subscribing and unsubscribing methods
+33. Exercise for this section
+34. Solution of this Exercise
+35. Best Folder Structure for Redux
+36. Combining Actions, Reducers and Action-types in One File
+37. Introduction of Redux-thunk
+38. Calling an API using Redux-thunk
+39. Summary
+
+
+
+# ------------------------------------------- 23. Introduction of this section #
+🛩️🛩️ Topics are:
+    ✅ 1. create redux store.
+    ✅ 2. define actions.
+    ✅ 3. define reducers.
+    ✅ 4. dispatch actions.
+    ✅ 5. sub-unsubscribe.
+    ✅ 6. folder structure.
+    ✅ 7. duck pattern.
+
+# ------------------------------------------------ How Redux works - Important #
+📌Notes:
+    - in redux, we store our applications all state in a single object called store.
+    - when a component need some data, it will get that state from the single place
+
+
+
+
+
+# --------------------------- 25. Introduction of your first Redux application #
+# ------------------------------------------ 26. Designing the Store Structure #
+# ---------------------------------------------------- 27. Listing all actions #
+# ------------------------------------------ 28. Let’s create Reducer function #
+# ----------------------------------------------- 29. Creating the Redux Store #
+# ------------------------------------- 30. Dispatching the Actions from Store #
+# ----------------------------------------------------- 31. Making ActionTypes #
+# ------------------- 32. Understand the subscribing and unsubscribing methods #
+# ---------------------------------------------- 33. Exercise for this section #
+# ---------------------------------------------- 34. Solution of this Exercise #
+# ---------------------------------------- 35. Best Folder Structure for Redux #
+# --------------- 36. Combining Actions, Reducers and Action-types in One File #
+# -------------------------------------------- 37. Introduction of Redux-thunk #
+# --------------------------------------- 38. Calling an API using Redux-thunk #
+# ---------------------------------------------------------------- 39. Summary #
