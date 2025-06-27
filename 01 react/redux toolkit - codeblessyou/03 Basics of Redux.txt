@@ -29,9 +29,9 @@
     ✅ 7. duck pattern.
 
 # ------------------------------------------------ How Redux works - Important #
-📌Notes:
+📌 Notes:
     - in redux, we store our applications all state in a single object called store.
-    - when a component need some data, it will get that state from the single place                    123456789
+    - when a component need some data, it will get that state from the single place
 
 
 
