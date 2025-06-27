@@ -56,7 +56,7 @@
     }
 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 
 
-🛩️🛩️ Note: The `color` property affects text content only—for backgrounds, use `background-color`. 🎨
+☢️ Note: The `color` property affects text content only—for backgrounds, use `background-color`. 🎨
 
 🛩️🛩️ CSS `background-color` Property  
     - The `background-color` property sets the background color of an element. Unlike `color` (which affects text), this property fills the entire element's background.  
