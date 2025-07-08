@@ -23,233 +23,234 @@
 48. Properties Worth to Remember
 
 # ------------------------ NAMING CSS CLASSES IN HTML ------------------------ #
-1. for main parent element use dash [-].
-2. for sub child element use underscore [_].
-3. below are some examples of css class names.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. for main parent element use dash [-].
+✅ 2. for sub child element use underscore [_].
+✅ 3. below are some examples of css class names.
+🚩🚩🚩🚩
     class= "main-header"
     class= "main-nav"
     class= "main-nav__items"
     class= "main-nav__item"
     class= "product-overview"
     class= "section-title"
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. refer BEM naming methodology for css.
+✅ 4. refer BEM naming methodology for css.
 
 # ----------------------- Introducing the CSS Box Model ---------------------- #
-1. every element in html is interpreted as a box by css.
-2. you can see the box in the chrome developer tool by inspecting that element.
-3. every element has a content that is the blue area in the inspect window.
-4. green area represents the padding.
-5. yellow represents the border.
-6. finally the orange color and it represents margin.
+✅ 1. every element in html is interpreted as a box by css.
+✅ 2. you can see the box in the chrome developer tool by inspecting that element.
+✅ 3. every element has a content that is the blue area in the inspect window.
+✅ 4. green area represents the padding.
+✅ 5. yellow represents the border.
+✅ 6. finally the orange color and it represents margin.
 
 # ------------------------ Understanding the Box Model ----------------------- #
-1. add padding to the content.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. add padding to the content.
+🚩🚩🚩🚩
     padding: 20px;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. padding represents the gap between the content and the border.
-3. border represents the line between the padding and the marging.
-4. we can also add border style, border color, border width in addition.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2. padding represents the gap between the content and the border.
+✅ 3. border represents the line between the padding and the marging.
+✅ 4. we can also add border style, border color, border width in addition.
+🚩🚩🚩🚩
     border-style: solid;
     border-color: black;
     border-width: 5px;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. margin is the gap above the border.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 5. margin is the gap above the border.
+🚩🚩🚩🚩
     margin: 20px;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. we can have a padding without margin and can have margin without border.
-7. so anything is possible.
+✅ 6. we can have a padding without margin and can have margin without border.
+✅ 7. so anything is possible.
 
 # ------- Understanding Margin Collapsing and Removing Default Margins ------- #
-removing default margin:
-1. every element contains default margin.
-2. css allow us to edit the default values.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🛩️🛩️ removing default margin:
+✅ 1. every element contains default margin.
+✅ 2. css allow us to edit the default values.
+🚩🚩🚩🚩
     body{
         margin: 0;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-margin collapsing:
-1. if you have two elements next to each other.
-2. either horizontal or vertical.
-3. the margin with higher one win.
-4. element1 - 2px and element2 - 5px, so margin between these two elements are 5px.
-5. remember bigger margin wins.
-6. in general use either one margin-top or margin-bottom.
-7. this reduces marging collapsing.
+🛩️🛩️ margin collapsing:
+✅ 1. if you have two elements next to each other.
+✅ 2. either horizontal or vertical.
+✅ 3. the margin with higher one win.
+✅ 4. element1 - 2px and element2 - 5px, so margin between these two elements are 5px.
+✅ 5. remember bigger margin wins.
+✅ 6. in general use either one margin-top or margin-bottom.
+✅ 7. this reduces marging collapsing.
 
 # ---------------------- Applying Shorthands in Practice --------------------- #
-1. when combined values of multiple properties are wrapped in a single property it is known as shorthand property.
-2. it is written in single line.
-
+✅ 1. when combined values of multiple properties are wrapped in a single property it is known as shorthand property.
+✅ 2. it is written in single line.
+🚩🚩🚩🚩
     border: 2px dashed orange;
+⚡⚡⚡⚡
 
-3. we can mix the order of the arguments.
-4. but while using margins order of arguments is important.
-
+✅ 3. we can mix the order of the arguments.
+✅ 4. but while using margins order of arguments is important.
+🚩🚩🚩🚩
     margin: 5px 10px 5px 10px;
     margin: 5px 10px;
     margin:10px;
+⚡⚡⚡⚡
 
-5. for 4 arguments - top, right, bottom, left.
-6. for 2 arguments - top & bottom , left & right.
-7. fot 1 argument - all sides.
-8. we use lot of shorthand in css.
-9. it allow us to write cleaner and shorter code.
+✅ 5. for 4 arguments - top, right, bottom, left.
+✅ 6. for 2 arguments - top & bottom , left & right.
+✅ 7. fot 1 argument - all sides.
+✅ 8. we use lot of shorthand in css.
+✅ 9. it allow us to write cleaner and shorter code.
 
 # ----------------- Diving Into the Height & Width Properties ---------------- #
-1. we can tell css to take our custom width.
-2. also rember that block level element takes the full width.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. we can tell css to take our custom width.
+✅ 2. also rember that block level element takes the full width.
+🚩🚩🚩🚩
     width: 100%;
     width: 50%;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. width can be specified with percentage as well as using values.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 3. width can be specified with percentage as well as using values.
+🚩🚩🚩🚩
     width: 300px;
     width: 700px;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. height property is similar to width.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 4. height property is similar to width.
+🚩🚩🚩🚩
     height: 100%;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. this code will take the full height of the parent container and not the full screen.
-6. if we have multiple child then it adjust to the full height in the remainning available space inside the parent container.
-7. we can also specify values to height argument.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 5. this code will take the full height of the parent container and not the full screen.
+✅ 6. if we have multiple child then it adjust to the full height in the remainning available space inside the parent container.
+✅ 7. we can also specify values to height argument.
+🚩🚩🚩🚩
     height: 400px;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-# ------------------------- Understanding Box Sizing 
-------------------------- #
-1. default box sizing is content box sizing.
-2. if we set a width and height of the content, not of the entire box including padding and border.
-3. there is a way to include width and height of the content to the entire box including padding and border.
-4. and that is border-box.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# --------------------------------------------------- Understanding Box Sizing #
+✅ 1. default box sizing is content box sizing.
+✅ 2. if we set a width and height of the content, not of the entire box including padding and border.
+✅ 3. there is a way to include width and height of the content to the entire box including padding and border.
+✅ 4. and that is border-box.
+🚩🚩🚩🚩
     box-sizing: content-box;
     box-sizing: border-box;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. note that margin dont involve in this concept.
-6. this concept involve just content, padding and border.
+✅ 5. note that margin dont involve in this concept.
+✅ 6. this concept involve just content, padding and border.
 
 
 # --------------------- Adding the Header to our Project --------------------- #
-1. create a section, inside it add a div and nav.
-2. inside the div place your logo.
-3. inside the nav element place your links.
-4. note that the links should be inside unordered list.
-5. now add the css code.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. create a section, inside it add a div and nav.
+✅ 2. inside the div place your logo.
+✅ 3. inside the nav element place your links.
+✅ 4. note that the links should be inside unordered list.
+✅ 5. now add the css code.
+🚩🚩🚩🚩
     .main-header{
         width: 100%;
         background: #2ddf5c;
         padding: 8px 16px;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # -------------------- Understanding the Display Property -------------------- #
-1. in html we got inline and block level elements.
-2. block takes the full width.
-3. inline is placed in same line.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. in html we got inline and block level elements.
+✅ 2. block takes the full width.
+✅ 3. inline is placed in same line.
+🚩🚩🚩🚩
     display: inline;
     display: block;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. we do have other display properties like none.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 4. we do have other display properties like none.
+🚩🚩🚩🚩
     display: none;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. if we add the css code thent he element will not render in our webpage and its space is taken by the next element.
-6. the code will be visible in the inspect window but it will not render.
-7. this will be helpfull to show modals.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 5. if we add the css code thent he element will not render in our webpage and its space is taken by the next element.
+✅ 6. the code will be visible in the inspect window but it will not render.
+✅ 7. this will be helpfull to show modals.
+🚩🚩🚩🚩
     display: inline-block;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. this will setup in onle line, this behaves like an inline elements such that they only take as much widht as their content sheets and they fit into one line but they still have a box where we can set a padding and so on.
-9. if we try to apply padding for element inside inline-block then the padding will be applied to left and right.
-10. the padding will not be applied to the top and bottom, since the element is inside the inline-block element.
-11. but if we try to add padding to the inline-block element then padding will be applied to all sides.
+✅ 8. this will setup in onle line, this behaves like an inline elements such that they only take as much widht as their content sheets and they fit into one line but they still have a box where we can set a padding and so on.
+✅ 9. if we try to apply padding for element inside inline-block then the padding will be applied to left and right.
+✅ 10. the padding will not be applied to the top and bottom, since the element is inside the inline-block element.
+✅ 11. but if we try to add padding to the inline-block element then padding will be applied to all sides.
 
-display: none vs visibility: hidden
-1. "none" attribute removes the element to which you apply it from the document flow.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🛩️🛩️ display: none vs visibility: hidden
+✅ 1. "none" attribute removes the element to which you apply it from the document flow.
+🚩🚩🚩🚩
     display: none;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. This means that the element is not visible and it also doesn't "block its position". Other elements can (and will) take its place instead.
-3. If you only want to hide an element but you want to keep its place (other elements don't fill the empty spot), you can use visibility-hidden.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2. This means that the element is not visible and it also doesn't "block its position". Other elements can (and will) take its place instead.
+✅ 3. If you only want to hide an element but you want to keep its place (other elements don't fill the empty spot), you can use visibility-hidden.
+🚩🚩🚩🚩
     visibility: hidden;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # -------------- HTML Refresher: Block-level vs Inline Elements -------------- #
-1. Block-level elements are rendered as a block and hence take up all the available horizontal space.
-2. You can set margin-top and margin-bottom and two block-level elements will render in two different lines.
-3. <div> , <section> , <article> , <nav>  but also <h1> , <h2>  etc and <p> are block-level-elements.
-4. Inline elements on the other hand only take up the space they require to fit their content in.
-5. Hence two inline-elements will fit into the same line (as long as the combined content doesn't take up the entire space in which case a line break would be added).
-6. They also use the box-model you learned about but margin-top  and margin-bottom  have no effect on the element.
-7. padding-top  and padding-bottom  also have a different effect.
-8. They don't push the adjacent content away but they will do so with the element border. 
-9. setting a width  or height  on an inline element also has no effect.
-10. The width and height is auto to take as much space as required by the content.
-11. Logically, this makes sense since you don't want your inline elements to destroy your multi-line text-layout.
-12. If you want to do so or need both block-level and inline behavior, you can set display: inline-block  to merge behaviors.
-13. Some example elements are: <a> , <span> , <img>.
+✅ 1. Block-level elements are rendered as a block and hence take up all the available horizontal space.
+✅ 2. You can set margin-top and margin-bottom and two block-level elements will render in two different lines.
+✅ 3. <div> , <section> , <article> , <nav>  but also <h1> , <h2>  etc and <p> are block-level-elements.
+✅ 4. Inline elements on the other hand only take up the space they require to fit their content in.
+✅ 5. Hence two inline-elements will fit into the same line (as long as the combined content doesn't take up the entire space in which case a line break would be added).
+✅ 6. They also use the box-model you learned about but margin-top  and margin-bottom  have no effect on the element.
+✅ 7. padding-top  and padding-bottom  also have a different effect.
+✅ 8. They don't push the adjacent content away but they will do so with the element border. 
+✅ 9. setting a width  or height  on an inline element also has no effect.
+✅ 10. The width and height is auto to take as much space as required by the content.
+✅ 11. Logically, this makes sense since you don't want your inline elements to destroy your multi-line text-layout.
+✅ 12. If you want to do so or need both block-level and inline behavior, you can set display: inline-block  to merge behaviors.
+✅ 13. Some example elements are: <a> , <span> , <img>.
 
 # ----------- Understanding an Unexpected "inline-block" Behaviour ----------- #
-1. after setting display property to inline-block, sometimes there will white space will affect the flow of the document.
-2. refer the video to understand.
+✅ 1. after setting display property to inline-block, sometimes there will white space will affect the flow of the document.
+✅ 2. refer the video to understand.
 
 # ------------- Working with "text-decoration" & "vertical-align" ------------ #
-1. some element in css have default decorations like underline, italics, etc.
-2. so we can remove it using decoration property.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. some element in css have default decorations like underline, italics, etc.
+✅ 2. so we can remove it using decoration property.
+🚩🚩🚩🚩
     text-decoration: none;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. vertical-alignment property will set the alignment in vertical position.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 3. vertical-alignment property will set the alignment in vertical position.
+🚩🚩🚩🚩
     vertical-align: middle;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 
 # ---------------------------- Styling Anchor Tags --------------------------- #
-1. to make distance between each other in nav links.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. to make distance between each other in nav links.
+🚩🚩🚩🚩
     .main-nav__item {
         margin: 0 16px;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. change text color to green for anchor tag inside the main nav bar.
-3. remove the underline in anchor tag.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 2. change text color to green for anchor tag inside the main nav bar.
+✅ 3. remove the underline in anchor tag.
+🚩🚩🚩🚩
     .main-nav__item a {
         text-decoration: none;
         color: 0e4f1f;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # --------------------------- Adding Pseudo Classes -------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
    .main-nav__item a:hover {
        
         color: white;
@@ -258,46 +259,46 @@ display: none vs visibility: hidden
         
         color: blue;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # -------------- Theory Time - Pseudo Classes & Pseudo Elements -------------- #
-1. pseudo class allow us to define a stlye for a special state of an element, like hover or active state.
-2. pseudo elements allow us to define a style of a specific part of an element.
-3. pseudo classes are defined with a single colon and pseudo_class_name.
-4. pseudo elements are defined by adding two colons.
-5. check MDN website has all these list of class and element.
+✅ 1. pseudo class allow us to define a stlye for a special state of an element, like hover or active state.
+✅ 2. pseudo elements allow us to define a style of a specific part of an element.
+✅ 3. pseudo classes are defined with a single colon and pseudo_class_name.
+✅ 4. pseudo elements are defined by adding two colons.
+✅ 5. check MDN website has all these list of class and element.
 
 
-1. when we have multiple selector to add same property to a element, then we can use the grouping technique to use them in the same line of css code.
+✅ 1. when we have multiple selector to add same property to a element, then we can use the grouping technique to use them in the same line of css code.
 
 # ------------------------------ Grouping Rules ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     .main-nav__item a:hover,
     .main-nav__item a:active {
         color: white;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # ------------------- Working with "font-weight" & "border" ------------------ #
-1. we can add different border style to our element using border property.
-2. we do have css to style font weight.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. we can add different border style to our element using border property.
+✅ 2. we do have css to style font weight.
+🚩🚩🚩🚩
     font-weight: bold;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # ---------------- OVERRIDING CSS RULES VIA ORDER OF THE FILE ---------------- #
-1. we created our webpage and we have 1000 lines of code.
-2. its hard to find multiple updates in that css file.
-3. we can override styles by adding styles to the end of the css code.
-4. when we have same specificity, order of code changes the priority.
-5. finally this method is not recomended.
+✅ 1. we created our webpage and we have 1000 lines of code.
+✅ 2. its hard to find multiple updates in that css file.
+✅ 3. we can override styles by adding styles to the end of the css code.
+✅ 4. when we have same specificity, order of code changes the priority.
+✅ 5. finally this method is not recomended.
 
 # ----------------- Adding a Background Image to our Project ----------------- #
-1. background url property can be used to add background in our design.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. background url property can be used to add background in our design.
+🚩🚩🚩🚩
     background: url("https://......");
     background: url("subfolder/....");
     background: url("file_name.jpeg");
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-2. we can specify the url using this 3 ways.
+✅ 2. we can specify the url using this 3 ways.
