@@ -15,7 +15,7 @@ Coding Exercise 2: ArrayUtils exercise
 
 
 # --------------- 7. Working With Plain Old JavaScript Objects --------------- #
-☢️POINTS TO REMBER☢️
+📌 important points
 
 ✅ plain old JavaScript object ( pojo ).
 🚩🚩🚩🚩
@@ -50,7 +50,7 @@ Coding Exercise 2: ArrayUtils exercise
 
 
 # ------------------ 8. Mixing Data & Functions With Objects ----------------- #
-☢️POINTS TO REMBER☢️
+📌 important points
 
 ✅ imagine we have some useful Functions
 🚩🚩🚩🚩
