@@ -11,7 +11,7 @@
 
 # ------------------------------- VAR LET CONST ------------------------------ #
 
-📝📝📝📝NOTES
+📌 NOTES
     - these 3 keywords are used to define variables in javascript.
     - let and const are new features in modern javascript ES6.
     - most of the developers use let and const instead of using var.
