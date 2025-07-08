@@ -1,0 +1,9 @@
+17. Type Annotations and Inference
+18. Annotations with Variables
+19. Object Literal Annotations
+20. Annotations Around Functions
+21. Understanding Inference
+22. The 'Any' Type
+23. Fixing the 'Any' Type
+24. Delayed Initialization
+25. When Inference Doesn't Work
