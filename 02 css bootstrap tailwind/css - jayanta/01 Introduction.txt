@@ -15,33 +15,33 @@
 ✅ 1. Inline CSS  
    - Applied directly within an HTML element using the `style` attribute.  
    - Example:  
-🔻🔻🔻🔻🔻🔻
+🚩🚩🚩🚩
      <p style="color: blue; font-size: 16px;">This is inline CSS.</p>
-🔺🔺🔺 
+⚡⚡⚡⚡ 
 
    - ❌ Disadvantage: Hard to maintain, not reusable.  
 
 ✅ 2. Internal (Embedded) CSS  
    - Defined inside a `<style>` tag in the `<head>` section of an HTML file.  
    - Example:  
-🔻🔻🔻🔻🔻🔻
+🚩🚩🚩🚩
      <head>
        <style>
          p { color: red; font-family: Arial; }
        </style>
      </head>
-🔺🔺🔺 
+⚡⚡⚡⚡ 
 
    - ✔ Best for: Single-page styling.  
 
 ✅ 3. External CSS  
    - Written in a separate `.css` file and linked to HTML using `<link>`.  
    - Example:  
-🔻🔻🔻🔻🔻🔻
+🚩🚩🚩🚩
      <head>
        <link rel="stylesheet" href="styles.css">
      </head>
-🔺🔺🔺 
+⚡⚡⚡⚡ 
 
    - ✔ Best for: Reusability, maintainability, and multi-page websites.  
 
