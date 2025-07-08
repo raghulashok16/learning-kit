@@ -22,14 +22,12 @@
 236. ES6 Classes Summary
 237. CHALLENGE #4
 
-# ---------------------------- 215. Section Intro ---------------------------- #
-
+# --------------------------------------------------------- 215. Section Intro #
 📌 NOTES
     - if you want to become a professional JavaScript developer, then you should learn all the topics under object-oriented-programming.
     - in this section you will gain all the knowledge about constructor function, ES6 Object.create and different ways to implement inheritance in javascript.
 
-# ----------------- 217. What is Object-Oriented Programming? ---------------- #
-
+# ---------------------------------- 217. What is Object-Oriented Programming? #
 📌 NOTES
     - object-oriented programming or OOP is a programming paradigm that is based on the concept of objects.
     - paradigm (the style of the code, how we organize code and how we write the code)
@@ -68,23 +66,19 @@
 ✅ 4. Encapsulation
     - keeping properties and methods private inside the class, so they are not accessisble from outside the class.
     
-# -------------------------- 218. OOP in JavaScript -------------------------- #
-# -------------- 219. Constructor Functions and the new Operator ------------- #
-# ------------------------------ 220. Prototypes ----------------------------- #
-# ------------ 221. Prototypal Inheritance and The Prototype Chain ----------- #
-# -------------- 222. Prototypal Inheritance on Built-In Objects ------------- #
-# ----------------------------- 223. CHALLENGE 1 ----------------------------- #
-# ----------------------------- 224. ES6 Classes ----------------------------- #
-# ------------------------- 225. Setters and Getters ------------------------- #
-# ---------------------------- 226. Static Methods --------------------------- #
-# ---------------------------- 227. Object.create ---------------------------- #
-# ----------------------------- 228. CHALLENGE 2 ----------------------------- #
-# --------- 229. Inheritance Between "Classes": Constructor Functions -------- #
-# ----------------------------- 230. CHALLENGE 3 ----------------------------- #
-# -------------- 231. Inheritance Between "Classes": ES6 Classes ------------- #
-# ------------- 232. Inheritance Between "Classes": Object.create ------------ #
-# ------------------------ 233. Another Class Example ------------------------ #
-# ----------- 234. Encapsulation: Private Class Fields and Methods ----------- #
-# --------------------------- 235. Chaining Methods -------------------------- #
-# ------------------------- 236. ES6 Classes Summary ------------------------- #
-# ----------------------------- 237. CHALLENGE 4 ----------------------------- #
+# ----------------------------------------------------- 218. OOP in JavaScript #
+# ---------------------------- 219. Constructor Functions and the new Operator #
+# ------------------------------------------------------------ 220. Prototypes #
+# ------------------------ 221. Prototypal Inheritance and The Prototype Chain #
+# ---------------------------- 222. Prototypal Inheritance on Built-In Objects #
+# ----------------------------------------------------------- 224. ES6 Classes #
+# --------------------------------------------------- 225. Setters and Getters #
+# -------------------------------------------------------- 226. Static Methods #
+# --------------------------------------------------------- 227. Object.create #
+# ------------------ 229. Inheritance Between "Classes": Constructor Functions #
+# ---------------------------- 231. Inheritance Between "Classes": ES6 Classes #
+# -------------------------- 232. Inheritance Between "Classes": Object.create #
+# ------------------------------------------------- 233. Another Class Example #
+# ----------------------- 234. Encapsulation: Private Class Fields and Methods #
+# ------------------------------------------------------ 235. Chaining Methods #
+# --------------------------------------------------- 236. ES6 Classes Summary #
