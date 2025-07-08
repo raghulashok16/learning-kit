@@ -55,10 +55,10 @@
 # ------------------------------------------------- 105. Destructuring Objects #
 
 📌 NOTES: 
-    - while destructuring objects use {} curly braces.
-    - we need to write the exact property names in object destructuring.
-    - destructuring allows us to write less code.
-    - this will be very helpfull when we work with API.
+    - ✅ while destructuring objects use {} curly braces.
+    - ✅ we need to write the exact property names in object destructuring.
+    - ✅ destructuring allows us to write less code.
+    - ✅ this will be very helpfull when we work with API.
 
 ✅ 1.  destructuring object using exact object property names.
 🚩🚩🚩🚩
@@ -109,10 +109,10 @@
 # --------------------------------------------- 106. The Spread Operator (...) #
 
 📌 NOTES
-    - this operator is used to expand an array into all of its individual elements.
-    - mainly used to take shallow copy of array and to merge two arrays.
-    - Spread operator works on all iterables [arrays, strings, maps, sets, etc] but not objects.
-    - we cannot use spread inside the template/string Literals.
+    - ✅ this operator is used to expand an array into all of its individual elements.
+    - ✅ mainly used to take shallow copy of array and to merge two arrays.
+    - ✅ Spread operator works on all iterables [arrays, strings, maps, sets, etc] but not objects.
+    - ✅ we cannot use spread inside the template/string Literals.
 
 ✅ 1. creating an new array with existing arrays.
 🚩🚩🚩🚩
