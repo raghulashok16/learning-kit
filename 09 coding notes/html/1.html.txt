@@ -1,242 +1,242 @@
 # ----------------------------------- HTML ----------------------------------- #
-1. HTML - hypertext markup language.
-2. it descibes the structure of the webpage.
+✅ 1. HTML - hypertext markup language.
+✅ 2. it descibes the structure of the webpage.
 
 # ---------------------------------- DOCTYPE --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <!DOCTYPE html> 
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. doctype tells the web browser about what html version wriiten on it.
+✅ 1. doctype tells the web browser about what html version wriiten on it.
 
 # ---------------------------- LANGUAGE ATTRIBUTE ---------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <html lang="en">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. lang attribute is used to determine the language of the text used on our webpage.
+✅ 1. lang attribute is used to determine the language of the text used on our webpage.
 
 # --------------------------------- HEAD TAG --------------------------------- #
-1. it is used to contain metadata and links to resources that are pertinent to the document but not part of the content displayed to users.
-2. meta tags are packed inside head tag.
+✅ 1. it is used to contain metadata and links to resources that are pertinent to the document but not part of the content displayed to users.
+✅ 2. meta tags are packed inside head tag.
 
 # --------------------------------- META TAG --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <meta>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. meta tags gives the additional information about our webpage to the search engines.
+✅ 1. meta tags gives the additional information about our webpage to the search engines.
 
 # ---------------------------- CHARACTER ENCODING ---------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <meta charset="UTF-8">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. charset attribute is used to specify the character encoding used in our document.
-2. UTF-8 charset is the latest one which contains all the character and symbols in the world.
+✅ 1. charset attribute is used to specify the character encoding used in our document.
+✅ 2. UTF-8 charset is the latest one which contains all the character and symbols in the world.
 
 # ----------------------------- VIEWPORT SETTINGS ---------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. Controls the layout on mobile browsers to ensure responsiveness
-2. to achive responsive webpages we use viewport to find which device we are using.
+✅ 1. Controls the layout on mobile browsers to ensure responsiveness
+✅ 2. to achive responsive webpages we use viewport to find which device we are using.
 
 # --------------------------- TITLE OF THE DOCUMENT -------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <title>Document</title>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. contents of the title tag is very important for search engine optimization.
-2. Sets the title of the webpage, which appears in the browser tab and is used by search engines.
+✅ 1. contents of the title tag is very important for search engine optimization.
+✅ 2. Sets the title of the webpage, which appears in the browser tab and is used by search engines.
 
 # -------------------------- AUTHOR AND DESCRIPTION -------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <meta name="author" content="Author Name">
     <meta name="description" content="Description of the page">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. Provides information about the author and a brief description of the webpage for search engines and social media.
+✅ 1. Provides information about the author and a brief description of the webpage for search engines and social media.
 
 # --------------------------------- KEYWORDS --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <meta name="keywords" content="HTML, CSS, JavaScript">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. Lists keywords relevant to the page content for search engines (though less commonly used today).
+✅ 1. Lists keywords relevant to the page content for search engines (though less commonly used today).
 
 # -------------------------------- LINK TO CSS ------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <link rel="stylesheet" href="styles.css">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. Links to external CSS files for styling the document.
+✅ 1. Links to external CSS files for styling the document.
 
 # ---------------------------- EXTERNAL JAVASCRIPT --------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <script src="script.js" defer></script>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. Links to external JavaScript files, with attributes like defer or async to control the loading behavior.
+✅ 1. Links to external JavaScript files, with attributes like defer or async to control the loading behavior.
 
 # ------------------------------- LINK TO ICONS ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. Specifies icons for the webpage, including favicons and touch icons for mobile devices.
+✅ 1. Specifies icons for the webpage, including favicons and touch icons for mobile devices.
 
 # --------------------------------- BODY TAG --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <body>
     ...
     </body>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. body tag contains all the contents of the html document.
-2. contents like headings, images, hyperlinks, tables, list, etc.
+✅ 1. body tag contains all the contents of the html document.
+✅ 2. contents like headings, images, hyperlinks, tables, list, etc.
 
 # -------------------------------- HEADING TAG ------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <h1>heading 1 tag</h1>
     <h2>heading 2 tag</h2>
     <h3>heading 3 tag</h3>
     <h4>heading 4 tag</h4>
     <h5>heading 5 tag</h5>
     <h6>heading 6 tag</h6>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. heading tags are used to seperate headings and subheadings on our webpages.
-2. h1 is largest and most important.
-3. h6 is least important.
+✅ 1. heading tags are used to seperate headings and subheadings on our webpages.
+✅ 2. h1 is largest and most important.
+✅ 3. h6 is least important.
 
 # ------------------------------- PARAGRAPH TAG ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>paragraph tag</p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. blank line inserted before and after them.
+✅ 1. blank line inserted before and after them.
 
 # --------------------------------- HYPERLINK -------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <a href="www.google.com">hyperlink</a>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. anchor tag  used to jump from page to page with the help of the link we used in the href attribute.
+✅ 1. anchor tag  used to jump from page to page with the help of the link we used in the href attribute.
 
 # --------------------------------- BREAK TAG -------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <br>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. br is used to add a single line break in the text, its a self closing tag.
+✅ 1. br is used to add a single line break in the text, its a self closing tag.
 
 # ----------------------------- ABBREVIATION TAG ----------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <abbr title="do message">DM</abbr>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. when hover this DM text in the browser, the title attribute will popup from the text.
-2. it defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+✅ 1. when hover this DM text in the browser, the title attribute will popup from the text.
+✅ 2. it defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
 
 # --------------------------------- CITE TAG --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <cite>Avengers</cite>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. it defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, etc.).
+✅ 1. it defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, etc.).
 
 # ------------------------------ BLOCKQUOTE TAG ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
         works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
         globally.
     </blockquote>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <blockquote> tag specifies a section that is quoted from another source.
-2. Browsers usually indent <blockquote> elements, cite attribute used to add link to the source of the quote.
+✅ 1. The <blockquote> tag specifies a section that is quoted from another source.
+✅ 2. Browsers usually indent <blockquote> elements, cite attribute used to add link to the source of the quote.
 
 # ------------------------------ SHORT QUOTATION ----------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>WWF's goal is to:
         <q>Build a future where people live in harmony with nature.</q>
         We hope they succeed.
     </p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <q> tag defines a short quotation.
-2. Browsers normally insert quotation marks around the quotation.
+✅ 1. The <q> tag defines a short quotation.
+✅ 2. Browsers normally insert quotation marks around the quotation.
 
 # ------------------------------ KEYBOARD INPUT ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <kbd> tag is used to define keyboard input.
-2. The content inside is displayed in the browser's default monospace font.
+✅ 1. The <kbd> tag is used to define keyboard input.
+✅ 2. The content inside is displayed in the browser's default monospace font.
 
 # ------------------------------- COMPUTER CODE ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>The HTML <code>button</code> tag defines a clickable button.</p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <code> tag is used to define a piece of computer code.
-2. The content inside is displayed in the browser's default monospace font.
+✅ 1. The <code> tag is used to define a piece of computer code.
+✅ 2. The content inside is displayed in the browser's default monospace font.
 
 # ------------------------------- SAMPLE OUTPUT ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p><samp>File not found.<br>Press F1 to continue</samp></p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <samp> tag is used to define sample output from a computer program.
-2. The content inside is displayed in the browser's default monospace font.
+✅ 1. The <samp> tag is used to define sample output from a computer program.
+✅ 2. The content inside is displayed in the browser's default monospace font.
 
 # --------------------------------- BOLD TEXT -------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>This is normal text - <b>and this is bold text</b>.</p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <b> tag specifies bold text without any extra importance.
+✅ 1. The <b> tag specifies bold text without any extra importance.
 
 # ----------------------------- STRONG IMPORTANCE ---------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <strong>This text is important!</strong>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <strong> tag is used to define text with strong importance.
-2. The content inside is typically displayed in bold.
+✅ 1. The <strong> tag is used to define text with strong importance.
+✅ 2. The content inside is typically displayed in bold.
 
 # ------------------------------- SMALLER TEXT ------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p><small>This is some smaller text.</small></p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <small> tag defines smaller text (like copyright and other side-comments).
+✅ 1. The <small> tag defines smaller text (like copyright and other side-comments).
 
 # --------------------------------- SPAN TAG --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>My mother has <span style="color:blue">blue</span> eyes.</p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
-2. The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
-3. The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+✅ 1. The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+✅ 2. The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+✅ 3. The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
 
 # ------------------------------ SUBSCRIPT TEXT ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>This text contains <sub>subscript</sub> text.</p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <sub> tag defines subscript text.
-2. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
-3. Subscript text can be used for chemical formulas, like H2O.
+✅ 1. The <sub> tag defines subscript text.
+✅ 2. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
+✅ 3. Subscript text can be used for chemical formulas, like H2O.
 
 # -------------------------------- ADDRESS TAG ------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <address>
         Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
         Visit us at:<br>
@@ -244,51 +244,51 @@
         Box 564, Disneyland<br>
         USA
     </address>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <address> tag defines the contact information for the author/owner of a document or an article.
-2. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
-3. The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+✅ 1. The <address> tag defines the contact information for the author/owner of a document or an article.
+✅ 2. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+✅ 3. The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
 
 # ------------------------------- UNORDERD LIST ------------------------------ #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <ul>
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ul>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. An unordered list starts with the <ul> tag.
-2. Each list item starts with the <li> tag.
-3. The list items will be marked with bullets (small black circles) by default.
+✅ 1. An unordered list starts with the <ul> tag.
+✅ 2. Each list item starts with the <li> tag.
+✅ 3. The list items will be marked with bullets (small black circles) by default.
 
 # ------------------------------- ORDERED LIST ------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <ol>
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ol>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. An ordered list starts with the <ol> tag.
-2. Each list item starts with the <li> tag.
-3. The list items will be marked with numbers by default.
+✅ 1. An ordered list starts with the <ol> tag.
+✅ 2. Each list item starts with the <li> tag.
+✅ 3. The list items will be marked with numbers by default.
 
 # ----------------------------- DESCRIPTION LIST ----------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <dl>
         <dt>Coffee</dt>
         <dd>- black hot drink</dd>
         <dt>Milk</dt>
         <dd>- white cold drink</dd>
     </dl>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. HTML also supports description lists.
-2. A description list is a list of terms, with a description of each term.
-3. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
+✅ 1. HTML also supports description lists.
+✅ 2. A description list is a list of terms, with a description of each term.
+✅ 3. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
 
 # ---------------------------------------------------------------------------- #
          <ul>	Defines an unordered list
@@ -300,66 +300,66 @@
 # ---------------------------------------------------------------------------- #
 
 # --------------------------------- DATA TAG --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <ul>
         <li><data value="21053">Cherry Tomato</data></li>
         <li><data value="21054">Beef Tomato</data></li>
         <li><data value="21055">Snack Tomato</data></li>
     </ul>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <data> tag is used to add a machine-readable translation of a given content.
-2. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.
-3. Tip: If the content is time- or date-related, use the <time> element instead.
+✅ 1. The <data> tag is used to add a machine-readable translation of a given content.
+✅ 2. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.
+✅ 3. Tip: If the content is time- or date-related, use the <time> element instead.
 
 # ---------------------------------- DELETED --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>My favorite color is <del>blue</del></p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <del> tag defines text that has been deleted from a document.
-2. Browsers will usually strike a line through deleted text.
+✅ 1. The <del> tag defines text that has been deleted from a document.
+✅ 2. Browsers will usually strike a line through deleted text.
 
 # --------------------------------- INSERTED --------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <p>My favorite color is <ins>red</ins>!</p>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <ins> tag defines a text that has been inserted into a document.
-2. Browsers will usually underline inserted text.
+✅ 1. The <ins> tag defines a text that has been inserted into a document.
+✅ 2. Browsers will usually underline inserted text.
 
 # ---------------------------- DEFINITION ELEMENT ---------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <dfn>HTML</dfn>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <dfn> tag stands for the "definition element",
-2. it specifies a term that is going to be defined within the content.
-3. The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.
+✅ 1. The <dfn> tag stands for the "definition element",
+✅ 2. it specifies a term that is going to be defined within the content.
+✅ 3. The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.
 
 # ------------------------------ EMPHASIZED TEXT ----------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <em>cannot</em>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. The <em> tag is used to define emphasized text.
-2. The content inside is typically displayed in italic.
-3. A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+✅ 1. The <em> tag is used to define emphasized text.
+✅ 2. The content inside is typically displayed in italic.
+✅ 3. A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
 
 # ------------------------------ HORIZONTAL RULE ----------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <hr>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. it is a thematic break in an HTML page.
-2. it is most often displayed as a horizontal rule that is used to separate content in an HTML page.
+✅ 1. it is a thematic break in an HTML page.
+✅ 2. it is most often displayed as a horizontal rule that is used to separate content in an HTML page.
 
 # -------------------------------- ITALIC TEXT ------------------------------- #
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+🚩🚩🚩🚩
     <i>Lorem ipsum</i>
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-1. <i> tag defines a part of text in an alternate voice or mood.
-2. The content inside is typically displayed in italic.
-3. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+✅ 1. <i> tag defines a part of text in an alternate voice or mood.
+✅ 2. The content inside is typically displayed in italic.
+✅ 3. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
 
