@@ -21,8 +21,8 @@
 # -------------------------------------------------- 103. Destructuring Arrays #
 
 📌 NOTES
-    - while destructuring array use [] square brackets.
-    - here "restaurant" is a object and "categories" is a array.
+    - ✅ while destructuring array use [] square brackets.
+    - ✅ here "restaurant" is a object and "categories" is a array.
 
 ✅ 1. destructuring array elements using es6.
 🚩🚩🚩🚩
