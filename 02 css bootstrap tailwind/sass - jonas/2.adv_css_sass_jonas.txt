@@ -1,23 +1,23 @@
 # ----------------------- SOME COLORS MIGHT BE USEFULL ----------------------- #
-1. light green - #7ed56f
-2. medium green - #55c57a
-3. dark green - #28b485
+✅ 1. light green - #7ed56f
+✅ 2. medium green - #55c57a
+✅ 3. dark green - #28b485
 
 # ------------------------- BUILDING HEADER PART - 1 ------------------------- #
-1. always use header tag to create navigation part.
-2. use "header" as class_name.
-3. follow the basic reset settings to neglect default spacings.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. always use header tag to create navigation part.
+✅ 2. use "header" as class_name.
+✅ 3. follow the basic reset settings to neglect default spacings.
+🚩🚩🚩🚩
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. these are enough to reset the browser defaults.
-5. then add font to the body which is then inherited by all the elements in the body tag.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 4. these are enough to reset the browser defaults.
+✅ 5. then add font to the body which is then inherited by all the elements in the body tag.
+🚩🚩🚩🚩
     body {
         font-family: "Lato", sans-serif;
         font-weight: 400;
@@ -26,73 +26,73 @@
         color: #777; // grey shade
         padding: 30px;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. dont forget to add the google cdn for the font "Lato".
-7. next we add styles to the header class.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 6. dont forget to add the google cdn for the font "Lato".
+✅ 7. next we add styles to the header class.
+🚩🚩🚩🚩
     .header {
         height: 95vh;
         background-image: linear-gradient(to right bottom, rgba( 126, 213, 111, 0.8 ), rgba( 40, 180, 131, 0.8 )), url(../file_location); // with opacity rgba
         background-size: cover; // cover-fits inside the box
         background-position: top;  // top position is fixed
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. to clip out image we use "clip-path" which is a mordern css feature.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 8. to clip out image we use "clip-path" which is a mordern css feature.
+🚩🚩🚩🚩
     .header {
         clip-path: polygon (0 0, 100% 0, 100% 75vh, 0 100%);
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-9. there are many "clip-path" designs we can do.
-10. check the below webite for custom shapes.
-11. bennettfeely.com/clippy/
+✅ 9. there are many "clip-path" designs we can do.
+✅ 10. check the below webite for custom shapes.
+✅ 11. bennettfeely.com/clippy/
 
 # ------------------------- BUILDING HEADER PART - 2 ------------------------- #
-1. learning transform feature is really very important in modern css.
-2. first add the logo image inside the header top left corner.
-3. remember img tag is a inline element so wrap it inside a div.
-4. name div class_name as "logo-box" and img class_name as "logo".
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. learning transform feature is really very important in modern css.
+✅ 2. first add the logo image inside the header top left corner.
+✅ 3. remember img tag is a inline element so wrap it inside a div.
+✅ 4. name div class_name as "logo-box" and img class_name as "logo".
+🚩🚩🚩🚩
     .logo-box {
         position: absolute;
         top: 40px;
         left: 40px;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. css dont know which element it should take the relative.
-6. so we need to specify that also.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 5. css dont know which element it should take the relative.
+✅ 6. so we need to specify that also.
+🚩🚩🚩🚩
     .header {
         position: relative;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
     
-7. next we are going to set the height of the img tag.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 7. next we are going to set the height of the img tag.
+🚩🚩🚩🚩
     .logo {
         height: 35px;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. by setting the height property css will automatically adjust the width based on the height.
-9. so remember just specify the height property.
-10. now create a h1 tag and 2 span elements inside it.
-11. class_name "heading-primary" for h1.
-12. class_name "heading-primary-main" for 1st span.
-13. class_name "heading-primary-sub" for 2st span.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 8. by setting the height property css will automatically adjust the width based on the height.
+✅ 9. so remember just specify the height property.
+✅ 10. now create a h1 tag and 2 span elements inside it.
+✅ 11. class_name "heading-primary" for h1.
+✅ 12. class_name "heading-primary-main" for 1st span.
+✅ 13. class_name "heading-primary-sub" for 2st span.
+🚩🚩🚩🚩
     .heading-primary {
         color: #fff // white color
         text-transform: uppercase;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-14. span element by default is a inline element, so change it to block.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 14. span element by default is a inline element, so change it to block.
+🚩🚩🚩🚩
     .heading-primary-main {
         display: block;
         font-size: 60px;
@@ -106,24 +106,24 @@
         font-weight: 700;
         letter-spacing: 17.4px; 
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-15. to display the h1 in middle center of the header in verticaal and horizontal position.
-16. to do so wrap it inside a div and name the class_name as "text-box".
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 15. to display the h1 in middle center of the header in verticaal and horizontal position.
+✅ 16. to do so wrap it inside a div and name the class_name as "text-box".
+🚩🚩🚩🚩
     .text-box {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate( -50%, -50% );
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # -------------------------- CREATING CSS ANIMATIONS ------------------------- #
-1. now we are going to add animations using keyframes.
-2. inside keyframes we specify the start to end animattions in percentages.
-3. we can add any percentages in keyframes from 0 to 100.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. now we are going to add animations using keyframes.
+✅ 2. inside keyframes we specify the start to end animattions in percentages.
+✅ 3. we can add any percentages in keyframes from 0 to 100.
+🚩🚩🚩🚩
     @keyframes moveInLeft {
         0% {
             opacity: 0;
@@ -139,24 +139,24 @@
             transform: translate(0);
         }
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. after creating animations add it inside h1 span1 heading class.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 4. after creating animations add it inside h1 span1 heading class.
+🚩🚩🚩🚩
     .heading-primary-main {
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5. some other animation properties.
+✅ 5. some other animation properties.
 
     [ animation-delay: 3s; ] this delays the animation start time.
     [ animation-iteration-count: 3; ] this repeats the animation.
 
-6. now create a animation for span2 inside the h1 that move in right direction.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 6. now create a animation for span2 inside the h1 that move in right direction.
+🚩🚩🚩🚩
     @keyframes moveInRight {
         0% {
             opacity: 0;
@@ -172,32 +172,32 @@
             transform: translate(0);
         }
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. this is similar to the moveInLeft but the direction is in the opposite.
-8. there is a shorthand property which specifies all animation in a single line.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 7. this is similar to the moveInLeft but the direction is in the opposite.
+✅ 8. there is a shorthand property which specifies all animation in a single line.
+🚩🚩🚩🚩
     .heading-primary-sub {
         animation: moveInRight 1s ease-out;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-9. some times there will be a slight vertical glitch which occurs in animation.
-10. but there is a solution for that.
-11. just add this property in the parent element of the animation element.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 9. some times there will be a slight vertical glitch which occurs in animation.
+✅ 10. but there is a solution for that.
+✅ 11. just add this property in the parent element of the animation element.
+🚩🚩🚩🚩
     .heading-primary {
         backface-visibility: hidden;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-12. when transforming element there will be some back part glitch, its visibility is hidden by this property.
+✅ 12. when transforming element there will be some back part glitch, its visibility is hidden by this property.
 
 # ---------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 1 --------------- #
-1. create a button under the h1 tag but inside the div of text-box.
-2. add class_names as "btn btn-white".
-3. since this the white color button.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. create a button under the h1 tag but inside the div of text-box.
+✅ 2. add class_names as "btn btn-white".
+✅ 3. since this the white color button.
+🚩🚩🚩🚩
     .btn:link,
     .btn:visited {
         text-transform: uppercase;
@@ -210,95 +210,95 @@
         background-color: #fff; // white color
         color: #777; // grey shade
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. inline elements are considered as text so add text center to the parent  will make the button horizontally center.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 4. inline elements are considered as text so add text center to the parent  will make the button horizontally center.
+🚩🚩🚩🚩
     .text-box {
        text-align: center;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-5.when hover we need to add animation to the button.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 5.when hover we need to add animation to the button.
+🚩🚩🚩🚩
     .btn:hover {
         transform: translateY(-3px);
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-6. we also need to add animation when clicked.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 6. we also need to add animation when clicked.
+🚩🚩🚩🚩
     .btn:active {
         transform: translateY(-1px); 
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-7. now add border radius to the button.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 7. now add border radius to the button.
+🚩🚩🚩🚩
     .btn:link,
     .btn:visited {
         border-radius: 100px;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-8. to add animation run smoothly we add the transition property in the initial state.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 8. to add animation run smoothly we add the transition property in the initial state.
+🚩🚩🚩🚩
     .btn:link,
     .btn:visited {
         transition: all .2s;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-9. now adding box shadow in hover state.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 9. now adding box shadow in hover state.
+🚩🚩🚩🚩
     .btn:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); // shadow downwards
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-10. now adding box shadow in active state which is smaller than the hover state.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 10. now adding box shadow in active state which is smaller than the hover state.
+🚩🚩🚩🚩
     .btn:active {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); // shadow downwards
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-# ---------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 2 
---------------- #
-1. this is for animation when we hover the button.
-2. watch the video to see detailed instructions.
-3. this is based on the scaling animation.
+# -------------------------------- BUILDING A COMPLEX ANIMATED BUTTON - PART 2 #
+
+✅ 1. this is for animation when we hover the button.
+✅ 2. watch the video to see detailed instructions.
+✅ 3. this is based on the scaling animation.
 
 # ---------------- THREE PILLARS OF WRITING GOOD HTML AND CSS ---------------- #
-1. responsive design - [ fluid layouts, media queries, responsive images, correct units, desktop-first vs mobile-first ].
-2. maintainable and scalable code - [ clean, easy-to-understand, growth, reusable, how to organize files, how to name classes, how to structure HTML ].
-3. web performance - [ less HTTP requests, less code, compress code, less images, compress images ].
+✅ 1. responsive design - [ fluid layouts, media queries, responsive images, correct units, desktop-first vs mobile-first ].
+✅ 2. maintainable and scalable code - [ clean, easy-to-understand, growth, reusable, how to organize files, how to name classes, how to structure HTML ].
+✅ 3. web performance - [ less HTTP requests, less code, compress code, less images, compress images ].
 
 # ---------------------- HOW CSS WORKS BEHIND THE SCENES --------------------- #
-1. first the browser starts to load the initial html file.
-2. the html file is then parsed which means that it decodes the code line by line.
-3. from this process the browser builds the DOM. 
-4. DOM describes the entire web document, like a tree like structure.
-5. as the browser parses the html, it also finds the style sheets included in the html head, and it starts loading them as well.
-6. like html css is also parsed, but the parsing of css is a bit more complex.
-7. during the css parsing phase there are two main steps.
-8. in first step the conflicting css declarations are resolved through a process known as the cascade.
-9. in second step the final css values are processed like converting margin units from percentage to pixels.
-10. after parsing phase CSS object model is created like a tree like structure called CSSOM similar to the DOM.
-11. these parsed DOM and CSSOM is stored together in a tree called RENDER TREE.
-12. with that we need everthing that we need to render a page.
-13. in order to render a page we need a visual formatting model.
-14. visual formatting model renders our page in the final step.
+✅ 1. first the browser starts to load the initial html file.
+✅ 2. the html file is then parsed which means that it decodes the code line by line.
+✅ 3. from this process the browser builds the DOM. 
+✅ 4. DOM describes the entire web document, like a tree like structure.
+✅ 5. as the browser parses the html, it also finds the style sheets included in the html head, and it starts loading them as well.
+✅ 6. like html css is also parsed, but the parsing of css is a bit more complex.
+✅ 7. during the css parsing phase there are two main steps.
+✅ 8. in first step the conflicting css declarations are resolved through a process known as the cascade.
+✅ 9. in second step the final css values are processed like converting margin units from percentage to pixels.
+✅ 10. after parsing phase CSS object model is created like a tree like structure called CSSOM similar to the DOM.
+✅ 11. these parsed DOM and CSSOM is stored together in a tree called RENDER TREE.
+✅ 12. with that we need everthing that we need to render a page.
+✅ 13. in order to render a page we need a visual formatting model.
+✅ 14. visual formatting model renders our page in the final step.
 
- # ---------- HOW CSS IS PARSED, PART 1: THE CASCADE AND SPECIFICITY ---------- #
- 1. cascade - process of combining different stylesheets and resolving conflicts between different css rules and declarations, when more than one rule applies to a certain element.
+# ---------- HOW CSS IS PARSED, PART 1: THE CASCADE AND SPECIFICITY ---------- #
+✅ 1. cascade - process of combining different stylesheets and resolving conflicts between different css rules and declarations, when more than one rule applies to a certain element.
 
 # ------------------------------- WHAT IS SASS? ------------------------------ #
-1. sass is a css preprocessor, an extension of css that adds power and elegance to the basic language.
-2. SASS SOURCE CODE -> SASS COMPILER -> COMPILED CSS CODE.
-3. we write a sass code and a compiler converts the sass code into regular css code.
-4. there are other preprocessor like LESS and STYLUS but SASS is the popular one.
-5. features offered by sass,
+✅ 1. sass is a css preprocessor, an extension of css that adds power and elegance to the basic language.
+✅ 2. SASS SOURCE CODE -> SASS COMPILER -> COMPILED CSS CODE.
+✅ 3. we write a sass code and a compiler converts the sass code into regular css code.
+✅ 4. there are other preprocessor like LESS and STYLUS but SASS is the popular one.
+✅ 5. features offered by sass,
     # variables: for reusable values such as colors, font-sizes, spacing, etc.
     # nesting: to nest selectors inside of one another, allowing us to write less code.
     # operators: for mathematical operations right inside of css.
@@ -307,23 +307,23 @@
     # functions: similar to mixins, with the difference that they produce a value that can than be used.
     # extends: to make different selectors inherit declarations that are common to all of them.
     # control directives: for writing complex code using conditionals and loops.
-6. there are two SASS syntaxes used dont get confused by that.
-7. the sass syntax orginal one dont get the curly braces and indentative sensitive.
-8. it is little bit complicated and most of the developers use less often.
-9. the second one is the SCSS which is called sassy CSS which looks similar to original css with curly braces.
-10. this is the main difference between sass and scss.
+✅ 6. there are two SASS syntaxes used dont get confused by that.
+✅ 7. the sass syntax orginal one dont get the curly braces and indentative sensitive.
+✅ 8. it is little bit complicated and most of the developers use less often.
+✅ 9. the second one is the SCSS which is called sassy CSS which looks similar to original css with curly braces.
+✅ 10. this is the main difference between sass and scss.
 
 # --------------- FIRST STEPS WITH SASS: VARIABLES AND NESTING --------------- #
-1. to use sass in our local system, we need sass to be installed.
-2. for learning purpose use codepen website.
-3. open a new project, and change css preprocessor to scss in the settings.
-4. in sass variables are like containers that stores data, for example like variable color.
-5. by this variable we declare it only once and we can use it many times.
-6. so any change we want to change to the variable it will reflect in all places we used.
-7. in sass we use comments as below.
+✅ 1. to use sass in our local system, we need sass to be installed.
+✅ 2. for learning purpose use codepen website.
+✅ 3. open a new project, and change css preprocessor to scss in the settings.
+✅ 4. in sass variables are like containers that stores data, for example like variable color.
+✅ 5. by this variable we declare it only once and we can use it many times.
+✅ 6. so any change we want to change to the variable it will reflect in all places we used.
+✅ 7. in sass we use comments as below.
 
     // sass comments
     /* css comments */
 
-8. sass identifies a variable using dollor sign ( $ ).
-9. ampersand symbol ( & ) represent the last navigation block and it is mainly used for pseudo classes.
+✅ 8. sass identifies a variable using dollor sign ( $ ).
+✅ 9. ampersand symbol ( & ) represent the last navigation block and it is mainly used for pseudo classes.
