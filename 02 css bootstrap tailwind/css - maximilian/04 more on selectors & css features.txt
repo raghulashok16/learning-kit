@@ -5,52 +5,52 @@
 56. CSS & Browser Support
 
 # -------------- Using Multiple CSS Classes & Combined Selectors ------------- #
-1. we can add any number of classes to a element.
-2. but we need a whitespace to separate them.
-3. while using multiple classes, if any styles clashes to one another then the order of code wins in this clash.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. we can add any number of classes to a element.
+✅ 2. but we need a whitespace to separate them.
+✅ 3. while using multiple classes, if any styles clashes to one another then the order of code wins in this clash.
+🚩🚩🚩🚩
     <div class="class1 class2 class3">
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-4. also we a unofficial selector which can target element that has the id or class we specify.
-5. this targets the element only if the class matches.
-6. this is not like combinators because we use whitespace in combinator.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 4. also we a unofficial selector which can target element that has the id or class we specify.
+✅ 5. this targets the element only if the class matches.
+✅ 6. this is not like combinators because we use whitespace in combinator.
+🚩🚩🚩🚩
     <a href="#" class="active">
     a.active {
         ...css styles...
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # ------------------------------ Classes or IDs? ----------------------------- #
-1. class selectors
+✅ 1. class selectors
     -- can be reused in multiple elements.
     -- used for styling purpose only.
     -- classes are strongle connected to css.
     -- most used.
 
-2. id selectors
+✅ 2. id selectors
     -- used only once per page.
     -- cannot be reused.
 
 # -------------------------- (Not) using !important -------------------------- #
-1. !important - overrides specificity to all other selectors.
-2. dont use it unless you need it.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. !important - overrides specificity to all other selectors.
+✅ 2. dont use it unless you need it.
+🚩🚩🚩🚩
     border: 1px solid red !important;
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
 # -------------------- Selecting the Opposite with :not() -------------------- #
-1. :not() comes under pseudo class.
-2. not() selects all element with dont match.
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+✅ 1. :not() comes under pseudo class.
+✅ 2. not() selects all element with dont match.
+🚩🚩🚩🚩
     a:not(class_name){
         color: red;
     }
-//////////////////////////////////////////////
+⚡⚡⚡⚡
 
-3. dont add any white space in the selectors.
+✅ 3. dont add any white space in the selectors.
 
 # --------------------------- CSS & Browser Support -------------------------- #
-1. some features dont support in some browser versions and in some browser.
-2. 
+✅ 1. some features dont support in some browser versions and in some browser.
+✅ 2. 
