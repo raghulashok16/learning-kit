@@ -1,0 +1,7 @@
+39. Interfaces
+40. Long Type Annotations
+41. Fixing Long Annotations with Interfaces
+42. Syntax Around Interfaces
+43. Functions in Interfaces
+44. Code Reuse with Interfaces
+45. General Plan with Interfaces
