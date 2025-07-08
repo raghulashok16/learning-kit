@@ -24,13 +24,13 @@
 
 # ---------------------------- 215. Section Intro ---------------------------- #
 
-📝📝📝📝NOTES
+📌 NOTES
     - if you want to become a professional JavaScript developer, then you should learn all the topics under object-oriented-programming.
     - in this section you will gain all the knowledge about constructor function, ES6 Object.create and different ways to implement inheritance in javascript.
 
 # ----------------- 217. What is Object-Oriented Programming? ---------------- #
 
-📝📝📝📝NOTES
+📌 NOTES
     - object-oriented programming or OOP is a programming paradigm that is based on the concept of objects.
     - paradigm (the style of the code, how we organize code and how we write the code)
     - we use objects to describe aspects of the real world like (a user / to-do-list-item / HTML components / some kind of data structure).
