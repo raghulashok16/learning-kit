@@ -1,0 +1,11 @@
+1. How to Get Help
+2. Join Our Community!
+3. Course Resources
+4. Typescript Overview
+5. Environment Setup
+6. Important Update About ts-node and Axios
+7. A First App
+8. Executing Typescript Code
+9. One Quick Change
+10. Catching Errors with Typescript
+11. Catching More Errors!
