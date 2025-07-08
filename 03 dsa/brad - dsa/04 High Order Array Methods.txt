@@ -10,7 +10,6 @@
 34. Password Validator
 35. Find Missing Letter Refactor
 
-# ---------------------------- 26. Simple Examples --------------------------- #
 # -------------------------- 27. Sum Of Even Squares ------------------------- #
 const method1 = (nums) => {
     const answer = nums.filter((num) => num % 2 === 0)
