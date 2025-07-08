@@ -1,6 +1,6 @@
 # ------------------------------- WHAT IS REACT ------------------------------ #
 
-📝📝📝📝NOTES
+📌 NOTES
     - it is an open source javascript library used for building frontend applications.
     - with react we can create fast and better frontend application.
     - react was created by facebook in 2011.
@@ -8,7 +8,7 @@
 
 # -------------------------- WHY REACT IS SO POPULAR ------------------------- #
 
-📝📝📝📝NOTES
+📌 NOTES
     - before react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
     - this tree structure is called document object model[DOM].
     - by using this dom in javascript, we can add various functionality for our application like hiding side bar on button click, handling form inputs, etc.
@@ -26,7 +26,7 @@
 
 # -------------------------------- VIRTUAL DOM ------------------------------- #
 
-📝📝📝📝NOTES
+📌 NOTES
     - react is so fast because of the virtual dom feature.
     - when we create a web page with react it will maintain a virtual representation of your webpage.
     - so this virtual representaion is called vitual dom.
@@ -80,7 +80,7 @@ npm run dev
 
 # ------------------------ INSIDE VITE REACT TEMPLATE ------------------------ #
 
-📝📝📝📝NOTES
+📌 NOTES
     - we have node folder where we have all the required pakages and libraries for our application.
     - without node modules we cant run our application and that is why we use # npm install command.
     - finally we dont touch this foler.
