@@ -1,0 +1,6 @@
+26. More on Annotations Around Functions
+27. Inference Around Functions
+28. Annotations for Anonymous Functions
+29. Void and Never
+30. Destructuring with Annotations
+31. Annotations Around Objects
