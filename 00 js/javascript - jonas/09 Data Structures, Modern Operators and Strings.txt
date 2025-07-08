@@ -18,12 +18,11 @@
 124. Working With Strings - Part 3
 126. String Methods Practice
 
-# ------------------------- 103. Destructuring Arrays ------------------------ #
+# -------------------------------------------------- 103. Destructuring Arrays #
 
-📝📝📝📝NOTES
+📌 NOTES
     - while destructuring array use [] square brackets.
     - here "restaurant" is a object and "categories" is a array.
-
 
 ✅ 1. destructuring array elements using es6.
 🚩🚩🚩🚩
@@ -32,18 +31,15 @@
     const [first, second] = restaurant.categories;
 ⚡⚡⚡⚡
 
-
 ✅ 2. skip elements in array destructuring.
 🚩🚩🚩🚩
     const [first, , third] = restaurant.categories;
 ⚡⚡⚡⚡
 
-
 ✅ 3. array destructuring to swap variables.
 🚩🚩🚩🚩
     [a, b] = [b, a];
 ⚡⚡⚡⚡
-
 
 ✅ 4. destructuring nested array.
 🚩🚩🚩🚩
@@ -51,15 +47,14 @@
     const [ i, , [j, k]] = nested;
 ⚡⚡⚡⚡
 
-
 ✅ 5. setting default values in destructuring.
 🚩🚩🚩🚩
     const [a = 2, b = 1, c = 8] = [8, 9];
 ⚡⚡⚡⚡
 
-# ------------------------ 105. Destructuring Objects ------------------------ #
+# ------------------------------------------------- 105. Destructuring Objects #
 
-📝📝📝📝NOTES: 
+📌 NOTES: 
     - while destructuring objects use {} curly braces.
     - we need to write the exact property names in object destructuring.
     - destructuring allows us to write less code.
@@ -70,12 +65,10 @@
     const { name, openingHours, categories } = restaurant;
 ⚡⚡⚡⚡
 
-
 ✅ 2. destructuring object using renamed object property names.
 🚩🚩🚩🚩
     const { name: restaurantName, openingHours: hours, categories: tags } = restaurant;
 ⚡⚡⚡⚡
-
 
 ✅ 3. we can also set default values while destructuring object.
 🚩🚩🚩🚩
@@ -90,15 +83,14 @@
     ({ a, b } = obj);
 ⚡⚡⚡⚡
 
-
 ✅ 5. destructuring nested object with/without renaming .
 🚩🚩🚩🚩
     const { fri: { open, close } } = openingHours;
 ⚡⚡⚡⚡
+
 🚩🚩🚩🚩
     const { fri: { open: o, close: c } } = openingHours;
 ⚡⚡⚡⚡
-
 
 ✅ 6. destructuring object at function argument.
 🚩🚩🚩🚩
@@ -107,7 +99,6 @@
     }
 ⚡⚡⚡⚡
 
-
 ✅ 7. destructuring object at function argument with default values.
 🚩🚩🚩🚩
     function orderInRestaurant ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }){
@@ -115,39 +106,33 @@
     }
 ⚡⚡⚡⚡
 
+# --------------------------------------------- 106. The Spread Operator (...) #
 
-# ---------------------- 106. The Spread Operator (...) ---------------------- #
-
-📝📝📝📝NOTES
+📌 NOTES
     - this operator is used to expand an array into all of its individual elements.
     - mainly used to take shallow copy of array and to merge two arrays.
     - Spread operator works on all iterables [arrays, strings, maps, sets, etc] but not objects.
     - we cannot use spread inside the template/string Literals.
-
 
 ✅ 1. creating an new array with existing arrays.
 🚩🚩🚩🚩
     const newArr = [...arr1, ...arr2];
 ⚡⚡⚡⚡
 
-
 ✅ 2. creating an new array by add a element with an existing array.
 🚩🚩🚩🚩
     const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 ⚡⚡⚡⚡
-
 
 ✅ 3. take copy of an array.
 🚩🚩🚩🚩
     const mainMenuCopy = [...restaurant.mainMenu];
 ⚡⚡⚡⚡
 
-
 ✅ 4. join 2 arrays.
 🚩🚩🚩🚩
     const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 ⚡⚡⚡⚡
- 
 
 ✅ 5. manipulating strings.
 🚩🚩🚩🚩
@@ -155,26 +140,24 @@
     const strArr = [...str];
 ⚡⚡⚡⚡
 
-
 ✅ 6. calling functions by spreading arguments.
 🚩🚩🚩🚩
     restaurant.orderPasta(...ingredients);
 ⚡⚡⚡⚡
 
-
-# --------------------- 107. Rest Pattern and Parameters --------------------- #
-# --------------------- 108. Short Circuiting (&& and ||) -------------------- #
-# ----------------- 109. The Nullish Coalescing Operator (??) ---------------- #
-# --------------------- 110. Logical Assignment Operators -------------------- #
-# ------------------- 112. Looping Arrays: The for-of Loop ------------------- #
-# ----------------------- 113. Enhanced Object Literals ---------------------- #
-# ------------------------ 114. Optional Chaining (?.) ----------------------- #
-# ---------- 115. Looping Objects: Object Keys, Values, and Entries ---------- #
-# --------------------------------- 117. Sets -------------------------------- #
-# -------------------------- 118. Maps: Fundamentals ------------------------- #
-# --------------------------- 119. Maps: Iteration --------------------------- #
-# ---------------- 120. Summary: Which Data Structure to Use? ---------------- #
-# -------------------- 122. Working With Strings - Part 1 -------------------- #
-# -------------------- 123. Working With Strings - Part 2 -------------------- #
-# -------------------- 124. Working With Strings - Part 3 -------------------- #
-# ----------------------- 126. String Methods Practice ----------------------- #
+# ------------------------------------------- 107. Rest Pattern and Parameters #
+# ------------------------------------------ 108. Short Circuiting (&& and ||) #
+# ---------------------------------- 109. The Nullish Coalescing Operator (??) #
+# ------------------------------------------ 110. Logical Assignment Operators #
+# --------------------------------------- 112. Looping Arrays: The for-of Loop #
+# ---------------------------------------------- 113. Enhanced Object Literals #
+# ------------------------------------------------ 114. Optional Chaining (?.) #
+# --------------------- 115. Looping Objects: Object Keys, Values, and Entries #
+# ------------------------------------------------------------------ 117. Sets #
+# ---------------------------------------------------- 118. Maps: Fundamentals #
+# ------------------------------------------------------- 119. Maps: Iteration #
+# --------------------------------- 120. Summary: Which Data Structure to Use? #
+# ----------------------------------------- 122. Working With Strings - Part 1 #
+# ----------------------------------------- 123. Working With Strings - Part 2 #
+# ----------------------------------------- 124. Working With Strings - Part 3 #
+# ----------------------------------------------- 126. String Methods Practice #
