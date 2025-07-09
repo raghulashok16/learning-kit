@@ -1,4 +1,4 @@
-# ------------------------------- REACT ROUTER ------------------------------- #
+# --------------------------------------------------------------- REACT ROUTER #
 ✅ 1. check the latest npm for react router and run in terminal.
 🚩🚩🚩🚩
     npm i react-router
@@ -15,7 +15,7 @@
 ✅ 9. always use path='/' for home page.
 ✅ 10. element={</Home>} is used to display which component should be display when the path was selected.
 
-# --------------------------- ADDING NOT FOUND PAGE -------------------------- #
+ # ------------------------------------------------------ ADDING NOT FOUND PAGE #
 ✅ 1. it is important to create a 404 page not found in every app.
 ✅ 2. because end user wants to know what happend in the website.
 🚩🚩🚩🚩
@@ -25,7 +25,7 @@
 
 ✅ 3. we can create our own style of 404 page not found component.
 
-# -------------------------- SINGLE PAGE APPLICATION ------------------------- #
+# ---------------------------------------------------- SINGLE PAGE APPLICATION #
 ✅ 1. single page application will not reload.
 ✅ 2. if we use ancchor tag for page jump, the app will reload.
 ✅ 3. <a href='/article'>Article</a>
@@ -35,7 +35,7 @@
 ✅ 7. the main difference between 'Link' and 'NavLink' is that 'NavLink' will add active class if selected.
 ✅ 8. this feature is not availabe in 'Link'.
 
-# ----------------------------- ROUTE PARAMETERS ----------------------------- #
+# ----------------------------------------------------------- ROUTE PARAMETERS #
 ✅ 1. route parameter is a dynamic segment of the URL that allows you to capture values from the URL and pass them as props.
 ✅ 2. it can be identified by a colon followed by the parameter name.
 ✅ 3. <Route path="/users/:userId" elememt={ <UserDetail/> } />
@@ -45,7 +45,7 @@
 ✅ 7. let { userId } = useParams();
 ✅ 8. importing useParams is mandatory.
 
-# ------------------------------- QUERY STRING ------------------------------- #
+# --------------------------------------------------------------- QUERY STRING #
 ✅ 1. it is used to pass data to web servers through HTTP GET requests.
 ✅ 2. https://example.com/search?sortBy=name&category=book
 ✅ 3. query string begins with ? and contains two key-value pairs
@@ -66,8 +66,7 @@
     })
 ⚡⚡⚡⚡
 
-
-# ------------------------------ NESTED ROUTING ------------------------------ #
+# ------------------------------------------------------------- NESTED ROUTING #
 ✅ 1. for using nested routing, we need to create a <Route> inside <Route>
 🚩🚩🚩🚩
     <Route path='/admin' element={<Admin/>} >
@@ -84,13 +83,12 @@
     <Outlet/>
 ⚡⚡⚡⚡
 
-
-# --------------------------- ROUTING BEST PRACTISE -------------------------- #
+# ------------------------------------------------------ ROUTING BEST PRACTISE #
 ✅ 1. always create a separate component named (<AllRouting/>) for routing.
 ✅ 2. then import that compoent in App Component.
 ✅ 3. this increases readability of our code.
 
-# ------------------------ PROGRAMMATICALLY NAVIGATION ----------------------- #
+# ------------------------------------------------ PROGRAMMATICALLY NAVIGATION #
 ✅ 1. this feature is used conditionally jump to the home page.
 ✅ 2. for example if a employee try one accesing a page of manager using the link.
 ✅ 3. then we can conditionally check if login credentials matches the manager.
