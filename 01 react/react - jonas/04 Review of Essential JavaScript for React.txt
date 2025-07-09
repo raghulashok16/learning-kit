@@ -1,5 +1,3 @@
-# ------ Section 4: [Optional] Review of Essential JavaScript for React ------ #
-
 18. Destructuring Objects and Arrays
 19. Rest/Spread Operator
 20. Template Literals
@@ -15,7 +13,7 @@
 30. Asynchronous JavaScript: Promises
 31. Asynchronous JavaScript: Async/Await 
 
-# ------------------- 18. Destructuring Objects and Arrays ------------------- #
+# --------------------------------------- 18. Destructuring Objects and Arrays #
 ✅ 1. destructuring allow us to access single or multiple values in a single line.
 🚩🚩🚩🚩
     const {title, author} = bookObject;
@@ -29,8 +27,7 @@
     const [firstElement, SecondElement, ThirdElement] = ourArray;
 ⚡⚡⚡⚡
 
-
-# ------------------------- 19. Rest/Spread Operator ------------------------- #
+# --------------------------------------------------- 19. Rest/Spread Operator #
 ✅ 1. rest operator is used to store the remaining values into our required operation.
 ✅ 2. in array destructuring we can use rest operator to store excess element in a array.
 🚩🚩🚩🚩
@@ -67,8 +64,7 @@
 ✅ 10. the additional properties will be overwritten in the newObj.
 ✅ 11. to override an existing property always use spread operator at the begining.
 
-
-# --------------------------- 20. Template Literals -------------------------- #
+# ------------------------------------------------------ 20. Template Literals #
 ✅ 1. it was introduced in es6.
 ✅ 2. it mainly used to use js expressions inside strings.
 🚩🚩🚩🚩
@@ -76,28 +72,24 @@
     const letters = `${author.split('-')}`;
 ⚡⚡⚡⚡
 
-
-# ---------------- 21. Ternaries Instead of if/else Statements --------------- #
+# -------------------------------- 21. Ternaries Instead of if/else Statements #
 ✅ 1. it is a special operator with three operands.
 🚩🚩🚩🚩
     pages>1000 ? 'over a thousand' : 'less than thousand';
     const result = `rammin got ${marks>49 ? 'pass' : 'fail'} marks`;
 ⚡⚡⚡⚡
 
-
-# ---------------------------- 22. Arrow Functions --------------------------- #
+# -------------------------------------------------------- 22. Arrow Functions #
 ✅ 1. it is a new way of writing functions in javascript.
 ✅ 2. it was introduced in es6.
 ✅ 3. it is also called one liner function.
 
-
-# ---------- 23. Short-Circuiting And Logical Operators: &&, ||, ?? ---------- #
+# --------------------- 23. Short-Circuiting And Logical Operators: &&, ||, ?? #
 ✅ 1. in the short circuiting with &&, if the first value is true then the second value will run, if first value is false then the second value will not run.
 ✅ 2. in the short circuiting with ||,if first value is true then the second value will not run, if the first value is false then the second value will run.
 ✅ 3. but when we use nullish coalescing operator, if the first value is null/undefined then the second value will run.
 
-
-# --------------------------- 24. Optional Chaining -------------------------- #
+# ------------------------------------------------------ 24. Optional Chaining #
 ✅ 1. sometimes we face a error 'cannot read properties of undefined'.
 ✅ 2. this occurs mostly in accessing obect key which was not there.
 🚩🚩🚩🚩
@@ -109,15 +101,14 @@
 ✅ 3. (?.) - is the optional chanining symbol.
 ✅ 4. by using optional chanining we can set default value because js will throw error if we try to read undefined.
 
-# ------------------------- 25. The Array map Method ------------------------- #
+# --------------------------------------------------- 25. The Array map Method #
 ✅ 1. these method do not mutate the original array.
 ✅ 2. basically a map method will loop through all the element in the array and returs the same length with some operation applied.
 🚩🚩🚩🚩
     const x = [1,2,3,4,5].map((el) => el*2);
 ⚡⚡⚡⚡
 
-
-# ------------------------ 26. The Array filter Method ----------------------- #
+# ------------------------------------------------ 26. The Array filter Method #
 ✅ 1. it is used to filter out elements based on the conditions we apply.
 🚩🚩🚩🚩
     const x = [1,2,3,4,5,6].filter((el) => el%2===0);
@@ -130,8 +121,7 @@
     const x = [1,2,3,4,5,6].filter((el) => el%2 === 0).filter((el) => el%3 === 0);
 ⚡⚡⚡⚡
 
-
-# ------------------------ 27. The Array reduce Method ----------------------- #
+# ------------------------------------------------ 27. The Array reduce Method #
 ✅ 1. reduce method is the most versatile and most powerfull method in js.
 ✅ 2. the goal of the reduce method is to reduce to a single value output.
 ✅ 3. reduce method has 2 things a function and a starting value.
@@ -140,8 +130,7 @@
     const pagesAllBooks = books.reduce((acc,book)=>acc+book.pages,0);
 ⚡⚡⚡⚡
 
-
-# ------------------------- 28. The Array sort Method ------------------------ #
+# -------------------------------------------------- 28. The Array sort Method #
 ✅ 1. to sort a array in ascending way use a-b;
 🚩🚩🚩🚩
     const sorted = arr.sort((a,b) => a-b);
@@ -172,8 +161,7 @@
 ✅ 8. here we have to mention the correct key name of property or else it wont work.
 ✅ 9. finally we can do both ascending and descending sort with both object and array.
 
-
-# --------------------- 29. Working With Immutable Arrays -------------------- #
+# ------------------------------------------ 29. Working With Immutable Arrays #
 ✅ 1. add book object to end of the array.
 🚩🚩🚩🚩
     const newBook = {
@@ -195,8 +183,7 @@
     const bookAfterUpdate = books.map((book) => book.id === 1 ? { ...book, pages: 1201 } : book);
 ⚡⚡⚡⚡
 
-
-# ------------------- 30. Asynchronous JavaScript: Promises ------------------ #
+# -------------------------------------- 30. Asynchronous JavaScript: Promises #
 ✅ 1. in order to fetch data from an api in the browser we have a method called fetch API.
 ✅ 2. it is a function into which we pass a url of an api.
 ✅ 3. to test the fetch method use a dummy api.
@@ -215,7 +202,7 @@
 ✅ 9. res is the response from the api which needs to be converted.
 ✅ 10. data is the converted format which we use in the react applications.
 
-# ----------------- 31. Asynchronous JavaScript: Async/Await ----------------- #
+# ----------------------------------- 31. Asynchronous JavaScript: Async/Await #
 ✅ 1. this is another method to fetch data from api url.
 🚩🚩🚩🚩
     async function getData() {
