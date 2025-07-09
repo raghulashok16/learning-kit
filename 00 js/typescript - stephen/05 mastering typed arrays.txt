@@ -2,3 +2,8 @@
 33. Why Typed Arrays?
 34. Multiple Types in Arrays
 35. When to Use Typed Arrays
+
+# --------------------------------------------------- 32. Arrays in Typescript #
+# ------------------------------------------------------ 33. Why Typed Arrays? #
+# ----------------------------------------------- 34. Multiple Types in Arrays #
+# ----------------------------------------------- 35. When to Use Typed Arrays #
