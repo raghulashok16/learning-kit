@@ -1,4 +1,3 @@
-# -------------------------- JAVASCRIPT FUNDAMENTALS ------------------------- #
 1. var, let & const.
 2. arrow function.
 3. accessing object.
@@ -9,7 +8,7 @@
 8. modules.
 9. export and import in components.
 
-# ------------------------------- VAR LET CONST ------------------------------ #
+# -------------------------------------------------------------- VAR LET CONST #
 
 📌 NOTES
     - these 3 keywords are used to define variables in javascript.
@@ -21,7 +20,7 @@
     - let values can be reassigned at any time.
     - finally prefer to use const keyword before let.
 
-# ------------------------------ ARROW FUNCTION ------------------------------ #
+# ------------------------------------------------------------- ARROW FUNCTION #
 ✅ 1. arrow function is another way to define javascript functions.
 ✅ 2. it is the simple and easy way.
 ✅ 3. it is very usefull when working on advanced topics.
@@ -33,8 +32,7 @@
     }
 ⚡⚡⚡⚡
 
-
-# ----------------------------- ACCESING OBJECTS ----------------------------- #
+# ----------------------------------------------------------- ACCESING OBJECTS #
 ✅ 1. object is a collection of key/value pair.
 ✅ 2. we need the exact key to acces that particular value.
 ✅ 3. square operator is used rarely.
@@ -48,8 +46,7 @@
     console.log(user["name"]);
 ⚡⚡⚡⚡
 
-
-# ---------------------------- OBJECT DESTRUCTION ---------------------------- #
+ # --------------------------------------------------------- OBJECT DESTRUCTION #
 ✅ 1. this method is tedious because when number of key/value increases it results in large number of line codes.
 🚩🚩🚩🚩
     const user = {
@@ -75,8 +72,7 @@
     const {name: userName, email: userEmail} = user;
 ⚡⚡⚡⚡
 
-
-# -------------------------------- MAP METHOD -------------------------------- #
+# ----------------------------------------------------------------- MAP METHOD #
 ✅ 1. this is one of the most used array method in react appliction.
 ✅ 2. it is mostly used to displaying the list of data.
 ✅ 3. map with normal function.
@@ -105,8 +101,7 @@
     console.log(displayUtems);
 ⚡⚡⚡⚡
 
-
-# ------------------------------- FILTER METHOD ------------------------------ #
+# -------------------------------------------------------------- FILTER METHOD #
 ✅ 1. filter method is used to filter array.
 ✅ 2. filter is used to remove items from existing array.
 ✅ 3. it will always return a new array.
@@ -138,8 +133,7 @@
     console.log(adults);
 ⚡⚡⚡⚡
 
-
-# ------------------------------ SPREAD OPERATOR ----------------------------- #
+# ------------------------------------------------------------ SPREAD OPERATOR #
 ✅ 1. combining two or more array with the old way using concat method.
 🚩🚩🚩🚩
     const arr1 = [1, 2, 3];
@@ -172,8 +166,7 @@
     console.log(user);
 ⚡⚡⚡⚡
 
-
-# ---------------------- TERNARY / CONDITIONAL OPERATOR ---------------------- #
+# --------------------------------------------- TERNARY / CONDITIONAL OPERATOR #
 ✅ 1. it is used for adding conditions.
 ✅ 2. ternary operators are the shortcut way to write if-else condition.
    codition ? trueExpression : falseExpression
@@ -183,8 +176,7 @@
     console.log(result);
 ⚡⚡⚡⚡
 
-
-# -------------------- MODULES / COMPONENTS IN JAVASCRIPT -------------------- #
+# ----------------------------------------- MODULES / COMPONENTS IN JAVASCRIPT #
 ✅ 1. module is a file that contains code to perform specific task.
 ✅ 2. it can contain variables, objects, functions, etc.
 ✅ 3. dividing our code into multiple parts is called modules.
@@ -200,8 +192,7 @@
     import {boo} from "./location";
 ⚡⚡⚡⚡
 
-
-# ----------------------------- EXPORT AS DEFAULT ---------------------------- #
+# ---------------------------------------------------------- EXPORT AS DEFAULT #
 ✅ 1. there is some difference between export vs export default.
 🚩🚩🚩🚩
     export default function boo(){...}
