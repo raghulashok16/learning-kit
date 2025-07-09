@@ -1,4 +1,3 @@
-# --------------------- section-03 Type Annotation Basics -------------------- #
 11. Our First Type Annotation
 12. Working With Numbers & Booleans
 Quiz 1: Super Quick Quiz!
@@ -8,7 +7,8 @@ Quiz 1: Super Quick Quiz!
 16. Delayed Initialization & Implicit Any
 Quiz 2: Inference Quiz
 
-# ----------------------- 11. Our First Type Annotation ---------------------- #
+# ---------------------------------------------- 11. Our First Type Annotation #
+
 ✅ 1. there are types in typescript.
 ✅ 2. Primitive Types -> Number, String, Boolean, Null, Undefined, Void, Any, Never, Unknown.
 ✅ 3. Object Types -> Object, Array, Function, Tuple, Enum, Others.
@@ -40,8 +40,8 @@ Quiz 2: Inference Quiz
     myString = 'newWords.....';
 ⚡⚡⚡⚡
 
+# ---------------------------------------- 12. Working With Numbers & Booleans #
 
-# -------------------- 12. Working With Numbers & Booleans ------------------- #
 ✅ 1. some programming languages hav many number types - floa, int, etc.
 ✅ 2. in typescript ( as well as javascript ) numbers are just numbers.
 ✅ 3. numbers can be typed with a simple type annotation of number ( all lowercase ).
@@ -70,14 +70,15 @@ Quiz 2: Inference Quiz
     myBoolean = false;
 ⚡⚡⚡⚡
 
+# --------------------------------------------------- 13. Compiling TypeScript #
 
-# ------------------------- 13. Compiling TypeScript ------------------------- #
 ✅ 1. first step: we create our typescript file and write all the typescript code in there.
 ✅ 2. second step: open the integrated terminal and run the command "tsc file_name.ts".
 ✅ 3. error check step: after compilation if any errors it will be displayed in the terminal and most of the time the vs code itself complain about the error before compilation.
 ✅ 4. even though the error occrured while compilation typescript will forecefully create a output js file for us.
 
-# ---------------------------- 14. Type Inference ---------------------------- #
+# --------------------------------------------------------- 14. Type Inference #
+
 ✅ 1. Type Inference refers to the typescript compiler's ability to infer types from certain values in our code.
 ✅ 2. TypeScript can remember a value's type even if you didnt provide a type annotation, and it will enforce that type moving forward.
 🚩🚩🚩🚩
@@ -90,8 +91,8 @@ Quiz 2: Inference Quiz
     x = 'twenty-seven';
 ⚡⚡⚡⚡
 
+# ----------------------------------------------------------- 15. The Any Type #
 
-# ----------------------------- 15. The Any Type ----------------------------- #
 ✅ 1. 'any' is an escape hatch.
 ✅ 2. it turns off type checking for this variable so you can do your thing.
 ✅ 3. NOTE: it sort of defeats the purpose of TS and types, so use it spaingly.
@@ -106,6 +107,5 @@ Quiz 2: Inference Quiz
     myComplicatedData = true;
 ⚡⚡⚡⚡
 
-
-# ----------------- 16. Delayed Initialization & Implicit Any ---------------- #
-# -------------------------- Quiz 2: Inference Quiz -------------------------- #
+# ---------------------------------- 16. Delayed Initialization & Implicit Any #
+# ----------------------------------------------------- Quiz 2: Inference Quiz #
