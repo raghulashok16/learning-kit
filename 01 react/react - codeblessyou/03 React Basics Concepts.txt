@@ -9,7 +9,7 @@
 9. handling inputs.
 10. mapping lists.
 
-# -------------------------- BUILDING OWN COMPONENT -------------------------- #
+# ----------------------------------------------------- BUILDING OWN COMPONENT #
 ✅ 1. component is reusable piece of code that used to define certain part of user interface.
 ✅ 2. always create a folder inside src folder named "components".
 ✅ 3. inside that component folder create our own component named "Card.jsx".
@@ -30,13 +30,13 @@
 ✅ 13. otherwise it will show error "jsx expression must have one parent".
 ✅ 14. always use parenthesis for the return statement in components.
 
-# ------------------------------- JSX AND BABEL ------------------------------ #
+# -------------------------------------------------------------- JSX AND BABEL #
 ✅ 1. jsx code which is modern code for writing html and javascript together.
 ✅ 2. our browser dont understand jsx, it understand just vanilla javascript / plain javascript.
 ✅ 3. so a compiler comes into action, it will convert jsx into javascript.
 ✅ 4. babel will do this work.
 
-# ----------------------- ADDING ELEMENTS IN COMPONENT ----------------------- #
+# ----------------------------------------------- ADDING ELEMENTS IN COMPONENT #
 ✅ 1. always use fragment as parent element when adding elements in components.
 🚩🚩🚩🚩
     <React.Fragment>
@@ -52,8 +52,7 @@
     </>
 ⚡⚡⚡⚡
 
-
-# ----------------------- JAVASCRIPT EXPRESSION IN JSX ----------------------- #
+# ----------------------------------------------- JAVASCRIPT EXPRESSION IN JSX #
 ✅ 1. use curybrases and write javascript code.
 ✅ 2. in this below example task value is declared inside the component function and just abouve the return statement.
 🚩🚩🚩🚩
