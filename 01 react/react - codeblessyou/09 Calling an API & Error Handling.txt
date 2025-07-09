@@ -1,4 +1,4 @@
-# ------------------------- USEEFFECT HOOK IN DETAIL ------------------------- #
+# --------------------------------------------------- USEEFFECT HOOK IN DETAIL #
 ✅ 1. it is used to peform side effects in our components.
 ✅ 2. side effects are actions which are performed with the 'outside world'.
 🚩🚩🚩🚩
@@ -13,10 +13,10 @@
 ✅ 4. useEffect(()=>{},[]); [this code will run only once when the app gets mounted]
 ✅ 5. useEffect(()=>{},[dependencies]); [this code will run everytime when app gets mounted and when dependencies changes]
 
-# ------------------------ USEEFFECT CLEANUP FUNCTION ------------------------ #
+# ------------------------------------------------- USEEFFECT CLEANUP FUNCTION #
 ✅ 1. when we use 
 
-# ------------------------------- HTTP REQUESTS ------------------------------ #
+# -------------------------------------------------------------- HTTP REQUESTS #
 
 ✅ get    - used to fetching data from server.
 ✅ post   - used to sumbit data to server.
@@ -24,13 +24,13 @@
 ✅ patch  - used to update specific data at server.
 ✅ delete - used to delete data from server.
 
-# ------------------------------ NEED FOR AXIOS ------------------------------ #
+# ------------------------------------------------------------- NEED FOR AXIOS #
 ✅ 1. in react backend comminication is achived using HTTP protocol.
 ✅ 2. fetch api in js is also used but axios was prefered by most of the developers.
 ✅ 3. because axios has much aditional features.
 ✅ 4. it can be used in both client-side and server-side(node.js) HTTP requests.
 
-# ------------------------- FETCHING DATA WITH AXIOS ------------------------- #
+# --------------------------------------------------- FETCHING DATA WITH AXIOS #
 ✅ 1. we need to install axios in our app.
 🚩🚩🚩🚩
     npm install axios
@@ -78,7 +78,7 @@
 
 ✅ 15. so using axios we can avoid this line of converting into json.
 
-# ---------------------------- LOADING INDICATORS ---------------------------- #
+# --------------------------------------------------------- LOADING INDICATORS #
 ✅ 1. create state named isLoading.
 ✅ 2. this state is going to handle loading indicator.
 ✅ 3. this helps us to show the end users that the data are loading behind.
@@ -92,7 +92,7 @@
 ✅ 11. this will reduce the internet speed.
 ✅ 12. always use loading indicators(any spiner animation) with easy animation class given in tailwind.
 
-# ------------------------------ HANDLING ERRORS ----------------------------- #
+# ------------------------------------------------------------ HANDLING ERRORS #
 ✅ 1. when we are working in promises, we can use catch method for error handling.
 ✅ 2. after then method, at the end we need to use catch method.
 ✅ 3. create a state variable for error messages.
@@ -108,7 +108,7 @@
 
 ✅ 5. prefered method by users due to less code and maintainability.
 
-# --------------------- HANDLING PROMISE WITH ASYNC AWAIT -------------------- #
+# ------------------------------------------ HANDLING PROMISE WITH ASYNC AWAIT #
 ✅ 1. for fetching api data, we can use a seperate async function.
 ✅ 2. inside useEffect call that fetchAPI function.
 ✅ 3. while using async function, use a try/catch to handle errors.
@@ -129,7 +129,7 @@
 
 ✅ 4. this method should be called inside useEffect.
 
-# ----------------------- 2 WAYS TO WORK WITH API DATA ----------------------- #
+# ----------------------------------------------- 2 WAYS TO WORK WITH API DATA #
 ✅ 1. optimistic method
 🚩🚩🚩🚩
     update data on UI -> call API to update data at backend
@@ -146,7 +146,7 @@
 ✅ 4. in social media if we hit a like button it must be display immediatly.
 ✅ 5. pessimistic method will take some time to update data on UI.
 
-# -------------------------- API FOR ADDING NEW DATA ------------------------- #
+# ---------------------------------------------------- API FOR ADDING NEW DATA #
 ✅ 1. we need to use axios post method to add data to the server.
 ✅ 2. status code for successfully created data is 201.
 ✅ 3. while adding new data to api, never forget to add id information.
@@ -161,7 +161,7 @@
 ✅ 6. sometimes error will come so it can be handled using catch method or by using try/catch block.
 ✅ 7. jsonplaceholder websites allow total of 11 count so after 11 it will show error regarding 'id'.
 
-# ------------------------------ DELETING SELLER ----------------------------- #
+# ------------------------------------------------------------ DELETING SELLER #
 ✅ 1. to delete a seller we can use a handle delete seller function.
 ✅ 2. we need to pass seller id to the handle function, so use a arrow function to pass data.
 ✅ 3. after using filter method set that filtered data to the sellers.
@@ -181,7 +181,7 @@
 
 ✅ 6. status 200 will show that it has been successfully deleted.
 
-# -------------------------- UPDATING SELLER DETAILS ------------------------- #
+# ---------------------------------------------------- UPDATING SELLER DETAILS #
 ✅ 1. create a handleUpdate function with seller details as argument.
 ✅ 2. so use arrow function for onClick.
 ✅ 3. as we know axios patch() method is used to update specific data in server.
@@ -204,8 +204,7 @@
     }
 ⚡⚡⚡⚡
 
-
-# ------------------ MAKING AXIOS VARIABLE FOR HTTP REQUEST ------------------ #
+# ------------------------------------- MAKING AXIOS VARIABLE FOR HTTP REQUEST #
 ✅ 1. axios allow us to create a base url.
 ✅ 2. this helps us to shortern the API url link.
 ✅ 3. in the source folder create a sub folder named utils.
