@@ -12,15 +12,15 @@ Coding Exercise 8: rangeGenerator Exercise
 Quiz 5: Section Quiz
 
 
-# -------------------- 75. Working With Float Imprecision -------------------- #
-# ------------------- 76. BigInt() and Really Large Numbers ------------------ #
-# ---------------------- 77. isNan() vs. Number.isNaN() ---------------------- #
-# ------------------ 78. Post and Pre Increment: ++x vs. x++ ----------------- #
-# --------------------- 79. Automatic Semicolon Insertion -------------------- #
-# -------------------- 80. JavaScript Generator Functions -------------------- #
-# ---------------------- 81. When Are Generators Useful? --------------------- #
-# ------------- 82. The Incredibly Versatile Array.from() Method ------------- #
-# ----------------- Coding Exercise 6: parseAndCheck Exercise ---------------- #
-# -------------- Coding Exercise 7: Prefix and Postfix Exercise -------------- #
-# ---------------- Coding Exercise 8: rangeGenerator Exercise ---------------- #
-# --------------------------- Quiz 5: Section Quiz --------------------------- #
+# ----------------------------------------- 75. Working With Float Imprecision #
+# -------------------------------------- 76. BigInt() and Really Large Numbers #
+# --------------------------------------------- 77. isNan() vs. Number.isNaN() #
+# ------------------------------------ 78. Post and Pre Increment: ++x vs. x++ #
+# ------------------------------------------ 79. Automatic Semicolon Insertion #
+# ----------------------------------------- 80. JavaScript Generator Functions #
+# -------------------------------------------- 81. When Are Generators Useful? #
+# --------------------------- 82. The Incredibly Versatile Array.from() Method #
+# ---------------------------------- Coding Exercise 6: parseAndCheck Exercise #
+# ----------------------------- Coding Exercise 7: Prefix and Postfix Exercise #
+# --------------------------------- Coding Exercise 8: rangeGenerator Exercise #
+# ------------------------------------------------------- Quiz 5: Section Quiz #
