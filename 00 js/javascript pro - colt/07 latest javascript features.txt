@@ -10,16 +10,15 @@
 74. New OOP Features: Private Fields & Static Initialization Blocks
 Quiz 4: Section Quiz
 
+# ------------------------------------------------------ 65. Optional Chaining #
+# ----------------------------------------------------- 66. Nullish Coalescing #
+# ----------------------------------------------------- 67. Numeric Separators #
+# --------------------------------------------------- 68. Array.prototype.at() #
+# ---------------------------------------------------- 69. String replaceAll() #
+# ---------------------------------------------- 70. Logical OR Assignment ||= #
+# --------------------------------------------- 71. Logical AND Assignment &&= #
+# -------------------------------------- 72. Nullish Coalescing Assignment ??= #
+# ---------------------------------------------------------- 73. Promise.any() #
+# -------- 74. New OOP Features: Private Fields & Static Initialization Blocks #
+# ------------------------------------------------------- Quiz 4: Section Quiz #
 
-
-# --------------------------- 65. Optional Chaining -------------------------- #
-# -------------------------- 66. Nullish Coalescing -------------------------- #
-# -------------------------- 67. Numeric Separators -------------------------- #
-# ------------------------- 68. Array.prototype.at() ------------------------- #
-# -------------------------- 69. String replaceAll() ------------------------- #
-# ----------------------- 70. Logical OR Assignment ||= ---------------------- #
-# ---------------------- 71. Logical AND Assignment &&= ---------------------- #
-# ------------------- 72. Nullish Coalescing Assignment ??= ------------------ #
-# ----------------------------- 73. Promise.any() ---------------------------- #
-# ---- 74. New OOP Features: Private Fields & Static Initialization Blocks --- #
-# --------------------------- Quiz 4: Section Quiz --------------------------- #
