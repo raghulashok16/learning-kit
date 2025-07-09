@@ -1,4 +1,4 @@
-# ------------------------------- WHAT IS REACT ------------------------------ #
+# -------------------------------------------------------------- WHAT IS REACT #
 
 📌 NOTES
     - it is an open source javascript library used for building frontend applications.
@@ -6,7 +6,7 @@
     - react was created by facebook in 2011.
     - currently it is the most popoular and most used javascript  frontend library.
 
-# -------------------------- WHY REACT IS SO POPULAR ------------------------- #
+# ---------------------------------------------------- WHY REACT IS SO POPULAR #
 
 📌 NOTES
     - before react was created, when our web page loaded in a browser, our browser create tree like structure with our html code.
@@ -24,7 +24,7 @@
     - and all pages comes without reloading the entire page.
     - this will make our application almost 50% faster than normal applications.
 
-# -------------------------------- VIRTUAL DOM ------------------------------- #
+# ---------------------------------------------------------------- VIRTUAL DOM #
 
 📌 NOTES
     - react is so fast because of the virtual dom feature.
@@ -36,19 +36,18 @@
     - in this approach, we will update only necessary things and we dont need to load the whole page.
     - Virtual dom makes updating the real dom smoother and more efficient, and it ehances the performance and increaces the user experiences.
 
-# ---------------------------- SOFTWARES REQUIRED ---------------------------- #
+# --------------------------------------------------------- SOFTWARES REQUIRED #
 ✅ 1. node js[node pakacge manager is used to install react and some aditional features]
 ✅ 2. code editor[visual studio code]
 ✅ 3. es7/react snippets in vs code.
 ✅ 4. browser[chrome recommended]
 
-# ---------------------------- CREATING REACT APP ---------------------------- #
+# --------------------------------------------------------- CREATING REACT APP #
 ✅ 1. create react app [method 1]
 ✅ 2. vite [method 2]
 ✅ 3. creact react app is old way and it take much time compare to vite.
 
-# ----------------------- CREATING REACT APP WITH VITE ----------------------- #
-
+# ----------------------------------------------- CREATING REACT APP WITH VITE #
 ✅ 1. go to our project folder and run vite command in the terminal.
 🚩🚩🚩🚩
 npm create vite@latest
@@ -78,7 +77,7 @@ npm run dev
 
 ✅ 8. it will show the link of our application[localhost link]
 
-# ------------------------ INSIDE VITE REACT TEMPLATE ------------------------ #
+# ------------------------------------------------- INSIDE VITE REACT TEMPLATE #
 
 📌 NOTES
     - we have node folder where we have all the required pakages and libraries for our application.
@@ -103,8 +102,7 @@ npm run dev
     - in pakage.json file all the information will be available including which version we use in our project.
     - finally we have shorts for the commands we will be using for the terminals.
 
-
-# ------------------------ MAIN THINGS IN THE INDEX.JS ----------------------- #
+# ------------------------------------------------ MAIN THINGS IN THE INDEX.JS #
 🚩🚩🚩🚩
     ReactDOM.createRoot(document.getElementById('root')).render();
 ⚡⚡⚡⚡
