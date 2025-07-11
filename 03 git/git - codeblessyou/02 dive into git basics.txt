@@ -21,6 +21,18 @@
 26. Summary PDF of this Section
 
 # -------------------------------------------- 6. Introduction of this Section #
+🛩️🛩️ fundamentals of git
+    - ✅ workflow of git.
+    - ✅ how git really works.
+    - ✅ initialize git.
+    - ✅ recording code history.
+    - ✅ staging.
+    - ✅ committing.
+
+📌 many developer dont know about git fundamentals.
+📌 if you learn this you can be on top of them.
+
+
 # -------------------------------------------- 7. Initialising the Git Project #
 # ---------------------------------------------------- 8. How Git Really Works #
 # ----------------------------------------------- 9. Exercise for Git Workflow #
