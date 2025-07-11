@@ -4,8 +4,14 @@
 15. Examples of Types
 16. Where Do We Use Types?
 
-# ------------------------------------------ 12. Do Not Skip - Course Overview #
 # ------------------------------------------------------------------ 13. Types #
+    - ✅ "type" is a easy way to refer to the different properties and functions that a value has.
+    - ✅ "value" in javascript and typescript is anything that we can assighn to a variable.
+    - ✅ we can assign 📌strings 📌numbers 📌booleans 📌null 📌undefined 📌objects 📌functions 📌classes 📌arrays and so on.
+    - ✅ all of these individually have a separate "type".
+    
+
+
 # ---------------------------------------------------------- 14. More on Types #
 # ------------------------------------------------------ 15. Examples of Types #
 # ------------------------------------------------- 16. Where Do We Use Types? #
