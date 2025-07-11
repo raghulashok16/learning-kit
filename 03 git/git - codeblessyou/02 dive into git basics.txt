@@ -32,8 +32,31 @@
 📌 many developer dont know about git fundamentals.
 📌 if you learn this you can be on top of them.
 
-
 # -------------------------------------------- 7. Initialising the Git Project #
+
+🛩️🛩️ steps to work with git
+    - ✅ we need to add git in our project.
+    - ✅ without adding git it cannot track the changes we made in project.
+    - ✅ open gitbash inside our project folder.
+    - ✅ run this below command.
+🚩🚩🚩🚩
+    git init
+⚡⚡⚡⚡
+    - ✅ after running this command, git will add one hidden folder which stores our project history.
+
+📌 you dont need to touch that files, this is just for informative purpose.
+📌 if you delete this folder then you will lose all the project history.
+
+    - ✅ without git folder "git commands" wont work.
+
+📌 we can manually remove the project folder using the below command.
+🚩🚩🚩🚩
+    rm -rf .git
+⚡⚡⚡⚡
+
+    - ✅ after removing this ".git" directory the "master" symbol for tracking will be removed in the git bash.
+    - ✅ that is why git folder is very important.
+
 # ---------------------------------------------------- 8. How Git Really Works #
 # ----------------------------------------------- 9. Exercise for Git Workflow #
 # --------------------------------------- 10. Adding files to the Staging area #
