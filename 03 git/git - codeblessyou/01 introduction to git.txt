@@ -1,0 +1,11 @@
+1. What is Git & Why every company loves Git
+2. Various way to use Git
+3. Setting Up Git in System
+4. Configuring User for Git
+5. How to make Git Bash Look Good
+
+# ------------------------------- 1. What is Git & Why every company loves Git #
+# -------------------------------------------------- 2. Various way to use Git #
+# ------------------------------------------------ 3. Setting Up Git in System #
+# ------------------------------------------------ 4. Configuring User for Git #
+# ------------------------------------------ 5. How to make Git Bash Look Good #
