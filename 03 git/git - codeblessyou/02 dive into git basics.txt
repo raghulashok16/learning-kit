@@ -39,17 +39,16 @@
     - ✅ without adding git it cannot track the changes we made in project.
     - ✅ open gitbash inside our project folder.
     - ✅ run this below command.
+
 🚩🚩🚩🚩
     git init
 ⚡⚡⚡⚡
     - ✅ after running this command, git will add one hidden folder which stores our project history.
-
-📌 you dont need to touch that files, this is just for informative purpose.
-📌 if you delete this folder then you will lose all the project history.
-
+    - ✅ you dont need to touch that files, this is just for informative purpose.
+    - ✅ if you delete this folder then you will lose all the project history.
     - ✅ without git folder "git commands" wont work.
+    - ✅ we can manually remove the project folder using the below command.
 
-📌 we can manually remove the project folder using the below command.
 🚩🚩🚩🚩
     rm -rf .git
 ⚡⚡⚡⚡
@@ -58,8 +57,60 @@
     - ✅ that is why git folder is very important.
 
 # ---------------------------------------------------- 8. How Git Really Works #
-# ----------------------------------------------- 9. Exercise for Git Workflow #
+
+🛩️🛩️ git workflow
+    ⏩⏩ project area
+    ⏩⏩ staging area 
+    ⏩⏩ git repository
+
+    - ✅ staging area is for checking any mistakes by us.
+    - ✅ without staging area, whatever we do in our local code that all code will be stored directly in our repository.
+    - ✅ we cant get chance to see what we change and what we remove in compare to previous code.
+    - ✅ we move our code from "local area" ⏩⏩ "staging area" ⏩⏩ "git repository".
+    - ✅ we use "git commands" to do that.
+    - ✅ to move from "local area" ⏩⏩ "staging area" use this code.
+
+🚩🚩🚩🚩
+    git add file_name
+⚡⚡⚡⚡
+
+    - ✅ staging area is like temporary memory and we can use this area to check if our file is correct or not.
+    - ✅ if any error in the file we can correct it during this time.
+    - ✅ to move from "staging area" ⏩⏩ "git repository" use this code.
+
+🚩🚩🚩🚩
+    git commit -m "commit message"
+⚡⚡⚡⚡
+
+    - ✅ this will help us what changes we made in that commit.
+
+🛩️🛩️ commit information
+    - ✅ unique id.
+    - ✅ date and time.
+    - ✅ author name and email [who commit this code].
+    - ✅ commit message.
+
 # --------------------------------------- 10. Adding files to the Staging area #
+    - ✅ first create a new file in our project folder.
+    - ✅ use the below command to check the tracking status in our project.
+
+🚩🚩🚩🚩
+    git status
+⚡⚡⚡⚡
+
+    - ✅ this command will show all the tracked and untracked files in our project.
+    - ✅ after identifying which files should moved to staging area, then move that using "git command".
+    
+🚩🚩🚩🚩
+    git add untracked_file_1 untracked_file_2
+    git add *.txt
+    git add .
+⚡⚡⚡⚡
+
+    - ✅ "*.txt" will add all the untracked files with ".txt" extension.
+    - ✅ "." will add the untracked files.
+    - ✅ after successfuly moved we can check again using "git status" 
+
 # ------------------------------------------- 11. Let’s Commit our first files #
 # ------------------------------------------------- 12. When should we commit? #
 # ------------------------------------------------ 13. Exercise for the Commit #
