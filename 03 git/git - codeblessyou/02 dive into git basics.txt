@@ -1,0 +1,43 @@
+6. Introduction of this Section
+7. Initialising the Git Project
+8. How Git Really Works
+9. Exercise for Git Workflow
+10. Adding files to the Staging area
+11. Let’s Commit our first files
+12. When should we commit?
+13. Exercise for the Commit
+14. How to skip Staging area?
+15. Remove files from areas
+16. How to ignore some files to Stage
+17. Viewing Changes between areas
+18. Shortcut for Status
+19. Viewing The History
+20. Unstagging the Files
+21. Discarding Changes in Local files
+22. Restoring to it’s earlier version
+23. Performing git basic operations with VS code
+24. Introduction of Github Desktop
+25. Introduction of Git Kraken
+26. Summary PDF of this Section
+
+# -------------------------------------------- 6. Introduction of this Section #
+# -------------------------------------------- 7. Initialising the Git Project #
+# ---------------------------------------------------- 8. How Git Really Works #
+# ----------------------------------------------- 9. Exercise for Git Workflow #
+# --------------------------------------- 10. Adding files to the Staging area #
+# ------------------------------------------- 11. Let’s Commit our first files #
+# ------------------------------------------------- 12. When should we commit? #
+# ------------------------------------------------ 13. Exercise for the Commit #
+# ---------------------------------------------- 14. How to skip Staging area? #
+# ------------------------------------------------ 15. Remove files from areas #
+# -------------------------------------- 16. How to ignore some files to Stage #
+# ------------------------------------------ 17. Viewing Changes between areas #
+# ---------------------------------------------------- 18. Shortcut for Status #
+# ---------------------------------------------------- 19. Viewing The History #
+# --------------------------------------------------- 20. Unstagging the Files #
+# -------------------------------------- 21. Discarding Changes in Local files #
+# -------------------------------------- 22. Restoring to it’s earlier version #
+# --------------------------- 23. Performing git basic operations with VS code #
+# ----------------------------------------- 24. Introduction of Github Desktop #
+# --------------------------------------------- 25. Introduction of Git Kraken #
+# -------------------------------------------- 26. Summary PDF of this Section #
