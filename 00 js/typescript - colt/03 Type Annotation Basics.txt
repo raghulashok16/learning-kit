@@ -8,27 +8,26 @@ Quiz 1: Super Quick Quiz!
 Quiz 2: Inference Quiz
 
 # ---------------------------------------------- 11. Our First Type Annotation #
-
-✅ 1. there are types in typescript.
-✅ 2. Primitive Types -> Number, String, Boolean, Null, Undefined, Void, Any, Never, Unknown.
-✅ 3. Object Types -> Object, Array, Function, Tuple, Enum, Others.
-✅ 4. using this types we can tell typescript some basic conditions like "this object must have a property called colors, set to an array of strings", "this function returns a boolean", "this function accepts two numbers and returns a number", "this variable is a string".
+    - ✅ there are types in typescript.
+    - ✅ Primitive Types -> Number, String, Boolean, Null, Undefined, Void, Any, Never, Unknown.
+    - ✅ Object Types -> Object, Array, Function, Tuple, Enum, Others.
+    - ✅ using this types we can tell typescript some basic conditions like "this object must have a property called colors, set to an array of strings", "this function returns a boolean", "this function accepts two numbers and returns a number", "this variable is a string".
 🚩🚩🚩🚩
     const sample = 'so awesome';
     const sample: string = 'so awsome';
 ⚡⚡⚡⚡
 
 
-✅ 5. if we give the value to different type after we set it to string, then the editor itself complain with the error occured.
-✅ 6. this is due to the extension we installed -- refer section-2.
-✅ 7. assigning a basic type to a variable is easy -> just add : Type after the variable name.
-✅ 8. this is called "type annotation".
+    - ✅ if we give the value to different type after we set it to string, then the editor itself complain with the error occured.
+    - ✅ this is due to the extension we installed -- refer section-2.
+    - ✅ assigning a basic type to a variable is easy -> just add : Type after the variable name.
+    - ✅ this is called "type annotation".
 🚩🚩🚩🚩
     let myVar: type = value;
 ⚡⚡⚡⚡
 
 
-✅ 9. we can tell typescript that something is a string using the annotation of string ( all lowercase ).
+    - ✅ we can tell typescript that something is a string using the annotation of string ( all lowercase ).
 🚩🚩🚩🚩
     //Declaring a string variable
     let myString: string = 'someWords.....';
