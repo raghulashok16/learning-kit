@@ -12,22 +12,23 @@ Quiz 2: Inference Quiz
     - ✅ Primitive Types -> Number, String, Boolean, Null, Undefined, Void, Any, Never, Unknown.
     - ✅ Object Types -> Object, Array, Function, Tuple, Enum, Others.
     - ✅ using this types we can tell typescript some basic conditions like "this object must have a property called colors, set to an array of strings", "this function returns a boolean", "this function accepts two numbers and returns a number", "this variable is a string".
+
 🚩🚩🚩🚩
     const sample = 'so awesome';
     const sample: string = 'so awsome';
 ⚡⚡⚡⚡
 
-
     - ✅ if we give the value to different type after we set it to string, then the editor itself complain with the error occured.
     - ✅ this is due to the extension we installed -- refer section-2.
     - ✅ assigning a basic type to a variable is easy -> just add : Type after the variable name.
     - ✅ this is called "type annotation".
+
 🚩🚩🚩🚩
     let myVar: type = value;
 ⚡⚡⚡⚡
 
-
     - ✅ we can tell typescript that something is a string using the annotation of string ( all lowercase ).
+
 🚩🚩🚩🚩
     //Declaring a string variable
     let myString: string = 'someWords.....';
@@ -41,9 +42,10 @@ Quiz 2: Inference Quiz
 
 # ---------------------------------------- 12. Working With Numbers & Booleans #
 
-✅ 1. some programming languages hav many number types - floa, int, etc.
-✅ 2. in typescript ( as well as javascript ) numbers are just numbers.
-✅ 3. numbers can be typed with a simple type annotation of number ( all lowercase ).
+    - ✅ some programming languages hav many number types - floa, int, etc.
+    - ✅ in typescript ( as well as javascript ) numbers are just numbers.
+    - ✅ numbers can be typed with a simple type annotation of number ( all lowercase ).
+
 🚩🚩🚩🚩
     //Declaring a number variable
     let myNumber: number = 42;
@@ -55,9 +57,9 @@ Quiz 2: Inference Quiz
     myNumber = 60;
 ⚡⚡⚡⚡
 
+    - ✅ boolean variable represent simple true or false values.
+    - ✅ booleans can be typed with a simple type annotation of boolean (all lowercase).
 
-✅ 4. boolean variable represent simple true or false values.
-✅ 5. booleans can be typed with a simple type annotation of boolean (all lowercase).
 🚩🚩🚩🚩
     //Declaring a boolean variable
     const myBoolean: boolean = true;
@@ -71,15 +73,16 @@ Quiz 2: Inference Quiz
 
 # --------------------------------------------------- 13. Compiling TypeScript #
 
-✅ 1. first step: we create our typescript file and write all the typescript code in there.
-✅ 2. second step: open the integrated terminal and run the command "tsc file_name.ts".
-✅ 3. error check step: after compilation if any errors it will be displayed in the terminal and most of the time the vs code itself complain about the error before compilation.
-✅ 4. even though the error occrured while compilation typescript will forecefully create a output js file for us.
+    - ✅ first step: we create our typescript file and write all the typescript code in there.
+    - ✅ second step: open the integrated terminal and run the command "tsc file_name.ts".
+    - ✅ error check step: after compilation if any errors it will be displayed in the terminal and most of the time the vs code itself complain about the error before compilation.
+    - ✅ even though the error occrured while compilation typescript will forecefully create a output js file for us.
 
 # --------------------------------------------------------- 14. Type Inference #
 
-✅ 1. Type Inference refers to the typescript compiler's ability to infer types from certain values in our code.
-✅ 2. TypeScript can remember a value's type even if you didnt provide a type annotation, and it will enforce that type moving forward.
+    - ✅ Type Inference refers to the typescript compiler's ability to infer types from certain values in our code.
+    - ✅ TypeScript can remember a value's type even if you didnt provide a type annotation, and it will enforce that type moving forward.
+
 🚩🚩🚩🚩
     //creating a variable with a value
     //but without a type annotation
@@ -92,9 +95,10 @@ Quiz 2: Inference Quiz
 
 # ----------------------------------------------------------- 15. The Any Type #
 
-✅ 1. 'any' is an escape hatch.
-✅ 2. it turns off type checking for this variable so you can do your thing.
-✅ 3. NOTE: it sort of defeats the purpose of TS and types, so use it spaingly.
+    - ✅ 'any' is an escape hatch.
+    - ✅ it turns off type checking for this variable so you can do your thing.
+    - ✅ NOTE: it sort of defeats the purpose of TS and types, so use it spaingly.
+    
 🚩🚩🚩🚩
     //Declaring a variable with type 'any'
     const myComplicatedData: any = 'i am going to be complicated';
